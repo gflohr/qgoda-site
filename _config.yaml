@@ -1,0 +1,5 @@
+title: Qgoda
+linguas: [en, de]
+exclude: [node_modules, package.json, gulpfile.js]
+helpers:
+    - gulp

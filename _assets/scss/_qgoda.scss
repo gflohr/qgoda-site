@@ -1,0 +1,27 @@
+#about .client .client-img {
+    padding-top: 20px;
+    height: 100%;
+}
+
+.navbar .container .row:first-child {
+    padding: 30px 0;
+}
+
+.logo img {
+    width: 100%;
+    @media (min-width: 768px) {
+        width: 50%;
+    }
+}
+
+#getting-started {
+    img {
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}

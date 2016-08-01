@@ -1,0 +1,6 @@
+- improve error message if q.include() fails in template
+- removing a directory makes gulp terminate with an error
+- watch _includes for changes
+- how to access hash keys with special characters?
+- structure images, make new dir assets/images/landing-page
+- errors in q.include are not reported

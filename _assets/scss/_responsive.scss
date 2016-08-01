@@ -1,0 +1,110 @@
+@media (min-width: 1200px){
+  #home .intro-section {
+  padding: 60px 0;
+}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #home .intro-section .intro {
+    font-size: 35px;
+  }
+  #main-features .feature-content {
+    padding: 0;
+  }
+  #about .client .info-client {
+    padding: 10px 0px;
+  }
+}
+@media (max-width: 568px) {
+  .section-title {
+    font-size: 30px;
+  }
+  .section-subtitle {
+    font-size: 18px;
+  }
+  .row {
+    padding: 40px 0;
+  }
+  .small-title {
+    font-size: 22px;
+  }
+  #home .logo-nav h2 {
+    font-size: 16px;
+    line-height: 38px;
+  }
+  #home .row {
+    padding: 30px 0;
+  }
+  #home .intro-section {
+    margin: 0;
+  }
+  #home .intro-section .intro {
+    font-size: 20px;
+    line-height: 22px;
+  }
+  #home .intro-section .sub-heading {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  #about .client {
+    padding-bottom: 30px;
+  }
+  #about .client .info-client {
+    padding: 0;
+  }
+  #main-features .row {
+    padding: 20px 0;
+  }
+  #main-features .feature-content {
+    padding: 12px;
+  }
+}
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 24px;
+  }
+  .section-subtitle {
+    font-size: 16px;
+  }
+  .row {
+    padding: 40px 0;
+  }
+  .small-title {
+    font-size: 20px;
+  }
+  #home .logo-nav h2 {
+    font-size: 16px;
+  }
+  #home .color-overlay {
+    padding: 30px 0;
+  }
+  #home .row {
+    padding: 0px 0;
+  }
+  #home .intro-section {
+    margin: 0;
+  }
+  #home .intro-section .intro {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  #home .intro-section .sub-heading {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  #about .client {
+    padding-bottom: 30px;
+  }
+  #about .client .client-img {
+    margin-right: 16px;
+  }
+  #about .client .info-client {
+    padding: 0;
+  }
+  #main-features .row {
+    padding: 20px 0;
+  }
+  #main-features .feature-content {
+    padding: 12px;
+  }
+}
