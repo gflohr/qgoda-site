@@ -2,4 +2,15 @@ title: Qgoda
 linguas: [en, de]
 exclude: [node_modules, package.json, gulpfile.js]
 helpers:
-    - gulp
+  - gulp
+defaults:
+  posts:
+    values:
+      type: post
+    subdirs:
+      en:
+        values:
+          linguas: en
+      de:
+        values:
+          linguas: de
