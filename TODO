@@ -4,3 +4,7 @@
 - how to access hash keys with special characters?
 - structure images, make new dir assets/images/landing-page
 - errors in q.include are not reported
+- test writeAsset() from templates
+- gettext API, can we use l_(...), l_x(...) as function names?
+- xgettext_tt extractor
+- sorting of assets or more generally of arrays with TT
