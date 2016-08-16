@@ -8,3 +8,5 @@
 - gettext API, can we use l_(...), l_x(...) as function names?
 - xgettext_tt extractor
 - sorting of assets or more generally of arrays with TT
+- when moving an asset into the parent directory, we cat a "directory not
+  empty" error

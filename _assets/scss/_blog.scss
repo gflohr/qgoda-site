@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,800);
+
 /*
  * Globals
  */
@@ -9,7 +11,7 @@
 }
 
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: 'Raleway', sans-serif;
   color: #555;
 }
 
@@ -19,8 +21,8 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
   color: #333;
 }
 
@@ -127,9 +129,6 @@ h6, .h6 {
 /* Pagination */
 .blog-pagination {
   margin-bottom: 4rem;
-}
-.blog-pagination > .btn {
-  border-radius: 2rem;
 }
 
 

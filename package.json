@@ -17,9 +17,9 @@
   "author": "Guido Flohr <guido.flohr@cantanea.com> (http://www.guido.flohr.net/)",
   "license": "GPL-3.0",
   "devDependencies": {
-    "autoprefixer": "^6.3.7",
+    "autoprefixer": "^6.4.0",
     "bootstrap": "^4.0.0-alpha.3",
-    "browser-sync": "^2.13.0",
+    "browser-sync": "^2.14.0",
     "del": "^2.2.1",
     "font-awesome": "^4.6.3",
     "gulp": "^3.9.1",
@@ -37,6 +37,7 @@
     "gulp-util": "^3.0.7",
     "jquery": "^3.1.0",
     "mkdirp": "^0.5.1",
+    "qgoda-plugin-pygments": "git+file:///Users/guido/Documents/workspace/qgoda-plugin-pygments",
     "run-sequence": "^1.2.2",
     "tether": "^1.3.4"
   }

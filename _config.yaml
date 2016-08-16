@@ -14,3 +14,5 @@ defaults:
       de:
         values:
           linguas: de
+plugins:
+  - 'qgoda-plugin-pygments'
