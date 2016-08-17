@@ -4,6 +4,7 @@ title: Qgoda Static Site Generator
 location: /index.html
 permalink: /
 chain: html
+wrapper: html
 ---
 [% USE q = Qgoda %]
 [% q.include('_includes/landing-page/header.md') %]

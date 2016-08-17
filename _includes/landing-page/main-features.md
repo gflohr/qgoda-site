@@ -1,6 +1,7 @@
 ---
 view: landing-main-features.html
 chain: html
+wrapper: html
 ---
 [% USE q = Qgoda %]
 [% q.include('_includes/landing-page/taxonomies.md') %]
