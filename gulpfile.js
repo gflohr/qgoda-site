@@ -46,6 +46,7 @@ var paths = {
                    'node_modules/font-awesome/scss'
                  ],
         watch: [src.sassdir + '/**/*.scss',
+                src.sassdir + '/**/_*.scss',
                 'node_modules/bootstrap/scss'],
     },
     js: {

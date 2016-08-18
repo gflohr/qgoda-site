@@ -1,0 +1,28 @@
+[% PROCESS functions/setup.tt %]
+<body>
+  [% INCLUDE partials/header/navbar.html %]
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8">
+        <h1>[% asset.title %]</h1>
+        [% asset.content %]
+      </div>
+      <div class="col-sm-3 offset-sm-1">
+        sidebar
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer id="footer">
+    <div class="container">
+      <p>
+        Footer ...
+      </p>
+    </div>
+  </footer>
+  <!-- Footer Section End -->
+  [% PROCESS functions/scripts.tt %]
+</body>
+
