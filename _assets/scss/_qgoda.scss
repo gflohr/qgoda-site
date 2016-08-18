@@ -1,14 +1,12 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,800);
 
-$qgoda-font-size: 18px;
+$qgoda-font-size: 1.1rem;
 $qgoda-main-color: #555;
 $qgoda-headline-color: #333;
 $qgoda-nav-link-color: #fff;
 
-@media (min-width: 48em) {
-    html {
-        font-size: $qgoda-font-size;
-    }
+html {
+    font-size: $qgoda-font-size;
 }
 
 body {
@@ -22,11 +20,19 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     color: $qgoda-headline-color;
 }
 
+.bg-warning-opaque {
+    background-color: $brand-warning-opaque;
+}
+
 .nav-link {
     position: relative;
     padding: 1rem;
     font-weight: 500;
     color: #cdddeb;
+}
+
+h1, .h1, .sidebar {
+    margin-top: 2rem;
 }
 
 .nav-link:hover, .nav-link:focus {
