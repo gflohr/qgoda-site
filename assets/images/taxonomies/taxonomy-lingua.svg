@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" 
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="164" height="90" 
+     viewPort="0 0 164 90" version="1.1">
+
+    <defs>
+      <g id="document">
+        <polyline points="8,4 16,4 16,20 4,20 4,8 8,4 8,8 4,8" 
+                  stroke="black" stroke-opacity="0.5" stroke-width="0.02rem" 
+                  fill="transparent"/>
+        <line x1="8" y1="6" x2="14" y2="6"
+              stroke="black" stroke-opacity="0.5" stroke-width="0.02rem"/>
+        <line x1="8" y1="8" x2="14" y2="8"
+              stroke="black" stroke-opacity="0.5" stroke-width="0.02rem"/>
+        <line x1="6" y1="10" x2="14" y2="10"
+              stroke="black" stroke-opacity="0.5" stroke-width="0.02rem"/>
+        <line x1="6" y1="12" x2="14" y2="12"
+              stroke="black" stroke-opacity="0.5" stroke-width="0.02rem"/>
+        <line x1="6" y1="14" x2="14" y2="14"
+              stroke="black" stroke-opacity="0.5" stroke-width="0.02rem"/>
+        <line x1="6" y1="16" x2="14" y2="16"
+              stroke="black" stroke-opacity="0.5" stroke-width="0.02rem"/>
+        <line x1="6" y1="18" x2="14" y2="18"
+              stroke="black" stroke-opacity="0.5" stroke-width="0.02rem"/>
+      </g>
+    </defs>
+    <rect x="0" y="0" width="164" height="90" fill="#edeeef"/>
+    <use x="0" y="0" xlink:href="#document"/>
+    <use x="16" y="0" xlink:href="#document"/>
+    <use x="32" y="0" xlink:href="#document"/>
+    <use x="48" y="0" xlink:href="#document"/>
+    <use x="64" y="0" xlink:href="#document"/>
+    <use x="80" y="0" xlink:href="#document"/>
+    <use x="96" y="0" xlink:href="#document"/>
+    <use x="112" y="0" xlink:href="#document"/>
+    <use x="128" y="0" xlink:href="#document"/>
+    <use x="144" y="0" xlink:href="#document"/>
+</svg>
