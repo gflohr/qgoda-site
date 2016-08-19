@@ -37,18 +37,18 @@
         <use x="144" y="0" xlink:href="#document"/>
       </g>
     </defs>
-    <rect x="0" y="0" width="98" height="104" fill="#edeeef"/>
+    <rect x="0" y="0" width="164" height="82" fill="#edeeef"/>
     <use x="0" y="0" xlink:href="#document-row"/>
     <use x="0" y="20" xlink:href="#document-row"/>
     <use x="0" y="40" xlink:href="#document-row"/>
     <use x="0" y="60" xlink:href="#document-row"/>
     <use x="0" y="80" xlink:href="#document-row"/>
 
-    <rect x="98" y="0" width="66" height="104" fill="#2b689c"
+    <rect x="0" y="82" width="164" height="22" fill="#d97319"
           opacity="0.5"/> 
-    <text x="128" y="34" 
+    <text x="4" y="96" 
           font-family="Monospace"
-          font-size="50%"
+          font-size="45%"
           fill="white"
-          text-anchor="middle">lingua="en"</text>
+          text-anchor="left">tags="Qgoda or Plug-Ins"</text>
 </svg>
