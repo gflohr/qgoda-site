@@ -4,25 +4,27 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-sm-8">
-        <h1>[% asset.title %]</h1>
+      <div class="col-sm-8 content">
+        <div class="content-head">
+          <h1>[% asset.title %]</h1>
+          <div class="description">
+            [% asset.description %]
+          </div>
+        </div>
         [% asset.content %]
       </div>
       <div class="col-sm-3 offset-sm-1 sidebar">
-        sidebar
+        [% INCLUDE partials/body/sidebar.html %] 
       </div>
     </div>
   </div>
 
   <!-- Footer Section -->
   <footer id="footer" class="bg-warning-opaque">
-    <div class="container">
-      <p>
-        Footer ...
-      </p>
-    </div>
+  [% INCLUDE partials/body/footer.html %]
   </footer>
   <!-- Footer Section End -->
+
   [% PROCESS functions/scripts.tt %]
 </body>
 

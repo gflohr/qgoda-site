@@ -31,13 +31,25 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     color: #cdddeb;
 }
 
-h1, .h1, .sidebar {
+.sidebar, .content-head {
     margin-top: 2rem;
+    @media (min-width: 768px) {
+        margin-top: 5rem;
+    }
+}
+
+.content-head {
+    margin-bottom: 2rem;
+
+    .description {
+        font-size: 1.1rem;
+        color: $gray-light;
+    }
 }
 
 .nav-link:hover, .nav-link:focus {
-  color: $qgoda-nav-link-color;
-  background-color: transparent;
+    color: $qgoda-nav-link-color;
+    background-color: transparent;
 }
 
 .nav-link.active {
@@ -51,5 +63,76 @@ h1, .h1, .sidebar {
 @media (max-width: 767px) {
     .qgoda-brand {
        @include clearfix(); 
+    }
+}
+
+.sidebar {
+    ol {
+        list-style: outside none none;
+        padding: 0;
+    }
+    @media (max-width: 767px) {
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+            font-size: 100%;
+            font-weight: bold;
+        }
+    }
+}
+
+footer {
+    padding: 1rem;
+    font-size: smaller;
+    color: #fff;
+    width: 100%;
+    margin-top: 3rem;
+    a {
+        color: #fff;
+        padding-left: 0;
+        padding-right: 1rem;
+        text-decoration: underline;
+    }
+    div {
+        margin: 0 auto;
+    }
+}
+
+td.linenos {
+    padding: 0 1px 0 0;
+}
+
+td.code {
+    padding: 0;
+}
+
+.linenodiv {
+    color: $brand-primary;
+    background: $gray-lightest;
+    border-left: 0.35rem solid $brand-primary;
+    border-top-left-radius: 0.3rem;
+    border-bottom-left-radius: 0.3rem;
+    padding-left: 0.6rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.1rem;
+}
+
+.highlight {
+    width: 100%;
+    background: $gray-lightest;
+    background-image: url(/assets/images/square-white.svg);
+    background-size: 1.5rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.1rem;
+    margin-bottom: 1rem;
+    pre {
+        line-height: $line-height-base;
+        padding-left: 0.5rem;
+    }
+}
+
+.highlighttable {
+    width: 100%;
+    margin-bottom: 1rem;
+    .highlight {
+        margin-bottom: 0;
     }
 }

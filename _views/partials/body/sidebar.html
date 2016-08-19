@@ -1,0 +1,20 @@
+<div class="sidebar-module">
+  <h4>Introduction</h4>
+  <ol>
+    <li><a href="/docs/about/">About Qgoda</a></li>
+    <li><a href="/docs/installation/">Installation</a></li>
+    <li><a href="/docs/help/">Getting Help</a></li>
+  </ol>
+</div>
+<div class="sidebar-module">
+  <h4>Documentation</h4>
+  <ol>
+    <li>
+      [% IF asset.permalink == '/docs/output-location/' %]
+      <i class="fa fa-hand-o-right"></i>&nbsp;Output Location
+      [% ELSE %]
+      <a href="/docs/output-location/">Output Location</a>
+      [% END %]
+    </li>
+  </ol>
+</div>

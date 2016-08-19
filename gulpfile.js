@@ -65,7 +65,7 @@ var paths = {
     },
     browserSync: {
         baseDir: '_site',
-        watch: ['_site']
+        watch: ['_site/**/*']
     }
 };
 
@@ -98,7 +98,7 @@ gulp.task('sass', function() {
         })}))
     .pipe(sourcemaps.init())
     .pipe(sass({includePaths: paths.sass.include}))
-    .pipe(postcss([ autoprefixer({ browsers: [ 'last 2 versions' ]}) ]))
+    .pipe(postcss([ autoprefixer({ browsers: [ 'last 4 versions' ]}) ]))
     .pipe(cleanCSS({compatibility: 'ie8'}))
     .pipe(rename({
         extname: '.min.css'
