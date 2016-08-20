@@ -1,0 +1,15 @@
+[% SWITCH type %]
+  [% CASE 'warning' %]
+    [% class = 'warning'; icon = 'exclamation' %]
+  [% CASE %]
+    [% class = 'info'; icon = 'lightbulb-o' %]
+[% END %]
+<div class="alert alert-[% class %]" role="alert">
+  <div>
+    <strong>
+      <i class="fa fa-[% icon %]"></i>
+      <span class="title">[% title %]</span>
+    </strong>
+  </div>
+  <p>[% content %]</p>
+</div>
