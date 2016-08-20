@@ -23,5 +23,26 @@
       <a href="/docs/taxonomies/">Taxonomies</a>
       [% END %]
     </li>
+    <li>
+      [% IF asset.permalink == '/docs/listings/' %]
+      <i class="fa fa-hand-o-right"></i>&nbsp;Listings
+      [% ELSE %]
+      <a href="/docs/listings/">Listings</a>
+      [% END %]
+    </li>
+    <li>
+      [% IF asset.permalink == '/docs/internal-links/' %]
+      <i class="fa fa-hand-o-right"></i>&nbsp;Internal Links
+      [% ELSE %]
+      <a href="/docs/output-links/">Internal Links</a>
+      [% END %]
+    </li>
+    <li>
+      [% IF asset.permalink == '/docs/related-documents/' %]
+      <i class="fa fa-hand-o-right"></i>&nbsp;Related Documents
+      [% ELSE %]
+      <a href="/docs/related-documents/">Related Documents</a>
+      [% END %]
+    </li>
   </ol>
 </div>

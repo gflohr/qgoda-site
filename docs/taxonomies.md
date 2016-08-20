@@ -58,3 +58,14 @@ and "Plug-Ins".
 By combining taxonomies you can define arbitrary subsets of a site's documents.
 You can for example identify all English documents tagged with "Qgoda" or
 "Plug-Ins" by `OR`'-ing the two above conditions.
+
+<figure class="figure w-100">
+  <img src="/assets/images/taxonomies/taxonomies-combined.svg"
+       class="large-image figure-img img-fluid img-rounded d-block m-x-auto"
+       alt="Combining taxonomies can create arbitrary partitions of a site." />
+  <figcaption class="figure-caption text-xs-center">
+    All English documents tagged with "Qgoda" or "Plug-Ins". 
+  </figcaption>
+</figure>
+
+
