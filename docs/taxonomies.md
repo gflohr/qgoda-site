@@ -1,5 +1,8 @@
 ---
 title: Taxonomies
+name: taxonomies
+order: 20
+doc-section: Documentation
 view: docs.html
 description: Taxonomies partition your site according to arbitrary aspects.
 ---
