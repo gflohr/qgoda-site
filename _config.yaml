@@ -10,9 +10,15 @@ defaults:
     subdirs:
       en:
         values:
-          linguas: en
+          lingua: en
       de:
         values:
-          linguas: de
+          lingua: de
+  en:
+    values:
+      lingua: en
+  de:
+    values:
+      lingua: de
 taxonomies:
   'doc-section': ~
