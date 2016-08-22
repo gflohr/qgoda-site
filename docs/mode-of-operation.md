@@ -40,3 +40,12 @@ they are - for example - compiled from `.md`
 into `.html` files.  Another reason is link modelling.  Many people
 prefer a link like `/news/new-version-released/` over
 `/news/new-version-released.html`.
+
+## Default Processor Chain
+
+By default, documents are first processed by the Markdown plug-in and
+then expanded with the Template Toolkit.  The resulting output is
+then wrapped into a layout template, normally also processed with the
+Template Toolkit.  You normally do not have to wrack your brains about
+the exact order of things.  Most of the time, it is enough to assume that
+you can freely mix Markdown with Template Toolkit syntax.
