@@ -1,0 +1,14 @@
+<div class="sidebar-module">
+  <h4>[% title %]</h4>
+  <ol>
+  [% FOREACH doc IN q.sortBy('order', q.list(['doc-section', title])) %]
+    <li>
+      [% IF asset.permalink == doc.permalink %]
+      <i class="fa fa-hand-o-right"></i>&nbsp;[% doc.title %]
+      [% ELSE %]
+      <a href="[% doc.permalink %]">[% doc.title %]</a>
+      [% END %]
+    </li>
+  [% END %]
+  </ol>
+</div>
