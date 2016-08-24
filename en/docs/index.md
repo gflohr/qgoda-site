@@ -1,5 +1,5 @@
 ---
-location: /docs/index.html
+location: /{lingua}/docs/index.html
 title: Documentation
 categories: Documentation
 view: docs.html

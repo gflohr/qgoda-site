@@ -6,8 +6,7 @@ permalink: /{lingua}/
 chain: html
 wrapper: html
 ---
-<h1>Lingua: [% asset.lingua %]
 [% USE q = Qgoda %]
-[% q.include('_includes/landing-page/header.md') %]
-[% q.include('_includes/landing-page/main-features.md') %]
-[% q.include('_includes/landing-page/about.md') %]
+[% q.include('_includes/landing-page/header.md', asset) %]
+[% q.include('_includes/landing-page/main-features.md', asset) %]
+[% q.include('_includes/landing-page/about.md', asset) %]
