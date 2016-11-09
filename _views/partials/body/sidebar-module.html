@@ -1,7 +1,8 @@
+[% USE q = Qgoda %]
 <div class="sidebar-module">
   <h4>[% title %]</h4>
   <ol>
-  [% FOREACH doc IN q.sortBy('order', q.list(['doc-section', title])) %]
+  [% FOREACH doc IN q.list(['doc-section', title]).sortBy('order') %]
     <li>
       [% IF asset.permalink == doc.permalink %]
       <i class="fa fa-hand-o-right"></i>&nbsp;[% doc.title %]
