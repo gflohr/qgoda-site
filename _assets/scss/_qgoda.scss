@@ -88,8 +88,12 @@ footer {
     a {
         color: #fff;
         padding-left: 0;
-        padding-right: 1rem;
         text-decoration: underline;
+    }
+    .footer-links {
+        a {
+            padding-right: 1rem;
+        }
     }
     div {
         margin: 0 auto;
