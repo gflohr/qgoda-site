@@ -8,6 +8,8 @@ description: How to exclude (or include) additional paths in Qgoda.
 ---
 By default, Qgoda does not process hidden files and directories (name starts with a dot `.`).  Top-level files and directories that have names beginning with an underscore `_` are also excluded.
 
+<!--TOC-->
+
 ## Excluding Additional Files
 
 You can change this default behavior by configuring additional file name patterns in the variable `exclude` in the configuration file `_config.yml`.
@@ -112,3 +114,11 @@ exclude_watch:
 [% END %]
 
 You can see that the directories `_views` and `_includes` have been re-included.  They typically contain layout/design files.  They deserve a ... do they?????
+
+## Patterns
+
+### Special Characters
+
+### Negating Patterns
+
+### Slashes

@@ -6,13 +6,14 @@ use strict;
 
 use HTML::Parser;
 
-use Qgoda::Util qw(flatten2hash);
+use Qgoda::Util qw(flatten2hash slugify html_escape);
 use Qgoda::Config;
+use Qgoda;
 
 use base qw(Qgoda::Processor);
 
 sub new {
-        my ($class) = @_;
+        my ($class, @other) = @_;
 
         my $flat_config = flatten2hash(Qgoda::Config->default);
         my %vars;
@@ -71,17 +72,13 @@ sub process {
     my $comment_handler = sub {
         my ($text) = @_;
 
-        if ($text =~ /^<!--\[if/i) {
+        if ('<!--TOC-->' eq $text || $text =~ /^<!--\[if/i) {
         	$output .= $text;
         }        
     };
  
     my $end_handler = sub {
         my ($tagname) = @_;
-
-        if ($output =~ />exclude$/) {
-               $DB::single = 1;
-        }
 
         my $text = "</$tagname>";
 
@@ -102,7 +99,114 @@ sub process {
                                    );
     $parser->parse($content);
 
+    if ($output =~ /<!--TOC-->/) {
+        my $toc;
+        ($output, $toc) = $self->__generateTOC($output);
+        my $snippet = '';
+        if (@$toc) {
+            my %asset = %$asset;
+            $asset{toc} = $toc;
+
+            my $tt2 = Qgoda->new->getProcessor('Qgoda::Processor::TT2');
+
+            my $template = 'partials/body/toc.html';
+            my $content = qq{[% INCLUDE $template %]};
+            $snippet = $tt2->process($content, \%asset, $site);
+        }
+        $output =~ s/<!--TOC-->/$snippet/g;
+    }
+
     return $output;    
+}
+
+sub __deepen {
+    my ($self, $items) = @_;
+
+    return [] if !@$items;
+
+    my $root = {
+        children => [],
+    };
+
+    foreach my $item (@$items) {
+        my @path = @{$item->{path}};
+        $item->{children} = [];
+        my $cursor = $root->{children};
+        for (my $i = 0; $i < $#path; ++$i) {
+            $cursor = $cursor->[$path[$i] - 1]->{children};            
+        }
+        $cursor->[$path[-1] - 1] = $item;
+    }
+
+    foreach my $item (@$items) {
+        delete $item->{children} if !@{$item->{children}};
+    }
+
+    return $root->{children};
+}
+
+sub __generateTOC {
+    my ($self, $html) = @_;
+
+    my @headlines = @_;
+    my @path = (0);
+    my $start_level = 2;
+    my $lingua = 'en';
+    my %slugs;
+    my @items;
+
+    my $headline = sub {
+        my ($hn, $text) = @_;
+
+        my $level = $hn - $start_level + 1;
+
+        my $depth = @path;
+
+        my $valid = 1;
+        if ($depth > $level) {
+            foreach ($level .. $depth - 1) {
+                pop @path;
+            }
+            ++$path[-1];
+        } elsif ($depth + 1 == $level) {
+            push @path, 1;
+        } elsif ($depth == $level) {
+            ++$path[-1];
+        } else {
+            undef $valid;
+        }
+
+        my $anchor = '';
+        if ($valid) {
+            my $slug = html_escape slugify $text;
+            while ($slugs{$slug}) {
+                $slug .= '-';
+            }
+            $slugs{$slug} = 1;
+            
+            $anchor = qq{<a href="#" name="$slug"></a>};
+
+            push @items, {
+                slug => $slug,
+                path => [@path],
+                text => $text,
+            };
+        }
+
+        my $replace = "$anchor<h$hn>$text</h$hn>";
+
+        return $replace;
+    };
+
+    $html =~ s{
+        <h([$start_level-6])>(.*?)</h\1>
+    }{
+        $headline->($1, $2);
+    }gexs;
+    
+    my $root = $self->__deepen(\@items);
+    
+    return $html, $root;
 }
 
 1;

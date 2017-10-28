@@ -1,6 +1,6 @@
 [% USE q = Qgoda %]
 <div class="sidebar-module">
-  <h4>[% title %]</h4>
+  <h4 class="sidebar-title">[% title %]</h4>
   <ol>
   [% FOREACH doc IN q.list(['doc-section', title]).sortBy('order') %]
     <li>
