@@ -19,7 +19,7 @@ configurable chains of processor plug-ins.
 Files to be copied are selected using a simple naming convention.  All files
 or directories starting with an underscore (`_site`, `_include`, `_views`,
 ...) are ignored, everything else gets copied.  You can modify this with
-the configuration variables `exclude` and `include`.
+the configuration variable `exclude`.
 
 ## What are Assets?
 

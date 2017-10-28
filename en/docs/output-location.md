@@ -16,6 +16,8 @@ By default, an asset's location is simply preserved.  That means if you have an
 asset `{srcdir}/assets/images/logo.jpeg` it will be copied to
 `{sitedir}/assets/images/logo.jpeg`. 
 
+<!--TOC-->
+
 ## Path Translation
 
 Processed assets are subject to path translation.  Their relative path to

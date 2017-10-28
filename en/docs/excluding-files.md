@@ -115,9 +115,96 @@ exclude_watch:
 
 You can see that the directories `_views` and `_includes` have been re-included.  They typically contain layout/design files.  They deserve a ... do they?????
 
-## Patterns
+## Gory Details Of Pattern Matching
+
+The patterns you can use for the variable `exclude` follow the convention of [gitignore](https://git-scm.com/docs/gitignore), only that you put your configuration in [YAML](http://yaml.org/) file `_config.yaml`.
 
 ### Special Characters
+
+Some characters in patterns have a special meaning.
+
+#### The Star/Asterisk "*"
+
+The star or asterisk stands for an arbitrary number of characters except for a slash:
+
+[% FILTER pygments 'yaml' %]
+exclude:
+- images/*.xcf
+[% END %]
+
+This will exclude all XCF files in the subdirectory `images` for example `images/logo.xcf` but *not* `images/ci/logo.xcf` (because the star/asterisk does not match a slash).
+
+Note that `*.xcf` also matches the file `.xcf`.  The star stands for an arbitrary number of characters and that includes zero characters.
+
+#### The Double Star/Asterisk "**"
+
+Two consecutive stars `**` stand for any sequence of characters including the slash.
+
+[% FILTER pygments 'yaml' %]
+exclude:
+- images/**/*.xcf
+[% END %]
+
+This now matches `images/ci/logo.xcf` *and* `images/logo.xcf` and also `images/nothing/beats/nesting/logo.xcf`.  The pattern `**` matches recursively.
+
+#### The Exclmation Mark "!"
+
+The exclamation mark negates a pattern.  See [below](#negating-patterns) for details.
+
+#### The Question Mark "?"
+
+The question mark standard for any character except for a slash.
+
+[% FILTER pygments 'yaml' %]
+exclude:
+- images/corporate?logos
+[% END %]
+
+This matches `images/corporate-logos` and `images/corporate_logos` and `images/corporatedQlogos` and `images/corporate&logos`.
+
+#### Character [Ranges]
+
+It's getting esoteric.
+
+[% FILTER pygments 'yaml' %]
+exclude:
+- images/[abc].jpeg
+[% END %]
+
+This matches exactly `images/a.jpeg`, `images/b.jpeg`, and `images/c.jpeg`.  Instead, you could also write this:
+
+[% FILTER pygments 'yaml' %]
+exclude:
+- images/[a-c].jpeg
+[% END %]
+
+Read the `[a-c]` as "all characters from a to c".
+
+You can combine ranges:
+
+[% FILTER pygments 'yaml' %]
+exclude:
+- images/[a-z0-9].jpeg
+[% END %]
+
+This would now match `x.jpeg` and `3.jpeg`.
+
+Note that `[]` does not stand for no character.  It is simply not special.  Use `[]abc]` if you want to match "a", "b", "c", and a closing square bracket.
+
+And put the hyphen at the front if you want to match it: `[-a-zA-Z0-9]`.  That matches all alphanumeric characters and the hyphen.
+
+You can also use named character classes like `[a-zA-Z[:digit:]]` where `[:digit]` stands for any digit in the current locale.  Using this feature is discouraged unless you understand it.
+
+#### The Backslash \
+
+You can escape any character by preceding it with a backslash "\".
+
+[% FILTER pygments 'yaml' %]
+exclude:
+- images/Quo Vadis\?.jpeg
+[% END %]
+
+This matches only `images/Quo Vadis?.jpeg` but not `images/Quo VadissX.jpeg`.  The question mark has lost its special meaning by the preceding backslash.
 
 ### Negating Patterns
 
