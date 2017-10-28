@@ -65,7 +65,7 @@ var paths = {
     },
     browserSync: {
         baseDir: '_site',
-        watch: ['_site/**/*']
+        watch: ['_timestamp']
     }
 };
 

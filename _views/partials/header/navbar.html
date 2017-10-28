@@ -1,3 +1,4 @@
+[% USE gtx = Gettext %]
 <nav class="navbar navbar-full navbar-dark bg-warning">
   <button class="navbar-toggler hidden-md-up toaster pull-left" type="button" 
           data-toggle="collapse" data-target="#navbarCollapsing" 
@@ -17,19 +18,19 @@
       <li class="nav-item hidden-md-up">
         <a class="nav-link" href="/"
            title="Qgoda Start Page">
-          <i class="fa fa-home"></i>&nbsp;Home</a>
+          <i class="fa fa-home"></i>&nbsp;[% gtx.gettext('Home') %]</a>
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/"
            title="Qgoda News">
-          <i class="fa fa-newspaper-o"></i>&nbsp;News</i>
+          <i class="fa fa-newspaper-o"></i>&nbsp;[% gtx.gettext('News') %]</i>
         </a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="/docs"
+        <a class="nav-link" href="/en/docs/"
            title="Qgoda Documentation">
-          <i class="fa fa-check"></i>&nbsp;Docs</a>
+          <i class="fa fa-check"></i>&nbsp;[% gtx.gettext('Docs') %]</a>
         </a>
       </li>
       <li class="nav-item">

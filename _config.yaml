@@ -22,3 +22,14 @@ defaults:
       lingua: de
 taxonomies:
   'doc-section': ~
+  name: ~
+processors:
+  chains:
+    html:
+      modules:
+        - TT2
+        - HTMLCleaner
+po:
+  xgettext:
+    text:
+      - en
