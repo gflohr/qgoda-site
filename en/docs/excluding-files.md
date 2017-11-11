@@ -195,7 +195,7 @@ And put the hyphen at the front if you want to match it: `[-a-zA-Z0-9]`.  That m
 
 You can also use named character classes like `[a-zA-Z[:digit:]]` where `[:digit]` stands for any digit in the current locale.  Using this feature is discouraged unless you understand it.
 
-#### The Backslash \
+#### The Backslash "\"
 
 You can escape any character by preceding it with a backslash "\".
 

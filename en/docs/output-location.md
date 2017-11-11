@@ -180,8 +180,9 @@ customization:
   <dt>date.ihour12</dt>
   <dd>The hour of the day (1-12) on a 12-hour clock without the leading zero.</dd>
   <dt>date.ampm</dt>
-  <dd>The string "a. m." before noon, the string "p. m." after noon.  Note that
-      this is not localized!</dd>
+  <dd>The national representation of either "ante meridiem"
+      (a.m.)  or "post meridiem" (p.m.)  as appropriate.  This can be
+      an empty string, depending on the currently selected locale.</dd>
   <dt>date.min</dt>
   <dd>The minutes (01-59).</dd>
   <dt>date.imin</dt>
@@ -191,8 +192,7 @@ customization:
   <dt>date.isec</dt>
   <dd>The seconds (1-60) without the leading zero.</dd>
   <dt>date.dst</dt>
-  <dd>The string "dst" if daylight savings time is in use.  Note that this
-      is not localized!</dd>
+  <dd>The string "DST" (may be translated!) if Daylight Savings Time is in use</dd>
   <dt>location</dt>
   <dd>The computed location of the document.  Before the location is computed,
       the variable is a synonym for "path".</dd>

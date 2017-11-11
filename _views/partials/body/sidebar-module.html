@@ -2,7 +2,7 @@
 <div class="sidebar-module">
   <h4 class="sidebar-title">[% title %]</h4>
   <ol>
-  [% FOREACH doc IN q.list(['doc-section', title]).sortBy('order') %]
+  [% FOREACH doc IN q.llist('doc-section' = title).sortBy('order') %]
     <li>
       [% IF asset.permalink == doc.permalink %]
       <i class="fa fa-hand-o-right"></i>&nbsp;[% doc.title %]

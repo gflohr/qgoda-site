@@ -2,24 +2,25 @@ title: Qgoda
 linguas: [en, de]
 exclude: [node_modules, package.json, gulpfile.js]
 helpers:
-  - gulp
+  gulp: npm start
+  browser-sync: npm run server
 defaults:
-  posts:
+  - files: /posts
     values:
       type: post
-    subdirs:
-      en:
-        values:
-          lingua: en
-      de:
-        values:
-          lingua: de
-  en:
+  - files: /posts/en
     values:
       lingua: en
-  de:
+  - files: /posts/de
     values:
       lingua: de
+  - files: /en
+    values:
+      lingua: en
+  - files: /de
+    values:
+      lingua:
+        de
 taxonomies:
   'doc-section': ~
   name: ~

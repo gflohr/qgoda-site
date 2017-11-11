@@ -33,7 +33,7 @@ simply <em>documents</em>.  Unqualified content is called <em>raw</em>.
 [% USE q = Qgoda %]
 
 Cooked assets are subject to [path translation]([% 
-q.link(['name', 'output-location']) %]).  One reason is that input files
+q.llink(name = 'output-location') %]).  One reason is that input files
 typically have a different file format than the resulting output files,
 they are - for example - compiled from `.md`
 <a href="https://daringfireball.net/projects/markdown/">Markdown</a> files

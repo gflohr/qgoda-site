@@ -14,7 +14,7 @@ Setting up your own blog, portfolio or company web site with Qgoda is simple
 and straightforward.  Yet, Qgoda comes with a unique feature set that makes even complex websites feasible and fun to implement.  The highlights are:
 
 - A powerful yet easy to learn templating language.
-- Arbitrary [taxonomies]([% q.llink(asset.lingua, ['name', 'taxonomies']) %])
+- Arbitrary [taxonomies]([% q.llink(name = 'taxonomies') %])
   like categories, tags, languages, abstract names or whatever you want.
   Structuring your documents or linking to a specific document is possible 
   in a very flexible way.

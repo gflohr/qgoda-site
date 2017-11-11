@@ -20,13 +20,13 @@ Set to 0 if you want to ignore case of filenames, 1 otherwise.  It is probably w
 [% WRAPPER components/variable.html
    variable="exclude" type=gtx.gettext('Array') 
    default=gtx.gettext('empty') -%]
-A list of files and directories that should not be processed.  Patterns are allowed.  See <a href="[% q.llink(asset.lingua, ['name', 'excluding-files']) %]">[% q.lxref('title', asset.lingua, ['name', 'excluding-files']) %]</a>!
+A list of files and directories that should not be processed.  Patterns are allowed.  See <a href="[% q.llink(name = 'excluding-files') %]">[% q.lxref('title', name = 'excluding-files') %]</a>!
 [%- END %]
 
 [% WRAPPER components/variable.html
    variable="exclude_watch" type=gtx.gettext('Array') 
    default=gtx.gettext('same as "exclude" above') -%]
-A list of files and directories that should not trigger a rebuild, when they change.  Patterns are allowed.  See <a href="[% q.llink(asset.lingua, ['name', 'excluding-files']) %]">[% q.lxref('title', asset.lingua, ['name', 'excluding-files']) %]</a>!
+A list of files and directories that should not trigger a rebuild, when they change.  Patterns are allowed.  See <a href="[% q.llink(name = 'excluding-files') %]">[% q.lxref('title', name = 'excluding-files') %]</a>!
 [%- END %]
 
 [% WRAPPER components/variable.html

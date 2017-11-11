@@ -16,7 +16,6 @@ var jsValidate = require('gulp-jsvalidate');
 var gutil = require('gulp-util');
 var plumber = require('gulp-plumber');
 var notify = require('gulp-notify');
-var browserSync = require('browser-sync').create();
 var mkdirp = require('mkdirp');
 
 var src = { dir: '.' };
@@ -62,10 +61,6 @@ var paths = {
                  ],
             dest: dest.jsdir
         }
-    },
-    browserSync: {
-        baseDir: '_site',
-        watch: ['_timestamp']
     }
 };
 
@@ -142,27 +137,13 @@ gulp.task('watch', function() {
     gulp.watch(paths.sass.watch, ['sass']);
     gulp.watch(paths.js.app.src, ['js.app']);
     gulp.watch(paths.js.vendor.src, ['js.vendor']);
-    gulp.watch(paths.browserSync.watch, ['browser-sync-reload']);
-});
-
-gulp.task('browser-sync-reload', function() {
-    browserSync.reload();
-});
-
-gulp.task('browser-sync', function(callback) {
-    browserSync.init({
-        server: {
-            baseDir: paths.browserSync.baseDir
-        },
-        browser: "google chrome"
-    }, callback);
 });
 
 gulp.task('default', function(callback) {
     runSequence(
         ['clean'],
         ['build'],
-        ['watch', 'browser-sync'],
+        ['watch'],
         callback
     );
 });

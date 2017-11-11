@@ -26,7 +26,7 @@ Listings are created by the template functions `list()` or `listPosts()`.
 [% TAGS [- -] %]
 [- FILTER pygments 'html' -]
 [% USE q = Qgoda %]
-[% FOREACH post IN q.list(['type', 'post'], ['lingua', asset.lingua]) %]
+[% FOREACH post IN q.llistPosts %]
   <a href="[% post.permalink %]">
     <div class="blog-post">
       <h3>[% post.title %]</h3>
