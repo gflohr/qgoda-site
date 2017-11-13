@@ -82,10 +82,21 @@ sub process {
 
         my $text = "</$tagname>";
 
-        if ('code' eq $tagname && $output =~ s/>($self->{__config_var_re})$//) {
-            my $varname = $1;
-            $text = qq{><a href="../configuration-variables/#$varname">$varname</a>}
-                    . $text;
+        if ('code' eq $tagname) {
+            if ($output =~ s/>C:($self->{__config_var_re})$//) {
+                my $varname = $1;
+                $text = qq{><a href="../configuration-variables/#$varname">$varname</a>}
+                        . $text;
+            } elsif ($output =~ s{>P:([-._a-zA-Z0-9/]+$)}{}) {
+                my $path = $1;
+                $text = qq{><a href="../files-and-directories/#$path">$path</a>}
+                        . $text;
+            }
+        } elsif ('q-term' eq $tagname
+                 && $output =~ s{<q-term>([^<]+$)}{}) {
+                my $anchor = lc $1;
+                my $label = $1;
+                $text = qq{<a href="../terms-and-concepts/#$anchor">$label</a>};
         }
 
         $output .= $text;

@@ -12,7 +12,7 @@ By default, Qgoda does not process hidden files and directories (name starts wit
 
 ## Excluding Additional Files
 
-You can change this default behavior by configuring additional file name patterns in the variable `exclude` in the configuration file `_config.yml`.
+You can change this default behavior by configuring additional file name patterns in the variable `C:exclude` in the configuration file `P:_config.yml`.
 
 Example:
 
@@ -90,9 +90,9 @@ You have to keep in mind that Qgoda has prepended this list with `/_*` (see abov
 
 ## Excluding Files From Being Watched
 
-There is another configuration variable `exclude_watch` that specifies files and directories that should not be watched.  If you omit that variable, the contents of `exclude` is taken instead.
+There is another configuration variable `C:exclude_watch` that specifies files and directories that should not be watched.  If you omit that variable, the contents of `exclude` is taken instead.
 
-Note that Qgoda by default re-includes the directories `_views` and `_includes` (configuration variables `directories.views` and `directories.includes`).
+Note that Qgoda by default re-includes the directories `P:_views` and `P:_includes`.
 
 Example:
 

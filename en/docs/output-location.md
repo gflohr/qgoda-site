@@ -51,8 +51,8 @@ used by all common web servers.
 ## Suffix Translation
 
 Asset processing is triggered by the suffixes of the source file.  The triggers
-are defined in the variable `processors.triggers` in the site configuration
-file `_config.yaml`.  Look at this excerpt of the Qgoda default configuration:
+are defined in the variable `C:processors.triggers` in the site configuration
+file `P:_config.yaml`.  Look at this excerpt of the Qgoda default configuration:
 
 [% USE Pygments linenos='table' %]
 [% FILTER pygments 'yaml' %]
@@ -124,12 +124,12 @@ the permalink `/posts/en/about-qgoda/`.
 ## Customization
 
 You can fully customize both output location and permalinks by setting the
-variables `location` or `permalink` respectively in the front matter of an
-asset, as a default for a certain directory or site wide in `_config.yaml`.
+variables `C:location` or `C:permalink` respectively in the front matter of an
+asset, as a default for a certain directory or site wide in `C:_config.yaml`.
 
 You can interpolate all kinds of asset variables into the configured string
 by placing them inside {curly} braces.  For example the default configuration
-for the variable `location` is `/{directory}/{basename}/{config.index}.{suffix}`.
+for the variable `C:location` is `/{directory}/{basename}/{config.index}.{suffix}`.
 
 The following variables are meaningful for location and permalink 
 customization:

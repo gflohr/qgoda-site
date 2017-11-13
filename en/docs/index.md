@@ -10,6 +10,18 @@ Qgoda is a static site generator.  It is mainly intended for blogs but you
 can build any website you want with it.  And by the way, it is pronounced
 "yagoda".
 
+[% WRAPPER components/infobox.html
+           type='warning' title='This Is a Draft!' %]
+This documentation is work in progress.  A lot of stuff is missing here,
+and part of the stuff documented here documents a past or future state
+of the software.  Well, and some parts of this documentation are plain
+wrong.  That being said, it should also be clear that features can still
+change without notice, whether they are documented or not.
+
+Nonetheless, Qgoda is in productive use since mid 2016 and already
+generating a handful of web sites without problems.
+[% END %]
+
 Setting up your own blog, portfolio or company web site with Qgoda is simple
 and straightforward.  Yet, Qgoda comes with a unique feature set that makes even complex websites feasible and fun to implement.  The highlights are:
 
@@ -22,3 +34,11 @@ and straightforward.  Yet, Qgoda comes with a unique feature set that makes even
   languages on request.
 - Built-in multi-language support for websites with an international
   audience or documentation (like this one).
+
+[% WRAPPER components/infobox.html
+           type='info' title='Run Your Local Version!' %]
+This documenation is also generated using Qgoda.  You can check out the
+[github sources](https://github.com/gflohr/qgoda), install Qgoda and
+npm, type `qgoda watch` to build your own local version of the
+documentation.
+[% END %]

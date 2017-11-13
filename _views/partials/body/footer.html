@@ -1,10 +1,18 @@
+[% USE gtx = Gettext %]
+[% USE q = Qgoda %]
 <div class="container">
   <div class="col-md-7">
-    Copyright © 2016 <a href="http://www.cantanea.com/">cantanea EOOD</a>,
-    all rights reserved.
+    [% copyright_link = gtx.gettext('<a href="' 
+                                     _ config.legal.copyright_uri
+                                     _ '">'
+                                     _ config.legal.name
+                                     _ '</a>') %]
+    [% gtx.xgettext("Copyright © {copyright_year} {copyright_holder}, all rights reserved.",
+                    copyright_year=config.legal.copyright_year
+                    copyright_holder=copyright_link) %],
   </div>
   <div class="col-md-5 footer-links">
-    <a href="/legal-disclosure/">Legal Disclosure</a>
-    <a href="/privacy-policy/">Privacy Policy</a>
+    <a href="#">Legal Disclosure</a>
+    <a href="[% q.llink(name='data-privacy-policy') %]">Data Privacy Policy</a>
   </div>
 </div>

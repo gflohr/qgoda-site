@@ -17,9 +17,9 @@ configurable chains of processor plug-ins.
 ## Asset Selection
 
 Files to be copied are selected using a simple naming convention.  All files
-or directories starting with an underscore (`_site`, `_include`, `_views`,
+or directories starting with an underscore (`P:_site`, `P:_include`, `P:_views`,
 ...) are ignored, everything else gets copied.  You can modify this with
-the configuration variable `exclude`.
+the configuration variable `C:exclude`.
 
 ## What are Assets?
 
