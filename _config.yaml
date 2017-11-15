@@ -1,6 +1,10 @@
 title: Qgoda
 linguas: [en, de]
-exclude: [node_modules, package.json, gulpfile.js]
+exclude: 
+  - /node_modules
+  - /package.json
+  - /gulpfile.js
+  - /package-lock.json
 helpers:
   gulp: npm start
   browser-sync: npm run server

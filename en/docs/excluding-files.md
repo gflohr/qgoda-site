@@ -16,14 +16,13 @@ You can change this default behavior by configuring additional file name pattern
 
 Example:
 
-[% USE Pygments linenos='table' %]
-[% FILTER pygments 'yaml' %]
+```yaml
 exclude:
 - /node_modules
 - /package.json
 - /webpack.config.js
 - assets/images/**/*.xcf
-[% END %]
+```
 
 This will also exclude the top-level directory `node_modules`, and the top-level files `package.json` and `webpack.config.js`.  Likewise, all XCF files (the image format of [The Gimp](http://www.gimp.org/) in the directory `assets/images` and all of its descendant directories are excluded.
 

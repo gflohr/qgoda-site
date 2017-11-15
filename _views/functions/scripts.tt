@@ -1,5 +1,9 @@
 [% seen = {} %]
 [% FOREACH script IN global.scripts %]
   [%- NEXT IF seen.$script; seen.$script = 1 %]
+  [%- IF (script.match('^[ \t\n]*<script')) %]
+  [%- script -%]
+  [%- ELSE %]
   <script src="[% q.bust_cache(script) | url %]" type="text/javascript"></script>
+  [%- END %]
 [% END %] 

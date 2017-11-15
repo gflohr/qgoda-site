@@ -54,8 +54,7 @@ Asset processing is triggered by the suffixes of the source file.  The triggers
 are defined in the variable `C:processors.triggers` in the site configuration
 file `P:_config.yaml`.  Look at this excerpt of the Qgoda default configuration:
 
-[% USE Pygments linenos='table' %]
-[% FILTER pygments 'yaml' %]
+```yaml
 processors:
     triggers:
         md: markdown
@@ -71,7 +70,7 @@ processors:
    modules:
        Markdown: Markdown
        HTML: Template::Toolkit
-[% END %]
+```
 
 The suffix `md` triggers the processor chain `markdown`.  This chain
 has configured an output suffix `html`.  The translated filename of the
@@ -204,7 +203,7 @@ customization:
 Note that variables are not necessarily plain old strings but can be more
 complicated.  Take this example configuration in YAML:
 
-[% FILTER pygments 'yaml' %]
+```yaml
 dictionary:
     foo: 1 # dictionary.foo
     bar: 2 # dictionary['bar']
@@ -213,6 +212,6 @@ array:
     - Tom    # array[0]
     - Dick   # array.1 also works.
     - Harry  # array['2'], you can also use double quotes.
-[% END %]
+```
 
 Quoted strings have JavaScript semantics!

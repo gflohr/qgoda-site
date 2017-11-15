@@ -22,9 +22,8 @@ Listings are created by the template functions `list()` or `listPosts()`.
     please refer to the respective documentation.
 [% END %]
 
-[% USE Pygments linenos='table' %]
 [% TAGS [- -] %]
-[- FILTER pygments 'html' -]
+```html
 [% USE q = Qgoda %]
 [% FOREACH post IN q.llistPosts %]
   <a href="[% post.permalink %]">
@@ -35,7 +34,7 @@ Listings are created by the template functions `list()` or `listPosts()`.
     </div>
   </a>
 [% END %]
-[- END -]
+```
 [- TAGS [% %] -]
 
 [% WRAPPER components/infobox.html
