@@ -38,6 +38,7 @@
     "gulp-util": "^3.0.7",
     "jquery": "^3.1.0",
     "mkdirp": "^0.5.1",
+    "prismjs": "^1.8.4",
     "qgoda-plugin-pygments": "git+file:///Users/guido/Documents/workspace/qgoda-plugin-pygments",
     "run-sequence": "^1.2.2",
     "tether": "^1.3.4"

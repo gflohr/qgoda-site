@@ -42,11 +42,10 @@ var paths = {
         include: [
                    src.sassdir,
                    'node_modules/bootstrap/scss',
-                   'node_modules/font-awesome/scss'
+                   'node_modules/font-awesome/scss',
                  ],
         watch: [src.sassdir + '/**/*.scss',
-                src.sassdir + '/**/_*.scss',
-                'node_modules/bootstrap/scss'],
+                src.sassdir + '/**/_*.scss'],
     },
     js: {
         app: {
@@ -57,7 +56,18 @@ var paths = {
             src: [
                    'node_modules/jquery/dist/jquery.js',
                    'node_modules/tether/dist/js/tether.js',
-                   'node_modules/bootstrap/dist/js/bootstrap.js'
+                   'node_modules/bootstrap/dist/js/bootstrap.js',
+                   'node_modules/prismjs/prism.js',
+                   'node_modules/prismjs/plugins/line-numbers/prism-line-numbers.js',
+                   'node_modules/prismjs/plugins/autolinker/prism-autolinker.js',
+                   'node_modules/prismjs/plugins/command-line/prism-command-line.js',
+                   'node_modules/prismjs/plugins/normalize-whitespace/prism-normalize-whitespace.js',
+                   'node_modules/prismjs/components/prism-html.js',
+                   'node_modules/prismjs/components/prism-yaml.js',
+                   'node_modules/prismjs/components/prism-markdown.js',
+                   'node_modules/prismjs/components/prism-perl.js',
+                   'node_modules/prismjs/components/prism-bash.js',
+                   'node_modules/prismjs/components/prism-javascript.js'
                  ],
             dest: dest.jsdir
         }
