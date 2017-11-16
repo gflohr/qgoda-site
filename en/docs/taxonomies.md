@@ -13,8 +13,7 @@ taxonomy.
 The concept of taxonomies is best understood by a typical example.  Consider
 a document with the following front matter:
 
-[% USE Pygments linenos='table' %]
-[% FILTER pygments 'yaml' %]
+```yaml
 ---
 title: Qgoda Pygments Plug-In
 lingua: en
@@ -25,7 +24,7 @@ tags:
   - Qgoda
 categories: Development
 ---
-[% END %]
+```
 
 Three default taxonomies are used here, `lingua`, `tags`, and `categories`.
 By convention, taxonomies that are typically single-valued use the singular

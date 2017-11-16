@@ -30,7 +30,7 @@ This will also exclude the top-level directory `node_modules`, and the top-level
 
 Internally, Qgoda does not use the configured exclusion list directly but a slightly extended one.  For the above example it looks like this:
 
-[% FILTER pygments 'yaml' %]
+```yaml
 exclude:
 - .*
 - /_*
@@ -39,7 +39,7 @@ exclude:
 - /webpack.config.js
 - assets/images/**/*.xcf
 - /_site
-[% END %]
+```
 
 The first two lines files and directories that have names beginning with a dot (`.`) or top-level files and directories that have names beginning with an underscore.
 
@@ -51,14 +51,14 @@ The last line is always appended and a safe-guard against configuration errors. 
 
 There is no configuration variable `include`.  You can exclude otherwise excluded files by prepending a pattern with an exclamation mark `!`.  The pattern is then negated:
 
-[% FILTER pygments 'yaml' %]
+```
 exclude:
 - /node_modules
 - /package.json
 - /webpack.config.js
 - assets/images/**/*.xcf
 - !/_posts
-[% END %]
+```
 
 This would now enable processing of all the files in the top-level directory `_posts`.
 
@@ -66,11 +66,11 @@ Beware though that you cannot re-include files or directories, when one of their
 
 Example:
 
-[% FILTER pygments 'yaml' %]
+```yaml
 exclude:
 - /archive
 - !/archive/2017
-[% END %]
+```
 
 The second pattern is invalid and ignored because `/archive` is a parent directory of `/archive/2017`.
 
@@ -78,13 +78,12 @@ This behavior has performance reasons.  When Qgoda collects files, it does not d
 
 That leads to a little problem if you want to re-include a subdirectory of an automatically excluded directory, for example `_experiments/stable`.  The top-level directory `_experiments` is automatically excluded by Qgoda.  In order to re-include it, you would have to do the following:
 
-[% FILTER pygments 'yaml' %]
+```yaml
 exclude:
 - !/_experiments
 - /_experiments/*
 - !/_experiments/stable
-[% END %]
-
+```
 You have to keep in mind that Qgoda has prepended this list with `/_*` (see above).  Line 1 re-includes `_experiments`.  Line 2 excludes all its subdirectories again.  And line 3 selectively re-includes `_experiments/stable`.
 
 ## Excluding Files From Being Watched
@@ -95,14 +94,14 @@ Note that Qgoda by default re-includes the directories `P:_views` and `P:_includ
 
 Example:
 
-[% FILTER pygments 'yaml' %]
+```yaml
 exclude_watch:
 - assets/movies
-[% END %]
+```
 
 The list that is really used by Qgoda looks like this:
 
-[% FILTER pygments 'yaml' %]
+```
 exclude_watch:
 - .*
 - /_*
@@ -110,7 +109,7 @@ exclude_watch:
 - !/_includes
 - assets/movies
 - /_site
-[% END %]
+```
 
 You can see that the directories `_views` and `_includes` have been re-included.  They typically contain layout/design files.  They deserve a ... do they?????
 
@@ -126,10 +125,10 @@ Some characters in patterns have a special meaning.
 
 The star or asterisk stands for an arbitrary number of characters except for a slash:
 
-[% FILTER pygments 'yaml' %]
+```yaml
 exclude:
 - images/*.xcf
-[% END %]
+```
 
 This will exclude all XCF files in the subdirectory `images` for example `images/logo.xcf` but *not* `images/ci/logo.xcf` (because the star/asterisk does not match a slash).
 
@@ -139,10 +138,10 @@ Note that `*.xcf` also matches the file `.xcf`.  The star stands for an arbitrar
 
 Two consecutive stars `**` stand for any sequence of characters including the slash.
 
-[% FILTER pygments 'yaml' %]
+```yaml
 exclude:
 - images/**/*.xcf
-[% END %]
+```
 
 This now matches `images/ci/logo.xcf` *and* `images/logo.xcf` and also `images/nothing/beats/nesting/logo.xcf`.  The pattern `**` matches recursively.
 
@@ -154,10 +153,10 @@ The exclamation mark negates a pattern.  See [below](#negating-patterns) for det
 
 The question mark standard for any character except for a slash.
 
-[% FILTER pygments 'yaml' %]
+```yaml
 exclude:
 - images/corporate?logos
-[% END %]
+```
 
 This matches `images/corporate-logos` and `images/corporate_logos` and `images/corporatedQlogos` and `images/corporate&logos`.
 
@@ -165,26 +164,26 @@ This matches `images/corporate-logos` and `images/corporate_logos` and `images/c
 
 It's getting esoteric.
 
-[% FILTER pygments 'yaml' %]
+```yaml
 exclude:
 - images/[abc].jpeg
-[% END %]
+```
 
 This matches exactly `images/a.jpeg`, `images/b.jpeg`, and `images/c.jpeg`.  Instead, you could also write this:
 
-[% FILTER pygments 'yaml' %]
+```yaml
 exclude:
 - images/[a-c].jpeg
-[% END %]
+```
 
 Read the `[a-c]` as "all characters from a to c".
 
 You can combine ranges:
 
-[% FILTER pygments 'yaml' %]
+```yaml
 exclude:
 - images/[a-z0-9].jpeg
-[% END %]
+```
 
 This would now match `x.jpeg` and `3.jpeg`.
 
@@ -198,10 +197,10 @@ You can also use named character classes like `[a-zA-Z[:digit:]]` where `[:digit
 
 You can escape any character by preceding it with a backslash "\".
 
-[% FILTER pygments 'yaml' %]
+```yaml
 exclude:
 - images/Quo Vadis\?.jpeg
-[% END %]
+```
 
 This matches only `images/Quo Vadis?.jpeg` but not `images/Quo VadissX.jpeg`.  The question mark has lost its special meaning by the preceding backslash.
 
