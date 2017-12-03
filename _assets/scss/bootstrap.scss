@@ -1,1 +1,32 @@
 @import './node_modules/bootstrap/scss/bootstrap';
+
+.btn:focus,
+.btn:active,
+.btn:hover,
+.btn,
+.open .dropdown-toggle.btn {
+  outline: inherit;
+  border-color: inherit;
+}
+
+.btn {
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  padding: 15px 30px;
+  border: none;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.btn-common {
+  color: #ffffff;
+  font-weight: 400;
+  background: #e74c3c;
+}
+
+.btn-common:hover {
+  background: #FF7B6B;
+  color: #fff;
+}
