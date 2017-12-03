@@ -1,8 +1,8 @@
 [% USE gtx = Gettext %]
-<li class="pre"><a href="#" name="[% name %]"></a><span class="variable">[% name %]</span>
+<li class="[% css.qgoda.pre %]"><a href="#" name="[% name %]"></a><span class="[% css.qgoda.variable %]">[% name %]</span>
   <em>[% gtx.gettext('type:') %]</em> [% type %]
   <em>[% gtx.gettext('overridable:') %]</em> [% IF overridable %]<code>C:[% overridable %]</code>[% END %]
 
-  <span class="no-pre list-content">[%- content -%]</span>
+  <span class="[% css.qgoda.no_pre %]">[%- content -%]</span>
 
 </li>

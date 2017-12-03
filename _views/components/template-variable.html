@@ -1,5 +1,5 @@
 [% USE gtx = Gettext %]
-* <a href="#" name="[% variable %]"></a><span class="variable">[% variable %]</span><br />
+* <a href="#" name="[% variable %]"></a><span class="[% css.qgoda.variable %]">[% variable %]</span><br />
   <em>[% gtx.gettext('type:') %]</em> [% type %]
 
-  <span class="no-pre list-content">[%- content -%]</span>
+  <span class="[% css.qgoda.no_pre %]">[%- content -%]</span>

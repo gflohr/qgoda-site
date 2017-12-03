@@ -3,6 +3,22 @@ $qgoda-main-color: #555;
 $qgoda-headline-color: #333;
 $qgoda-nav-link-color: #fff;
 
+/* Stolen from bootstrap.  They should really referece the values from
+ * bootstrap instead of hard-coding them.
+ */
+$brand-primary: #2b689c;
+$gray-light: #818a91;
+$gray-lightest: #f7f7f9;
+$line-height-base: 1.5;
+
+@mixin clearfix() {
+    &::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+}
+  
 html {
     font-size: $qgoda-font-size;
 }
