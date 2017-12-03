@@ -178,25 +178,3 @@ td.code {
 .variable {
     font-weight: bold;
 }
-
-.toc {
-    border: 1px dotted $gray-light;
-    background-color: $gray-lightest;
-    margin-bottom: 1rem;
-    padding: 0.5rem;
-    padding-bottom: 0rem;
-
-    ul {
-         list-style-type: none;
-    }
-
-    .toc-title {
-        font-weight: bold;
-        font-size: 110%;
-        padding-bottom: 0.5rem;
-    }
-}
-
-ul.toclevel-1 {
-   padding-left: 0;
-}

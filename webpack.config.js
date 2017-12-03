@@ -36,7 +36,7 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        exclude: /(animate|bootstrap|font-awesome)\.scss$/,
+        exclude: /(animate|bootstrap|font-awesome|toc)\.scss$/,
         use: ExtractTextPlugin.extract({
           use: [
             {
@@ -62,7 +62,7 @@ module.exports = {
         }),
       },
       {
-        test: /(animate|bootstrap|font-awesome).scss$/,
+        test: /(animate|bootstrap|font-awesome|toc).scss$/,
         use: ExtractTextPlugin.extract({
           use: [
             {
