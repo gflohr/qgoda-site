@@ -1,4 +1,4 @@
-require('./scss/bootstrap.scss');
+require('./scss/landing-page/bootstrap.scss');
 require('./scss/font-awesome.scss');
 require('./scss/start.scss');
 require('./scss/animate.scss');
