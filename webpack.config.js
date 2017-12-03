@@ -1,6 +1,7 @@
 const webpack = require('webpack'),
      ExtractTextPlugin = require('extract-text-webpack-plugin'),
-     CleanWebpackPlugin = require('clean-webpack-plugin');
+     CleanWebpackPlugin = require('clean-webpack-plugin'),
+     CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -104,6 +105,17 @@ module.exports = {
       'window.jQuery': 'jquery',
       Popper: ['popper.js', 'default'],
       Tether: 'tether',
-    })
+    }),
+    new CopyWebpackPlugin([
+      /* Anybody gets this running with require()?  */
+      {
+        from: 'node_modules/wowjs/dist/wow.min.js',
+        to: __dirname + '/assets'
+      },
+      {
+        from: '_assets/start-wow.js',
+        to: __dirname + '/assets'
+      }
+    ])
   ]
 };
