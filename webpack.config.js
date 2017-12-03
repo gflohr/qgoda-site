@@ -78,7 +78,7 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(['assets']),
-    new ExtractTextPlugin('bundle.css'),
+    new ExtractTextPlugin('[name].css'),
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery',

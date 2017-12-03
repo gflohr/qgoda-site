@@ -1,4 +1,3 @@
 [% USE q = Qgoda %]
-[% global.scripts = ['/assets/js/vendor.min.js',
-                     '/assets/js/app.min.js'] %]
-[% global.styles = ['/assets/css/bundle.min.css'] %]
+[% global.scripts = ['/assets/bundle.js'] %]
+[% global.styles = ['/assets/bundle.css'] %]
