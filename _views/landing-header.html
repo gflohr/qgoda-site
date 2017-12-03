@@ -2,15 +2,15 @@
 <!-- HEADER -->
 <header id="home">
   <!-- Color over Image -->
-  <div class="[% css.color_overlay %]">
+  <div class="[% css.start.color_overlay %]">
       
   <!-- navbar log -->
-  <div class="navbar [% css.logo_nav %]">
+  <div class="navbar [% css.start.logo_nav %]">
     <div class="container">
       <div class="row">
         <div class="col-sm-6 col-md-6 col-xs-4">
           <div class="navbar-header">
-            <div class="logo">
+            <div class="[% css.start.logo %]">
               <img src="/images/qgoda-logo-white.svg" 
                    alt="Qgoda static site generator logo">
             </div>
@@ -30,9 +30,9 @@
   <!-- Heading And Texts -->
   <div class="container">
     <div class="row">
-      <div class="col-md-10 offset-md-1 marker [% css.intro_section %]">
-        <h1 class="[% css.intro %]">[% asset.title %]</h1>
-        <div class="sub-heading">
+      <div class="col-md-10 offset-md-1 [% css.start.intro_section %]">
+        <h1 class="[% css.start.intro %]">[% asset.title %]</h1>
+        <div class="[% css.start.sub_heading %]">
           [% asset.content %]
         </div>
     
