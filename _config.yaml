@@ -3,9 +3,10 @@ linguas: [en, de]
 exclude: 
   - /node_modules
   - /package.json
-  - /gulpfile.js
-  - /package-lock.json
+  - /webpack.config.js
+  - /yarn.lock
   - /TODO
+  - /postcss.config.js
 helpers:
   yarn: yarn start
   browser-sync: yarn server
