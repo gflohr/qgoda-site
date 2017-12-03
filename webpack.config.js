@@ -71,7 +71,7 @@ module.exports = {
         }),
       },
       {
-        test: /\.(png|gif|svg)$/,
+        test: /\.(png|gif|svg|jpe?g)$/,
         loader: 'file-loader'
       }
     ]

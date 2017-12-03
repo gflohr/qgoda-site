@@ -1,3 +1,4 @@
+- correct meta tags for landing page
 - improve error message if q.include() fails in template
 - removing a directory makes gulp terminate with an error
 - watch _includes for changes

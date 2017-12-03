@@ -2,6 +2,7 @@
 /_site/
 /node_modules/
 /assets
+/_assets/**/*.scss.json
 /_Inline/
 /_localconfig.yaml
 /_timestamp

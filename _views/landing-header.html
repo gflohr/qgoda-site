@@ -1,10 +1,11 @@
+[% PROCESS "functions/landing-page/css-modules.tt" %] 
 <!-- HEADER -->
 <header id="home">
   <!-- Color over Image -->
-  <div class="color-overlay">
+  <div class="[% css.color_overlay %]">
       
   <!-- navbar log -->
-  <div class="navbar logo-nav">
+  <div class="navbar [% css.logo_nav %]">
     <div class="container">
       <div class="row">
         <div class="col-sm-6 col-md-6 col-xs-4">
@@ -29,8 +30,8 @@
   <!-- Heading And Texts -->
   <div class="container">
     <div class="row">
-      <div class="col-md-10 offset-md-1 intro-section">
-        <h1 class="intro">[% asset.title %]</h1>
+      <div class="col-md-10 offset-md-1 marker [% css.intro_section %]">
+        <h1 class="[% css.intro %]">[% asset.title %]</h1>
         <div class="sub-heading">
           [% asset.content %]
         </div>
