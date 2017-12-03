@@ -2,10 +2,10 @@
 body {
   background: #ffffff;
   font-family: 'Raleway', sans-serif;
-  font-size: 14px;
+  font-size: 18px;
   color: #999;
   font-weight: 400;
-  line-height: 25px;
+  line-height: 26px;
   overflow-x: hidden !important;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -123,6 +123,7 @@ i {
   line-height: 38px;
 }
 #home .intro-section {
+  min-height: 425px;
   margin-bottom: 155px;
   text-align: center;
   color: #ffffff;
