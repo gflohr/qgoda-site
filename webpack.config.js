@@ -32,7 +32,7 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        exclude: /bootstrap\.scss$/,
+        exclude: /(bootstrap|font-awesome)\.scss$/,
         use: ExtractTextPlugin.extract({
           use: [
             {
@@ -54,7 +54,7 @@ module.exports = {
         }),
       },
       {
-        test: /bootstrap.scss$/,
+        test: /(bootstrap|font-awesome).scss$/,
         use: ExtractTextPlugin.extract({
           use: [
             {
@@ -69,6 +69,14 @@ module.exports = {
             }
           ]
         }),
+      },
+      {
+        test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        loader: "url-loader?limit=10000&mimetype=application/font-woff"
+      },
+      { 
+        test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        loader: "file-loader"
       },
       {
         test: /\.(png|gif|svg|jpe?g)$/,
