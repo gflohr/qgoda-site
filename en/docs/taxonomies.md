@@ -37,7 +37,7 @@ related documents.  For example, you can identify all English documents
 with the condition `lingua="en"`.
 
 <figure class="figure w-100">
-  <img src="/assets/images/taxonomies/taxonomy-lingua.svg"
+  <img src="/images/taxonomies/taxonomy-lingua.svg"
        class="large-image figure-img img-fluid img-rounded d-block m-x-auto"
        alt="All assets/documents with lingua 'en' establish a group of documents." />
   <figcaption class="figure-caption text-xs-center">
@@ -49,7 +49,7 @@ Likewise, you can identify all documents that are tagged with "Qgoda"
 and "Plug-Ins".
 
 <figure class="figure w-100">
-  <img src="/assets/images/taxonomies/taxonomy-tags.svg"
+  <img src="/images/taxonomies/taxonomy-tags.svg"
        class="large-image figure-img img-fluid img-rounded d-block m-x-auto"
        alt="You can also group all documents tagged with &quot;Qgoda&quot; and &quot;Plug-Ins&quot;." />
   <figcaption class="figure-caption text-xs-center">
@@ -62,7 +62,7 @@ You can for example identify all English documents tagged with "Qgoda" or
 "Plug-Ins" by `OR`'-ing the two above conditions.
 
 <figure class="figure w-100">
-  <img src="/assets/images/taxonomies/taxonomies-combined.svg"
+  <img src="/images/taxonomies/taxonomies-combined.svg"
        class="large-image figure-img img-fluid img-rounded d-block m-x-auto"
        alt="Combining taxonomies can create arbitrary partitions of a site." />
   <figcaption class="figure-caption text-xs-center">

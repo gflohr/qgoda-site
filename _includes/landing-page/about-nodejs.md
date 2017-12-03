@@ -1,7 +1,7 @@
 ---
 view: landing-about-chunk.html
 title: Node.JS 
-image: /assets/images/nodejs-new-pantone-black.svg
+image: /images/nodejs-new-pantone-black.svg
 image_alt: The Node.JS Logo
 image_link: https://www.nodejs.org/en/
 ---

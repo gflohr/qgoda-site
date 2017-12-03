@@ -4,7 +4,7 @@ title: Multi-Language Blogging
 classes: item-2
 button: Learn More
 button_link: '#'
-image: /assets/images/earth-ko-640w.png
+image: /images/earth-ko-640w.png
 image_alt: The earth from space
 ---
 No hacks needed for creating multilingual sites. The multi-language features

@@ -2,7 +2,7 @@
 - removing a directory makes gulp terminate with an error
 - watch _includes for changes
 - how to access hash keys with special characters?
-- structure images, make new dir assets/images/landing-page
+- structure images, make new dir /images/landing-page
 - errors in q.include are not reported
 - test writeAsset() from templates
 - gettext API, can we use l_(...), l_x(...) as function names?

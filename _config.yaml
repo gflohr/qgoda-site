@@ -5,6 +5,7 @@ exclude:
   - /package.json
   - /gulpfile.js
   - /package-lock.json
+  - /TODO
 helpers:
   gulp: npm start
   browser-sync: npm run server

@@ -1,7 +1,7 @@
 ---
 view: landing-about-chunk.html
 title: Perl
-image: /assets/images/powered_by_perl-trans-300px.png
+image: /images/powered_by_perl-trans-300px.png
 image_alt: The Perl Logo
 image_link: https://www.perl.org/
 ---
