@@ -20,12 +20,15 @@ module.exports = {
             {
               loader: 'css-loader',
               options: {
-                importLoaders: 1
+                importLoaders: 1,
+                sourceMap: true
               }
             },
             {
               loader: 'postcss-loader',
-              options: {}
+              options: {
+                sourceMap: true
+              }
             }
           ]
         })
@@ -38,17 +41,21 @@ module.exports = {
             {
               loader: 'css-loader',
               options: {
-                importLoaders: 2
+                importLoaders: 2,
+                sourceMap: true
               }
             },
             {
               loader: 'postcss-loader',
               options: {
+                sourceMap: true
               }
             },
             {
               loader: 'sass-loader',
-              options: {}
+              options: {
+                  sourceMap: true
+              }
             }
           ]
         }),
@@ -60,12 +67,15 @@ module.exports = {
             {
               loader: 'css-loader',
               options: {
-                importLoaders: 1
+                importLoaders: 1,
+                sourceMap: true
               }
             },
             {
               loader: 'sass-loader',
-              options: {}
+              options: {
+                sourceMap: true
+              }
             }
           ]
         }),
@@ -84,6 +94,7 @@ module.exports = {
       }
     ]
   },
+  devtool: 'source-map',
   plugins: [
     new CleanWebpackPlugin(['assets']),
     new ExtractTextPlugin('[name].css'),
