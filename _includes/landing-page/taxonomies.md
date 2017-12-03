@@ -1,7 +1,7 @@
 ---
 view: landing-feature-right.html
 title: Unlimited Taxonomies
-classes: item-1
+classes: item_1
 button: How?
 button_link: '#'
 image: /images/drawers-start-640w.jpeg

@@ -1,5 +1,6 @@
 [% PROCESS "functions/landing-page/css-modules.tt" %]
-<div class="[% asset.classes %]">
+[% classes = asset.classes %]
+<div class="[% css.start.$classes %]">
   <div class="container">
     <div class="row">
       <div class="col-sm-6 col-md-6">

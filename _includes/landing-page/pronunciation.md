@@ -1,7 +1,7 @@
 ---
 view: landing-feature-right.html
 title: How the Heck Is That Pronounced?
-classes: item-3
+classes: item_3
 button: Really?
 button_link: https://en.wikipedia.org/wiki/Cyrillic_script
 image: /images/strawberry.jpeg

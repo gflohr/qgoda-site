@@ -1,7 +1,7 @@
 ---
 view: landing-feature-left.html
 title: Multi-Language Blogging
-classes: item-2
+classes: item_2
 button: Learn More
 button_link: '#'
 image: /images/earth-ko-640w.png
