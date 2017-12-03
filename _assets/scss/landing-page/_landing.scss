@@ -3,10 +3,6 @@
     height: 100%;
 }
 
-.navbar .container .row:first-child {
-    padding: 30px 0;
-}
-
 .logo img {
     width: 100%;
     @media (min-width: 768px) {
@@ -25,12 +21,3 @@
         margin-bottom: 10px;
     }
 }
-
-.nav-link {
-            color: white;
-}
-
-.nav-link:hover, .nav-link:focus {
-            color: #e74c3c;
-}
-

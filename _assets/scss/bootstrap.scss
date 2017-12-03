@@ -1,9 +1,5 @@
 @import '~bootstrap/scss/bootstrap';
 
-.nav-link {
-  color: white;
-}
-
 .btn:focus,
 .btn:active,
 .btn:hover,
@@ -33,4 +29,16 @@
 .btn-common:hover {
   background: #FF7B6B;
   color: #fff;
+}
+
+.navbar .container .row:first-child {
+  padding: 30px 0;
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-link:hover, .nav-link:focus {
+  color: #e74c3c;
 }
