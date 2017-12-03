@@ -4,9 +4,11 @@
   "description": "Qgoda website",
   "main": "index.js",
   "scripts": {
-    "prestart": "npm install",
-    "start": "gulp",
+    "prebuild": "yarn install",
+    "start": "webpack --progress --colors --watch",
+    "build": "webpack --progress --colors",
     "server": "browser-sync start --server _site --files _timestamp",
+    "prestart": "yarn install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [

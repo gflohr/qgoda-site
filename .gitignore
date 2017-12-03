@@ -1,10 +1,9 @@
 /.project
 /_site/
 /node_modules/
-/assets/css/
-/assets/fonts/
-/assets/js/
+/assets
 /_Inline/
 /_localconfig.yaml
 /_timestamp
 /google[0-9a-f][0-9a-f]*.html
+/yarn.lock
