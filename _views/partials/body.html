@@ -1,10 +1,11 @@
 [% PROCESS functions/setup.tt %]
+[% PROCESS "functions/css-modules.tt" %]
 <body>
   [% INCLUDE partials/header/navbar.html %]
 
   <div class="container">
     <div class="row">
-      <div class="col-sm-8 content">
+      <div class="col-sm-8 [% css.qgoda.content %]">
         <div class="[% css.qgoda.content_head %]">
           <h1>[% asset.title %]</h1>
           <div class="[% css.qgoda.description %]">
@@ -13,7 +14,7 @@
         </div>
         [% asset.content %]
       </div>
-      <div class="col-sm-3 offset-sm-1 sidebar">
+      <div class="col-sm-3 offset-sm-1 [% css.qgoda.sidebar %]">
         [% INCLUDE partials/body/sidebar.html %] 
       </div>
     </div>

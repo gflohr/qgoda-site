@@ -1,6 +1,6 @@
 [% USE q = Qgoda %]
-<div class="sidebar-module">
-  <h4 class="sidebar-title">[% title %]</h4>
+<div class="[% css.qgoda.sidebar_module %]">
+  <h4 class="[% css.qgoda.sidebar_title %]">[% title %]</h4>
   <ol>
   [% FOREACH doc IN q.llist('doc-section' = title).sortBy('order') %]
     <li>
