@@ -10,6 +10,8 @@ description: This page explains where Qgoda differs from Jekyll and why.
 [% TAGS [- -] %]
 Qgoda was heavily inspired by [Jekyll](https://jekyllrb.com/) and initially very similar to Jekyll but over time it has veered away significantly.
 
+<!--TOC-->
+
 ## General Differences
 
 Qgoda's philosophy significantly differs from Jekyll's.  Creating simple web sites should be just as simple as with Jekyll but it should be possible to also fulfill more complex requirements, preferably out of the box.
