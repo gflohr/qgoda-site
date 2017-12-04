@@ -1,4 +1,4 @@
-$qgoda-font-size: 1.1rem;
+$qgoda-font-size: 1.2rem;
 $qgoda-main-color: #555;
 $qgoda-headline-color: #333;
 $qgoda-nav-link-color: #fff;
@@ -37,6 +37,12 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 h2 {
     font-size: 1.75rem;
     font-weight: 300;
+}
+
+.content {
+    h2 {
+        font-weight: 400;
+    }
 }
 
 .sidebar, .content-head {
