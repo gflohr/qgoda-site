@@ -36,6 +36,10 @@ processors:
       modules:
         - TT2
         - HTMLCleaner
+    markdown:
+      modules:
+      - TT2
+      - Hoedown
 po:
   xgettext:
     text:
