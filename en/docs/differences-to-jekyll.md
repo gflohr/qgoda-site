@@ -6,9 +6,9 @@ doc-section: Miscellaneous
 view: docs.html
 description: This page explains where Qgoda differs from Jekyll and why.
 ---
-Qgoda was heavily inspired by [Jekyll](https://jekyllrb.com/) and initially very similar to Jekyll.  Over time it has veered away from Jekyll.
-
 [% USE q = Qgoda %]
+[% TAGS [- -] %]
+Qgoda was heavily inspired by [Jekyll](https://jekyllrb.com/) and initially very similar to Jekyll but over time it has veered away significantly.
 
 ## General Differences
 
@@ -22,8 +22,6 @@ Jekyll can structure a site with tags and categories.  Qgoda has arbitrary taxon
 
 Qgoda can create lists with arbitrary filters, not just for categories.  Example:
 
-[% TAGS [- -] %]
-
 ```markup
 [% posts = q.list(lingua = asset.lingua
                   type = 'post'
@@ -31,19 +29,16 @@ Qgoda can create lists with arbitrary filters, not just for categories.  Example
                  ) %]
 ```
 
-[- TAGS [% %] -]
-
-This would collect all documents that have the same language as the current document and that are of *type* "post" and that have the word "Development" in their tag list.  You can also use string-wise or numerical comparison operators or even regular expressions for defining filters.  See [[% q.lxref('title', name='listings') %]]([% q.llink(name='listings') %]) for more information.
+<br>
 
 ### Links and Cross-References
 
 These work essentially the same as listings, only that you define the filters so that they will produce a single result instead of a list.  For example, the last sentence of the previous paragraph was created like this:
 
 ```markup
-See [[% q.lxref('title', name='listings') %]]([% q.llink(name='listings') %]) 
+See [[- q.lxref('title', name='listings') -]]([- q.llink(name='listings') -]) 
 for more information.
 ```
-[- TAGS [% %] -]
 
 The function `q.lxref()` extracts the variable 'title' from the document with the name `listings`, whereas `q.llink()` produces a permalink to the page identified by the filter or filters given.
 
@@ -69,6 +64,49 @@ All these assets should be syntax-checked, minified, optimized and bundled and, 
 
 Qgoda allows you to configure an arbitrary number of helper processes while watching your site for changes.  You typically have one of the build tools like webpack running in watch mode as one helper, and a development web server as a second.  And you have the choice.  You decide whether you want gulp or webpack, yarn or npm, or just plain Makefiles.
 
+### Multi-Language Sites
+
+Jekyll does not have built-in support for multilingual web sites.  Qgoda also has no explicit support for multi-lingual web sites.  It just works out of the box.
+
+All you have to do is to store the language (resp. language code) of a particular document or asset in a standard variable.  If you follow convention and use `V:lingua`, you can safe some typing, but you can store the language in any variable you want, and filter by that variable.  That's all.
+
+Under normal circumstances, not only content differs.  You also want to translate certain strings in your template.  The quick and dirty way is to store the strings in your configuration file `F:_config.yaml`:
+
+```yaml
+translations:
+  en:
+    privacy: Data Privacy
+    go_to_top: To top of the page
+  de:
+    privacy: Datenschutz
+    go_to_top: Zum Seitenanfang
+  bg:
+    privacy: Конфиденция
+    go_to_top: На горе
+```
+
+In the template you write:
+
+```markup
+[% l = asset.lingua %]
+
+<a href="./privacy/">[% translations.$l.privacy %]</a>
+|
+<a href="#top">[% translations.$l.go_to_top %]</a>
+```
+
+This is okay for a handful of strings but a maintainance nightmare for larger sites.  You should rather write all strings in the base language of your site and mark them:
+
+```markup
+[% USE gtx = Gettext('your-site-id', asset.lingua) %]
+
+<a href="./private/">[% gtx.gettext('Privacy Policy') %]</a>
+|
+<a href="#top">[% Go to top %]</a>
+```
+
+You can extract these strings into `.po` files for translations, and install the compiled translations in the site.  This is following the standard process for [GNU gettext](https://www.gnu.org/software/gettext/), the de-facto standard for localization of open-source software.
+
 ## Template System
 
 Qgoda uses [The Template Toolkit](http://www.template-toolkit.org/) as its primary templating system, Jekyll uses [Liquid](https://shopify.github.io/liquid/).
@@ -77,7 +115,7 @@ Qgoda uses [The Template Toolkit](http://www.template-toolkit.org/) as its prima
 
 Liquid uses double curly braces for *objects* (`{{ variable }}`) and curly braces and percent signs for *tags* (`{% if logged_in %} `).
 
-The Template Toolkit uses only `[% dotdotdot %]`.  *Directives* (comparable to Liquid tags) are using upper case letters (`&*#91;% IF logged_in %&#93;`).
+The Template Toolkit uses only `[% ... %]`.  *Directives* (comparable to Liquid tags) are using upper case letters (`[% IF logged_in %]`).
 
 ### Data Types
 
@@ -110,3 +148,5 @@ defaults:
     values:
       view: raw
 ```
+
+[- TAGS [% %] -]
