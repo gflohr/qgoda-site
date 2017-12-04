@@ -1,12 +1,15 @@
+[% USE gtx = Gettext('net.qgoda.www', asset.lingua) %]
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="Responsive Bootstrap Landing Page Template">
-  <meta name="keywords" content="Bootstrap, Landing page, Template, Registration, Landing">
-  <meta name="author" content="GrayGrids">
+  <meta name="description" content="[% gtx.gettext('Qgoda - The Static Site Generator') %]">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <title>
     Qgoda Static Site Generator 
   </title>
+
+  <link rel="icon" href="/images/favicon.png" type="image/png" />
+  <link rel="shortcut icon" href="/images/favicon.png" type="image/png" />
+  <link href="/favicon.ico" type="image/x-icon" />
     
   [% PROCESS functions/styles.tt %]
 
