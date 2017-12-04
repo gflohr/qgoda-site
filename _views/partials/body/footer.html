@@ -12,7 +12,12 @@
                     copyright_holder=copyright_link) %]
   </div>
   <div class="col-md-5 footer-links">
-    <a href="#">Legal Disclosure</a>
-    <a href="[% q.llink(name='data-privacy-policy') %]">Data Privacy Policy</a>
+    <a href="[% q.llink(name='legal-disclosure') %]">
+      [% q.lxref('title', name='legal-disclosure') %]
+    </a>
+    &nbsp;|&nbsp;
+    <a href="[% q.llink(name='data-privacy-policy') %]">
+      [% q.lxref('title', name='data-privacy-policy') %]
+    </a>
   </div>
 </div>
