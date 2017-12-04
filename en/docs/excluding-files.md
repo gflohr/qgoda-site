@@ -51,7 +51,7 @@ The last line is always appended and a safe-guard against configuration errors. 
 
 There is no configuration variable `include`.  You can exclude otherwise excluded files by prepending a pattern with an exclamation mark `!`.  The pattern is then negated:
 
-```
+```yaml
 exclude:
 - /node_modules
 - /package.json
@@ -101,7 +101,7 @@ exclude_watch:
 
 The list that is really used by Qgoda looks like this:
 
-```
+```yaml
 exclude_watch:
 - .*
 - /_*
