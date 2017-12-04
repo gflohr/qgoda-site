@@ -3,7 +3,7 @@ location: /{lingua}/docs/index.html
 title: Documentation
 categories: Documentation
 view: docs.html
-description: Learn how to create a website Qgoda, with tutorial-style introductory information for beginners or exhaustive API documentation for the experienced. 
+description: Learn how to create a website with Qgoda, with tutorial-style introductory information for beginners or exhaustive API documentation for the experienced.
 ---
 [% USE q = Qgoda %]
 Qgoda is a static site generator.  It is mainly intended for blogs but you
