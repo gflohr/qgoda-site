@@ -3,8 +3,9 @@
 /node_modules/
 /assets
 /_assets/**/*.scss.json
-/_Inline/
 /_localconfig.yaml
 /_timestamp
+/_timestamp.json
+/_livesync
 /google[0-9a-f][0-9a-f]*.html
 /yarn.lock
