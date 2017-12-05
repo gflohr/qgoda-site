@@ -23,7 +23,8 @@ module.exports = {
               loader: 'css-loader',
               options: {
                 importLoaders: 1,
-                sourceMap: true
+                sourceMap: true,
+                minimize: true
               }
             },
             {
@@ -44,7 +45,8 @@ module.exports = {
               loader: 'css-loader',
               options: {
                 importLoaders: 2,
-                sourceMap: true
+                sourceMap: true,
+                minimize: true
               }
             },
             {
@@ -70,7 +72,8 @@ module.exports = {
               loader: 'css-loader',
               options: {
                 importLoaders: 1,
-                sourceMap: true
+                sourceMap: true,
+                minimize: true
               }
             },
             {
@@ -99,7 +102,7 @@ module.exports = {
   devtool: 'source-map',
   plugins: [
     new CleanWebpackPlugin(['assets']),
-    new ExtractTextPlugin('[name].css'),
+    new ExtractTextPlugin('[name].min.css'),
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery',
