@@ -33,12 +33,15 @@ Qgoda can create lists with arbitrary filters, not just for categories.  Example
 
 <br>
 
+See [[- q.lxref('title', name='listings') -]]([- q.llink(name='listings') -]) 
+for more information.
+
 ### Links and Cross-References
 
 These work essentially the same as listings, only that you define the filters so that they will produce a single result instead of a list.  For example, the last sentence of the previous paragraph was created like this:
 
 ```markup
-See [[- q.lxref('title', name='listings') -]]([- q.llink(name='listings') -]) 
+See [[% q.lxref('title', name='listings') %]]([% q.llink(name='listings') %]) 
 for more information.
 ```
 

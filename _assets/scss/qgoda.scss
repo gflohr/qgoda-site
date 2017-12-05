@@ -2,6 +2,7 @@ $qgoda-font-size: 1.2rem;
 $qgoda-main-color: #555;
 $qgoda-headline-color: #333;
 $qgoda-nav-link-color: #fff;
+$qgoda-orange: #d97319;
 
 /* Stolen from bootstrap.  They should really referece the values from
  * bootstrap instead of hard-coding them.
@@ -49,6 +50,12 @@ h2 {
     margin-top: 2rem;
     @media (min-width: 768px) {
         margin-top: 5rem;
+    }
+    .sidebar-general {
+        font-size: smaller;
+        a {
+            color: $qgoda-orange;
+        }
     }
 }
 
