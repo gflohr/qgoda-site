@@ -1,7 +1,8 @@
 const webpack = require('webpack'),
      ExtractTextPlugin = require('extract-text-webpack-plugin'),
      CleanWebpackPlugin = require('clean-webpack-plugin'),
-     CopyWebpackPlugin = require('copy-webpack-plugin');
+     CopyWebpackPlugin = require('copy-webpack-plugin'),
+     TimestampWebpackPlugin = require('timestamp-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -116,6 +117,10 @@ module.exports = {
         from: '_assets/start-wow.js',
         to: __dirname + '/assets'
       }
-    ])
+    ]),
+    new TimestampWebpackPlugin({
+      path: __dirname,
+      filename: '_timestamp.json'
+    })
   ]
 };

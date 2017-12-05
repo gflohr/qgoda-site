@@ -7,6 +7,9 @@ exclude:
   - /yarn.lock
   - /TODO
   - /postcss.config.js
+exclude_watch:
+  - /assets
+  - "!/_timestamp.json"
 helpers:
   yarn: yarn start
   browser-sync: yarn server
