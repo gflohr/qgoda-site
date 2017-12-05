@@ -16,7 +16,7 @@ lists are such groups.
 Listings are created by the template functions `list()` or `listPosts()`.
 
 [% WRAPPER components/infobox.html
-           type='info' title='These Instructions Are For the Template Toolkit!' %]
+           type="info" title="These Instructions Are For the Template Toolkit!" %]
     The instructions given here assume that you use the template toolkit as
     the main template processor.  If you are using another template processor,
     please refer to the respective documentation.
