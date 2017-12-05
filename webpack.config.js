@@ -2,7 +2,8 @@ const webpack = require('webpack'),
      ExtractTextPlugin = require('extract-text-webpack-plugin'),
      CleanWebpackPlugin = require('clean-webpack-plugin'),
      CopyWebpackPlugin = require('copy-webpack-plugin'),
-     TimestampWebpackPlugin = require('timestamp-webpack-plugin');
+     TimestampWebpackPlugin = require('timestamp-webpack-plugin'),
+     UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -11,7 +12,7 @@ module.exports = {
   },
   output: {
     path: __dirname + '/assets',
-    filename: '[name].js'
+    filename: '[name].min.js'
   },
   module: {
     loaders: [
@@ -102,7 +103,6 @@ module.exports = {
   devtool: 'source-map',
   plugins: [
     new CleanWebpackPlugin(['assets']),
-    new ExtractTextPlugin('[name].min.css'),
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery',
@@ -121,6 +121,8 @@ module.exports = {
         to: __dirname + '/assets'
       }
     ]),
+    new UglifyJSPlugin(),
+    new ExtractTextPlugin('[name].min.css'),
     new TimestampWebpackPlugin({
       path: __dirname,
       filename: '_timestamp.json'
