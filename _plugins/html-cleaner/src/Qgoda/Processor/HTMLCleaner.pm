@@ -6,7 +6,7 @@ use strict;
 
 use HTML::Parser;
 
-use Qgoda::Util qw(flatten2hash slugify html_escape);
+use Qgoda::Util qw(empty flatten2hash slugify html_escape);
 use Qgoda::Config;
 use Qgoda;
 
@@ -91,11 +91,17 @@ sub process {
                 my $path = $1;
                 $text = qq{><a href="../files-and-directories/#$path">$path</a>}
                         . $text;
+            } elsif ($output =~ s{>V:([-._a-zA-Z0-9/]+$)}{}) {
+                my $varname = $1;
+                $text = qq{><a href="../template-variables/#$varname">$varname</a>}
+                        . $text;
             }
         } elsif ('q-term' eq $tagname
                  && $output =~ s{<q-term>([^<]+$)}{}) {
-                my $anchor = lc $1;
-                my $label = $1;
+                my $content = $1;
+                my ($anchor, $label) = split /:/, $content, 2;
+                $label = $anchor if empty $label;
+                $anchor = lc $anchor;
                 $text = qq{<a href="../terms-and-concepts/#$anchor">$label</a>};
         }
 

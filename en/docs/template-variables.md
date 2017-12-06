@@ -10,10 +10,10 @@ description: Standard and Pre-Defined Template Variables
 [% USE q = Qgoda %]
 [% PROCESS "functions/css-modules.tt" %]
 Not all of the following variables are necessarily available everywhere.
-A few of them like `V:asset.name` are mere conventions.
+Many of them like `V:asset.name` are mere conventions.
 
-Qgoda passes all template variables inside the `V:hash:hashes` (resp. 
-`V:object:objects` if
+Qgoda passes all template variables inside the <q-term>hash:hashes</q-term> (resp. 
+<q-term>object:objects</q-term> if
 you prefer that term) `V:asset` and `V:config`.  All other
 variables, especially top-level variables are free for your use.
 
@@ -33,8 +33,8 @@ the asset currently being processed.
 
 [% WRAPPER "components/template-variable.html"
    variable="config" type=gtx.gettext('hash') %]
-`config` gives you access to the site configuration from `F:_config.yaml`.
-The configuration variable `C:paths.views` in `F:_config.yaml` is
+`config` gives you access to the site configuration from `P:_config.yaml`.
+The configuration variable `C:paths.views` in `P:_config.yaml` is
 accessible from a template as `config.paths.views`.  See
 [q.llink(name='configuration-variables'] for a complete list.
 [%- END %]
