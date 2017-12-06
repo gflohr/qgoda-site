@@ -2,7 +2,7 @@
 title: Configuration Variables
 name: configuration-variables
 doc-section: Lists and Indices
-order: 999
+order: 940
 view: docs.html
 description: Complete List Of Configuration Variables
 ---

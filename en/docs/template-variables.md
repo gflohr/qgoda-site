@@ -2,7 +2,7 @@
 title: Template Variables
 name: template-variables
 doc-section: Lists and Indices
-order: 999
+order: 910
 view: docs.html
 description: Standard and Pre-Defined Template Variables
 ---
@@ -33,7 +33,7 @@ the asset currently being processed.
 
 [% WRAPPER "components/template-variable.html"
    variable="config" type=gtx.gettext('hash') %]
-<code>config</code> gives you access to the site configuration from `F:_config.yaml`.
+`config` gives you access to the site configuration from `F:_config.yaml`.
 The configuration variable `C:paths.views` in `F:_config.yaml` is
 accessible from a template as `config.paths.views`.  See
 [q.llink(name='configuration-variables'] for a complete list.
