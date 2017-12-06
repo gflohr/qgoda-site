@@ -6,9 +6,9 @@ order: 10
 view: docs.html
 description: How to install Qgoda and its dependencies on your local system
 ---
-Qgoda has not yet been officially released.  The installation is therefore still a little bit awkward.
-
 ## Installing Qgoda
+
+Qgoda has not yet been officially released.  The installation is therefore still a little bit awkward.
 
 ### Installation From Github Sources
 
@@ -71,7 +71,7 @@ qgoda $ sudo make install
 
 It is possible that you see the following warning:
 
-```
+```core
 ***
 *** Warning! The qgoda executable will be installed in the directory
 ***
@@ -109,13 +109,13 @@ But the change is now peristent.  It will work for all future Perl versions.
 
 Other options are to create an alias to the location of the script:
 
-```
+```core
 alias qgoda=/opt/local/libexec/perl5.26/sitebin/qgoda
 ```
 
 Or you can create a symbolic link:
 
-```
+```core
 $ sudo ln -s /opt/local/libexec/perl5.26/sitebin/qgoda /usr/local/bin/qgoda
 ```
 

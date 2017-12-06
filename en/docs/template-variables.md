@@ -8,6 +8,7 @@ description: Standard and Pre-Defined Template Variables
 ---
 [% USE gtx = Gettext %]
 [% USE q = Qgoda %]
+[% PROCESS "functions/css-modules.tt" %]
 Not all of the following variables are necessarily available everywhere.
 A few of them like `V:asset.name` are mere conventions.
 

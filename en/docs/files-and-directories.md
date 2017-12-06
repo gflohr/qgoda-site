@@ -8,6 +8,8 @@ description: Complete List of Files and Directories
 ---
 [% USE gtx = Gettext %]
 [% USE q = Qgoda %]
+[% PROCESS "functions/css-modules.tt" %]
+
 A typical Qgoda site contains a couple of standard files and directories.
 They are described in the following list.
 

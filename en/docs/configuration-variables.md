@@ -8,6 +8,8 @@ description: Complete List Of Configuration Variables
 ---
 [% USE gtx = Gettext %]
 [% USE q = Qgoda %]
+[% PROCESS "functions/css-modules.tt" %]
+
 The following configuration variables from the file `_config.yml` are understood by Qgoda:
 
 <ul>

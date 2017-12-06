@@ -1,7 +1,5 @@
 require('./scss/bootstrap.scss');
 require('./scss/font-awesome.scss');
-require('./scss/qgoda.scss');
-require('./scss/toc.scss');
 
 // Prism.
 var Prism = require('prismjs');
@@ -22,3 +20,6 @@ require('prismjs/plugins/autolinker/prism-autolinker');
 require('prismjs/plugins/command-line/prism-command-line');
 require('prismjs/plugins/custom-class/prism-custom-class');
 Prism.plugins.customClass.map(require('prismjs/themes/prism-coy.css.json'));
+
+require('./scss/qgoda.scss');
+require('./scss/toc.scss');
