@@ -10,6 +10,8 @@ description: How to install Qgoda and its dependencies on your local system
 
 Qgoda has not yet been officially released.  The installation is therefore still a little bit awkward.
 
+<!--TOC-->
+
 ### Installation From Github Sources
 
 You first have to checkout the sources from github in a suitable directory.
@@ -120,3 +122,23 @@ $ sudo ln -s /opt/local/libexec/perl5.26/sitebin/qgoda /usr/local/bin/qgoda
 ```
 
 But that will no longer work if your Perl executable is upgraded.
+
+## Installing Node.js
+
+[Node.js](https://nodejs.org/en/) is an interpreter for JavaScript that runs outside of the browser.  It is not a strict requirement for Qgoda but most Qgoda sites will make use of it.
+
+The [Node.js website](https://nodejs.org/en/) usually offers a download link but for the software.  If you are using a package manager, you should rather install Node.js with that.
+
+### Yarn or NPM
+
+NPM is the Node Package Manager and is used to install packages and their dependencies for Node.js.  Yarn is an alternative to NPM and does essentially the same.
+
+The official Qgoda themes all use Yarn but you can easily change that.  First, exchange `yarn` with `npm` in the section `scripts` of the theme's `P:package.json` and then do the same for the configuration variable `C:helpers` in Qgoda's main configuration file `P:_config.yaml`.
+
+#### Installing NPM
+
+As `npm` ships with Node.js you normally don't have to install it.  If you have installed Node.js with your package manager, it is possible that you explicitely have to install `npm`.  An example for such a package manager is MacPorts.
+
+#### Installing yarn
+
+See https://yarnpkg.com/en/docs/install for instructions.
