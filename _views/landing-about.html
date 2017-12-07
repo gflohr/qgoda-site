@@ -1,8 +1,8 @@
 [% PROCESS "functions/landing-page/css-modules.tt" %]
+[% USE gtx = Gettext('net.qgoda.www', asset.lingua) %]
 <div id="[% css.start.about %]">
   <div class="container">
     <div class="row">
-      <h2 class="[% css.start.section_title %]">[% asset.title %]</h2>
       [% asset.content %]
     </div>
   </div>
