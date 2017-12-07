@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" 
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1020" height="370" 
+     viewPort="0 0 1020 370" version="1.1">
+  <style>
+svg {
+  font-family: Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace; 
+  font-size: 17.28px; 
+  line-height: 26px;
+  white-space: pre;
+}
+  </style>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#d97319" style="fill-opacity: 0.7;"/>
+    </marker>
+  </defs>
+
+    <g id="view">
+<rect x="0" y="0" width="406" height="224"
+      style="fill: #d97319; fill-opacity: 0.7;"/>
+<rect x="0" y="246" width="260" height="30"
+      style="fill: #d97319; fill-opacity: 0.7;"/>
+<polygon points="260,246 406,224 406,298 260,276"
+      stroke="none" style="fill: #d97319; fill-opacity: 0.7;"/>
+<rect x="0" y="298" width="406" height="62"
+      style="fill: #d97319; fill-opacity: 0.7;" />
+<text x="10" y="30">&lt;!doctype html&gt;</text>
+<text x="10" y="56">&lt;html&gt;</text>
+<text x="10" y="82">&#160;&#160;&lt;head&gt;</text>
+<text x="10" y="108">&#160;&#160;&#160;&#160;&lt;meta charset="utf-8"&gt;</text>
+<text x="10" y="136">&#160;&#160;&#160;&#160;&lt;title&gt;[% asset.title %]&lt;/title&gt;</text>
+<text x="10" y="162">&#160;&#160;&lt;/head&gt;</text>
+<text x="10" y="188">&#160;&#160;&lt;body&gt;</text>
+<text x="10" y="214">&#160;&#160;&#160;&#160;&lt;h1&gt;[% asset.title %]&lt;/h1&gt;</text>
+<text x="10" y="266">&#160;&#160;&#160;&#160;[% asset.content %]</text>
+
+<text x="10" y="316">&#160;&#160;&lt;/body&gt;</text>
+<text x="10" y="344">&lt;/html&gt;</text>
+    </g>
+    <g id="html" transform="translate(406, 0)">
+<rect x="0" y="0" width="364" height="224"
+      style="fill: #d97319; fill-opacity: 0.4;" />
+<rect x="0" y="224" width="364" height="74"
+      style="fill: #324d69; fill-opacity: 0.4;" />
+<rect x="0" y="298" width="364" height="62"
+      style="fill: #d97319; fill-opacity: 0.4;" />
+<text x="10" y="30">&lt;!doctype html&gt;</text>
+<text x="10" y="30">&lt;!doctype html&gt;</text>
+<text x="10" y="56">&lt;html&gt;</text>
+<text x="10" y="82">&#160;&#160;&lt;head&gt;</text>
+<text x="10" y="108">&#160;&#160;&#160;&#160;&lt;meta charset="utf-8"&gt;</text>
+<text x="10" y="136">&#160;&#160;&#160;&#160;&lt;title&gt;<tspan fill="white" stroke="none">My Blog</tspan>&lt;/title&gt;</text>
+<text x="10" y="162">&#160;&#160;&lt;/head&gt;</text>
+<text x="10" y="188">&#160;&#160;&lt;body&gt;</text>
+<text x="10" y="214">&#160;&#160;&#160;&#160;&lt;h1&gt;<tspan fill="white" stroke="none">My Blog</tspan>&lt;/h1&gt;</text>
+<text x="10" y="240" fill="white" stroke="none">&#160;&#160;&#160;&#160;&lt;p&gt;This is my great blog.&lt;/p&gt;</text>
+
+<text x="10" y="284" fill="white" stroke="none">&lt;h2&gt;Blog Posts&lt;/h2&gt;</text>
+
+<text x="10" y="316">&#160;&#160;&lt;/body&gt;</text>
+<text x="10" y="344">&lt;/html&gt;</text>
+    </g>
+
+    <g id="markdown" transform="translate(770,0)">
+<rect x="0" y="104" width="250" height="120"
+      style="fill:#324d69;fill-opacity:0.8" />
+<rect x="0" y="224" width="250" height="74"
+      style="fill:#324d69;fill-opacity:1.0" />
+<text x="10" y="136" stroke="none" fill="white">---</text>
+<text x="10" y="162" stroke="none" fill="white">title: My Blog</text>
+<text x="10" y="188" stroke="none" fill="white">location: /index.html</text>
+<text x="10" y="214" stroke="none" fill="white">---</text>
+<text x="10" y="240" stroke="none" fill="white">This is my great blog.</text>
+
+<text x="10" y="292" stroke="none" fill="white">## Blog Posts</text>
+    </g>
+
+  <line x1="778" y1="154" x2="646" y2="136" 
+        stroke="#d97319" stroke-width="5" style="fill-opacity: 0.7;"
+        marker-end="url(#arrow)" />
+  <line x1="778" y1="154" x2="612" y2="198" 
+        stroke="#d97319" stroke-width="5" style="fill-opacity: 0.7;"
+        marker-end="url(#arrow)" />
+  <line x1="820" y1="258" x2="760" y2="258" 
+        stroke="#d97319" stroke-width="5" style="fill-opacity: 1.0;"
+        marker-end="url(#arrow)" />
+
+</svg>
