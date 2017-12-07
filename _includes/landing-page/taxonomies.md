@@ -2,8 +2,8 @@
 view: landing-feature-right.html
 title: Unlimited Taxonomies
 classes: item_1
-button: How?
-button_link: '#'
+button: Learn More
+button_link: /en/docs/taxonomies/
 image: /images/drawers-start-640w.jpeg
 image_alt: Old sideboard with many drawers
 ---
