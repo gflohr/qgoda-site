@@ -1,10 +1,10 @@
-$brand-primary: #2b689c;
-$brand-warning: #d97319;
-$brand-warning-opaque: rgba(217, 115, 25, 0.75);
+$primary: #2b689c;
+$warning: #d97319;
+$warning-opaque: rgba(217, 115, 25, 0.75);
 @import '~bootstrap/scss/bootstrap.scss';
 
 .bg-warning-opaque {
-    background-color: $brand-warning-opaque;
+    background-color: $warning-opaque;
 }
 
 .nav-link {
