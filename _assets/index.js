@@ -1,3 +1,6 @@
+// Bootstrap.
+import('bootstrap');
+
 require('./scss/bootstrap.scss');
 require('./scss/font-awesome.scss');
 

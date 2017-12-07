@@ -108,7 +108,6 @@ module.exports = {
       jQuery: 'jquery',
       'window.jQuery': 'jquery',
       Popper: ['popper.js', 'default'],
-      Tether: 'tether',
     }),
     new CopyWebpackPlugin([
       /* Anybody gets this running with require()?  */
