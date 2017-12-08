@@ -2,12 +2,12 @@
 title: Qgoda in 15 Minutes
 name: qgoda-in-15-minutes
 doc-section: Introduction
-order: 15
+order: 15  
 view: docs.html
 description: Learn the basic concepts of Qgoda in 15 minutes by building an ugly but simple site from scratch. 
 ---
 [% USE q = Qgoda %]
-Qgoda is a [command-line tool](http://www.guido-flohr.net/en/command-line/) tool. Create an empty directory somewhere (what about `qgoda-quickstart`?) and open a command-line window in it. Well-behaving command-line tools do not do anything destructive, when invoked without arguments.  Let's try whether qgoda is well-behaving:
+Qgoda is a [command-line tool](http://www.guido-flohr.net/en/command-line/). Create an empty directory `qgoda-quickstart` somewhere and open a command-line window in it. Well-behaving command-line tools do not do anything destructive, when invoked without arguments.  Let's try whether qgoda is well-behaving:
 
 <!--TOC-->
 
@@ -24,13 +24,18 @@ Okay, do as you were told and try `qgoda --help`.  That will print out an overvi
 
 ```bash
 qgoda-quickstart $ qgoda build
-[Wed Dec 06 20:12:06.89951 2017][warning][config] config file '_config.yaml' not found, proceeding with defaults.
-[Wed Dec 06 20:12:06.90099 2017][info][plugin-loader] initializing plug-ins.
-[Wed Dec 06 20:12:06.90112 2017][info] start building site
-[Wed Dec 06 20:12:06.90207 2017][info] finished building site with 0 artefacts
+[warning][config] config file '_config.yaml' not found, proceeding with defaults.
+[info][plugin-loader] initializing plug-ins.
+[info] start building site
+[info] finished building site with 0 artefacts
 g
 qgoda-quickstart $
 ```
+
+[% WRAPPER components/infobox.html
+           type='info' title='Log Timestamps' %]
+Actually, the log messages are prepended by timestamps.  They are discarded here, so that the log output is easier to read.
+[% END %]
 
 Did you notice the warning about the missing configuration file? What are these defaults that were mentioned in the warning? Try it out:
 
@@ -57,7 +62,7 @@ Anyway, the configuration you have seen does probably not make a lot of sense to
 Like most static site generators, textual content in Qgoda is normally written in [Markdown](https://daringfireball.net/projects/markdown/syntax), a very simple markup language that resembles to email conventions.  Create a text file `index.md` in the directory:
 
 ```markdown
-This is my first blog created with Qgoda.
+This is my great blog.
 
 ## Blog Posts
 ```
@@ -66,10 +71,10 @@ See what happens now:
 
 ```bash
 qgoda-quickstart $ qgoda build
-[Wed Dec 06 10:31:38.23463 2017][warning][config] config file '_config.yaml' not found, proceeding with defaults.
-[Wed Dec 06 10:31:38.23598 2017][info][plugin-loader] initializing plug-ins.
-[Wed Dec 06 10:31:38.23609 2017][info] start building site
-[Wed Dec 06 10:31:38.23796 2017][info] finished building site with one artefact
+[warning][config] config file '_config.yaml' not found, proceeding with defaults.
+[info][plugin-loader] initializing plug-ins.
+[info] start building site
+[info] finished building site with one artefact
 qgoda-quickstart $
 ```
 
@@ -97,11 +102,6 @@ qgoda-quickstart $ qgoda watch
 [info] start building site
 [info] finished building site with one artefact
 ```
-
-[% WRAPPER components/infobox.html
-           type='info' title='Log Timestamps' %]
-The timestamp will be omitted from now on in the log output, so that long lines are easier to read.
-[% END %]
 
 This is the same as before but the program no longer terminates but waits for changes instead.  It actually waits infinitely.  Type `CTRL-C` or close the terminal window, if you want to stop it.
 
@@ -184,4 +184,156 @@ Time to look at the file that Qgoda has created:
   </figcaption>
 </figure>
 
-To be continued ...
+By default, Qgoda processes the content in these stages:
+
+1. Front matter (here `title` and `location`) is stripped off and turned into document properties.
+
+2. The Markdown file is run through the Markdown processor, turning strings like `## Blog Posts` into HTML code (`<h2>Blog Posts</h2>`).
+
+3. The output of the previous step is run through the template processor Template Toolkit.  In the above case there was no template code and that step was unnecessary.
+
+4. The *view template* (defaults to `_views/default.html`) gets processed, and the output of steps 2 and 3 above is inserted for `[% asset.content %]`.
+
+It's a slight fib.  Actually the whole process except for step 1 is completely configurable.
+
+## Start a Web Server (Browsersync)
+
+You can double-click the generated html file in order to see it but it would actually be nicer to see it automatically. Let's install a mini web server for that purpose.
+
+### Initializing a Node.js Project
+
+You now have to install Node.js and either `yarn` or `npm`.  Read [[% q.llink(name = 'installation') %]]([% q.lxref(name = 'installation') %]) unless you haven't done so already.  Open a second terminal window:
+
+```shell
+$ cd /path/to/qgoda-quickstart
+qgoda-quickstart $ yarn init --yes
+yarn init v1.3.2
+warning The yes flag has been set. This will automatically answer yes to all questions which may have security implications.
+success Saved package.json
+✨  Done in 0.03s.
+qgoda-quickstart $
+```
+
+Alternatively you can use the command is `npm init --yes`.
+
+The file `P:package.json` contains some basic information about your project.  Have a look inside if you want to.
+
+### Installing Browsersync
+
+Browsersync is a small but powerful web server written in Javascript, perfectly suited for us:
+
+```shell
+$ yarn add browser-sync
+yarn add v1.3.2
+info No lockfile found.
+[1/4] 🔍  Resolving packages...
+...
+```
+
+That may take a minute untill the server and all of its dependencies have been installed.
+
+But something else has happened.  Qgoda is throwing error messages in the console because a directory `P:node_modules` was created.  That is where `yarn` or `npm` save local dependencies of your web project. 
+
+You have to tell qgoda to ignore that directory.  Create a file `P:_config.yaml` like this:
+
+```yaml
+helpers:
+  server: yarn run server
+exclude:
+  - /node_modules
+  - /package.json
+  - /package-json.lock
+  - /yarn.lock
+```
+
+Now add `P:package.json`.  You have to configure the command `server`:
+
+```json
+{
+  "scripts": {
+    "server": "browser-sync start --server _site --files _timestamp"
+  },
+  "name": "qgoda-quickstart",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "browser-sync": "^2.18.13"
+  }
+}
+```
+
+The key `scripts` is new.  If you have used `npm`, there is already a `scripts` section.  Delete it or overwrite it.
+
+Google for `yarn`, `npm`, `browsersync`, `nodejs`, ... if anything of the above is unclear to you.
+
+### Start the Web Server
+
+Stop qgoda in the other terminal window with `CTRL-C` or close the terminal window, and restart it.  You will see that the message about the missing configuration file has vanished.
+
+And then the magic happens:
+
+<figure class="figure w-100">
+  <img src="/images/qgoda-in-15-minutes/browsersync.png"
+       alt="Browsersync has opened a browser window">
+  <figcaption class="figure-caption text-xs-center">
+    Browsersync has started a web server listening on port 3000
+    and displays the start page
+  </figcaption>
+</figure>
+
+
+
+## A Recipe Blog
+
+Let's add some more documents.  Create a file `cherry-tart.md` next to `index.md`:
+
+### Writing Blog Posts and Other Documents
+
+```yaml
+---
+title: Cherry Tart
+name: cherry-tart
+type: recipe
+---
+# [% asset.title %]
+
+## Ingredients
+
+* 1 cherry
+* 1 tart
+
+## Preparation
+
+Put the cherry on the tart.  Serve fresh!
+```
+
+And one more `hard-boiled-egg.md`:
+
+```yaml
+---
+title: Hard Boiled Egg
+name: hard-boiled egg
+type: recipe
+---
+# [% asset.title %]
+
+## Ingredients
+
+* 1 egg size M
+* 1 l water
+
+## Preparation
+
+1. Put the egg in the water.
+2. Bring the water to boil.
+3. Turn off the heat and wait 12 minutes.
+```
+
+Writing the recipe for a cucumber sandwich is left as an exercise to the reader.
+
+Take a look into the output directory `P:_site`.  Qgoda has created the files `_site/cherry-tart/index.html` and `_site/hard-boild-egg/index.html` and maybe `_site/cucumber-sandwich/index.html`.
+
+As you can see, it now also guesses the name of the output file correctly.
+
+### Listings

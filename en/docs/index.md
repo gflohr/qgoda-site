@@ -12,14 +12,15 @@ can build any website you want with it.  And by the way, it is pronounced
 
 [% WRAPPER components/infobox.html
            type='warning' title='This Is a Draft!' %]
-This documentation is work in progress.  A lot of stuff is missing here,
+<p>This documentation is work in progress.  A lot of stuff is missing here,
 and part of the stuff documented here documents a past or future state
 of the software.  Well, and some parts of this documentation are plain
 wrong.  That being said, it should also be clear that features can still
-change without notice, whether they are documented or not.
-
+change without notice, whether they are documented or not.</p>
+<p>&nbsp;</p>
+<p>
 Nonetheless, Qgoda is in productive use since mid 2016 and already
-generating a handful of web sites without problems.
+generating a handful of web sites without problems.</p>
 [% END %]
 
 Setting up your own blog, portfolio or company web site with Qgoda is simple

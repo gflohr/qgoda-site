@@ -57,7 +57,7 @@ exclude:
 - /package.json
 - /webpack.config.js
 - assets/images/**/*.xcf
-- !/_posts
+- "!/_posts"
 ```
 
 This would now enable processing of all the files in the top-level directory `_posts`.
@@ -69,7 +69,7 @@ Example:
 ```yaml
 exclude:
 - /archive
-- !/archive/2017
+- "!/archive/2017"
 ```
 
 The second pattern is invalid and ignored because `/archive` is a parent directory of `/archive/2017`.
@@ -80,9 +80,9 @@ That leads to a little problem if you want to re-include a subdirectory of an au
 
 ```yaml
 exclude:
-- !/_experiments
+- "!/_experiments"
 - /_experiments/*
-- !/_experiments/stable
+- "!/_experiments/stable"
 ```
 You have to keep in mind that Qgoda has prepended this list with `/_*` (see above).  Line 1 re-includes `_experiments`.  Line 2 excludes all its subdirectories again.  And line 3 selectively re-includes `_experiments/stable`.
 
@@ -105,8 +105,8 @@ The list that is really used by Qgoda looks like this:
 exclude_watch:
 - .*
 - /_*
-- !/_views
-- !/_includes
+- "!/_views"
+- "!/_includes"
 - assets/movies
 - /_site
 ```
@@ -148,6 +148,11 @@ This now matches `images/ci/logo.xcf` *and* `images/logo.xcf` and also `images/n
 #### The Exclmation Mark "!"
 
 The exclamation mark negates a pattern.  See [below](#negating-patterns) for details.
+
+[% WRAPPER components/infobox.html
+           type = "warning" title = "The exclamation mark is special to YAML" %]
+The exclamation mark <code>!</code> is a special character in YAML and JSON.  You therefore have to put negated patters into quotes, for example "!a/b".
+[% END %]
 
 #### The Question Mark "?"
 
