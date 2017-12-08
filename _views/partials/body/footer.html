@@ -1,23 +1,24 @@
 [% USE gtx = Gettext %]
 [% USE q = Qgoda %]
 <div class="container">
-  <div class="col-md-7">
+  <div class="col-12 col-md-6 footer-links text-md-center">
     [% copyright_link = gtx.gettext('<a href="' 
                                      _ config.legal.copyright_uri
                                      _ '">'
                                      _ config.legal.name
                                      _ '</a>') %]
-    [% gtx.xgettext("Copyright &copy; {copyright_year} {copyright_holder}, all rights reserved.",
+    [% gtx.xgettext("Copyright &copy; {copyright_year} {copyright_holder}",
                     copyright_year=config.legal.copyright_year
                     copyright_holder=copyright_link) %]
   </div>
-  <div class="col-md-5 footer-links">
+  <div class="col-12 col-md-3 footer-links text-center">
     <a href="[% q.llink(name='legal-disclosure') %]">
       [% q.lxref('title', name='legal-disclosure') %]
     </a>
-    &nbsp;|&nbsp;
-    <a href="[% q.llink(name='data-privacy-policy') %]">
-      [% q.lxref('title', name='data-privacy-policy') %]
+  </div>
+  <div class="col-12 col-md-3 footer-links text-center">
+    <a href="[% q.llink(name='data-privacy') %]">
+      [% q.lxref('title', name='data-privacy') %]
     </a>
   </div>
 </div>

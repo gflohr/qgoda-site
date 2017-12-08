@@ -1,5 +1,5 @@
 // Bootstrap.
-import('bootstrap');
+require('bootstrap');
 
 require('./scss/bootstrap.scss');
 require('./scss/font-awesome.scss');

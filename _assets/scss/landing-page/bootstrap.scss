@@ -59,4 +59,14 @@
 
 footer .container {
   display: flex;
+  flex-wrap: wrap;
+  color: #dddddd;
+
+  .footer-links a {
+      color: #dddddd;
+      text-decoration: underline;
+  }
+  .footer-links a:hover {
+      color: #e74d3c;
+  }
 }

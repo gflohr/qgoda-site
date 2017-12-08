@@ -1,6 +1,6 @@
 ---
-title: Data Privacy Policy
-name: data-privacy-policy
+title: Data Privacy
+name: data-privacy
 view: docs.html
 description: What private date does this site receive, and what does it use it for?
 ---
