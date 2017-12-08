@@ -31,8 +31,6 @@ Qgoda can create lists with arbitrary filters, not just for categories.  Example
                  ) %]
 ```
 
-<br>
-
 See [[- q.lxref('title', name='listings') -]]([- q.llink(name='listings') -]) 
 for more information.
 

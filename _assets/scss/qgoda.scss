@@ -2,7 +2,8 @@ $qgoda-font-size: 1.2rem;
 $qgoda-main-color: #555;
 $qgoda-headline-color: #333;
 $qgoda-nav-link-color: #fff;
-$qgoda-orange: #d97319;
+//$qgoda-orange: #d97319;
+$qgoda-orange: #2b689c;
 
 /* Stolen from bootstrap.  They should really referece the values from
  * bootstrap instead of hard-coding them.
@@ -25,19 +26,37 @@ html {
 }
 
 body {
-    font-family: 'Raleway', sans-serif;
-    color: $qgoda-main-color;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 28px;
+    text-transform: none;
+    color: #666666;
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 200;
-    color: $qgoda-headline-color;
+    font-family: Arimo, Arial, Helvetica, sans-serif;
+}
+
+h1, .h1 {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: normal;
+    line-height: 77.55099487304688px;
+    text-transform: uppercase;
+    color: $brand-primary;
 }
 
 h2 {
-    font-size: 1.9rem;
-    font-weight: 300;
+    font-size: 31px;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: normal;
+    line-height: 40.172706604003906px;
+    text-transform: uppercase;
 }
 
 .content {
@@ -63,8 +82,14 @@ h2 {
     margin-bottom: 2rem;
 
     .description {
-        font-size: 1.1rem;
-        color: $gray-light;
+        font-family: Aleo;
+        font-size: 24px;
+        font-style: italic;
+        font-weight: normal;
+        letter-spacing: normal;
+        line-height: 31.36263234991776378939px;
+        text-transform: none;
+        color: #999999;
     }
 }
 
