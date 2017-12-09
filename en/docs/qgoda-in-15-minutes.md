@@ -296,8 +296,6 @@ title: Cherry Tart
 name: cherry-tart
 type: recipe
 ---
-# [% asset.title %]
-
 ## Ingredients
 
 * 1 cherry
@@ -316,8 +314,6 @@ title: Hard Boiled Egg
 name: hard-boiled egg
 type: recipe
 ---
-# [% asset.title %]
-
 ## Ingredients
 
 * 1 egg size M
@@ -330,6 +326,8 @@ type: recipe
 3. Turn off the heat and wait 12 minutes.
 ```
 
+By the way, that really works.
+
 Writing the recipe for a cucumber sandwich is left as an exercise to the reader.
 
 Take a look into the output directory `P:_site`.  Qgoda has created the files `_site/cherry-tart/index.html` and `_site/hard-boild-egg/index.html` and maybe `_site/cucumber-sandwich/index.html`.
@@ -337,3 +335,114 @@ Take a look into the output directory `P:_site`.  Qgoda has created the files `_
 As you can see, it now also guesses the name of the output file correctly.
 
 ### Listings
+
+You know that the new documents are there.  But how can you see them in the browser? You have to create links to them from the start page.
+
+This is the most complicated part, as it involves  a little programming with the Template Toolkit.  Edit the file `index.md` until it reads like this:
+
+```html
+---
+title: My Blog
+location: /index.html
+---
+This is my first blog created with Qgoda.
+
+## Blog Posts
+
+[% USE q = Qgoda %]
+<ul>
+[% FOREACH post IN q.list(type = 'recipe').nsortBy('date') %]
+  <li>
+    <h3>[% post.title %]</h3>
+    <p>[% post.excerpt %]</p>
+    <p>
+      <a href="[% post.permalink %]">Read more</a>
+    </p>
+  </li>
+[% END %]
+</ul>
+```
+
+The first line asking for explanation is `[% USE q = Qgoda %]`.  The <a href="http://www.template-toolkit.org/docs/manual/Directives.html#section_USE"><code>USE</code></a> keyword loads a plug-in for the Template Toolkit, in this case the Qgoda plug-in that ships with Qgoda.  This plug-in lets you access all Qgoda features from within your templates and documents.  By convention, you alias the plug-in with the letter `q`.
+
+The <a href="http://www.template-toolkit.org/docs/manual/Directives.html#section_FOREACH"><code>FOREACH</code></a> keyword iterates over lists.  The list used here is produced by the plug-in method `q.list()` which --- when called without arguments --- gives you all documents that Qgoda knows about.
+
+[@ WRAPPER components/infobox.html
+             type = 'warning' 
+             title = "Template Code Is Case-Sensitive!" @]
+You have to write "FOREACH" and "IN" and not "foreach" or "in".  You will seldom mis-spell "FOREACH" but writing "in" instead of "IN" is a common mistake that is hard to spot.  Whenever a listing is empty without obvious reason, check your spelling!
+[@ END @]
+
+But we want just recipe documents.  Remember that the recipes contained a line `type: recipe` in the YAML front matter? We filter by that property so that only recipes appear in the list.
+
+Check the result in the browser.  Your recipes should now appear on the start page, sorted by last modification date.
+
+By the way, you can add more filters to further restrict the list:
+
+```html
+[% q.list(type = 'recipe' lingua = asset.lingua) %]
+```
+
+This would now only list documents that have a property `V:lingua` with the same value as the current page's `V:lingua`.  The property lingua is used by convention for the language code of a document.  Right now, that would lead to an empty list, because we didn't use the property `V:lingua`.
+
+### Links
+
+Sometimes, you want to link to a particular document.  Imagine, you want to recommend a cherry tart as a dessert to the hard-boiled egg.  You can, of course do this in `hard-boiled-egg.md`:
+
+```html
+---
+title: Hard Boiled Egg
+name: hard-boiled egg
+type: recipe
+---
+## Ingredients
+
+* 1 egg size M
+* 1 l water
+
+## Preparation
+
+1. Put the egg in the water.
+2. Bring the water to boil.
+3. Turn off the heat and wait 12 minutes.
+
+Recommendation for dessert: [Cherry Tart](/cherry-tart/).
+```
+
+The syntax `[LABEL](href)` is used for links in Markdown.  Hard-coding links like this works perfectly, and if you like to keep it simple, just stick with it.
+
+The disadvantage is that the link will be broken, if you decide to rename the cherry tart recipe, for example from `cherry-tart.md` to `cherry-on-the-tart.md`.  You can prevent that by using "symbolic" links.  By convention, you use the property `V:name` to identify a document independently of its concrete location.  Since we had given the `V:name` `cherry-tart` to the cherry tart recipe, you can write:
+
+```html
+[% USE q = Qgoda %]
+Recommendation for dessert:
+[Cherry Tart]([% q.link(name = 'cherry-tart') %])
+```
+
+That produces the same link as before but the link will now stay intact if you decide to relocate the cherry tart recipe.
+
+[@ WRAPPER components/infobox.html
+             type = 'info' title = "USE Qgoda" @]
+The line "[% USE q = Qgoda %]" is only needed once per document.  But if you forget it, the Template Toolkit will silently fail and just return empty strings for all calls to plug-in methods.
+[@ END @]
+
+A link is just a special case of a cross-reference, and just like you can refer to another document's `V:permalink` property, you can also retrieve its title, making the link completely immune against changes in the target:
+
+```html
+[% USE q = Qgoda %]
+Recommendation for dessert:
+[[% q.xref('title', name = 'cherry-tart' %]]([% q.link(name = 'cherry-tart') %]).
+```
+
+And since this is such a common use case, you can safe some typing with this shortcut version:
+
+```html
+[% USE q = Qgoda %]
+Recommendation for dessert: [% q.anchor(name = 'cherry-tart') %].
+```
+
+## Where To Go From Here
+
+You know almost everything about Qgoda by now.  You combine the simplicity of Markdown with the power of the Template Toolkit and you wire everything together with the Qgoda plug-in for the Template Toolkit.
+
+Explore the rest of the documentation for further details, and check out Qgoda demo themes for advanced functionality.
