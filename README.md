@@ -1,8 +1,3 @@
 # qgoda-site
 
-The Qgoda Website
-
-# Description
-
-This is work in progress.  See [https://github.com/gflohr/qgoda]
-for the mother project.  Send questions to the project owner.
+This is the source code of http://www.qgoda.net/.  You need [Qgoda](https://github.com/gflohr/qgoda) for running it locally.
