@@ -14,6 +14,11 @@ helpers:
   yarn: yarn start
   browser-sync: yarn server
 defaults:
+  - files:
+      - /*/**
+      - '!/en/'
+    values:
+      translate: [title, description] 
   - files: /posts
     values:
       type: post
