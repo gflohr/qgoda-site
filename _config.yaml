@@ -49,9 +49,7 @@ processors:
       - TT2
       - Hoedown
 po:
-  xgettext:
-    text:
-      - en
+  textdomain: 'net.qgoda.www'
 
 # This should be overridden in _localconfig.yaml or in a private branch.
 legal:
