@@ -15,6 +15,35 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit"
 
+#: ../_views/partials/body/footer.html:10
+#, perl-brace-format
+msgid "Copyright &copy; {copyright_year} {copyright_holder}"
+msgstr ""
+
+#: ../_views/partials/body/sidebar-top.html:7
+msgid "Source code of this page"
+msgstr ""
+
+#: ../_views/partials/head-landing.html:4 ../_views/partials/head.html:6
+msgid "Qgoda - The Static Site Generator"
+msgstr ""
+
+#: ../_views/partials/header/navbar.html:6
+msgid "Toggle navigation"
+msgstr ""
+
+#: ../_views/partials/header/navbar.html:21
+msgid "Home"
+msgstr ""
+
+#: ../_views/partials/header/navbar.html:27
+msgid "News"
+msgstr ""
+
+#: ../_views/partials/header/navbar.html:33
+msgid "Docs"
+msgstr ""
+
 #: ../en/docs/configuration-variables.md:2
 msgctxt "title"
 msgid "Configuration Variables"
