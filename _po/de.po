@@ -48,7 +48,7 @@ msgstr "Doku"
 #: ../en/docs/configuration-variables.md:2
 msgctxt "title"
 msgid "Configuration Variables"
-msgstr "Konfigurationsvariablen"
+msgstr "Konfigurations-Variablen"
 
 #: ../en/docs/configuration-variables.md:7
 msgctxt "description"
@@ -67,7 +67,9 @@ msgstr ""
 msgid ""
 "The following configuration variables from the file `_config.yml` are "
 "understood by Qgoda:"
-msgstr "Die folgenden Konfigurationsvariablen aus `P:_config.yaml` werden von Qgoda verarbeitet:"
+msgstr ""
+"Die folgenden Konfigurationsvariablen aus `P:_config.yaml` werden von Qgoda "
+"verarbeitet:"
 
 #: ../en/docs/configuration-variables.md:15
 msgid ""
@@ -2512,4 +2514,18 @@ msgid ""
 "Sass 3.  It is a strict superset of CSS, so that every valid CSS file is\n"
 "also a valid SCSS file.\n"
 "[%- END %]"
+msgstr ""
+
+#: ../en/index.md:3
+#, fuzzy
+msgctxt "title"
+msgid "Qgoda Static Site Generator"
+msgstr "Qgoda - Der Static Site Generator"
+
+#: ../en/index.md:9
+msgid ""
+"[% USE q = Qgoda %]\n"
+"[% q.include('_includes/landing-page/header.md', asset) %]\n"
+"[% q.include('_includes/landing-page/main-features.md', asset) %]\n"
+"[% q.include('_includes/landing-page/about.md', asset) %]"
 msgstr ""

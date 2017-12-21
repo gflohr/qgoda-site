@@ -6,6 +6,7 @@ exclude:
   - /webpack.config.js
   - /yarn.lock
   - /TODO
+  - /LocaleData
   - /postcss.config.js
 exclude_watch:
   - /assets
@@ -19,15 +20,6 @@ defaults:
       - '!/en/'
     values:
       translate: [title, description] 
-  - files: /posts
-    values:
-      type: post
-  - files: /posts/en
-    values:
-      lingua: en
-  - files: /posts/de
-    values:
-      lingua: de
   - files: /en
     values:
       lingua: en
@@ -49,7 +41,13 @@ processors:
       - TT2
       - Hoedown
 po:
-  textdomain: 'net.qgoda.www'
+  textdomain: net.qgoda.www
+  msgid_bugs_address: Guido Flohr <guido.flohr@cantanea.com>
+  copyright_holder: cantanea EOOD <http://www.cantanea.com/>
+  qgoda:
+    - perl 
+    - -I/Users/guido/perl/qgoda/lib 
+    - /Users/guido/perl/qgoda/qgoda
 
 # This should be overridden in _localconfig.yaml or in a private branch.
 legal:
