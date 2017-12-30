@@ -8,7 +8,7 @@ description: Taxonomies partition your site according to arbitrary aspects.
 ---
 Taxonomies group assets into groups sharing common properties.  Qgoda supports
 an arbitrary number of taxonomies.  Every asset property can be promoted to a 
-taxonomy.
+taxonomy, simply by using it as a taxonomy.
 
 The concept of taxonomies is best understood by a typical example.  Consider
 a document with the following front matter:
@@ -45,28 +45,27 @@ with the condition `lingua="en"`.
   </figcaption>
 </figure>
 
-Likewise, you can identify all documents that are tagged with "Qgoda"
-and "Plug-Ins".
+Likewise, you can identify all documents that are tagged with "Qgoda".
 
 <figure class="figure w-100">
   <img src="/images/taxonomies/taxonomy-tags.svg"
        class="large-image figure-img img-fluid img-rounded d-block m-x-auto"
        alt="You can also group all documents tagged with &quot;Qgoda&quot; and &quot;Plug-Ins&quot;." />
   <figcaption class="figure-caption text-xs-center">
-    All documents tagged with "Qgoda" or "Plug-Ins". 
+    All documents tagged with "Qgoda". 
   </figcaption>
 </figure>
 
 By combining taxonomies you can define arbitrary subsets of a site's documents.
-You can for example identify all English documents tagged with "Qgoda" or
-"Plug-Ins" by `OR`'-ing the two above conditions.
+You can for example identify all English documents tagged with "Qgoda" and
+"Plug-Ins" by `AND`'-ing the two above conditions.
 
 <figure class="figure w-100">
   <img src="/images/taxonomies/taxonomies-combined.svg"
        class="large-image figure-img img-fluid img-rounded d-block m-x-auto"
        alt="Combining taxonomies can create arbitrary partitions of a site." />
   <figcaption class="figure-caption text-xs-center">
-    All English documents tagged with "Qgoda" or "Plug-Ins". 
+    All English documents tagged with "Qgoda" and "Plug-Ins". 
   </figcaption>
 </figure>
 
