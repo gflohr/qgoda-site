@@ -15,9 +15,9 @@ Qgoda is a [command-line tool](http://www.guido-flohr.net/en/command-line/). Cre
 
 ```bash
 qgoda-quickstart $ qgoda
-/opt/local/libexec/perl5.24/sitebin/qgoda: no command given!
-Usage: /opt/local/libexec/perl5.24/sitebin/qgoda COMMAND [OPTIONS]
-Try '/opt/local/libexec/perl5.24/sitebin/qgoda --help' for more information!
+qgoda: no command given!
+Usage: qgoda COMMAND [OPTIONS]
+Try 'qgoda --help' for more information!
 ```
 
 Okay, do as you were told and try `qgoda --help`.  That will print out an overview of the things you can do with the program.  The command "build" looks promising.   Before you try it out, you can also get help for that specific command with `qgoda build --help`.  That will display a description of the command run through your system's pager.  Type `q` to close the page, because we will try it with learning by doing now.
