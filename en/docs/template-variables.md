@@ -6,7 +6,6 @@ order: 910
 view: docs.html
 description: Standard and Pre-Defined Template Variables
 ---
-[% USE gtx = Gettext %]
 [% USE q = Qgoda %]
 [% PROCESS "functions/css-modules.tt" %]
 Not all of the following variables are necessarily available everywhere.
@@ -18,7 +17,7 @@ you prefer that term) `V:asset` and `V:config`.  All other
 variables, especially top-level variables are free for your use.
 
 [% WRAPPER components/infobox.html
-   type="warning" title=gtx.gettext('Overwriting Internal Variables') %]
+   type="warning" title='Overwriting Internal Variables' %]
 Qgoda allows overwriting these internal variables which may also affect
 documents processed afterwards.  This feature can lead to interesting
 results if you know what you are doing.  In general, it is a recipe
@@ -32,7 +31,7 @@ the asset currently being processed.
 [%- END %]
 
 [% WRAPPER "components/template-variable.html"
-   variable="config" type=gtx.gettext('hash') %]
+   variable="config" type='hash' %]
 `config` gives you access to the site configuration from `P:_config.yaml`.
 The configuration variable `C:paths.views` in `P:_config.yaml` is
 accessible from a template as `config.paths.views`.  See

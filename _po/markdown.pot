@@ -1213,9 +1213,9 @@ msgstr ""
 msgid ""
 "```bash\n"
 "qgoda-quickstart $ qgoda\n"
-"/opt/local/libexec/perl5.24/sitebin/qgoda: no command given!\n"
-"Usage: /opt/local/libexec/perl5.24/sitebin/qgoda COMMAND [OPTIONS]\n"
-"Try '/opt/local/libexec/perl5.24/sitebin/qgoda --help' for more information!\n"
+"qgoda: no command given!\n"
+"Usage: qgoda COMMAND [OPTIONS]\n"
+"Try 'qgoda --help' for more information!\n"
 "```"
 msgstr ""
 
@@ -1916,7 +1916,7 @@ msgstr ""
 msgid ""
 "Taxonomies group assets into groups sharing common properties.  Qgoda supports\n"
 "an arbitrary number of taxonomies.  Every asset property can be promoted to a \n"
-"taxonomy."
+"taxonomy, simply by using it as a taxonomy."
 msgstr ""
 
 #: ../en/docs/taxonomies.md:13
@@ -1969,37 +1969,36 @@ msgid ""
 msgstr ""
 
 #: ../en/docs/taxonomies.md:48
-msgid "Likewise, you can identify all documents that are tagged with \"Qgoda\"\n"
-"and \"Plug-Ins\"."
+msgid "Likewise, you can identify all documents that are tagged with \"Qgoda\"."
 msgstr ""
 
-#: ../en/docs/taxonomies.md:51
+#: ../en/docs/taxonomies.md:50
 msgid ""
 "<figure class=\"figure w-100\">\n"
 "  <img src=\"/images/taxonomies/taxonomy-tags.svg\"\n"
 "       class=\"large-image figure-img img-fluid img-rounded d-block m-x-auto\"\n"
 "       alt=\"You can also group all documents tagged with &quot;Qgoda&quot; and &quot;Plug-Ins&quot;.\" />\n"
 "  <figcaption class=\"figure-caption text-xs-center\">\n"
-"    All documents tagged with \"Qgoda\" or \"Plug-Ins\". \n"
+"    All documents tagged with \"Qgoda\". \n"
 "  </figcaption>\n"
 "</figure>"
 msgstr ""
 
-#: ../en/docs/taxonomies.md:60
+#: ../en/docs/taxonomies.md:59
 msgid ""
 "By combining taxonomies you can define arbitrary subsets of a site's documents.\n"
-"You can for example identify all English documents tagged with \"Qgoda\" or\n"
-"\"Plug-Ins\" by `OR`'-ing the two above conditions."
+"You can for example identify all English documents tagged with \"Qgoda\" and\n"
+"\"Plug-Ins\" by `AND`'-ing the two above conditions."
 msgstr ""
 
-#: ../en/docs/taxonomies.md:64
+#: ../en/docs/taxonomies.md:63
 msgid ""
 "<figure class=\"figure w-100\">\n"
 "  <img src=\"/images/taxonomies/taxonomies-combined.svg\"\n"
 "       class=\"large-image figure-img img-fluid img-rounded d-block m-x-auto\"\n"
 "       alt=\"Combining taxonomies can create arbitrary partitions of a site.\" />\n"
 "  <figcaption class=\"figure-caption text-xs-center\">\n"
-"    All English documents tagged with \"Qgoda\" or \"Plug-Ins\". \n"
+"    All English documents tagged with \"Qgoda\" and \"Plug-Ins\". \n"
 "  </figcaption>\n"
 "</figure>"
 msgstr ""
@@ -2107,18 +2106,5 @@ msgid ""
 "Sass 3.  It is a strict superset of CSS, so that every valid CSS file is\n"
 "also a valid SCSS file.\n"
 "[%- END %]"
-msgstr ""
-
-#: ../en/index.md:3
-msgctxt "title"
-msgid "Qgoda Static Site Generator"
-msgstr ""
-
-#: ../en/index.md:9
-msgid ""
-"[% USE q = Qgoda %]\n"
-"[% q.include('_includes/landing-page/header.md', asset) %]\n"
-"[% q.include('_includes/landing-page/main-features.md', asset) %]\n"
-"[% q.include('_includes/landing-page/about.md', asset) %]"
 msgstr ""
 

@@ -6,7 +6,6 @@ order: 930
 view: docs.html
 description: Complete List of Files and Directories
 ---
-[% USE gtx = Gettext %]
 [% USE q = Qgoda %]
 [% PROCESS "functions/css-modules.tt" %]
 
@@ -22,24 +21,24 @@ underscore of the name is ignored.
 <ul>
 
 [% WRAPPER components/file.html
-   name="_assets" type=gtx.gettext('directory') -%]
+   name="_assets" type='directory' -%]
 This directory usually keeps the source files for assets, for example
 JavaScript files or (S)CSS files.
 [%- END %]
 
 [% WRAPPER components/file.html
-   name="_config.yaml" type=gtx.gettext('file') -%]
+   name="_config.yaml" type='file' -%]
 Qgoda's main configuration file.
 [%- END %]
 
 [% WRAPPER components/file.html
-   name="_config.yml" type=gtx.gettext('file') -%]
+   name="_config.yml" type='file' -%]
 Qgoda's secondary configuration file.  It is only used if <code>P:config.yaml</code>
 does not exist.
 [%- END %]
 
 [% WRAPPER components/file.html
-   name="_includes" type=gtx.gettext('directory')
+   name="_includes" type='directory'
    overridable="paths.includes" -%]
 
 Directory for included content snippets.  You use that for example
@@ -49,7 +48,7 @@ of files ore directories in `_includes` trigger a site rebuild.
 [%- END %]
 
 [% WRAPPER components/file.html
-   name="_plugins" type=gtx.gettext('directory')
+   name="_plugins" type='directory'
    overridable="paths.plugins" -%]
 
 Directory for site-specific plug-ins.  Plug-Ins in this directory are
@@ -57,7 +56,7 @@ automatically activated.
 [%- END %]
 
 [% WRAPPER components/file.html
-   name="_site" type=gtx.gettext('directory')
+   name="_site" type='directory'
    overridable="paths.site" -%]
 
 The output directory.  This will normally be the document root of your
@@ -66,7 +65,7 @@ overwritten without warning.
 [%- END %]
 
 [% WRAPPER components/file.html
-   name="_timestamp" type=gtx.gettext('file')
+   name="_timestamp" type='file'
    overridable="paths.timestamp" -%]
 
 This file contains the time, when <code>P:_site</code> was last

@@ -6,7 +6,6 @@ order: 900
 view: docs.html
 description: Explanation of frequently used terms and concepts
 ---
-[% USE gtx = Gettext %]
 [% USE q = Qgoda %]
 [% PROCESS "functions/css-modules.tt" %]
 <ul>
