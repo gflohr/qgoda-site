@@ -3,7 +3,7 @@ view: landing-feature-left.html
 title: Multi-Language Blogging
 classes: item_2
 button: Learn More
-button_link: /en/docs/differences-to-jekyll/
+button_link: /en/docs/multi-language-overview/
 image: /images/earth-ko-640w.png
 image_alt: The earth from space
 ---
