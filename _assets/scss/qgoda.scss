@@ -222,6 +222,11 @@ pre[class*=language-] {
     margin-bottom: 1.5rem;
 }
 
+pre[class*=language-]>code {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
 h3 {
     margin-top: 1.5rem;
 }
