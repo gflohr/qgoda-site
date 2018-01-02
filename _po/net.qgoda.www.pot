@@ -29,10 +29,6 @@ msgstr ""
 msgid "default:"
 msgstr ""
 
-#: ../_views/partials/body/footer.html:5
-msgid "<a href=\""
-msgstr ""
-
 #: ../_views/partials/body/footer.html:10
 #, perl-brace-format
 msgid "Copyright &copy; {copyright_year} {copyright_holder}"
@@ -60,6 +56,196 @@ msgstr ""
 
 #: ../_views/partials/header/navbar.html:33
 msgid "Docs"
+msgstr ""
+
+#: ../en/data-privacy-policy.md:2
+msgctxt "title"
+msgid "Data Privacy"
+msgstr ""
+
+#: ../en/data-privacy-policy.md:5
+msgctxt "description"
+msgid "What private date does this site receive, and what does it use it for?"
+msgstr ""
+
+#: ../en/data-privacy-policy.md:7
+msgid ""
+"You cannot download any data or information from the internet without sending\n"
+"data or information first.  This page tries to inform you what information\n"
+"is collected related to your visit."
+msgstr ""
+
+#: ../en/data-privacy-policy.md:13
+msgid "## Logging"
+msgstr ""
+
+#: ../en/data-privacy-policy.md:15
+msgid ""
+"Like most web sites, this site stores information about every request in a\n"
+"server log file, a file stored on the web server.  Visiting one single page\n"
+"typically results in multiple requests, for textual content, images or other\n"
+"media, script files, style sheets and so on."
+msgstr ""
+
+#: ../en/data-privacy-policy.md:20
+msgid "### What Is Stored?"
+msgstr ""
+
+#: ../en/data-privacy-policy.md:22
+msgid "The following pieces of information sent by your browser are stored:"
+msgstr ""
+
+#: ../en/data-privacy-policy.md:24
+msgid ""
+"- Your IP address.  This address identifies your computer or other device\n"
+"  while you are connected to the internet.  Your internet service provider\n"
+"  (ISP) has the legal duty to store information about which IP address\n"
+"  was assigned to which customer for a certain time in most countries.\n"
+"- The date and time of the request with an accuracy of one second.\n"
+"- The address of the resource.\n"
+"- Information about the browser and operating systems you are using and\n"
+"  their respective versions.  See the documentation of your browser if you\n"
+"  want to suppress sending that information.\n"
+"- In case that you visited the page by clicking a link, information about\n"
+"  the referring web site.  See the documentation of your browser if you\n"
+"  want to suppress sending that information."
+msgstr ""
+
+#: ../en/data-privacy-policy.md:37
+msgid "All this information is stored for technical purposes only, such as analysis\n"
+"of technial problems."
+msgstr ""
+
+#: ../en/data-privacy-policy.md:40
+msgid ""
+"Note that suppressing your IP address does not make sense.  Any server\n"
+"needs it as the address to which it should send the requested data.  The\n"
+"purpose of the IP address is not to disrupt your privacy but it is needed\n"
+"for any communication on the internet."
+msgstr ""
+
+#: ../en/data-privacy-policy.md:45
+msgid "### How Long Is It Stored?"
+msgstr ""
+
+#: ../en/data-privacy-policy.md:47
+msgid "Log files are ultimately deleted after at most one month."
+msgstr ""
+
+#: ../en/data-privacy-policy.md:49
+msgid "## Cookies"
+msgstr ""
+
+#: ../en/data-privacy-policy.md:51
+msgid "### What are Cookies?"
+msgstr ""
+
+#: ../en/data-privacy-policy.md:53
+msgid ""
+"Cookies are little pieces of information that the site sends to your\n"
+"browser.  The browser stores this information in a file or in memory,\n"
+"and sends it back to the server with all following requests until\n"
+"the cookie expires or the browser is instructed to delete it."
+msgstr ""
+
+#: ../en/data-privacy-policy.md:58
+msgid "Typical examples for cookies are language preferences or for example\n"
+"the content of a shopping cart."
+msgstr ""
+
+#: ../en/data-privacy-policy.md:61
+msgid "### How Can You Disable Cookies?"
+msgstr ""
+
+#: ../en/data-privacy-policy.md:63
+msgid "Please see your browser's documentation for information about how to\n"
+"disable cookies in general, for specific sites, or from specific sources."
+msgstr ""
+
+#: ../en/data-privacy-policy.md:66
+msgid "[% IF config.google.analytics_id %]"
+msgstr ""
+
+#: ../en/data-privacy-policy.md:68
+msgid "## Google Analytics"
+msgstr ""
+
+#: ../en/data-privacy-policy.md:70
+msgid ""
+"This website uses Google Analytics, a web tracking and analysis serve\n"
+"by Google Inc., 1600 Amphitheater Parkway, Mountain View, CA 94043, USA,\n"
+"hereinafter referred as \"Google\"."
+msgstr ""
+
+#: ../en/data-privacy-policy.md:74
+msgid ""
+"Google also uses cookies (see above) for storing information\n"
+"about your use of this site.  The information stored in these cookies is \n"
+"sent to Google servers, usually in the USA, and stored there."
+msgstr ""
+
+#: ../en/data-privacy-policy.md:78
+msgid "### Data Usage"
+msgstr ""
+
+#: ../en/data-privacy-policy.md:80
+msgid ""
+"Google uses the information for analyzing your usage of this site.  It\n"
+"compiles reports on the website activities and the audience of the site,\n"
+"and provides other services concerning the use of the website and \n"
+"internet usage in general."
+msgstr ""
+
+#: ../en/data-privacy-policy.md:85
+msgid "### AdWords and DoubleClick"
+msgstr ""
+
+#: ../en/data-privacy-policy.md:87
+msgid ""
+"This site also uses Google Analytics for analsys of data from AdWords\n"
+"and DoubleClick.  Both services use cookies as well.  You can opt out\n"
+"of this data sharing with the Ads Preferences Manager at\n"
+"http://www.google.com/settings/ads/onweb/?hl=en."
+msgstr ""
+
+#: ../en/data-privacy-policy.md:92
+msgid "### IP Abbreviation"
+msgstr ""
+
+#: ../en/data-privacy-policy.md:94
+msgid ""
+"This site has activated IP abbreviation for Google Analytics.  Your IP\n"
+"address will be abbreviated by Google within Member States of the \n"
+"European Union or in other states that are signatories to to the \n"
+"Agreement on the European Economic Area.  Only in exceptional cases will\n"
+"the full IP address be transferred to a Google server in the USA before\n"
+"it is abbreviated."
+msgstr ""
+
+#: ../en/data-privacy-policy.md:101
+msgid "### Browser Plug-In"
+msgstr ""
+
+#: ../en/data-privacy-policy.md:103
+msgid ""
+"You can prevent your data being used by Google Analytics with the\n"
+"installation of the Google Analytics Opt-out Browser Add-on that can\n"
+"be downloaded from https://tools.google.com/dlpage/gaoptout?hl=en."
+msgstr ""
+
+#: ../en/data-privacy-policy.md:107
+msgid "### Further Information by Google"
+msgstr ""
+
+#: ../en/data-privacy-policy.md:109
+msgid ""
+"Google provides additional information about the conditions of use\n"
+"and data protection under http://www.google.com/analytics/terms/gb.html\n"
+"and http://www.google.com/intl/en-GB/policies/privacy/."
+msgstr ""
+
+#: ../en/data-privacy-policy.md:113
+msgid "[% END %]"
 msgstr ""
 
 #: ../en/docs/configuration-variables.md:2
@@ -120,7 +306,7 @@ msgid ""
 msgstr ""
 
 #: ../en/docs/configuration-variables.md:39
-#: ../en/docs/files-and-directories.md:78 ../en/docs/terms-and-concepts.md:33
+#: ../en/docs/files-and-directories.md:78
 msgid "</ul>"
 msgstr ""
 
@@ -387,6 +573,367 @@ msgstr ""
 
 #: ../en/docs/differences-to-jekyll.md:155
 msgid "[- TAGS [% %] -]"
+msgstr ""
+
+#: ../en/docs/excluding-files.md:2
+msgctxt "title"
+msgid "Excluding Files"
+msgstr ""
+
+#: ../en/docs/excluding-files.md:7
+msgctxt "description"
+msgid "How to exclude (or include) additional paths in Qgoda."
+msgstr ""
+
+#: ../en/docs/excluding-files.md:9
+msgid "By default, Qgoda does not process hidden files and directories (name starts with a dot `.`).  Top-level files and directories that have names beginning with an underscore `_` are also excluded."
+msgstr ""
+
+#: ../en/docs/excluding-files.md:13
+msgid "## Excluding Additional Files"
+msgstr ""
+
+#: ../en/docs/excluding-files.md:15
+msgid "You can change this default behavior by configuring additional file name patterns in the variable `C:exclude` in the configuration file `P:_config.yml`."
+msgstr ""
+
+#: ../en/docs/excluding-files.md:17 ../en/docs/excluding-files.md:67
+#: ../en/docs/excluding-files.md:95
+msgid "Example:"
+msgstr ""
+
+#: ../en/docs/excluding-files.md:19
+msgid ""
+"```yaml\n"
+"exclude:\n"
+"- /node_modules\n"
+"- /package.json\n"
+"- /webpack.config.js\n"
+"- assets/images/**/*.xcf\n"
+"```"
+msgstr ""
+
+#: ../en/docs/excluding-files.md:27
+msgid "This will also exclude the top-level directory `node_modules`, and the top-level files `package.json` and `webpack.config.js`.  Likewise, all XCF files (the image format of [The Gimp](http://www.gimp.org/) in the directory `assets/images` and all of its descendant directories are excluded."
+msgstr ""
+
+#: ../en/docs/excluding-files.md:29
+msgid "## Automatically Excluded Files"
+msgstr ""
+
+#: ../en/docs/excluding-files.md:31
+msgid "Internally, Qgoda does not use the configured exclusion list directly but a slightly extended one.  For the above example it looks like this:"
+msgstr ""
+
+#: ../en/docs/excluding-files.md:33
+msgid ""
+"```yaml\n"
+"exclude:\n"
+"- .*\n"
+"- /_*\n"
+"- /node_modules\n"
+"- /package.json\n"
+"- /webpack.config.js\n"
+"- assets/images/**/*.xcf\n"
+"- /_site\n"
+"```"
+msgstr ""
+
+#: ../en/docs/excluding-files.md:44
+msgid "The first two lines files and directories that have names beginning with a dot (`.`) or top-level files and directories that have names beginning with an underscore."
+msgstr ""
+
+#: ../en/docs/excluding-files.md:46
+msgid "If you have invoked Qgoda with the command-line option `--drafts`, an addtional line `!/_drafts` (resp. the value of the configuration variable `directories.drafts`) is added."
+msgstr ""
+
+#: ../en/docs/excluding-files.md:48
+msgid "The last line is always appended and a safe-guard against configuration errors.  Unintentionally including the output directory `_site` (or whatever you have configured in the variable `outdir`) would lead to an infinite recursion.  The output directory is therefore always added to the exclusion list."
+msgstr ""
+
+#: ../en/docs/excluding-files.md:50
+msgid "## Including Files"
+msgstr ""
+
+#: ../en/docs/excluding-files.md:52
+msgid "There is no configuration variable `include`.  You can exclude otherwise excluded files by prepending a pattern with an exclamation mark `!`.  The pattern is then negated:"
+msgstr ""
+
+#: ../en/docs/excluding-files.md:54
+msgid ""
+"```yaml\n"
+"exclude:\n"
+"- /node_modules\n"
+"- /package.json\n"
+"- /webpack.config.js\n"
+"- assets/images/**/*.xcf\n"
+"- \"!/_posts\"\n"
+"```"
+msgstr ""
+
+#: ../en/docs/excluding-files.md:63
+msgid "This would now enable processing of all the files in the top-level directory `_posts`."
+msgstr ""
+
+#: ../en/docs/excluding-files.md:65
+msgid "Beware though that you cannot re-include files or directories, when one of their parent directories is already excluded."
+msgstr ""
+
+#: ../en/docs/excluding-files.md:69
+msgid ""
+"```yaml\n"
+"exclude:\n"
+"- /archive\n"
+"- \"!/archive/2017\"\n"
+"```"
+msgstr ""
+
+#: ../en/docs/excluding-files.md:75
+msgid "The second pattern is invalid and ignored because `/archive` is a parent directory of `/archive/2017`."
+msgstr ""
+
+#: ../en/docs/excluding-files.md:77
+msgid "This behavior has performance reasons.  When Qgoda collects files, it does not descend into excluded directories.  In the above example, it would not read the contents of `archive` and would therefore never see the subdirectory `archive/2017`."
+msgstr ""
+
+#: ../en/docs/excluding-files.md:79
+msgid "That leads to a little problem if you want to re-include a subdirectory of an automatically excluded directory, for example `_experiments/stable`.  The top-level directory `_experiments` is automatically excluded by Qgoda.  In order to re-include it, you would have to do the following:"
+msgstr ""
+
+#: ../en/docs/excluding-files.md:81
+msgid ""
+"```yaml\n"
+"exclude:\n"
+"- \"!/_experiments\"\n"
+"- /_experiments/*\n"
+"- \"!/_experiments/stable\"\n"
+"```\n"
+"You have to keep in mind that Qgoda has prepended this list with `/_*` (see above).  Line 1 re-includes `_experiments`.  Line 2 excludes all its subdirectories again.  And line 3 selectively re-includes `_experiments/stable`."
+msgstr ""
+
+#: ../en/docs/excluding-files.md:89
+msgid "## Excluding Files From Being Watched"
+msgstr ""
+
+#: ../en/docs/excluding-files.md:91
+msgid "There is another configuration variable `C:exclude_watch` that specifies files and directories that should not be watched.  If you omit that variable, the contents of `exclude` is taken instead."
+msgstr ""
+
+#: ../en/docs/excluding-files.md:93
+msgid "Note that Qgoda by default re-includes the directories `P:_views` and `P:_includes`."
+msgstr ""
+
+#: ../en/docs/excluding-files.md:97
+msgid ""
+"```yaml\n"
+"exclude_watch:\n"
+"- assets/movies\n"
+"```"
+msgstr ""
+
+#: ../en/docs/excluding-files.md:102
+msgid "The list that is really used by Qgoda looks like this:"
+msgstr ""
+
+#: ../en/docs/excluding-files.md:104
+msgid ""
+"```yaml\n"
+"exclude_watch:\n"
+"- .*\n"
+"- /_*\n"
+"- \"!/_views\"\n"
+"- \"!/_includes\"\n"
+"- assets/movies\n"
+"- /_site\n"
+"```"
+msgstr ""
+
+#: ../en/docs/excluding-files.md:114
+msgid "You can see that the directories `_views` and `_includes` have been re-included.  They typically contain layout/design files.  They deserve a ... do they?????"
+msgstr ""
+
+#: ../en/docs/excluding-files.md:116
+msgid "## Gory Details Of Pattern Matching"
+msgstr ""
+
+#: ../en/docs/excluding-files.md:118
+msgid "The patterns you can use for the variable `exclude` follow the convention of [gitignore](https://git-scm.com/docs/gitignore), only that you put your configuration in [YAML](http://yaml.org/) file `_config.yaml`."
+msgstr ""
+
+#: ../en/docs/excluding-files.md:120
+msgid "### Special Characters"
+msgstr ""
+
+#: ../en/docs/excluding-files.md:122
+msgid "Some characters in patterns have a special meaning."
+msgstr ""
+
+#: ../en/docs/excluding-files.md:124
+msgid "#### The Star/Asterisk \"*\""
+msgstr ""
+
+#: ../en/docs/excluding-files.md:126
+msgid "The star or asterisk stands for an arbitrary number of characters except for a slash:"
+msgstr ""
+
+#: ../en/docs/excluding-files.md:128
+msgid ""
+"```yaml\n"
+"exclude:\n"
+"- images/*.xcf\n"
+"```"
+msgstr ""
+
+#: ../en/docs/excluding-files.md:133
+msgid "This will exclude all XCF files in the subdirectory `images` for example `images/logo.xcf` but *not* `images/ci/logo.xcf` (because the star/asterisk does not match a slash)."
+msgstr ""
+
+#: ../en/docs/excluding-files.md:135
+msgid "Note that `*.xcf` also matches the file `.xcf`.  The star stands for an arbitrary number of characters and that includes zero characters."
+msgstr ""
+
+#: ../en/docs/excluding-files.md:137
+msgid "#### The Double Star/Asterisk \"**\""
+msgstr ""
+
+#: ../en/docs/excluding-files.md:139
+msgid "Two consecutive stars `**` stand for any sequence of characters including the slash."
+msgstr ""
+
+#: ../en/docs/excluding-files.md:141
+msgid ""
+"```yaml\n"
+"exclude:\n"
+"- images/**/*.xcf\n"
+"```"
+msgstr ""
+
+#: ../en/docs/excluding-files.md:146
+msgid "This now matches `images/ci/logo.xcf` *and* `images/logo.xcf` and also `images/nothing/beats/nesting/logo.xcf`.  The pattern `**` matches recursively."
+msgstr ""
+
+#: ../en/docs/excluding-files.md:148
+msgid "#### The Exclmation Mark \"!\""
+msgstr ""
+
+#: ../en/docs/excluding-files.md:150
+msgid "The exclamation mark negates a pattern.  See [below](#negating-patterns) for details."
+msgstr ""
+
+#: ../en/docs/excluding-files.md:152
+msgid ""
+"[% WRAPPER components/infobox.html\n"
+"           type = \"warning\" title = \"The exclamation mark is special to YAML\" %]\n"
+"The exclamation mark <code>!</code> is a special character in YAML and JSON.  You therefore have to put negated patters into quotes, for example \"!a/b\".\n"
+"[% END %]"
+msgstr ""
+
+#: ../en/docs/excluding-files.md:157
+msgid "#### The Question Mark \"?\""
+msgstr ""
+
+#: ../en/docs/excluding-files.md:159
+msgid "The question mark standard for any character except for a slash."
+msgstr ""
+
+#: ../en/docs/excluding-files.md:161
+msgid ""
+"```yaml\n"
+"exclude:\n"
+"- images/corporate?logos\n"
+"```"
+msgstr ""
+
+#: ../en/docs/excluding-files.md:166
+msgid "This matches `images/corporate-logos` and `images/corporate_logos` and `images/corporatedQlogos` and `images/corporate&logos`."
+msgstr ""
+
+#: ../en/docs/excluding-files.md:168
+msgid "#### Character [Ranges]"
+msgstr ""
+
+#: ../en/docs/excluding-files.md:170
+msgid "It's getting esoteric."
+msgstr ""
+
+#: ../en/docs/excluding-files.md:172
+msgid ""
+"```yaml\n"
+"exclude:\n"
+"- images/[abc].jpeg\n"
+"```"
+msgstr ""
+
+#: ../en/docs/excluding-files.md:177
+msgid "This matches exactly `images/a.jpeg`, `images/b.jpeg`, and `images/c.jpeg`.  Instead, you could also write this:"
+msgstr ""
+
+#: ../en/docs/excluding-files.md:179
+msgid ""
+"```yaml\n"
+"exclude:\n"
+"- images/[a-c].jpeg\n"
+"```"
+msgstr ""
+
+#: ../en/docs/excluding-files.md:184
+msgid "Read the `[a-c]` as \"all characters from a to c\"."
+msgstr ""
+
+#: ../en/docs/excluding-files.md:186
+msgid "You can combine ranges:"
+msgstr ""
+
+#: ../en/docs/excluding-files.md:188
+msgid ""
+"```yaml\n"
+"exclude:\n"
+"- images/[a-z0-9].jpeg\n"
+"```"
+msgstr ""
+
+#: ../en/docs/excluding-files.md:193
+msgid "This would now match `x.jpeg` and `3.jpeg`."
+msgstr ""
+
+#: ../en/docs/excluding-files.md:195
+msgid "Note that `[]` does not stand for no character.  It is simply not special.  Use `[]abc]` if you want to match \"a\", \"b\", \"c\", and a closing square bracket."
+msgstr ""
+
+#: ../en/docs/excluding-files.md:197
+msgid "And put the hyphen at the front if you want to match it: `[-a-zA-Z0-9]`.  That matches all alphanumeric characters and the hyphen."
+msgstr ""
+
+#: ../en/docs/excluding-files.md:199
+msgid "You can also use named character classes like `[a-zA-Z[:digit:]]` where `[:digit]` stands for any digit in the current locale.  Using this feature is discouraged unless you understand it."
+msgstr ""
+
+#: ../en/docs/excluding-files.md:201
+msgid "#### The Backslash \"\\\""
+msgstr ""
+
+#: ../en/docs/excluding-files.md:203
+msgid "You can escape any character by preceding it with a backslash \"\\\"."
+msgstr ""
+
+#: ../en/docs/excluding-files.md:205
+msgid ""
+"```yaml\n"
+"exclude:\n"
+"- images/Quo Vadis\\?.jpeg\n"
+"```"
+msgstr ""
+
+#: ../en/docs/excluding-files.md:210
+msgid "This matches only `images/Quo Vadis?.jpeg` but not `images/Quo VadissX.jpeg`.  The question mark has lost its special meaning by the preceding backslash."
+msgstr ""
+
+#: ../en/docs/excluding-files.md:212
+msgid "### Negating Patterns"
+msgstr ""
+
+#: ../en/docs/excluding-files.md:214
+msgid "### Slashes"
 msgstr ""
 
 #: ../en/docs/files-and-directories.md:2
@@ -1037,6 +1584,91 @@ msgstr ""
 
 #: ../en/docs/multi-language-overview.md:58
 msgid "All other variables are copied from the master front matter into the translated document.  If it contains for example a property `V:name`, this property will be copied into the translation unless the front matter of the trigger document overrides it (for example as shown above with `V:author`)."
+msgstr ""
+
+#: ../en/docs/multi-language-overview.md:60
+msgid "The content of the master document is not copied but gets split up into paragraphs, and each paragraph becomes an entry in the `.po` file:"
+msgstr ""
+
+#: ../en/docs/multi-language-overview.md:62
+msgid ""
+"```bash\n"
+"#: ../en/docs/multi-language-overview.md:11\n"
+"msgid \"Multi-lingualism in Qgoda is an integral, built-in feature mostly built upon easy to follow conventions.\"\n"
+"msgstr \"\"\n"
+"```"
+msgstr ""
+
+#: ../en/docs/multi-language-overview.md:68
+msgid "Provided, the entries have been translated, the translated content gets rendered."
+msgstr ""
+
+#: ../en/docs/multi-language-overview.md:70
+msgid "That sounds more complicated than the first approach.  So why the hassle?"
+msgstr ""
+
+#: ../en/docs/multi-language-overview.md:72
+msgid "First of all, it sounds a lot more complicated than it actually is in reality.  And the big advantage is maintainability.  When translating entire documents, every change to the original document requires a new translation, not from scratch but translators have to find out what exactly has changed in the original.  This is error-prone and cumbersome."
+msgstr ""
+
+#: ../en/docs/multi-language-overview.md:74
+msgid "With `.po` files on the other hand individual paragraphs are handled as an individually translated unit which greatly simplifies the update process.  And besides, you have a lot of tools at hand, like translation caches, automatic or semi-automatic translations and so on."
+msgstr ""
+
+#: ../en/docs/multi-language-overview.md:76
+msgid "Still, it depends on the nature of the site which approach is better.  For a blog where posts are written once and rarely changed afterwards, the simple approach will often be sufficient.  But for software documentation that gets updated on a regular basis and requires exact translations, an approach based on professional translation tools probably pays out soon."
+msgstr ""
+
+#: ../en/docs/multi-language-overview.md:78
+msgid "### Listings and Links"
+msgstr ""
+
+#: ../en/docs/multi-language-overview.md:80
+msgid "The rest is a piece of cake.  Creating a listing of posts for the tag \"JavaScript\" looks like this for a single-language site:"
+msgstr ""
+
+#: ../en/docs/multi-language-overview.md:82
+msgid ""
+"```markup\n"
+"[% FOREACH post IN q.list('tags', 'contains', 'JavaScript') %]\n"
+"<a href=\"[% post.permalink %]\">[% post.title | html %]</a>\n"
+"[% END %]\n"
+"```"
+msgstr ""
+
+#: ../en/docs/multi-language-overview.md:88
+msgid "A multi-language site requires just one more filter:"
+msgstr ""
+
+#: ../en/docs/multi-language-overview.md:90
+msgid ""
+"```markup\n"
+"[% FOREACH post IN q.list('lingua' = asset.lingua\n"
+"                          'tags', 'contains', 'JavaScript') %]\n"
+"<a href=\"[% post.permalink %]\">[% post.title | html %]</a>\n"
+"[% END %]\n"
+"```"
+msgstr ""
+
+#: ../en/docs/multi-language-overview.md:97
+msgid "And since this is such a common task, you can just use the method `q.llist` (think \"language list\") instead that adds that filter automatically:"
+msgstr ""
+
+#: ../en/docs/multi-language-overview.md:99
+msgid ""
+"```markup\n"
+"[% FOREACH post IN q.llist('tags', 'contains', 'JavaScript') %]\n"
+"<a href=\"[% post.permalink %]\">[% post.title | html %]</a>\n"
+"[% END %]\n"
+"```"
+msgstr ""
+
+#: ../en/docs/multi-language-overview.md:105
+msgid "So in the end, a multi-language site requires just a single letter more of template code."
+msgstr ""
+
+#: ../en/docs/multi-language-overview.md:107
+msgid "Likewise, for links resp. cross-references you add the additional filter for the language or just use `q.lxref()` instead of `q.xref()` and you are done."
 msgstr ""
 
 #: ../en/docs/output-location.md:2
@@ -2213,14 +2845,7 @@ msgctxt "description"
 msgid "Explanation of frequently used terms and concepts"
 msgstr ""
 
-#: ../en/docs/terms-and-concepts.md:9
-msgid ""
-"[% USE q = Qgoda %]\n"
-"[% PROCESS \"functions/css-modules.tt\" %]\n"
-"<ul>"
-msgstr ""
-
-#: ../en/docs/terms-and-concepts.md:13
+#: ../en/docs/terms-and-concepts.md:15
 msgid ""
 "[% WRAPPER components/term.html term=\"epoch\" -%]\n"
 "A certain date and time is often expressed as seconds elapsed since the\n"
@@ -2230,7 +2855,7 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/terms-and-concepts.md:20
+#: ../en/docs/terms-and-concepts.md:22
 msgid ""
 "[% WRAPPER components/term.html term=\"sass\" -%]\n"
 "<a href=\"http://sass-lang.com/\" target=\"_blank\">SASS</a> is a popular\n"
@@ -2239,7 +2864,7 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/terms-and-concepts.md:26
+#: ../en/docs/terms-and-concepts.md:28
 msgid ""
 "[% WRAPPER components/term.html term=\"scss\" -%]\n"
 "<a href=\"http://sass-lang.com/documentation/file.SCSS_FOR_SASS_USERS.html\"\n"
@@ -2247,5 +2872,50 @@ msgid ""
 "Sass 3.  It is a strict superset of CSS, so that every valid CSS file is\n"
 "also a valid SCSS file.\n"
 "[%- END %]"
+msgstr ""
+
+#: ../en/legal-disclosure.md:2
+msgctxt "title"
+msgid "Legal Disclosure"
+msgstr ""
+
+#: ../en/legal-disclosure.md:5
+msgctxt "description"
+msgid "Imprint"
+msgstr ""
+
+#: ../en/legal-disclosure.md:7
+msgid "## Company Information"
+msgstr ""
+
+#: ../en/legal-disclosure.md:9
+msgid ""
+"cantanea EOOD<br>\n"
+"ul. Slavyanska 35<br>\n"
+"1000 Sofia<br>\n"
+"Bulgaria<br>\n"
+"BULSTAT (Bulgarian trade register number) 202526944<br>\n"
+"VAT-ID BG202526944<br>"
+msgstr ""
+
+#: ../en/legal-disclosure.md:16
+msgid "Manager: Guido Flohr"
+msgstr ""
+
+#: ../en/legal-disclosure.md:18
+msgid "## Contact"
+msgstr ""
+
+#: ../en/legal-disclosure.md:20
+msgid "- email: info@cantanea.com\n"
+"- phone: +359 884 452974"
+msgstr ""
+
+#: ../en/legal-disclosure.md:23
+msgid "## Responsible for the content:"
+msgstr ""
+
+#: ../en/legal-disclosure.md:25
+msgid "Guido Flohr, info@cantanea.com"
 msgstr ""
 

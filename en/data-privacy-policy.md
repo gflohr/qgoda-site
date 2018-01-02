@@ -42,7 +42,7 @@ needs it as the address to which it should send the requested data.  The
 purpose of the IP address is not to disrupt your privacy but it is needed
 for any communication on the internet.
 
-### How Log Is It Stored?
+### How Long Is It Stored?
 
 Log files are ultimately deleted after at most one month.
 

@@ -1,5 +1,7 @@
+../en/data-privacy-policy.md
 ../en/docs/configuration-variables.md
 ../en/docs/differences-to-jekyll.md
+../en/docs/excluding-files.md
 ../en/docs/files-and-directories.md
 ../en/docs/index.md
 ../en/docs/installation.md
@@ -12,3 +14,4 @@
 ../en/docs/taxonomies.md
 ../en/docs/template-variables.md
 ../en/docs/terms-and-concepts.md
+../en/legal-disclosure.md
