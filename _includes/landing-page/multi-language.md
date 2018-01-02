@@ -7,5 +7,4 @@ button_link: /en/docs/differences-to-jekyll/
 image: /images/earth-ko-640w.png
 image_alt: The earth from space
 ---
-No hacks needed for creating multilingual sites. The multi-language features
-are an integral part of Qgoda and are usable in a very user-friendly manner.
+Qgoda's multi-language feature set is second to no other Content Management System, leave alone static site generators. No hacks required. The multi-language features are an integral part of Qgoda.

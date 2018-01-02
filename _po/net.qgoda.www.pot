@@ -15,6 +15,24 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit"
 
+#: ../_views/components/file.html:3
+#: ../_views/components/template-variable.html:3
+#: ../_views/components/variable.html:3
+msgid "type:"
+msgstr ""
+
+#: ../_views/components/file.html:4
+msgid "overridable:"
+msgstr ""
+
+#: ../_views/components/variable.html:4
+msgid "default:"
+msgstr ""
+
+#: ../_views/partials/body/footer.html:5
+msgid "<a href=\""
+msgstr ""
+
 #: ../_views/partials/body/footer.html:10
 #, perl-brace-format
 msgid "Copyright &copy; {copyright_year} {copyright_holder}"
@@ -56,55 +74,53 @@ msgstr ""
 
 #: ../en/docs/configuration-variables.md:9
 #: ../en/docs/files-and-directories.md:9
-msgid ""
-"[% USE gtx = Gettext %]\n"
-"[% USE q = Qgoda %]\n"
+msgid "[% USE q = Qgoda %]\n"
 "[% PROCESS \"functions/css-modules.tt\" %]"
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:13
+#: ../en/docs/configuration-variables.md:12
 msgid "The following configuration variables from the file `_config.yml` are understood by Qgoda:"
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:15
+#: ../en/docs/configuration-variables.md:14
 msgid ""
 "<ul>\n"
 "[% WRAPPER components/variable.html\n"
-"   variable=\"case-sensitive\" type=gtx.gettext('0 or 1') \n"
+"   variable=\"case-sensitive\" type='0 or 1' \n"
 "   default='0' -%]\n"
 "Set to 0 if you want to ignore case of filenames, 1 otherwise.  It is probably wise to keep the default value of 0 even on a case-sensitive file system.  Otherwise, you may run into problems, when you copy the site on another machine or some storage medium such as a USB stick.\n"
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:22
+#: ../en/docs/configuration-variables.md:21
 msgid ""
 "[% WRAPPER components/variable.html\n"
-"   variable=\"exclude\" type=gtx.gettext('Array') \n"
-"   default=gtx.gettext('empty') -%]\n"
+"   variable=\"exclude\" type='Array' \n"
+"   default='empty' -%]\n"
 "A list of files and directories that should not be processed.  Patterns are allowed.  See <a href=\"[% q.llink(name = 'excluding-files') %]\">[% q.lxref('title', name = 'excluding-files') %]</a>!\n"
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:28
+#: ../en/docs/configuration-variables.md:27
 msgid ""
 "[% WRAPPER components/variable.html\n"
-"   variable=\"exclude_watch\" type=gtx.gettext('Array') \n"
-"   default=gtx.gettext('same as \"exclude\" above') -%]\n"
+"   variable=\"exclude_watch\" type='Array' \n"
+"   default='same as \"exclude\" above' -%]\n"
 "A list of files and directories that should not trigger a rebuild, when they change.  Patterns are allowed.  See <a href=\"[% q.llink(name = 'excluding-files') %]\">[% q.lxref('title', name = 'excluding-files') %]</a>!\n"
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:34
+#: ../en/docs/configuration-variables.md:33
 msgid ""
 "[% WRAPPER components/variable.html\n"
-"   variable=\"title\" type=gtx.gettext('String') \n"
-"   default=gtx.gettext('\"A New Qgoda Powered Site\"') -%]\n"
+"   variable=\"title\" type='String' \n"
+"   default='\"A New Qgoda Powered Site\"' -%]\n"
 "The name of the site.  Qgoda itself does not use this variable.\n"
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:40
-#: ../en/docs/files-and-directories.md:79 ../en/docs/terms-and-concepts.md:34
+#: ../en/docs/configuration-variables.md:39
+#: ../en/docs/files-and-directories.md:78 ../en/docs/terms-and-concepts.md:33
 msgid "</ul>"
 msgstr ""
 
@@ -123,11 +139,6 @@ msgid ""
 "[% USE q = Qgoda %]\n"
 "[% TAGS [- -] %]\n"
 "Qgoda was heavily inspired by [Jekyll](https://jekyllrb.com/) and initially very similar to Jekyll but over time it has veered away significantly."
-msgstr ""
-
-#: ../en/docs/differences-to-jekyll.md:13 ../en/docs/installation.md:13
-#: ../en/docs/output-location.md:19 ../en/docs/qgoda-in-15-minutes.md:12
-msgid "<!--TOC-->"
 msgstr ""
 
 #: ../en/docs/differences-to-jekyll.md:15
@@ -388,12 +399,12 @@ msgctxt "description"
 msgid "Complete List of Files and Directories"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:13
+#: ../en/docs/files-and-directories.md:12
 msgid "A typical Qgoda site contains a couple of standard files and directories.\n"
 "They are described in the following list."
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:16
+#: ../en/docs/files-and-directories.md:15
 msgid ""
 "[% WRAPPER components/infobox.html\n"
 "           type='info' title='Sorting of This List' %]\n"
@@ -402,44 +413,44 @@ msgid ""
 "[% END %]"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:22
+#: ../en/docs/files-and-directories.md:21
 msgid "<ul>"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:24
+#: ../en/docs/files-and-directories.md:23
 msgid ""
 "[% WRAPPER components/file.html\n"
-"   name=\"_assets\" type=gtx.gettext('directory') -%]\n"
+"   name=\"_assets\" type='directory' -%]\n"
 "This directory usually keeps the source files for assets, for example\n"
 "JavaScript files or (S)CSS files.\n"
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:30
+#: ../en/docs/files-and-directories.md:29
 msgid ""
 "[% WRAPPER components/file.html\n"
-"   name=\"_config.yaml\" type=gtx.gettext('file') -%]\n"
+"   name=\"_config.yaml\" type='file' -%]\n"
 "Qgoda's main configuration file.\n"
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:35
+#: ../en/docs/files-and-directories.md:34
 msgid ""
 "[% WRAPPER components/file.html\n"
-"   name=\"_config.yml\" type=gtx.gettext('file') -%]\n"
+"   name=\"_config.yml\" type='file' -%]\n"
 "Qgoda's secondary configuration file.  It is only used if <code>P:config.yaml</code>\n"
 "does not exist.\n"
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:41
+#: ../en/docs/files-and-directories.md:40
 msgid ""
 "[% WRAPPER components/file.html\n"
-"   name=\"_includes\" type=gtx.gettext('directory')\n"
+"   name=\"_includes\" type='directory'\n"
 "   overridable=\"paths.includes\" -%]"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:45
+#: ../en/docs/files-and-directories.md:44
 msgid ""
 "Directory for included content snippets.  You use that for example\n"
 "like <code>[&#37; q.include(\"_includes/footer.md\") &#37;]</code>.  You \n"
@@ -448,28 +459,28 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:51
+#: ../en/docs/files-and-directories.md:50
 msgid ""
 "[% WRAPPER components/file.html\n"
-"   name=\"_plugins\" type=gtx.gettext('directory')\n"
+"   name=\"_plugins\" type='directory'\n"
 "   overridable=\"paths.plugins\" -%]"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:55
+#: ../en/docs/files-and-directories.md:54
 msgid ""
 "Directory for site-specific plug-ins.  Plug-Ins in this directory are\n"
 "automatically activated.\n"
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:59
+#: ../en/docs/files-and-directories.md:58
 msgid ""
 "[% WRAPPER components/file.html\n"
-"   name=\"_site\" type=gtx.gettext('directory')\n"
+"   name=\"_site\" type='directory'\n"
 "   overridable=\"paths.site\" -%]"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:63
+#: ../en/docs/files-and-directories.md:62
 msgid ""
 "The output directory.  This will normally be the document root of your\n"
 "web server.  Files and directories in <code>P:_site</code> are \n"
@@ -477,14 +488,14 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:68
+#: ../en/docs/files-and-directories.md:67
 msgid ""
 "[% WRAPPER components/file.html\n"
-"   name=\"_timestamp\" type=gtx.gettext('file')\n"
+"   name=\"_timestamp\" type='file'\n"
 "   overridable=\"paths.timestamp\" -%]"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:72
+#: ../en/docs/files-and-directories.md:71
 msgid ""
 "This file contains the time, when <code>P:_site</code> was last\n"
 "re-created as seconds since the <q-term>epoch</q-term>.  If you \n"
@@ -925,6 +936,109 @@ msgid ""
 "you can freely mix Markdown with Template Toolkit syntax."
 msgstr ""
 
+#: ../en/docs/multi-language-overview.md:2
+msgctxt "title"
+msgid "Overview"
+msgstr ""
+
+#: ../en/docs/multi-language-overview.md:7
+msgctxt "description"
+msgid "Overview of Qgoda's Multi-Lanaguage and Internationalization (I18N) features"
+msgstr ""
+
+#: ../en/docs/multi-language-overview.md:9
+msgid "## Multi-Language Overview"
+msgstr ""
+
+#: ../en/docs/multi-language-overview.md:11
+msgid "Multi-lingualism in Qgoda is an integral, built-in feature mostly built upon easy to follow conventions."
+msgstr ""
+
+#: ../en/docs/multi-language-overview.md:13
+msgid "In a typical website there are two types of translatable content.  You usually have common texts, typically in headers, footers, navigations, sidebars and so on.  Most of the time, these texts come from templates.  And then there is your actual content, your blog posts, articles or other editorial content."
+msgstr ""
+
+#: ../en/docs/multi-language-overview.md:15
+msgid "### Common Texts"
+msgstr ""
+
+#: ../en/docs/multi-language-overview.md:17
+msgid "Texts in templates is usually translated with [Template::Plugin::Gettext](https://github.com/gflohr/Template-Plugin-Gettext) an internationalization plug-in for the [Template Toolkit](http://www.template-toolkit.org/)."
+msgstr ""
+
+#: ../en/docs/multi-language-overview.md:19
+msgid ""
+"[% TAGS [- -] %]\n"
+"```markup\n"
+"[% USE gtx = Gettext('com.example.www', asset.lingua) %]\n"
+"<h1>[% gtx.gettext('Welcome to My Site') %]</h1>\n"
+"```"
+msgstr ""
+
+#: ../en/docs/multi-language-overview.md:25
+msgid "The first line imports the plug-in with two arguments.  The first one is the so-called *textdomain*, an arbitrary string identifying your translation database.  The second one is the language of the file.  This is usually stored in the document property `V:lingua`."
+msgstr ""
+
+#: ../en/docs/multi-language-overview.md:27
+msgid "The second line serves two purposes.  The function `gtx.gettext()` first marks a string as being translatable, so that the string can be extracted into a `.po` file, a standard format for translation catalogs used by most open-source and many commercial projects."
+msgstr ""
+
+#: ../en/docs/multi-language-overview.md:29
+msgid "But it also returns the translation for the string, when the document is rendered."
+msgstr ""
+
+#: ../en/docs/multi-language-overview.md:31
+msgid "### Editorial Content"
+msgstr ""
+
+#: ../en/docs/multi-language-overview.md:33
+msgid "For content, you have two options which both have their pros and cons."
+msgstr ""
+
+#: ../en/docs/multi-language-overview.md:35
+msgid "#### Separate Documents For Each Language"
+msgstr ""
+
+#: ../en/docs/multi-language-overview.md:37
+msgid "You can simply copy the documents from the main language into a separate file and translate it.  This is easy to understand and setup but it has maintainance issues."
+msgstr ""
+
+#: ../en/docs/multi-language-overview.md:39
+msgid "#### Using Translation Catalogs"
+msgstr ""
+
+#: ../en/docs/multi-language-overview.md:41
+msgid "Qgoda also offers you the possibility to extract the translatable content from the master document into a `.po` file.  Instead of a complete, translated copy of the original document, you just create a minimal *trigger document*:"
+msgstr ""
+
+#: ../en/docs/multi-language-overview.md:43
+msgid ""
+"```yaml\n"
+"---\n"
+"master: /en/about.md\n"
+"translate: [title, description]\n"
+"lingua: de\n"
+"author: John Doe\n"
+"---\n"
+"```"
+msgstr ""
+
+#: ../en/docs/multi-language-overview.md:52
+msgid "The variable `V:master` references the master document, the document containing the original content."
+msgstr ""
+
+#: ../en/docs/multi-language-overview.md:54
+msgid "With `V:translate` you specify which properties from the master front matter should be extracted into the catalog for translation.  You will normally set the variable `V:translate` once and for all documents as a default in `P:_config.yaml`."
+msgstr ""
+
+#: ../en/docs/multi-language-overview.md:56
+msgid "The variable `V:lingua` is by convention used for identifying the language of a document.  You can pick another name if you prefer but that will end in a little bit more typing."
+msgstr ""
+
+#: ../en/docs/multi-language-overview.md:58
+msgid "All other variables are copied from the master front matter into the translated document.  If it contains for example a property `V:name`, this property will be copied into the translation unless the front matter of the trigger document overrides it (for example as shown above with `V:author`)."
+msgstr ""
+
 #: ../en/docs/output-location.md:2
 msgctxt "title"
 msgid "Output Location"
@@ -1242,9 +1356,9 @@ msgstr ""
 msgid ""
 "```bash\n"
 "qgoda-quickstart $ qgoda\n"
-"/opt/local/libexec/perl5.24/sitebin/qgoda: no command given!\n"
-"Usage: /opt/local/libexec/perl5.24/sitebin/qgoda COMMAND [OPTIONS]\n"
-"Try '/opt/local/libexec/perl5.24/sitebin/qgoda --help' for more information!\n"
+"qgoda: no command given!\n"
+"Usage: qgoda COMMAND [OPTIONS]\n"
+"Try 'qgoda --help' for more information!\n"
 "```"
 msgstr ""
 
@@ -1945,7 +2059,7 @@ msgstr ""
 msgid ""
 "Taxonomies group assets into groups sharing common properties.  Qgoda supports\n"
 "an arbitrary number of taxonomies.  Every asset property can be promoted to a \n"
-"taxonomy."
+"taxonomy, simply by using it as a taxonomy."
 msgstr ""
 
 #: ../en/docs/taxonomies.md:13
@@ -1998,37 +2112,36 @@ msgid ""
 msgstr ""
 
 #: ../en/docs/taxonomies.md:48
-msgid "Likewise, you can identify all documents that are tagged with \"Qgoda\"\n"
-"and \"Plug-Ins\"."
+msgid "Likewise, you can identify all documents that are tagged with \"Qgoda\"."
 msgstr ""
 
-#: ../en/docs/taxonomies.md:51
+#: ../en/docs/taxonomies.md:50
 msgid ""
 "<figure class=\"figure w-100\">\n"
 "  <img src=\"/images/taxonomies/taxonomy-tags.svg\"\n"
 "       class=\"large-image figure-img img-fluid img-rounded d-block m-x-auto\"\n"
 "       alt=\"You can also group all documents tagged with &quot;Qgoda&quot; and &quot;Plug-Ins&quot;.\" />\n"
 "  <figcaption class=\"figure-caption text-xs-center\">\n"
-"    All documents tagged with \"Qgoda\" or \"Plug-Ins\". \n"
+"    All documents tagged with \"Qgoda\". \n"
 "  </figcaption>\n"
 "</figure>"
 msgstr ""
 
-#: ../en/docs/taxonomies.md:60
+#: ../en/docs/taxonomies.md:59
 msgid ""
 "By combining taxonomies you can define arbitrary subsets of a site's documents.\n"
-"You can for example identify all English documents tagged with \"Qgoda\" or\n"
-"\"Plug-Ins\" by `OR`'-ing the two above conditions."
+"You can for example identify all English documents tagged with \"Qgoda\" and\n"
+"\"Plug-Ins\" by `AND`'-ing the two above conditions."
 msgstr ""
 
-#: ../en/docs/taxonomies.md:64
+#: ../en/docs/taxonomies.md:63
 msgid ""
 "<figure class=\"figure w-100\">\n"
 "  <img src=\"/images/taxonomies/taxonomies-combined.svg\"\n"
 "       class=\"large-image figure-img img-fluid img-rounded d-block m-x-auto\"\n"
 "       alt=\"Combining taxonomies can create arbitrary partitions of a site.\" />\n"
 "  <figcaption class=\"figure-caption text-xs-center\">\n"
-"    All English documents tagged with \"Qgoda\" or \"Plug-Ins\". \n"
+"    All English documents tagged with \"Qgoda\" and \"Plug-Ins\". \n"
 "  </figcaption>\n"
 "</figure>"
 msgstr ""
@@ -2045,14 +2158,13 @@ msgstr ""
 
 #: ../en/docs/template-variables.md:9
 msgid ""
-"[% USE gtx = Gettext %]\n"
 "[% USE q = Qgoda %]\n"
 "[% PROCESS \"functions/css-modules.tt\" %]\n"
 "Not all of the following variables are necessarily available everywhere.\n"
 "Many of them like `V:asset.name` are mere conventions."
 msgstr ""
 
-#: ../en/docs/template-variables.md:15
+#: ../en/docs/template-variables.md:14
 msgid ""
 "Qgoda passes all template variables inside the <q-term>hash:hashes</q-term> (resp. \n"
 "<q-term>object:objects</q-term> if\n"
@@ -2060,10 +2172,10 @@ msgid ""
 "variables, especially top-level variables are free for your use."
 msgstr ""
 
-#: ../en/docs/template-variables.md:20
+#: ../en/docs/template-variables.md:19
 msgid ""
 "[% WRAPPER components/infobox.html\n"
-"   type=\"warning\" title=gtx.gettext('Overwriting Internal Variables') %]\n"
+"   type=\"warning\" title='Overwriting Internal Variables' %]\n"
 "Qgoda allows overwriting these internal variables which may also affect\n"
 "documents processed afterwards.  This feature can lead to interesting\n"
 "results if you know what you are doing.  In general, it is a recipe\n"
@@ -2071,7 +2183,7 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/template-variables.md:28
+#: ../en/docs/template-variables.md:27
 msgid ""
 "[% WRAPPER \"components/template-variable.html\"\n"
 "   variable=\"asset\" %]\n"
@@ -2080,10 +2192,10 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/template-variables.md:34
+#: ../en/docs/template-variables.md:33
 msgid ""
 "[% WRAPPER \"components/template-variable.html\"\n"
-"   variable=\"config\" type=gtx.gettext('hash') %]\n"
+"   variable=\"config\" type='hash' %]\n"
 "`config` gives you access to the site configuration from `P:_config.yaml`.\n"
 "The configuration variable `C:paths.views` in `P:_config.yaml` is\n"
 "accessible from a template as `config.paths.views`.  See\n"
@@ -2103,13 +2215,12 @@ msgstr ""
 
 #: ../en/docs/terms-and-concepts.md:9
 msgid ""
-"[% USE gtx = Gettext %]\n"
 "[% USE q = Qgoda %]\n"
 "[% PROCESS \"functions/css-modules.tt\" %]\n"
 "<ul>"
 msgstr ""
 
-#: ../en/docs/terms-and-concepts.md:14
+#: ../en/docs/terms-and-concepts.md:13
 msgid ""
 "[% WRAPPER components/term.html term=\"epoch\" -%]\n"
 "A certain date and time is often expressed as seconds elapsed since the\n"
@@ -2119,7 +2230,7 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/terms-and-concepts.md:21
+#: ../en/docs/terms-and-concepts.md:20
 msgid ""
 "[% WRAPPER components/term.html term=\"sass\" -%]\n"
 "<a href=\"http://sass-lang.com/\" target=\"_blank\">SASS</a> is a popular\n"
@@ -2128,7 +2239,7 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/terms-and-concepts.md:27
+#: ../en/docs/terms-and-concepts.md:26
 msgid ""
 "[% WRAPPER components/term.html term=\"scss\" -%]\n"
 "<a href=\"http://sass-lang.com/documentation/file.SCSS_FOR_SASS_USERS.html\"\n"
@@ -2136,18 +2247,5 @@ msgid ""
 "Sass 3.  It is a strict superset of CSS, so that every valid CSS file is\n"
 "also a valid SCSS file.\n"
 "[%- END %]"
-msgstr ""
-
-#: ../en/index.md:3
-msgctxt "title"
-msgid "Qgoda Static Site Generator"
-msgstr ""
-
-#: ../en/index.md:9
-msgid ""
-"[% USE q = Qgoda %]\n"
-"[% q.include('_includes/landing-page/header.md', asset) %]\n"
-"[% q.include('_includes/landing-page/main-features.md', asset) %]\n"
-"[% q.include('_includes/landing-page/about.md', asset) %]"
 msgstr ""
 
