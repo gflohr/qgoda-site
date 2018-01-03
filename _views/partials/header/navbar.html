@@ -21,13 +21,13 @@
           <i class="fa fa-home"></i>&nbsp;[% gtx.gettext('Home') %]</a>
         </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/[% asset.lingua %]/"
+      <li class="nav-item[% IF asset.navsection == 'news' %] active[% END %]">
+        <a class="nav-link" href="/[% asset.lingua %]/news/"
            title="Qgoda News">
           <i class="fa fa-newspaper-o"></i>&nbsp;[% gtx.gettext('News') %]</i>
         </a>
       </li>
-      <li class="nav-item active">
+      <li class="nav-item[% IF asset.navsection == 'docs' %] active[% END %]">
         <a class="nav-link" href="/[% asset.lingua %]/docs/"
            title="Qgoda Documentation">
           <i class="fa fa-cubes"></i>&nbsp;[% gtx.gettext('Docs') %]</a>

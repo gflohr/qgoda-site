@@ -191,7 +191,7 @@ i {
   font-weight: 400;
 }
 #main-features {
-  border-top: 1px solid #DDD;
+  //border-top: 1px solid #DDD;
   border-bottom: 1px solid #DDD;
 }
 #main-features img {
@@ -205,6 +205,32 @@ i {
 }
 #main-features .item-2 {
   background: #ecf0f1;
+}
+#main-features .item-0 {
+  background: #666;
+  color: white;
+
+  h3 {
+      color: white;
+  }
+  h4 {
+      font-weight: bold;
+  }
+
+  .date {
+      color: #bbb;
+      font-family: serif;
+      font-weight: 400;
+      font-style: italic;
+      font-size: smaller;
+  }
+
+  a.more {
+      display: block;
+      color: white;
+      font-style: italic;
+      font-size: smaller;
+  }
 }
 #contact .map {
   margin-top: 15px;

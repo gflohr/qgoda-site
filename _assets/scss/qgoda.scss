@@ -230,3 +230,27 @@ pre[class*=language-]>code {
 h3 {
     margin-top: 1.5rem;
 }
+
+a.teaser-link {
+    color: $qgoda-main-color;
+}
+
+a.teaser-link:hover {
+    color: $brand-primary;
+    text-decoration: none;
+}
+
+.teaser {
+    margin-bottom: 31px;
+
+    p {
+        margin-top: 19px;
+    }
+
+    .teaser-date {
+        font-size: smaller;
+        font-weight: 400;
+        font-style: italic;
+        margin-left: 1rem;
+    }
+}

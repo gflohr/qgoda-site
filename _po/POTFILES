@@ -3,6 +3,8 @@
 ../_views/components/term.html
 ../_views/components/variable.html
 ../_views/landing-about.html
+../_views/landing-feature-full.html
+../_views/landing-header.html
 ../_views/partials/body/footer.html
 ../_views/partials/body/sidebar-top.html
 ../_views/partials/head-landing.html

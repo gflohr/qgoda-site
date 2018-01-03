@@ -31,6 +31,11 @@ the asset currently being processed.
 [%- END %]
 
 [% WRAPPER "components/template-variable.html"
+   variable="asset.priority" %]
+All artifacts are built sorted by their priority.  A higher value means that they are generated last.  Normally, you should assign a high priority, for example 999 to listings so that they are generated after other pages and can access all of their data.
+[%- END %]
+
+[% WRAPPER "components/template-variable.html"
    variable="config" type='hash' %]
 `config` gives you access to the site configuration from `P:_config.yaml`.
 The configuration variable `C:paths.views` in `P:_config.yaml` is

@@ -1,0 +1,48 @@
+[% PROCESS "functions/landing-page/css-modules.tt" %]
+[% classes = asset.classes %]
+[% USE gtx = Gettext('net.qgoda.www', asset.lingua) %]
+<div class="[% css.start.$classes %]">
+  <div class="container">
+    <div class="row wow fadeIn [% css.start.feature_content %]" 
+         data-wow-duration="2.40s">
+      <div class="col-12">
+        <div class="">
+          <h3 class="small-title text-center">[% asset.title %]</h3>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-6">
+        <div class="">
+          <h4>Feature Freeze</h4>
+          <div class="[% css.start.date %]">
+            <i class="fa fa-clock-o"></i>
+            Dec 13, 2017
+          </div>
+          <div>
+            <p>In preparation of the first release, Qgoda has been feature frozen.
+            <a href="#" class="[% css.start.more %]">[% gtx.gettext('Read more ...') %]</a></p>
+          </div> 
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-6">
+        <div class="">
+          <h4>First Alpha Release</h4>
+          <div class="[% css.start.date %]">
+            <i class="fa fa-clock-o"></i>
+            Dec 01, 2017
+          </div>
+          <div>
+            The first alpha release of Qgoda is now available at github.
+            <a href="#" class="[% css.start.more %]">[% gtx.gettext('Read more ...') %]</a>
+          </div> 
+        </div>
+      </div>
+      <div class="col">
+        <div class="">
+          <a href="[% asset.button_link %]" class="float-right btn btn-common">
+            [% asset.button | html %]
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

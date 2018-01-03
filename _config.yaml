@@ -19,14 +19,25 @@ defaults:
       - /*/**
       - '!/en/'
     values:
-      translate: [title, description] 
+      translate: [title, description, image_alt] 
   - files: /en
     values:
       lingua: en
   - files: /de
     values:
-      lingua:
-        de
+      lingua: de
+  - files: /*/docs/**
+    values:
+      type: doc 
+      navsection: docs
+  - files: /*/news/**
+    values:
+      type: post
+      navsection: news
+  - files: [index.md, index.html]
+    values:
+      type: page
+      priority: 999
 taxonomies:
   'doc-section': ~
   name: ~
