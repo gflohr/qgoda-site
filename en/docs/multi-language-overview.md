@@ -80,7 +80,7 @@ Still, it depends on the nature of the site which approach is better.  For a blo
 The rest is a piece of cake.  Creating a listing of posts for the tag "JavaScript" looks like this for a single-language site:
 
 ```markup
-[% FOREACH post IN q.list('tags', 'contains', 'JavaScript') %]
+[% FOREACH post IN q.list('tags', ['contains', 'JavaScript']) %]
 <a href="[% post.permalink %]">[% post.title | html %]</a>
 [% END %]
 ```
@@ -89,7 +89,7 @@ A multi-language site requires just one more filter:
 
 ```markup
 [% FOREACH post IN q.list('lingua' = asset.lingua
-                          'tags', 'contains', 'JavaScript') %]
+                          'tags', ['contains', 'JavaScript']) %]
 <a href="[% post.permalink %]">[% post.title | html %]</a>
 [% END %]
 ```
@@ -97,7 +97,7 @@ A multi-language site requires just one more filter:
 And since this is such a common task, you can just use the method `q.llist` (think "language list") instead that adds that filter automatically:
 
 ```markup
-[% FOREACH post IN q.llist('tags', 'contains', 'JavaScript') %]
+[% FOREACH post IN q.llist('tags', ['contains', 'JavaScript']) %]
 <a href="[% post.permalink %]">[% post.title | html %]</a>
 [% END %]
 ```
