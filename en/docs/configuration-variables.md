@@ -31,6 +31,12 @@ A list of files and directories that should not trigger a rebuild, when they cha
 [%- END %]
 
 [% WRAPPER components/variable.html
+   variable="link_score" type='Integer' 
+   default=5 -%]
+The relation score that two documents that have a link between each other get.  Note that this is counted from each document's side.  So, if document A links to B and B links to A, the overall relation score between A and B is 10.
+[%- END %]
+
+[% WRAPPER components/variable.html
    variable="title" type='String' 
    default='"A New Qgoda Powered Site"' -%]
 The name of the site.  Qgoda itself does not use this variable.
