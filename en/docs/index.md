@@ -3,6 +3,7 @@ location: /{lingua}/docs/index.html
 title: Documentation
 categories: Documentation
 view: docs.html
+type: doc
 description: Learn how to create a website with Qgoda, with tutorial-style introductory information for beginners or exhaustive API documentation for the experienced.
 ---
 [% USE q = Qgoda %]
