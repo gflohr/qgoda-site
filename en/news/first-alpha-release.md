@@ -6,7 +6,7 @@ date: 2017-12-08
 category: Releases
 tags: Release Alpha-Release News
 ---
-The first alpha release of Qgoda is now available at [github](https://github.com/gflohr/qgoda/releases).
+The first alpha release of Qgoda is now available for download at [github](https://github.com/gflohr/qgoda/releases).  Although being an alpha version, it is mostly functional.
 
 Two major features are not yet fully implemented:
 

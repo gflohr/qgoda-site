@@ -5,4 +5,3 @@ classes: item_0
 button: Read All
 button_link: /en/news/
 ---
-listing ...

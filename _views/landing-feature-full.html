@@ -1,6 +1,7 @@
 [% PROCESS "functions/landing-page/css-modules.tt" %]
 [% classes = asset.classes %]
 [% USE gtx = Gettext('net.qgoda.www', asset.lingua) %]
+[% posts = q.llistPosts().nsortBy('date.epoch') %]
 <div class="[% css.start.$classes %]">
   <div class="container">
     <div class="row wow fadeIn [% css.start.feature_content %]" 
@@ -12,27 +13,27 @@
       </div>
       <div class="col-sm-6 col-md-6">
         <div class="">
-          <h4>Feature Freeze</h4>
+          <!--<a href="[% posts.0.permalink %]">-->
+          <h4>[% posts.0.title | html %]</h4>
           <div class="[% css.start.date %]">
             <i class="fa fa-clock-o"></i>
-            Dec 13, 2017
+            [% q.strftime(gtx.gettext('%b, %d %Y'), posts.0.date, asset.lingua) %]
           </div>
-          <div>
-            <p>In preparation of the first release, Qgoda has been feature frozen.
-            <a href="#" class="[% css.start.more %]">[% gtx.gettext('Read more ...') %]</a></p>
-          </div> 
-        </div>
+          <p>[% posts.0.excerpt %]
+          <!--</a>-->
+          <a href="[% posts.0.permalink %]" class="[% css.start.more %]">[% gtx.gettext('Read More') %] →</a></p>
+        </div> 
       </div>
       <div class="col-sm-6 col-md-6">
         <div class="">
-          <h4>First Alpha Release</h4>
+          <h4>[% posts.1.title | html %]</h4>
           <div class="[% css.start.date %]">
             <i class="fa fa-clock-o"></i>
-            Dec 01, 2017
+            [% q.strftime(gtx.gettext('%b, %d %Y'), posts.1.date, asset.lingua) %] 
           </div>
           <div>
-            The first alpha release of Qgoda is now available at github.
-            <a href="#" class="[% css.start.more %]">[% gtx.gettext('Read more ...') %]</a>
+            <p>[% posts.1.excerpt %]
+            <a href="[% posts.1.permalink %]" class="[% css.start.more %]">[% gtx.gettext('Read More') %] →</a></p>
           </div> 
         </div>
       </div>
