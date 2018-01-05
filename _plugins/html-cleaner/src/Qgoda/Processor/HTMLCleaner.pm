@@ -47,26 +47,7 @@ sub process {
     my $start_handler = sub {
     	my ($text, $tag, $attr, $attrseq) = @_;
     	
-    	if ('a' eq $tag 
-    	    && exists $attr->{href} && $attr->{href} =~ m{https?://}) {
-            push @$attrseq, 'target' if !exists $attr->{target};
-            $attr->{target} = '_blank';
-            
-            $output .= '<' . $tag;
-            foreach my $key (@$attrseq) {
-            	my $value = $attr->{$key};
-            	
-            	my %escapes = (
-            	    '"' => '&quot;',
-            	    '&' => '&amp;'
-            	);
-            	$value =~ s/(["&])/$escapes{$1}/g;
-            	$output .= qq{ $key="$value"};
-            }
-            $output .= '>';
-    	} else {
-    	    $output .= $text;
-        }
+        $output .= $text;
     };
     
     my $comment_handler = sub {

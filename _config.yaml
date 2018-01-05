@@ -47,6 +47,7 @@ processors:
       modules:
         - TT2
         - HTMLCleaner
+        - HTMLFilter
     markdown:
       modules:
       - TT2
