@@ -48,6 +48,10 @@ h1, .h1 {
     line-height: 77.55099487304688px;
     text-transform: uppercase;
     color: $brand-primary;
+    @media (max-width: 1024px) {
+        font-size: 40px;
+        line-height: 51.70066324869791999948px;
+    }
 }
 
 h2 {
