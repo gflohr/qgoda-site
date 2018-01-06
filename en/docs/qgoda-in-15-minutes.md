@@ -9,7 +9,7 @@ description: Learn the basic concepts of Qgoda in 15 minutes by building an ugly
 [% USE q = Qgoda %]
 Qgoda is a [command-line tool](http://www.guido-flohr.net/en/command-line/). Create an empty directory `qgoda-quickstart` somewhere and open a command-line window in it. Well-behaving command-line tools do not do anything destructive, when invoked without arguments.  Let's try whether qgoda is well-behaving:
 
-<!--TOC-->
+<qgoda-toc/>
 
 ## The Command-Line Interface
 

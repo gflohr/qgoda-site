@@ -10,7 +10,7 @@ description: This page explains where Qgoda differs from Jekyll and why.
 [% TAGS [- -] %]
 Qgoda was heavily inspired by [Jekyll](https://jekyllrb.com/) and initially very similar to Jekyll but over time it has veered away significantly.
 
-<!--TOC-->
+<qgoda-toc />
 
 ## General Differences
 
@@ -93,9 +93,9 @@ In the template you write:
 ```markup
 [% l = asset.lingua %]
 
-<a href="./privacy/">[% translations.$l.privacy %]</a>
+<a href="./privacy/">[% config.translations.$l.privacy %]</a>
 |
-<a href="#top">[% translations.$l.go_to_top %]</a>
+<a href="#top">[% config.translations.$l.go_to_top %]</a>
 ```
 
 This is okay for a handful of strings but a maintainance nightmare for larger sites.  You should rather write all strings in the base language of your site and mark them:

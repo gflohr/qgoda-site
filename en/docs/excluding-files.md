@@ -8,7 +8,7 @@ description: How to exclude (or include) additional paths in Qgoda.
 ---
 By default, Qgoda does not process hidden files and directories (name starts with a dot `.`).  Top-level files and directories that have names beginning with an underscore `_` are also excluded.
 
-<!--TOC-->
+<qgoda-toc />
 
 ## Excluding Additional Files
 

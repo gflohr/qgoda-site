@@ -2,6 +2,7 @@
 ../_views/components/listing.html
 ../_views/components/template-variable.html
 ../_views/components/term.html
+../_views/components/toc.html
 ../_views/components/variable.html
 ../_views/landing-about.html
 ../_views/landing-feature-full.html

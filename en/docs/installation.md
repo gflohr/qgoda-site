@@ -10,7 +10,7 @@ description: How to install Qgoda and its dependencies on your local system
 
 Qgoda has not yet been officially released.  The installation is therefore still a little bit awkward.
 
-<!--TOC-->
+<qgoda-toc/>
 
 ### Installation From Github Sources
 
