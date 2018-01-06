@@ -13,8 +13,8 @@ can build any website you want with it.  And by the way, it is pronounced
 
 [% WRAPPER components/infobox.html
            type='warning' title='This Is a Draft!' %]
-<p>This documentation is work in progress.  A lot of stuff is missing here,
-and part of the stuff documented here documents a past or future state
+<p>This documentation is work in progress.  A lot of things missing here,
+and part of the things documented here documents a past or future state
 of the software.  Well, and some parts of this documentation are plain
 wrong.  That being said, it should also be clear that features can still
 change without notice, whether they are documented or not.</p>
