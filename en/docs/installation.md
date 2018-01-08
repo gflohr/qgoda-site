@@ -6,11 +6,11 @@ order: 10
 view: docs.html
 description: How to install Qgoda and its dependencies on your local system
 ---
-## Installing Qgoda
-
 Qgoda has not yet been officially released.  The installation is therefore still a little bit awkward.
 
 <qgoda-toc/>
+
+## Installing Qgoda
 
 ### Installation From Github Sources
 
@@ -107,7 +107,7 @@ fi
 ```
 
 You have to terminate your current shell in order to activate the change.
-But the change is now peristent.  It will work for all future Perl versions.
+But the change is now persistent.  It will work for all future Perl versions.
 
 Other options are to create an alias to the location of the script:
 
@@ -127,11 +127,11 @@ But that will no longer work if your Perl executable is upgraded.
 
 [Node.js](https://nodejs.org/en/) is an interpreter for JavaScript that runs outside of the browser.  It is not a strict requirement for Qgoda but most Qgoda sites will make use of it.
 
-The [Node.js website](https://nodejs.org/en/) usually offers a download link but for the software.  If you are using a package manager, you should rather install Node.js with that.
+The [Node.js website](https://nodejs.org/en/) usually offers a download link for the software but if you are using a package manager, you should rather install Node.js with that.
 
 ### Yarn or NPM
 
-NPM is the Node Package Manager and is used to install packages and their dependencies for Node.js.  Yarn is an alternative to NPM and does essentially the same.
+[NPM](https://yarnpkg.com/en/) is the Node Package Manager and is used to install packages and their dependencies for Node.js.  [Yarn](https://yarnpkg.com/en/) is an alternative to NPM and does essentially the same.
 
 The official Qgoda themes all use Yarn but you can easily change that.  First, exchange `yarn` with `npm` in the section `scripts` of the theme's `P:package.json` and then do the same for the configuration variable `C:helpers` in Qgoda's main configuration file `P:_config.yaml`.
 

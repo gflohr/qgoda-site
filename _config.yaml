@@ -47,6 +47,11 @@ processors:
       modules:
       - TT2
       - Hoedown
+    html:
+      modules:
+      - TT2
+      - HTMLCleaner
+      - HTMLFilter
 po:
   textdomain: net.qgoda.www
   msgid_bugs_address: Guido Flohr <guido.flohr@cantanea.com>
