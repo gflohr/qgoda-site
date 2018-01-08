@@ -1,8 +1,7 @@
 ---
 title: Qgoda in 15 Minutes
 name: qgoda-in-15-minutes
-doc-section: Introduction
-order: 15  
+doc-section: introduction
 view: docs.html
 description: Learn the basic concepts of Qgoda in 15 minutes by building an ugly but simple site from scratch. 
 ---

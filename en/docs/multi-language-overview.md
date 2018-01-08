@@ -1,8 +1,7 @@
 ---
 title: Overview
 name: multi-language-overview
-doc-section: Multi-Language
-order: 48
+doc-section: multi-language
 view: docs.html
 description: Overview of Qgoda's Multi-Lanaguage and Internationalization (I18N) features
 ---

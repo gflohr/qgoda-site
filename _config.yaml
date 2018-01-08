@@ -60,6 +60,8 @@ po:
     - perl 
     - -I/Users/guido/perl/qgoda/lib 
     - /Users/guido/perl/qgoda/qgoda
+tours:
+  doc-section: name
 
 # This should be overridden in _localconfig.yaml or in a private branch.
 legal:

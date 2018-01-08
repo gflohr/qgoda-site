@@ -1,8 +1,7 @@
 ---
 title: Mode Of Operation
 name: mode-of-operation
-doc-section: Introduction
-order: 20
+doc-section: introduction
 view: docs.html
 description: Qgoda basically copies files for deployment, optionally cooking the content with processor plug-ins.
 ---
@@ -17,7 +16,7 @@ configurable chains of processor plug-ins.
 ```yaml
 ---
 title: The Importance of Being Awesome
-description: Everything has to be awesome.  Don't miss to be awesome yourself!
+description: Everything has to be awesome.
 ---
 ## About Awesomeness
 

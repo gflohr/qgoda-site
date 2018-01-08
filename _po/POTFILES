@@ -9,6 +9,7 @@
 ../_views/landing-header.html
 ../_views/partials/body/footer.html
 ../_views/partials/body/sidebar-top.html
+../_views/partials/body/sidebar.html
 ../_views/partials/head-landing.html
 ../_views/partials/head.html
 ../_views/partials/header/navbar.html

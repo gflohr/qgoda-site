@@ -1,8 +1,7 @@
 ---
 title: Files and Directories
 name: files-and-directories
-doc-section: Lists and Indices
-order: 930
+doc-section: lists-and-indices
 view: docs.html
 description: Complete List of Files and Directories
 ---

@@ -1,8 +1,7 @@
 ---
 title: Excluding Files
 name: excluding-files
-doc-section: Basics
-order: 50
+doc-section: basics
 view: docs.html
 description: How to exclude (or include) additional paths in Qgoda.
 ---

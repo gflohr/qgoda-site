@@ -1,8 +1,7 @@
 ---
 title: Configuration Variables
 name: configuration-variables
-doc-section: Lists and Indices
-order: 940
+doc-section: lists-and-indices 
 view: docs.html
 description: Complete List Of Configuration Variables
 ---
@@ -42,4 +41,8 @@ The relation score that two documents that have a link between each other get.  
 The name of the site.  Qgoda itself does not use this variable.
 [%- END %]
 
+[% WRAPPER components/variable.html
+   variable="tours" type='Hash' -%]
+TODO!
+[%- END %]
 </ul>

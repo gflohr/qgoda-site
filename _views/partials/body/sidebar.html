@@ -1,8 +1,14 @@
+[% USE gtx = Gettext(config.po.textdomain, asset.lingua) %]
 [% INCLUDE "partials/body/sidebar-top.html" %]
 [% IF asset.type == 'doc' %]
-[% INCLUDE "partials/body/sidebar-module.html" title="Introduction" %]
-[% INCLUDE "partials/body/sidebar-module.html" title="Basics" %]
-[% INCLUDE "partials/body/sidebar-module.html" title="Multi-Language" %]
-[% INCLUDE "partials/body/sidebar-module.html" title="Miscellaneous" %]
-[% INCLUDE "partials/body/sidebar-module.html" title="Lists and Indices" %]
+[% INCLUDE "partials/body/sidebar-module.html" 
+           section="introduction" title="Introduction" %]
+[% INCLUDE "partials/body/sidebar-module.html"
+           section="basics" title="Basics" %]
+[% INCLUDE "partials/body/sidebar-module.html" 
+           section="multi-language" title="Multi-Language" %]
+[% INCLUDE "partials/body/sidebar-module.html" 
+           section="miscellaneous" title="Miscellaneous" %]
+[% INCLUDE "partials/body/sidebar-module.html"
+           section="lists-and-indices" title="Lists and Indices" %]
 [% END %]

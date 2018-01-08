@@ -2,7 +2,7 @@
 <div class="[% css.qgoda.sidebar_module %]">
   <h4 class="[% css.qgoda.sidebar_title %]">[% title %]</h4>
   <ol>
-  [% FOREACH doc IN q.llist('doc-section' = title).nsortBy('order') %]
+  [% FOREACH doc IN q.llist('doc-section' = section).nsortBy('order') %]
     <li>
       [% IF asset.permalink == doc.permalink %]
       <i class="fa fa-hand-o-right"></i>&nbsp;[% doc.title %]

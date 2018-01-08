@@ -1,8 +1,7 @@
 ---
 title: Table Of Contents
 name: table-of-contents
-doc-section: Basics
-order: 90
+doc-section: basics
 view: docs.html
 description: Creating a table of contents with Qgoda is very easy.  And every aspect of it can be styled to your needs.
 ---

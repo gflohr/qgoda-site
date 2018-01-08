@@ -1,7 +1,7 @@
 ---
 title: Installation
 name: installation
-doc-section: Introduction
+doc-section: introduction
 order: 10
 view: docs.html
 description: How to install Qgoda and its dependencies on your local system

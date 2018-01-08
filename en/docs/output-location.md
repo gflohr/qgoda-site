@@ -1,8 +1,7 @@
 ---
 title: Output Location
 name: output-location
-doc-section: Basics
-order: 10
+doc-section: basics
 view: docs.html
 description: Learn how input locations are translated to output locations in Qgoda.
 ---
