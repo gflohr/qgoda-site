@@ -263,3 +263,16 @@ a.teaser-link:hover {
         margin-left: 1rem;
     }
 }
+
+.guided-tour {
+    color: #0c5460;
+
+    @media (max-width: 1024px) {
+        font-size: smaller;
+    }
+
+    a:hover {
+       text-decoration: none;
+       color: #d97319;
+    }
+}

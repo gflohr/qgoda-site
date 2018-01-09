@@ -1,4 +1,5 @@
 ../_views/components/file.html
+../_views/components/guided_tour.html
 ../_views/components/listing.html
 ../_views/components/template-variable.html
 ../_views/components/term.html
