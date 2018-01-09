@@ -266,6 +266,11 @@ a.teaser-link:hover {
 
 .guided-tour {
     color: #0c5460;
+    padding-top: 2rem;
+
+    .guided-tour-link {
+        padding: 0;
+    }
 
     @media (max-width: 1024px) {
         font-size: smaller;
