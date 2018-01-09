@@ -1,7 +1,7 @@
 ---
 title: Template Variables
 name: template-variables
-doc-section: lists-and-indices
+section: lists-and-indices
 view: docs.html
 description: Standard and Pre-Defined Template Variables
 ---

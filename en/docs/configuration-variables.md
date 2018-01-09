@@ -1,7 +1,7 @@
 ---
 title: Configuration Variables
 name: configuration-variables
-doc-section: lists-and-indices 
+section: lists-and-indices 
 view: docs.html
 description: Complete List Of Configuration Variables
 ---

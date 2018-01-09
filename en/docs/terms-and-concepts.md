@@ -1,7 +1,7 @@
 ---
 title: Terms and Concepts 
 name: terms-and-concepts 
-doc-section: lists-and-indices
+section: lists-and-indices
 order: 900
 view: docs.html
 description: Explanation of frequently used terms and concepts

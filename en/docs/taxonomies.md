@@ -1,7 +1,7 @@
 ---
 title: Taxonomies
 name: taxonomies
-doc-section: basics
+section: basics
 view: docs.html
 description: Taxonomies partition your site according to arbitrary aspects.
 ---

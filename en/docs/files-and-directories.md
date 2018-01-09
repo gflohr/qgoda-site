@@ -1,7 +1,7 @@
 ---
 title: Files and Directories
 name: files-and-directories
-doc-section: lists-and-indices
+section: lists-and-indices
 view: docs.html
 description: Complete List of Files and Directories
 ---

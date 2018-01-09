@@ -1,7 +1,7 @@
 ---
 title: Differences to Jekyll
 name: differences-to-jekyll
-doc-section: miscellaneous
+section: miscellaneous
 view: docs.html
 description: This page explains where Qgoda differs from Jekyll and why.
 ---

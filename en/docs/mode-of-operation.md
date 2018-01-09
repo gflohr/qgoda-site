@@ -1,7 +1,7 @@
 ---
 title: Mode Of Operation
 name: mode-of-operation
-doc-section: introduction
+section: introduction
 view: docs.html
 description: Qgoda basically copies files for deployment, optionally cooking the content with processor plug-ins.
 ---
