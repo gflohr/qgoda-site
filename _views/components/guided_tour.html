@@ -1,9 +1,10 @@
 [% USE gtx = Gettext(config.po.textdomain, asset.lingua) %]
+[% USE q = Qgoda %]
 [% sections = [
   ['introduction', 
-    'installation', 'qgoda-in-15-miniuts', 'mode-of-operation' ],
+    'installation', 'qgoda-in-15-minutes', 'mode-of-operation' ],
   ['basics', 
-   'taxonomies', 'listings-and-links', 'related-documents',
+   'taxonomies', 'listings', 'related-documents',
    'output-location', 'excluding-files', 'table-of-contents' ],
   ['multi-language', 
    'multi-language-overview' ],
@@ -21,6 +22,16 @@
      'lists-and-indices' = gtx.gettext('Lists and Indices')
    }
  %]
+
+  [% order = 0 %]
+  [% FOREACH group IN sections %]
+    [% names = group.splice(1) %]
+    [% FOREACH name IN names %]
+      [% order = order + 1 %]
+      [% post = q.llist(section = group.0 name = name).0 %]
+      [% post.order = order %]
+    [% END %]
+  [% END %]
 
 <div class="[% css.qgoda.guided_tour %] container">
   <div class="row">

@@ -2,7 +2,6 @@
 title: Listings and Links
 name: listings
 section: basics
-order: 30
 view: docs.html
 description: Qgoda generates listings based on taxonomies.
 ---
