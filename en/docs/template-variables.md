@@ -35,6 +35,11 @@ All artifacts are built sorted by their priority.  A higher value means that the
 [%- END %]
 
 [% WRAPPER "components/template-variable.html"
+   variable="asset.virtual" %]
+Virtual documents to not get published, to be more exact, they do not go through the second pass of processing (the HTML wrapping) and hence are not written to disk.
+[%- END %]
+
+[% WRAPPER "components/template-variable.html"
    variable="config" type='hash' %]
 `config` gives you access to the site configuration from `P:_config.yaml`.
 The configuration variable `C:paths.views` in `P:_config.yaml` is

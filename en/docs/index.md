@@ -1,6 +1,7 @@
 ---
 location: /{lingua}/docs/index.html
 title: Documentation
+name: documentation
 categories: Documentation
 view: docs.html
 type: doc
