@@ -29,7 +29,6 @@ defaults:
   - files: /*/docs/**
     values:
       type: doc 
-      navsection: docs
   - files: /*/news/**
     values:
       type: post
@@ -60,8 +59,8 @@ po:
     - perl 
     - -I/Users/guido/perl/qgoda/lib 
     - /Users/guido/perl/qgoda/qgoda
-tours:
-  section: name
+analyzers:
+  - GuidedTour
 
 # This should be overridden in _localconfig.yaml or in a private branch.
 legal:
