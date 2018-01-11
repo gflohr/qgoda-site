@@ -25,12 +25,16 @@ msgstr ""
 msgid "overridable:"
 msgstr ""
 
-#: ../_views/components/listing.html:15 ../_views/landing-feature-full.html:20
+#: ../_views/components/guided_tour.html:11
+msgid "Start"
+msgstr ""
+
+#: ../_views/components/listing.html:16 ../_views/landing-feature-full.html:20
 #: ../_views/landing-feature-full.html:32
 msgid "%b, %d %Y"
 msgstr ""
 
-#: ../_views/components/listing.html:25 ../_views/landing-feature-full.html:24
+#: ../_views/components/listing.html:26 ../_views/landing-feature-full.html:24
 #: ../_views/landing-feature-full.html:36
 msgid "Read More"
 msgstr ""
@@ -64,18 +68,6 @@ msgstr ""
 msgid "Source code of this page"
 msgstr ""
 
-#: ../_views/partials/body/sidebar.html:5
-msgid "Introduction"
-msgstr ""
-
-#: ../_views/partials/body/sidebar.html:5
-msgid "Basics"
-msgstr ""
-
-#: ../_views/partials/body/sidebar.html:5
-msgid "Multi-Language"
-msgstr ""
-
 #: ../_views/partials/head.html:6
 msgid "Qgoda - The Static Site Generator"
 msgstr ""
@@ -86,6 +78,13 @@ msgstr ""
 
 #: ../_views/partials/header/navbar.html:21
 msgid "Home"
+msgstr ""
+
+#: ../_includes/en/landing-page/header.md:7
+msgid ""
+"No database, no fuzz, no buzz. Qgoda works everywhere. Write your texts using \n"
+"Markdown and we've got you going. HTML knowledge is a plus but not a \n"
+"requirement."
 msgstr ""
 
 #: ../en/data-privacy-policy.md:2
@@ -276,6 +275,11 @@ msgstr ""
 
 #: ../en/data-privacy-policy.md:113
 msgid "[% END %]"
+msgstr ""
+
+#: ../en/docs/basics.md:2
+msgctxt "title"
+msgid "Basics"
 msgstr ""
 
 #: ../en/docs/configuration-variables.md:2
@@ -1109,12 +1113,12 @@ msgctxt "title"
 msgid "Documentation"
 msgstr ""
 
-#: ../en/docs/index.md:7
+#: ../en/docs/index.md:8
 msgctxt "description"
 msgid "Learn how to create a website with Qgoda, with tutorial-style introductory information for beginners or exhaustive API documentation for the experienced."
 msgstr ""
 
-#: ../en/docs/index.md:9
+#: ../en/docs/index.md:10
 msgid ""
 "[% USE q = Qgoda %]\n"
 "Qgoda is a static site generator.  It is mainly intended for blogs but you\n"
@@ -1122,7 +1126,7 @@ msgid ""
 "\"yagoda\"."
 msgstr ""
 
-#: ../en/docs/index.md:14
+#: ../en/docs/index.md:15
 msgid ""
 "[% WRAPPER components/infobox.html\n"
 "           type='warning' title='This Is a Draft!' %]\n"
@@ -1138,12 +1142,12 @@ msgid ""
 "[% END %]"
 msgstr ""
 
-#: ../en/docs/index.md:27
+#: ../en/docs/index.md:28
 msgid "Setting up your own blog, portfolio or company web site with Qgoda is simple\n"
 "and straightforward.  Yet, Qgoda comes with a unique feature set that makes even complex websites feasible and fun to implement.  The highlights are:"
 msgstr ""
 
-#: ../en/docs/index.md:30
+#: ../en/docs/index.md:31
 msgid ""
 "- A powerful yet easy to learn templating language.\n"
 "- Arbitrary [taxonomies]([% q.llink(name = 'taxonomies') %])\n"
@@ -1156,7 +1160,7 @@ msgid ""
 "  audience or documentation (like this one)."
 msgstr ""
 
-#: ../en/docs/index.md:40
+#: ../en/docs/index.md:41
 msgid ""
 "[% WRAPPER components/infobox.html\n"
 "           type='info' title='Run Your Local Version!' %]\n"
@@ -1395,17 +1399,22 @@ msgstr ""
 msgid "See https://yarnpkg.com/en/docs/install for instructions."
 msgstr ""
 
+#: ../en/docs/introduction.md:2
+msgctxt "title"
+msgid "Introduction"
+msgstr ""
+
 #: ../en/docs/listings.md:2
 msgctxt "title"
 msgid "Listings and Links"
 msgstr ""
 
-#: ../en/docs/listings.md:7
+#: ../en/docs/listings.md:6
 msgctxt "description"
 msgid "Qgoda generates listings based on taxonomies."
 msgstr ""
 
-#: ../en/docs/listings.md:9
+#: ../en/docs/listings.md:8
 msgid ""
 "Link lists are crucial for the navigation on most web sites.  Qgoda \n"
 "generates listings based on taxonomies.  Taxonomies partition your\n"
@@ -1413,15 +1422,15 @@ msgid ""
 "lists are such groups."
 msgstr ""
 
-#: ../en/docs/listings.md:14
+#: ../en/docs/listings.md:13
 msgid "## Template Code"
 msgstr ""
 
-#: ../en/docs/listings.md:16
+#: ../en/docs/listings.md:15
 msgid "Listings are created by the template functions `list()` or `listPosts()`."
 msgstr ""
 
-#: ../en/docs/listings.md:18
+#: ../en/docs/listings.md:17
 msgid ""
 "[% WRAPPER components/infobox.html\n"
 "           type=\"info\" title=\"These Instructions Are For the Template Toolkit!\" %]\n"
@@ -1431,7 +1440,7 @@ msgid ""
 "[% END %]"
 msgstr ""
 
-#: ../en/docs/listings.md:25
+#: ../en/docs/listings.md:24
 msgid ""
 "[% TAGS [- -] %]\n"
 "```markup\n"
@@ -1449,7 +1458,7 @@ msgid ""
 "[- TAGS [% %] -]"
 msgstr ""
 
-#: ../en/docs/listings.md:40
+#: ../en/docs/listings.md:39
 msgid ""
 "[% WRAPPER components/infobox.html\n"
 "     title=\"Difference to Jekyll\"\n"
@@ -1458,6 +1467,16 @@ msgid ""
 "template variables.  Qgoda uses template functions instead, and these\n"
 "functions return unsorted lists.\n"
 "[% END %]"
+msgstr ""
+
+#: ../en/docs/lists-and-indices.md:2
+msgctxt "title"
+msgid "Lists and Indices"
+msgstr ""
+
+#: ../en/docs/miscellaneous.md:2
+msgctxt "title"
+msgid "Miscellaneous"
 msgstr ""
 
 #: ../en/docs/mode-of-operation.md:2
@@ -1611,7 +1630,7 @@ msgstr ""
 
 #: ../en/docs/multi-language-overview.md:2
 msgctxt "title"
-msgid "Overview"
+msgid "Multi-Language Overview"
 msgstr ""
 
 #: ../en/docs/multi-language-overview.md:6
@@ -1795,6 +1814,11 @@ msgstr ""
 
 #: ../en/docs/multi-language-overview.md:106
 msgid "Likewise, for links resp. cross-references you add the additional filter for the language or just use `q.lxref()` instead of `q.xref()` and you are done."
+msgstr ""
+
+#: ../en/docs/multi-language.md:2
+msgctxt "title"
+msgid "Multi-Language"
 msgstr ""
 
 #: ../en/docs/output-location.md:2
@@ -3218,6 +3242,14 @@ msgstr ""
 #: ../en/docs/template-variables.md:37
 msgid ""
 "[% WRAPPER \"components/template-variable.html\"\n"
+"   variable=\"asset.virtual\" %]\n"
+"Virtual documents to not get published, to be more exact, they do not go through the second pass of processing (the HTML wrapping) and hence are not written to disk.\n"
+"[%- END %]"
+msgstr ""
+
+#: ../en/docs/template-variables.md:42
+msgid ""
+"[% WRAPPER \"components/template-variable.html\"\n"
 "   variable=\"config\" type='hash' %]\n"
 "`config` gives you access to the site configuration from `P:_config.yaml`.\n"
 "The configuration variable `C:paths.views` in `P:_config.yaml` is\n"
@@ -3273,14 +3305,6 @@ msgstr ""
 #: ../en/index.md:8
 msgctxt "description"
 msgid "Qgoda is a static site generator with a strong focus on multi-linguism and flexibility, written in Perl but extensible with JavaScript, Python, Ruby, Java, and more."
-msgstr ""
-
-#: ../en/index.md:10
-msgid ""
-"[% USE q = Qgoda %]\n"
-"[% q.include('_includes/landing-page/header.md', asset) %]\n"
-"[% q.include('_includes/landing-page/main-features.md', asset) %]\n"
-"[% q.include('_includes/landing-page/about.md', asset) %]"
 msgstr ""
 
 #: ../en/legal-disclosure.md:2

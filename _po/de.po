@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qgoda-site 0.1\n"
 "Report-Msgid-Bugs-To: 'Guido Flohr <guido.flohr@cantanea.com>'\n"
-"PO-Revision-Date: 2017-12-30 09:47+0200\n"
+"PO-Revision-Date: 2018-01-11 17:08+0200\n"
 "Last-Translator: Guido Flohr <guido.flohr@cantanea.com>\n"
 "Language-Team: German\n"
 "Language: de\n"
@@ -20,15 +20,45 @@ msgstr ""
 #: ../_views/components/template-variable.html:3
 #: ../_views/components/variable.html:3
 msgid "type:"
-msgstr ""
+msgstr "Typ:"
 
 #: ../_views/components/file.html:4
 msgid "overridable:"
-msgstr ""
+msgstr "Überschreibbar:"
+
+#: ../_views/components/guided_tour.html:11
+msgid "Start"
+msgstr "Start"
+
+#: ../_views/components/listing.html:16 ../_views/landing-feature-full.html:20
+#: ../_views/landing-feature-full.html:32
+msgid "%b, %d %Y"
+msgstr "%d. %b %Y"
+
+#: ../_views/components/listing.html:26 ../_views/landing-feature-full.html:24
+#: ../_views/landing-feature-full.html:36
+msgid "Read More"
+msgstr "Weiterlesen"
+
+#: ../_views/components/toc.html:4
+msgid "Table Of Contents"
+msgstr "Inhaltsverzeichnis"
 
 #: ../_views/components/variable.html:4
 msgid "default:"
-msgstr ""
+msgstr "Vorgabewert:"
+
+#: ../_views/landing-header.html:23 ../_views/partials/header/navbar.html:27
+msgid "News"
+msgstr "Neues"
+
+#: ../_views/landing-header.html:26
+msgid "Download"
+msgstr "Download"
+
+#: ../_views/landing-header.html:27 ../_views/partials/header/navbar.html:33
+msgid "Docs"
+msgstr "Doku"
 
 #: ../_views/partials/body/footer.html:10
 #, perl-brace-format
@@ -39,7 +69,7 @@ msgstr "Copyright &copy; {copyright_year} {copyright_holder}"
 msgid "Source code of this page"
 msgstr "Quelltext dieser Seite"
 
-#: ../_views/partials/head-landing.html:4 ../_views/partials/head.html:6
+#: ../_views/partials/head.html:6
 msgid "Qgoda - The Static Site Generator"
 msgstr "Qgoda - Der Static Site Generator"
 
@@ -51,23 +81,28 @@ msgstr "Navigation ein/aus"
 msgid "Home"
 msgstr "Start"
 
-#: ../_views/partials/header/navbar.html:27
-msgid "News"
-msgstr "Neues"
-
-#: ../_views/partials/header/navbar.html:33
-msgid "Docs"
-msgstr "Doku"
+#: ../_includes/en/landing-page/header.md:7
+msgid ""
+"No database, no fuzz, no buzz. Qgoda works everywhere. Write your texts "
+"using \n"
+"Markdown and we've got you going. HTML knowledge is a plus but not a \n"
+"requirement."
+msgstr ""
+"Keine Datenbank, kein Schnickschnack, Qgoda läuft überall. Einfach Texte mit "
+"Markdown schreiben, und eine neue Website ist am Start. HTML-Kenntnisse sind "
+"ein Plus, aber eine Voraussetzung."
 
 #: ../en/data-privacy-policy.md:2
 msgctxt "title"
 msgid "Data Privacy"
-msgstr ""
+msgstr "Datenschutz"
 
 #: ../en/data-privacy-policy.md:5
 msgctxt "description"
 msgid "What private date does this site receive, and what does it use it for?"
 msgstr ""
+"Welche privaten Daten werden an diese Website geschickt, und wofür werden "
+"sie verwendet?"
 
 #: ../en/data-privacy-policy.md:7
 msgid ""
@@ -76,10 +111,14 @@ msgid ""
 "data or information first.  This page tries to inform you what information\n"
 "is collected related to your visit."
 msgstr ""
+"Aus dem Internet lassen sich keine Daten oder Informationen herunterladen, "
+"ohne zuerst Daten oder Informationen zu schicken. Diese Seite informiert "
+"darüber, welche Daten im Zusammenhang mit einem Besuch dieser Seite erfasst "
+"werden."
 
 #: ../en/data-privacy-policy.md:13
 msgid "## Logging"
-msgstr ""
+msgstr "## Protokolldateien"
 
 #: ../en/data-privacy-policy.md:15
 msgid ""
@@ -257,24 +296,29 @@ msgstr ""
 msgid "[% END %]"
 msgstr ""
 
+#: ../en/docs/basics.md:2
+msgctxt "title"
+msgid "Basics"
+msgstr "Grundlagen"
+
 #: ../en/docs/configuration-variables.md:2
 msgctxt "title"
 msgid "Configuration Variables"
 msgstr "Konfigurations-Variablen"
 
-#: ../en/docs/configuration-variables.md:7
+#: ../en/docs/configuration-variables.md:6
 msgctxt "description"
 msgid "Complete List Of Configuration Variables"
 msgstr "Vollständige Liste der Konfigurationsvariablen"
 
-#: ../en/docs/configuration-variables.md:9
-#: ../en/docs/files-and-directories.md:9
+#: ../en/docs/configuration-variables.md:8
+#: ../en/docs/files-and-directories.md:8
 msgid ""
 "[% USE q = Qgoda %]\n"
 "[% PROCESS \"functions/css-modules.tt\" %]"
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:12
+#: ../en/docs/configuration-variables.md:11
 msgid ""
 "The following configuration variables from the file `_config.yml` are "
 "understood by Qgoda:"
@@ -282,7 +326,7 @@ msgstr ""
 "Die folgenden Konfigurationsvariablen aus `P:_config.yaml` werden von Qgoda "
 "verarbeitet:"
 
-#: ../en/docs/configuration-variables.md:14
+#: ../en/docs/configuration-variables.md:13
 msgid ""
 "<ul>\n"
 "[% WRAPPER components/variable.html\n"
@@ -295,7 +339,7 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:21
+#: ../en/docs/configuration-variables.md:20
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"exclude\" type='Array' \n"
@@ -306,7 +350,7 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:27
+#: ../en/docs/configuration-variables.md:26
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"exclude_watch\" type='Array' \n"
@@ -317,7 +361,19 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:33
+#: ../en/docs/configuration-variables.md:32
+msgid ""
+"[% WRAPPER components/variable.html\n"
+"   variable=\"link_score\" type='Integer' \n"
+"   default=5 -%]\n"
+"The relation score that two documents that have a link between each other "
+"get.  Note that this is counted from each document's side.  So, if document "
+"A links to B and B links to A, the overall relation score between A and B is "
+"10.\n"
+"[%- END %]"
+msgstr ""
+
+#: ../en/docs/configuration-variables.md:38
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"title\" type='String' \n"
@@ -326,9 +382,13 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:39
-#: ../en/docs/files-and-directories.md:78
-msgid "</ul>"
+#: ../en/docs/configuration-variables.md:44
+msgid ""
+"[% WRAPPER components/variable.html\n"
+"   variable=\"tours\" type='Hash' -%]\n"
+"TODO!\n"
+"[%- END %]\n"
+"</ul>"
 msgstr ""
 
 #: ../en/docs/differences-to-jekyll.md:2
@@ -336,12 +396,12 @@ msgctxt "title"
 msgid "Differences to Jekyll"
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:7
+#: ../en/docs/differences-to-jekyll.md:6
 msgctxt "description"
 msgid "This page explains where Qgoda differs from Jekyll and why."
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:9
+#: ../en/docs/differences-to-jekyll.md:8
 msgid ""
 "[% USE q = Qgoda %]\n"
 "[% TAGS [- -] %]\n"
@@ -349,38 +409,43 @@ msgid ""
 "very similar to Jekyll but over time it has veered away significantly."
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:15
+#: ../en/docs/differences-to-jekyll.md:12 ../en/docs/excluding-files.md:10
+#: ../en/docs/output-location.md:18
+msgid "<qgoda-toc />"
+msgstr ""
+
+#: ../en/docs/differences-to-jekyll.md:14
 msgid "## General Differences"
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:17
+#: ../en/docs/differences-to-jekyll.md:16
 msgid ""
 "Qgoda's philosophy significantly differs from Jekyll's.  Creating simple web "
 "sites should be just as simple as with Jekyll but it should be possible to "
 "also fulfill more complex requirements, preferably out of the box."
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:19
+#: ../en/docs/differences-to-jekyll.md:18
 msgid "### Taxonomies"
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:21
+#: ../en/docs/differences-to-jekyll.md:20
 msgid ""
 "Jekyll can structure a site with tags and categories.  Qgoda has arbitrary "
 "taxonomies and *you* decide what their semantics and usage."
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:23 ../en/docs/qgoda-in-15-minutes.md:337
+#: ../en/docs/differences-to-jekyll.md:22 ../en/docs/qgoda-in-15-minutes.md:336
 msgid "### Listings"
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:25
+#: ../en/docs/differences-to-jekyll.md:24
 msgid ""
 "Qgoda can create lists with arbitrary filters, not just for categories.  "
 "Example:"
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:27
+#: ../en/docs/differences-to-jekyll.md:26
 msgid ""
 "```markup\n"
 "[% posts = q.list(lingua = asset.lingua\n"
@@ -390,25 +455,25 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:34
+#: ../en/docs/differences-to-jekyll.md:33
 msgid ""
 "See [[- q.lxref('title', name='listings') -]]([- q.llink(name='listings') "
 "-]) \n"
 "for more information."
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:37
+#: ../en/docs/differences-to-jekyll.md:36
 msgid "### Links and Cross-References"
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:39
+#: ../en/docs/differences-to-jekyll.md:38
 msgid ""
 "These work essentially the same as listings, only that you define the "
 "filters so that they will produce a single result instead of a list.  For "
 "example, the last sentence of the previous paragraph was created like this:"
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:41
+#: ../en/docs/differences-to-jekyll.md:40
 msgid ""
 "```markup\n"
 "See [[% q.lxref('title', name='listings') %]]([% q.llink(name='listings') "
@@ -417,14 +482,14 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:46
+#: ../en/docs/differences-to-jekyll.md:45
 msgid ""
 "The function `q.lxref()` extracts the variable 'title' from the document "
 "with the name `listings`, whereas `q.llink()` produces a permalink to the "
 "page identified by the filter or filters given."
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:48
+#: ../en/docs/differences-to-jekyll.md:47
 msgid ""
 "Of course, you are not forced to create links in such a complicated manner.  "
 "You can also just hard-code everything.  Using the functions has the "
@@ -432,19 +497,19 @@ msgid ""
 "document changes."
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:50
+#: ../en/docs/differences-to-jekyll.md:49
 msgid "### No Web-Server Included"
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:52
+#: ../en/docs/differences-to-jekyll.md:51
 msgid "Qgoda does not come with a web server.  Why? Lazy developer?"
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:54
+#: ../en/docs/differences-to-jekyll.md:53
 msgid "Kind of.  And, by the way, lazy developers are good developers."
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:56
+#: ../en/docs/differences-to-jekyll.md:55
 msgid ""
 "Qgoda is a tool for generating static web sites and it follows the Unix "
 "concept of DOTADIW, or \"Do One Thing and Do It Well\".  Web development "
@@ -456,23 +521,23 @@ msgid ""
 "integrate in a Qgoda development site."
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:58
+#: ../en/docs/differences-to-jekyll.md:57
 msgid ""
 "And to be honest, the current web servers written in Perl all look pretty "
 "lame compared to their brethren for Node.js."
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:60
+#: ../en/docs/differences-to-jekyll.md:59
 msgid "### Sass? Helpers!"
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:62
+#: ../en/docs/differences-to-jekyll.md:61
 msgid ""
 "Jekyll has a built-in [Sass](http://sass-lang.com/) compiler built on the "
 "Ruby Sass implementation."
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:64
+#: ../en/docs/differences-to-jekyll.md:63
 msgid ""
 "But modern web development is a lot more than pre-processing CSS.  First of "
 "all chances are that you also want to use JavaScript, do you? And maybe you "
@@ -480,7 +545,7 @@ msgid ""
 "[PostCSS](http://postcss.org/) only."
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:66
+#: ../en/docs/differences-to-jekyll.md:65
 msgid ""
 "All these assets should be syntax-checked, minified, optimized and bundled "
 "and, again, the Node.js eco system has the best tools for the job, first "
@@ -489,7 +554,7 @@ msgid ""
 "of the pack in three weeks?"
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:68
+#: ../en/docs/differences-to-jekyll.md:67
 msgid ""
 "Qgoda allows you to configure an arbitrary number of helper processes while "
 "watching your site for changes.  You typically have one of the build tools "
@@ -498,18 +563,18 @@ msgid ""
 "gulp or webpack, yarn or npm, or just plain Makefiles."
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:70
+#: ../en/docs/differences-to-jekyll.md:69
 msgid "### Multi-Language Sites"
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:72
+#: ../en/docs/differences-to-jekyll.md:71
 msgid ""
 "Jekyll does not have built-in support for multilingual web sites.  Qgoda "
 "also has no explicit support for multi-lingual web sites.  It just works out "
 "of the box."
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:74
+#: ../en/docs/differences-to-jekyll.md:73
 msgid ""
 "All you have to do is to store the language (resp. language code) of a "
 "particular document or asset in a standard variable.  If you follow "
@@ -518,14 +583,14 @@ msgid ""
 "all."
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:76
+#: ../en/docs/differences-to-jekyll.md:75
 msgid ""
 "Under normal circumstances, not only content differs.  You also want to "
 "translate certain strings in your template.  The quick and dirty way is to "
 "store the strings in your configuration file `P:_config.yaml`:"
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:78
+#: ../en/docs/differences-to-jekyll.md:77
 msgid ""
 "```yaml\n"
 "translations:\n"
@@ -541,38 +606,38 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:91
+#: ../en/docs/differences-to-jekyll.md:90
 msgid "In the template you write:"
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:93
+#: ../en/docs/differences-to-jekyll.md:92
 msgid ""
 "```markup\n"
 "[% l = asset.lingua %]"
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:96
+#: ../en/docs/differences-to-jekyll.md:95
 msgid ""
-"<a href=\"./privacy/\">[% translations.$l.privacy %]</a>\n"
+"<a href=\"./privacy/\">[% config.translations.$l.privacy %]</a>\n"
 "|\n"
-"<a href=\"#top\">[% translations.$l.go_to_top %]</a>\n"
+"<a href=\"#top\">[% config.translations.$l.go_to_top %]</a>\n"
 "```"
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:101
+#: ../en/docs/differences-to-jekyll.md:100
 msgid ""
 "This is okay for a handful of strings but a maintainance nightmare for "
 "larger sites.  You should rather write all strings in the base language of "
 "your site and mark them:"
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:103
+#: ../en/docs/differences-to-jekyll.md:102
 msgid ""
 "```markup\n"
 "[% USE gtx = Gettext('your-site-id', asset.lingua) %]"
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:106
+#: ../en/docs/differences-to-jekyll.md:105
 msgid ""
 "<a href=\"./private/\">[% gtx.gettext('Privacy Policy') %]</a>\n"
 "|\n"
@@ -580,7 +645,7 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:111
+#: ../en/docs/differences-to-jekyll.md:110
 msgid ""
 "You can extract these strings into `.po` files for translations, and install "
 "the compiled translations in the site.  This is following the standard "
@@ -588,49 +653,49 @@ msgid ""
 "facto standard for localization of open-source software."
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:113
+#: ../en/docs/differences-to-jekyll.md:112
 msgid "## Template System"
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:115
+#: ../en/docs/differences-to-jekyll.md:114
 msgid ""
 "Qgoda uses [The Template Toolkit](http://www.template-toolkit.org/) as its "
 "primary templating system, Jekyll uses [Liquid](https://shopify.github.io/"
 "liquid/)."
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:117
+#: ../en/docs/differences-to-jekyll.md:116
 msgid "### Syntax"
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:119
+#: ../en/docs/differences-to-jekyll.md:118
 msgid ""
 "Liquid uses double curly braces for *objects* (`{{ variable }}`) and curly "
 "braces and percent signs for *tags* (`{% if logged_in %} `)."
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:121
+#: ../en/docs/differences-to-jekyll.md:120
 msgid ""
 "The Template Toolkit uses only `[% ... %]`.  *Directives* (comparable to "
 "Liquid tags) are using upper case letters (`[% IF logged_in %]`)."
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:123
+#: ../en/docs/differences-to-jekyll.md:122
 msgid "### Data Types"
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:125
+#: ../en/docs/differences-to-jekyll.md:124
 msgid ""
 "Liquid only allows one level of nesting variables.  You cannot do something "
 "like `{{ user.address.street }}`.  Variables for the Template Toolkit can be "
 "nested to arbitrary depth.  They can also reference Perl objects."
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:127
+#: ../en/docs/differences-to-jekyll.md:126
 msgid "### Code in Templates"
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:129
+#: ../en/docs/differences-to-jekyll.md:128
 msgid ""
 "Since Template Toolkit variables can also hold Perl objects it is possible "
 "to call methods on them.  Qgoda makes heavy use of this feature and a lot of "
@@ -638,26 +703,26 @@ msgid ""
 "reason."
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:131
+#: ../en/docs/differences-to-jekyll.md:130
 msgid "## Configuration"
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:133
+#: ../en/docs/differences-to-jekyll.md:132
 msgid ""
 "The default name of the qgoda configuration file is `P:_config.yaml`, not "
 "`_config.yml` as for Jekyll.  That can make a possible migration from Jekyll "
 "to Qgoda  a little bit easier."
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:135
+#: ../en/docs/differences-to-jekyll.md:134
 msgid "### Default Values"
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:137
+#: ../en/docs/differences-to-jekyll.md:136
 msgid "Default values in Qgoda are not nested but a flat list of patterns:"
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:139
+#: ../en/docs/differences-to-jekyll.md:138
 msgid ""
 "```yaml\n"
 "defaults:\n"
@@ -676,7 +741,7 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:155
+#: ../en/docs/differences-to-jekyll.md:154
 msgid "[- TAGS [% %] -]"
 msgstr ""
 
@@ -685,35 +750,35 @@ msgctxt "title"
 msgid "Excluding Files"
 msgstr ""
 
-#: ../en/docs/excluding-files.md:7
+#: ../en/docs/excluding-files.md:6
 msgctxt "description"
 msgid "How to exclude (or include) additional paths in Qgoda."
 msgstr ""
 
-#: ../en/docs/excluding-files.md:9
+#: ../en/docs/excluding-files.md:8
 msgid ""
 "By default, Qgoda does not process hidden files and directories (name starts "
 "with a dot `.`).  Top-level files and directories that have names beginning "
 "with an underscore `_` are also excluded."
 msgstr ""
 
-#: ../en/docs/excluding-files.md:13
+#: ../en/docs/excluding-files.md:12
 msgid "## Excluding Additional Files"
 msgstr ""
 
-#: ../en/docs/excluding-files.md:15
+#: ../en/docs/excluding-files.md:14
 msgid ""
 "You can change this default behavior by configuring additional file name "
 "patterns in the variable `C:exclude` in the configuration file `P:_config."
 "yml`."
 msgstr ""
 
-#: ../en/docs/excluding-files.md:17 ../en/docs/excluding-files.md:67
-#: ../en/docs/excluding-files.md:95
+#: ../en/docs/excluding-files.md:16 ../en/docs/excluding-files.md:66
+#: ../en/docs/excluding-files.md:94
 msgid "Example:"
 msgstr ""
 
-#: ../en/docs/excluding-files.md:19
+#: ../en/docs/excluding-files.md:18
 msgid ""
 "```yaml\n"
 "exclude:\n"
@@ -724,7 +789,7 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/excluding-files.md:27
+#: ../en/docs/excluding-files.md:26
 msgid ""
 "This will also exclude the top-level directory `node_modules`, and the top-"
 "level files `package.json` and `webpack.config.js`.  Likewise, all XCF files "
@@ -732,17 +797,17 @@ msgid ""
 "`assets/images` and all of its descendant directories are excluded."
 msgstr ""
 
-#: ../en/docs/excluding-files.md:29
+#: ../en/docs/excluding-files.md:28
 msgid "## Automatically Excluded Files"
 msgstr ""
 
-#: ../en/docs/excluding-files.md:31
+#: ../en/docs/excluding-files.md:30
 msgid ""
 "Internally, Qgoda does not use the configured exclusion list directly but a "
 "slightly extended one.  For the above example it looks like this:"
 msgstr ""
 
-#: ../en/docs/excluding-files.md:33
+#: ../en/docs/excluding-files.md:32
 msgid ""
 "```yaml\n"
 "exclude:\n"
@@ -756,21 +821,21 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/excluding-files.md:44
+#: ../en/docs/excluding-files.md:43
 msgid ""
 "The first two lines files and directories that have names beginning with a "
 "dot (`.`) or top-level files and directories that have names beginning with "
 "an underscore."
 msgstr ""
 
-#: ../en/docs/excluding-files.md:46
+#: ../en/docs/excluding-files.md:45
 msgid ""
 "If you have invoked Qgoda with the command-line option `--drafts`, an "
 "addtional line `!/_drafts` (resp. the value of the configuration variable "
 "`directories.drafts`) is added."
 msgstr ""
 
-#: ../en/docs/excluding-files.md:48
+#: ../en/docs/excluding-files.md:47
 msgid ""
 "The last line is always appended and a safe-guard against configuration "
 "errors.  Unintentionally including the output directory `_site` (or whatever "
@@ -779,18 +844,18 @@ msgid ""
 "list."
 msgstr ""
 
-#: ../en/docs/excluding-files.md:50
+#: ../en/docs/excluding-files.md:49
 msgid "## Including Files"
 msgstr ""
 
-#: ../en/docs/excluding-files.md:52
+#: ../en/docs/excluding-files.md:51
 msgid ""
 "There is no configuration variable `include`.  You can exclude otherwise "
 "excluded files by prepending a pattern with an exclamation mark `!`.  The "
 "pattern is then negated:"
 msgstr ""
 
-#: ../en/docs/excluding-files.md:54
+#: ../en/docs/excluding-files.md:53
 msgid ""
 "```yaml\n"
 "exclude:\n"
@@ -802,19 +867,19 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/excluding-files.md:63
+#: ../en/docs/excluding-files.md:62
 msgid ""
 "This would now enable processing of all the files in the top-level directory "
 "`_posts`."
 msgstr ""
 
-#: ../en/docs/excluding-files.md:65
+#: ../en/docs/excluding-files.md:64
 msgid ""
 "Beware though that you cannot re-include files or directories, when one of "
 "their parent directories is already excluded."
 msgstr ""
 
-#: ../en/docs/excluding-files.md:69
+#: ../en/docs/excluding-files.md:68
 msgid ""
 "```yaml\n"
 "exclude:\n"
@@ -823,13 +888,13 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/excluding-files.md:75
+#: ../en/docs/excluding-files.md:74
 msgid ""
 "The second pattern is invalid and ignored because `/archive` is a parent "
 "directory of `/archive/2017`."
 msgstr ""
 
-#: ../en/docs/excluding-files.md:77
+#: ../en/docs/excluding-files.md:76
 msgid ""
 "This behavior has performance reasons.  When Qgoda collects files, it does "
 "not descend into excluded directories.  In the above example, it would not "
@@ -837,7 +902,7 @@ msgid ""
 "subdirectory `archive/2017`."
 msgstr ""
 
-#: ../en/docs/excluding-files.md:79
+#: ../en/docs/excluding-files.md:78
 msgid ""
 "That leads to a little problem if you want to re-include a subdirectory of "
 "an automatically excluded directory, for example `_experiments/stable`.  The "
@@ -845,7 +910,7 @@ msgid ""
 "order to re-include it, you would have to do the following:"
 msgstr ""
 
-#: ../en/docs/excluding-files.md:81
+#: ../en/docs/excluding-files.md:80
 msgid ""
 "```yaml\n"
 "exclude:\n"
@@ -859,24 +924,24 @@ msgid ""
 "stable`."
 msgstr ""
 
-#: ../en/docs/excluding-files.md:89
+#: ../en/docs/excluding-files.md:88
 msgid "## Excluding Files From Being Watched"
 msgstr ""
 
-#: ../en/docs/excluding-files.md:91
+#: ../en/docs/excluding-files.md:90
 msgid ""
 "There is another configuration variable `C:exclude_watch` that specifies "
 "files and directories that should not be watched.  If you omit that "
 "variable, the contents of `exclude` is taken instead."
 msgstr ""
 
-#: ../en/docs/excluding-files.md:93
+#: ../en/docs/excluding-files.md:92
 msgid ""
 "Note that Qgoda by default re-includes the directories `P:_views` and `P:"
 "_includes`."
 msgstr ""
 
-#: ../en/docs/excluding-files.md:97
+#: ../en/docs/excluding-files.md:96
 msgid ""
 "```yaml\n"
 "exclude_watch:\n"
@@ -884,11 +949,11 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/excluding-files.md:102
+#: ../en/docs/excluding-files.md:101
 msgid "The list that is really used by Qgoda looks like this:"
 msgstr ""
 
-#: ../en/docs/excluding-files.md:104
+#: ../en/docs/excluding-files.md:103
 msgid ""
 "```yaml\n"
 "exclude_watch:\n"
@@ -901,43 +966,43 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/excluding-files.md:114
+#: ../en/docs/excluding-files.md:113
 msgid ""
 "You can see that the directories `_views` and `_includes` have been re-"
 "included.  They typically contain layout/design files.  They deserve a ... "
 "do they?????"
 msgstr ""
 
-#: ../en/docs/excluding-files.md:116
+#: ../en/docs/excluding-files.md:115
 msgid "## Gory Details Of Pattern Matching"
 msgstr ""
 
-#: ../en/docs/excluding-files.md:118
+#: ../en/docs/excluding-files.md:117
 msgid ""
 "The patterns you can use for the variable `exclude` follow the convention of "
 "[gitignore](https://git-scm.com/docs/gitignore), only that you put your "
 "configuration in [YAML](http://yaml.org/) file `_config.yaml`."
 msgstr ""
 
-#: ../en/docs/excluding-files.md:120
+#: ../en/docs/excluding-files.md:119
 msgid "### Special Characters"
 msgstr ""
 
-#: ../en/docs/excluding-files.md:122
+#: ../en/docs/excluding-files.md:121
 msgid "Some characters in patterns have a special meaning."
 msgstr ""
 
-#: ../en/docs/excluding-files.md:124
+#: ../en/docs/excluding-files.md:123
 msgid "#### The Star/Asterisk \"*\""
 msgstr ""
 
-#: ../en/docs/excluding-files.md:126
+#: ../en/docs/excluding-files.md:125
 msgid ""
 "The star or asterisk stands for an arbitrary number of characters except for "
 "a slash:"
 msgstr ""
 
-#: ../en/docs/excluding-files.md:128
+#: ../en/docs/excluding-files.md:127
 msgid ""
 "```yaml\n"
 "exclude:\n"
@@ -945,30 +1010,30 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/excluding-files.md:133
+#: ../en/docs/excluding-files.md:132
 msgid ""
 "This will exclude all XCF files in the subdirectory `images` for example "
 "`images/logo.xcf` but *not* `images/ci/logo.xcf` (because the star/asterisk "
 "does not match a slash)."
 msgstr ""
 
-#: ../en/docs/excluding-files.md:135
+#: ../en/docs/excluding-files.md:134
 msgid ""
 "Note that `*.xcf` also matches the file `.xcf`.  The star stands for an "
 "arbitrary number of characters and that includes zero characters."
 msgstr ""
 
-#: ../en/docs/excluding-files.md:137
+#: ../en/docs/excluding-files.md:136
 msgid "#### The Double Star/Asterisk \"**\""
 msgstr ""
 
-#: ../en/docs/excluding-files.md:139
+#: ../en/docs/excluding-files.md:138
 msgid ""
 "Two consecutive stars `**` stand for any sequence of characters including "
 "the slash."
 msgstr ""
 
-#: ../en/docs/excluding-files.md:141
+#: ../en/docs/excluding-files.md:140
 msgid ""
 "```yaml\n"
 "exclude:\n"
@@ -976,24 +1041,24 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/excluding-files.md:146
+#: ../en/docs/excluding-files.md:145
 msgid ""
 "This now matches `images/ci/logo.xcf` *and* `images/logo.xcf` and also "
 "`images/nothing/beats/nesting/logo.xcf`.  The pattern `**` matches "
 "recursively."
 msgstr ""
 
-#: ../en/docs/excluding-files.md:148
+#: ../en/docs/excluding-files.md:147
 msgid "#### The Exclmation Mark \"!\""
 msgstr ""
 
-#: ../en/docs/excluding-files.md:150
+#: ../en/docs/excluding-files.md:149
 msgid ""
 "The exclamation mark negates a pattern.  See [below](#negating-patterns) for "
 "details."
 msgstr ""
 
-#: ../en/docs/excluding-files.md:152
+#: ../en/docs/excluding-files.md:151
 msgid ""
 "[% WRAPPER components/infobox.html\n"
 "           type = \"warning\" title = \"The exclamation mark is special to "
@@ -1004,15 +1069,15 @@ msgid ""
 "[% END %]"
 msgstr ""
 
-#: ../en/docs/excluding-files.md:157
+#: ../en/docs/excluding-files.md:156
 msgid "#### The Question Mark \"?\""
 msgstr ""
 
-#: ../en/docs/excluding-files.md:159
+#: ../en/docs/excluding-files.md:158
 msgid "The question mark standard for any character except for a slash."
 msgstr ""
 
-#: ../en/docs/excluding-files.md:161
+#: ../en/docs/excluding-files.md:160
 msgid ""
 "```yaml\n"
 "exclude:\n"
@@ -1020,21 +1085,21 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/excluding-files.md:166
+#: ../en/docs/excluding-files.md:165
 msgid ""
 "This matches `images/corporate-logos` and `images/corporate_logos` and "
 "`images/corporatedQlogos` and `images/corporate&logos`."
 msgstr ""
 
-#: ../en/docs/excluding-files.md:168
+#: ../en/docs/excluding-files.md:167
 msgid "#### Character [Ranges]"
 msgstr ""
 
-#: ../en/docs/excluding-files.md:170
+#: ../en/docs/excluding-files.md:169
 msgid "It's getting esoteric."
 msgstr ""
 
-#: ../en/docs/excluding-files.md:172
+#: ../en/docs/excluding-files.md:171
 msgid ""
 "```yaml\n"
 "exclude:\n"
@@ -1042,13 +1107,13 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/excluding-files.md:177
+#: ../en/docs/excluding-files.md:176
 msgid ""
 "This matches exactly `images/a.jpeg`, `images/b.jpeg`, and `images/c.jpeg`.  "
 "Instead, you could also write this:"
 msgstr ""
 
-#: ../en/docs/excluding-files.md:179
+#: ../en/docs/excluding-files.md:178
 msgid ""
 "```yaml\n"
 "exclude:\n"
@@ -1056,15 +1121,15 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/excluding-files.md:184
+#: ../en/docs/excluding-files.md:183
 msgid "Read the `[a-c]` as \"all characters from a to c\"."
 msgstr ""
 
-#: ../en/docs/excluding-files.md:186
+#: ../en/docs/excluding-files.md:185
 msgid "You can combine ranges:"
 msgstr ""
 
-#: ../en/docs/excluding-files.md:188
+#: ../en/docs/excluding-files.md:187
 msgid ""
 "```yaml\n"
 "exclude:\n"
@@ -1072,39 +1137,39 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/excluding-files.md:193
+#: ../en/docs/excluding-files.md:192
 msgid "This would now match `x.jpeg` and `3.jpeg`."
 msgstr ""
 
-#: ../en/docs/excluding-files.md:195
+#: ../en/docs/excluding-files.md:194
 msgid ""
 "Note that `[]` does not stand for no character.  It is simply not special.  "
 "Use `[]abc]` if you want to match \"a\", \"b\", \"c\", and a closing square "
 "bracket."
 msgstr ""
 
-#: ../en/docs/excluding-files.md:197
+#: ../en/docs/excluding-files.md:196
 msgid ""
 "And put the hyphen at the front if you want to match it: `[-a-zA-Z0-9]`.  "
 "That matches all alphanumeric characters and the hyphen."
 msgstr ""
 
-#: ../en/docs/excluding-files.md:199
+#: ../en/docs/excluding-files.md:198
 msgid ""
 "You can also use named character classes like `[a-zA-Z[:digit:]]` where `[:"
 "digit]` stands for any digit in the current locale.  Using this feature is "
 "discouraged unless you understand it."
 msgstr ""
 
-#: ../en/docs/excluding-files.md:201
+#: ../en/docs/excluding-files.md:200
 msgid "#### The Backslash \"\\\""
 msgstr ""
 
-#: ../en/docs/excluding-files.md:203
+#: ../en/docs/excluding-files.md:202
 msgid "You can escape any character by preceding it with a backslash \"\\\"."
 msgstr ""
 
-#: ../en/docs/excluding-files.md:205
+#: ../en/docs/excluding-files.md:204
 msgid ""
 "```yaml\n"
 "exclude:\n"
@@ -1112,18 +1177,18 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/excluding-files.md:210
+#: ../en/docs/excluding-files.md:209
 msgid ""
 "This matches only `images/Quo Vadis?.jpeg` but not `images/Quo VadissX."
 "jpeg`.  The question mark has lost its special meaning by the preceding "
 "backslash."
 msgstr ""
 
-#: ../en/docs/excluding-files.md:212
+#: ../en/docs/excluding-files.md:211
 msgid "### Negating Patterns"
 msgstr ""
 
-#: ../en/docs/excluding-files.md:214
+#: ../en/docs/excluding-files.md:213
 msgid "### Slashes"
 msgstr ""
 
@@ -1132,18 +1197,18 @@ msgctxt "title"
 msgid "Files and Directories"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:7
+#: ../en/docs/files-and-directories.md:6
 msgctxt "description"
 msgid "Complete List of Files and Directories"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:12
+#: ../en/docs/files-and-directories.md:11
 msgid ""
 "A typical Qgoda site contains a couple of standard files and directories.\n"
 "They are described in the following list."
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:15
+#: ../en/docs/files-and-directories.md:14
 msgid ""
 "[% WRAPPER components/infobox.html\n"
 "           type='info' title='Sorting of This List' %]\n"
@@ -1152,11 +1217,11 @@ msgid ""
 "[% END %]"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:21
+#: ../en/docs/files-and-directories.md:20
 msgid "<ul>"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:23
+#: ../en/docs/files-and-directories.md:22
 msgid ""
 "[% WRAPPER components/file.html\n"
 "   name=\"_assets\" type='directory' -%]\n"
@@ -1165,7 +1230,7 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:29
+#: ../en/docs/files-and-directories.md:28
 msgid ""
 "[% WRAPPER components/file.html\n"
 "   name=\"_config.yaml\" type='file' -%]\n"
@@ -1173,7 +1238,7 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:34
+#: ../en/docs/files-and-directories.md:33
 msgid ""
 "[% WRAPPER components/file.html\n"
 "   name=\"_config.yml\" type='file' -%]\n"
@@ -1183,14 +1248,14 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:40
+#: ../en/docs/files-and-directories.md:39
 msgid ""
 "[% WRAPPER components/file.html\n"
 "   name=\"_includes\" type='directory'\n"
 "   overridable=\"paths.includes\" -%]"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:44
+#: ../en/docs/files-and-directories.md:43
 msgid ""
 "Directory for included content snippets.  You use that for example\n"
 "like <code>[&#37; q.include(\"_includes/footer.md\") &#37;]</code>.  You \n"
@@ -1199,28 +1264,28 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:50
+#: ../en/docs/files-and-directories.md:49
 msgid ""
 "[% WRAPPER components/file.html\n"
 "   name=\"_plugins\" type='directory'\n"
 "   overridable=\"paths.plugins\" -%]"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:54
+#: ../en/docs/files-and-directories.md:53
 msgid ""
 "Directory for site-specific plug-ins.  Plug-Ins in this directory are\n"
 "automatically activated.\n"
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:58
+#: ../en/docs/files-and-directories.md:57
 msgid ""
 "[% WRAPPER components/file.html\n"
 "   name=\"_site\" type='directory'\n"
 "   overridable=\"paths.site\" -%]"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:62
+#: ../en/docs/files-and-directories.md:61
 msgid ""
 "The output directory.  This will normally be the document root of your\n"
 "web server.  Files and directories in <code>P:_site</code> are \n"
@@ -1228,14 +1293,14 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:67
+#: ../en/docs/files-and-directories.md:66
 msgid ""
 "[% WRAPPER components/file.html\n"
 "   name=\"_timestamp\" type='file'\n"
 "   overridable=\"paths.timestamp\" -%]"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:71
+#: ../en/docs/files-and-directories.md:70
 msgid ""
 "This file contains the time, when <code>P:_site</code> was last\n"
 "re-created as seconds since the <q-term>epoch</q-term>.  If you \n"
@@ -1245,12 +1310,16 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
+#: ../en/docs/files-and-directories.md:77
+msgid "</ul>"
+msgstr ""
+
 #: ../en/docs/index.md:3
 msgctxt "title"
 msgid "Documentation"
 msgstr ""
 
-#: ../en/docs/index.md:6
+#: ../en/docs/index.md:8
 msgctxt "description"
 msgid ""
 "Learn how to create a website with Qgoda, with tutorial-style introductory "
@@ -1258,7 +1327,7 @@ msgid ""
 "experienced."
 msgstr ""
 
-#: ../en/docs/index.md:8
+#: ../en/docs/index.md:10
 msgid ""
 "[% USE q = Qgoda %]\n"
 "Qgoda is a static site generator.  It is mainly intended for blogs but you\n"
@@ -1266,12 +1335,12 @@ msgid ""
 "\"yagoda\"."
 msgstr ""
 
-#: ../en/docs/index.md:13
+#: ../en/docs/index.md:15
 msgid ""
 "[% WRAPPER components/infobox.html\n"
 "           type='warning' title='This Is a Draft!' %]\n"
-"<p>This documentation is work in progress.  A lot of stuff is missing here,\n"
-"and part of the stuff documented here documents a past or future state\n"
+"<p>This documentation is work in progress.  A lot of things missing here,\n"
+"and part of the things documented here documents a past or future state\n"
 "of the software.  Well, and some parts of this documentation are plain\n"
 "wrong.  That being said, it should also be clear that features can still\n"
 "change without notice, whether they are documented or not.</p>\n"
@@ -1282,7 +1351,7 @@ msgid ""
 "[% END %]"
 msgstr ""
 
-#: ../en/docs/index.md:26
+#: ../en/docs/index.md:28
 msgid ""
 "Setting up your own blog, portfolio or company web site with Qgoda is "
 "simple\n"
@@ -1290,7 +1359,7 @@ msgid ""
 "even complex websites feasible and fun to implement.  The highlights are:"
 msgstr ""
 
-#: ../en/docs/index.md:29
+#: ../en/docs/index.md:31
 msgid ""
 "- A powerful yet easy to learn templating language.\n"
 "- Arbitrary [taxonomies]([% q.llink(name = 'taxonomies') %])\n"
@@ -1303,7 +1372,7 @@ msgid ""
 "  audience or documentation (like this one)."
 msgstr ""
 
-#: ../en/docs/index.md:39
+#: ../en/docs/index.md:41
 msgid ""
 "[% WRAPPER components/infobox.html\n"
 "           type='info' title='Run Your Local Version!' %]\n"
@@ -1327,13 +1396,17 @@ msgid "How to install Qgoda and its dependencies on your local system"
 msgstr ""
 
 #: ../en/docs/installation.md:9
-msgid "## Installing Qgoda"
-msgstr ""
-
-#: ../en/docs/installation.md:11
 msgid ""
 "Qgoda has not yet been officially released.  The installation is therefore "
 "still a little bit awkward."
+msgstr ""
+
+#: ../en/docs/installation.md:11
+msgid "<qgoda-toc/>"
+msgstr ""
+
+#: ../en/docs/installation.md:13
+msgid "## Installing Qgoda"
 msgstr ""
 
 #: ../en/docs/installation.md:15
@@ -1489,7 +1562,7 @@ msgstr ""
 #: ../en/docs/installation.md:109
 msgid ""
 "You have to terminate your current shell in order to activate the change.\n"
-"But the change is now peristent.  It will work for all future Perl versions."
+"But the change is now persistent.  It will work for all future Perl versions."
 msgstr ""
 
 #: ../en/docs/installation.md:112
@@ -1532,7 +1605,7 @@ msgstr ""
 #: ../en/docs/installation.md:130
 msgid ""
 "The [Node.js website](https://nodejs.org/en/) usually offers a download link "
-"but for the software.  If you are using a package manager, you should rather "
+"for the software but if you are using a package manager, you should rather "
 "install Node.js with that."
 msgstr ""
 
@@ -1542,9 +1615,9 @@ msgstr ""
 
 #: ../en/docs/installation.md:134
 msgid ""
-"NPM is the Node Package Manager and is used to install packages and their "
-"dependencies for Node.js.  Yarn is an alternative to NPM and does "
-"essentially the same."
+"[NPM](https://yarnpkg.com/en/) is the Node Package Manager and is used to "
+"install packages and their dependencies for Node.js.  [Yarn](https://yarnpkg."
+"com/en/) is an alternative to NPM and does essentially the same."
 msgstr ""
 
 #: ../en/docs/installation.md:136
@@ -1575,17 +1648,22 @@ msgstr ""
 msgid "See https://yarnpkg.com/en/docs/install for instructions."
 msgstr ""
 
+#: ../en/docs/introduction.md:2
+msgctxt "title"
+msgid "Introduction"
+msgstr ""
+
 #: ../en/docs/listings.md:2
 msgctxt "title"
 msgid "Listings and Links"
 msgstr ""
 
-#: ../en/docs/listings.md:7
+#: ../en/docs/listings.md:6
 msgctxt "description"
 msgid "Qgoda generates listings based on taxonomies."
 msgstr ""
 
-#: ../en/docs/listings.md:9
+#: ../en/docs/listings.md:8
 msgid ""
 "Link lists are crucial for the navigation on most web sites.  Qgoda \n"
 "generates listings based on taxonomies.  Taxonomies partition your\n"
@@ -1593,16 +1671,16 @@ msgid ""
 "lists are such groups."
 msgstr ""
 
-#: ../en/docs/listings.md:14
+#: ../en/docs/listings.md:13
 msgid "## Template Code"
 msgstr ""
 
-#: ../en/docs/listings.md:16
+#: ../en/docs/listings.md:15
 msgid ""
 "Listings are created by the template functions `list()` or `listPosts()`."
 msgstr ""
 
-#: ../en/docs/listings.md:18
+#: ../en/docs/listings.md:17
 msgid ""
 "[% WRAPPER components/infobox.html\n"
 "           type=\"info\" title=\"These Instructions Are For the Template "
@@ -1614,7 +1692,7 @@ msgid ""
 "[% END %]"
 msgstr ""
 
-#: ../en/docs/listings.md:25
+#: ../en/docs/listings.md:24
 msgid ""
 "[% TAGS [- -] %]\n"
 "```markup\n"
@@ -1632,7 +1710,7 @@ msgid ""
 "[- TAGS [% %] -]"
 msgstr ""
 
-#: ../en/docs/listings.md:40
+#: ../en/docs/listings.md:39
 msgid ""
 "[% WRAPPER components/infobox.html\n"
 "     title=\"Difference to Jekyll\"\n"
@@ -1643,113 +1721,213 @@ msgid ""
 "[% END %]"
 msgstr ""
 
+#: ../en/docs/lists-and-indices.md:2
+msgctxt "title"
+msgid "Lists and Indices"
+msgstr ""
+
+#: ../en/docs/miscellaneous.md:2
+msgctxt "title"
+msgid "Miscellaneous"
+msgstr ""
+
 #: ../en/docs/mode-of-operation.md:2
 msgctxt "title"
 msgid "Mode Of Operation"
 msgstr ""
 
-#: ../en/docs/mode-of-operation.md:7
+#: ../en/docs/mode-of-operation.md:6
 msgctxt "description"
 msgid ""
 "Qgoda basically copies files for deployment, optionally cooking the content "
 "with processor plug-ins."
 msgstr ""
 
-#: ../en/docs/mode-of-operation.md:9
+#: ../en/docs/mode-of-operation.md:8
 msgid ""
 "Qgoda's general mode of operation is very similar to other static site \n"
-"generators for example Jekyll or Hugo.  It recursively copies all files\n"
-"it finds from the source directory (configuration variable `srcdir`) into\n"
-"the destination directory `_site`(configuration variable `outdir`).  The\n"
+"generators for example [Jekyll](https://jekyllrb.com/) or [Hugo](https://"
+"gohugo.io/).  It recursively copies all files\n"
+"it finds from the source directory (configuration variable `C:srcdir`) into\n"
+"the destination directory `P:_site` (configuration variable `C:site`).  The\n"
 "destination directory is usually the document root of a web server.  Files \n"
 "enhanced by additional meta information found in front matter are piped "
 "through\n"
 "configurable chains of processor plug-ins."
 msgstr ""
 
-#: ../en/docs/mode-of-operation.md:17
+#: ../en/docs/mode-of-operation.md:16
+msgid ""
+"```yaml\n"
+"---\n"
+"title: The Importance of Being Awesome\n"
+"description: Everything has to be awesome.\n"
+"---\n"
+"## About Awesomeness"
+msgstr ""
+
+#: ../en/docs/mode-of-operation.md:23
+msgid ""
+"This blog post is about being awesome.\n"
+"```"
+msgstr ""
+
+#: ../en/docs/mode-of-operation.md:26
+msgid ""
+"The part between the two lines consisting of `---` is the front matter as "
+"[YAML](https://www.yaml.org/)."
+msgstr ""
+
+#: ../en/docs/mode-of-operation.md:28
 msgid "## Asset Selection"
 msgstr ""
 
-#: ../en/docs/mode-of-operation.md:19
+#: ../en/docs/mode-of-operation.md:30
 msgid ""
 "Files to be copied are selected using a simple naming convention.  All "
 "files\n"
 "or directories starting with an underscore (`P:_site`, `P:_include`, `P:"
 "_views`,\n"
-"...) are ignored, everything else gets copied.  You can modify this with\n"
-"the configuration variable `C:exclude`."
+"...) are ignored, everything else gets copied."
 msgstr ""
 
-#: ../en/docs/mode-of-operation.md:24
+#: ../en/docs/mode-of-operation.md:34
 msgid "## What are Assets?"
 msgstr ""
 
-#: ../en/docs/mode-of-operation.md:26
+#: ../en/docs/mode-of-operation.md:36
 msgid ""
-"All files selected for copying are called <em>assets</em> in Qgoda.  Files\n"
+"All files selected for copying are referred to as *assets* in Qgoda.  Files\n"
 "enriched with additional meta information in the document front matter are\n"
-"conventionally called <em>cooked content</em>, <em>cooked assets</em> or\n"
-"simply <em>documents</em>.  Unqualified content is called <em>raw</em>."
+"conventionally called *cooked content*, *cooked assets* or\n"
+"simply *documents*.  Unqualified content is called *raw*."
 msgstr ""
 
-#: ../en/docs/mode-of-operation.md:31 ../en/docs/output-location.md:21
-msgid "## Path Translation"
-msgstr ""
-
-#: ../en/docs/mode-of-operation.md:33
-msgid "[% USE q = Qgoda %]"
-msgstr ""
-
-#: ../en/docs/mode-of-operation.md:35
-msgid ""
-"Cooked assets are subject to [path translation]([% \n"
-"q.llink(name = 'output-location') %]).  One reason is that input files\n"
-"typically have a different file format than the resulting output files,\n"
-"they are - for example - compiled from `.md`\n"
-"<a href=\"https://daringfireball.net/projects/markdown/\">Markdown</a> "
-"files\n"
-"into `.html` files.  Another reason is link modelling.  Many people\n"
-"prefer a link like `/news/new-version-released/` over\n"
-"`/news/new-version-released.html`."
-msgstr ""
-
-#: ../en/docs/mode-of-operation.md:44
+#: ../en/docs/mode-of-operation.md:41
 msgid "## Default Processor Chain"
 msgstr ""
 
-#: ../en/docs/mode-of-operation.md:46
+#: ../en/docs/mode-of-operation.md:43
+msgid "Documents are generally processed in two passes in Qgoda."
+msgstr ""
+
+#: ../en/docs/mode-of-operation.md:45
+msgid "### Pass 1 - Markdown"
+msgstr ""
+
+#: ../en/docs/mode-of-operation.md:47
+msgid "[% TAGS [- -] %]"
+msgstr ""
+
+#: ../en/docs/mode-of-operation.md:49
 msgid ""
-"By default, documents are first processed by the Markdown plug-in and\n"
-"then expanded with the Template Toolkit.  The resulting output is\n"
-"then wrapped into a layout template, normally also processed with the\n"
-"Template Toolkit.  You normally do not have to wrack your brains about\n"
-"the exact order of things.  Most of the time, it is enough to assume that\n"
-"you can freely mix Markdown with Template Toolkit syntax."
+"In the first pass, your markdown input files are converted to HTML with a "
+"Markdown processor:"
+msgstr ""
+
+#: ../en/docs/mode-of-operation.md:51
+msgid ""
+"```markdown\n"
+"---\n"
+"title: About Me\n"
+"---\n"
+"## About Me"
+msgstr ""
+
+#: ../en/docs/mode-of-operation.md:57
+msgid ""
+"I am *here*.\n"
+"```"
+msgstr ""
+
+#: ../en/docs/mode-of-operation.md:60
+msgid "That will result in the following HTML code:"
+msgstr ""
+
+#: ../en/docs/mode-of-operation.md:62
+msgid ""
+"```html\n"
+"<h2>About Me</h2>"
+msgstr ""
+
+#: ../en/docs/mode-of-operation.md:65
+msgid ""
+"<p>I am <em>here</em>.</p>\n"
+"```"
+msgstr ""
+
+#: ../en/docs/mode-of-operation.md:68
+msgid ""
+"The front matter is stored as meta information and not directly rendered."
+msgstr ""
+
+#: ../en/docs/mode-of-operation.md:70
+msgid "### Pass 2 - HTML Wrapping with Template Toolkit"
+msgstr ""
+
+#: ../en/docs/mode-of-operation.md:72
+msgid ""
+"The current output is still an incomplete HTML document.  It will almost "
+"always be *wrapped* into a complete document with the [Template Toolkit]"
+"(http://www.template-toolkit.org/) using a *view template*, by default "
+"`_views/default.html`:"
+msgstr ""
+
+#: ../en/docs/mode-of-operation.md:74
+msgid ""
+"```markup\n"
+"<!doctype html>\n"
+"<html>\n"
+"  <head>\n"
+"    <title>[% asset.title | html %]</title>\n"
+"  </head>\n"
+"  <body>\n"
+"    <h1>[% asset.title | html %]</title>\n"
+"    <div>\n"
+"      [% asset.content %]\n"
+"    </div>\n"
+"  </body>\n"
+"</html>\n"
+"```"
+msgstr ""
+
+#: ../en/docs/mode-of-operation.md:89
+msgid ""
+"Everything between `[% ... %]` is template syntax.  `[% asset.content %]` is "
+"the result of pass 1, the markdown content transformed to HTML, while `[% "
+"asset.title %]` is the document title.  It it is a good idea to pipe it "
+"through the `html` filter so that special characters get properly escaped."
+msgstr ""
+
+#: ../en/docs/mode-of-operation.md:91
+msgid ""
+"In reality, the default chain is slightly more complex but the details of it "
+"are most of the time not important for you.  In general, everything follows "
+"the Do-What-I-Mean™ paradigm."
 msgstr ""
 
 #: ../en/docs/multi-language-overview.md:2
 msgctxt "title"
-msgid "Overview"
+msgid "Multi-Language Overview"
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:7
+#: ../en/docs/multi-language-overview.md:6
 msgctxt "description"
 msgid ""
 "Overview of Qgoda's Multi-Lanaguage and Internationalization (I18N) features"
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:9
+#: ../en/docs/multi-language-overview.md:8
 msgid "## Multi-Language Overview"
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:11
+#: ../en/docs/multi-language-overview.md:10
 msgid ""
 "Multi-lingualism in Qgoda is an integral, built-in feature mostly built upon "
 "easy to follow conventions."
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:13
+#: ../en/docs/multi-language-overview.md:12
 msgid ""
 "In a typical website there are two types of translatable content.  You "
 "usually have common texts, typically in headers, footers, navigations, "
@@ -1758,18 +1936,18 @@ msgid ""
 "editorial content."
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:15
+#: ../en/docs/multi-language-overview.md:14
 msgid "### Common Texts"
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:17
+#: ../en/docs/multi-language-overview.md:16
 msgid ""
 "Texts in templates is usually translated with [Template::Plugin::Gettext]"
 "(https://github.com/gflohr/Template-Plugin-Gettext) an internationalization "
 "plug-in for the [Template Toolkit](http://www.template-toolkit.org/)."
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:19
+#: ../en/docs/multi-language-overview.md:18
 msgid ""
 "[% TAGS [- -] %]\n"
 "```markup\n"
@@ -1778,7 +1956,7 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:25
+#: ../en/docs/multi-language-overview.md:24
 msgid ""
 "The first line imports the plug-in with two arguments.  The first one is the "
 "so-called *textdomain*, an arbitrary string identifying your translation "
@@ -1786,7 +1964,7 @@ msgid ""
 "stored in the document property `V:lingua`."
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:27
+#: ../en/docs/multi-language-overview.md:26
 msgid ""
 "The second line serves two purposes.  The function `gtx.gettext()` first "
 "marks a string as being translatable, so that the string can be extracted "
@@ -1794,36 +1972,36 @@ msgid ""
 "open-source and many commercial projects."
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:29
+#: ../en/docs/multi-language-overview.md:28
 msgid ""
 "But it also returns the translation for the string, when the document is "
 "rendered."
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:31
+#: ../en/docs/multi-language-overview.md:30
 msgid "### Editorial Content"
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:33
+#: ../en/docs/multi-language-overview.md:32
 msgid "For content, you have two options which both have their pros and cons."
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:35
+#: ../en/docs/multi-language-overview.md:34
 msgid "#### Separate Documents For Each Language"
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:37
+#: ../en/docs/multi-language-overview.md:36
 msgid ""
 "You can simply copy the documents from the main language into a separate "
 "file and translate it.  This is easy to understand and setup but it has "
 "maintainance issues."
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:39
+#: ../en/docs/multi-language-overview.md:38
 msgid "#### Using Translation Catalogs"
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:41
+#: ../en/docs/multi-language-overview.md:40
 msgid ""
 "Qgoda also offers you the possibility to extract the translatable content "
 "from the master document into a `.po` file.  Instead of a complete, "
@@ -1831,7 +2009,7 @@ msgid ""
 "document*:"
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:43
+#: ../en/docs/multi-language-overview.md:42
 msgid ""
 "```yaml\n"
 "---\n"
@@ -1843,13 +2021,13 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:52
+#: ../en/docs/multi-language-overview.md:51
 msgid ""
 "The variable `V:master` references the master document, the document "
 "containing the original content."
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:54
+#: ../en/docs/multi-language-overview.md:53
 msgid ""
 "With `V:translate` you specify which properties from the master front matter "
 "should be extracted into the catalog for translation.  You will normally set "
@@ -1857,14 +2035,14 @@ msgid ""
 "_config.yaml`."
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:56
+#: ../en/docs/multi-language-overview.md:55
 msgid ""
 "The variable `V:lingua` is by convention used for identifying the language "
 "of a document.  You can pick another name if you prefer but that will end in "
 "a little bit more typing."
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:58
+#: ../en/docs/multi-language-overview.md:57
 msgid ""
 "All other variables are copied from the master front matter into the "
 "translated document.  If it contains for example a property `V:name`, this "
@@ -1872,13 +2050,13 @@ msgid ""
 "trigger document overrides it (for example as shown above with `V:author`)."
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:60
+#: ../en/docs/multi-language-overview.md:59
 msgid ""
 "The content of the master document is not copied but gets split up into "
 "paragraphs, and each paragraph becomes an entry in the `.po` file:"
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:62
+#: ../en/docs/multi-language-overview.md:61
 msgid ""
 "```bash\n"
 "#: ../en/docs/multi-language-overview.md:11\n"
@@ -1888,18 +2066,18 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:68
+#: ../en/docs/multi-language-overview.md:67
 msgid ""
 "Provided, the entries have been translated, the translated content gets "
 "rendered."
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:70
+#: ../en/docs/multi-language-overview.md:69
 msgid ""
 "That sounds more complicated than the first approach.  So why the hassle?"
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:72
+#: ../en/docs/multi-language-overview.md:71
 msgid ""
 "First of all, it sounds a lot more complicated than it actually is in "
 "reality.  And the big advantage is maintainability.  When translating entire "
@@ -1908,7 +2086,7 @@ msgid ""
 "in the original.  This is error-prone and cumbersome."
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:74
+#: ../en/docs/multi-language-overview.md:73
 msgid ""
 "With `.po` files on the other hand individual paragraphs are handled as an "
 "individually translated unit which greatly simplifies the update process.  "
@@ -1916,7 +2094,7 @@ msgid ""
 "automatic or semi-automatic translations and so on."
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:76
+#: ../en/docs/multi-language-overview.md:75
 msgid ""
 "Still, it depends on the nature of the site which approach is better.  For a "
 "blog where posts are written once and rarely changed afterwards, the simple "
@@ -1925,64 +2103,69 @@ msgid ""
 "based on professional translation tools probably pays out soon."
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:78
+#: ../en/docs/multi-language-overview.md:77
 msgid "### Listings and Links"
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:80
+#: ../en/docs/multi-language-overview.md:79
 msgid ""
 "The rest is a piece of cake.  Creating a listing of posts for the tag "
 "\"JavaScript\" looks like this for a single-language site:"
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:82
+#: ../en/docs/multi-language-overview.md:81
 msgid ""
 "```markup\n"
-"[% FOREACH post IN q.list('tags', 'contains', 'JavaScript') %]\n"
+"[% FOREACH post IN q.list('tags', ['contains', 'JavaScript']) %]\n"
 "<a href=\"[% post.permalink %]\">[% post.title | html %]</a>\n"
 "[% END %]\n"
 "```"
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:88
+#: ../en/docs/multi-language-overview.md:87
 msgid "A multi-language site requires just one more filter:"
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:90
+#: ../en/docs/multi-language-overview.md:89
 msgid ""
 "```markup\n"
 "[% FOREACH post IN q.list('lingua' = asset.lingua\n"
-"                          'tags', 'contains', 'JavaScript') %]\n"
+"                          'tags', ['contains', 'JavaScript']) %]\n"
 "<a href=\"[% post.permalink %]\">[% post.title | html %]</a>\n"
 "[% END %]\n"
 "```"
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:97
+#: ../en/docs/multi-language-overview.md:96
 msgid ""
 "And since this is such a common task, you can just use the method `q.llist` "
 "(think \"language list\") instead that adds that filter automatically:"
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:99
+#: ../en/docs/multi-language-overview.md:98
 msgid ""
 "```markup\n"
-"[% FOREACH post IN q.llist('tags', 'contains', 'JavaScript') %]\n"
+"[% FOREACH post IN q.llist('tags', ['contains', 'JavaScript']) %]\n"
 "<a href=\"[% post.permalink %]\">[% post.title | html %]</a>\n"
 "[% END %]\n"
 "```"
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:105
+#: ../en/docs/multi-language-overview.md:104
 msgid ""
 "So in the end, a multi-language site requires just a single letter more of "
 "template code."
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:107
+#: ../en/docs/multi-language-overview.md:106
 msgid ""
 "Likewise, for links resp. cross-references you add the additional filter for "
 "the language or just use `q.lxref()` instead of `q.xref()` and you are done."
+msgstr ""
+
+#: ../en/docs/multi-language.md:2
+msgctxt "title"
+msgid "Multi-Language"
 msgstr ""
 
 #: ../en/docs/output-location.md:2
@@ -1990,12 +2173,12 @@ msgctxt "title"
 msgid "Output Location"
 msgstr ""
 
-#: ../en/docs/output-location.md:7
+#: ../en/docs/output-location.md:6
 msgctxt "description"
 msgid "Learn how input locations are translated to output locations in Qgoda."
 msgstr ""
 
-#: ../en/docs/output-location.md:9
+#: ../en/docs/output-location.md:8
 msgid ""
 "Please note that determining the output location for assets differs\n"
 "significantly from other systems for example Jekyll.  Whereas in Jekyll you\n"
@@ -2004,7 +2187,7 @@ msgid ""
 "very similar but maybe more flexible."
 msgstr ""
 
-#: ../en/docs/output-location.md:15
+#: ../en/docs/output-location.md:14
 msgid ""
 "By default, an asset's location is simply preserved.  That means if you have "
 "an\n"
@@ -2012,7 +2195,11 @@ msgid ""
 "`{sitedir}/assets/images/logo.jpeg`."
 msgstr ""
 
-#: ../en/docs/output-location.md:23
+#: ../en/docs/output-location.md:20
+msgid "## Path Translation"
+msgstr ""
+
+#: ../en/docs/output-location.md:22
 msgid ""
 "Processed assets are subject to path translation.  Their relative path to\n"
 "the site directory is by default modified.  With the default configuration\n"
@@ -2022,19 +2209,19 @@ msgid ""
 "`{sitedir}/posts/en/version-0.2-released/index.html`."
 msgstr ""
 
-#: ../en/docs/output-location.md:30
+#: ../en/docs/output-location.md:29
 msgid ""
 "For the gory details of the process, let's take the input location \n"
 "`{srcdir}/posts/en/version-0.2-released.md` as an example."
 msgstr ""
 
-#: ../en/docs/output-location.md:33
+#: ../en/docs/output-location.md:32
 msgid ""
 "The starting point is the relative path to the source directory\n"
 "`/posts/en/version-0.2-released.md` which has the following components:"
 msgstr ""
 
-#: ../en/docs/output-location.md:36
+#: ../en/docs/output-location.md:35
 msgid ""
 "<dl>\n"
 "  <dt>posts/en</dt>\n"
@@ -2047,7 +2234,7 @@ msgid ""
 "</dl>"
 msgstr ""
 
-#: ../en/docs/output-location.md:45
+#: ../en/docs/output-location.md:44
 msgid ""
 "By default the output location of a document in Qgoda relative to the \n"
 "configured site directory is\n"
@@ -2057,11 +2244,11 @@ msgid ""
 "used by all common web servers."
 msgstr ""
 
-#: ../en/docs/output-location.md:51
+#: ../en/docs/output-location.md:50
 msgid "## Suffix Translation"
 msgstr ""
 
-#: ../en/docs/output-location.md:53
+#: ../en/docs/output-location.md:52
 msgid ""
 "Asset processing is triggered by the suffixes of the source file.  The "
 "triggers\n"
@@ -2071,7 +2258,7 @@ msgid ""
 "configuration:"
 msgstr ""
 
-#: ../en/docs/output-location.md:57
+#: ../en/docs/output-location.md:56
 msgid ""
 "```yaml\n"
 "processors:\n"
@@ -2092,25 +2279,25 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/output-location.md:75
+#: ../en/docs/output-location.md:74
 msgid ""
 "The suffix `md` triggers the processor chain `markdown`.  This chain\n"
 "has configured an output suffix `html`.  The translated filename of the\n"
 "output file is therefore not `index.md` but `index.html`."
 msgstr ""
 
-#: ../en/docs/output-location.md:79
+#: ../en/docs/output-location.md:78
 msgid ""
 "The processor chain `html` does *not* define an output suffix.  The suffix "
 "is \n"
 "therefore left untouched."
 msgstr ""
 
-#: ../en/docs/output-location.md:82
+#: ../en/docs/output-location.md:81
 msgid "## Multiple Suffixes"
 msgstr ""
 
-#: ../en/docs/output-location.md:84
+#: ../en/docs/output-location.md:83
 msgid ""
 "A filename can have multiple suffixes, for example \n"
 "`what-is-qgoda.md.utf8.fr`.  This is useful for content negotiation as\n"
@@ -2121,7 +2308,7 @@ msgid ""
 "be translated into `what-is-qgoda/index.md.utf8.fr`."
 msgstr ""
 
-#: ../en/docs/output-location.md:90
+#: ../en/docs/output-location.md:89
 msgid ""
 "It is also important to note that all suffixes are considered for "
 "processor \n"
@@ -2130,11 +2317,11 @@ msgid ""
 "`md` is right of `html`."
 msgstr ""
 
-#: ../en/docs/output-location.md:95
+#: ../en/docs/output-location.md:94
 msgid "## Gory Details of Suffix Parsing"
 msgstr ""
 
-#: ../en/docs/output-location.md:97
+#: ../en/docs/output-location.md:96
 msgid ""
 "You may have noticed in one the above example the filename \n"
 "`version-0.2-released.md` which gets translated into \n"
@@ -2143,14 +2330,14 @@ msgid ""
 "and `2-released` is not."
 msgstr ""
 
-#: ../en/docs/output-location.md:102
+#: ../en/docs/output-location.md:101
 msgid ""
 "Qgoda's notion of a suffix is a string of one or more alphanumerical\n"
 "characters.  Since `2-released` contains a hyphen, it is not considered\n"
 "a suffix."
 msgstr ""
 
-#: ../en/docs/output-location.md:106
+#: ../en/docs/output-location.md:105
 msgid ""
 "Suffixes are extracted right to left, stopping at the first false positive.\n"
 "Take `version-0.22.beta-released.utf8.en.md` as a rather esoteric example.\n"
@@ -2160,11 +2347,11 @@ msgid ""
 "because the suffix extraction had already stopped."
 msgstr ""
 
-#: ../en/docs/output-location.md:113
+#: ../en/docs/output-location.md:112
 msgid "## Permalinks"
 msgstr ""
 
-#: ../en/docs/output-location.md:115
+#: ../en/docs/output-location.md:114
 msgid ""
 "Permalinks are computed from the output location.  By default, they are \n"
 "simply the relative path to the site directory.  If the filename portion\n"
@@ -2172,17 +2359,17 @@ msgid ""
 "\"index\") followed by one or more suffixes the filename is stripped off."
 msgstr ""
 
-#: ../en/docs/output-location.md:120
+#: ../en/docs/output-location.md:119
 msgid ""
 "For example `posts/en/about-qgoda/index.utf8.md` would be translated into\n"
 "the permalink `/posts/en/about-qgoda/`."
 msgstr ""
 
-#: ../en/docs/output-location.md:123
+#: ../en/docs/output-location.md:122
 msgid "## Customization"
 msgstr ""
 
-#: ../en/docs/output-location.md:125
+#: ../en/docs/output-location.md:124
 msgid ""
 "You can fully customize both output location and permalinks by setting the\n"
 "variables `C:location` or `C:permalink` respectively in the front matter of "
@@ -2190,7 +2377,7 @@ msgid ""
 "asset, as a default for a certain directory or site wide in `C:_config.yaml`."
 msgstr ""
 
-#: ../en/docs/output-location.md:129
+#: ../en/docs/output-location.md:128
 msgid ""
 "You can interpolate all kinds of asset variables into the configured string\n"
 "by placing them inside {curly} braces.  For example the default "
@@ -2199,13 +2386,13 @@ msgid ""
 "{suffix}`."
 msgstr ""
 
-#: ../en/docs/output-location.md:133
+#: ../en/docs/output-location.md:132
 msgid ""
 "The following variables are meaningful for location and permalink \n"
 "customization:"
 msgstr ""
 
-#: ../en/docs/output-location.md:136
+#: ../en/docs/output-location.md:135
 msgid ""
 "<dl>\n"
 "  <dt>path</dt>\n"
@@ -2281,13 +2468,13 @@ msgid ""
 "</dl>"
 msgstr ""
 
-#: ../en/docs/output-location.md:203
+#: ../en/docs/output-location.md:202
 msgid ""
 "Note that variables are not necessarily plain old strings but can be more\n"
 "complicated.  Take this example configuration in YAML:"
 msgstr ""
 
-#: ../en/docs/output-location.md:206
+#: ../en/docs/output-location.md:205
 msgid ""
 "```yaml\n"
 "dictionary:\n"
@@ -2301,25 +2488,34 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/output-location.md:217
+#: ../en/docs/output-location.md:216
 msgid "Quoted strings have JavaScript semantics!"
 msgstr ""
 
 #: ../en/docs/qgoda-in-15-minutes.md:2
 msgctxt "title"
 msgid "Qgoda in 15 Minutes"
-msgstr ""
+msgstr "Qgoda in 15 Minuten"
 
-#: ../en/docs/qgoda-in-15-minutes.md:7
+#: ../en/docs/qgoda-in-15-minutes.md:6
 msgctxt "description"
 msgid ""
 "Learn the basic concepts of Qgoda in 15 minutes by building an ugly but "
 "simple site from scratch."
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:9
+#: ../en/docs/qgoda-in-15-minutes.md:8
 msgid ""
 "[% USE q = Qgoda %]\n"
+"<qgoda-toc/>"
+msgstr ""
+
+#: ../en/docs/qgoda-in-15-minutes.md:11
+msgid "## The Command-Line Interface"
+msgstr ""
+
+#: ../en/docs/qgoda-in-15-minutes.md:13
+msgid ""
 "Qgoda is a [command-line tool](http://www.guido-flohr.net/en/command-line/). "
 "Create an empty directory `qgoda-quickstart` somewhere and open a command-"
 "line window in it. Well-behaving command-line tools do not do anything "
@@ -2327,11 +2523,7 @@ msgid ""
 "well-behaving:"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:14
-msgid "## The Command-Line Interface"
-msgstr ""
-
-#: ../en/docs/qgoda-in-15-minutes.md:16
+#: ../en/docs/qgoda-in-15-minutes.md:15
 msgid ""
 "```bash\n"
 "qgoda-quickstart $ qgoda\n"
@@ -2341,7 +2533,7 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:23
+#: ../en/docs/qgoda-in-15-minutes.md:22
 msgid ""
 "Okay, do as you were told and try `qgoda --help`.  That will print out an "
 "overview of the things you can do with the program.  The command \"build\" "
@@ -2351,7 +2543,7 @@ msgid ""
 "because we will try it with learning by doing now."
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:25
+#: ../en/docs/qgoda-in-15-minutes.md:24
 msgid ""
 "```bash\n"
 "qgoda-quickstart $ qgoda build\n"
@@ -2365,7 +2557,7 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:35
+#: ../en/docs/qgoda-in-15-minutes.md:34
 msgid ""
 "[% WRAPPER components/infobox.html\n"
 "           type='info' title='Log Timestamps' %]\n"
@@ -2374,13 +2566,13 @@ msgid ""
 "[% END %]"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:40
+#: ../en/docs/qgoda-in-15-minutes.md:39
 msgid ""
 "Did you notice the warning about the missing configuration file? What are "
 "these defaults that were mentioned in the warning? Try it out:"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:42
+#: ../en/docs/qgoda-in-15-minutes.md:41
 msgid ""
 "```bash\n"
 "qgoda-quickstart $ qgoda config\n"
@@ -2397,7 +2589,7 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:56
+#: ../en/docs/qgoda-in-15-minutes.md:55
 msgid ""
 "Qgoda configuration is written in [YAML](http://www.yaml.org/), which is a "
 "more readable superset of [JSON](https://www.json.org/).  But since it is a "
@@ -2406,18 +2598,18 @@ msgid ""
 "you like."
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:58
+#: ../en/docs/qgoda-in-15-minutes.md:57
 msgid ""
 "Anyway, the configuration you have seen does probably not make a lot of "
 "sense to you at the moment, and so continue without a `P:_config.yaml` for "
 "now.  Let's make something happen instead."
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:60
+#: ../en/docs/qgoda-in-15-minutes.md:59
 msgid "## Basics"
-msgstr ""
+msgstr "## Grundlagen"
 
-#: ../en/docs/qgoda-in-15-minutes.md:62
+#: ../en/docs/qgoda-in-15-minutes.md:61
 msgid ""
 "Like most static site generators, textual content in Qgoda is normally "
 "written in [Markdown](https://daringfireball.net/projects/markdown/syntax), "
@@ -2425,24 +2617,24 @@ msgid ""
 "text file `index.md` in the directory:"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:64
+#: ../en/docs/qgoda-in-15-minutes.md:63
 msgid ""
 "```markdown\n"
 "This is my great blog."
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:67 ../en/docs/qgoda-in-15-minutes.md:120
-#: ../en/docs/qgoda-in-15-minutes.md:172
+#: ../en/docs/qgoda-in-15-minutes.md:66 ../en/docs/qgoda-in-15-minutes.md:119
+#: ../en/docs/qgoda-in-15-minutes.md:171
 msgid ""
 "## Blog Posts\n"
 "```"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:70
+#: ../en/docs/qgoda-in-15-minutes.md:69
 msgid "See what happens now:"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:72
+#: ../en/docs/qgoda-in-15-minutes.md:71
 msgid ""
 "```bash\n"
 "qgoda-quickstart $ qgoda build\n"
@@ -2455,7 +2647,7 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:81
+#: ../en/docs/qgoda-in-15-minutes.md:80
 msgid ""
 "Inspect your directory.  You should see that there is a new file `P:"
 "_timestamp` and a directory `P:_site`.  The file `P:_timestamp` contains the "
@@ -2463,13 +2655,13 @@ msgid ""
 "term>."
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:83
+#: ../en/docs/qgoda-in-15-minutes.md:82
 msgid ""
 "In `P:_site` you find the file `_site/index.md` which is an identical copy "
 "of the file `index.md` that you have created."
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:85
+#: ../en/docs/qgoda-in-15-minutes.md:84
 msgid ""
 "The directory `P:_site` is Qgoda's default output directory.  By default, "
 "Qgoda just copies whatever it finds in your source directory to the output "
@@ -2477,7 +2669,7 @@ msgid ""
 "`images/xmas-tree.jpeg` would be copied to `_site/images/xmas-tree.jpeg`."
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:87
+#: ../en/docs/qgoda-in-15-minutes.md:86
 msgid ""
 "In fact, not all files are copied.  Top-level files and directories whose "
 "names start with an underscore `_` are omitted.  Hidden files and "
@@ -2485,7 +2677,7 @@ msgid ""
 "in the top-level directory."
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:89
+#: ../en/docs/qgoda-in-15-minutes.md:88
 msgid ""
 "[% WRAPPER components/infobox.html\n"
 "           type='info' title='Excluding More Files' %]\n"
@@ -2495,17 +2687,17 @@ msgid ""
 "[% END %]"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:94
+#: ../en/docs/qgoda-in-15-minutes.md:93
 msgid "### Watch Mode"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:96
+#: ../en/docs/qgoda-in-15-minutes.md:95
 msgid ""
 "It's a little bit awkward to always type `qgoda build` after we have changed "
 "something.  Try the watch mode instead:"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:98
+#: ../en/docs/qgoda-in-15-minutes.md:97
 msgid ""
 "```bash\n"
 "qgoda-quickstart $ qgoda watch\n"
@@ -2517,30 +2709,30 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:106
+#: ../en/docs/qgoda-in-15-minutes.md:105
 msgid ""
 "This is the same as before but the program no longer terminates but waits "
 "for changes instead.  It actually waits infinitely.  Type `CTRL-C` or close "
 "the terminal window, if you want to stop it."
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:108
+#: ../en/docs/qgoda-in-15-minutes.md:107
 msgid "### Front Matter"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:110
+#: ../en/docs/qgoda-in-15-minutes.md:109
 msgid ""
 "One question remained: The output file `_site/index.md` is an identical copy "
 "of the input file.  But we want it to be converted to HTML, right?"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:112
+#: ../en/docs/qgoda-in-15-minutes.md:111
 msgid ""
 "That requires a little change to the input file.  Change `index.md` so that "
 "it looks like this:"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:114
+#: ../en/docs/qgoda-in-15-minutes.md:113
 msgid ""
 "```markup\n"
 "---\n"
@@ -2549,13 +2741,13 @@ msgid ""
 "This is my first blog created with Qgoda."
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:123
+#: ../en/docs/qgoda-in-15-minutes.md:122
 msgid ""
 "You can replace \"My Blog\" with a \"Jane Appleseed's Cooking Experience\" "
 "but you may have guessed that already."
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:125
+#: ../en/docs/qgoda-in-15-minutes.md:124
 msgid ""
 "Qgoda will only run a file through the Markdown processor (*cook* it) if a "
 "file starts with three hypens `---`.  Everything up to the next line that "
@@ -2563,11 +2755,11 @@ msgid ""
 "(http://www.yaml.org/) resp. [JSON](https://www.json.org/) syntax."
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:127
+#: ../en/docs/qgoda-in-15-minutes.md:126
 msgid "Save the file and something will happen in the terminal window:"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:129
+#: ../en/docs/qgoda-in-15-minutes.md:128
 msgid ""
 "```bash\n"
 "[info] start rebuilding site because of file system change\n"
@@ -2582,7 +2774,7 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:139
+#: ../en/docs/qgoda-in-15-minutes.md:138
 msgid ""
 "Qgoda complains about a missing HTML file.  Why? Because converting Markdown "
 "to HTML is almost never enough because that will normally just create an "
@@ -2591,16 +2783,16 @@ msgid ""
 "on."
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:141
+#: ../en/docs/qgoda-in-15-minutes.md:140
 msgid ""
 "So, let's create a minimal HTML wrapper template (called a *view* in Qgoda):"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:143
+#: ../en/docs/qgoda-in-15-minutes.md:142
 msgid "[% TAGS [@ @] %]"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:145
+#: ../en/docs/qgoda-in-15-minutes.md:144
 msgid ""
 "```html\n"
 "<!doctype html>\n"
@@ -2617,7 +2809,7 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:159
+#: ../en/docs/qgoda-in-15-minutes.md:158
 msgid ""
 "Save it as `_views/default.html`.  Qgoda will notice the new file and "
 "trigger a re-generation of the site.  Look into the output directory "
@@ -2625,7 +2817,7 @@ msgid ""
 "cleans up (*prunes*).  But there is a new file `_site/index/index.md`."
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:161
+#: ../en/docs/qgoda-in-15-minutes.md:160
 msgid ""
 "Cooked content is subject to [path translation]([@ q.llink(name='output-"
 "location') @]).  Qgoda tries to guess a suitable location for the output "
@@ -2633,11 +2825,11 @@ msgid ""
 "will see that it will get better."
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:163
+#: ../en/docs/qgoda-in-15-minutes.md:162
 msgid "But the error is simple to fix.  Just edit `index.md` once more:"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:165
+#: ../en/docs/qgoda-in-15-minutes.md:164
 msgid ""
 "```markdown\n"
 "---\n"
@@ -2647,17 +2839,17 @@ msgid ""
 "This is my first blog created with Qgoda."
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:175
+#: ../en/docs/qgoda-in-15-minutes.md:174
 msgid ""
 "A quick glance at the output directory `P:_site` shows that the trick "
 "worked.  The file is now `_site/index.html`."
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:177
+#: ../en/docs/qgoda-in-15-minutes.md:176
 msgid "Time to look at the file that Qgoda has created:"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:179
+#: ../en/docs/qgoda-in-15-minutes.md:178
 msgid ""
 "<figure class=\"figure w-100\">\n"
 "  <img src=\"/images/qgoda-in-15-minutes/processor-chains.svg\"\n"
@@ -2669,64 +2861,64 @@ msgid ""
 "</figure>"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:187
+#: ../en/docs/qgoda-in-15-minutes.md:186
 msgid "By default, Qgoda processes the content in these stages:"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:189
+#: ../en/docs/qgoda-in-15-minutes.md:188
 msgid ""
 "1. Front matter (here `title` and `location`) is stripped off and turned "
 "into document properties."
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:191
+#: ../en/docs/qgoda-in-15-minutes.md:190
 msgid ""
 "2. The Markdown file is run through the Markdown processor, turning strings "
 "like `## Blog Posts` into HTML code (`<h2>Blog Posts</h2>`)."
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:193
+#: ../en/docs/qgoda-in-15-minutes.md:192
 msgid ""
 "3. The output of the previous step is run through the template processor "
 "Template Toolkit.  In the above case there was no template code and that "
 "step was unnecessary."
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:195
+#: ../en/docs/qgoda-in-15-minutes.md:194
 msgid ""
 "4. The *view template* (defaults to `_views/default.html`) gets processed, "
 "and the output of steps 2 and 3 above is inserted for `[% asset.content %]`."
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:197
+#: ../en/docs/qgoda-in-15-minutes.md:196
 msgid ""
 "It's a slight fib.  Actually the whole process except for step 1 is "
 "completely configurable."
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:199
+#: ../en/docs/qgoda-in-15-minutes.md:198
 msgid "## Start a Web Server (Browsersync)"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:201
+#: ../en/docs/qgoda-in-15-minutes.md:200
 msgid ""
 "You can double-click the generated html file in order to see it but it would "
 "actually be nicer to see it automatically. Let's install a mini web server "
 "for that purpose."
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:203
+#: ../en/docs/qgoda-in-15-minutes.md:202
 msgid "### Initializing a Node.js Project"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:205
+#: ../en/docs/qgoda-in-15-minutes.md:204
 msgid ""
 "You now have to install Node.js and either `yarn` or `npm`.  Read [[% q."
 "llink(name = 'installation') %]]([% q.lxref(name = 'installation') %]) "
 "unless you haven't done so already.  Open a second terminal window:"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:207
+#: ../en/docs/qgoda-in-15-minutes.md:206
 msgid ""
 "```shell\n"
 "$ cd /path/to/qgoda-quickstart\n"
@@ -2740,27 +2932,27 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:217
+#: ../en/docs/qgoda-in-15-minutes.md:216
 msgid "Alternatively you can use the command is `npm init --yes`."
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:219
+#: ../en/docs/qgoda-in-15-minutes.md:218
 msgid ""
 "The file `P:package.json` contains some basic information about your "
 "project.  Have a look inside if you want to."
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:221
+#: ../en/docs/qgoda-in-15-minutes.md:220
 msgid "### Installing Browsersync"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:223
+#: ../en/docs/qgoda-in-15-minutes.md:222
 msgid ""
 "Browsersync is a small but powerful web server written in Javascript, "
 "perfectly suited for us:"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:225
+#: ../en/docs/qgoda-in-15-minutes.md:224
 msgid ""
 "```shell\n"
 "$ yarn add browser-sync\n"
@@ -2771,26 +2963,26 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:233
+#: ../en/docs/qgoda-in-15-minutes.md:232
 msgid ""
 "That may take a minute untill the server and all of its dependencies have "
 "been installed."
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:235
+#: ../en/docs/qgoda-in-15-minutes.md:234
 msgid ""
 "But something else has happened.  Qgoda is throwing error messages in the "
 "console because a directory `P:node_modules` was created.  That is where "
 "`yarn` or `npm` save local dependencies of your web project."
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:237
+#: ../en/docs/qgoda-in-15-minutes.md:236
 msgid ""
 "You have to tell qgoda to ignore that directory.  Create a file `P:_config."
 "yaml` like this:"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:239
+#: ../en/docs/qgoda-in-15-minutes.md:238
 msgid ""
 "```yaml\n"
 "helpers:\n"
@@ -2803,11 +2995,11 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:249
+#: ../en/docs/qgoda-in-15-minutes.md:248
 msgid "Now add `P:package.json`.  You have to configure the command `server`:"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:251
+#: ../en/docs/qgoda-in-15-minutes.md:250
 msgid ""
 "```json\n"
 "{\n"
@@ -2825,34 +3017,34 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:266
+#: ../en/docs/qgoda-in-15-minutes.md:265
 msgid ""
 "The key `scripts` is new.  If you have used `npm`, there is already a "
 "`scripts` section.  Delete it or overwrite it."
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:268
+#: ../en/docs/qgoda-in-15-minutes.md:267
 msgid ""
 "Google for `yarn`, `npm`, `browsersync`, `nodejs`, ... if anything of the "
 "above is unclear to you."
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:270
+#: ../en/docs/qgoda-in-15-minutes.md:269
 msgid "### Start the Web Server"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:272
+#: ../en/docs/qgoda-in-15-minutes.md:271
 msgid ""
 "Stop qgoda in the other terminal window with `CTRL-C` or close the terminal "
 "window, and restart it.  You will see that the message about the missing "
 "configuration file has vanished."
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:274
+#: ../en/docs/qgoda-in-15-minutes.md:273
 msgid "And then the magic happens:"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:276
+#: ../en/docs/qgoda-in-15-minutes.md:275
 msgid ""
 "<figure class=\"figure w-100\">\n"
 "  <img src=\"/images/qgoda-in-15-minutes/browsersync.png\"\n"
@@ -2864,21 +3056,21 @@ msgid ""
 "</figure>"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:287
+#: ../en/docs/qgoda-in-15-minutes.md:286
 msgid "## A Recipe Blog"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:289
+#: ../en/docs/qgoda-in-15-minutes.md:288
 msgid ""
 "Let's add some more documents.  Create a file `cherry-tart.md` next to "
 "`index.md`:"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:291
+#: ../en/docs/qgoda-in-15-minutes.md:290
 msgid "### Writing Blog Posts and Other Documents"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:293
+#: ../en/docs/qgoda-in-15-minutes.md:292
 msgid ""
 "```yaml\n"
 "---\n"
@@ -2889,28 +3081,28 @@ msgid ""
 "## Ingredients"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:301
+#: ../en/docs/qgoda-in-15-minutes.md:300
 msgid ""
 "* 1 cherry\n"
 "* 1 tart"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:304 ../en/docs/qgoda-in-15-minutes.md:322
-#: ../en/docs/qgoda-in-15-minutes.md:403
+#: ../en/docs/qgoda-in-15-minutes.md:303 ../en/docs/qgoda-in-15-minutes.md:321
+#: ../en/docs/qgoda-in-15-minutes.md:402
 msgid "## Preparation"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:306
+#: ../en/docs/qgoda-in-15-minutes.md:305
 msgid ""
 "Put the cherry on the tart.  Serve fresh!\n"
 "```"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:309
+#: ../en/docs/qgoda-in-15-minutes.md:308
 msgid "And one more `hard-boiled-egg.md`:"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:311
+#: ../en/docs/qgoda-in-15-minutes.md:310
 msgid ""
 "```yaml\n"
 "---\n"
@@ -2921,13 +3113,13 @@ msgid ""
 "## Ingredients"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:319 ../en/docs/qgoda-in-15-minutes.md:400
+#: ../en/docs/qgoda-in-15-minutes.md:318 ../en/docs/qgoda-in-15-minutes.md:399
 msgid ""
 "* 1 egg size M\n"
 "* 1 l water"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:324
+#: ../en/docs/qgoda-in-15-minutes.md:323
 msgid ""
 "1. Put the egg in the water.\n"
 "2. Bring the water to boil.\n"
@@ -2935,41 +3127,41 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:329
+#: ../en/docs/qgoda-in-15-minutes.md:328
 msgid "By the way, that really works."
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:331
+#: ../en/docs/qgoda-in-15-minutes.md:330
 msgid ""
 "Writing the recipe for a cucumber sandwich is left as an exercise to the "
 "reader."
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:333
+#: ../en/docs/qgoda-in-15-minutes.md:332
 msgid ""
 "Take a look into the output directory `P:_site`.  Qgoda has created the "
 "files `_site/cherry-tart/index.html` and `_site/hard-boild-egg/index.html` "
 "and maybe `_site/cucumber-sandwich/index.html`."
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:335
+#: ../en/docs/qgoda-in-15-minutes.md:334
 msgid ""
 "As you can see, it now also guesses the name of the output file correctly."
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:339
+#: ../en/docs/qgoda-in-15-minutes.md:338
 msgid ""
 "You know that the new documents are there.  But how can you see them in the "
 "browser? You have to create links to them from the start page."
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:341
+#: ../en/docs/qgoda-in-15-minutes.md:340
 msgid ""
 "This is the most complicated part, as it involves  a little programming with "
 "the Template Toolkit.  Edit the file `index.md` until it reads like this:"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:343
+#: ../en/docs/qgoda-in-15-minutes.md:342
 msgid ""
 "```html\n"
 "---\n"
@@ -2979,11 +3171,11 @@ msgid ""
 "This is my first blog created with Qgoda."
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:350
+#: ../en/docs/qgoda-in-15-minutes.md:349
 msgid "## Blog Posts"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:352
+#: ../en/docs/qgoda-in-15-minutes.md:351
 msgid ""
 "[% USE q = Qgoda %]\n"
 "<ul>\n"
@@ -3000,7 +3192,7 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:366
+#: ../en/docs/qgoda-in-15-minutes.md:365
 msgid ""
 "The first line asking for explanation is `[% USE q = Qgoda %]`.  The <a href="
 "\"http://www.template-toolkit.org/docs/manual/Directives.html#section_USE"
@@ -3010,7 +3202,7 @@ msgid ""
 "convention, you alias the plug-in with the letter `q`."
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:368
+#: ../en/docs/qgoda-in-15-minutes.md:367
 msgid ""
 "The <a href=\"http://www.template-toolkit.org/docs/manual/Directives."
 "html#section_FOREACH\"><code>FOREACH</code></a> keyword iterates over "
@@ -3019,7 +3211,7 @@ msgid ""
 "Qgoda knows about."
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:370
+#: ../en/docs/qgoda-in-15-minutes.md:369
 msgid ""
 "[@ WRAPPER components/infobox.html\n"
 "             type = 'warning' \n"
@@ -3031,31 +3223,31 @@ msgid ""
 "[@ END @]"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:376
+#: ../en/docs/qgoda-in-15-minutes.md:375
 msgid ""
 "But we want just recipe documents.  Remember that the recipes contained a "
 "line `type: recipe` in the YAML front matter? We filter by that property so "
 "that only recipes appear in the list."
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:378
+#: ../en/docs/qgoda-in-15-minutes.md:377
 msgid ""
 "Check the result in the browser.  Your recipes should now appear on the "
 "start page, sorted by last modification date."
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:380
+#: ../en/docs/qgoda-in-15-minutes.md:379
 msgid "By the way, you can add more filters to further restrict the list:"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:382
+#: ../en/docs/qgoda-in-15-minutes.md:381
 msgid ""
 "```html\n"
 "[% q.list(type = 'recipe' lingua = asset.lingua) %]\n"
 "```"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:386
+#: ../en/docs/qgoda-in-15-minutes.md:385
 msgid ""
 "This would now only list documents that have a property `V:lingua` with the "
 "same value as the current page's `V:lingua`.  The property lingua is used by "
@@ -3063,18 +3255,18 @@ msgid ""
 "to an empty list, because we didn't use the property `V:lingua`."
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:388
+#: ../en/docs/qgoda-in-15-minutes.md:387
 msgid "### Links"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:390
+#: ../en/docs/qgoda-in-15-minutes.md:389
 msgid ""
 "Sometimes, you want to link to a particular document.  Imagine, you want to "
 "recommend a cherry tart as a dessert to the hard-boiled egg.  You can, of "
 "course do this in `hard-boiled-egg.md`:"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:392
+#: ../en/docs/qgoda-in-15-minutes.md:391
 msgid ""
 "```html\n"
 "---\n"
@@ -3085,27 +3277,27 @@ msgid ""
 "## Ingredients"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:405
+#: ../en/docs/qgoda-in-15-minutes.md:404
 msgid ""
 "1. Put the egg in the water.\n"
 "2. Bring the water to boil.\n"
 "3. Turn off the heat and wait 12 minutes."
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:409
+#: ../en/docs/qgoda-in-15-minutes.md:408
 msgid ""
 "Recommendation for dessert: [Cherry Tart](/cherry-tart/).\n"
 "```"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:412
+#: ../en/docs/qgoda-in-15-minutes.md:411
 msgid ""
 "The syntax `[LABEL](href)` is used for links in Markdown.  Hard-coding links "
 "like this works perfectly, and if you like to keep it simple, just stick "
 "with it."
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:414
+#: ../en/docs/qgoda-in-15-minutes.md:413
 msgid ""
 "The disadvantage is that the link will be broken, if you decide to rename "
 "the cherry tart recipe, for example from `cherry-tart.md` to `cherry-on-the-"
@@ -3115,7 +3307,7 @@ msgid ""
 "cherry tart recipe, you can write:"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:416
+#: ../en/docs/qgoda-in-15-minutes.md:415
 msgid ""
 "```html\n"
 "[% USE q = Qgoda %]\n"
@@ -3124,13 +3316,13 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:422
+#: ../en/docs/qgoda-in-15-minutes.md:421
 msgid ""
 "That produces the same link as before but the link will now stay intact if "
 "you decide to relocate the cherry tart recipe."
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:424
+#: ../en/docs/qgoda-in-15-minutes.md:423
 msgid ""
 "[@ WRAPPER components/infobox.html\n"
 "             type = 'info' title = \"USE Qgoda\" @]\n"
@@ -3140,14 +3332,14 @@ msgid ""
 "[@ END @]"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:429
+#: ../en/docs/qgoda-in-15-minutes.md:428
 msgid ""
 "A link is just a special case of a cross-reference, and just like you can "
 "refer to another document's `V:permalink` property, you can also retrieve "
 "its title, making the link completely immune against changes in the target:"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:431
+#: ../en/docs/qgoda-in-15-minutes.md:430
 msgid ""
 "```html\n"
 "[% USE q = Qgoda %]\n"
@@ -3157,13 +3349,13 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:437
+#: ../en/docs/qgoda-in-15-minutes.md:436
 msgid ""
 "And since this is such a common use case, you can safe some typing with this "
 "shortcut version:"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:439
+#: ../en/docs/qgoda-in-15-minutes.md:438
 msgid ""
 "```html\n"
 "[% USE q = Qgoda %]\n"
@@ -3171,18 +3363,18 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:444
+#: ../en/docs/qgoda-in-15-minutes.md:443
 msgid "## Where To Go From Here"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:446
+#: ../en/docs/qgoda-in-15-minutes.md:445
 msgid ""
 "You know almost everything about Qgoda by now.  You combine the simplicity "
 "of Markdown with the power of the Template Toolkit and you wire everything "
 "together with the Qgoda plug-in for the Template Toolkit."
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:448
+#: ../en/docs/qgoda-in-15-minutes.md:447
 msgid ""
 "Explore the rest of the documentation for further details, and check out "
 "Qgoda demo themes for advanced functionality."
@@ -3193,15 +3385,304 @@ msgctxt "title"
 msgid "Related Documents"
 msgstr ""
 
-#: ../en/docs/related-documents.md:7
+#: ../en/docs/related-documents.md:6
 msgctxt "description"
 msgid ""
 "Qgoda tries to find relations between posts automatically based on shared "
 "tags and other criteria."
 msgstr ""
 
-#: ../en/docs/related-documents.md:9
-msgid "TODO!"
+#: ../en/docs/related-documents.md:8
+msgid "## How To Display Related Documents"
+msgstr ""
+
+#: ../en/docs/related-documents.md:10
+msgid "Displaying related documents is as easy as this:"
+msgstr ""
+
+# QGODA-NO-XGETTEXT
+#: ../en/docs/related-documents.md:12
+msgid ""
+"[%TAGS [- -]%]\n"
+"```markup\n"
+"[% USE q = Qgoda %]\n"
+"[% docs = q.related() %]\n"
+"<ul>\n"
+"[% FOREACH doc IN docs %]\n"
+"  <li><a href=\"[% doc.permalink %]\">[% doc.title | html %]</li>\n"
+"[% END %]\n"
+"</ul>\n"
+"```\n"
+"<!--QGODA-NO-XGETTEXT-->"
+msgstr ""
+
+#: ../en/docs/related-documents.md:25
+msgid ""
+"There is one gotcha, however: The list of related documents is always empty, "
+"when you invoke the method `q.related()` from markdown content.  Why? The "
+"content is about to be processed.  There is no way to find out what other "
+"document has similar content."
+msgstr ""
+
+#: ../en/docs/related-documents.md:27
+msgid ""
+"You have to move the above code to some template, so that you render the "
+"list inside the page header, footer, sidebar or at similar locations."
+msgstr ""
+
+#: ../en/docs/related-documents.md:29
+msgid "What else do you have to know?"
+msgstr ""
+
+#: ../en/docs/related-documents.md:31
+msgid ""
+"* A document is never related to itself.\n"
+"* If A is related to B, then B is related to A (makes sense, doesn't it?)\n"
+"* Related documents are sorted by relevance."
+msgstr ""
+
+#: ../en/docs/related-documents.md:35
+msgid "### Multi-lingual sites."
+msgstr ""
+
+#: ../en/docs/related-documents.md:37
+msgid ""
+"In a multi-lingual site, you use `q.lrelated()` instead of `q.related()`:"
+msgstr ""
+
+#: ../en/docs/related-documents.md:39
+msgid ""
+"```markup\n"
+"[% docs = q.lrelated() %]\n"
+"```"
+msgstr ""
+
+#: ../en/docs/related-documents.md:43
+msgid "That will only produce hits for documents that have the same language."
+msgstr ""
+
+#: ../en/docs/related-documents.md:45
+msgid "### Minimal Relevance"
+msgstr ""
+
+#: ../en/docs/related-documents.md:47
+msgid ""
+"By default, you get all related documents, even remotely related ones.  But "
+"you can pass a threshhold as the first parameter:"
+msgstr ""
+
+#: ../en/docs/related-documents.md:49
+msgid ""
+"```markup\n"
+"[% docs = q.lrelated(5) %]\n"
+"```"
+msgstr ""
+
+#: ../en/docs/related-documents.md:53
+msgid ""
+"That will only return documents that have a relation score (see below) of at "
+"least 5."
+msgstr ""
+
+#: ../en/docs/related-documents.md:55
+msgid "### Limit the Number of Results"
+msgstr ""
+
+#: ../en/docs/related-documents.md:57
+msgid ""
+"You can limit the list with the standard template method `splice(START, "
+"SIZE)`:"
+msgstr ""
+
+#: ../en/docs/related-documents.md:59
+msgid ""
+"```markup\n"
+"[% docs = q.lrelated(5).splice(0, 10) %]\n"
+"```"
+msgstr ""
+
+#: ../en/docs/related-documents.md:63
+msgid "You now get the 10 most relevant hits."
+msgstr ""
+
+#: ../en/docs/related-documents.md:65
+msgid "### Filter Results"
+msgstr ""
+
+#: ../en/docs/related-documents.md:67
+msgid "You can filter by arbitrary taxonomies:"
+msgstr ""
+
+#: ../en/docs/related-documents.md:69
+msgid ""
+"```markup\n"
+"[% docs = q.lrelated(5, type = 'post', date.year = 2018).splice(0, 10) %]\n"
+"```"
+msgstr ""
+
+#: ../en/docs/related-documents.md:73
+msgid "Now you only get documents of type \"post\" that are from 2018."
+msgstr ""
+
+#: ../en/docs/related-documents.md:75
+#, fuzzy
+#| msgid "### How Log Is It Stored?"
+msgid "## How Does It Work?"
+msgstr "### Wie lange werden Daten gespeichert?"
+
+#: ../en/docs/related-documents.md:77
+msgid ""
+"The way Qgoda computes the degree of relatedness between documents --- their "
+"\"relation score\" --- is completely transparent and easy to understand.  "
+"Try `qgoda config` and see the default configuration for the computation:"
+msgstr ""
+
+#: ../en/docs/related-documents.md:79
+msgid ""
+"```yaml\n"
+"$ qgoda config\n"
+"...\n"
+"link_score: 5\n"
+"...\n"
+"taxonomies:\n"
+"  categories: 3\n"
+"  links: 1\n"
+"  tags: 2\n"
+"...\n"
+"```"
+msgstr ""
+
+#: ../en/docs/related-documents.md:91
+msgid "Let's take two documents A and B as an example:"
+msgstr ""
+
+#: ../en/docs/related-documents.md:93
+msgid ""
+"```yaml\n"
+"---\n"
+"title: A\n"
+"categories: hardware\n"
+"tags: [Hard-disk, Storage, SATA, USB]\n"
+"---"
+msgstr ""
+
+#: ../en/docs/related-documents.md:100 ../en/docs/related-documents.md:114
+msgid "See [B](/b/) for more details."
+msgstr ""
+
+#: ../en/docs/related-documents.md:102 ../en/docs/related-documents.md:116
+msgid ""
+"This site is generated with [Qgoda](http://www.qgoda.net).\n"
+"```"
+msgstr ""
+
+#: ../en/docs/related-documents.md:105
+msgid "B looks like this:"
+msgstr ""
+
+#: ../en/docs/related-documents.md:107
+msgid ""
+"```yaml\n"
+"---\n"
+"title: B\n"
+"categories: software\n"
+"tags: [USB, Storage, Accessories]\n"
+"---"
+msgstr ""
+
+#: ../en/docs/related-documents.md:119
+msgid ""
+"As you can see, document A links to document B.  The configured `C:"
+"link_score` is 5, and hence the relation score between them is 5.  Note: If "
+"B would link back to A, that would add another 5 points.  But subsequent "
+"mutual links would be ignored."
+msgstr ""
+
+#: ../en/docs/related-documents.md:121
+msgid ""
+"Both documents link to http://www.qgoda.net/.  Since the configuration "
+"variable `taxonomies.links` has the value 1, the score is now 6."
+msgstr ""
+
+#: ../en/docs/related-documents.md:123
+msgid ""
+"A is from category \"hardware\", B from \"software\".  That doesn't match "
+"and the 3 points from `taxonomies.categories` are *not* added."
+msgstr ""
+
+#: ../en/docs/related-documents.md:125
+msgid ""
+"But the two documents share the common tags \"USB\" and \"Storage\" counting "
+"2 points (`taxonomies.tags`) each, so that the final relation score between "
+"the two documents is 10."
+msgstr ""
+
+#: ../en/docs/related-documents.md:127
+msgid ""
+"You can fine-tune the algorithm by changing the relevant configuration "
+"variables or by adding more taxonomies.  Set the score to 0 if you want to "
+"ignore a built-in taxonomy."
+msgstr ""
+
+#: ../en/docs/related-documents.md:129
+msgid ""
+"For example, if you want to enforce a relationship between two documents, "
+"configure this in `P:_config.yaml`:"
+msgstr ""
+
+#: ../en/docs/related-documents.md:131
+msgid ""
+"```yaml\n"
+"taxonomies:\n"
+"  boost: 9999\n"
+"```"
+msgstr ""
+
+#: ../en/docs/related-documents.md:136
+msgid "In your document `T:front-matter` put:"
+msgstr ""
+
+#: ../en/docs/related-documents.md:138
+msgid ""
+"```yaml\n"
+"---\n"
+"...\n"
+"boost: abcxyz\n"
+"...\n"
+"---\n"
+"```"
+msgstr ""
+
+#: ../en/docs/related-documents.md:146
+msgid ""
+"Now all documents that have the property `boost` set to the same value (for "
+"example `abcxyz`) would be related.  Just pick another value than `abcxyz` "
+"for more relationships."
+msgstr ""
+
+#: ../en/docs/related-documents.md:148
+msgid "### Displaying the Relation Score"
+msgstr ""
+
+#: ../en/docs/related-documents.md:150
+msgid "Why would you do that? Well, for debugging, maybe?  Okay, here you go:"
+msgstr ""
+
+#: ../en/docs/related-documents.md:152
+msgid ""
+"```markup\n"
+"<ul>\n"
+"[% FOREACH pair IN asset.related %]\n"
+"  <li>[% pair.0.permalink %]: [% pair.1 %]\n"
+"[% END %]\n"
+"</ul>\n"
+"```"
+msgstr ""
+
+#: ../en/docs/related-documents.md:160
+msgid ""
+"The document variable `V:asset.related` holds an array of tuples consisting "
+"of the related asset and the mutual relation score."
 msgstr ""
 
 #: ../en/docs/taxonomies.md:2
@@ -3209,12 +3690,12 @@ msgctxt "title"
 msgid "Taxonomies"
 msgstr ""
 
-#: ../en/docs/taxonomies.md:7
+#: ../en/docs/taxonomies.md:6
 msgctxt "description"
 msgid "Taxonomies partition your site according to arbitrary aspects."
 msgstr ""
 
-#: ../en/docs/taxonomies.md:9
+#: ../en/docs/taxonomies.md:8
 msgid ""
 "Taxonomies group assets into groups sharing common properties.  Qgoda "
 "supports\n"
@@ -3223,14 +3704,14 @@ msgid ""
 "taxonomy, simply by using it as a taxonomy."
 msgstr ""
 
-#: ../en/docs/taxonomies.md:13
+#: ../en/docs/taxonomies.md:12
 msgid ""
 "The concept of taxonomies is best understood by a typical example.  "
 "Consider\n"
 "a document with the following front matter:"
 msgstr ""
 
-#: ../en/docs/taxonomies.md:16
+#: ../en/docs/taxonomies.md:15
 msgid ""
 "```yaml\n"
 "---\n"
@@ -3246,7 +3727,7 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/taxonomies.md:29
+#: ../en/docs/taxonomies.md:28
 msgid ""
 "Three default taxonomies are used here, `lingua`, `tags`, and `categories`.\n"
 "By convention, taxonomies that are typically single-valued use the singular\n"
@@ -3255,14 +3736,14 @@ msgid ""
 "plural form."
 msgstr ""
 
-#: ../en/docs/taxonomies.md:35
+#: ../en/docs/taxonomies.md:34
 msgid ""
 "Taxonomies allow you to partition or divide your web site into groups of\n"
 "related documents.  For example, you can identify all English documents\n"
 "with the condition `lingua=\"en\"`."
 msgstr ""
 
-#: ../en/docs/taxonomies.md:39
+#: ../en/docs/taxonomies.md:38
 msgid ""
 "<figure class=\"figure w-100\">\n"
 "  <img src=\"/images/taxonomies/taxonomy-lingua.svg\"\n"
@@ -3276,12 +3757,12 @@ msgid ""
 "</figure>"
 msgstr ""
 
-#: ../en/docs/taxonomies.md:48
+#: ../en/docs/taxonomies.md:47
 msgid ""
 "Likewise, you can identify all documents that are tagged with \"Qgoda\"."
 msgstr ""
 
-#: ../en/docs/taxonomies.md:50
+#: ../en/docs/taxonomies.md:49
 msgid ""
 "<figure class=\"figure w-100\">\n"
 "  <img src=\"/images/taxonomies/taxonomy-tags.svg\"\n"
@@ -3295,7 +3776,7 @@ msgid ""
 "</figure>"
 msgstr ""
 
-#: ../en/docs/taxonomies.md:59
+#: ../en/docs/taxonomies.md:58
 msgid ""
 "By combining taxonomies you can define arbitrary subsets of a site's "
 "documents.\n"
@@ -3304,7 +3785,7 @@ msgid ""
 "\"Plug-Ins\" by `AND`'-ing the two above conditions."
 msgstr ""
 
-#: ../en/docs/taxonomies.md:63
+#: ../en/docs/taxonomies.md:62
 msgid ""
 "<figure class=\"figure w-100\">\n"
 "  <img src=\"/images/taxonomies/taxonomies-combined.svg\"\n"
@@ -3323,12 +3804,12 @@ msgctxt "title"
 msgid "Template Variables"
 msgstr ""
 
-#: ../en/docs/template-variables.md:7
+#: ../en/docs/template-variables.md:6
 msgctxt "description"
 msgid "Standard and Pre-Defined Template Variables"
 msgstr ""
 
-#: ../en/docs/template-variables.md:9
+#: ../en/docs/template-variables.md:8
 msgid ""
 "[% USE q = Qgoda %]\n"
 "[% PROCESS \"functions/css-modules.tt\" %]\n"
@@ -3336,7 +3817,7 @@ msgid ""
 "Many of them like `V:asset.name` are mere conventions."
 msgstr ""
 
-#: ../en/docs/template-variables.md:14
+#: ../en/docs/template-variables.md:13
 msgid ""
 "Qgoda passes all template variables inside the <q-term>hash:hashes</q-term> "
 "(resp. \n"
@@ -3345,7 +3826,7 @@ msgid ""
 "variables, especially top-level variables are free for your use."
 msgstr ""
 
-#: ../en/docs/template-variables.md:19
+#: ../en/docs/template-variables.md:18
 msgid ""
 "[% WRAPPER components/infobox.html\n"
 "   type=\"warning\" title='Overwriting Internal Variables' %]\n"
@@ -3356,7 +3837,7 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/template-variables.md:27
+#: ../en/docs/template-variables.md:26
 msgid ""
 "[% WRAPPER \"components/template-variable.html\"\n"
 "   variable=\"asset\" %]\n"
@@ -3365,7 +3846,28 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/template-variables.md:33
+#: ../en/docs/template-variables.md:32
+msgid ""
+"[% WRAPPER \"components/template-variable.html\"\n"
+"   variable=\"asset.priority\" %]\n"
+"All artifacts are built sorted by their priority.  A higher value means that "
+"they are generated last.  Normally, you should assign a high priority, for "
+"example 999 to listings so that they are generated after other pages and can "
+"access all of their data.\n"
+"[%- END %]"
+msgstr ""
+
+#: ../en/docs/template-variables.md:37
+msgid ""
+"[% WRAPPER \"components/template-variable.html\"\n"
+"   variable=\"asset.virtual\" %]\n"
+"Virtual documents to not get published, to be more exact, they do not go "
+"through the second pass of processing (the HTML wrapping) and hence are not "
+"written to disk.\n"
+"[%- END %]"
+msgstr ""
+
+#: ../en/docs/template-variables.md:42
 msgid ""
 "[% WRAPPER \"components/template-variable.html\"\n"
 "   variable=\"config\" type='hash' %]\n"
@@ -3416,6 +3918,19 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
+#: ../en/index.md:3
+msgctxt "title"
+msgid "Qgoda Static Site Generator"
+msgstr "Qgoda Static Site Generator"
+
+#: ../en/index.md:8
+msgctxt "description"
+msgid ""
+"Qgoda is a static site generator with a strong focus on multi-linguism and "
+"flexibility, written in Perl but extensible with JavaScript, Python, Ruby, "
+"Java, and more."
+msgstr ""
+
 #: ../en/legal-disclosure.md:2
 msgctxt "title"
 msgid "Legal Disclosure"
@@ -3462,6 +3977,5 @@ msgstr ""
 msgid "Guido Flohr, info@cantanea.com"
 msgstr ""
 
-#~ msgctxt "title"
-#~ msgid "Qgoda Static Site Generator"
-#~ msgstr "Qgoda Static Site Generator"
+#~ msgid "Basics"
+#~ msgstr "Grundlagen"
