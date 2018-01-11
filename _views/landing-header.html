@@ -9,7 +9,7 @@
   <div class="navbar [% css.start.logo_nav %]">
     <div class="container">
       <div class="row">
-        <div class="col-6 col-md-8">
+        <div class="col-6">
           <div class="navbar-header">
             <div class="[% css.start.logo %]">
               <img src="/images/qgoda-logo-white.svg" 
@@ -17,7 +17,7 @@
             </div>
           </div>
         </div>
-        <div class="col-6 col-md-4">
+        <div class="col-6">
           <div class="float-right">
             <h2>
               <a href="/[% asset.lingua %]/news/" class="nav-link"><i class="fa fa-newspaper-o"></i>&nbsp;[% gtx.gettext('News') %]</a>
@@ -25,6 +25,14 @@
                  href="https://github.com/gflohr/qgoda/releases"
                  target="_blank" class="nav-link"><i class="fa fa-download"></i>&nbsp;[% gtx.gettext('Download') %]</a>
               <a href="/[% asset.lingua %]/docs/" class="nav-link"><i class="fa fa-cubes"></i>&nbsp;[% gtx.gettext('Docs') %]</a>
+              <i class="fa fa-language"></i>
+              [% FOREACH lingua IN config.linguas %]
+                [% IF lingua == asset.lingua %]
+                <span class="[% css.start.lingua_current %] [% css.start.lingua_link %]">[% lingua %]</span>
+                [% ELSE %]
+                <a href="/[% lingua %]/" class="nav-link [% css.start.lingua_link %]">[% lingua %]</a>
+                [% END %]
+              [% END %]
             </h2>
           </div>
         </div>
