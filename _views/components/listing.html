@@ -12,6 +12,7 @@
 
   <div class="[% css.qgoda.teaser_date %]">
     <a href="[% post.permalink %]" class="[% css.qgoda.teaser_link %]">
+      <!--TRANSLATORS: See "man strftime" for the meaning!-->
       <i class="fa fa-clock-o"></i>&nbsp;[% q.strftime(gtx.gettext('%b, %d %Y'), asset.date, asset.lingua) %]
     </a>
   </div>
