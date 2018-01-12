@@ -20,10 +20,14 @@ defaults:
       - '!/en/'
     values:
       translate: [title, description, image_alt] 
-  - files: /en
+  - files: 
+      - /en
+      - /_includes/en
     values:
       lingua: en
-  - files: /de
+  - files: 
+      - /de
+      - /_includes/de
     values:
       lingua: de
   - files: /*/docs/**
