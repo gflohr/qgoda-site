@@ -19,7 +19,7 @@ defaults:
       - /*/**
       - '!/en/'
     values:
-      translate: [title, description, image_alt] 
+      translate: [title, description, image_alt, button]
   - files: 
       - /en
       - /_includes/en
@@ -63,6 +63,12 @@ po:
     - perl 
     - -I/Users/guido/perl/qgoda/lib 
     - /Users/guido/perl/qgoda/qgoda
+  mdextra:
+    - /_includes/**
+  views:
+    - /_views/**
+    - "!/_views/raw"
+    - "!/_views/functions/**"
 analyzers:
   - GuidedTour
 

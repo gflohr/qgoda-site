@@ -1,4 +1,5 @@
 ---
+title: Main Features
 view: landing-main-features.html
 chain: html
 wrapper: html

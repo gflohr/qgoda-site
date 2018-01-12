@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qgoda-site 0.1\n"
 "Report-Msgid-Bugs-To: 'Guido Flohr <guido.flohr@cantanea.com>'\n"
-"PO-Revision-Date: 2018-01-11 17:08+0200\n"
+"PO-Revision-Date: 2018-01-13 00:37+0200\n"
 "Last-Translator: Guido Flohr <guido.flohr@cantanea.com>\n"
 "Language-Team: German\n"
 "Language: de\n"
@@ -81,6 +81,62 @@ msgstr "Navigation ein/aus"
 msgid "Home"
 msgstr "Start"
 
+#: ../_includes/en/landing-page/about-nodejs.md:3
+msgctxt "title"
+msgid "Node.JS"
+msgstr "Node.JS"
+
+#: ../_includes/en/landing-page/about-nodejs.md:5
+msgctxt "image_alt"
+msgid "The Node.JS Logo"
+msgstr "Das Logo von Node.JS"
+
+#: ../_includes/en/landing-page/about-nodejs.md:8
+msgid ""
+"Node.JS is the most popular platform for building web applications today.\n"
+"Instead of re-inventing the wheel, qgoda uses libsass, uglifyjs, and so on "
+"as\n"
+"helpers."
+msgstr ""
+"Node.JS ist heute die populärste Plattform zur Entwicklung von Web-"
+"Applikationen. Statt das Rad neu zu erfinden, nutzt Qgoda libsass, uglifyjs "
+"und so weiter als Hilfs-Applikationen."
+
+#: ../_includes/en/landing-page/about-perl.md:3
+msgctxt "title"
+msgid "Perl"
+msgstr "Perl"
+
+#: ../_includes/en/landing-page/about-perl.md:5
+msgctxt "image_alt"
+msgid "The Perl Logo"
+msgstr "Das Logo von Perl"
+
+#: ../_includes/en/landing-page/about-perl.md:8
+msgid ""
+"Rock stable, universally available, and fast. But don't be afraid. You don't "
+"need Perl for using qgoda. Even when you want to extend qgoda, you can do so "
+"with the programming language of your choice."
+msgstr ""
+"Stabil, überall verfügbar und schnell. Aber keine Angst. Qgoda kann man ohne "
+"Perl-Kenntnisse einsetzen. Und Qgoda lässt sich nicht nur mit Perl sondern "
+"mit der Programmiersprache der Wahl erweitern."
+
+#: ../_includes/en/landing-page/about.md:3
+msgctxt "title"
+msgid "Main Technologies"
+msgstr "Haupt-Technologien"
+
+#: ../_includes/en/landing-page/header.md:3
+msgctxt "title"
+msgid "The Qgoda Static Site Generator"
+msgstr "Qgoda Static Site Generator"
+
+#: ../_includes/en/landing-page/header.md:4
+msgctxt "button"
+msgid "Explore"
+msgstr "Erforschen"
+
 #: ../_includes/en/landing-page/header.md:7
 msgid ""
 "No database, no fuzz, no buzz. Qgoda works everywhere. Write your texts "
@@ -92,17 +148,96 @@ msgstr ""
 "Markdown schreiben, und eine neue Website ist am Start. HTML-Kenntnisse sind "
 "ein Plus, aber eine Voraussetzung."
 
-#: ../en/data-privacy-policy.md:2
+#: ../_includes/en/landing-page/main-features.md:2
 msgctxt "title"
-msgid "Data Privacy"
-msgstr "Datenschutz"
+msgid "Main Features"
+msgstr "Wichtigste Features"
 
-#: ../en/data-privacy-policy.md:5
-msgctxt "description"
-msgid "What private date does this site receive, and what does it use it for?"
+#: ../_includes/en/landing-page/multi-language.md:3
+msgctxt "title"
+msgid "Multi-Language Blogging"
+msgstr "Mehrsprachiges Bloggen"
+
+#: ../_includes/en/landing-page/multi-language.md:5
+#: ../_includes/en/landing-page/taxonomies.md:5
+msgctxt "button"
+msgid "Learn More"
+msgstr "Mehr erfahren"
+
+#: ../_includes/en/landing-page/multi-language.md:8
+msgctxt "image_alt"
+msgid "The earth from space"
+msgstr "Die Erde aus dem Weltall gesehen"
+
+#: ../_includes/en/landing-page/multi-language.md:10
+msgid ""
+"Qgoda's multi-language feature set is second to no other Content Management "
+"System, leave alone static site generators. No hacks required. The multi-"
+"language features are an integral part of Qgoda."
 msgstr ""
-"Welche privaten Daten werden an diese Website geschickt, und wofür werden "
-"sie verwendet?"
+"Qgodas Unterstützung bei der Pflege mehrsprachiger Websites ist einzigartig "
+"unter Content-Management-Systemen, von anderen Static Site Generators ganz "
+"zu schweigen. Es werden keine Hacks benötigt. Mehrsprachigkeit ist ein "
+"integraler Bestandteil von Qgoda."
+
+#: ../_includes/en/landing-page/news.md:3
+msgctxt "title"
+msgid "News"
+msgstr "News"
+
+#: ../_includes/en/landing-page/news.md:5
+msgctxt "button"
+msgid "Read All"
+msgstr "Alles lesen"
+
+#: ../_includes/en/landing-page/pronunciation.md:3
+msgctxt "title"
+msgid "How the Heck Is That Pronounced?"
+msgstr "Und wie bitte wird Qgoda ausgesprochen?"
+
+#: ../_includes/en/landing-page/pronunciation.md:5
+msgctxt "button"
+msgid "Really?"
+msgstr "Echt?"
+
+#: ../_includes/en/landing-page/pronunciation.md:8
+msgctxt "image_alt"
+msgid "A strawberry"
+msgstr "Eine Erdbeere"
+
+#: ../_includes/en/landing-page/pronunciation.md:10
+msgid ""
+"It is pronounced \"yagoda\" and it means strawberry in Bulgarian and other "
+"Slavic \n"
+"languages. The cyrillic letter \"ya\" is commonly transcribed as \"q\" "
+"because it \n"
+"resembles the original cyrillic letter \"я\"."
+msgstr ""
+"Es wird „Jagoda“ ausgesprochen und bedeutet Erdbeere, im Bulgarischen und "
+"vielen weiteren slawischen Sprachen. Der kyrillische Buchstabe „Ja“ \"wird "
+"oft als „q“ transkribiert, weil dies entfernt an den originalen kyrillischen "
+"Buchstaben „я“ erinnert."
+
+#: ../_includes/en/landing-page/taxonomies.md:3
+msgctxt "title"
+msgid "Unlimited Taxonomies"
+msgstr "Unbegrenzte viele Taxonomien"
+
+#: ../_includes/en/landing-page/taxonomies.md:8
+msgctxt "image_alt"
+msgid "Old sideboard with many drawers"
+msgstr "Altes Sideboard mit vielen Schubladen"
+
+#: ../_includes/en/landing-page/taxonomies.md:10
+msgid ""
+"With Qgoda you don't have to restrict yourself to tags and categories for \n"
+"structuring your content. You can use as many taxonomies as you want and "
+"you \n"
+"can freely combine them for listings and filters."
+msgstr ""
+"Mit Qgoda gibt es keine Beschränkung auf lediglich Tags oder Kategorien, um "
+"Content zu strukturieren. Stattdessen lassen sich beliebig viele Taxonomien "
+"definieren und für Listen und Filter kombinieren."
 
 #: ../en/data-privacy-policy.md:7
 msgid ""
@@ -128,14 +263,19 @@ msgid ""
 "other\n"
 "media, script files, style sheets and so on."
 msgstr ""
+"Wie praktisch alle Web-Sites speichert auch diese Informationen über jede "
+"Anfragen in Protokolldateien auf dem Web-Server. Der Besuch einer einzigen "
+"Seite führt in der Regel zu einer Vielzahl von Einzelanfragen, für Texte, "
+"Bilder oder andere Medien, Skriptdateien, Style-Sheets und so weiter."
 
 #: ../en/data-privacy-policy.md:20
 msgid "### What Is Stored?"
-msgstr ""
+msgstr "### Was wird gespeichert?"
 
 #: ../en/data-privacy-policy.md:22
 msgid "The following pieces of information sent by your browser are stored:"
 msgstr ""
+"Die folgenden vom Browser übermittelten Informationen werden gespeichert:"
 
 #: ../en/data-privacy-policy.md:24
 msgid ""
@@ -152,6 +292,20 @@ msgid ""
 "  the referring web site.  See the documentation of your browser if you\n"
 "  want to suppress sending that information."
 msgstr ""
+"- Die IP-Adresse. Diese Adresse identifiziert den Computer oder auch andere "
+"Geräte weltweit, solange eine Verbindung zum Internet besteht. Der "
+"Internetanbieter (Internet Service Provider ISP) unterliegt der rechtlichen "
+"Verpflichtung, die Zuordnung einer IP-Adresse zu einem individuellen Kunde "
+"für eine gewisse Zeit zu speichern.\n"
+"- Datum und Uhrzeit der Anfrage mit einer Genauigkeit von einer Sekunde.\n"
+"- Die Adresse der angefragten Ressource.\n"
+"- Informationen über Browser und Betriebssystem und deren jeweilige "
+"Versionen. Die Dokumentation des Browsers enthält Hinweise dafür, wie sich "
+"die Übermittlung dieser Daten unterdrücken lässt.\n"
+"- Wurde diese Web-Site durch Klicken eines Links annavigiert, wird in der "
+"Regel auch übermittelt, von welcher Web-Adresse (URL) aus dies geschah. Die  "
+"Dokumentation des Browsers enthält Hinweise dafür, wie sich die Übermittlung "
+"dieser Daten unterdrücken lässt."
 
 #: ../en/data-privacy-policy.md:37
 msgid ""
@@ -159,6 +313,8 @@ msgid ""
 "analysis\n"
 "of technial problems."
 msgstr ""
+"Alle diese Informationen werden lediglich für technische Zwecke, zum "
+"Beispiel der Analyse technischer Probleme erfasst."
 
 #: ../en/data-privacy-policy.md:40
 msgid ""
@@ -167,24 +323,27 @@ msgid ""
 "purpose of the IP address is not to disrupt your privacy but it is needed\n"
 "for any communication on the internet."
 msgstr ""
+"Beachten Sie bitte, dass ein Unterdrücken der IP-Adresse nicht sinnvoll "
+"möglich ist, da diese Adresse zur Rücksendung der Antwort auf die Anfrage "
+"benötigt wird. Sinn der IP-Adresse ist es nicht, die Privatsphäre zu "
+"beeinträchtigen. Sie ist vielmehr essenziell für jegliche Kommunikation im "
+"Internet."
 
 #: ../en/data-privacy-policy.md:45
-#, fuzzy
-#| msgid "### How Log Is It Stored?"
 msgid "### How Long Is It Stored?"
 msgstr "### Wie lange werden Daten gespeichert?"
 
 #: ../en/data-privacy-policy.md:47
 msgid "Log files are ultimately deleted after at most one month."
-msgstr ""
+msgstr "Protokolldateien werden nach spätestens einem Monat gelöscht."
 
 #: ../en/data-privacy-policy.md:49
 msgid "## Cookies"
-msgstr ""
+msgstr "## Cookies"
 
 #: ../en/data-privacy-policy.md:51
 msgid "### What are Cookies?"
-msgstr ""
+msgstr "### Was sind Cookies?"
 
 #: ../en/data-privacy-policy.md:53
 msgid ""
@@ -296,21 +455,6 @@ msgstr ""
 msgid "[% END %]"
 msgstr ""
 
-#: ../en/docs/basics.md:2
-msgctxt "title"
-msgid "Basics"
-msgstr "Grundlagen"
-
-#: ../en/docs/configuration-variables.md:2
-msgctxt "title"
-msgid "Configuration Variables"
-msgstr "Konfigurations-Variablen"
-
-#: ../en/docs/configuration-variables.md:6
-msgctxt "description"
-msgid "Complete List Of Configuration Variables"
-msgstr "Vollständige Liste der Konfigurationsvariablen"
-
 #: ../en/docs/configuration-variables.md:8
 #: ../en/docs/files-and-directories.md:8
 msgid ""
@@ -389,16 +533,6 @@ msgid ""
 "TODO!\n"
 "[%- END %]\n"
 "</ul>"
-msgstr ""
-
-#: ../en/docs/differences-to-jekyll.md:2
-msgctxt "title"
-msgid "Differences to Jekyll"
-msgstr ""
-
-#: ../en/docs/differences-to-jekyll.md:6
-msgctxt "description"
-msgid "This page explains where Qgoda differs from Jekyll and why."
 msgstr ""
 
 #: ../en/docs/differences-to-jekyll.md:8
@@ -743,16 +877,6 @@ msgstr ""
 
 #: ../en/docs/differences-to-jekyll.md:154
 msgid "[- TAGS [% %] -]"
-msgstr ""
-
-#: ../en/docs/excluding-files.md:2
-msgctxt "title"
-msgid "Excluding Files"
-msgstr ""
-
-#: ../en/docs/excluding-files.md:6
-msgctxt "description"
-msgid "How to exclude (or include) additional paths in Qgoda."
 msgstr ""
 
 #: ../en/docs/excluding-files.md:8
@@ -1192,16 +1316,6 @@ msgstr ""
 msgid "### Slashes"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:2
-msgctxt "title"
-msgid "Files and Directories"
-msgstr ""
-
-#: ../en/docs/files-and-directories.md:6
-msgctxt "description"
-msgid "Complete List of Files and Directories"
-msgstr ""
-
 #: ../en/docs/files-and-directories.md:11
 msgid ""
 "A typical Qgoda site contains a couple of standard files and directories.\n"
@@ -1314,19 +1428,6 @@ msgstr ""
 msgid "</ul>"
 msgstr ""
 
-#: ../en/docs/index.md:3
-msgctxt "title"
-msgid "Documentation"
-msgstr ""
-
-#: ../en/docs/index.md:8
-msgctxt "description"
-msgid ""
-"Learn how to create a website with Qgoda, with tutorial-style introductory "
-"information for beginners or exhaustive API documentation for the "
-"experienced."
-msgstr ""
-
 #: ../en/docs/index.md:10
 msgid ""
 "[% USE q = Qgoda %]\n"
@@ -1385,14 +1486,12 @@ msgid ""
 "[% END %]"
 msgstr ""
 
-#: ../en/docs/installation.md:2
-msgctxt "title"
-msgid "Installation"
-msgstr ""
-
-#: ../en/docs/installation.md:7
-msgctxt "description"
-msgid "How to install Qgoda and its dependencies on your local system"
+# Der bahn.de-Routenplaner für Ihren Webauftritt
+#: ../en/docs/index.md:50
+msgid ""
+"<script src=\"https://vat.db-app.de/buttons?button=2116&language=de\" type="
+"\"text/javascript\"></script>\n"
+"<!-- ENDE -->"
 msgstr ""
 
 #: ../en/docs/installation.md:9
@@ -1648,21 +1747,6 @@ msgstr ""
 msgid "See https://yarnpkg.com/en/docs/install for instructions."
 msgstr ""
 
-#: ../en/docs/introduction.md:2
-msgctxt "title"
-msgid "Introduction"
-msgstr ""
-
-#: ../en/docs/listings.md:2
-msgctxt "title"
-msgid "Listings and Links"
-msgstr ""
-
-#: ../en/docs/listings.md:6
-msgctxt "description"
-msgid "Qgoda generates listings based on taxonomies."
-msgstr ""
-
 #: ../en/docs/listings.md:8
 msgid ""
 "Link lists are crucial for the navigation on most web sites.  Qgoda \n"
@@ -1719,28 +1803,6 @@ msgid ""
 "template variables.  Qgoda uses template functions instead, and these\n"
 "functions return unsorted lists.\n"
 "[% END %]"
-msgstr ""
-
-#: ../en/docs/lists-and-indices.md:2
-msgctxt "title"
-msgid "Lists and Indices"
-msgstr ""
-
-#: ../en/docs/miscellaneous.md:2
-msgctxt "title"
-msgid "Miscellaneous"
-msgstr ""
-
-#: ../en/docs/mode-of-operation.md:2
-msgctxt "title"
-msgid "Mode Of Operation"
-msgstr ""
-
-#: ../en/docs/mode-of-operation.md:6
-msgctxt "description"
-msgid ""
-"Qgoda basically copies files for deployment, optionally cooking the content "
-"with processor plug-ins."
 msgstr ""
 
 #: ../en/docs/mode-of-operation.md:8
@@ -1904,17 +1966,6 @@ msgid ""
 "In reality, the default chain is slightly more complex but the details of it "
 "are most of the time not important for you.  In general, everything follows "
 "the Do-What-I-Mean™ paradigm."
-msgstr ""
-
-#: ../en/docs/multi-language-overview.md:2
-msgctxt "title"
-msgid "Multi-Language Overview"
-msgstr ""
-
-#: ../en/docs/multi-language-overview.md:6
-msgctxt "description"
-msgid ""
-"Overview of Qgoda's Multi-Lanaguage and Internationalization (I18N) features"
 msgstr ""
 
 #: ../en/docs/multi-language-overview.md:8
@@ -2161,21 +2212,6 @@ msgstr ""
 msgid ""
 "Likewise, for links resp. cross-references you add the additional filter for "
 "the language or just use `q.lxref()` instead of `q.xref()` and you are done."
-msgstr ""
-
-#: ../en/docs/multi-language.md:2
-msgctxt "title"
-msgid "Multi-Language"
-msgstr ""
-
-#: ../en/docs/output-location.md:2
-msgctxt "title"
-msgid "Output Location"
-msgstr ""
-
-#: ../en/docs/output-location.md:6
-msgctxt "description"
-msgid "Learn how input locations are translated to output locations in Qgoda."
 msgstr ""
 
 #: ../en/docs/output-location.md:8
@@ -2490,18 +2526,6 @@ msgstr ""
 
 #: ../en/docs/output-location.md:216
 msgid "Quoted strings have JavaScript semantics!"
-msgstr ""
-
-#: ../en/docs/qgoda-in-15-minutes.md:2
-msgctxt "title"
-msgid "Qgoda in 15 Minutes"
-msgstr "Qgoda in 15 Minuten"
-
-#: ../en/docs/qgoda-in-15-minutes.md:6
-msgctxt "description"
-msgid ""
-"Learn the basic concepts of Qgoda in 15 minutes by building an ugly but "
-"simple site from scratch."
 msgstr ""
 
 #: ../en/docs/qgoda-in-15-minutes.md:8
@@ -3380,18 +3404,6 @@ msgid ""
 "Qgoda demo themes for advanced functionality."
 msgstr ""
 
-#: ../en/docs/related-documents.md:2
-msgctxt "title"
-msgid "Related Documents"
-msgstr ""
-
-#: ../en/docs/related-documents.md:6
-msgctxt "description"
-msgid ""
-"Qgoda tries to find relations between posts automatically based on shared "
-"tags and other criteria."
-msgstr ""
-
 #: ../en/docs/related-documents.md:8
 msgid "## How To Display Related Documents"
 msgstr ""
@@ -3525,10 +3537,8 @@ msgid "Now you only get documents of type \"post\" that are from 2018."
 msgstr ""
 
 #: ../en/docs/related-documents.md:75
-#, fuzzy
-#| msgid "### How Log Is It Stored?"
 msgid "## How Does It Work?"
-msgstr "### Wie lange werden Daten gespeichert?"
+msgstr "## Wie funktioniert es genau?"
 
 #: ../en/docs/related-documents.md:77
 msgid ""
@@ -3685,16 +3695,6 @@ msgid ""
 "of the related asset and the mutual relation score."
 msgstr ""
 
-#: ../en/docs/taxonomies.md:2
-msgctxt "title"
-msgid "Taxonomies"
-msgstr ""
-
-#: ../en/docs/taxonomies.md:6
-msgctxt "description"
-msgid "Taxonomies partition your site according to arbitrary aspects."
-msgstr ""
-
 #: ../en/docs/taxonomies.md:8
 msgid ""
 "Taxonomies group assets into groups sharing common properties.  Qgoda "
@@ -3799,16 +3799,6 @@ msgid ""
 "</figure>"
 msgstr ""
 
-#: ../en/docs/template-variables.md:2
-msgctxt "title"
-msgid "Template Variables"
-msgstr ""
-
-#: ../en/docs/template-variables.md:6
-msgctxt "description"
-msgid "Standard and Pre-Defined Template Variables"
-msgstr ""
-
 #: ../en/docs/template-variables.md:8
 msgid ""
 "[% USE q = Qgoda %]\n"
@@ -3878,16 +3868,6 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/terms-and-concepts.md:2
-msgctxt "title"
-msgid "Terms and Concepts"
-msgstr ""
-
-#: ../en/docs/terms-and-concepts.md:7
-msgctxt "description"
-msgid "Explanation of frequently used terms and concepts"
-msgstr ""
-
 #: ../en/docs/terms-and-concepts.md:15
 msgid ""
 "[% WRAPPER components/term.html term=\"epoch\" -%]\n"
@@ -3916,29 +3896,6 @@ msgid ""
 "Sass 3.  It is a strict superset of CSS, so that every valid CSS file is\n"
 "also a valid SCSS file.\n"
 "[%- END %]"
-msgstr ""
-
-#: ../en/index.md:3
-msgctxt "title"
-msgid "Qgoda Static Site Generator"
-msgstr "Qgoda Static Site Generator"
-
-#: ../en/index.md:8
-msgctxt "description"
-msgid ""
-"Qgoda is a static site generator with a strong focus on multi-linguism and "
-"flexibility, written in Perl but extensible with JavaScript, Python, Ruby, "
-"Java, and more."
-msgstr ""
-
-#: ../en/legal-disclosure.md:2
-msgctxt "title"
-msgid "Legal Disclosure"
-msgstr ""
-
-#: ../en/legal-disclosure.md:5
-msgctxt "description"
-msgid "Imprint"
 msgstr ""
 
 #: ../en/legal-disclosure.md:7
@@ -3976,6 +3933,33 @@ msgstr ""
 #: ../en/legal-disclosure.md:25
 msgid "Guido Flohr, info@cantanea.com"
 msgstr ""
+
+#~ msgctxt "title"
+#~ msgid "Data Privacy"
+#~ msgstr "Datenschutz"
+
+#~ msgctxt "description"
+#~ msgid ""
+#~ "What private date does this site receive, and what does it use it for?"
+#~ msgstr ""
+#~ "Welche privaten Daten werden an diese Website geschickt, und wofür werden "
+#~ "sie verwendet?"
+
+#~ msgctxt "title"
+#~ msgid "Basics"
+#~ msgstr "Grundlagen"
+
+#~ msgctxt "title"
+#~ msgid "Configuration Variables"
+#~ msgstr "Konfigurations-Variablen"
+
+#~ msgctxt "description"
+#~ msgid "Complete List Of Configuration Variables"
+#~ msgstr "Vollständige Liste der Konfigurationsvariablen"
+
+#~ msgctxt "title"
+#~ msgid "Qgoda in 15 Minutes"
+#~ msgstr "Qgoda in 15 Minuten"
 
 #~ msgid "Basics"
 #~ msgstr "Grundlagen"
