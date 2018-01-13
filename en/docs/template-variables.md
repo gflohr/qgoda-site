@@ -24,23 +24,23 @@ for trouble.
 [%- END %]
 
 [% WRAPPER "components/template-variable.html"
-   variable="asset" %]
+   variable="asset" type="hash" %]
 The variable `asset` is the container for all variables specific to
 the asset currently being processed.
 [%- END %]
 
 [% WRAPPER "components/template-variable.html"
-   variable="asset.priority" %]
+   variable="asset.priority" type="integer" %]
 All artifacts are built sorted by their priority.  A higher value means that they are generated last.  Normally, you should assign a high priority, for example 999 to listings so that they are generated after other pages and can access all of their data.
 [%- END %]
 
 [% WRAPPER "components/template-variable.html"
-   variable="asset.virtual" %]
+   variable="asset.virtual" type="boolean (0 or 1)" %]
 Virtual documents to not get published, to be more exact, they do not go through the second pass of processing (the HTML wrapping) and hence are not written to disk.
 [%- END %]
 
 [% WRAPPER "components/template-variable.html"
-   variable="config" type='hash' %]
+   variable="config" type="hash" %]
 `config` gives you access to the site configuration from `P:_config.yaml`.
 The configuration variable `C:paths.views` in `P:_config.yaml` is
 accessible from a template as `config.paths.views`.  See

@@ -87,5 +87,6 @@ legal:
   vat-id: configure legal.name in _localconfig.yamg or _config.yaml
   copyright_year: configure legal.name in _localconfig.yamg or _config.yaml
   copyright_uri: configure legal.name in _localconfig.yamg or _config.yaml
+  # url: http://www.yourname.org/
 google:
   #analytics_id: 'UA-XXXXXXX-X'

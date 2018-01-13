@@ -44,7 +44,8 @@ The name of the site.  Qgoda itself does not use this variable.
 [%- END %]
 
 [% WRAPPER components/variable.html
-   variable="tours" type='Hash' -%]
-TODO!
+   variable="url" type='String' 
+   default='none' -%]
+The url (`http://...`) of the site, normally without a trailing slash (so that you can safely append <code>V:asset.permalink</code> to it).  Qgoda itself does not use this variable.
 [%- END %]
 </ul>

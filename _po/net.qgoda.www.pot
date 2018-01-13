@@ -64,7 +64,7 @@ msgstr ""
 msgid "Copyright &copy; {copyright_year} {copyright_holder}"
 msgstr ""
 
-#: ../_views/partials/body/sidebar-top.html:7
+#: ../_views/partials/body/sidebar-top.html:8
 msgid "Source code of this page"
 msgstr ""
 
@@ -158,7 +158,7 @@ msgstr ""
 msgid "Qgoda's multi-language feature set is second to no other Content Management System, leave alone static site generators. No hacks required. The multi-language features are an integral part of Qgoda."
 msgstr ""
 
-#: ../_includes/en/landing-page/news.md:3
+#: ../_includes/en/landing-page/news.md:3 ../en/news/index.md:3
 msgctxt "title"
 msgid "News"
 msgstr ""
@@ -1290,7 +1290,8 @@ msgstr ""
 msgid "Qgoda has not yet been officially released.  The installation is therefore still a little bit awkward."
 msgstr ""
 
-#: ../en/docs/installation.md:11
+#: ../en/docs/installation.md:11 ../en/docs/table-of-contents.md:10
+#: ../en/docs/table-of-contents.md:21
 msgid "<qgoda-toc/>"
 msgstr ""
 
@@ -3189,6 +3190,250 @@ msgstr ""
 msgid "The document variable `V:asset.related` holds an array of tuples consisting of the related asset and the mutual relation score."
 msgstr ""
 
+#: ../en/docs/table-of-contents.md:2
+msgctxt "title"
+msgid "Table Of Contents"
+msgstr ""
+
+#: ../en/docs/table-of-contents.md:6
+msgctxt "description"
+msgid "Creating a table of contents with Qgoda is very easy.  And every aspect of it can be styled to your needs."
+msgstr ""
+
+#: ../en/docs/table-of-contents.md:8
+msgid "[% USE q = Qgoda %]"
+msgstr ""
+
+#: ../en/docs/table-of-contents.md:12
+msgid "## Usage"
+msgstr ""
+
+#: ../en/docs/table-of-contents.md:14
+msgid "### Location of the Table of Contents"
+msgstr ""
+
+#: ../en/docs/table-of-contents.md:16
+msgid "First you have to mark, where in your document you want the table of contents to appear:"
+msgstr ""
+
+#: ../en/docs/table-of-contents.md:18
+msgid "```markdown\n"
+"This is a long article with a lot of sections."
+msgstr ""
+
+#: ../en/docs/table-of-contents.md:23
+msgid "Use the above table of contents to find your way.\n"
+"```"
+msgstr ""
+
+#: ../en/docs/table-of-contents.md:26
+msgid "The custom tag `<qgoda-toc/>` is expanded into a table of contents like the one you can see at the top of this page, when rendering the document."
+msgstr ""
+
+#: ../en/docs/table-of-contents.md:28
+msgid ""
+"[% WRAPPER components/infobox.html\n"
+"           type='info' title='Format of the tag' %]\n"
+"It doesn't matter whether you write <code>&lt;qgoda-toc/&gt;</code>, <code>&lt;qgoda-toc /&gt;</code>, <code>&lt;qgoda-toc&gt;&lt;/qgoda-toc&gt;</code>, or just <code>&lt;qgoda-toc&gt;</code>.  They will all work the same.\n"
+"[% END %]"
+msgstr ""
+
+#: ../en/docs/table-of-contents.md:33
+msgid "You can place the the tag inside of the markdown documents you write or inside the view templates.  You can even place it multiple times."
+msgstr ""
+
+#: ../en/docs/table-of-contents.md:35
+msgid "### Marking the Content Range"
+msgstr ""
+
+#: ../en/docs/table-of-contents.md:37
+msgid "[% TAGS [- -] %]\n"
+"The table of contents is generated over only a part of the document.  This will normally be the content area, the part of the document that you write in markdown.  Search for `[% asset.content %]` in the files `P:_views` directory:"
+msgstr ""
+
+#: ../en/docs/table-of-contents.md:40
+msgid ""
+"```markup\n"
+"<div class=\"container\">\n"
+"  [% asset.content %]\n"
+"</div>\n"
+"```"
+msgstr ""
+
+#: ../en/docs/table-of-contents.md:46
+msgid "Surround it with the custom tag `<qgoda-content>`:"
+msgstr ""
+
+#: ../en/docs/table-of-contents.md:48
+msgid ""
+"```markup\n"
+"<div class=\"container\">\n"
+"  <qgoda-content>\n"
+"  [% asset.content %]\n"
+"  </qgoda-content>\n"
+"</div>\n"
+"```"
+msgstr ""
+
+#: ../en/docs/table-of-contents.md:56
+msgid "Qgoda will now create a document structure from all `<h2>` to `<h6>` elements found between `<qgoda-content>` and `</qgoda-content>` and render it as a table of contents, wherever you put the tag `<qgoda-toc>`."
+msgstr ""
+
+#: ../en/docs/table-of-contents.md:58
+msgid "### Table of Contents Template"
+msgstr ""
+
+#: ../en/docs/table-of-contents.md:60
+msgid "When you render a page with a table of contents for the first time you may notice the following log output:"
+msgstr ""
+
+#: ../en/docs/table-of-contents.md:62
+msgid ""
+"```bash\n"
+"[warning] writing default template '_views/components/toc/level.html'\n"
+"[warning] writing default template '_views/components/toc.html'\n"
+"```"
+msgstr ""
+
+#: ../en/docs/table-of-contents.md:67
+msgid "You can see that the template files `_views/components/toc/level.html` and `_views/components/toc.html` have been automatically generated for you.  They are meant as a starting point and hint.  You normally have to at least add some general styling in your <q-term>CSS</q-term> files for the classes uses.  The table of contents that you can see at the top of this page was styled with the following <q-term>CSS</q-term>:"
+msgstr ""
+
+#: ../en/docs/table-of-contents.md:69
+msgid ""
+"```css\n"
+".toc {\n"
+"    border: 1px dotted #818a91;\n"
+"    background-color: #f7f7f9;\n"
+"    margin-bottom: 1rem;\n"
+"    padding: 0.5rem;\n"
+"    padding-bottom: 0rem;\n"
+"}"
+msgstr ""
+
+#: ../en/docs/table-of-contents.md:78
+msgid ""
+".toc ul {\n"
+"    list-style-type: none;\n"
+"}"
+msgstr ""
+
+#: ../en/docs/table-of-contents.md:82
+msgid ""
+".toc .toc-title {\n"
+"    font-weight: bold;\n"
+"    font-size: 110%;\n"
+"    padding-bottom: 0.5rem;\n"
+"}"
+msgstr ""
+
+#: ../en/docs/table-of-contents.md:88
+msgid ""
+"ul.toclevel-1 {\n"
+"   padding-left: 0;\n"
+"}\n"
+"```"
+msgstr ""
+
+#: ../en/docs/table-of-contents.md:93
+msgid "## Gory Details and Configuration"
+msgstr ""
+
+#: ../en/docs/table-of-contents.md:95
+msgid "The table of contents generation is implemented as a <q-term>HTMLFilter</q-term> plug-in.  That means it is executed at the very end of the rendering process."
+msgstr ""
+
+#: ../en/docs/table-of-contents.md:97
+msgid "### Internal Logic"
+msgstr ""
+
+#: ../en/docs/table-of-contents.md:99
+msgid "The plug-in finds all `<h2>` to `<h6>` elements and generates a hierarchy from the tags found.  It is quite strict.  For example, an `<h4>` tag after an `<h3>` tag is ignored because the hierarchy level `<h3>` is missing."
+msgstr ""
+
+#: ../en/docs/table-of-contents.md:101
+msgid "It collects the document structure and passes it in the variable `V:asset.toc` to the plug-in that renders the table of contents.  See the source code of the auto-generated default templates `_views/components/toc.html` and `_views/components/toc/level.html` for details."
+msgstr ""
+
+#: ../en/docs/table-of-contents.md:103
+msgid "Inside all `<h2>` to `<h6>` elements that have been recognized a named anchor `<a id=\"SLUG\" name=\"SLUG\" href=\"#\">` is inserted, where `SLUG` is the <q-term>slugified:slug</q-term> text inside of the headline element.  These named anchors are the targets of the links in the rendered table of contents."
+msgstr ""
+
+#: ../en/docs/table-of-contents.md:105
+msgid "### Configuration"
+msgstr ""
+
+#: ../en/docs/table-of-contents.md:107
+msgid "Since it is an HTMLFilter plug-in, you configure it in the options for the plug-in.  The command `qgoda config` should print something like this:"
+msgstr ""
+
+#: ../en/docs/table-of-contents.md:109
+msgid ""
+"```yaml\n"
+"  options:\n"
+"    HTMLFilter:\n"
+"    - AnchorTarget\n"
+"    - Generator\n"
+"    - CleanUp\n"
+"    - - TOC\n"
+"      - content_tag\n"
+"      - qgoda-content\n"
+"      - toc_tag\n"
+"      - qgoda-toc\n"
+"      - start\n"
+"      - 2\n"
+"      - end\n"
+"      - 6\n"
+"      - template\n"
+"      - components/toc.html\n"
+"```"
+msgstr ""
+
+#: ../en/docs/table-of-contents.md:128
+msgid "A more readable but equivalent form would look like this:"
+msgstr ""
+
+#: ../en/docs/table-of-contents.md:130
+msgid ""
+"```yaml\n"
+"  options:\n"
+"    HTMLFilter:\n"
+"    - AnchorTarget\n"
+"    - Generator\n"
+"    - CleanUp\n"
+"    - [TOC,\n"
+"       content_tag, qgoda-content,\n"
+"       toc_tag, qgoda-toc\n"
+"       start, 2,\n"
+"       end, 6,\n"
+"       template, components/toc.html] \n"
+"```"
+msgstr ""
+
+#: ../en/docs/table-of-contents.md:144
+msgid "The configuration variables are passed as key-value pairs.  Their meaning is as follows:"
+msgstr ""
+
+#: ../en/docs/table-of-contents.md:146
+msgid ""
+"<dl>\n"
+"  <dt><code>content_tag</code></dt>\n"
+"  <dd>The name of the tag that surrounds the content, defaults to <code>qgoda-config</code>.\n"
+"  <dt><code>toc_tag</code></dt>\n"
+"  <dd>The name of the placeholder tag of the table of contents, defaults to <code>qgoda-toc</code>.\n"
+"  <dt><code>start</code></dt>\n"
+"  <dd>The start level of the table of contents, defaults to 2 so that the 1st level will be built by <code>&lt;h2&gt;</code> elements.\n"
+"  <dt><code>end</code></dt>\n"
+"  <dd>The end level of the table of contents, defaults to 6 so that the last level will be built by <code>&lt;h6&gt;</code> elements.\n"
+"  <dt><code>template</code></td>\n"
+"  <dd>The template for rendering the table of contents, defaults to <code>components/toc.html</code> (that is the file <code>_views/components/toc.html</code>).\n"
+"</dl>"
+msgstr ""
+
+#: ../en/docs/table-of-contents.md:159
+msgid "You will find that it is rarely necessary to change any of the defaults."
+msgstr ""
+
 #: ../en/docs/taxonomies.md:2
 msgctxt "title"
 msgid "Taxonomies"
@@ -3455,5 +3700,15 @@ msgstr ""
 
 #: ../en/legal-disclosure.md:25
 msgid "Guido Flohr, info@cantanea.com"
+msgstr ""
+
+#: ../en/news/index.md:6
+msgctxt "readMore"
+msgid "Read More"
+msgstr ""
+
+#: ../en/news/index.md:7
+msgctxt "dateFormat"
+msgid "%b, %d %Y"
 msgstr ""
 

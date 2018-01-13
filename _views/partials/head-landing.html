@@ -1,15 +1,7 @@
 [% USE gtx = Gettext('net.qgoda.www', asset.lingua) %]
 <head>
-  <meta charset="utf-8">
-  <meta name="description" content="[% asset.description %]">
+  [% INCLUDE partials/head/meta.html %]
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>
-    Qgoda Static Site Generator 
-  </title>
-
-  <link rel="icon" href="/images/favicon.png" type="image/png" />
-  <link rel="shortcut icon" href="/images/favicon.png" type="image/png" />
-  <link href="/favicon.ico" type="image/x-icon" />
     
   [% PROCESS functions/styles.tt %]
 

@@ -1,7 +1,6 @@
 [% USE gtx = Gettext('net.qgoda.www', asset.lingua) %]
 <li class="[% css.qgoda.pre %]"><a href="#" name="[% variable %]"></a><span class="[% css.qgoda.variable %]">[% variable %]</span>
   <em>[% gtx.gettext('type:') %]</em> [% type %]
-  <em>[% gtx.gettext('default:') %]</em> [% default %]
-  <span class="[% css.qgoda.no_pre %]">[%- content -%]</span>
+  <em>[% gtx.gettext('default:') %]</em> [% default %]<br /><br /><span class="[% css.qgoda.no_pre %]">[%- content -%]</span>
 
 </li>
