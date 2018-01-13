@@ -1,0 +1,14 @@
+---
+sections: 
+  - ['introduction', 
+     'installation', 'qgoda-in-15-minutes', 'mode-of-operation' ]
+  - ['basics', 
+     'taxonomies', 'listings', 'related-documents',
+      'output-location', 'excluding-files', 'table-of-contents' ]
+  - ['multi-language', 
+     'multi-language-overview' ]
+  - ['miscellaneous', 
+     'differences-to-jekyll' ]
+  - ['lists-and-indices', 
+     'terms-and-concepts', 'template-variables', 'files-and-directories',
+     'configuration-variables' ]
