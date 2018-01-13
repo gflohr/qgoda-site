@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qgoda-site 0.1\n"
 "Report-Msgid-Bugs-To: 'Guido Flohr <guido.flohr@cantanea.com>'\n"
-"PO-Revision-Date: 2018-01-13 00:37+0200\n"
+"PO-Revision-Date: 2018-01-13 11:26+0200\n"
 "Last-Translator: Guido Flohr <guido.flohr@cantanea.com>\n"
 "Language-Team: German\n"
 "Language: de\n"
@@ -221,7 +221,7 @@ msgstr ""
 #: ../_includes/en/landing-page/taxonomies.md:3
 msgctxt "title"
 msgid "Unlimited Taxonomies"
-msgstr "Unbegrenzte viele Taxonomien"
+msgstr "Unbegrenzt viele Taxonomien"
 
 #: ../_includes/en/landing-page/taxonomies.md:8
 msgctxt "image_alt"
@@ -238,6 +238,18 @@ msgstr ""
 "Mit Qgoda gibt es keine Beschränkung auf lediglich Tags oder Kategorien, um "
 "Content zu strukturieren. Stattdessen lassen sich beliebig viele Taxonomien "
 "definieren und für Listen und Filter kombinieren."
+
+#: ../en/data-privacy-policy.md:2
+msgctxt "title"
+msgid "Data Privacy"
+msgstr "Datenschutz"
+
+#: ../en/data-privacy-policy.md:5
+msgctxt "description"
+msgid "What private date does this site receive, and what does it use it for?"
+msgstr ""
+"Welche privaten Daten werden an diese Website geschickt, und wofür werden "
+"sie verwendet?"
 
 #: ../en/data-privacy-policy.md:7
 msgid ""
@@ -263,7 +275,7 @@ msgid ""
 "other\n"
 "media, script files, style sheets and so on."
 msgstr ""
-"Wie praktisch alle Web-Sites speichert auch diese Informationen über jede "
+"Wie fast alle Web-Sites speichert auch diese Informationen über jede "
 "Anfragen in Protokolldateien auf dem Web-Server. Der Besuch einer einzigen "
 "Seite führt in der Regel zu einer Vielzahl von Einzelanfragen, für Texte, "
 "Bilder oder andere Medien, Skriptdateien, Style-Sheets und so weiter."
@@ -352,125 +364,164 @@ msgid ""
 "and sends it back to the server with all following requests until\n"
 "the cookie expires or the browser is instructed to delete it."
 msgstr ""
+"Cookies sind kleine Informationenhappen, die von einer Web-Site an den "
+"Browser gesendet werden. Der Browser speichert diese Informationen in einer "
+"Datei oder im Speicher und sendet sie mit allen folgenden Anfragen an den "
+"Server zurück, bis entweder der Gültigkeitszeitraum des Cookies abgelaufen "
+"ist oder der Browser zur Löschung instruiert wird."
 
 #: ../en/data-privacy-policy.md:58
 msgid ""
-"Typical examples for cookies are language preferences or for example\n"
-"the content of a shopping cart."
+"Typical examples for information stored in cookies are language preferences "
+"or for example the content of a shopping cart."
 msgstr ""
+"Typische Beispiele für in Cookies gespeicherte Informationen sind "
+"Beispielsweise Spracheinstellungen oder der Inhalt eines Warenkorbes."
 
-#: ../en/data-privacy-policy.md:61
+#: ../en/data-privacy-policy.md:60
 msgid "### How Can You Disable Cookies?"
-msgstr ""
+msgstr "### Wie lassen sich Cookies abschalten?"
 
-#: ../en/data-privacy-policy.md:63
+#: ../en/data-privacy-policy.md:62
 msgid ""
 "Please see your browser's documentation for information about how to\n"
 "disable cookies in general, for specific sites, or from specific sources."
 msgstr ""
+"Die Dokumentation des Browsers beschreibt, wie sich Cookies allgemein, für "
+"bestimmte Web-Sites oder von bestimmten Quellen abschalten lassen."
 
-#: ../en/data-privacy-policy.md:66
-msgid "[% IF config.google.analytics_id %]"
-msgstr ""
-
-#: ../en/data-privacy-policy.md:68
+#: ../en/data-privacy-policy.md:67
 msgid "## Google Analytics"
-msgstr ""
+msgstr "## Google Analytics"
 
-#: ../en/data-privacy-policy.md:70
+#: ../en/data-privacy-policy.md:69
 msgid ""
-"This website uses Google Analytics, a web tracking and analysis serve\n"
+"This website uses Google Analytics, a web tracking and analysis service\n"
 "by Google Inc., 1600 Amphitheater Parkway, Mountain View, CA 94043, USA,\n"
 "hereinafter referred as \"Google\"."
 msgstr ""
+"Diese Web-Site nutzt Google Analytics, einen Web-Tracking und Analyse-Dienst "
+"von Google Inc., 1600 Amphitheater Parkway, Mountain View, CA 94043, USA, "
+"nachfolgend „Google” genannt."
 
-#: ../en/data-privacy-policy.md:74
+#: ../en/data-privacy-policy.md:73
 msgid ""
 "Google also uses cookies (see above) for storing information\n"
 "about your use of this site.  The information stored in these cookies is \n"
 "sent to Google servers, usually in the USA, and stored there."
 msgstr ""
+"Auch Google nutzt Cookies (siehe oben), um Informationen über Ihre Nutzung "
+"der Web-Site zu speichern. Die Informationen, die in diesen Cookies "
+"gespeichert ist, wird zu Googles Servers, die sich in der Regel in den USA "
+"befinden, geschickt und dort gespeichert."
 
-#: ../en/data-privacy-policy.md:78
+#: ../en/data-privacy-policy.md:77
 msgid "### Data Usage"
-msgstr ""
+msgstr "## Verwendung der Daten"
 
-#: ../en/data-privacy-policy.md:80
+#: ../en/data-privacy-policy.md:79
 msgid ""
 "Google uses the information for analyzing your usage of this site.  It\n"
 "compiles reports on the website activities and the audience of the site,\n"
 "and provides other services concerning the use of the website and \n"
 "internet usage in general."
 msgstr ""
+"Google verwendet diese Informationen, um Ihre Nutzung der Web-Site zu "
+"analysieren, Berichte über die Website-Aktivitäten und das Publikum der Site "
+"zusammenzustellen und stellt weitere die Verwendung der Web-Site betreffende "
+"Dienste und die Benutzung des Internets im Allgemeinen zur Verfügung."
 
-#: ../en/data-privacy-policy.md:85
+#: ../en/data-privacy-policy.md:84
 msgid "### AdWords and DoubleClick"
-msgstr ""
+msgstr "### AdWords und DoubleClick"
 
-#: ../en/data-privacy-policy.md:87
+#: ../en/data-privacy-policy.md:86
+#, fuzzy
 msgid ""
-"This site also uses Google Analytics for analsys of data from AdWords\n"
+"This site also uses Google Analytics for analysis of data from AdWords\n"
 "and DoubleClick.  Both services use cookies as well.  You can opt out\n"
 "of this data sharing with the Ads Preferences Manager at\n"
 "http://www.google.com/settings/ads/onweb/?hl=en."
 msgstr ""
+"Diese Web-Site nutzt Google Analytics auch für Daten von AdWords und "
+"DoubleClick. Beide Dienste setzen ebenfalls Cookies ein. Das Teilen dieser "
+"Daten lässt sich mit dem Ads Preferences Manager unter http://www.google.com/"
+"settings/ads/onweb/?hl=de deaktivieren."
 
-#: ../en/data-privacy-policy.md:92
+#: ../en/data-privacy-policy.md:91
 msgid "### IP Abbreviation"
-msgstr ""
+msgstr "### IP-Kürzung"
 
-#: ../en/data-privacy-policy.md:94
+#: ../en/data-privacy-policy.md:93
+#, fuzzy
 msgid ""
 "This site has activated IP abbreviation for Google Analytics.  Your IP\n"
 "address will be abbreviated by Google within Member States of the \n"
-"European Union or in other states that are signatories to to the \n"
+"European Union or in other states that are signatories to the \n"
 "Agreement on the European Economic Area.  Only in exceptional cases will\n"
 "the full IP address be transferred to a Google server in the USA before\n"
 "it is abbreviated."
 msgstr ""
+"Diese Web-Site hat die IP-Abkürzung für Google Analytics aktiviert. Ihre IP-"
+"Adresse wird von Google innerhalb der Europäischen Union oder weiteren "
+"Unterzeichnerstaaten des Abkommen über den Europäischen Wirtschaftsraum "
+"abgekürzt. Die Übermittlung der vollen IP-Adresse zu einem Google-Server in "
+"den USA erfolgt nur in Ausnahmefällen vor der Abkürzung."
 
-#: ../en/data-privacy-policy.md:101
+#: ../en/data-privacy-policy.md:100
 msgid "### Browser Plug-In"
-msgstr ""
+msgstr "### Browser-Plug-In"
 
-#: ../en/data-privacy-policy.md:103
+#: ../en/data-privacy-policy.md:102
 msgid ""
 "You can prevent your data being used by Google Analytics with the\n"
 "installation of the Google Analytics Opt-out Browser Add-on that can\n"
 "be downloaded from https://tools.google.com/dlpage/gaoptout?hl=en."
 msgstr ""
+"Die Verwendung der eigenen Daten durch Google Analytics kann mit der "
+"Installation des Browser-Add-ons zur Deaktivierung von Google Analytics "
+"verhindert werden, dass von https://tools.google.com/dlpage/gaoptout?hl=de "
+"heruntergeladen werden kann."
 
-#: ../en/data-privacy-policy.md:107
+#: ../en/data-privacy-policy.md:106
 msgid "### Further Information by Google"
-msgstr ""
+msgstr "### Weitere Informationen von Google"
 
-#: ../en/data-privacy-policy.md:109
+#: ../en/data-privacy-policy.md:108
 msgid ""
 "Google provides additional information about the conditions of use\n"
 "and data protection under http://www.google.com/analytics/terms/gb.html\n"
 "and http://www.google.com/intl/en-GB/policies/privacy/."
 msgstr ""
+"Google stellt unter http://www.google.com/analytics/terms/de.html\n"
+"und http://www.google.com/intl/de/policies/privacy/ weitere Informationen "
+"über die Nutzungsbedingungen und Datenschutz zur Verfügung."
 
-#: ../en/data-privacy-policy.md:113
-msgid "[% END %]"
-msgstr ""
+#: ../en/docs/basics.md:2
+msgctxt "title"
+msgid "Basics"
+msgstr "Grundlagen"
 
-#: ../en/docs/configuration-variables.md:8
-#: ../en/docs/files-and-directories.md:8
+#: ../en/docs/configuration-variables.md:2
+msgctxt "title"
+msgid "Configuration Variables"
+msgstr "Konfigurations-Variablen"
+
+#: ../en/docs/configuration-variables.md:6
+msgctxt "description"
+msgid "Complete List Of Configuration Variables"
+msgstr "Vollständige Liste der Konfigurationsvariablen"
+
+#: ../en/docs/configuration-variables.md:13
+#, fuzzy
 msgid ""
-"[% USE q = Qgoda %]\n"
-"[% PROCESS \"functions/css-modules.tt\" %]"
-msgstr ""
-
-#: ../en/docs/configuration-variables.md:11
-msgid ""
-"The following configuration variables from the file `_config.yml` are "
+"The following configuration variables from the file `P:_config.yml` are "
 "understood by Qgoda:"
 msgstr ""
 "Die folgenden Konfigurationsvariablen aus `P:_config.yaml` werden von Qgoda "
 "verarbeitet:"
 
-#: ../en/docs/configuration-variables.md:13
+#: ../en/docs/configuration-variables.md:15
 msgid ""
 "<ul>\n"
 "[% WRAPPER components/variable.html\n"
@@ -482,8 +533,18 @@ msgid ""
 "another machine or some storage medium such as a USB stick.\n"
 "[%- END %]"
 msgstr ""
+"<ul>\n"
+"[% WRAPPER components/variable.html\n"
+"   variable=\"case-sensitive\" type='0 oder 1' \n"
+"   default='0' -%]\n"
+"0, um Groß- und Kleinschreibung von Dateinamen zu ignorieren, ansonsten 1. "
+"Auch auf case-sensitiven Dateisystemen sollte man es normalerweise bei der "
+"Voreinstellung 0 belassen, um Probleme zu verhindern, wenn die Site auf "
+"einen andere Maschine oder ein Speichermedium wie einen USB-Stick kopiert "
+"wird.\n"
+"[%- END %]"
 
-#: ../en/docs/configuration-variables.md:20
+#: ../en/docs/configuration-variables.md:22
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"exclude\" type='Array' \n"
@@ -493,8 +554,16 @@ msgid ""
 "lxref('title', name = 'excluding-files') %]</a>!\n"
 "[%- END %]"
 msgstr ""
+"[% WRAPPER components/variable.html\n"
+"   variable=\"exclude\" type='Liste' \n"
+"   default='empty'leer -%]\n"
+"Eine Liste von Dateien und Verzeichnissen, die nicht verarbeitet werden "
+"sollen. Es können Suchmuster verwendet werden. Siehe <a href=\"[% q."
+"llink(name = 'excluding-files') %]\">[% q.lxref('title', name = 'excluding-"
+"files') %]</a>!\n"
+"[%- END %]"
 
-#: ../en/docs/configuration-variables.md:26
+#: ../en/docs/configuration-variables.md:28
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"exclude_watch\" type='Array' \n"
@@ -504,8 +573,16 @@ msgid ""
 "files') %]\">[% q.lxref('title', name = 'excluding-files') %]</a>!\n"
 "[%- END %]"
 msgstr ""
+"[% WRAPPER components/variable.html\n"
+"   variable=\"exclude_watch\" type='Liste' \n"
+"   default='wie oben für \"exclude\"' -%]\n"
+"Eine Liste von Dateien und Verzeichnissen, die bei einer Änderung keine "
+"Neugenerierung der Site auslösen sollen. Es können Suchmuster verwendet "
+"werden. Siehe <a href=\"[% q.llink(name = 'excluding-files') %]\">[% q."
+"lxref('title', name = 'excluding-files') %]</a>!\n"
+"[%- END %]"
 
-#: ../en/docs/configuration-variables.md:32
+#: ../en/docs/configuration-variables.md:34
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"link_score\" type='Integer' \n"
@@ -516,8 +593,16 @@ msgid ""
 "10.\n"
 "[%- END %]"
 msgstr ""
+"[% WRAPPER components/variable.html\n"
+"   variable=\"link_score\" type='Ganzzahl' \n"
+"   default=5 -%]\n"
+"Die Ähnlicheitswichtung zweier untereinander verlinkter Dokumente. Diese "
+"Wichtung wird von jedem Dokument aus gezählt. Wenn also Dokument A auf "
+"Dokument B verlinkt und B auch auf A, ergibt dies ein Gesamtgewichtung von "
+"zehn zwischen A und B\n"
+"[%- END %]"
 
-#: ../en/docs/configuration-variables.md:38
+#: ../en/docs/configuration-variables.md:40
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"title\" type='String' \n"
@@ -526,13 +611,23 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:44
+#: ../en/docs/configuration-variables.md:46
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"tours\" type='Hash' -%]\n"
 "TODO!\n"
 "[%- END %]\n"
 "</ul>"
+msgstr ""
+
+#: ../en/docs/differences-to-jekyll.md:2
+msgctxt "title"
+msgid "Differences to Jekyll"
+msgstr ""
+
+#: ../en/docs/differences-to-jekyll.md:6
+msgctxt "description"
+msgid "This page explains where Qgoda differs from Jekyll and why."
 msgstr ""
 
 #: ../en/docs/differences-to-jekyll.md:8
@@ -877,6 +972,16 @@ msgstr ""
 
 #: ../en/docs/differences-to-jekyll.md:154
 msgid "[- TAGS [% %] -]"
+msgstr ""
+
+#: ../en/docs/excluding-files.md:2
+msgctxt "title"
+msgid "Excluding Files"
+msgstr ""
+
+#: ../en/docs/excluding-files.md:6
+msgctxt "description"
+msgid "How to exclude (or include) additional paths in Qgoda."
 msgstr ""
 
 #: ../en/docs/excluding-files.md:8
@@ -1316,13 +1421,23 @@ msgstr ""
 msgid "### Slashes"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:11
+#: ../en/docs/files-and-directories.md:2
+msgctxt "title"
+msgid "Files and Directories"
+msgstr ""
+
+#: ../en/docs/files-and-directories.md:6
+msgctxt "description"
+msgid "Complete List of Files and Directories"
+msgstr "Vollständige Liste verwendeter Dateien und Verzeichnisse"
+
+#: ../en/docs/files-and-directories.md:13
 msgid ""
 "A typical Qgoda site contains a couple of standard files and directories.\n"
 "They are described in the following list."
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:14
+#: ../en/docs/files-and-directories.md:16
 msgid ""
 "[% WRAPPER components/infobox.html\n"
 "           type='info' title='Sorting of This List' %]\n"
@@ -1331,11 +1446,11 @@ msgid ""
 "[% END %]"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:20
+#: ../en/docs/files-and-directories.md:22
 msgid "<ul>"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:22
+#: ../en/docs/files-and-directories.md:24
 msgid ""
 "[% WRAPPER components/file.html\n"
 "   name=\"_assets\" type='directory' -%]\n"
@@ -1344,7 +1459,7 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:28
+#: ../en/docs/files-and-directories.md:30
 msgid ""
 "[% WRAPPER components/file.html\n"
 "   name=\"_config.yaml\" type='file' -%]\n"
@@ -1352,7 +1467,7 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:33
+#: ../en/docs/files-and-directories.md:35
 msgid ""
 "[% WRAPPER components/file.html\n"
 "   name=\"_config.yml\" type='file' -%]\n"
@@ -1362,14 +1477,14 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:39
+#: ../en/docs/files-and-directories.md:41
 msgid ""
 "[% WRAPPER components/file.html\n"
 "   name=\"_includes\" type='directory'\n"
 "   overridable=\"paths.includes\" -%]"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:43
+#: ../en/docs/files-and-directories.md:45
 msgid ""
 "Directory for included content snippets.  You use that for example\n"
 "like <code>[&#37; q.include(\"_includes/footer.md\") &#37;]</code>.  You \n"
@@ -1378,28 +1493,28 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:49
+#: ../en/docs/files-and-directories.md:51
 msgid ""
 "[% WRAPPER components/file.html\n"
 "   name=\"_plugins\" type='directory'\n"
 "   overridable=\"paths.plugins\" -%]"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:53
+#: ../en/docs/files-and-directories.md:55
 msgid ""
 "Directory for site-specific plug-ins.  Plug-Ins in this directory are\n"
 "automatically activated.\n"
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:57
+#: ../en/docs/files-and-directories.md:59
 msgid ""
 "[% WRAPPER components/file.html\n"
 "   name=\"_site\" type='directory'\n"
 "   overridable=\"paths.site\" -%]"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:61
+#: ../en/docs/files-and-directories.md:63
 msgid ""
 "The output directory.  This will normally be the document root of your\n"
 "web server.  Files and directories in <code>P:_site</code> are \n"
@@ -1407,14 +1522,14 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:66
+#: ../en/docs/files-and-directories.md:68
 msgid ""
 "[% WRAPPER components/file.html\n"
 "   name=\"_timestamp\" type='file'\n"
 "   overridable=\"paths.timestamp\" -%]"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:70
+#: ../en/docs/files-and-directories.md:72
 msgid ""
 "This file contains the time, when <code>P:_site</code> was last\n"
 "re-created as seconds since the <q-term>epoch</q-term>.  If you \n"
@@ -1424,8 +1539,21 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:77
+#: ../en/docs/files-and-directories.md:79
 msgid "</ul>"
+msgstr ""
+
+#: ../en/docs/index.md:3
+msgctxt "title"
+msgid "Documentation"
+msgstr ""
+
+#: ../en/docs/index.md:8
+msgctxt "description"
+msgid ""
+"Learn how to create a website with Qgoda, with tutorial-style introductory "
+"information for beginners or exhaustive API documentation for the "
+"experienced."
 msgstr ""
 
 #: ../en/docs/index.md:10
@@ -1486,12 +1614,14 @@ msgid ""
 "[% END %]"
 msgstr ""
 
-# Der bahn.de-Routenplaner für Ihren Webauftritt
-#: ../en/docs/index.md:50
-msgid ""
-"<script src=\"https://vat.db-app.de/buttons?button=2116&language=de\" type="
-"\"text/javascript\"></script>\n"
-"<!-- ENDE -->"
+#: ../en/docs/installation.md:2
+msgctxt "title"
+msgid "Installation"
+msgstr ""
+
+#: ../en/docs/installation.md:7
+msgctxt "description"
+msgid "How to install Qgoda and its dependencies on your local system"
 msgstr ""
 
 #: ../en/docs/installation.md:9
@@ -1747,6 +1877,21 @@ msgstr ""
 msgid "See https://yarnpkg.com/en/docs/install for instructions."
 msgstr ""
 
+#: ../en/docs/introduction.md:2
+msgctxt "title"
+msgid "Introduction"
+msgstr ""
+
+#: ../en/docs/listings.md:2
+msgctxt "title"
+msgid "Listings and Links"
+msgstr ""
+
+#: ../en/docs/listings.md:6
+msgctxt "description"
+msgid "Qgoda generates listings based on taxonomies."
+msgstr ""
+
 #: ../en/docs/listings.md:8
 msgid ""
 "Link lists are crucial for the navigation on most web sites.  Qgoda \n"
@@ -1803,6 +1948,28 @@ msgid ""
 "template variables.  Qgoda uses template functions instead, and these\n"
 "functions return unsorted lists.\n"
 "[% END %]"
+msgstr ""
+
+#: ../en/docs/lists-and-indices.md:2
+msgctxt "title"
+msgid "Lists and Indices"
+msgstr ""
+
+#: ../en/docs/miscellaneous.md:2
+msgctxt "title"
+msgid "Miscellaneous"
+msgstr ""
+
+#: ../en/docs/mode-of-operation.md:2
+msgctxt "title"
+msgid "Mode Of Operation"
+msgstr ""
+
+#: ../en/docs/mode-of-operation.md:6
+msgctxt "description"
+msgid ""
+"Qgoda basically copies files for deployment, optionally cooking the content "
+"with processor plug-ins."
 msgstr ""
 
 #: ../en/docs/mode-of-operation.md:8
@@ -1968,15 +2135,30 @@ msgid ""
 "the Do-What-I-Mean™ paradigm."
 msgstr ""
 
+#: ../en/docs/multi-language-overview.md:2
+msgctxt "title"
+msgid "Multi-Language Overview"
+msgstr "Übersicht Mehrsprachigkeit"
+
+#: ../en/docs/multi-language-overview.md:6
+msgctxt "description"
+msgid ""
+"Overview of Qgoda's Multi-Language and Internationalization (I18N) features"
+msgstr ""
+"Übersicht über die Mehrsprachigkeits- und Internationalisierungs-Features "
+"von Qgoda"
+
 #: ../en/docs/multi-language-overview.md:8
 msgid "## Multi-Language Overview"
-msgstr ""
+msgstr "## Übersichtt Mehrsprachigkeit"
 
 #: ../en/docs/multi-language-overview.md:10
 msgid ""
 "Multi-lingualism in Qgoda is an integral, built-in feature mostly built upon "
 "easy to follow conventions."
 msgstr ""
+"Mehrsprachigkeit ist ein integrales Feature von Qgoda, das größtenteils auf "
+"leicht zu befolgenden Konventionen aufbaut."
 
 #: ../en/docs/multi-language-overview.md:12
 msgid ""
@@ -2212,6 +2394,21 @@ msgstr ""
 msgid ""
 "Likewise, for links resp. cross-references you add the additional filter for "
 "the language or just use `q.lxref()` instead of `q.xref()` and you are done."
+msgstr ""
+
+#: ../en/docs/multi-language.md:2
+msgctxt "title"
+msgid "Multi-Language"
+msgstr "Mehrsprachigkeit"
+
+#: ../en/docs/output-location.md:2
+msgctxt "title"
+msgid "Output Location"
+msgstr ""
+
+#: ../en/docs/output-location.md:6
+msgctxt "description"
+msgid "Learn how input locations are translated to output locations in Qgoda."
 msgstr ""
 
 #: ../en/docs/output-location.md:8
@@ -2526,6 +2723,18 @@ msgstr ""
 
 #: ../en/docs/output-location.md:216
 msgid "Quoted strings have JavaScript semantics!"
+msgstr ""
+
+#: ../en/docs/qgoda-in-15-minutes.md:2
+msgctxt "title"
+msgid "Qgoda in 15 Minutes"
+msgstr "Qgoda in 15 Minuten"
+
+#: ../en/docs/qgoda-in-15-minutes.md:6
+msgctxt "description"
+msgid ""
+"Learn the basic concepts of Qgoda in 15 minutes by building an ugly but "
+"simple site from scratch."
 msgstr ""
 
 #: ../en/docs/qgoda-in-15-minutes.md:8
@@ -3404,6 +3613,18 @@ msgid ""
 "Qgoda demo themes for advanced functionality."
 msgstr ""
 
+#: ../en/docs/related-documents.md:2
+msgctxt "title"
+msgid "Related Documents"
+msgstr ""
+
+#: ../en/docs/related-documents.md:6
+msgctxt "description"
+msgid ""
+"Qgoda tries to find relations between posts automatically based on shared "
+"tags and other criteria."
+msgstr ""
+
 #: ../en/docs/related-documents.md:8
 msgid "## How To Display Related Documents"
 msgstr ""
@@ -3695,6 +3916,16 @@ msgid ""
 "of the related asset and the mutual relation score."
 msgstr ""
 
+#: ../en/docs/taxonomies.md:2
+msgctxt "title"
+msgid "Taxonomies"
+msgstr "Taxonomien"
+
+#: ../en/docs/taxonomies.md:6
+msgctxt "description"
+msgid "Taxonomies partition your site according to arbitrary aspects."
+msgstr ""
+
 #: ../en/docs/taxonomies.md:8
 msgid ""
 "Taxonomies group assets into groups sharing common properties.  Qgoda "
@@ -3799,6 +4030,16 @@ msgid ""
 "</figure>"
 msgstr ""
 
+#: ../en/docs/template-variables.md:2
+msgctxt "title"
+msgid "Template Variables"
+msgstr ""
+
+#: ../en/docs/template-variables.md:6
+msgctxt "description"
+msgid "Standard and Pre-Defined Template Variables"
+msgstr ""
+
 #: ../en/docs/template-variables.md:8
 msgid ""
 "[% USE q = Qgoda %]\n"
@@ -3868,6 +4109,16 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
+#: ../en/docs/terms-and-concepts.md:2
+msgctxt "title"
+msgid "Terms and Concepts"
+msgstr ""
+
+#: ../en/docs/terms-and-concepts.md:7
+msgctxt "description"
+msgid "Explanation of frequently used terms and concepts"
+msgstr ""
+
 #: ../en/docs/terms-and-concepts.md:15
 msgid ""
 "[% WRAPPER components/term.html term=\"epoch\" -%]\n"
@@ -3896,6 +4147,29 @@ msgid ""
 "Sass 3.  It is a strict superset of CSS, so that every valid CSS file is\n"
 "also a valid SCSS file.\n"
 "[%- END %]"
+msgstr ""
+
+#: ../en/index.md:3
+msgctxt "title"
+msgid "Qgoda Static Site Generator"
+msgstr "Qgoda Static Site Generator"
+
+#: ../en/index.md:8
+msgctxt "description"
+msgid ""
+"Qgoda is a static site generator with a strong focus on multi-linguism and "
+"flexibility, written in Perl but extensible with JavaScript, Python, Ruby, "
+"Java, and more."
+msgstr ""
+
+#: ../en/legal-disclosure.md:2
+msgctxt "title"
+msgid "Legal Disclosure"
+msgstr ""
+
+#: ../en/legal-disclosure.md:5
+msgctxt "description"
+msgid "Imprint"
 msgstr ""
 
 #: ../en/legal-disclosure.md:7
@@ -3933,33 +4207,6 @@ msgstr ""
 #: ../en/legal-disclosure.md:25
 msgid "Guido Flohr, info@cantanea.com"
 msgstr ""
-
-#~ msgctxt "title"
-#~ msgid "Data Privacy"
-#~ msgstr "Datenschutz"
-
-#~ msgctxt "description"
-#~ msgid ""
-#~ "What private date does this site receive, and what does it use it for?"
-#~ msgstr ""
-#~ "Welche privaten Daten werden an diese Website geschickt, und wofür werden "
-#~ "sie verwendet?"
-
-#~ msgctxt "title"
-#~ msgid "Basics"
-#~ msgstr "Grundlagen"
-
-#~ msgctxt "title"
-#~ msgid "Configuration Variables"
-#~ msgstr "Konfigurations-Variablen"
-
-#~ msgctxt "description"
-#~ msgid "Complete List Of Configuration Variables"
-#~ msgstr "Vollständige Liste der Konfigurationsvariablen"
-
-#~ msgctxt "title"
-#~ msgid "Qgoda in 15 Minutes"
-#~ msgstr "Qgoda in 15 Minuten"
 
 #~ msgid "Basics"
 #~ msgstr "Grundlagen"

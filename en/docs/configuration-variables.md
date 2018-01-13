@@ -5,10 +5,12 @@ section: lists-and-indices
 view: docs.html
 description: Complete List Of Configuration Variables
 ---
+<!--QGODA-NO-XGETTEXT-->
 [% USE q = Qgoda %]
 [% PROCESS "functions/css-modules.tt" %]
+<!--/QGODA-NO-XGETTEXT-->
 
-The following configuration variables from the file `_config.yml` are understood by Qgoda:
+The following configuration variables from the file `P:_config.yml` are understood by Qgoda:
 
 <ul>
 [% WRAPPER components/variable.html

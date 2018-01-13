@@ -55,19 +55,18 @@ browser.  The browser stores this information in a file or in memory,
 and sends it back to the server with all following requests until
 the cookie expires or the browser is instructed to delete it.
 
-Typical examples for cookies are language preferences or for example
-the content of a shopping cart.
+Typical examples for information stored in cookies are language preferences or for example the content of a shopping cart.
 
 ### How Can You Disable Cookies?
 
 Please see your browser's documentation for information about how to
 disable cookies in general, for specific sites, or from specific sources.
 
-[% IF config.google.analytics_id %]
+<!--QGODA-NO-XGETTEXT-->[% IF config.google.analytics_id %]<!--/QGODA-NO-XGETTEXT-->
 
 ## Google Analytics
 
-This website uses Google Analytics, a web tracking and analysis serve
+This website uses Google Analytics, a web tracking and analysis service
 by Google Inc., 1600 Amphitheater Parkway, Mountain View, CA 94043, USA,
 hereinafter referred as "Google".
 
@@ -84,7 +83,7 @@ internet usage in general.
 
 ### AdWords and DoubleClick
 
-This site also uses Google Analytics for analsys of data from AdWords
+This site also uses Google Analytics for analysis of data from AdWords
 and DoubleClick.  Both services use cookies as well.  You can opt out
 of this data sharing with the Ads Preferences Manager at
 http://www.google.com/settings/ads/onweb/?hl=en.
@@ -93,7 +92,7 @@ http://www.google.com/settings/ads/onweb/?hl=en.
 
 This site has activated IP abbreviation for Google Analytics.  Your IP
 address will be abbreviated by Google within Member States of the 
-European Union or in other states that are signatories to to the 
+European Union or in other states that are signatories to the 
 Agreement on the European Economic Area.  Only in exceptional cases will
 the full IP address be transferred to a Google server in the USA before
 it is abbreviated.
@@ -110,4 +109,4 @@ Google provides additional information about the conditions of use
 and data protection under http://www.google.com/analytics/terms/gb.html
 and http://www.google.com/intl/en-GB/policies/privacy/.
 
-[% END %]
+<!--QGODA-NO-XGETTEXT-->[% END %]<!--/QGODA-NO-XGETTEXT-->

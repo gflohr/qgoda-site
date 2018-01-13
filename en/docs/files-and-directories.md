@@ -5,8 +5,10 @@ section: lists-and-indices
 view: docs.html
 description: Complete List of Files and Directories
 ---
+<!--QGODA-NO-XGETTEXT-->
 [% USE q = Qgoda %]
 [% PROCESS "functions/css-modules.tt" %]
+<!--/QGODA-NO-XGETTEXT-->
 
 A typical Qgoda site contains a couple of standard files and directories.
 They are described in the following list.

@@ -142,6 +142,16 @@ msgid ""
 "can freely combine them for listings and filters."
 msgstr ""
 
+#: ../en/data-privacy-policy.md:2
+msgctxt "title"
+msgid "Data Privacy"
+msgstr ""
+
+#: ../en/data-privacy-policy.md:5
+msgctxt "description"
+msgid "What private date does this site receive, and what does it use it for?"
+msgstr ""
+
 #: ../en/data-privacy-policy.md:7
 msgid ""
 "You cannot download any data or information from the internet without sending\n"
@@ -223,46 +233,41 @@ msgid ""
 msgstr ""
 
 #: ../en/data-privacy-policy.md:58
-msgid "Typical examples for cookies are language preferences or for example\n"
-"the content of a shopping cart."
+msgid "Typical examples for information stored in cookies are language preferences or for example the content of a shopping cart."
 msgstr ""
 
-#: ../en/data-privacy-policy.md:61
+#: ../en/data-privacy-policy.md:60
 msgid "### How Can You Disable Cookies?"
 msgstr ""
 
-#: ../en/data-privacy-policy.md:63
+#: ../en/data-privacy-policy.md:62
 msgid "Please see your browser's documentation for information about how to\n"
 "disable cookies in general, for specific sites, or from specific sources."
 msgstr ""
 
-#: ../en/data-privacy-policy.md:66
-msgid "[% IF config.google.analytics_id %]"
-msgstr ""
-
-#: ../en/data-privacy-policy.md:68
+#: ../en/data-privacy-policy.md:67
 msgid "## Google Analytics"
 msgstr ""
 
-#: ../en/data-privacy-policy.md:70
+#: ../en/data-privacy-policy.md:69
 msgid ""
-"This website uses Google Analytics, a web tracking and analysis serve\n"
+"This website uses Google Analytics, a web tracking and analysis service\n"
 "by Google Inc., 1600 Amphitheater Parkway, Mountain View, CA 94043, USA,\n"
 "hereinafter referred as \"Google\"."
 msgstr ""
 
-#: ../en/data-privacy-policy.md:74
+#: ../en/data-privacy-policy.md:73
 msgid ""
 "Google also uses cookies (see above) for storing information\n"
 "about your use of this site.  The information stored in these cookies is \n"
 "sent to Google servers, usually in the USA, and stored there."
 msgstr ""
 
-#: ../en/data-privacy-policy.md:78
+#: ../en/data-privacy-policy.md:77
 msgid "### Data Usage"
 msgstr ""
 
-#: ../en/data-privacy-policy.md:80
+#: ../en/data-privacy-policy.md:79
 msgid ""
 "Google uses the information for analyzing your usage of this site.  It\n"
 "compiles reports on the website activities and the audience of the site,\n"
@@ -270,69 +275,74 @@ msgid ""
 "internet usage in general."
 msgstr ""
 
-#: ../en/data-privacy-policy.md:85
+#: ../en/data-privacy-policy.md:84
 msgid "### AdWords and DoubleClick"
 msgstr ""
 
-#: ../en/data-privacy-policy.md:87
+#: ../en/data-privacy-policy.md:86
 msgid ""
-"This site also uses Google Analytics for analsys of data from AdWords\n"
+"This site also uses Google Analytics for analysis of data from AdWords\n"
 "and DoubleClick.  Both services use cookies as well.  You can opt out\n"
 "of this data sharing with the Ads Preferences Manager at\n"
 "http://www.google.com/settings/ads/onweb/?hl=en."
 msgstr ""
 
-#: ../en/data-privacy-policy.md:92
+#: ../en/data-privacy-policy.md:91
 msgid "### IP Abbreviation"
 msgstr ""
 
-#: ../en/data-privacy-policy.md:94
+#: ../en/data-privacy-policy.md:93
 msgid ""
 "This site has activated IP abbreviation for Google Analytics.  Your IP\n"
 "address will be abbreviated by Google within Member States of the \n"
-"European Union or in other states that are signatories to to the \n"
+"European Union or in other states that are signatories to the \n"
 "Agreement on the European Economic Area.  Only in exceptional cases will\n"
 "the full IP address be transferred to a Google server in the USA before\n"
 "it is abbreviated."
 msgstr ""
 
-#: ../en/data-privacy-policy.md:101
+#: ../en/data-privacy-policy.md:100
 msgid "### Browser Plug-In"
 msgstr ""
 
-#: ../en/data-privacy-policy.md:103
+#: ../en/data-privacy-policy.md:102
 msgid ""
 "You can prevent your data being used by Google Analytics with the\n"
 "installation of the Google Analytics Opt-out Browser Add-on that can\n"
 "be downloaded from https://tools.google.com/dlpage/gaoptout?hl=en."
 msgstr ""
 
-#: ../en/data-privacy-policy.md:107
+#: ../en/data-privacy-policy.md:106
 msgid "### Further Information by Google"
 msgstr ""
 
-#: ../en/data-privacy-policy.md:109
+#: ../en/data-privacy-policy.md:108
 msgid ""
 "Google provides additional information about the conditions of use\n"
 "and data protection under http://www.google.com/analytics/terms/gb.html\n"
 "and http://www.google.com/intl/en-GB/policies/privacy/."
 msgstr ""
 
-#: ../en/data-privacy-policy.md:113
-msgid "[% END %]"
+#: ../en/docs/basics.md:2
+msgctxt "title"
+msgid "Basics"
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:8
-#: ../en/docs/files-and-directories.md:8
-msgid "[% USE q = Qgoda %]\n"
-"[% PROCESS \"functions/css-modules.tt\" %]"
+#: ../en/docs/configuration-variables.md:2
+msgctxt "title"
+msgid "Configuration Variables"
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:11
-msgid "The following configuration variables from the file `_config.yml` are understood by Qgoda:"
+#: ../en/docs/configuration-variables.md:6
+msgctxt "description"
+msgid "Complete List Of Configuration Variables"
 msgstr ""
 
 #: ../en/docs/configuration-variables.md:13
+msgid "The following configuration variables from the file `P:_config.yml` are understood by Qgoda:"
+msgstr ""
+
+#: ../en/docs/configuration-variables.md:15
 msgid ""
 "<ul>\n"
 "[% WRAPPER components/variable.html\n"
@@ -342,7 +352,7 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:20
+#: ../en/docs/configuration-variables.md:22
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"exclude\" type='Array' \n"
@@ -351,7 +361,7 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:26
+#: ../en/docs/configuration-variables.md:28
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"exclude_watch\" type='Array' \n"
@@ -360,7 +370,7 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:32
+#: ../en/docs/configuration-variables.md:34
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"link_score\" type='Integer' \n"
@@ -369,7 +379,7 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:38
+#: ../en/docs/configuration-variables.md:40
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"title\" type='String' \n"
@@ -378,13 +388,23 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:44
+#: ../en/docs/configuration-variables.md:46
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"tours\" type='Hash' -%]\n"
 "TODO!\n"
 "[%- END %]\n"
 "</ul>"
+msgstr ""
+
+#: ../en/docs/differences-to-jekyll.md:2
+msgctxt "title"
+msgid "Differences to Jekyll"
+msgstr ""
+
+#: ../en/docs/differences-to-jekyll.md:6
+msgctxt "description"
+msgid "This page explains where Qgoda differs from Jekyll and why."
 msgstr ""
 
 #: ../en/docs/differences-to-jekyll.md:8
@@ -645,6 +665,16 @@ msgstr ""
 
 #: ../en/docs/differences-to-jekyll.md:154
 msgid "[- TAGS [% %] -]"
+msgstr ""
+
+#: ../en/docs/excluding-files.md:2
+msgctxt "title"
+msgid "Excluding Files"
+msgstr ""
+
+#: ../en/docs/excluding-files.md:6
+msgctxt "description"
+msgid "How to exclude (or include) additional paths in Qgoda."
 msgstr ""
 
 #: ../en/docs/excluding-files.md:8
@@ -998,12 +1028,22 @@ msgstr ""
 msgid "### Slashes"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:11
+#: ../en/docs/files-and-directories.md:2
+msgctxt "title"
+msgid "Files and Directories"
+msgstr ""
+
+#: ../en/docs/files-and-directories.md:6
+msgctxt "description"
+msgid "Complete List of Files and Directories"
+msgstr ""
+
+#: ../en/docs/files-and-directories.md:13
 msgid "A typical Qgoda site contains a couple of standard files and directories.\n"
 "They are described in the following list."
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:14
+#: ../en/docs/files-and-directories.md:16
 msgid ""
 "[% WRAPPER components/infobox.html\n"
 "           type='info' title='Sorting of This List' %]\n"
@@ -1012,11 +1052,11 @@ msgid ""
 "[% END %]"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:20
+#: ../en/docs/files-and-directories.md:22
 msgid "<ul>"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:22
+#: ../en/docs/files-and-directories.md:24
 msgid ""
 "[% WRAPPER components/file.html\n"
 "   name=\"_assets\" type='directory' -%]\n"
@@ -1025,7 +1065,7 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:28
+#: ../en/docs/files-and-directories.md:30
 msgid ""
 "[% WRAPPER components/file.html\n"
 "   name=\"_config.yaml\" type='file' -%]\n"
@@ -1033,7 +1073,7 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:33
+#: ../en/docs/files-and-directories.md:35
 msgid ""
 "[% WRAPPER components/file.html\n"
 "   name=\"_config.yml\" type='file' -%]\n"
@@ -1042,14 +1082,14 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:39
+#: ../en/docs/files-and-directories.md:41
 msgid ""
 "[% WRAPPER components/file.html\n"
 "   name=\"_includes\" type='directory'\n"
 "   overridable=\"paths.includes\" -%]"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:43
+#: ../en/docs/files-and-directories.md:45
 msgid ""
 "Directory for included content snippets.  You use that for example\n"
 "like <code>[&#37; q.include(\"_includes/footer.md\") &#37;]</code>.  You \n"
@@ -1058,28 +1098,28 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:49
+#: ../en/docs/files-and-directories.md:51
 msgid ""
 "[% WRAPPER components/file.html\n"
 "   name=\"_plugins\" type='directory'\n"
 "   overridable=\"paths.plugins\" -%]"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:53
+#: ../en/docs/files-and-directories.md:55
 msgid ""
 "Directory for site-specific plug-ins.  Plug-Ins in this directory are\n"
 "automatically activated.\n"
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:57
+#: ../en/docs/files-and-directories.md:59
 msgid ""
 "[% WRAPPER components/file.html\n"
 "   name=\"_site\" type='directory'\n"
 "   overridable=\"paths.site\" -%]"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:61
+#: ../en/docs/files-and-directories.md:63
 msgid ""
 "The output directory.  This will normally be the document root of your\n"
 "web server.  Files and directories in <code>P:_site</code> are \n"
@@ -1087,14 +1127,14 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:66
+#: ../en/docs/files-and-directories.md:68
 msgid ""
 "[% WRAPPER components/file.html\n"
 "   name=\"_timestamp\" type='file'\n"
 "   overridable=\"paths.timestamp\" -%]"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:70
+#: ../en/docs/files-and-directories.md:72
 msgid ""
 "This file contains the time, when <code>P:_site</code> was last\n"
 "re-created as seconds since the <q-term>epoch</q-term>.  If you \n"
@@ -1104,8 +1144,18 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:77
+#: ../en/docs/files-and-directories.md:79
 msgid "</ul>"
+msgstr ""
+
+#: ../en/docs/index.md:3
+msgctxt "title"
+msgid "Documentation"
+msgstr ""
+
+#: ../en/docs/index.md:8
+msgctxt "description"
+msgid "Learn how to create a website with Qgoda, with tutorial-style introductory information for beginners or exhaustive API documentation for the experienced."
 msgstr ""
 
 #: ../en/docs/index.md:10
@@ -1161,10 +1211,14 @@ msgid ""
 "[% END %]"
 msgstr ""
 
-# Der bahn.de-Routenplaner für Ihren Webauftritt
-#: ../en/docs/index.md:50
-msgid "<script src=\"https://vat.db-app.de/buttons?button=2116&language=de\" type=\"text/javascript\"></script>\n"
-"<!-- ENDE -->"
+#: ../en/docs/installation.md:2
+msgctxt "title"
+msgid "Installation"
+msgstr ""
+
+#: ../en/docs/installation.md:7
+msgctxt "description"
+msgid "How to install Qgoda and its dependencies on your local system"
 msgstr ""
 
 #: ../en/docs/installation.md:9
@@ -1385,6 +1439,21 @@ msgstr ""
 msgid "See https://yarnpkg.com/en/docs/install for instructions."
 msgstr ""
 
+#: ../en/docs/introduction.md:2
+msgctxt "title"
+msgid "Introduction"
+msgstr ""
+
+#: ../en/docs/listings.md:2
+msgctxt "title"
+msgid "Listings and Links"
+msgstr ""
+
+#: ../en/docs/listings.md:6
+msgctxt "description"
+msgid "Qgoda generates listings based on taxonomies."
+msgstr ""
+
 #: ../en/docs/listings.md:8
 msgid ""
 "Link lists are crucial for the navigation on most web sites.  Qgoda \n"
@@ -1438,6 +1507,26 @@ msgid ""
 "template variables.  Qgoda uses template functions instead, and these\n"
 "functions return unsorted lists.\n"
 "[% END %]"
+msgstr ""
+
+#: ../en/docs/lists-and-indices.md:2
+msgctxt "title"
+msgid "Lists and Indices"
+msgstr ""
+
+#: ../en/docs/miscellaneous.md:2
+msgctxt "title"
+msgid "Miscellaneous"
+msgstr ""
+
+#: ../en/docs/mode-of-operation.md:2
+msgctxt "title"
+msgid "Mode Of Operation"
+msgstr ""
+
+#: ../en/docs/mode-of-operation.md:6
+msgctxt "description"
+msgid "Qgoda basically copies files for deployment, optionally cooking the content with processor plug-ins."
 msgstr ""
 
 #: ../en/docs/mode-of-operation.md:8
@@ -1577,6 +1666,16 @@ msgstr ""
 
 #: ../en/docs/mode-of-operation.md:91
 msgid "In reality, the default chain is slightly more complex but the details of it are most of the time not important for you.  In general, everything follows the Do-What-I-Mean™ paradigm."
+msgstr ""
+
+#: ../en/docs/multi-language-overview.md:2
+msgctxt "title"
+msgid "Multi-Language Overview"
+msgstr ""
+
+#: ../en/docs/multi-language-overview.md:6
+msgctxt "description"
+msgid "Overview of Qgoda's Multi-Language and Internationalization (I18N) features"
 msgstr ""
 
 #: ../en/docs/multi-language-overview.md:8
@@ -1755,6 +1854,21 @@ msgstr ""
 
 #: ../en/docs/multi-language-overview.md:106
 msgid "Likewise, for links resp. cross-references you add the additional filter for the language or just use `q.lxref()` instead of `q.xref()` and you are done."
+msgstr ""
+
+#: ../en/docs/multi-language.md:2
+msgctxt "title"
+msgid "Multi-Language"
+msgstr ""
+
+#: ../en/docs/output-location.md:2
+msgctxt "title"
+msgid "Output Location"
+msgstr ""
+
+#: ../en/docs/output-location.md:6
+msgctxt "description"
+msgid "Learn how input locations are translated to output locations in Qgoda."
 msgstr ""
 
 #: ../en/docs/output-location.md:8
@@ -2043,6 +2157,16 @@ msgstr ""
 
 #: ../en/docs/output-location.md:216
 msgid "Quoted strings have JavaScript semantics!"
+msgstr ""
+
+#: ../en/docs/qgoda-in-15-minutes.md:2
+msgctxt "title"
+msgid "Qgoda in 15 Minutes"
+msgstr ""
+
+#: ../en/docs/qgoda-in-15-minutes.md:6
+msgctxt "description"
+msgid "Learn the basic concepts of Qgoda in 15 minutes by building an ugly but simple site from scratch."
 msgstr ""
 
 #: ../en/docs/qgoda-in-15-minutes.md:8
@@ -2737,6 +2861,16 @@ msgstr ""
 msgid "Explore the rest of the documentation for further details, and check out Qgoda demo themes for advanced functionality."
 msgstr ""
 
+#: ../en/docs/related-documents.md:2
+msgctxt "title"
+msgid "Related Documents"
+msgstr ""
+
+#: ../en/docs/related-documents.md:6
+msgctxt "description"
+msgid "Qgoda tries to find relations between posts automatically based on shared tags and other criteria."
+msgstr ""
+
 #: ../en/docs/related-documents.md:8
 msgid "## How To Display Related Documents"
 msgstr ""
@@ -2990,6 +3124,16 @@ msgstr ""
 msgid "The document variable `V:asset.related` holds an array of tuples consisting of the related asset and the mutual relation score."
 msgstr ""
 
+#: ../en/docs/taxonomies.md:2
+msgctxt "title"
+msgid "Taxonomies"
+msgstr ""
+
+#: ../en/docs/taxonomies.md:6
+msgctxt "description"
+msgid "Taxonomies partition your site according to arbitrary aspects."
+msgstr ""
+
 #: ../en/docs/taxonomies.md:8
 msgid ""
 "Taxonomies group assets into groups sharing common properties.  Qgoda supports\n"
@@ -3081,6 +3225,16 @@ msgid ""
 "</figure>"
 msgstr ""
 
+#: ../en/docs/template-variables.md:2
+msgctxt "title"
+msgid "Template Variables"
+msgstr ""
+
+#: ../en/docs/template-variables.md:6
+msgctxt "description"
+msgid "Standard and Pre-Defined Template Variables"
+msgstr ""
+
 #: ../en/docs/template-variables.md:8
 msgid ""
 "[% USE q = Qgoda %]\n"
@@ -3144,6 +3298,16 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
+#: ../en/docs/terms-and-concepts.md:2
+msgctxt "title"
+msgid "Terms and Concepts"
+msgstr ""
+
+#: ../en/docs/terms-and-concepts.md:7
+msgctxt "description"
+msgid "Explanation of frequently used terms and concepts"
+msgstr ""
+
 #: ../en/docs/terms-and-concepts.md:15
 msgid ""
 "[% WRAPPER components/term.html term=\"epoch\" -%]\n"
@@ -3171,6 +3335,26 @@ msgid ""
 "Sass 3.  It is a strict superset of CSS, so that every valid CSS file is\n"
 "also a valid SCSS file.\n"
 "[%- END %]"
+msgstr ""
+
+#: ../en/index.md:3
+msgctxt "title"
+msgid "Qgoda Static Site Generator"
+msgstr ""
+
+#: ../en/index.md:8
+msgctxt "description"
+msgid "Qgoda is a static site generator with a strong focus on multi-linguism and flexibility, written in Perl but extensible with JavaScript, Python, Ruby, Java, and more."
+msgstr ""
+
+#: ../en/legal-disclosure.md:2
+msgctxt "title"
+msgid "Legal Disclosure"
+msgstr ""
+
+#: ../en/legal-disclosure.md:5
+msgctxt "description"
+msgid "Imprint"
 msgstr ""
 
 #: ../en/legal-disclosure.md:7
