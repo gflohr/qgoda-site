@@ -46,6 +46,6 @@ The name of the site.  Qgoda itself does not use this variable.
 [% WRAPPER components/variable.html
    variable="url" type='String' 
    default='none' -%]
-The url (`http://...`) of the site, normally without a trailing slash (so that you can safely append <code>V:asset.permalink</code> to it).  Qgoda itself does not use this variable.
+The url (<code>http://...</code>) of the site, normally without a trailing slash (so that you can safely append <code>V:asset.permalink</code> to it).  Qgoda itself does not use this variable.
 [%- END %]
 </ul>

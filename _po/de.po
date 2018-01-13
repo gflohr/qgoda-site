@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qgoda-site 0.1\n"
 "Report-Msgid-Bugs-To: 'Guido Flohr <guido.flohr@cantanea.com>'\n"
-"PO-Revision-Date: 2018-01-13 17:22+0200\n"
+"PO-Revision-Date: 2018-01-13 18:00+0200\n"
 "Last-Translator: Guido Flohr <guido.flohr@cantanea.com>\n"
 "Language-Team: German\n"
 "Language: de\n"
@@ -610,27 +610,22 @@ msgstr ""
 "[%- END %]"
 
 #: ../en/docs/configuration-variables.md:46
-#, fuzzy
-#| msgid ""
-#| "[% WRAPPER components/variable.html\n"
-#| "   variable=\"title\" type='String' \n"
-#| "   default='\"A New Qgoda Powered Site\"' -%]\n"
-#| "The name of the site.  Qgoda itself does not use this variable.\n"
-#| "[%- END %]"
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"url\" type='String' \n"
 "   default='none' -%]\n"
-"The url (`http://...`) of the site, normally without a trailing slash (so "
-"that you can safely append <code>V:asset.permalink</code> to it).  Qgoda "
-"itself does not use this variable.\n"
+"The url (<code>http://...</code>) of the site, normally without a trailing "
+"slash (so that you can safely append <code>V:asset.permalink</code> to it).  "
+"Qgoda itself does not use this variable.\n"
 "[%- END %]\n"
 "</ul>"
 msgstr ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"title\" type='String' \n"
-"   default='\"A New Qgoda Powered Site\"' -%]\n"
-"Der Name der Web-Site. Qgoda selbst verwendet diese Variable nicht.\n"
+"   default='leer' -%]\n"
+"Die Adresse (<code>http://...</code>) der Site, normalerweise ohne "
+"abschließenden Slash (damit <code>V:asset.permalink</code> angehangen werden "
+"kann). Qgoda selbst verwendet diese Variable nicht.\n"
 "[%- END %]"
 
 #: ../en/docs/differences-to-jekyll.md:2
@@ -3965,10 +3960,8 @@ msgid "[% USE q = Qgoda %]"
 msgstr ""
 
 #: ../en/docs/table-of-contents.md:12
-#, fuzzy
-#| msgid "### Data Usage"
 msgid "## Usage"
-msgstr "## Verwendung der Daten"
+msgstr "## Benutzung"
 
 #: ../en/docs/table-of-contents.md:14
 msgid "### Location of the Table of Contents"
@@ -4502,62 +4495,63 @@ msgstr ""
 #: ../en/legal-disclosure.md:2
 msgctxt "title"
 msgid "Legal Disclosure"
-msgstr ""
+msgstr "Impressum"
 
 #: ../en/legal-disclosure.md:5
 msgctxt "description"
 msgid "Imprint"
-msgstr ""
+msgstr "Impressum"
 
 #: ../en/legal-disclosure.md:7
 msgid "## Company Information"
-msgstr ""
+msgstr "## Informationen zur Firma"
 
-#: ../en/legal-disclosure.md:9
-msgid ""
-"cantanea EOOD<br>\n"
-"ul. Slavyanska 35<br>\n"
-"1000 Sofia<br>\n"
-"Bulgaria<br>\n"
-"BULSTAT (Bulgarian trade register number) 202526944<br>\n"
-"VAT-ID BG202526944<br>"
-msgstr ""
-
-#: ../en/legal-disclosure.md:16
-msgid "Manager: Guido Flohr"
-msgstr ""
+#: ../en/legal-disclosure.md:14
+msgid "Bulgaria<br>"
+msgstr "Bulgarien<br>"
 
 #: ../en/legal-disclosure.md:18
-msgid "## Contact"
-msgstr ""
+msgid "VAT-ID [% config.legal.vat_id %]<br>"
+msgstr "USt-ID [% config.legal.vat_id %]<br>"
 
 #: ../en/legal-disclosure.md:20
+msgid "Manager: [% config.legal.manager %]"
+msgstr "Geschäftsführer: [% config.legal.manager %]"
+
+#: ../en/legal-disclosure.md:22
+msgid "## Contact"
+msgstr "## Kontakt"
+
+#: ../en/legal-disclosure.md:24
 msgid ""
-"- email: info@cantanea.com\n"
-"- phone: +359 884 452974"
+"- email: [% config.legal.email %]\n"
+"- phone: [% config.legal.phone %]"
 msgstr ""
+"- E-mail: [% config.legal.email %]\n"
+"- Telefon: [% config.legal.phone %]"
 
-#: ../en/legal-disclosure.md:23
+#: ../en/legal-disclosure.md:27
 msgid "## Responsible for the content:"
-msgstr ""
+msgstr "## Verantwortlich für den Inhalt:"
 
-#: ../en/legal-disclosure.md:25
-msgid "Guido Flohr, info@cantanea.com"
-msgstr ""
+#: ../en/legal-disclosure.md:29
+#, fuzzy
+#| msgid "Manager: [% config.legal.manager %]"
+msgid "[% config.legal.responsible %]"
+msgstr "Geschäftsführer: [% config.legal.manager %]"
 
 #: ../en/news/index.md:6
-#, fuzzy
-#| msgid "Read More"
 msgctxt "readMore"
 msgid "Read More"
 msgstr "Weiterlesen"
 
 #: ../en/news/index.md:7
-#, fuzzy
-#| msgid "%b, %d %Y"
 msgctxt "dateFormat"
 msgid "%b, %d %Y"
 msgstr "%d. %b %Y"
+
+#~ msgid "Guido Flohr, info@cantanea.com"
+#~ msgstr "Guido Flohr, info@cantanea.com"
 
 #~ msgid "Qgoda - The Static Site Generator"
 #~ msgstr "Qgoda - Der Static Site Generator"

@@ -82,13 +82,17 @@ analyzers:
 
 # This should be overridden in _localconfig.yaml or in a private branch.
 legal:
-  name: configure legal.name in _localconfig.yamg or _config.yaml
-  street: configure legal.name in _localconfig.yamg or _config.yaml
-  city: configure legal.name in _localconfig.yamg or _config.yaml
-  id: configure legal.name in _localconfig.yamg or _config.yaml
-  vat-id: configure legal.name in _localconfig.yamg or _config.yaml
-  copyright_year: configure legal.name in _localconfig.yamg or _config.yaml
-  copyright_uri: configure legal.name in _localconfig.yamg or _config.yaml
+  name: configure legal.name in _localconfig.yaml or _config.yaml
+  street: configure legal.name in _localconfig.yaml or _config.yaml
+  city: configure legal.name in _localconfig.yaml or _config.yaml
+  id: configure legal.name in _localconfig.yaml or _config.yaml
+  vat-id: configure legal.name in _localconfig.yaml or _config.yaml
+  email: configure legal.email in _localconfig.yaml or _config.yaml
+  phone: configure legal.phone in _localconfig.yaml or _config.yaml
+  manager: configure legal.manager in _localconfig.yaml or _config.yaml
+  responsible: configure legal.responsible in _localconfig.yaml or _config.yaml
+  copyright_year: configure legal.name in _localconfig.yaml or _config.yaml
+  copyright_uri: configure legal.name in _localconfig.yaml or _config.yaml
   # url: http://www.yourname.org/
 google:
   #analytics_id: 'UA-XXXXXXX-X'

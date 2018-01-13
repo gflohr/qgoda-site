@@ -393,7 +393,7 @@ msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"url\" type='String' \n"
 "   default='none' -%]\n"
-"The url (`http://...`) of the site, normally without a trailing slash (so that you can safely append <code>V:asset.permalink</code> to it).  Qgoda itself does not use this variable.\n"
+"The url (<code>http://...</code>) of the site, normally without a trailing slash (so that you can safely append <code>V:asset.permalink</code> to it).  Qgoda itself does not use this variable.\n"
 "[%- END %]\n"
 "</ul>"
 msgstr ""
@@ -3618,35 +3618,33 @@ msgstr ""
 msgid "## Company Information"
 msgstr ""
 
-#: ../en/legal-disclosure.md:9
-msgid ""
-"cantanea EOOD<br>\n"
-"ul. Slavyanska 35<br>\n"
-"1000 Sofia<br>\n"
-"Bulgaria<br>\n"
-"BULSTAT (Bulgarian trade register number) 202526944<br>\n"
-"VAT-ID BG202526944<br>"
-msgstr ""
-
-#: ../en/legal-disclosure.md:16
-msgid "Manager: Guido Flohr"
+#: ../en/legal-disclosure.md:14
+msgid "Bulgaria<br>"
 msgstr ""
 
 #: ../en/legal-disclosure.md:18
-msgid "## Contact"
+msgid "VAT-ID [% config.legal.vat_id %]<br>"
 msgstr ""
 
 #: ../en/legal-disclosure.md:20
-msgid "- email: info@cantanea.com\n"
-"- phone: +359 884 452974"
+msgid "Manager: [% config.legal.manager %]"
 msgstr ""
 
-#: ../en/legal-disclosure.md:23
+#: ../en/legal-disclosure.md:22
+msgid "## Contact"
+msgstr ""
+
+#: ../en/legal-disclosure.md:24
+msgid "- email: [% config.legal.email %]\n"
+"- phone: [% config.legal.phone %]"
+msgstr ""
+
+#: ../en/legal-disclosure.md:27
 msgid "## Responsible for the content:"
 msgstr ""
 
-#: ../en/legal-disclosure.md:25
-msgid "Guido Flohr, info@cantanea.com"
+#: ../en/legal-disclosure.md:29
+msgid "[% config.legal.responsible %]"
 msgstr ""
 
 #: ../en/news/index.md:6

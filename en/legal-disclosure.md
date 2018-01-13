@@ -6,20 +6,24 @@ description: Imprint
 ---
 ## Company Information
 
-cantanea EOOD<br>
-ul. Slavyanska 35<br>
-1000 Sofia<br>
+<!--QGODA-NO-XGETTEXT-->
+[% config.legal.name %]<br>
+[% config.legal.street %]<br>
+[% config.legal.city %]<br>
+<!--/QGODA-NO-XGETTEXT-->
 Bulgaria<br>
-BULSTAT (Bulgarian trade register number) 202526944<br>
-VAT-ID BG202526944<br>
+<!--QGODA-NO-XGETTEXT-->
+[% config.legal.id %]<br>
+<!--/QGODA-NO-XGETTEXT-->
+VAT-ID [% config.legal.vat_id %]<br>
 
-Manager: Guido Flohr
+Manager: [% config.legal.manager %]
 
 ## Contact
 
-- email: info@cantanea.com
-- phone: +359 884 452974
+- email: [% config.legal.email %]
+- phone: [% config.legal.phone %]
 
 ## Responsible for the content:
 
-Guido Flohr, info@cantanea.com
+[% config.legal.responsible %]
