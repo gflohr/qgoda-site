@@ -1,4 +1,5 @@
 [% USE gtx = Gettext('net.qgoda.www', asset.lingua) %]
+[% USE q = Qgoda %]
 <div class="[% css.qgoda.sidebar_module %] [% css.qgoda.sidebar_general %]">
   <ol>
    <li>
@@ -7,5 +8,21 @@
        [% gtx.gettext('Source code of this page') %]
      </a>
    </li>
+   [% IF asset.lingua != 'en' %]
+   <li>
+     <a href="[% q.link(name = asset.name, lingua = 'en') %]">
+       <i class="fa fa-language"></i>
+       Read this page in English
+     </a>
+   </li>
+   [% END %]
+   [% IF asset.lingua != 'de' %]
+   <li>
+     <a href="[% q.link(name = asset.name, lingua = 'de') %]">
+       <i class="fa fa-language"></i>
+       Diese Seite auf Deutsch lesen
+     </a>
+   </li>
+   [% END %]
   </ol>
 </div>
