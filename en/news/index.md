@@ -1,6 +1,7 @@
 ---
 location: /{lingua}/news/index.html
-title: News 
+title: News
+name: news
 view: docs.html
 readMore: Read More 
 dateFormat: "%b, %d %Y"

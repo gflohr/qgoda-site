@@ -19,7 +19,13 @@ defaults:
       - /*/**
       - '!/en/'
     values:
-      translate: [title, description, image_alt, button]
+      translate: 
+        - title
+        - description
+        - image_alt
+        - button
+        - dateFormat
+        - readMore
   - files: 
       - /en
       - /_includes/en
