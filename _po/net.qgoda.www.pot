@@ -68,10 +68,6 @@ msgstr ""
 msgid "Source code of this page"
 msgstr ""
 
-#: ../_views/partials/head.html:6
-msgid "Qgoda - The Static Site Generator"
-msgstr ""
-
 #: ../_views/partials/header/navbar.html:6
 msgid "Toggle navigation"
 msgstr ""
@@ -456,8 +452,9 @@ msgstr ""
 #: ../en/docs/configuration-variables.md:46
 msgid ""
 "[% WRAPPER components/variable.html\n"
-"   variable=\"tours\" type='Hash' -%]\n"
-"TODO!\n"
+"   variable=\"url\" type='String' \n"
+"   default='none' -%]\n"
+"The url (`http://...`) of the site, normally without a trailing slash (so that you can safely append <code>V:asset.permalink</code> to it).  Qgoda itself does not use this variable.\n"
 "[%- END %]\n"
 "</ul>"
 msgstr ""
@@ -1248,11 +1245,22 @@ msgid ""
 msgstr ""
 
 #: ../en/docs/index.md:28
+msgid ""
+"[% IF asset.lingua != 'en' %]\n"
+"[% WRAPPER components/infobox.html\n"
+"           type='warning' title='Incomplete Translation!' %]\n"
+"The translation for this site is not yet ready.  The parts that are not\n"
+"yet translated will be displayed in English instead.\n"
+"[% END %]\n"
+"[% END %]"
+msgstr ""
+
+#: ../en/docs/index.md:36
 msgid "Setting up your own blog, portfolio or company web site with Qgoda is simple\n"
 "and straightforward.  Yet, Qgoda comes with a unique feature set that makes even complex websites feasible and fun to implement.  The highlights are:"
 msgstr ""
 
-#: ../en/docs/index.md:31
+#: ../en/docs/index.md:39
 msgid ""
 "- A powerful yet easy to learn templating language.\n"
 "- Arbitrary [taxonomies]([% q.llink(name = 'taxonomies') %])\n"
@@ -1265,7 +1273,7 @@ msgid ""
 "  audience or documentation (like this one)."
 msgstr ""
 
-#: ../en/docs/index.md:41
+#: ../en/docs/index.md:49
 msgid ""
 "[% WRAPPER components/infobox.html\n"
 "           type='info' title='Run Your Local Version!' %]\n"
@@ -3575,7 +3583,7 @@ msgstr ""
 #: ../en/docs/template-variables.md:26
 msgid ""
 "[% WRAPPER \"components/template-variable.html\"\n"
-"   variable=\"asset\" %]\n"
+"   variable=\"asset\" type=\"hash\" %]\n"
 "The variable `asset` is the container for all variables specific to\n"
 "the asset currently being processed.\n"
 "[%- END %]"
@@ -3584,7 +3592,7 @@ msgstr ""
 #: ../en/docs/template-variables.md:32
 msgid ""
 "[% WRAPPER \"components/template-variable.html\"\n"
-"   variable=\"asset.priority\" %]\n"
+"   variable=\"asset.priority\" type=\"integer\" %]\n"
 "All artifacts are built sorted by their priority.  A higher value means that they are generated last.  Normally, you should assign a high priority, for example 999 to listings so that they are generated after other pages and can access all of their data.\n"
 "[%- END %]"
 msgstr ""
@@ -3592,7 +3600,7 @@ msgstr ""
 #: ../en/docs/template-variables.md:37
 msgid ""
 "[% WRAPPER \"components/template-variable.html\"\n"
-"   variable=\"asset.virtual\" %]\n"
+"   variable=\"asset.virtual\" type=\"boolean (0 or 1)\" %]\n"
 "Virtual documents to not get published, to be more exact, they do not go through the second pass of processing (the HTML wrapping) and hence are not written to disk.\n"
 "[%- END %]"
 msgstr ""
@@ -3600,7 +3608,7 @@ msgstr ""
 #: ../en/docs/template-variables.md:42
 msgid ""
 "[% WRAPPER \"components/template-variable.html\"\n"
-"   variable=\"config\" type='hash' %]\n"
+"   variable=\"config\" type=\"hash\" %]\n"
 "`config` gives you access to the site configuration from `P:_config.yaml`.\n"
 "The configuration variable `C:paths.views` in `P:_config.yaml` is\n"
 "accessible from a template as `config.paths.views`.  See\n"

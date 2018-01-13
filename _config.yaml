@@ -8,6 +8,8 @@ exclude:
   - /TODO
   - /LocaleData
   - /postcss.config.js
+  - /COPYING
+  - /README.md
 exclude_watch:
   - /assets
   - "!/_timestamp.json"

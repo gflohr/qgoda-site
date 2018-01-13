@@ -26,6 +26,7 @@
 ../_views/partials/body/sidebar.html
 ../_views/partials/head-landing.html
 ../_views/partials/head.html
+../_views/partials/head/meta.html
 ../_views/partials/header/navbar.html
 ../_views/wrappers/html5.html
 markdown.pot

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qgoda-site 0.1\n"
 "Report-Msgid-Bugs-To: 'Guido Flohr <guido.flohr@cantanea.com>'\n"
-"PO-Revision-Date: 2018-01-13 16:26+0200\n"
+"PO-Revision-Date: 2018-01-13 17:22+0200\n"
 "Last-Translator: Guido Flohr <guido.flohr@cantanea.com>\n"
 "Language-Team: German\n"
 "Language: de\n"
@@ -50,7 +50,7 @@ msgstr "Vorgabewert:"
 
 #: ../_views/landing-header.html:23 ../_views/partials/header/navbar.html:27
 msgid "News"
-msgstr "Neues"
+msgstr "News"
 
 #: ../_views/landing-header.html:26
 msgid "Download"
@@ -68,10 +68,6 @@ msgstr "Copyright &copy; {copyright_year} {copyright_holder}"
 #: ../_views/partials/body/sidebar-top.html:8
 msgid "Source code of this page"
 msgstr "Quelltext dieser Seite"
-
-#: ../_views/partials/head.html:6
-msgid "Qgoda - The Static Site Generator"
-msgstr "Qgoda - Der Static Site Generator"
 
 #: ../_views/partials/header/navbar.html:6
 msgid "Toggle navigation"
@@ -614,18 +610,33 @@ msgstr ""
 "[%- END %]"
 
 #: ../en/docs/configuration-variables.md:46
+#, fuzzy
+#| msgid ""
+#| "[% WRAPPER components/variable.html\n"
+#| "   variable=\"title\" type='String' \n"
+#| "   default='\"A New Qgoda Powered Site\"' -%]\n"
+#| "The name of the site.  Qgoda itself does not use this variable.\n"
+#| "[%- END %]"
 msgid ""
 "[% WRAPPER components/variable.html\n"
-"   variable=\"tours\" type='Hash' -%]\n"
-"TODO!\n"
+"   variable=\"url\" type='String' \n"
+"   default='none' -%]\n"
+"The url (`http://...`) of the site, normally without a trailing slash (so "
+"that you can safely append <code>V:asset.permalink</code> to it).  Qgoda "
+"itself does not use this variable.\n"
 "[%- END %]\n"
 "</ul>"
 msgstr ""
+"[% WRAPPER components/variable.html\n"
+"   variable=\"title\" type='String' \n"
+"   default='\"A New Qgoda Powered Site\"' -%]\n"
+"Der Name der Web-Site. Qgoda selbst verwendet diese Variable nicht.\n"
+"[%- END %]"
 
 #: ../en/docs/differences-to-jekyll.md:2
 msgctxt "title"
 msgid "Differences to Jekyll"
-msgstr ""
+msgstr "Unterschiede zu Jekyll"
 
 #: ../en/docs/differences-to-jekyll.md:6
 msgctxt "description"
@@ -979,7 +990,7 @@ msgstr ""
 #: ../en/docs/excluding-files.md:2
 msgctxt "title"
 msgid "Excluding Files"
-msgstr ""
+msgstr "Dateien ausschließen"
 
 #: ../en/docs/excluding-files.md:6
 msgctxt "description"
@@ -1426,7 +1437,7 @@ msgstr ""
 #: ../en/docs/files-and-directories.md:2
 msgctxt "title"
 msgid "Files and Directories"
-msgstr ""
+msgstr "Dateien und Verzeichnisse"
 
 #: ../en/docs/files-and-directories.md:6
 msgctxt "description"
@@ -1584,13 +1595,31 @@ msgstr ""
 
 #: ../en/docs/index.md:28
 msgid ""
+"[% IF asset.lingua != 'en' %]\n"
+"[% WRAPPER components/infobox.html\n"
+"           type='warning' title='Incomplete Translation!' %]\n"
+"The translation for this site is not yet ready.  The parts that are not\n"
+"yet translated will be displayed in English instead.\n"
+"[% END %]\n"
+"[% END %]"
+msgstr ""
+"[% IF asset.lingua != 'en' %]\n"
+"[% WRAPPER components/infobox.html\n"
+"           type='warning' title=\"Unvollständige Übersetzung\" %]\n"
+"Die Übersetzung für diese Site ist noch nicht fertiggestellt. Noch nicht\n"
+"übersetzte Passagen werden daher auf Englisch angeboten.\n"
+"[% END %]\n"
+"[% END %]"
+
+#: ../en/docs/index.md:36
+msgid ""
 "Setting up your own blog, portfolio or company web site with Qgoda is "
 "simple\n"
 "and straightforward.  Yet, Qgoda comes with a unique feature set that makes "
 "even complex websites feasible and fun to implement.  The highlights are:"
 msgstr ""
 
-#: ../en/docs/index.md:31
+#: ../en/docs/index.md:39
 msgid ""
 "- A powerful yet easy to learn templating language.\n"
 "- Arbitrary [taxonomies]([% q.llink(name = 'taxonomies') %])\n"
@@ -1603,7 +1632,7 @@ msgid ""
 "  audience or documentation (like this one)."
 msgstr ""
 
-#: ../en/docs/index.md:41
+#: ../en/docs/index.md:49
 msgid ""
 "[% WRAPPER components/infobox.html\n"
 "           type='info' title='Run Your Local Version!' %]\n"
@@ -1883,12 +1912,12 @@ msgstr ""
 #: ../en/docs/introduction.md:2
 msgctxt "title"
 msgid "Introduction"
-msgstr ""
+msgstr "Einführung"
 
 #: ../en/docs/listings.md:2
 msgctxt "title"
 msgid "Listings and Links"
-msgstr ""
+msgstr "Listen und Links"
 
 #: ../en/docs/listings.md:6
 msgctxt "description"
@@ -1956,17 +1985,17 @@ msgstr ""
 #: ../en/docs/lists-and-indices.md:2
 msgctxt "title"
 msgid "Lists and Indices"
-msgstr ""
+msgstr "Listen und Indizes"
 
 #: ../en/docs/miscellaneous.md:2
 msgctxt "title"
 msgid "Miscellaneous"
-msgstr ""
+msgstr "Verschiedenes"
 
 #: ../en/docs/mode-of-operation.md:2
 msgctxt "title"
 msgid "Mode Of Operation"
-msgstr ""
+msgstr "Funktionsweise"
 
 #: ../en/docs/mode-of-operation.md:6
 msgctxt "description"
@@ -2407,7 +2436,7 @@ msgstr "Mehrsprachigkeit"
 #: ../en/docs/output-location.md:2
 msgctxt "title"
 msgid "Output Location"
-msgstr ""
+msgstr "Ausgabepfad"
 
 #: ../en/docs/output-location.md:6
 msgctxt "description"
@@ -3619,7 +3648,7 @@ msgstr ""
 #: ../en/docs/related-documents.md:2
 msgctxt "title"
 msgid "Related Documents"
-msgstr ""
+msgstr "Verwandte Dokumente"
 
 #: ../en/docs/related-documents.md:6
 msgctxt "description"
@@ -3920,11 +3949,9 @@ msgid ""
 msgstr ""
 
 #: ../en/docs/table-of-contents.md:2
-#, fuzzy
-#| msgid "Table Of Contents"
 msgctxt "title"
 msgid "Table Of Contents"
-msgstr "Inhaltsverzeichnis"
+msgstr "Inhaltsverzeichnisse"
 
 #: ../en/docs/table-of-contents.md:6
 msgctxt "description"
@@ -4343,7 +4370,7 @@ msgstr ""
 #: ../en/docs/template-variables.md:2
 msgctxt "title"
 msgid "Template Variables"
-msgstr ""
+msgstr "Template-Variablen"
 
 #: ../en/docs/template-variables.md:6
 msgctxt "description"
@@ -4381,7 +4408,7 @@ msgstr ""
 #: ../en/docs/template-variables.md:26
 msgid ""
 "[% WRAPPER \"components/template-variable.html\"\n"
-"   variable=\"asset\" %]\n"
+"   variable=\"asset\" type=\"hash\" %]\n"
 "The variable `asset` is the container for all variables specific to\n"
 "the asset currently being processed.\n"
 "[%- END %]"
@@ -4390,7 +4417,7 @@ msgstr ""
 #: ../en/docs/template-variables.md:32
 msgid ""
 "[% WRAPPER \"components/template-variable.html\"\n"
-"   variable=\"asset.priority\" %]\n"
+"   variable=\"asset.priority\" type=\"integer\" %]\n"
 "All artifacts are built sorted by their priority.  A higher value means that "
 "they are generated last.  Normally, you should assign a high priority, for "
 "example 999 to listings so that they are generated after other pages and can "
@@ -4401,7 +4428,7 @@ msgstr ""
 #: ../en/docs/template-variables.md:37
 msgid ""
 "[% WRAPPER \"components/template-variable.html\"\n"
-"   variable=\"asset.virtual\" %]\n"
+"   variable=\"asset.virtual\" type=\"boolean (0 or 1)\" %]\n"
 "Virtual documents to not get published, to be more exact, they do not go "
 "through the second pass of processing (the HTML wrapping) and hence are not "
 "written to disk.\n"
@@ -4411,7 +4438,7 @@ msgstr ""
 #: ../en/docs/template-variables.md:42
 msgid ""
 "[% WRAPPER \"components/template-variable.html\"\n"
-"   variable=\"config\" type='hash' %]\n"
+"   variable=\"config\" type=\"hash\" %]\n"
 "`config` gives you access to the site configuration from `P:_config.yaml`.\n"
 "The configuration variable `C:paths.views` in `P:_config.yaml` is\n"
 "accessible from a template as `config.paths.views`.  See\n"
@@ -4422,7 +4449,7 @@ msgstr ""
 #: ../en/docs/terms-and-concepts.md:2
 msgctxt "title"
 msgid "Terms and Concepts"
-msgstr ""
+msgstr "Terminologie und Konzepte"
 
 #: ../en/docs/terms-and-concepts.md:7
 msgctxt "description"
@@ -4531,6 +4558,9 @@ msgstr "Weiterlesen"
 msgctxt "dateFormat"
 msgid "%b, %d %Y"
 msgstr "%d. %b %Y"
+
+#~ msgid "Qgoda - The Static Site Generator"
+#~ msgstr "Qgoda - Der Static Site Generator"
 
 #~ msgid "Basics"
 #~ msgstr "Grundlagen"

@@ -25,6 +25,14 @@ Nonetheless, Qgoda is in productive use since mid 2016 and already
 generating a handful of web sites without problems.</p>
 [% END %]
 
+[% IF asset.lingua != 'en' %]
+[% WRAPPER components/infobox.html
+           type='warning' title='Incomplete Translation!' %]
+The translation for this site is not yet ready.  The parts that are not
+yet translated will be displayed in English instead.
+[% END %]
+[% END %]
+
 Setting up your own blog, portfolio or company web site with Qgoda is simple
 and straightforward.  Yet, Qgoda comes with a unique feature set that makes even complex websites feasible and fun to implement.  The highlights are:
 
