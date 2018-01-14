@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qgoda-site 0.1\n"
 "Report-Msgid-Bugs-To: 'Guido Flohr <guido.flohr@cantanea.com>'\n"
-"PO-Revision-Date: 2018-01-14 12:28+0200\n"
+"PO-Revision-Date: 2018-01-14 16:25+0200\n"
 "Last-Translator: Guido Flohr <guido.flohr@cantanea.com>\n"
 "Language-Team: German\n"
 "Language: de\n"
@@ -649,7 +649,7 @@ msgid ""
 msgstr ""
 "[% USE q = Qgoda %]\n"
 "[% TAGS [- -] %]\n"
-"Qgoda war ursprünglich stark durch [Jekyll](https://jekyllrb.com/) "
+"Qgoda war ursprünglich stark von [Jekyll](https://jekyllrb.com/) "
 "beeinflusst, hat sich aber mittlerweile in sehr vielen Punkten von Jekyll "
 "wegentwickelt."
 
@@ -787,7 +787,7 @@ msgstr "### Sass? Helper-Applikationen!"
 msgid ""
 "Jekyll has a built-in <q-term>sass:Sass</q-term> compiler built on the Ruby "
 "Sass implementation."
-msgstr ""
+msgstr "Jekyll kommt mit einem integriertem <q-term>sass:Sass</q-term>-Compiler, der auf der Ruby-Implementierung von Sass beruht."
 
 #: ../en/docs/differences-to-jekyll.md:61
 msgid ""
@@ -896,7 +896,7 @@ msgstr ""
 "Diese Strings können dann zur Übersetzung in  `.po`-Dateien extrahiert "
 "werden, und die fertigen Übersetzungen werden kompiliert und in der Site "
 "installiert. Das folgt exakt dem Standard-Workflow für [GNU Gettext](https://"
-"www.gnu.org/software/gettext/), dem de-facto-Standard für Lokalisierung von "
+"www.gnu.org/software/gettext/), dem De-facto-Standard für Lokalisierung von "
 "Open-Source-Software."
 
 #: ../en/docs/differences-to-jekyll.md:116
@@ -908,38 +908,38 @@ msgid ""
 "Qgoda uses [The Template Toolkit](http://www.template-toolkit.org/) as its "
 "primary templating system, Jekyll uses [Liquid](https://shopify.github.io/"
 "liquid/)."
-msgstr ""
+msgstr "Qgoda verwendet das [Template Toolkit](http://www.template-toolkit.org/) als primäres Template-System, Jekyll verwendet [Liquid](https://shopify.github.io/liquid/)."
 
 #: ../en/docs/differences-to-jekyll.md:120
 msgid "### Syntax"
-msgstr ""
+msgstr "### Syntax"
 
 #: ../en/docs/differences-to-jekyll.md:122
 msgid ""
 "Liquid uses double curly braces for *objects* (`{{ variable }}`) and curly "
 "braces and percent signs for *tags* (`{% if logged_in %} `)."
-msgstr ""
+msgstr "Liquid verwendet doppelte geschweifte Klammern für *Objekte* (`{{ variable }}`) und geschweifte Klammern mit Prozentzeichen für *Tags* (`{% if logged_in %} `)."
 
 #: ../en/docs/differences-to-jekyll.md:124
 msgid ""
 "The Template Toolkit uses only `[% ... %]`.  *Directives* (comparable to "
 "Liquid tags) are using upper case letters (`[% IF logged_in %]`)."
-msgstr ""
+msgstr "Template Toolkit verwendet nur `[% ... %]`.  *Direktiven* (den Tags von Liquid vergleichbar) benutzen nur Großbuchstaben (`[% IF logged_in %]`)."
 
 #: ../en/docs/differences-to-jekyll.md:126
 msgid "### Data Types"
-msgstr ""
+msgstr "### Datentypen"
 
 #: ../en/docs/differences-to-jekyll.md:128
 msgid ""
 "Liquid only allows one level of nesting variables.  You cannot do something "
 "like `{{ user.address.street }}`.  Variables for the Template Toolkit can be "
 "nested to arbitrary depth.  They can also reference Perl objects."
-msgstr ""
+msgstr "Liquid unterstützt nur eine maximale Verschachtelung von einer Ebene bei der Dereferenzierung von Variablen.  Konstrukte wie `{{ user.address.street }}` sind nicht möglich.  Variablenzugriffe beim Template Toolkit können beliebig tief verschachtelt werden und auch Methoden von Perlobjekten aufrufen."
 
 #: ../en/docs/differences-to-jekyll.md:130
 msgid "### Code in Templates"
-msgstr ""
+msgstr "### Code in Templates"
 
 #: ../en/docs/differences-to-jekyll.md:132
 msgid ""
