@@ -476,11 +476,6 @@ msgid ""
 "Qgoda was heavily inspired by [Jekyll](https://jekyllrb.com/) and initially very similar to Jekyll but over time it has veered away significantly."
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:12 ../en/docs/excluding-files.md:10
-#: ../en/docs/output-location.md:18
-msgid "<qgoda-toc />"
-msgstr ""
-
 #: ../en/docs/differences-to-jekyll.md:14
 msgid "## General Differences"
 msgstr ""
@@ -505,228 +500,147 @@ msgstr ""
 msgid "Qgoda can create lists with arbitrary filters, not just for categories.  Example:"
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:26
-msgid ""
-"```markup\n"
-"[% posts = q.list(lingua = asset.lingua\n"
-"                  type = 'post'\n"
-"                  ['tags', 'contains', 'Development']\n"
-"                 ) %]\n"
-"```"
+#: ../en/docs/differences-to-jekyll.md:35
+msgid "See [- q.lanchor(name='listings') -] for more information."
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:33
-msgid "See [[- q.lxref('title', name='listings') -]]([- q.llink(name='listings') -]) \n"
-"for more information."
-msgstr ""
-
-#: ../en/docs/differences-to-jekyll.md:36
+#: ../en/docs/differences-to-jekyll.md:37
 msgid "### Links and Cross-References"
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:38
+#: ../en/docs/differences-to-jekyll.md:39
 msgid "These work essentially the same as listings, only that you define the filters so that they will produce a single result instead of a list.  For example, the last sentence of the previous paragraph was created like this:"
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:40
+#: ../en/docs/differences-to-jekyll.md:41
 msgid ""
 "```markup\n"
-"See [[% q.lxref('title', name='listings') %]]([% q.llink(name='listings') %]) \n"
-"for more information.\n"
+"See [% q.lanchor(name='listings') %] for more information.\n"
 "```"
 msgstr ""
 
 #: ../en/docs/differences-to-jekyll.md:45
-msgid "The function `q.lxref()` extracts the variable 'title' from the document with the name `listings`, whereas `q.llink()` produces a permalink to the page identified by the filter or filters given."
+msgid "The function `q.lanchor()` creates a link to the document with the name \"listings\", no matter where that document is currently located.  In Jekyll, links always have hard-coded targets.  Using the functions has the advantage that you don't have to update refering documents, when the target document changes."
 msgstr ""
 
 #: ../en/docs/differences-to-jekyll.md:47
-msgid "Of course, you are not forced to create links in such a complicated manner.  You can also just hard-code everything.  Using the functions has the advantage that you don't have to update refering documents, when the target document changes."
-msgstr ""
-
-#: ../en/docs/differences-to-jekyll.md:49
 msgid "### No Web-Server Included"
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:51
+#: ../en/docs/differences-to-jekyll.md:49
 msgid "Qgoda does not come with a web server.  Why? Lazy developer?"
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:53
+#: ../en/docs/differences-to-jekyll.md:51
 msgid "Kind of.  And, by the way, lazy developers are good developers."
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:55
+#: ../en/docs/differences-to-jekyll.md:53
 msgid "Qgoda is a tool for generating static web sites and it follows the Unix concept of DOTADIW, or \"Do One Thing and Do It Well\".  Web development nowadays is done using a tool-chain based on [Node.js](https://nodejs.org/) and the Node.js ecosystems has no shortage of development web servers like [http-server](https://www.npmjs.com/package/http-server), [Browsersync](https://www.browsersync.io/), [webpack-dev-server](https://github.com/webpack/webpack-dev-server), and so on.  All of them are very easy to integrate in a Qgoda development site."
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:57
-msgid "And to be honest, the current web servers written in Perl all look pretty lame compared to their brethren for Node.js."
+#: ../en/docs/differences-to-jekyll.md:55
+msgid "And to be honest, the current web servers written in Perl, Python, or Ruby all look pretty lame compared to their brethren for Node.js."
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:59
+#: ../en/docs/differences-to-jekyll.md:57
 msgid "### Sass? Helpers!"
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:61
-msgid "Jekyll has a built-in [Sass](http://sass-lang.com/) compiler built on the Ruby Sass implementation."
+#: ../en/docs/differences-to-jekyll.md:59
+msgid "Jekyll has a built-in <q-term>sass:Sassbuilt on the Ruby Sass implementation.<</q-term> compiler built on the Ruby Sass implementation."
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:63
+#: ../en/docs/differences-to-jekyll.md:61
 msgid "But modern web development is a lot more than pre-processing CSS.  First of all chances are that you also want to use JavaScript, do you? And maybe you don't want to use Sass but [Less](http://lesscss.org/) or you even opt for [PostCSS](http://postcss.org/) only."
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:65
+#: ../en/docs/differences-to-jekyll.md:63
 msgid "All these assets should be syntax-checked, minified, optimized and bundled and, again, the Node.js eco system has the best tools for the job, first [Grunt](https://gruntjs.com/), then [Gulp](https://gulpjs.com/), today [Webpack](https://webpack.js.org/), and who knows what tool will be leader of the pack in three weeks?"
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:67
+#: ../en/docs/differences-to-jekyll.md:65
 msgid "Qgoda allows you to configure an arbitrary number of helper processes while watching your site for changes.  You typically have one of the build tools like webpack running in watch mode as one helper, and a development web server as a second.  And you have the choice.  You decide whether you want gulp or webpack, yarn or npm, or just plain Makefiles."
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:69
+#: ../en/docs/differences-to-jekyll.md:67
 msgid "### Multi-Language Sites"
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:71
+#: ../en/docs/differences-to-jekyll.md:69
 msgid "Jekyll does not have built-in support for multilingual web sites.  Qgoda also has no explicit support for multi-lingual web sites.  It just works out of the box."
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:73
+#: ../en/docs/differences-to-jekyll.md:71
 msgid "All you have to do is to store the language (resp. language code) of a particular document or asset in a standard variable.  If you follow convention and use `V:lingua`, you can safe some typing, but you can store the language in any variable you want, and filter by that variable.  That's all."
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:75
-msgid "Under normal circumstances, not only content differs.  You also want to translate certain strings in your template.  The quick and dirty way is to store the strings in your configuration file `P:_config.yaml`:"
-msgstr ""
-
-#: ../en/docs/differences-to-jekyll.md:77
-msgid ""
-"```yaml\n"
-"translations:\n"
-"  en:\n"
-"    privacy: Data Privacy\n"
-"    go_to_top: To top of the page\n"
-"  de:\n"
-"    privacy: Datenschutz\n"
-"    go_to_top: Zum Seitenanfang\n"
-"  bg:\n"
-"    privacy: Конфиденция\n"
-"    go_to_top: На горе\n"
-"```"
+#: ../en/docs/differences-to-jekyll.md:73
+msgid "Under normal circumstances, not only regular content differs between languages.  You also want to translate certain strings in your template.  The quick and dirty way is to store translations in your configuration file `P:_config.yaml`:"
 msgstr ""
 
 #: ../en/docs/differences-to-jekyll.md:90
 msgid "In the template you write:"
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:92
-msgid "```markup\n"
-"[% l = asset.lingua %]"
-msgstr ""
-
-#: ../en/docs/differences-to-jekyll.md:95
-msgid ""
-"<a href=\"./privacy/\">[% config.translations.$l.privacy %]</a>\n"
-"|\n"
-"<a href=\"#top\">[% config.translations.$l.go_to_top %]</a>\n"
-"```"
-msgstr ""
-
-#: ../en/docs/differences-to-jekyll.md:100
+#: ../en/docs/differences-to-jekyll.md:102
 msgid "This is okay for a handful of strings but a maintainance nightmare for larger sites.  You should rather write all strings in the base language of your site and mark them:"
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:102
-msgid "```markup\n"
-"[% USE gtx = Gettext('your-site-id', asset.lingua) %]"
-msgstr ""
-
-#: ../en/docs/differences-to-jekyll.md:105
-msgid ""
-"<a href=\"./private/\">[% gtx.gettext('Privacy Policy') %]</a>\n"
-"|\n"
-"<a href=\"#top\">[% Go to top %]</a>\n"
-"```"
-msgstr ""
-
-#: ../en/docs/differences-to-jekyll.md:110
+#: ../en/docs/differences-to-jekyll.md:114
 msgid "You can extract these strings into `.po` files for translations, and install the compiled translations in the site.  This is following the standard process for [GNU gettext](https://www.gnu.org/software/gettext/), the de-facto standard for localization of open-source software."
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:112
+#: ../en/docs/differences-to-jekyll.md:116
 msgid "## Template System"
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:114
+#: ../en/docs/differences-to-jekyll.md:118
 msgid "Qgoda uses [The Template Toolkit](http://www.template-toolkit.org/) as its primary templating system, Jekyll uses [Liquid](https://shopify.github.io/liquid/)."
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:116
+#: ../en/docs/differences-to-jekyll.md:120
 msgid "### Syntax"
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:118
+#: ../en/docs/differences-to-jekyll.md:122
 msgid "Liquid uses double curly braces for *objects* (`{{ variable }}`) and curly braces and percent signs for *tags* (`{% if logged_in %} `)."
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:120
+#: ../en/docs/differences-to-jekyll.md:124
 msgid "The Template Toolkit uses only `[% ... %]`.  *Directives* (comparable to Liquid tags) are using upper case letters (`[% IF logged_in %]`)."
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:122
+#: ../en/docs/differences-to-jekyll.md:126
 msgid "### Data Types"
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:124
+#: ../en/docs/differences-to-jekyll.md:128
 msgid "Liquid only allows one level of nesting variables.  You cannot do something like `{{ user.address.street }}`.  Variables for the Template Toolkit can be nested to arbitrary depth.  They can also reference Perl objects."
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:126
+#: ../en/docs/differences-to-jekyll.md:130
 msgid "### Code in Templates"
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:128
+#: ../en/docs/differences-to-jekyll.md:132
 msgid "Since Template Toolkit variables can also hold Perl objects it is possible to call methods on them.  Qgoda makes heavy use of this feature and a lot of things that are impossible in Jekyll are trivial in Qgoda for exactly that reason."
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:130
+#: ../en/docs/differences-to-jekyll.md:134
 msgid "## Configuration"
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:132
+#: ../en/docs/differences-to-jekyll.md:136
 msgid "The default name of the qgoda configuration file is `P:_config.yaml`, not `_config.yml` as for Jekyll.  That can make a possible migration from Jekyll to Qgoda  a little bit easier."
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:134
+#: ../en/docs/differences-to-jekyll.md:138
 msgid "### Default Values"
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:136
+#: ../en/docs/differences-to-jekyll.md:140
 msgid "Default values in Qgoda are not nested but a flat list of patterns:"
-msgstr ""
-
-#: ../en/docs/differences-to-jekyll.md:138
-msgid ""
-"```yaml\n"
-"defaults:\n"
-"  - files: /posts\n"
-"    values:\n"
-"      type: post\n"
-"  - files: /posts/en\n"
-"    values:\n"
-"      lingua: en\n"
-"  - files: /posts/de\n"
-"    values:\n"
-"      lingua: de\n"
-"  - files: /images/**/*.png\n"
-"    values:\n"
-"      view: raw\n"
-"```"
-msgstr ""
-
-#: ../en/docs/differences-to-jekyll.md:154
-msgid "[- TAGS [% %] -]"
 msgstr ""
 
 #: ../en/docs/excluding-files.md:2
@@ -3702,10 +3616,6 @@ msgstr ""
 
 #: ../en/legal-disclosure.md:27
 msgid "## Responsible for the content:"
-msgstr ""
-
-#: ../en/legal-disclosure.md:29
-msgid "[% config.legal.responsible %]"
 msgstr ""
 
 #: ../en/news/index.md:6

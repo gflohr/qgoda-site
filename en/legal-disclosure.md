@@ -26,4 +26,6 @@ Manager: [% config.legal.manager %]
 
 ## Responsible for the content:
 
+<!--QGODA-NO-XGETTEXT-->
 [% config.legal.responsible %]
+<!--/QGODA-NO-XGETTEXT-->

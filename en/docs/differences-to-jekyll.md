@@ -9,7 +9,7 @@ description: This page explains where Qgoda differs from Jekyll and why.
 [% TAGS [- -] %]
 Qgoda was heavily inspired by [Jekyll](https://jekyllrb.com/) and initially very similar to Jekyll but over time it has veered away significantly.
 
-<qgoda-toc />
+<!--QGODA-NO-XGETTEXT--><qgoda-toc /><!--/QGODA-NO-XGETTEXT-->
 
 ## General Differences
 
@@ -23,28 +23,26 @@ Jekyll can structure a site with tags and categories.  Qgoda has arbitrary taxon
 
 Qgoda can create lists with arbitrary filters, not just for categories.  Example:
 
+<!--QGODA-NO-XGETTEXT-->
 ```markup
 [% posts = q.list(lingua = asset.lingua
                   type = 'post'
-                  ['tags', 'contains', 'Development']
+                  'tags', ['contains', 'Development']
                  ) %]
 ```
+<!--/QGODA-NO-XGETTEXT-->
 
-See [[- q.lxref('title', name='listings') -]]([- q.llink(name='listings') -]) 
-for more information.
+See [- q.lanchor(name='listings') -] for more information.
 
 ### Links and Cross-References
 
 These work essentially the same as listings, only that you define the filters so that they will produce a single result instead of a list.  For example, the last sentence of the previous paragraph was created like this:
 
 ```markup
-See [[% q.lxref('title', name='listings') %]]([% q.llink(name='listings') %]) 
-for more information.
+See [% q.lanchor(name='listings') %] for more information.
 ```
 
-The function `q.lxref()` extracts the variable 'title' from the document with the name `listings`, whereas `q.llink()` produces a permalink to the page identified by the filter or filters given.
-
-Of course, you are not forced to create links in such a complicated manner.  You can also just hard-code everything.  Using the functions has the advantage that you don't have to update refering documents, when the target document changes.
+The function `q.lanchor()` creates a link to the document with the name "listings", no matter where that document is currently located.  In Jekyll, links always have hard-coded targets.  Using the functions has the advantage that you don't have to update refering documents, when the target document changes.
 
 ### No Web-Server Included
 
@@ -54,11 +52,11 @@ Kind of.  And, by the way, lazy developers are good developers.
 
 Qgoda is a tool for generating static web sites and it follows the Unix concept of DOTADIW, or "Do One Thing and Do It Well".  Web development nowadays is done using a tool-chain based on [Node.js](https://nodejs.org/) and the Node.js ecosystems has no shortage of development web servers like [http-server](https://www.npmjs.com/package/http-server), [Browsersync](https://www.browsersync.io/), [webpack-dev-server](https://github.com/webpack/webpack-dev-server), and so on.  All of them are very easy to integrate in a Qgoda development site.
 
-And to be honest, the current web servers written in Perl all look pretty lame compared to their brethren for Node.js.
+And to be honest, the current web servers written in Perl, Python, or Ruby all look pretty lame compared to their brethren for Node.js.
 
 ### Sass? Helpers!
 
-Jekyll has a built-in [Sass](http://sass-lang.com/) compiler built on the Ruby Sass implementation.
+Jekyll has a built-in <q-term>sass:Sass</q-term> compiler built on the Ruby Sass implementation.
 
 But modern web development is a lot more than pre-processing CSS.  First of all chances are that you also want to use JavaScript, do you? And maybe you don't want to use Sass but [Less](http://lesscss.org/) or you even opt for [PostCSS](http://postcss.org/) only.
 
@@ -72,8 +70,9 @@ Jekyll does not have built-in support for multilingual web sites.  Qgoda also ha
 
 All you have to do is to store the language (resp. language code) of a particular document or asset in a standard variable.  If you follow convention and use `V:lingua`, you can safe some typing, but you can store the language in any variable you want, and filter by that variable.  That's all.
 
-Under normal circumstances, not only content differs.  You also want to translate certain strings in your template.  The quick and dirty way is to store the strings in your configuration file `P:_config.yaml`:
+Under normal circumstances, not only regular content differs between languages.  You also want to translate certain strings in your template.  The quick and dirty way is to store translations in your configuration file `P:_config.yaml`:
 
+<!--QGODA-NO-XGETTEXT-->
 ```yaml
 translations:
   en:
@@ -86,9 +85,11 @@ translations:
     privacy: Конфиденция
     go_to_top: На горе
 ```
+<!--/QGODA-NO-XGETTEXT-->
 
 In the template you write:
 
+<!--QGODA-NO-XGETTEXT-->
 ```markup
 [% l = asset.lingua %]
 
@@ -96,9 +97,11 @@ In the template you write:
 |
 <a href="#top">[% config.translations.$l.go_to_top %]</a>
 ```
+<!--/QGODA-NO-XGETTEXT-->
 
 This is okay for a handful of strings but a maintainance nightmare for larger sites.  You should rather write all strings in the base language of your site and mark them:
 
+<!--QGODA-NO-XGETTEXT-->
 ```markup
 [% USE gtx = Gettext('your-site-id', asset.lingua) %]
 
@@ -106,6 +109,7 @@ This is okay for a handful of strings but a maintainance nightmare for larger si
 |
 <a href="#top">[% Go to top %]</a>
 ```
+<!--/QGODA-NO-XGETTEXT-->
 
 You can extract these strings into `.po` files for translations, and install the compiled translations in the site.  This is following the standard process for [GNU gettext](https://www.gnu.org/software/gettext/), the de-facto standard for localization of open-source software.
 
@@ -135,6 +139,7 @@ The default name of the qgoda configuration file is `P:_config.yaml`, not `_conf
 
 Default values in Qgoda are not nested but a flat list of patterns:
 
+<!--QGODA-NO-XGETTEXT-->
 ```yaml
 defaults:
   - files: /posts
@@ -150,5 +155,4 @@ defaults:
     values:
       view: raw
 ```
-
-[- TAGS [% %] -]
+<!--/QGODA-NO-XGETTEXT-->
