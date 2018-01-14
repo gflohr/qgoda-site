@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qgoda-site 0.1\n"
 "Report-Msgid-Bugs-To: 'Guido Flohr <guido.flohr@cantanea.com>'\n"
-"PO-Revision-Date: 2018-01-14 10:31+0200\n"
+"PO-Revision-Date: 2018-01-14 12:28+0200\n"
 "Last-Translator: Guido Flohr <guido.flohr@cantanea.com>\n"
 "Language-Team: German\n"
 "Language: de\n"
@@ -781,12 +781,12 @@ msgstr ""
 
 #: ../en/docs/differences-to-jekyll.md:57
 msgid "### Sass? Helpers!"
-msgstr ""
+msgstr "### Sass? Helper-Applikationen!"
 
 #: ../en/docs/differences-to-jekyll.md:59
 msgid ""
-"Jekyll has a built-in <q-term>sass:Sassbuilt on the Ruby Sass implementation."
-"<</q-term> compiler built on the Ruby Sass implementation."
+"Jekyll has a built-in <q-term>sass:Sass</q-term> compiler built on the Ruby "
+"Sass implementation."
 msgstr ""
 
 #: ../en/docs/differences-to-jekyll.md:61
@@ -796,6 +796,11 @@ msgid ""
 "don't want to use Sass but [Less](http://lesscss.org/) or you even opt for "
 "[PostCSS](http://postcss.org/) only."
 msgstr ""
+"Aber moderne Web-Entwicklung bedeutet mehr, als CSS durch einen Präprozessor "
+"zu jagen. Zunächst einmal ist es nicht ganz unwahrscheinlich, dass auch "
+"JavaScript zum Einsatz kommt, oder? Und eventuell willst du nicht Sass "
+"sondern [Less](http://lesscss.org/) einsetzen, oder direkt auf [PostCSS]"
+"(http://postcss.org/) alleine setzen."
 
 #: ../en/docs/differences-to-jekyll.md:63
 msgid ""
@@ -805,6 +810,11 @@ msgid ""
 "[Webpack](https://webpack.js.org/), and who knows what tool will be leader "
 "of the pack in three weeks?"
 msgstr ""
+"Und all diese Assets sollten syntax-geprüft, minifiziert, optimiert und "
+"gebündelt werden, und wieder hat das Node.js-Ökosystem traditionell die "
+"besten Tools für den Jobb am Start, erst [Grunt](https://gruntjs.com/), dann "
+"[Gulp](https://gulpjs.com/), im Moment [Webpack](https://webpack.js.org/), "
+"und wer weiß, welcher neue Stern in drei Wochen am Firmament erscheint?"
 
 #: ../en/docs/differences-to-jekyll.md:65
 msgid ""
@@ -814,10 +824,16 @@ msgid ""
 "server as a second.  And you have the choice.  You decide whether you want "
 "gulp or webpack, yarn or npm, or just plain Makefiles."
 msgstr ""
+"Mit Qgoda lassen sich beliebig viele Hilfs-Applikationen als Helper "
+"konfigurieren, die im Hintergrund mitlaufen, während die Site auf Änderungen "
+"überwacht wird. Typischerweise ist das eines der Build-Tools wie webpack, "
+"das im Watch-Modus läuft. Und parallel wird ein Entwicklungs-Web-Server als "
+"zweites Tool gestartet. Du entscheidest selbst, ob du Gulp oder Webpack, "
+"Yarn oder NPM oder ganz konventionell Makefiles einsetzt."
 
 #: ../en/docs/differences-to-jekyll.md:67
 msgid "### Multi-Language Sites"
-msgstr ""
+msgstr "### Mehrsprachige Sites"
 
 #: ../en/docs/differences-to-jekyll.md:69
 msgid ""
@@ -825,6 +841,9 @@ msgid ""
 "also has no explicit support for multi-lingual web sites.  It just works out "
 "of the box."
 msgstr ""
+"Jekyll hat keine integrierte Unterstützung für Mehrsprachigkeit. Qgoda hat "
+"ebenfalls keine explizite Unterstützung für mehrsprachige Web-sites; es "
+"funktioniert einfach nur von alleine."
 
 #: ../en/docs/differences-to-jekyll.md:71
 msgid ""
@@ -834,6 +853,11 @@ msgid ""
 "the language in any variable you want, and filter by that variable.  That's "
 "all."
 msgstr ""
+"Alles, was zu tun ist, ist die Sprache (bzw. den Sprach-Code) eines "
+"Dokumentes oder Assets in einer Standard-Variablen zu speichern. Wenn man "
+"der Konvention folgt und  `V:lingua` als Variable verwendet, spart man etwas "
+"Tipperei, aber man kann die Sprache in jeder beliebigen Variablen speichern, "
+"und dann nach dieser Variablen filtern. Mehr ist es nicht."
 
 #: ../en/docs/differences-to-jekyll.md:73
 msgid ""
@@ -842,10 +866,15 @@ msgid ""
 "The quick and dirty way is to store translations in your configuration file "
 "`P:_config.yaml`:"
 msgstr ""
+"Unter normalen Umständen gibt es nicht nur beim regulären Content "
+"Unterschiede zwischen den Sprachversionen. Auch Strings aus den Templates "
+"müssen übersetzt werden. Der typische von anderen Programmen verwendete Hack "
+"besteht darin, Übersetzungen in der Konfigurationsdatei `P:_config.yaml` zu "
+"speichern:"
 
 #: ../en/docs/differences-to-jekyll.md:90
 msgid "In the template you write:"
-msgstr ""
+msgstr "Im Template schreibt man dann:"
 
 #: ../en/docs/differences-to-jekyll.md:102
 msgid ""
@@ -853,6 +882,9 @@ msgid ""
 "larger sites.  You should rather write all strings in the base language of "
 "your site and mark them:"
 msgstr ""
+"Das mag für eine Handvoll Strings gerade noch akzeptabel sein, wird aber "
+"schnell zu einem Wartungsalbtraum für größere Sites. Besser ist es, die "
+"Strings einfach in der Grundsprache zu schreiben und lediglich zu markieren:"
 
 #: ../en/docs/differences-to-jekyll.md:114
 msgid ""
@@ -861,10 +893,15 @@ msgid ""
 "process for [GNU gettext](https://www.gnu.org/software/gettext/), the de-"
 "facto standard for localization of open-source software."
 msgstr ""
+"Diese Strings können dann zur Übersetzung in  `.po`-Dateien extrahiert "
+"werden, und die fertigen Übersetzungen werden kompiliert und in der Site "
+"installiert. Das folgt exakt dem Standard-Workflow für [GNU Gettext](https://"
+"www.gnu.org/software/gettext/), dem de-facto-Standard für Lokalisierung von "
+"Open-Source-Software."
 
 #: ../en/docs/differences-to-jekyll.md:116
 msgid "## Template System"
-msgstr ""
+msgstr "## Template-System"
 
 #: ../en/docs/differences-to-jekyll.md:118
 msgid ""

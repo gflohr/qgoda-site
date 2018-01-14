@@ -548,7 +548,7 @@ msgid "### Sass? Helpers!"
 msgstr ""
 
 #: ../en/docs/differences-to-jekyll.md:59
-msgid "Jekyll has a built-in <q-term>sass:Sassbuilt on the Ruby Sass implementation.<</q-term> compiler built on the Ruby Sass implementation."
+msgid "Jekyll has a built-in <q-term>sass:Sass</q-term> compiler built on the Ruby Sass implementation."
 msgstr ""
 
 #: ../en/docs/differences-to-jekyll.md:61
