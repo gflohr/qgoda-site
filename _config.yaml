@@ -13,6 +13,9 @@ exclude:
 exclude_watch:
   - /assets
   - "!/_timestamp.json"
+scm: git
+no_scm:
+  - /assets
 helpers:
   yarn: yarn start
   browser-sync: yarn server

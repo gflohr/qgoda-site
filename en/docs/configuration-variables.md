@@ -38,6 +38,12 @@ The relation score that two documents that have a link between each other get.  
 [%- END %]
 
 [% WRAPPER components/variable.html
+   variable="no_scm" type='List of patterns' 
+   default='none' -%]
+A list of file name patterns that should be processed although not being under version control.  This only makes sense in conjunction with <code>C:scm</code>.
+[%- END %]
+
+[% WRAPPER components/variable.html
    variable="title" type='String' 
    default='"A New Qgoda Powered Site"' -%]
 The name of the site.  Qgoda itself does not use this variable.
@@ -114,6 +120,12 @@ Location of the <code>xgettext</code> program if not in <code>$PATH</code>.
    variable="po.xgettext_tt2" type='String' 
    default='xgettext-tt2' -%]
 Location of the <code>xgettext-tt2</code> program if not in <code>$PATH</code>.
+[%- END %]
+
+[% WRAPPER components/variable.html
+   variable="scm" type='String' 
+   default='none' -%]
+Source Code Management (SCM) system in use.  The only supported variable at the moment is "git".  That has the effect that only files under version control are processed.  This check is done *after* filtering with the contents of the configuration variable <code>C:exclude</code>.
 [%- END %]
 
 [% WRAPPER components/variable.html
