@@ -10,5 +10,5 @@ sections:
   - ['miscellaneous', 
      'differences-to-jekyll' ]
   - ['lists-and-indices', 
-     'terms-and-concepts', 'template-variables', 'files-and-directories',
-     'configuration-variables' ]
+     'terms-and-concepts', 'pattern-lists', 'template-variables',
+     'files-and-directories', 'configuration-variables' ]

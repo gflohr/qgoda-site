@@ -7,7 +7,10 @@ description: How to exclude (or include) additional paths in Qgoda.
 ---
 By default, Qgoda does not process hidden files and directories (name starts with a dot `.`).  Top-level files and directories that have names beginning with an underscore `_` are also excluded.
 
-<!--QGODA-NO-XGETTEXT--><qgoda-toc /><!--/QGODA-NO-XGETTEXT-->
+<!--QGODA-NO-XGETTEXT-->
+[% USE q = Qgoda %]
+<qgoda-toc />
+<!--/QGODA-NO-XGETTEXT-->
 
 ## Excluding Additional Files
 
@@ -26,6 +29,8 @@ exclude:
 <!--/QGODA-NO-XGETTEXT-->
 
 This will also exclude the top-level directory `node_modules`, and the top-level files `package.json` and `webpack.config.js`.  Likewise, all XCF files (the image format of [The Gimp](http://www.gimp.org/) in the directory `assets/images` and all of its descendant directories are excluded.
+
+Please see [% q.lanchor(name = 'pattern-lists') %] for the gory details of search patterns and lists of search patterns in Qgoda.
 
 ## Automatically Excluded Files
 
@@ -125,118 +130,4 @@ exclude_watch:
 ```
 <!--/QGODA-NO-XGETTEXT-->
 
-You can see that the directories `_views` and `_includes` have been re-included.  They typically contain layout/design files.  They deserve a ... do they?????
-
-## Gory Details Of Pattern Matching
-
-The patterns you can use for the variable `exclude` follow the convention of [gitignore](https://git-scm.com/docs/gitignore), only that you put your configuration in [YAML](http://yaml.org/) file `_config.yaml`.
-
-### Special Characters
-
-Some characters in patterns have a special meaning.
-
-#### The Star/Asterisk "*"
-
-The star or asterisk stands for an arbitrary number of characters except for a slash:
-
-<!--QGODA-NO-XGETTEXT-->
-```yaml
-exclude:
-- images/*.xcf
-```
-<!--/QGODA-NO-XGETTEXT-->
-
-This will exclude all XCF files in the subdirectory `images` for example `images/logo.xcf` but *not* `images/ci/logo.xcf` (because the star/asterisk does not match a slash).
-
-Note that `*.xcf` also matches the file `.xcf`.  The star stands for an arbitrary number of characters and that includes zero characters.
-
-#### The Double Star/Asterisk "**"
-
-Two consecutive stars `**` stand for any sequence of characters including the slash.
-
-<!--QGODA-NO-XGETTEXT-->
-```yaml
-exclude:
-- images/**/*.xcf
-```
-<!--/QGODA-NO-XGETTEXT-->
-
-This now matches `images/ci/logo.xcf` *and* `images/logo.xcf` and also `images/nothing/beats/nesting/logo.xcf`.  The pattern `**` matches recursively.
-
-#### The Exclmation Mark "!"
-
-The exclamation mark negates a pattern.  See [below](#negating-patterns) for details.
-
-[% WRAPPER components/infobox.html
-           type = "warning" title = "The exclamation mark is special to YAML" %]
-The exclamation mark <code>!</code> is a special character in YAML and JSON.  You therefore have to put negated patters into quotes, for example "!a/b".
-[% END %]
-
-#### The Question Mark "?"
-
-The question mark standard for any character except for a slash.
-
-<!--QGODA-NO-XGETTEXT-->
-```yaml
-exclude:
-- images/corporate?logos
-```
-<!--/QGODA-NO-XGETTEXT-->
-
-This matches `images/corporate-logos` and `images/corporate_logos` and `images/corporatedQlogos` and `images/corporate&logos`.
-
-#### Character [Ranges]
-
-It's getting esoteric.
-
-<!--QGODA-NO-XGETTEXT-->
-```yaml
-exclude:
-- images/[abc].jpeg
-```
-<!--/QGODA-NO-XGETTEXT-->
-
-This matches exactly `images/a.jpeg`, `images/b.jpeg`, and `images/c.jpeg`.  Instead, you could also write this:
-
-<!--QGODA-NO-XGETTEXT-->
-```yaml
-exclude:
-- images/[a-c].jpeg
-```
-<!--/QGODA-NO-XGETTEXT-->
-
-Read the `[a-c]` as "all characters from a to c".
-
-You can combine ranges:
-
-<!--QGODA-NO-XGETTEXT-->
-```yaml
-exclude:
-- images/[a-z0-9].jpeg
-```
-<!--/QGODA-NO-XGETTEXT-->
-
-This would now match `x.jpeg` and `3.jpeg`.
-
-Note that `[]` does not stand for no character.  It is simply not special.  Use `[]abc]` if you want to match "a", "b", "c", and a closing square bracket.
-
-And put the hyphen at the front if you want to match it: `[-a-zA-Z0-9]`.  That matches all alphanumeric characters and the hyphen.
-
-You can also use named character classes like `[a-zA-Z[:digit:]]` where `[:digit]` stands for any digit in the current locale.  Using this feature is discouraged unless you understand it.
-
-#### The Backslash "\"
-
-You can escape any character by preceding it with a backslash "\".
-
-<!--QGODA-NO-XGETTEXT-->
-```yaml
-exclude:
-- images/Quo Vadis\?.jpeg
-```
-<!--/QGODA-NO-XGETTEXT-->
-
-This matches only `images/Quo Vadis?.jpeg` but not `images/Quo VadissX.jpeg`.  The question mark has lost its special meaning by the preceding backslash.
-
-### Negating Patterns
-
-### Slashes
+You can see that the directories `_views` and `_includes` have been re-included.  They typically contain layout/design files.
