@@ -15,6 +15,7 @@ You can change this default behavior by configuring additional file name pattern
 
 Example:
 
+<!--QGODA-NO-XGETTEXT-->
 ```yaml
 exclude:
 - /node_modules
@@ -22,6 +23,7 @@ exclude:
 - /webpack.config.js
 - assets/images/**/*.xcf
 ```
+<!--/QGODA-NO-XGETTEXT-->
 
 This will also exclude the top-level directory `node_modules`, and the top-level files `package.json` and `webpack.config.js`.  Likewise, all XCF files (the image format of [The Gimp](http://www.gimp.org/) in the directory `assets/images` and all of its descendant directories are excluded.
 
@@ -29,6 +31,7 @@ This will also exclude the top-level directory `node_modules`, and the top-level
 
 Internally, Qgoda does not use the configured exclusion list directly but a slightly extended one.  For the above example it looks like this:
 
+<!--QGODA-NO-XGETTEXT-->
 ```yaml
 exclude:
 - .*
@@ -39,6 +42,7 @@ exclude:
 - assets/images/**/*.xcf
 - /_site
 ```
+<!--/QGODA-NO-XGETTEXT-->
 
 The first two lines files and directories that have names beginning with a dot (`.`) or top-level files and directories that have names beginning with an underscore.
 
@@ -50,6 +54,7 @@ The last line is always appended and a safe-guard against configuration errors. 
 
 There is no configuration variable `include`.  You can exclude otherwise excluded files by prepending a pattern with an exclamation mark `!`.  The pattern is then negated:
 
+<!--QGODA-NO-XGETTEXT-->
 ```yaml
 exclude:
 - /node_modules
@@ -58,6 +63,7 @@ exclude:
 - assets/images/**/*.xcf
 - "!/_posts"
 ```
+<!--/QGODA-NO-XGETTEXT-->
 
 This would now enable processing of all the files in the top-level directory `_posts`.
 
@@ -65,11 +71,13 @@ Beware though that you cannot re-include files or directories, when one of their
 
 Example:
 
+<!--QGODA-NO-XGETTEXT-->
 ```yaml
 exclude:
 - /archive
 - "!/archive/2017"
 ```
+<!--/QGODA-NO-XGETTEXT-->
 
 The second pattern is invalid and ignored because `/archive` is a parent directory of `/archive/2017`.
 
@@ -77,12 +85,15 @@ This behavior has performance reasons.  When Qgoda collects files, it does not d
 
 That leads to a little problem if you want to re-include a subdirectory of an automatically excluded directory, for example `_experiments/stable`.  The top-level directory `_experiments` is automatically excluded by Qgoda.  In order to re-include it, you would have to do the following:
 
+<!--QGODA-NO-XGETTEXT-->
 ```yaml
 exclude:
 - "!/_experiments"
 - /_experiments/*
 - "!/_experiments/stable"
 ```
+<!--/QGODA-NO-XGETTEXT-->
+
 You have to keep in mind that Qgoda has prepended this list with `/_*` (see above).  Line 1 re-includes `_experiments`.  Line 2 excludes all its subdirectories again.  And line 3 selectively re-includes `_experiments/stable`.
 
 ## Excluding Files From Being Watched
@@ -93,13 +104,16 @@ Note that Qgoda by default re-includes the directories `P:_views` and `P:_includ
 
 Example:
 
+<!--QGODA-NO-XGETTEXT-->
 ```yaml
 exclude_watch:
 - assets/movies
 ```
+<!--/QGODA-NO-XGETTEXT-->
 
 The list that is really used by Qgoda looks like this:
 
+<!--QGODA-NO-XGETTEXT-->
 ```yaml
 exclude_watch:
 - .*
@@ -109,6 +123,7 @@ exclude_watch:
 - assets/movies
 - /_site
 ```
+<!--/QGODA-NO-XGETTEXT-->
 
 You can see that the directories `_views` and `_includes` have been re-included.  They typically contain layout/design files.  They deserve a ... do they?????
 
@@ -124,10 +139,12 @@ Some characters in patterns have a special meaning.
 
 The star or asterisk stands for an arbitrary number of characters except for a slash:
 
+<!--QGODA-NO-XGETTEXT-->
 ```yaml
 exclude:
 - images/*.xcf
 ```
+<!--/QGODA-NO-XGETTEXT-->
 
 This will exclude all XCF files in the subdirectory `images` for example `images/logo.xcf` but *not* `images/ci/logo.xcf` (because the star/asterisk does not match a slash).
 
@@ -137,10 +154,12 @@ Note that `*.xcf` also matches the file `.xcf`.  The star stands for an arbitrar
 
 Two consecutive stars `**` stand for any sequence of characters including the slash.
 
+<!--QGODA-NO-XGETTEXT-->
 ```yaml
 exclude:
 - images/**/*.xcf
 ```
+<!--/QGODA-NO-XGETTEXT-->
 
 This now matches `images/ci/logo.xcf` *and* `images/logo.xcf` and also `images/nothing/beats/nesting/logo.xcf`.  The pattern `**` matches recursively.
 
@@ -157,10 +176,12 @@ The exclamation mark <code>!</code> is a special character in YAML and JSON.  Yo
 
 The question mark standard for any character except for a slash.
 
+<!--QGODA-NO-XGETTEXT-->
 ```yaml
 exclude:
 - images/corporate?logos
 ```
+<!--/QGODA-NO-XGETTEXT-->
 
 This matches `images/corporate-logos` and `images/corporate_logos` and `images/corporatedQlogos` and `images/corporate&logos`.
 
@@ -168,26 +189,32 @@ This matches `images/corporate-logos` and `images/corporate_logos` and `images/c
 
 It's getting esoteric.
 
+<!--QGODA-NO-XGETTEXT-->
 ```yaml
 exclude:
 - images/[abc].jpeg
 ```
+<!--/QGODA-NO-XGETTEXT-->
 
 This matches exactly `images/a.jpeg`, `images/b.jpeg`, and `images/c.jpeg`.  Instead, you could also write this:
 
+<!--QGODA-NO-XGETTEXT-->
 ```yaml
 exclude:
 - images/[a-c].jpeg
 ```
+<!--/QGODA-NO-XGETTEXT-->
 
 Read the `[a-c]` as "all characters from a to c".
 
 You can combine ranges:
 
+<!--QGODA-NO-XGETTEXT-->
 ```yaml
 exclude:
 - images/[a-z0-9].jpeg
 ```
+<!--/QGODA-NO-XGETTEXT-->
 
 This would now match `x.jpeg` and `3.jpeg`.
 
@@ -201,10 +228,12 @@ You can also use named character classes like `[a-zA-Z[:digit:]]` where `[:digit
 
 You can escape any character by preceding it with a backslash "\".
 
+<!--QGODA-NO-XGETTEXT-->
 ```yaml
 exclude:
 - images/Quo Vadis\?.jpeg
 ```
+<!--/QGODA-NO-XGETTEXT-->
 
 This matches only `images/Quo Vadis?.jpeg` but not `images/Quo VadissX.jpeg`.  The question mark has lost its special meaning by the preceding backslash.
 

@@ -137,7 +137,7 @@ The default name of the qgoda configuration file is `P:_config.yaml`, not `_conf
 
 ### Default Values
 
-Default values in Qgoda are not nested but a flat list of patterns:
+Default values in Qgoda are configured via flat lists of pattern (as opposed to nested data structures in Jekyll). Example:
 
 <!--QGODA-NO-XGETTEXT-->
 ```yaml

@@ -101,7 +101,7 @@ Set to 1 if you want to reload translations before every rebuild.  By default, t
 [% WRAPPER components/variable.html
    variable="po.tt2" type='Pattern list' 
    default='[_views, _includes]' -%]
-List of patterns where to search for template files.
+List of patterns where to search for translatable template files.
 [%- END %]
 
 [% WRAPPER components/variable.html
