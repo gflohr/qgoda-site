@@ -19,12 +19,14 @@ The list is sorted alphanumerically but case-insensitive, and a leading
 underscore of the name is ignored.
 [% END %]
 
+<!--QGODA-NO-XGETTEXT-->
 <ul>
+<!--/QGODA-NO-XGETTEXT-->
 
 [% WRAPPER components/file.html
    name="_assets" type='directory' -%]
 This directory usually keeps the source files for assets, for example
-JavaScript files or (S)CSS files.
+JavaScript files or (S)CSS files.  Qgoda does not use this name internally.  It is just a convention.
 [%- END %]
 
 [% WRAPPER components/file.html
@@ -41,17 +43,14 @@ does not exist.
 [% WRAPPER components/file.html
    name="_includes" type='directory'
    overridable="paths.includes" -%]
-
 Directory for included content snippets.  You use that for example
-like <code>[&#37; q.include("_includes/footer.md") &#37;]</code>.  You 
-can actually include such snippets from everywhere, but a modifcation 
-of files ore directories in `_includes` trigger a site rebuild.
+like <code>[&#37; q.include("_includes/footer.md") &#37;]</code>.  Using the
+name `_includes` is not enforced by Qgoda.  But you should use a name that starts with an underscore (so that the files are not misinterpreted as regular content) and add the negated name to the configuration variable `C:exclude_watch`.
 [%- END %]
 
 [% WRAPPER components/file.html
    name="_plugins" type='directory'
    overridable="paths.plugins" -%]
-
 Directory for site-specific plug-ins.  Plug-Ins in this directory are
 automatically activated.
 [%- END %]
@@ -59,7 +58,6 @@ automatically activated.
 [% WRAPPER components/file.html
    name="_site" type='directory'
    overridable="paths.site" -%]
-
 The output directory.  This will normally be the document root of your
 web server.  Files and directories in <code>P:_site</code> are 
 overwritten without warning.
@@ -76,4 +74,6 @@ automatically re-load pages in the browser, for example with
 specify  <code>P:_timestamp</code> as the file to watch for changes.
 [%- END %]
 
+<!--QGODA-NO-XGETTEXT-->
 </ul>
+<!--/QGODA-NO-XGETTEXT-->

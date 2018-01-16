@@ -49,11 +49,9 @@ exclude:
 ```
 <!--/QGODA-NO-XGETTEXT-->
 
-The first two lines files and directories that have names beginning with a dot (`.`) or top-level files and directories that have names beginning with an underscore.
+The first two lines exclude files and directories that have names beginning with a dot (`.`) or top-level files and directories that have names beginning with an underscore.
 
-If you have invoked Qgoda with the command-line option `--drafts`, an addtional line `!/_drafts` (resp. the value of the configuration variable `directories.drafts`) is added.
-
-The last line is always appended and a safe-guard against configuration errors.  Unintentionally including the output directory `_site` (or whatever you have configured in the variable `outdir`) would lead to an infinite recursion.  The output directory is therefore always added to the exclusion list.
+The last line is always appended and a safe-guard against configuration errors.  Unintentionally including the output directory `P:_site` would lead to an infinite recursion.  The output directory is therefore always added to the exclusion list.
 
 ## Including Files
 
@@ -103,9 +101,9 @@ You have to keep in mind that Qgoda has prepended this list with `/_*` (see abov
 
 ## Excluding Files From Being Watched
 
-There is another configuration variable `C:exclude_watch` that specifies files and directories that should not be watched.  If you omit that variable, the contents of `exclude` is taken instead.
+There is another configuration variable `C:exclude_watch` that specifies files and directories that should not be watched.  If you omit that variable, the contents of `C:exclude` is taken instead.
 
-Note that Qgoda by default re-includes the directories `P:_views` and `P:_includes`.
+Note that Qgoda by default re-includes the directory `P:_views`.
 
 Example:
 
@@ -124,10 +122,9 @@ exclude_watch:
 - .*
 - /_*
 - "!/_views"
-- "!/_includes"
 - assets/movies
 - /_site
 ```
 <!--/QGODA-NO-XGETTEXT-->
 
-You can see that the directories `_views` and `_includes` have been re-included.  They typically contain layout/design files.
+You can see that the directory `_views` has been re-included because it contains layout and design files.

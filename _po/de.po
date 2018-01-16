@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qgoda-site 0.1\n"
 "Report-Msgid-Bugs-To: 'Guido Flohr <guido.flohr@cantanea.com>'\n"
-"PO-Revision-Date: 2018-01-15 17:10+0200\n"
+"PO-Revision-Date: 2018-01-16 17:49+0200\n"
 "Last-Translator: Guido Flohr <guido.flohr@cantanea.com>\n"
 "Language-Team: German\n"
 "Language: de\n"
@@ -799,21 +799,32 @@ msgstr ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"po.refresh\" type='Boolean (0 or 1)' \n"
 "   default='0' -%]\n"
-"Kann auf 1 gesetzt werden, wenn die Übersetzungen vor jedem Rebuild neu geladen werden sollen. Standardmäßig werden sie nur beim Programm-Start geladen. Werden installierte Übersetzungen stattdessen bei jedem Rebuild neu geladen, sind sie sofort sichtbar.\n"
+"Kann auf 1 gesetzt werden, wenn die Übersetzungen vor jedem Rebuild neu "
+"geladen werden sollen. Standardmäßig werden sie nur beim Programm-Start "
+"geladen. Werden installierte Übersetzungen stattdessen bei jedem Rebuild neu "
+"geladen, sind sie sofort sichtbar.\n"
 "[%- END %]"
 
 #: ../en/docs/configuration-variables.md:101
+#, fuzzy
+#| msgid ""
+#| "[% WRAPPER components/variable.html\n"
+#| "   variable=\"po.tt2\" type='Pattern list' \n"
+#| "   default='[_views, _includes]' -%]\n"
+#| "List of patterns where to search for template files.\n"
+#| "[%- END %]"
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"po.tt2\" type='Pattern list' \n"
 "   default='[_views, _includes]' -%]\n"
-"List of patterns where to search for template files.\n"
+"List of patterns where to search for translatable template files.\n"
 "[%- END %]"
 msgstr ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"po.tt2\" type='Pattern list' \n"
 "   default='[_views, _includes]' -%]\n"
-"Liste von Suchmustern, wo nach übersetzbaren Template-Dateien gesucht werden soll.\n"
+"Liste von Suchmustern, wo nach übersetzbaren Template-Dateien gesucht werden "
+"soll.\n"
 "[%- END %]"
 
 #: ../en/docs/configuration-variables.md:107
@@ -831,7 +842,12 @@ msgstr ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"po.textdomain\" type='String' \n"
 "   default='nichts' -%]\n"
-"Die *Textdomain* der Site. Der Master-Übersetzungs-Katalog für die Site hat den Namen <code>TEXTDOMAIN.pot</code>, und der Aufruf des Gettext-Plug-Ins für Template Toolkit muss den selben Namen verweden. Dies lässt sich am einfachsten erreichen, indem das Gettext-Plug-In mit <code>[[%'%'%] USE gtx = Gettext(config.po.textdomain, asset.lingua) [%'%'%]]</code> aufgerufen wird.\n"
+"Die *Textdomain* der Site. Der Master-Übersetzungs-Katalog für die Site hat "
+"den Namen <code>TEXTDOMAIN.pot</code>, und der Aufruf des Gettext-Plug-Ins "
+"für Template Toolkit muss den selben Namen verweden. Dies lässt sich am "
+"einfachsten erreichen, indem das Gettext-Plug-In mit <code>[[%'%'%] USE gtx "
+"= Gettext(config.po.textdomain, asset.lingua) [%'%'%]]</code> aufgerufen "
+"wird.\n"
 "[%- END %]"
 
 #: ../en/docs/configuration-variables.md:113
@@ -891,7 +907,10 @@ msgstr ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"scm\" type='String' \n"
 "   default='none' -%]\n"
-"Source Code Management (SCM) system in use.  The only supported variable at the moment is \"git\".  That has the effect that only files under version control are processed.  This check is done *after* filtering with the contents of the configuration variable <code>C:exclude</code>.\n"
+"Source Code Management (SCM) system in use.  The only supported variable at "
+"the moment is \"git\".  That has the effect that only files under version "
+"control are processed.  This check is done *after* filtering with the "
+"contents of the configuration variable <code>C:exclude</code>.\n"
 "[%- END %]"
 
 #: ../en/docs/configuration-variables.md:131
@@ -1274,7 +1293,10 @@ msgstr "### Default-Werte"
 msgid ""
 "Default values in Qgoda are configured via flat lists of pattern (as opposed "
 "to nested data structures in Jekyll). Example:"
-msgstr "Vorgabewerte (Defaults) in Qgoda werden über flache Listen von Suchmustern und nicht über verschachtelte Datenstrukturen wie in Jekyll konfiguriert. Beispiel:"
+msgstr ""
+"Vorgabewerte (Defaults) in Qgoda werden über flache Listen von Suchmustern "
+"und nicht über verschachtelte Datenstrukturen wie in Jekyll konfiguriert. "
+"Beispiel:"
 
 #: ../en/docs/excluding-files.md:2
 msgctxt "title"
@@ -1285,6 +1307,8 @@ msgstr "Dateien ausschließen"
 msgctxt "description"
 msgid "How to exclude (or include) additional paths in Qgoda."
 msgstr ""
+"Wie sich zusätzliche Dateisystems-Pfade in Qgoda für die Verarbeitung "
+"ausschließen oder einschließen lassen."
 
 #: ../en/docs/excluding-files.md:8
 msgid ""
@@ -1292,306 +1316,207 @@ msgid ""
 "with a dot `.`).  Top-level files and directories that have names beginning "
 "with an underscore `_` are also excluded."
 msgstr ""
+"In der Voreinstellung verarbeitet Qgoda weder versteckte Dateien oder "
+"Verzeichnisse (deren Namen beginnen mit einem `.`), noch Dateien und "
+"Verzeichhnisse auf der höchsten Ebene, deren Namen mit einem Unterstrich `_` "
+"beginnen."
 
-#: ../en/docs/excluding-files.md:12
+#: ../en/docs/excluding-files.md:15
 msgid "## Excluding Additional Files"
-msgstr ""
+msgstr "## Zusätzliche Dateien ausschließen"
 
-#: ../en/docs/excluding-files.md:14
+#: ../en/docs/excluding-files.md:17
 msgid ""
 "You can change this default behavior by configuring additional file name "
 "patterns in the variable `C:exclude` in the configuration file `P:_config."
 "yml`."
 msgstr ""
+"Das Standardverhalten lässt sich ändern, indem weitere Suchmuster in der "
+"Variablen `C:exclude` in der Konfigurationsdatei `P:_config.yml` hinterlegt "
+"werden."
 
-#: ../en/docs/excluding-files.md:16 ../en/docs/excluding-files.md:72
-#: ../en/docs/excluding-files.md:105
+#: ../en/docs/excluding-files.md:19 ../en/docs/excluding-files.md:75
+#: ../en/docs/excluding-files.md:108
 msgid "Example:"
-msgstr ""
+msgstr "Beispiel:"
 
-#: ../en/docs/excluding-files.md:28
+#: ../en/docs/excluding-files.md:31
 msgid ""
 "This will also exclude the top-level directory `node_modules`, and the top-"
 "level files `package.json` and `webpack.config.js`.  Likewise, all XCF files "
 "(the image format of [The Gimp](http://www.gimp.org/) in the directory "
 "`assets/images` and all of its descendant directories are excluded."
 msgstr ""
+"Damit werden auf der höchsten Ebene auch die Verzeichnisse das Verzeichnis "
+"`node_modules`, sowie die Dateien `package.json` und `webpack.config.js` "
+"ignoriert. Weiterhin werden auch alle XCF-Dateien (das Bildformat des "
+"Bildverarbeitungsprogramms [Gimp](http://www.gimp.org/) im Verzeichnis "
+"`assets/images` und all seinen Unterverzeichnissen von der Verarbeitung "
+"ausgeschlossen."
 
-#: ../en/docs/excluding-files.md:30
-msgid "## Automatically Excluded Files"
+#: ../en/docs/excluding-files.md:33
+msgid ""
+"Please see [% q.lanchor(name = 'pattern-lists') %] for the gory details of "
+"search patterns and lists of search patterns in Qgoda."
 msgstr ""
+"Die Seite [% q.lanchor(name = 'pattern-lists') %] liefert weitergehene "
+"Informationen über Dateinamensmuster und Listen solcher Muster in Qgoda."
 
-#: ../en/docs/excluding-files.md:32
+#: ../en/docs/excluding-files.md:35
+msgid "## Automatically Excluded Files"
+msgstr "## Automatisch ausgeschlossene Dateien"
+
+#: ../en/docs/excluding-files.md:37
 msgid ""
 "Internally, Qgoda does not use the configured exclusion list directly but a "
 "slightly extended one.  For the above example it looks like this:"
 msgstr ""
+"Intern wird die konfigurierte Ausschluss-Liste nicht direkt verwendet. Die "
+"tatsächliche Liste ist etwas erweitert. Für das obige Beispiel würde die "
+"vollständige Liste so aussehen:"
 
-#: ../en/docs/excluding-files.md:47
+#: ../en/docs/excluding-files.md:52
+#, fuzzy
+#| msgid ""
+#| "The first two lines files and directories that have names beginning with "
+#| "a dot (`.`) or top-level files and directories that have names beginning "
+#| "with an underscore."
 msgid ""
-"The first two lines files and directories that have names beginning with a "
-"dot (`.`) or top-level files and directories that have names beginning with "
-"an underscore."
+"The first two lines exclude files and directories that have names beginning "
+"with a dot (`.`) or top-level files and directories that have names "
+"beginning with an underscore."
 msgstr ""
+"Die ersten beiden Zeilen schließen Dateien und Verzeichnisse aus, deren "
+"Namen mit einem Punkt `.` oder Dateien und Verzeichnisse auf der höchsten "
+"Ebene, deren Namen mit einem Untertrich beginnen, aus."
 
-#: ../en/docs/excluding-files.md:49
-msgid ""
-"If you have invoked Qgoda with the command-line option `--drafts`, an "
-"addtional line `!/_drafts` (resp. the value of the configuration variable "
-"`directories.drafts`) is added."
-msgstr ""
-
-#: ../en/docs/excluding-files.md:51
+#: ../en/docs/excluding-files.md:54
+#, fuzzy
+#| msgid ""
+#| "The last line is always appended and a safe-guard against configuration "
+#| "errors.  Unintentionally including the output directory `_site` (or "
+#| "whatever you have configured in the variable `outdir`) would lead to an "
+#| "infinite recursion.  The output directory is therefore always added to "
+#| "the exclusion list."
 msgid ""
 "The last line is always appended and a safe-guard against configuration "
-"errors.  Unintentionally including the output directory `_site` (or whatever "
-"you have configured in the variable `outdir`) would lead to an infinite "
-"recursion.  The output directory is therefore always added to the exclusion "
-"list."
+"errors.  Unintentionally including the output directory `P:_site` would lead "
+"to an infinite recursion.  The output directory is therefore always added to "
+"the exclusion list."
 msgstr ""
+"Die letzte Zeile wird grundsätzlich angehangen und stellt einen "
+"Schutzmechanismus gegen Konfigurationsfehler dar. Wird das "
+"Ausgabeverzeichnis `P:_site` eingeschlossen, würde das zu einer "
+"Endlosschleife führen. Das Ausgabeverzeichnis wird deshalb am Ende immer "
+"explizit ausgeschlossen."
 
-#: ../en/docs/excluding-files.md:53
+#: ../en/docs/excluding-files.md:56
 msgid "## Including Files"
-msgstr ""
+msgstr "## Dateien einschließen"
 
-#: ../en/docs/excluding-files.md:55
+#: ../en/docs/excluding-files.md:58
 msgid ""
 "There is no configuration variable `include`.  You can exclude otherwise "
 "excluded files by prepending a pattern with an exclamation mark `!`.  The "
 "pattern is then negated:"
 msgstr ""
+"Es gibt keine Konfigurationsvariable `include`. Statt dessen lassen sich "
+"ausgeschlossene Datei wieder einschließen, indem dem entsprechenden "
+"Suchmuster ein Ausrufezeichen `!` vorangestellt wird. Das Muster wird "
+"dadurch negiert:"
 
-#: ../en/docs/excluding-files.md:68
+#: ../en/docs/excluding-files.md:71
 msgid ""
 "This would now enable processing of all the files in the top-level directory "
 "`_posts`."
 msgstr ""
+"Mit dieser Einstellung wüerden alle Dateien, die im auf der höchsten Ebene "
+"liegenden Verzeichnis `_posts` liegen, wieder eingeschlossen. "
 
-#: ../en/docs/excluding-files.md:70
+#: ../en/docs/excluding-files.md:73
 msgid ""
 "Beware though that you cannot re-include files or directories, when one of "
 "their parent directories is already excluded."
 msgstr ""
+"Es ist jedoch zu beachten, dass Dateien und Verzeichnisse nicht wieder "
+"eingeschlossen werden können, wenn eines ihrer Elternverzeichnisse durch "
+"eine vorhergehende Regel bereits ausgeschlossen wurde."
 
-#: ../en/docs/excluding-files.md:82
+#: ../en/docs/excluding-files.md:85
 msgid ""
 "The second pattern is invalid and ignored because `/archive` is a parent "
 "directory of `/archive/2017`."
 msgstr ""
+"Das zweite Muster ist ungültig und wird ignoriertm weil `/archive` ein "
+"Elternverzeichnis von `/archive/2017` ist."
 
-#: ../en/docs/excluding-files.md:84
+#: ../en/docs/excluding-files.md:87
 msgid ""
 "This behavior has performance reasons.  When Qgoda collects files, it does "
 "not descend into excluded directories.  In the above example, it would not "
 "read the contents of `archive` and would therefore never see the "
 "subdirectory `archive/2017`."
 msgstr ""
+"Dieses Verhalten dient der Effizienssteigerung. Wenn Qgoda Dateien zur "
+"Verarbeitung sucht, steigt es nicht in ausgeschlossene Verzeichnisse herab. "
+"Im obigen Beispiel würde der Inhalt von `archive` nicht gelesen, und daher "
+"auch das Unterverzeichnis `archive/2017` nie geöffnet."
 
-#: ../en/docs/excluding-files.md:86
+#: ../en/docs/excluding-files.md:89
 msgid ""
 "That leads to a little problem if you want to re-include a subdirectory of "
 "an automatically excluded directory, for example `_experiments/stable`.  The "
 "top-level directory `_experiments` is automatically excluded by Qgoda.  In "
 "order to re-include it, you would have to do the following:"
 msgstr ""
+"Daraus ergibt sich ein kleines Problem, wenn man ein Unterverzeichnis eines "
+"automatisch ausgeschlossenen Verzeichnisses, zum Beispiel `_experiments/"
+"stable` wieder einschließen will. Dazu muss man einen kleinen Umweg gehen:"
 
-#: ../en/docs/excluding-files.md:97
+#: ../en/docs/excluding-files.md:100
 msgid ""
 "You have to keep in mind that Qgoda has prepended this list with `/_*` (see "
 "above).  Line 1 re-includes `_experiments`.  Line 2 excludes all its "
 "subdirectories again.  And line 3 selectively re-includes `_experiments/"
 "stable`."
 msgstr ""
+"Dazu muss man sich erinnern, dass Qgoda der Liste automatisch das Muster `/"
+"_` vorangestellt hat. Zeile 1 re-inkludiert jetzt `_experiments`, Zeile 2 "
+"schließt alle Unterverzeichnisse aber direkt wieder aus. Dafür schließt "
+"Zeile 3 das Verzeichnis `_experiments/stable` wieder ein."
 
-#: ../en/docs/excluding-files.md:99
+#: ../en/docs/excluding-files.md:102
 msgid "## Excluding Files From Being Watched"
-msgstr ""
+msgstr "## Dateien von der Überwachung im Watch-Modus ausschließen"
 
-#: ../en/docs/excluding-files.md:101
+#: ../en/docs/excluding-files.md:104
+#, fuzzy
+#| msgid ""
+#| "There is another configuration variable `C:exclude_watch` that specifies "
+#| "files and directories that should not be watched.  If you omit that "
+#| "variable, the contents of `exclude` is taken instead."
 msgid ""
 "There is another configuration variable `C:exclude_watch` that specifies "
 "files and directories that should not be watched.  If you omit that "
-"variable, the contents of `exclude` is taken instead."
+"variable, the contents of `C:exclude` is taken instead."
+msgstr ""
+"Eine weitere Konfigurationsvariable `C:exclude_watch` gibt Dateien und "
+"Verzeichnisse an, die im Watch-Modus keine Neu-Generierung der Site auslösen "
+"sollen, an. Wird diese Variable weggelassen, wird stattdessen der Inhalt von "
+"`C:exclude` genommen."
+
+#: ../en/docs/excluding-files.md:106
+msgid "Note that Qgoda by default re-includes the directory `P:_views`."
 msgstr ""
 
-#: ../en/docs/excluding-files.md:103
-msgid ""
-"Note that Qgoda by default re-includes the directories `P:_views` and `P:"
-"_includes`."
-msgstr ""
-
-#: ../en/docs/excluding-files.md:114
+#: ../en/docs/excluding-files.md:117
 msgid "The list that is really used by Qgoda looks like this:"
-msgstr ""
-
-#: ../en/docs/excluding-files.md:128
-msgid ""
-"You can see that the directories `_views` and `_includes` have been re-"
-"included.  They typically contain layout/design files.  They deserve a ... "
-"do they?????"
-msgstr ""
+msgstr "Die Liste, die tatsächlich von Qgoda verwendet wird, sieht so aus:"
 
 #: ../en/docs/excluding-files.md:130
-msgid "## Gory Details Of Pattern Matching"
-msgstr ""
-
-#: ../en/docs/excluding-files.md:132
 msgid ""
-"The patterns you can use for the variable `exclude` follow the convention of "
-"[gitignore](https://git-scm.com/docs/gitignore), only that you put your "
-"configuration in [YAML](http://yaml.org/) file `_config.yaml`."
-msgstr ""
-
-#: ../en/docs/excluding-files.md:134
-msgid "### Special Characters"
-msgstr ""
-
-#: ../en/docs/excluding-files.md:136
-msgid "Some characters in patterns have a special meaning."
-msgstr ""
-
-#: ../en/docs/excluding-files.md:138
-msgid "#### The Star/Asterisk \"*\""
-msgstr ""
-
-#: ../en/docs/excluding-files.md:140
-msgid ""
-"The star or asterisk stands for an arbitrary number of characters except for "
-"a slash:"
-msgstr ""
-
-#: ../en/docs/excluding-files.md:149
-msgid ""
-"This will exclude all XCF files in the subdirectory `images` for example "
-"`images/logo.xcf` but *not* `images/ci/logo.xcf` (because the star/asterisk "
-"does not match a slash)."
-msgstr ""
-
-#: ../en/docs/excluding-files.md:151
-msgid ""
-"Note that `*.xcf` also matches the file `.xcf`.  The star stands for an "
-"arbitrary number of characters and that includes zero characters."
-msgstr ""
-
-#: ../en/docs/excluding-files.md:153
-msgid "#### The Double Star/Asterisk \"**\""
-msgstr ""
-
-#: ../en/docs/excluding-files.md:155
-msgid ""
-"Two consecutive stars `**` stand for any sequence of characters including "
-"the slash."
-msgstr ""
-
-#: ../en/docs/excluding-files.md:164
-msgid ""
-"This now matches `images/ci/logo.xcf` *and* `images/logo.xcf` and also "
-"`images/nothing/beats/nesting/logo.xcf`.  The pattern `**` matches "
-"recursively."
-msgstr ""
-
-#: ../en/docs/excluding-files.md:166
-msgid "#### The Exclmation Mark \"!\""
-msgstr ""
-
-#: ../en/docs/excluding-files.md:168
-msgid ""
-"The exclamation mark negates a pattern.  See [below](#negating-patterns) for "
-"details."
-msgstr ""
-
-#: ../en/docs/excluding-files.md:170
-msgid ""
-"[% WRAPPER components/infobox.html\n"
-"           type = \"warning\" title = \"The exclamation mark is special to "
-"YAML\" %]\n"
-"The exclamation mark <code>!</code> is a special character in YAML and "
-"JSON.  You therefore have to put negated patters into quotes, for example \"!"
-"a/b\".\n"
-"[% END %]"
-msgstr ""
-
-#: ../en/docs/excluding-files.md:175
-msgid "#### The Question Mark \"?\""
-msgstr ""
-
-#: ../en/docs/excluding-files.md:177
-msgid "The question mark standard for any character except for a slash."
-msgstr ""
-
-#: ../en/docs/excluding-files.md:186
-msgid ""
-"This matches `images/corporate-logos` and `images/corporate_logos` and "
-"`images/corporatedQlogos` and `images/corporate&logos`."
-msgstr ""
-
-#: ../en/docs/excluding-files.md:188
-msgid "#### Character [Ranges]"
-msgstr ""
-
-#: ../en/docs/excluding-files.md:190
-msgid "It's getting esoteric."
-msgstr ""
-
-#: ../en/docs/excluding-files.md:199
-msgid ""
-"This matches exactly `images/a.jpeg`, `images/b.jpeg`, and `images/c.jpeg`.  "
-"Instead, you could also write this:"
-msgstr ""
-
-#: ../en/docs/excluding-files.md:208
-msgid "Read the `[a-c]` as \"all characters from a to c\"."
-msgstr ""
-
-#: ../en/docs/excluding-files.md:210
-msgid "You can combine ranges:"
-msgstr ""
-
-#: ../en/docs/excluding-files.md:219
-msgid "This would now match `x.jpeg` and `3.jpeg`."
-msgstr ""
-
-#: ../en/docs/excluding-files.md:221
-msgid ""
-"Note that `[]` does not stand for no character.  It is simply not special.  "
-"Use `[]abc]` if you want to match \"a\", \"b\", \"c\", and a closing square "
-"bracket."
-msgstr ""
-
-#: ../en/docs/excluding-files.md:223
-msgid ""
-"And put the hyphen at the front if you want to match it: `[-a-zA-Z0-9]`.  "
-"That matches all alphanumeric characters and the hyphen."
-msgstr ""
-
-#: ../en/docs/excluding-files.md:225
-msgid ""
-"You can also use named character classes like `[a-zA-Z[:digit:]]` where `[:"
-"digit]` stands for any digit in the current locale.  Using this feature is "
-"discouraged unless you understand it."
-msgstr ""
-
-#: ../en/docs/excluding-files.md:227
-msgid "#### The Backslash \"\\\""
-msgstr ""
-
-#: ../en/docs/excluding-files.md:229
-msgid "You can escape any character by preceding it with a backslash \"\\\"."
-msgstr ""
-
-#: ../en/docs/excluding-files.md:238
-msgid ""
-"This matches only `images/Quo Vadis?.jpeg` but not `images/Quo VadissX."
-"jpeg`.  The question mark has lost its special meaning by the preceding "
-"backslash."
-msgstr ""
-
-#: ../en/docs/excluding-files.md:240
-msgid "### Negating Patterns"
-msgstr ""
-
-#: ../en/docs/excluding-files.md:242
-msgid "### Slashes"
+"You can see that the directory `_views` has been re-included because it "
+"contains layout and design files."
 msgstr ""
 
 #: ../en/docs/files-and-directories.md:2
@@ -1609,6 +1534,8 @@ msgid ""
 "A typical Qgoda site contains a couple of standard files and directories.\n"
 "They are described in the following list."
 msgstr ""
+"Eine typische Qgoda-Site beinhaltet verschiedene Standard-Dateien und -"
+"Verzeichnisse. Diese sind in der folgenden Liste beschrieben:"
 
 #: ../en/docs/files-and-directories.md:16
 msgid ""
@@ -1618,29 +1545,36 @@ msgid ""
 "underscore of the name is ignored.\n"
 "[% END %]"
 msgstr ""
+"[% WRAPPER components/infobox.html\n"
+"           type='info' title='Sortierung der Liste' %]\n"
+"Die Liste ist in alphanummerischer Reihenfolge sortiert, und ein führender "
+"Unterstrich ist ignoriert.\n"
+"[% END %]"
 
-#: ../en/docs/files-and-directories.md:22
-msgid "<ul>"
-msgstr ""
-
-#: ../en/docs/files-and-directories.md:24
+#: ../en/docs/files-and-directories.md:26
 msgid ""
 "[% WRAPPER components/file.html\n"
 "   name=\"_assets\" type='directory' -%]\n"
 "This directory usually keeps the source files for assets, for example\n"
-"JavaScript files or (S)CSS files.\n"
+"JavaScript files or (S)CSS files.  Qgoda does not use this name internally.  "
+"It is just a convention.\n"
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:30
+#: ../en/docs/files-and-directories.md:32
+#, fuzzy
 msgid ""
 "[% WRAPPER components/file.html\n"
 "   name=\"_config.yaml\" type='file' -%]\n"
 "Qgoda's main configuration file.\n"
 "[%- END %]"
 msgstr ""
+"[% WRAPPER components/file.html\n"
+"   name=\"_config.yaml\" type='Datei' -%]\n"
+"Die Hauptkonfigurationsdatei von Qgoda.\n"
+"[%- END %]"
 
-#: ../en/docs/files-and-directories.md:35
+#: ../en/docs/files-and-directories.md:37
 msgid ""
 "[% WRAPPER components/file.html\n"
 "   name=\"_config.yml\" type='file' -%]\n"
@@ -1649,20 +1583,24 @@ msgid ""
 "does not exist.\n"
 "[%- END %]"
 msgstr ""
+"[% WRAPPER components/file.html\n"
+"   name=\"_config.yml\" type='Datei' -%]\n"
+"Qgodas sekundäre Konfigurationsdatei. Sie wird lediglich verwendet, falls "
+"<code>P:config.yaml</code> nicht existiert.\n"
+"[%- END %]"
 
-#: ../en/docs/files-and-directories.md:41
+#: ../en/docs/files-and-directories.md:43
 msgid ""
 "[% WRAPPER components/file.html\n"
 "   name=\"_includes\" type='directory'\n"
-"   overridable=\"paths.includes\" -%]"
-msgstr ""
-
-#: ../en/docs/files-and-directories.md:45
-msgid ""
+"   overridable=\"paths.includes\" -%]\n"
 "Directory for included content snippets.  You use that for example\n"
-"like <code>[&#37; q.include(\"_includes/footer.md\") &#37;]</code>.  You \n"
-"can actually include such snippets from everywhere, but a modifcation \n"
-"of files ore directories in `_includes` trigger a site rebuild.\n"
+"like <code>[&#37; q.include(\"_includes/footer.md\") &#37;]</code>.  Using "
+"the\n"
+"name `_includes` is not enforced by Qgoda.  But you should use a name that "
+"starts with an underscore (so that the files are not misinterpreted as "
+"regular content) and add the negated name to the configuration variable `C:"
+"exclude_watch`.\n"
 "[%- END %]"
 msgstr ""
 
@@ -1670,39 +1608,31 @@ msgstr ""
 msgid ""
 "[% WRAPPER components/file.html\n"
 "   name=\"_plugins\" type='directory'\n"
-"   overridable=\"paths.plugins\" -%]"
-msgstr ""
-
-#: ../en/docs/files-and-directories.md:55
-msgid ""
+"   overridable=\"paths.plugins\" -%]\n"
 "Directory for site-specific plug-ins.  Plug-Ins in this directory are\n"
 "automatically activated.\n"
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:59
+#: ../en/docs/files-and-directories.md:58
 msgid ""
 "[% WRAPPER components/file.html\n"
 "   name=\"_site\" type='directory'\n"
-"   overridable=\"paths.site\" -%]"
-msgstr ""
-
-#: ../en/docs/files-and-directories.md:63
-msgid ""
+"   overridable=\"paths.site\" -%]\n"
 "The output directory.  This will normally be the document root of your\n"
 "web server.  Files and directories in <code>P:_site</code> are \n"
 "overwritten without warning.\n"
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:68
+#: ../en/docs/files-and-directories.md:66
 msgid ""
 "[% WRAPPER components/file.html\n"
 "   name=\"_timestamp\" type='file'\n"
 "   overridable=\"paths.timestamp\" -%]"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:72
+#: ../en/docs/files-and-directories.md:70
 msgid ""
 "This file contains the time, when <code>P:_site</code> was last\n"
 "re-created as seconds since the <q-term>epoch</q-term>.  If you \n"
@@ -1710,10 +1640,6 @@ msgid ""
 "<a href=\"https://www.browsersync.io/\")>browser-sync</a>, you should \n"
 "specify  <code>P:_timestamp</code> as the file to watch for changes.\n"
 "[%- END %]"
-msgstr ""
-
-#: ../en/docs/files-and-directories.md:79
-msgid "</ul>"
 msgstr ""
 
 #: ../en/docs/index.md:3
@@ -2093,8 +2019,10 @@ msgid ""
 msgstr ""
 
 #: ../en/docs/listings.md:13
+#, fuzzy
+#| msgid "## Template System"
 msgid "## Template Code"
-msgstr ""
+msgstr "## Template-System"
 
 #: ../en/docs/listings.md:15
 msgid ""
@@ -2213,8 +2141,10 @@ msgid ""
 msgstr ""
 
 #: ../en/docs/mode-of-operation.md:34
+#, fuzzy
+#| msgid "### What are Cookies?"
 msgid "## What are Assets?"
-msgstr ""
+msgstr "### Was sind Cookies?"
 
 #: ../en/docs/mode-of-operation.md:36
 msgid ""
@@ -2362,8 +2292,10 @@ msgid ""
 msgstr ""
 
 #: ../en/docs/multi-language-overview.md:14
+#, fuzzy
+#| msgid "### Code in Templates"
 msgid "### Common Texts"
-msgstr ""
+msgstr "### Code in Templates"
 
 #: ../en/docs/multi-language-overview.md:16
 msgid ""
@@ -2482,6 +2414,10 @@ msgid ""
 msgstr ""
 
 #: ../en/docs/multi-language-overview.md:61
+#, fuzzy
+#| msgid ""
+#| "Multi-lingualism in Qgoda is an integral, built-in feature mostly built "
+#| "upon easy to follow conventions."
 msgid ""
 "```bash\n"
 "#: ../en/docs/multi-language-overview.md:11\n"
@@ -2490,6 +2426,8 @@ msgid ""
 "msgstr \"\"\n"
 "```"
 msgstr ""
+"Mehrsprachigkeit ist ein integrales Feature von Qgoda, das größtenteils auf "
+"leicht zu befolgenden Konventionen aufbaut."
 
 #: ../en/docs/multi-language-overview.md:67
 msgid ""
@@ -2529,8 +2467,11 @@ msgid ""
 msgstr ""
 
 #: ../en/docs/multi-language-overview.md:77
+#, fuzzy
+#| msgctxt "title"
+#| msgid "Listings and Links"
 msgid "### Listings and Links"
-msgstr ""
+msgstr "Listen und Links"
 
 #: ../en/docs/multi-language-overview.md:79
 msgid ""
@@ -2719,8 +2660,10 @@ msgid ""
 msgstr ""
 
 #: ../en/docs/output-location.md:81
+#, fuzzy
+#| msgid "### Multi-Language Sites"
 msgid "## Multiple Suffixes"
-msgstr ""
+msgstr "### Mehrsprachige Sites"
 
 #: ../en/docs/output-location.md:83
 msgid ""
@@ -2791,8 +2734,10 @@ msgid ""
 msgstr ""
 
 #: ../en/docs/output-location.md:122
+#, fuzzy
+#| msgid "## Configuration"
 msgid "## Customization"
-msgstr ""
+msgstr "## Konfiguration"
 
 #: ../en/docs/output-location.md:124
 msgid ""
@@ -3103,6 +3048,15 @@ msgid ""
 msgstr ""
 
 #: ../en/docs/qgoda-in-15-minutes.md:88
+#, fuzzy
+#| msgid ""
+#| "[% WRAPPER components/variable.html\n"
+#| "   variable=\"exclude\" type='Array' \n"
+#| "   default='empty' -%]\n"
+#| "A list of files and directories that should not be processed.  Patterns "
+#| "are allowed.  See <a href=\"[% q.llink(name = 'excluding-files') %]\">[% "
+#| "q.lxref('title', name = 'excluding-files') %]</a>!\n"
+#| "[%- END %]"
 msgid ""
 "[% WRAPPER components/infobox.html\n"
 "           type='info' title='Excluding More Files' %]\n"
@@ -3111,10 +3065,20 @@ msgid ""
 "name='excluding-files') %]\"</a> for more information.\n"
 "[% END %]"
 msgstr ""
+"[% WRAPPER components/variable.html\n"
+"   variable=\"exclude\" type='Liste' \n"
+"   default='empty'leer -%]\n"
+"Eine Liste von Dateien und Verzeichnissen, die nicht verarbeitet werden "
+"sollen. Es können Suchmuster verwendet werden. Siehe <a href=\"[% q."
+"llink(name = 'excluding-files') %]\">[% q.lxref('title', name = 'excluding-"
+"files') %]</a>!\n"
+"[%- END %]"
 
 #: ../en/docs/qgoda-in-15-minutes.md:93
+#, fuzzy
+#| msgid "### What Is Stored?"
 msgid "### Watch Mode"
-msgstr ""
+msgstr "### Was wird gespeichert?"
 
 #: ../en/docs/qgoda-in-15-minutes.md:95
 msgid ""
@@ -3514,8 +3478,10 @@ msgstr ""
 
 #: ../en/docs/qgoda-in-15-minutes.md:303 ../en/docs/qgoda-in-15-minutes.md:321
 #: ../en/docs/qgoda-in-15-minutes.md:402
+#, fuzzy
+#| msgid "### IP Abbreviation"
 msgid "## Preparation"
-msgstr ""
+msgstr "### IP-Kürzung"
 
 #: ../en/docs/qgoda-in-15-minutes.md:305
 msgid ""
@@ -3681,8 +3647,10 @@ msgid ""
 msgstr ""
 
 #: ../en/docs/qgoda-in-15-minutes.md:387
+#, fuzzy
+#| msgid "### Listings"
 msgid "### Links"
-msgstr ""
+msgstr "### Auflistungen"
 
 #: ../en/docs/qgoda-in-15-minutes.md:389
 msgid ""
@@ -3818,8 +3786,11 @@ msgid ""
 msgstr ""
 
 #: ../en/docs/related-documents.md:8
+#, fuzzy
+#| msgctxt "title"
+#| msgid "Related Documents"
 msgid "## How To Display Related Documents"
-msgstr ""
+msgstr "Verwandte Dokumente"
 
 #: ../en/docs/related-documents.md:10
 msgid "Displaying related documents is as easy as this:"
@@ -3867,8 +3838,10 @@ msgid ""
 msgstr ""
 
 #: ../en/docs/related-documents.md:35
+#, fuzzy
+#| msgid "### Multi-Language Sites"
 msgid "### Multi-lingual sites."
-msgstr ""
+msgstr "### Mehrsprachige Sites"
 
 #: ../en/docs/related-documents.md:37
 msgid ""
@@ -4218,8 +4191,10 @@ msgid ""
 msgstr ""
 
 #: ../en/docs/table-of-contents.md:58
+#, fuzzy
+#| msgid "Table Of Contents"
 msgid "### Table of Contents Template"
-msgstr ""
+msgstr "Inhaltsverzeichnis"
 
 #: ../en/docs/table-of-contents.md:60
 msgid ""
@@ -4282,8 +4257,10 @@ msgid ""
 msgstr ""
 
 #: ../en/docs/table-of-contents.md:93
+#, fuzzy
+#| msgid "## Configuration"
 msgid "## Gory Details and Configuration"
-msgstr ""
+msgstr "## Konfiguration"
 
 #: ../en/docs/table-of-contents.md:95
 msgid ""
@@ -4560,6 +4537,13 @@ msgid ""
 msgstr ""
 
 #: ../en/docs/template-variables.md:26
+#, fuzzy
+#| msgid ""
+#| "[% WRAPPER components/variable.html\n"
+#| "   variable=\"title\" type='String' \n"
+#| "   default='\"A New Qgoda Powered Site\"' -%]\n"
+#| "The name of the site.  Qgoda itself does not use this variable.\n"
+#| "[%- END %]"
 msgid ""
 "[% WRAPPER \"components/template-variable.html\"\n"
 "   variable=\"asset\" type=\"hash\" %]\n"
@@ -4567,8 +4551,23 @@ msgid ""
 "the asset currently being processed.\n"
 "[%- END %]"
 msgstr ""
+"[% WRAPPER components/variable.html\n"
+"   variable=\"title\" type='String' \n"
+"   default='\"A New Qgoda Powered Site\"' -%]\n"
+"Der Name der Web-Site. Qgoda selbst verwendet diese Variable nicht.\n"
+"[%- END %]"
 
 #: ../en/docs/template-variables.md:32
+msgid ""
+"[% WRAPPER \"components/template-variable.html\"\n"
+"   variable=\"asset.draft\" type=\"boolean (0 or 1)\" %]\n"
+"Set to a truth value (for example 1 if the document is a draft.  Drafts only "
+"get processed when the command-line option [% q.llink(name = 'command-line-"
+"interface') %] `-D` or `--drafts` was specified.\n"
+"[%- END %]"
+msgstr ""
+
+#: ../en/docs/template-variables.md:37
 msgid ""
 "[% WRAPPER \"components/template-variable.html\"\n"
 "   variable=\"asset.priority\" type=\"integer\" %]\n"
@@ -4579,7 +4578,7 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/template-variables.md:37
+#: ../en/docs/template-variables.md:42
 msgid ""
 "[% WRAPPER \"components/template-variable.html\"\n"
 "   variable=\"asset.virtual\" type=\"boolean (0 or 1)\" %]\n"
@@ -4589,7 +4588,7 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/template-variables.md:42
+#: ../en/docs/template-variables.md:47
 msgid ""
 "[% WRAPPER \"components/template-variable.html\"\n"
 "   variable=\"config\" type=\"hash\" %]\n"
