@@ -49,7 +49,6 @@ and straightforward.  Yet, Qgoda comes with a unique feature set that makes even
 [% WRAPPER components/infobox.html
            type='info' title='Run Your Local Version!' %]
 This documenation is also generated using Qgoda.  You can check out the
-<a href="https://github.com/gflohr/qgoda-site">github sources</a>, install Qgoda and
-<a href="https://yarnpkg.com/lang/en/">yarn</a>, type `qgoda watch` to build your own local version of the
-documentation.
+<a href="https://github.com/gflohr/qgoda-site">github sources</a>, <a href="[% q.llink(name = 'installation') %]">install Qgoda</a> and
+<a href="https://yarnpkg.com/lang/en/">yarn</a>, type <code>qgoda watch</code> and you build your your own local version of the documentation.
 [% END %]
