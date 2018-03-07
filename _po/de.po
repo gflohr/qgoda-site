@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: qgoda-site 0.1\n"
-"Report-Msgid-Bugs-To: 'Guido Flohr <guido.flohr@cantanea.com>'\n"
+"Report-Msgid-Bugs-To: Guido Flohr <guido.flohr@cantanea.com>\n"
 "PO-Revision-Date: 2018-01-16 17:49+0200\n"
 "Last-Translator: Guido Flohr <guido.flohr@cantanea.com>\n"
 "Language-Team: German\n"
@@ -35,9 +35,9 @@ msgstr "Start"
 msgid "%b, %d %Y"
 msgstr "%d. %b %Y"
 
-#: ../_views/components/listing.html:26 ../_views/landing-feature-full.html:24
-#: ../_views/landing-feature-full.html:36
-msgid "Read More"
+#: ../_views/components/listing.html:26
+#, fuzzy
+msgid "Read more"
 msgstr "Weiterlesen"
 
 #: ../_views/components/toc.html:4
@@ -47,6 +47,11 @@ msgstr "Inhaltsverzeichnis"
 #: ../_views/components/variable.html:4
 msgid "default:"
 msgstr "Vorgabewert:"
+
+#: ../_views/landing-feature-full.html:24
+#: ../_views/landing-feature-full.html:36
+msgid "Read More"
+msgstr "Weiterlesen"
 
 #: ../_views/landing-header.html:23 ../_views/partials/header/navbar.html:27
 msgid "News"
@@ -597,14 +602,6 @@ msgstr ""
 
 #: ../en/docs/configuration-variables.md:40
 #, fuzzy
-#| msgid ""
-#| "[% WRAPPER components/variable.html\n"
-#| "   variable=\"exclude\" type='Array' \n"
-#| "   default='empty' -%]\n"
-#| "A list of files and directories that should not be processed.  Patterns "
-#| "are allowed.  See <a href=\"[% q.llink(name = 'excluding-files') %]\">[% "
-#| "q.lxref('title', name = 'excluding-files') %]</a>!\n"
-#| "[%- END %]"
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"no_scm\" type='List of patterns' \n"
@@ -639,12 +636,6 @@ msgstr ""
 
 #: ../en/docs/configuration-variables.md:52
 #, fuzzy
-#| msgid ""
-#| "[% WRAPPER components/variable.html\n"
-#| "   variable=\"title\" type='String' \n"
-#| "   default='\"A New Qgoda Powered Site\"' -%]\n"
-#| "The name of the site.  Qgoda itself does not use this variable.\n"
-#| "[%- END %]"
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"po\" type='Hash' \n"
@@ -660,12 +651,6 @@ msgstr ""
 
 #: ../en/docs/configuration-variables.md:58
 #, fuzzy
-#| msgid ""
-#| "[% WRAPPER components/variable.html\n"
-#| "   variable=\"title\" type='String' \n"
-#| "   default='\"A New Qgoda Powered Site\"' -%]\n"
-#| "The name of the site.  Qgoda itself does not use this variable.\n"
-#| "[%- END %]"
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"po.copyright_holder\" type='String' \n"
@@ -682,12 +667,6 @@ msgstr ""
 
 #: ../en/docs/configuration-variables.md:65
 #, fuzzy
-#| msgid ""
-#| "[% WRAPPER components/variable.html\n"
-#| "   variable=\"title\" type='String' \n"
-#| "   default='\"A New Qgoda Powered Site\"' -%]\n"
-#| "The name of the site.  Qgoda itself does not use this variable.\n"
-#| "[%- END %]"
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"po.from_code\" type='String' \n"
@@ -703,12 +682,6 @@ msgstr ""
 
 #: ../en/docs/configuration-variables.md:71
 #, fuzzy
-#| msgid ""
-#| "[% WRAPPER components/variable.html\n"
-#| "   variable=\"title\" type='String' \n"
-#| "   default='\"A New Qgoda Powered Site\"' -%]\n"
-#| "The name of the site.  Qgoda itself does not use this variable.\n"
-#| "[%- END %]"
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"po.msgfmt\" type='String' \n"
@@ -724,12 +697,6 @@ msgstr ""
 
 #: ../en/docs/configuration-variables.md:77
 #, fuzzy
-#| msgid ""
-#| "[% WRAPPER components/variable.html\n"
-#| "   variable=\"title\" type='String' \n"
-#| "   default='\"A New Qgoda Powered Site\"' -%]\n"
-#| "The name of the site.  Qgoda itself does not use this variable.\n"
-#| "[%- END %]"
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"po.msgid_bugs_address\" type='String' \n"
@@ -746,12 +713,6 @@ msgstr ""
 
 #: ../en/docs/configuration-variables.md:83
 #, fuzzy
-#| msgid ""
-#| "[% WRAPPER components/variable.html\n"
-#| "   variable=\"title\" type='String' \n"
-#| "   default='\"A New Qgoda Powered Site\"' -%]\n"
-#| "The name of the site.  Qgoda itself does not use this variable.\n"
-#| "[%- END %]"
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"po.msgmerge\" type='String' \n"
@@ -767,12 +728,6 @@ msgstr ""
 
 #: ../en/docs/configuration-variables.md:89
 #, fuzzy
-#| msgid ""
-#| "[% WRAPPER components/variable.html\n"
-#| "   variable=\"title\" type='String' \n"
-#| "   default='\"A New Qgoda Powered Site\"' -%]\n"
-#| "The name of the site.  Qgoda itself does not use this variable.\n"
-#| "[%- END %]"
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"po.qgoda\" type='String' \n"
@@ -807,12 +762,6 @@ msgstr ""
 
 #: ../en/docs/configuration-variables.md:101
 #, fuzzy
-#| msgid ""
-#| "[% WRAPPER components/variable.html\n"
-#| "   variable=\"po.tt2\" type='Pattern list' \n"
-#| "   default='[_views, _includes]' -%]\n"
-#| "List of patterns where to search for template files.\n"
-#| "[%- END %]"
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"po.tt2\" type='Pattern list' \n"
@@ -852,12 +801,6 @@ msgstr ""
 
 #: ../en/docs/configuration-variables.md:113
 #, fuzzy
-#| msgid ""
-#| "[% WRAPPER components/variable.html\n"
-#| "   variable=\"title\" type='String' \n"
-#| "   default='\"A New Qgoda Powered Site\"' -%]\n"
-#| "The name of the site.  Qgoda itself does not use this variable.\n"
-#| "[%- END %]"
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"po.xgettext\" type='String' \n"
@@ -873,12 +816,6 @@ msgstr ""
 
 #: ../en/docs/configuration-variables.md:119
 #, fuzzy
-#| msgid ""
-#| "[% WRAPPER components/variable.html\n"
-#| "   variable=\"title\" type='String' \n"
-#| "   default='\"A New Qgoda Powered Site\"' -%]\n"
-#| "The name of the site.  Qgoda itself does not use this variable.\n"
-#| "[%- END %]"
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"po.xgettext_tt2\" type='String' \n"
@@ -1377,10 +1314,6 @@ msgstr ""
 
 #: ../en/docs/excluding-files.md:52
 #, fuzzy
-#| msgid ""
-#| "The first two lines files and directories that have names beginning with "
-#| "a dot (`.`) or top-level files and directories that have names beginning "
-#| "with an underscore."
 msgid ""
 "The first two lines exclude files and directories that have names beginning "
 "with a dot (`.`) or top-level files and directories that have names "
@@ -1392,12 +1325,6 @@ msgstr ""
 
 #: ../en/docs/excluding-files.md:54
 #, fuzzy
-#| msgid ""
-#| "The last line is always appended and a safe-guard against configuration "
-#| "errors.  Unintentionally including the output directory `_site` (or "
-#| "whatever you have configured in the variable `outdir`) would lead to an "
-#| "infinite recursion.  The output directory is therefore always added to "
-#| "the exclusion list."
 msgid ""
 "The last line is always appended and a safe-guard against configuration "
 "errors.  Unintentionally including the output directory `P:_site` would lead "
@@ -1491,10 +1418,6 @@ msgstr "## Dateien von der Überwachung im Watch-Modus ausschließen"
 
 #: ../en/docs/excluding-files.md:104
 #, fuzzy
-#| msgid ""
-#| "There is another configuration variable `C:exclude_watch` that specifies "
-#| "files and directories that should not be watched.  If you omit that "
-#| "variable, the contents of `exclude` is taken instead."
 msgid ""
 "There is another configuration variable `C:exclude_watch` that specifies "
 "files and directories that should not be watched.  If you omit that "
@@ -1723,11 +1646,10 @@ msgid ""
 "[% WRAPPER components/infobox.html\n"
 "           type='info' title='Run Your Local Version!' %]\n"
 "This documenation is also generated using Qgoda.  You can check out the\n"
-"<a href=\"https://github.com/gflohr/qgoda-site\">github sources</a>, install "
-"Qgoda and\n"
-"<a href=\"https://yarnpkg.com/lang/en/\">yarn</a>, type `qgoda watch` to "
-"build your own local version of the\n"
-"documentation.\n"
+"<a href=\"https://github.com/gflohr/qgoda-site\">github sources</a>, <a href="
+"\"[% q.llink(name = 'installation') %]\">install Qgoda</a> and\n"
+"<a href=\"https://yarnpkg.com/lang/en/\">yarn</a>, type <code>qgoda watch</"
+"code> and you build your your own local version of the documentation.\n"
 "[% END %]"
 msgstr ""
 
@@ -2020,7 +1942,6 @@ msgstr ""
 
 #: ../en/docs/listings.md:13
 #, fuzzy
-#| msgid "## Template System"
 msgid "## Template Code"
 msgstr "## Template-System"
 
@@ -2142,7 +2063,6 @@ msgstr ""
 
 #: ../en/docs/mode-of-operation.md:34
 #, fuzzy
-#| msgid "### What are Cookies?"
 msgid "## What are Assets?"
 msgstr "### Was sind Cookies?"
 
@@ -2293,7 +2213,6 @@ msgstr ""
 
 #: ../en/docs/multi-language-overview.md:14
 #, fuzzy
-#| msgid "### Code in Templates"
 msgid "### Common Texts"
 msgstr "### Code in Templates"
 
@@ -2415,9 +2334,6 @@ msgstr ""
 
 #: ../en/docs/multi-language-overview.md:61
 #, fuzzy
-#| msgid ""
-#| "Multi-lingualism in Qgoda is an integral, built-in feature mostly built "
-#| "upon easy to follow conventions."
 msgid ""
 "```bash\n"
 "#: ../en/docs/multi-language-overview.md:11\n"
@@ -2468,8 +2384,6 @@ msgstr ""
 
 #: ../en/docs/multi-language-overview.md:77
 #, fuzzy
-#| msgctxt "title"
-#| msgid "Listings and Links"
 msgid "### Listings and Links"
 msgstr "Listen und Links"
 
@@ -2661,7 +2575,6 @@ msgstr ""
 
 #: ../en/docs/output-location.md:81
 #, fuzzy
-#| msgid "### Multi-Language Sites"
 msgid "## Multiple Suffixes"
 msgstr "### Mehrsprachige Sites"
 
@@ -2735,7 +2648,6 @@ msgstr ""
 
 #: ../en/docs/output-location.md:122
 #, fuzzy
-#| msgid "## Configuration"
 msgid "## Customization"
 msgstr "## Konfiguration"
 
@@ -3049,14 +2961,6 @@ msgstr ""
 
 #: ../en/docs/qgoda-in-15-minutes.md:88
 #, fuzzy
-#| msgid ""
-#| "[% WRAPPER components/variable.html\n"
-#| "   variable=\"exclude\" type='Array' \n"
-#| "   default='empty' -%]\n"
-#| "A list of files and directories that should not be processed.  Patterns "
-#| "are allowed.  See <a href=\"[% q.llink(name = 'excluding-files') %]\">[% "
-#| "q.lxref('title', name = 'excluding-files') %]</a>!\n"
-#| "[%- END %]"
 msgid ""
 "[% WRAPPER components/infobox.html\n"
 "           type='info' title='Excluding More Files' %]\n"
@@ -3076,7 +2980,6 @@ msgstr ""
 
 #: ../en/docs/qgoda-in-15-minutes.md:93
 #, fuzzy
-#| msgid "### What Is Stored?"
 msgid "### Watch Mode"
 msgstr "### Was wird gespeichert?"
 
@@ -3479,7 +3382,6 @@ msgstr ""
 #: ../en/docs/qgoda-in-15-minutes.md:303 ../en/docs/qgoda-in-15-minutes.md:321
 #: ../en/docs/qgoda-in-15-minutes.md:402
 #, fuzzy
-#| msgid "### IP Abbreviation"
 msgid "## Preparation"
 msgstr "### IP-Kürzung"
 
@@ -3648,7 +3550,6 @@ msgstr ""
 
 #: ../en/docs/qgoda-in-15-minutes.md:387
 #, fuzzy
-#| msgid "### Listings"
 msgid "### Links"
 msgstr "### Auflistungen"
 
@@ -3787,8 +3688,6 @@ msgstr ""
 
 #: ../en/docs/related-documents.md:8
 #, fuzzy
-#| msgctxt "title"
-#| msgid "Related Documents"
 msgid "## How To Display Related Documents"
 msgstr "Verwandte Dokumente"
 
@@ -3839,7 +3738,6 @@ msgstr ""
 
 #: ../en/docs/related-documents.md:35
 #, fuzzy
-#| msgid "### Multi-Language Sites"
 msgid "### Multi-lingual sites."
 msgstr "### Mehrsprachige Sites"
 
@@ -4192,7 +4090,6 @@ msgstr ""
 
 #: ../en/docs/table-of-contents.md:58
 #, fuzzy
-#| msgid "Table Of Contents"
 msgid "### Table of Contents Template"
 msgstr "Inhaltsverzeichnis"
 
@@ -4258,7 +4155,6 @@ msgstr ""
 
 #: ../en/docs/table-of-contents.md:93
 #, fuzzy
-#| msgid "## Configuration"
 msgid "## Gory Details and Configuration"
 msgstr "## Konfiguration"
 
@@ -4538,12 +4434,6 @@ msgstr ""
 
 #: ../en/docs/template-variables.md:26
 #, fuzzy
-#| msgid ""
-#| "[% WRAPPER components/variable.html\n"
-#| "   variable=\"title\" type='String' \n"
-#| "   default='\"A New Qgoda Powered Site\"' -%]\n"
-#| "The name of the site.  Qgoda itself does not use this variable.\n"
-#| "[%- END %]"
 msgid ""
 "[% WRAPPER \"components/template-variable.html\"\n"
 "   variable=\"asset\" type=\"hash\" %]\n"

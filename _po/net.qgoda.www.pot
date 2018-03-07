@@ -34,9 +34,8 @@ msgstr ""
 msgid "%b, %d %Y"
 msgstr ""
 
-#: ../_views/components/listing.html:26 ../_views/landing-feature-full.html:24
-#: ../_views/landing-feature-full.html:36
-msgid "Read More"
+#: ../_views/components/listing.html:26
+msgid "Read more"
 msgstr ""
 
 #: ../_views/components/toc.html:4
@@ -45,6 +44,11 @@ msgstr ""
 
 #: ../_views/components/variable.html:4
 msgid "default:"
+msgstr ""
+
+#: ../_views/landing-feature-full.html:24
+#: ../_views/landing-feature-full.html:36
+msgid "Read More"
 msgstr ""
 
 #: ../_views/landing-header.html:23 ../_views/partials/header/navbar.html:27
@@ -1040,9 +1044,8 @@ msgid ""
 "[% WRAPPER components/infobox.html\n"
 "           type='info' title='Run Your Local Version!' %]\n"
 "This documenation is also generated using Qgoda.  You can check out the\n"
-"<a href=\"https://github.com/gflohr/qgoda-site\">github sources</a>, install Qgoda and\n"
-"<a href=\"https://yarnpkg.com/lang/en/\">yarn</a>, type `qgoda watch` to build your own local version of the\n"
-"documentation.\n"
+"<a href=\"https://github.com/gflohr/qgoda-site\">github sources</a>, <a href=\"[% q.llink(name = 'installation') %]\">install Qgoda</a> and\n"
+"<a href=\"https://yarnpkg.com/lang/en/\">yarn</a>, type <code>qgoda watch</code> and you build your your own local version of the documentation.\n"
 "[% END %]"
 msgstr ""
 

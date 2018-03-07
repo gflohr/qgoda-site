@@ -1,0 +1,56 @@
+[% USE gtx = Gettext('net.qgoda.www', asset.lingua) %]
+[% USE q = Qgoda %]
+<nav class="navbar navbar-expand-md navbar-dark bg-warning">
+  <button class="navbar-toggler" type="button" 
+          data-toggle="collapse" data-target="#navbarCollapse" 
+          aria-controls="navbarCollapse" aria-expanded="false" 
+          aria-label="[% gtx.gettext('Toggle navigation') %]">
+      &#9776;
+  </button>
+  <div class="qgoda-brand">
+    <a class="navbar-brand" href="/[% asset.lingua %]/"
+       title="Qgoda Start Page">
+      <img src="/images/qgoda-logo-white.svg" 
+           alt="Qgoda logo" height="32" />
+    </a>
+  </div>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav mr-auto flex">
+      <li class="d-md-none nav-item">
+        <a class="nav-link" href="/[% asset.lingua %]/"
+           title="[% gtx.gettext('Qgoda Start Page') %]">
+          <i class="fa fa-home"></i>&nbsp;[% gtx.gettext('Home') %]</a>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/[% asset.lingua %]/presentations/dpw-2018/start/"
+           title="[% gtx.gettext('Back') %]" id="nav-back">
+          <i class="fa fa-arrow-left"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/[% asset.lingua %]/presentations/dpw-2018/start/"
+           title="[% gtx.gettext('Start') %]" id="nav-home">
+          <i class="fa fa-home"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/[% asset.lingua %]/presentations/dpw-2018/page1/"
+           title="[% gtx.gettext('Forward') %]" id="nav-forward">
+          <i class="fa fa-arrow-right"></i>
+        </a>
+      </li>
+
+      <li class="nav-item" style="display: none;">
+        <a class="nav-link" href="[% q.llink(name='data-privacy') %]">
+          <i class="fa fa-balance-scale"></i>&nbsp;[% gtx.gettext('Data Privacy Statement') %]
+        </a>
+      </li>
+      <li class="nav-item push-md-6" style="display: none;">
+        <a class="nav-link" href="[% q.llink(name='legal-disclosure') %]">
+          <i class="fa fa-info"></i>&nbsp;[% gtx.gettext('Legal Disclosure') %]
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>

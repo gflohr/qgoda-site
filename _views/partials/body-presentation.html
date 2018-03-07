@@ -1,0 +1,26 @@
+[% PROCESS functions/setup.tt %]
+[% PROCESS "functions/css-modules.tt" %]
+<body class="keyboard-navigation">
+  [% INCLUDE "partials/header/navbar-presentation.html" %]
+
+  <div class="container">
+    <div class="row">
+      <div class="col %]">
+        [% asset.content %]
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <!-- Omit for presentation -->
+  <!--
+  <footer id="footer" class="bg-warning-opaque">
+  [% INCLUDE partials/body/footer.html %]
+  </footer>
+  -->
+  <!-- Footer Section End -->
+
+  [% INCLUDE partials/body/ga.html %]
+  [% PROCESS functions/scripts.tt %]
+</body>
+

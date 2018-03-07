@@ -43,7 +43,14 @@ defaults:
       lingua: de
   - files: /*/docs/**
     values:
-      type: doc 
+      type: doc
+      tour: doc
+      view: docs.html
+  - files: /*/presentations/**
+    values:
+      type: presentation
+      tour: presentation
+      view: presentations.html
   - files: /*/news/**
     values:
       type: post
