@@ -23,20 +23,22 @@
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/[% asset.lingua %]/presentations/dpw-2018/start/"
-           title="[% gtx.gettext('Back') %]" id="nav-back">
+        <a class="nav-link" href="[% asset.nav.prev.permalink %]"
+           title="[% gtx.gettext('Back') %]"
+           [% IF asset.nav.prev %]id="nav-back"[% END %]>
           <i class="fa fa-arrow-left"></i>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/[% asset.lingua %]/presentations/dpw-2018/start/"
+        <a class="nav-link" href="[% asset.nav.start.permalink %]"
            title="[% gtx.gettext('Start') %]" id="nav-home">
           <i class="fa fa-home"></i>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/[% asset.lingua %]/presentations/dpw-2018/page1/"
-           title="[% gtx.gettext('Forward') %]" id="nav-forward">
+        <a class="nav-link" href="[% asset.nav.next.permalink %]"
+           title="[% gtx.gettext('Forward') %]"
+           [% IF asset.nav.prev %]id="nav-forward"[% END %]>
           <i class="fa fa-arrow-right"></i>
         </a>
       </li>

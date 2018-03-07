@@ -46,11 +46,11 @@ defaults:
       type: doc
       tour: doc
       view: docs.html
-  - files: /*/presentations/**
+  - files: /*/talks/**
     values:
-      type: presentation
-      tour: presentation
-      view: presentations.html
+      type: talk 
+      tour: talk 
+      view: talks.html
   - files: /*/news/**
     values:
       type: post

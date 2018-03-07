@@ -14,7 +14,7 @@ doc:
     - ['lists-and-indices', 
        'terms-and-concepts', 'pattern-lists', 'template-variables',
        'files-and-directories', 'configuration-variables' ]
-presentation:
+talk:
   sections:
     - ['introduction',
        'about-qgoda', 'usps', 'getting-started']
