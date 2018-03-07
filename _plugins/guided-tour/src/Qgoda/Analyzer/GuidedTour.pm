@@ -19,18 +19,16 @@ sub setup {
         or die "cannot open '$config_file' for reading: $!\n";
     my $config = YAML::XS::Load($yaml);
     foreach my $tour (keys %$config) {
-        $self->{__tours}->{$tour} = 1;
-        my $sections = $config->{$tour};
-        $self->__setupTour($tour, $site, $sections);
+        $self->__setupTour($tour, $site, $config->{$tour});
     }
 
     return $self;
 }
 
 sub __setupTour {
-    my ($self, $type, $site, $tours) = @_;
+    my ($self, $tour, $site, $config) = @_;
 
-    my $sections = $tours->{sections};
+    my $sections = $config->{sections};
 
     my %sections;
     my %docs;
@@ -61,7 +59,7 @@ sub __setupTour {
     }
 
     foreach my $asset ($site->getAssets) {
-        next if $type ne $asset->{type};
+        next if $tour ne $asset->{tour};
         if ($asset->{virtual}) {
             # Retrieve the real title.
             my $lingua = $asset->{lingua} || '';
@@ -87,16 +85,15 @@ sub __setupTour {
                 ->{section} = $section_name;            
         } elsif ($asset->{start}) {
             my $lingua = $asset->{lingua} || '';
-            $self->{__start}->{$type}->{$lingua} = $asset;
+            $self->{__start}->{$tour}->{$lingua} = $asset;
         }
     }
 
     my %navigation;
-    my %tours;
     foreach my $lingua (keys %tree) {
         my $data = $tree{$lingua};
         my @sections;
-        my @tour = ($self->{__start}->{$type}->{$lingua} || {});
+        my @tour = ($self->{__start}->{$tour}->{$lingua} || {});
         foreach my $name (sort { 
                 $data->{$a}->{order} <=> $data->{$b}->{order} 
             } keys %$data) {
@@ -123,7 +120,7 @@ sub __setupTour {
         }
     }
 
-    $self->{__navigations}->{$type} = \%navigation;
+    $self->{__navigations}->{$tour} = \%navigation;
 
     return $self;
 }
