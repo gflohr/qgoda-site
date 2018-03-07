@@ -17,7 +17,19 @@ sub setup {
     my $config_file = '_guided_tour.yaml';
     my $yaml = read_file $config_file
         or die "cannot open '$config_file' for reading: $!\n";
-    my $tours = YAML::XS::Load($yaml);
+    my $config = YAML::XS::Load($yaml);
+    foreach my $tour (keys %$config) {
+        $self->{__tours}->{$tour} = 1;
+        my $sections = $config->{$tour};
+        $self->__setupTour($tour, $site, $sections);
+    }
+
+    return $self;
+}
+
+sub __setupTour {
+    my ($self, $type, $site, $tours) = @_;
+
     my $sections = $tours->{sections};
 
     my %sections;
@@ -49,7 +61,7 @@ sub setup {
     }
 
     foreach my $asset ($site->getAssets) {
-        next if 'doc' ne $asset->{type};
+        next if $type ne $asset->{type};
         if ($asset->{virtual}) {
             # Retrieve the real title.
             my $lingua = $asset->{lingua} || '';
@@ -73,9 +85,9 @@ sub setup {
                 ->{docs}
                 ->{$name}
                 ->{section} = $section_name;            
-        } elsif ('documentation' eq $asset->{name}) {
+        } elsif ($asset->{start}) {
             my $lingua = $asset->{lingua} || '';
-            $self->{__start}->{$lingua} = $asset;
+            $self->{__start}->{$type}->{$lingua} = $asset;
         }
     }
 
@@ -84,7 +96,7 @@ sub setup {
     foreach my $lingua (keys %tree) {
         my $data = $tree{$lingua};
         my @sections;
-        my @tour = ($self->{__start}->{$lingua} || {});
+        my @tour = ($self->{__start}->{$type}->{$lingua} || {});
         foreach my $name (sort { 
                 $data->{$a}->{order} <=> $data->{$b}->{order} 
             } keys %$data) {
@@ -111,7 +123,7 @@ sub setup {
         }
     }
 
-    $self->{__navigation} = \%navigation;
+    $self->{__navigations}->{$type} = \%navigation;
 
     return $self;
 }
@@ -119,14 +131,14 @@ sub setup {
 sub analyze {
     my ($self, $asset, $site, $include) = @_;
 
-    return $self if 'doc' ne $asset->{type};
-
-    my $navigation = $self->{__navigation};
+    my $tour = $asset->{tour};
+    my $navigation = $self->{__navigations}->{$tour};
+    return $self if !$navigation;
 
     my $lingua = $asset->{lingua} || '';
     $asset->{nav}->{sections} = $navigation->{$lingua};
-    my $start = $self->{__start}->{$lingua};
-    if ($start!= $asset) {
+    my $start = $self->{__start}->{$tour}->{$lingua};
+    if ($start != $asset) {
         $asset->{nav}->{start} = $start;
     }
 

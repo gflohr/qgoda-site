@@ -1,15 +1,20 @@
 ---
-sections: 
-  - ['introduction', 
-     'installation', 'qgoda-in-15-minutes', 'mode-of-operation',
-     'command-line-interface' ]
-  - ['basics', 
-     'taxonomies', 'listings', 'related-documents',
-      'output-location', 'excluding-files', 'table-of-contents' ]
-  - ['multi-language', 
-     'multi-language-overview' ]
-  - ['miscellaneous', 
-     'differences-to-jekyll' ]
-  - ['lists-and-indices', 
-     'terms-and-concepts', 'pattern-lists', 'template-variables',
-     'files-and-directories', 'configuration-variables' ]
+doc:
+  sections: 
+    - ['introduction', 
+       'installation', 'qgoda-in-15-minutes', 'mode-of-operation',
+       'command-line-interface' ]
+    - ['basics', 
+       'taxonomies', 'listings', 'related-documents',
+        'output-location', 'excluding-files', 'table-of-contents' ]
+    - ['multi-language', 
+       'multi-language-overview' ]
+    - ['miscellaneous', 
+       'differences-to-jekyll' ]
+    - ['lists-and-indices', 
+       'terms-and-concepts', 'pattern-lists', 'template-variables',
+       'files-and-directories', 'configuration-variables' ]
+presentation:
+  sections:
+    - ['introduction',
+       'about-qgoda', 'usps', 'getting-started']
