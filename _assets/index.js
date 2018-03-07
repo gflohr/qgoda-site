@@ -26,5 +26,3 @@ Prism.plugins.customClass.map(require('prismjs/themes/prism-coy.css.json'));
 
 require('./scss/qgoda.scss');
 require('./scss/toc.scss');
-
-require('./js/keyboard-nav.js');

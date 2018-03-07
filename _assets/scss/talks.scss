@@ -1,0 +1,32 @@
+$qgoda-font-size: 1.2rem;
+$qgoda-main-color: #555;
+$qgoda-headline-color: #333;
+$qgoda-nav-link-color: #fff;
+$qgoda-orange: #2b689c;
+
+/* Stolen from bootstrap.  They should really referece the values from
+ * bootstrap instead of hard-coding them.
+ */
+$brand-primary: #2b689c;
+$gray-light: #818a91;
+$gray-lightest: #f7f7f9;
+$line-height-base: 1.5;
+  
+html {
+    font-size: $qgoda-font-size;
+}
+
+body {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 28px;
+    text-transform: none;
+    color: #666666;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    font-family: Arimo, Arial, Helvetica, sans-serif;
+}

@@ -1,0 +1,18 @@
+$primary: #2b689c;
+$warning: #d97319;
+$warning-opaque: rgba(217, 115, 25, 0.75);
+@import '~bootstrap/scss/bootstrap.scss';
+
+.nav-link {
+    position: relative;
+    font-weight: 500;
+    color: #cdddeb;
+}
+
+.figure img {
+    width: 100%;
+}
+
+.container {
+    margin-top: 3rem;
+}

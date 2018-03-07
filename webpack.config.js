@@ -8,7 +8,8 @@ const webpack = require('webpack'),
 module.exports = {
   entry: {
       bundle: './_assets',
-      start: './_assets/start.js'
+      start: './_assets/start.js',
+      talks: './_assets/talks.js'
   },
   output: {
     path: __dirname + '/assets',
@@ -47,7 +48,7 @@ module.exports = {
               options: {
                 importLoaders: 2,
                 sourceMap: true,
-                minimize: true
+                //minimize: true
               }
             },
             {
