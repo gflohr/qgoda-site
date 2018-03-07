@@ -49,8 +49,10 @@ defaults:
   - files: /*/talks/**
     values:
       type: talk 
-      tour: talk 
       view: talks.html
+  - files: /*/talks/dpw-2018/**
+    values:
+      tour: talk-dpw-2018
   - files: /*/news/**
     values:
       type: post
