@@ -30,3 +30,28 @@ body {
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     font-family: Arimo, Arial, Helvetica, sans-serif;
 }
+
+h2, .h2 {
+    font-size: 150%;
+    font-weight: 900;
+}
+
+h3, .h3 {
+    font-size: 140%;
+    font-weight: 800;
+}
+
+h4, .h4 {
+    font-size: 130%;
+    font-weight: 700;
+}
+
+h5, .h5 {
+    font-size: 120%;
+    font-weight: 600;
+}
+
+h6, .h6 {
+    font-size: 110%;
+    font-weight: 500;
+}
