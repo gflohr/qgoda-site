@@ -18,6 +18,7 @@
 ../_views/landing-main-features.html
 ../_views/landing.html
 ../_views/partials/body-landing.html
+../_views/partials/body-talk.html
 ../_views/partials/body.html
 ../_views/partials/body/footer.html
 ../_views/partials/body/ga.html
@@ -27,7 +28,9 @@
 ../_views/partials/head-landing.html
 ../_views/partials/head.html
 ../_views/partials/head/meta.html
+../_views/partials/header/navbar-talk.html
 ../_views/partials/header/navbar.html
+../_views/talks.html
 ../_views/wrappers/html5.html
 markdown.pot
 perl.pot

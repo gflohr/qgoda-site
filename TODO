@@ -11,3 +11,5 @@
 - sorting of assets or more generally of arrays with TT
 - when moving an asset into the parent directory, we cat a "directory not
   empty" error
+- explain how markdown treats block elements special, and what that means for
+  using TT2 code inside or from markdown files

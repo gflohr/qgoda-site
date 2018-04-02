@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: qgoda-site 0.1\n"
-"Report-Msgid-Bugs-To: Guido Flohr <guido.flohr@cantanea.com>\n"
-"PO-Revision-Date: 2018-01-16 17:49+0200\n"
+"Report-Msgid-Bugs-To: 'Guido Flohr <guido.flohr@cantanea.com>'\n"
+"PO-Revision-Date: 2018-03-20 17:46+0200\n"
 "Last-Translator: Guido Flohr <guido.flohr@cantanea.com>\n"
 "Language-Team: German\n"
 "Language: de\n"
@@ -27,17 +27,18 @@ msgid "overridable:"
 msgstr "Überschreibbar:"
 
 #: ../_views/components/guided_tour.html:11
+#: ../_views/partials/header/navbar-talk.html:34
 msgid "Start"
 msgstr "Start"
 
 #: ../_views/components/listing.html:16 ../_views/landing-feature-full.html:20
 #: ../_views/landing-feature-full.html:32
-msgid "%b, %d %Y"
-msgstr "%d. %b %Y"
+msgid "%B, %e %Y"
+msgstr "%e. %B %Y"
 
-#: ../_views/components/listing.html:26
-#, fuzzy
-msgid "Read more"
+#: ../_views/components/listing.html:26 ../_views/landing-feature-full.html:24
+#: ../_views/landing-feature-full.html:36
+msgid "Read More"
 msgstr "Weiterlesen"
 
 #: ../_views/components/toc.html:4
@@ -47,11 +48,6 @@ msgstr "Inhaltsverzeichnis"
 #: ../_views/components/variable.html:4
 msgid "default:"
 msgstr "Vorgabewert:"
-
-#: ../_views/landing-feature-full.html:24
-#: ../_views/landing-feature-full.html:36
-msgid "Read More"
-msgstr "Weiterlesen"
 
 #: ../_views/landing-header.html:23 ../_views/partials/header/navbar.html:27
 msgid "News"
@@ -74,13 +70,41 @@ msgstr "Copyright &copy; {copyright_year} {copyright_holder}"
 msgid "Source code of this page"
 msgstr "Quelltext dieser Seite"
 
+#: ../_views/partials/header/navbar-talk.html:7
 #: ../_views/partials/header/navbar.html:6
 msgid "Toggle navigation"
 msgstr "Navigation ein/aus"
 
+#: ../_views/partials/header/navbar-talk.html:21
+msgid "Qgoda Start Page"
+msgstr ""
+
+#: ../_views/partials/header/navbar-talk.html:22
 #: ../_views/partials/header/navbar.html:21
 msgid "Home"
 msgstr "Start"
+
+#: ../_views/partials/header/navbar-talk.html:27
+msgid "Back"
+msgstr ""
+
+#: ../_views/partials/header/navbar-talk.html:40
+msgid "Forward"
+msgstr ""
+
+#: ../_views/partials/header/navbar-talk.html:48
+#, fuzzy
+#| msgctxt "title"
+#| msgid "Data Privacy"
+msgid "Data Privacy Statement"
+msgstr "Datenschutz"
+
+#: ../_views/partials/header/navbar-talk.html:53
+#, fuzzy
+#| msgctxt "title"
+#| msgid "Legal Disclosure"
+msgid "Legal Disclosure"
+msgstr "Impressum"
 
 #: ../_includes/en/landing-page/about-nodejs.md:3
 msgctxt "title"
@@ -500,6 +524,227 @@ msgstr ""
 msgctxt "title"
 msgid "Basics"
 msgstr "Grundlagen"
+
+#: ../en/docs/command-line-interface.md:2
+msgctxt "title"
+msgid "Command Line Interface"
+msgstr ""
+
+#: ../en/docs/command-line-interface.md:6
+msgctxt "description"
+msgid "Qgoda options, commands and command options"
+msgstr ""
+
+#: ../en/docs/command-line-interface.md:8
+msgid ""
+"Qgoda is a [command-line](http://www.guido-flohr.net/command-line/) "
+"program.\n"
+"<qgoda-toc/>"
+msgstr ""
+
+#: ../en/docs/command-line-interface.md:11
+#, fuzzy
+#| msgid "### Data Usage"
+msgid "## General Usage"
+msgstr "## Verwendung der Daten"
+
+#: ../en/docs/command-line-interface.md:13
+msgid "The general usage pattern for qgoda is:"
+msgstr ""
+
+#: ../en/docs/command-line-interface.md:15
+msgid ""
+"```bash\n"
+"$ qgoda [GLOBAL_OPTIONS] [COMMAND, [OPTIONS]]\n"
+"```"
+msgstr ""
+
+#: ../en/docs/command-line-interface.md:19
+#, fuzzy
+#| msgid "Example:"
+msgid "For example:"
+msgstr "Beispiel:"
+
+#: ../en/docs/command-line-interface.md:21
+msgid ""
+"```bash\n"
+"$ qgoda --verbose build --drafts --future\n"
+"```"
+msgstr ""
+
+#: ../en/docs/command-line-interface.md:25
+msgid ""
+"That sets the global option `--verbose` to true and selects the qgoda "
+"command `build` with the options `--drafts` and `--future`."
+msgstr ""
+
+#: ../en/docs/command-line-interface.md:27
+msgid "## Global Options"
+msgstr ""
+
+#: ../en/docs/command-line-interface.md:29
+msgid "Qgoda currently supports the following global options."
+msgstr ""
+
+#: ../en/docs/command-line-interface.md:31
+msgid ""
+"<dl>\n"
+"  <dt><strong>-q, --quiet</strong></dt>\n"
+"  <dd>Activates quiet mode.  In quiet mode, only errors and fatal errors are "
+"displayed.</dd>"
+msgstr ""
+
+#: ../en/docs/command-line-interface.md:35
+msgid ""
+"<dt><strong>-v, --verbose</strong></dt>\n"
+"  <dd>Enables verbose logging.  A lot more details are displayed.  You will "
+"normally select verbose mode only, when tracking down errors.</dd>"
+msgstr ""
+
+#: ../en/docs/command-line-interface.md:38
+msgid ""
+"<dt><strong>--log-stderr</strong></dt>\n"
+"  <dd>Causes qgoda to log to standard error instead of standard output.</dd>"
+msgstr ""
+
+#: ../en/docs/command-line-interface.md:41
+msgid ""
+"<dt><strong>-h, --help</strong></dt>\n"
+"  <dd>Causes qgoda to display usage information and exit immediately.  All "
+"other options and commands are ignored.</dd>"
+msgstr ""
+
+#: ../en/docs/command-line-interface.md:44
+msgid ""
+"<dt><strong>-V, --verbose</strong></dt>\n"
+"  <dd>Causes qgoda to display version information and exit immediately.  All "
+"other options and commands are ignored.</dd>\n"
+"</dl>"
+msgstr ""
+
+#: ../en/docs/command-line-interface.md:48
+#, fuzzy
+msgid "## Commands"
+msgstr "### Code in Templates"
+
+#: ../en/docs/command-line-interface.md:50
+msgid ""
+"The next token on the command-line must be one of the supported commands, "
+"currently `build`, `watch`, `config`, `init`, `dump`, `markdown`, "
+"`xgettext`, and `po`."
+msgstr ""
+
+#: ../en/docs/command-line-interface.md:52
+msgid "### Command Options and Arguments"
+msgstr ""
+
+#: ../en/docs/command-line-interface.md:54
+msgid ""
+"The rest of the command-line are options specific to the selected command.  "
+"Try `qgoda COMMAND --help` for help for the specific command (replace "
+"`COMMAND` with one of the supported commands.  The option `-h` or `--help` "
+"is supported by all qgoda commands."
+msgstr ""
+
+#: ../en/docs/command-line-interface.md:56
+msgid ""
+"The command help is displayed using the system pager.  Hit the letter `q` to "
+"leave the pager.  `SPACE` scrolls one page down, cursor-down or `j` scrolls "
+"one line down, cursor-up or `k` scrolls one line up, `h` shows more help."
+msgstr ""
+
+#: ../en/docs/command-line-interface.md:58
+msgid "### Availabe Commands"
+msgstr ""
+
+#: ../en/docs/command-line-interface.md:60
+msgid "#### build"
+msgstr ""
+
+#: ../en/docs/command-line-interface.md:62
+msgid ""
+"The commands `build` instructs qgoda to build the site and exit.  Helper "
+"programs are *not* executed!"
+msgstr ""
+
+#: ../en/docs/command-line-interface.md:64
+#, fuzzy
+msgid "#### watch"
+msgstr "### Was wird gespeichert?"
+
+#: ../en/docs/command-line-interface.md:66
+msgid ""
+"Same as `build` above but instead of terminating, qgoda watches the file "
+"system for changes and triggers a re-build after a source file has changed."
+msgstr ""
+
+#: ../en/docs/command-line-interface.md:68
+msgid "Helper applications are started in parallel."
+msgstr ""
+
+#: ../en/docs/command-line-interface.md:70
+#, fuzzy
+msgid "#### config"
+msgstr "Konfigurations-Variablen"
+
+#: ../en/docs/command-line-interface.md:72
+msgid ""
+"Dumps the current configuration as <q-term>yaml:YAML</q-term> and exits.  "
+"The configuration printed is the result of merging the default configuration "
+"with the files `P:_config.yaml` and `P:_localconfig.yaml`."
+msgstr ""
+
+#: ../en/docs/command-line-interface.md:74
+#, fuzzy
+msgid "#### init"
+msgstr "### Auflistungen"
+
+#: ../en/docs/command-line-interface.md:76
+msgid "Initializes a new qgoda site."
+msgstr ""
+
+#: ../en/docs/command-line-interface.md:78
+msgid "#### dump"
+msgstr ""
+
+#: ../en/docs/command-line-interface.md:80
+msgid ""
+"Dumps the content of the entire site.  The output is suitable for pumping it "
+"into external programs (for example full-text search engines like "
+"[elasticsearch](https://www.elastic.co/)."
+msgstr ""
+
+#: ../en/docs/command-line-interface.md:82
+msgid "#### markdown"
+msgstr ""
+
+#: ../en/docs/command-line-interface.md:84
+msgid ""
+"Generates <q-term>html</q-term> from a <q-term>markdown</q-term> file.  This "
+"is meant for debugging problems with markdown rendering."
+msgstr ""
+
+#: ../en/docs/command-line-interface.md:86
+msgid "#### po"
+msgstr ""
+
+#: ../en/docs/command-line-interface.md:88
+msgid ""
+"Various commands needed for multi-language sites.  See [% q.lanchor('mulit-"
+"language-overview') %] for details."
+msgstr ""
+
+#: ../en/docs/command-line-interface.md:90
+msgid "#### xgettext"
+msgstr ""
+
+#: ../en/docs/command-line-interface.md:92
+msgid ""
+"Extracts translatable snippets from the site's markdown source files into `."
+"po`. files.  This command is invoked implicitely by `qgoda po pot` (see "
+"above), and you normally don't have to use `qgoda xgettext` directly.  See "
+"[% q.lanchor('mulit-language-overview') %] for more information."
+msgstr ""
 
 #: ../en/docs/configuration-variables.md:2
 msgctxt "title"
@@ -1273,7 +1518,8 @@ msgstr ""
 "werden."
 
 #: ../en/docs/excluding-files.md:19 ../en/docs/excluding-files.md:75
-#: ../en/docs/excluding-files.md:108
+#: ../en/docs/excluding-files.md:108 ../en/docs/pattern-lists.md:148
+#: ../en/docs/pattern-lists.md:181
 msgid "Example:"
 msgstr "Beispiel:"
 
@@ -1369,7 +1615,7 @@ msgstr ""
 "eingeschlossen werden können, wenn eines ihrer Elternverzeichnisse durch "
 "eine vorhergehende Regel bereits ausgeschlossen wurde."
 
-#: ../en/docs/excluding-files.md:85
+#: ../en/docs/excluding-files.md:85 ../en/docs/pattern-lists.md:158
 msgid ""
 "The second pattern is invalid and ignored because `/archive` is a parent "
 "directory of `/archive/2017`."
@@ -1377,7 +1623,7 @@ msgstr ""
 "Das zweite Muster ist ungültig und wird ignoriertm weil `/archive` ein "
 "Elternverzeichnis von `/archive/2017` ist."
 
-#: ../en/docs/excluding-files.md:87
+#: ../en/docs/excluding-files.md:87 ../en/docs/pattern-lists.md:160
 msgid ""
 "This behavior has performance reasons.  When Qgoda collects files, it does "
 "not descend into excluded directories.  In the above example, it would not "
@@ -1389,7 +1635,7 @@ msgstr ""
 "Im obigen Beispiel würde der Inhalt von `archive` nicht gelesen, und daher "
 "auch das Unterverzeichnis `archive/2017` nie geöffnet."
 
-#: ../en/docs/excluding-files.md:89
+#: ../en/docs/excluding-files.md:89 ../en/docs/pattern-lists.md:162
 msgid ""
 "That leads to a little problem if you want to re-include a subdirectory of "
 "an automatically excluded directory, for example `_experiments/stable`.  The "
@@ -1570,7 +1816,7 @@ msgctxt "title"
 msgid "Documentation"
 msgstr ""
 
-#: ../en/docs/index.md:8
+#: ../en/docs/index.md:9
 msgctxt "description"
 msgid ""
 "Learn how to create a website with Qgoda, with tutorial-style introductory "
@@ -1578,7 +1824,7 @@ msgid ""
 "experienced."
 msgstr ""
 
-#: ../en/docs/index.md:10
+#: ../en/docs/index.md:11
 msgid ""
 "[% USE q = Qgoda %]\n"
 "Qgoda is a static site generator.  It is mainly intended for blogs but you\n"
@@ -1586,7 +1832,7 @@ msgid ""
 "\"yagoda\"."
 msgstr ""
 
-#: ../en/docs/index.md:15
+#: ../en/docs/index.md:16
 msgid ""
 "[% WRAPPER components/infobox.html\n"
 "           type='warning' title='This Is a Draft!' %]\n"
@@ -1602,7 +1848,7 @@ msgid ""
 "[% END %]"
 msgstr ""
 
-#: ../en/docs/index.md:28
+#: ../en/docs/index.md:29
 msgid ""
 "[% IF asset.lingua != 'en' %]\n"
 "[% WRAPPER components/infobox.html\n"
@@ -1620,7 +1866,7 @@ msgstr ""
 "[% END %]\n"
 "[% END %]"
 
-#: ../en/docs/index.md:36
+#: ../en/docs/index.md:37
 msgid ""
 "Setting up your own blog, portfolio or company web site with Qgoda is "
 "simple\n"
@@ -1628,7 +1874,7 @@ msgid ""
 "even complex websites feasible and fun to implement.  The highlights are:"
 msgstr ""
 
-#: ../en/docs/index.md:39
+#: ../en/docs/index.md:40
 msgid ""
 "- A powerful yet easy to learn templating language.\n"
 "- Arbitrary [taxonomies]([% q.llink(name = 'taxonomies') %])\n"
@@ -1641,7 +1887,7 @@ msgid ""
 "  audience or documentation (like this one)."
 msgstr ""
 
-#: ../en/docs/index.md:49
+#: ../en/docs/index.md:50
 msgid ""
 "[% WRAPPER components/infobox.html\n"
 "           type='info' title='Run Your Local Version!' %]\n"
@@ -2772,6 +3018,293 @@ msgstr ""
 
 #: ../en/docs/output-location.md:216
 msgid "Quoted strings have JavaScript semantics!"
+msgstr ""
+
+#: ../en/docs/pattern-lists.md:2
+msgctxt "title"
+msgid "Pattern Lists"
+msgstr ""
+
+#: ../en/docs/pattern-lists.md:6
+msgctxt "description"
+msgid ""
+"File name patterns and lists of file name patterns are used throughout Qgoda "
+"for definining sets of files and directories."
+msgstr ""
+
+#: ../en/docs/pattern-lists.md:13
+msgid ""
+"Lists of search patterns in Qgoda follow the convention of [gitignore]"
+"(https://git-scm.com/docs/gitignore), only that you put your configuration "
+"in [YAML](http://yaml.org/) file `_config.yaml` and not in a file `P:."
+"gitignore`."
+msgstr ""
+
+#: ../en/docs/pattern-lists.md:17
+msgid ""
+"As an example we use the configuration variable `C:exclude` which is used "
+"for [excluding files from being processed]([@ q.llink(name = 'excluding-"
+"files') @])."
+msgstr ""
+
+#: ../en/docs/pattern-lists.md:19
+msgid "## Special Characters"
+msgstr ""
+
+#: ../en/docs/pattern-lists.md:21
+msgid "Some characters in patterns have a special meaning."
+msgstr ""
+
+#: ../en/docs/pattern-lists.md:23
+msgid "### The Star/Asterisk \"*\""
+msgstr ""
+
+#: ../en/docs/pattern-lists.md:25
+msgid ""
+"The star or asterisk stands for an arbitrary number of characters except for "
+"a slash:"
+msgstr ""
+
+#: ../en/docs/pattern-lists.md:34
+msgid ""
+"This will exclude all XCF files in the subdirectory `images` for example "
+"`images/logo.xcf` but *not* `images/ci/logo.xcf` (because the star/asterisk "
+"does not match a slash)."
+msgstr ""
+
+#: ../en/docs/pattern-lists.md:36
+msgid ""
+"Note that `*.xcf` also matches the file `.xcf`.  The star stands for an "
+"arbitrary number of characters and that includes zero characters."
+msgstr ""
+
+#: ../en/docs/pattern-lists.md:38
+msgid "### The Double Star/Asterisk \"**\""
+msgstr ""
+
+#: ../en/docs/pattern-lists.md:40
+msgid ""
+"Two consecutive stars `**` stand for any sequence of characters including "
+"the slash."
+msgstr ""
+
+#: ../en/docs/pattern-lists.md:49
+msgid ""
+"This now matches `images/ci/logo.xcf` *and* `images/logo.xcf` and also "
+"`images/nothing/beats/nesting/logo.xcf`.  The pattern `**` matches "
+"recursively."
+msgstr ""
+
+#: ../en/docs/pattern-lists.md:51
+msgid "### The Exclamation Mark \"!\""
+msgstr ""
+
+#: ../en/docs/pattern-lists.md:53
+msgid ""
+"The exclamation mark negates a pattern.  See [below](#negating-patterns) for "
+"details."
+msgstr ""
+
+#: ../en/docs/pattern-lists.md:55 ../en/docs/pattern-lists.md:139
+msgid ""
+"[@ WRAPPER components/infobox.html\n"
+"           type = \"warning\" title = \"The exclamation mark is special to "
+"YAML\" @]\n"
+"The exclamation mark <code>!</code> is a special character in YAML and "
+"JSON.  You therefore have to put negated patters into quotes, for example \"!"
+"a/b\".\n"
+"[@ END @]"
+msgstr ""
+
+#: ../en/docs/pattern-lists.md:60
+msgid "### The Question Mark \"?\""
+msgstr ""
+
+#: ../en/docs/pattern-lists.md:62
+msgid "The question mark standard for any character except for a slash."
+msgstr ""
+
+#: ../en/docs/pattern-lists.md:71
+msgid ""
+"This matches `images/corporate-logos` and `images/corporate_logos` and "
+"`images/corporatedQlogos` and `images/corporate&logos`."
+msgstr ""
+
+#: ../en/docs/pattern-lists.md:73
+msgid "### Character [Ranges]"
+msgstr ""
+
+#: ../en/docs/pattern-lists.md:75
+msgid "It's getting esoteric."
+msgstr ""
+
+#: ../en/docs/pattern-lists.md:84
+msgid ""
+"This matches exactly `images/a.jpeg`, `images/b.jpeg`, and `images/c.jpeg`.  "
+"Instead, you could also write this:"
+msgstr ""
+
+#: ../en/docs/pattern-lists.md:93
+msgid "Read the `[a-c]` as \"all characters from a to c\"."
+msgstr ""
+
+#: ../en/docs/pattern-lists.md:95
+msgid "You can combine ranges:"
+msgstr ""
+
+#: ../en/docs/pattern-lists.md:104
+msgid "This would now match `x.jpeg` and `3.jpeg`."
+msgstr ""
+
+#: ../en/docs/pattern-lists.md:106
+msgid ""
+"Character ranges cannot be empty, and therefore `[]` does not stand for no "
+"character.  It is simply not special.  Use `[]abc]` if you want to match \"a"
+"\", \"b\", \"c\", and a closing square bracket."
+msgstr ""
+
+#: ../en/docs/pattern-lists.md:108
+msgid ""
+"And put the hyphen at the front if you want to match it: `[-a-zA-Z0-9]`.  "
+"That matches all alphanumeric characters and the hyphen."
+msgstr ""
+
+#: ../en/docs/pattern-lists.md:110
+msgid ""
+"You can also use named character classes like `[a-zA-Z[:digit:]]` where `[:"
+"digit]` stands for any digit in the current locale.  Using this feature is "
+"discouraged unless you understand it."
+msgstr ""
+
+#: ../en/docs/pattern-lists.md:112
+msgid "### The Backslash \"\\\""
+msgstr ""
+
+#: ../en/docs/pattern-lists.md:114
+msgid "You can escape any character by preceding it with a backslash \"\\\"."
+msgstr ""
+
+#: ../en/docs/pattern-lists.md:123
+msgid ""
+"This matches only `images/Quo Vadis?.jpeg` but not `images/Quo VadissX."
+"jpeg`.  The question mark has lost its special meaning by the preceding "
+"backslash."
+msgstr ""
+
+#: ../en/docs/pattern-lists.md:125
+msgid "## Negating Patterns"
+msgstr ""
+
+#: ../en/docs/pattern-lists.md:127
+msgid "It is possible to negate patterns with a leading exclamation mark:"
+msgstr ""
+
+#: ../en/docs/pattern-lists.md:137
+msgid ""
+"This would exclude all files and directories with names starting with an "
+"underscore but *not* the directory `_posts`."
+msgstr ""
+
+#: ../en/docs/pattern-lists.md:144
+msgid "### Exclusion and Inclusion Mode"
+msgstr ""
+
+#: ../en/docs/pattern-lists.md:146
+#, fuzzy
+#| msgid ""
+#| "Beware though that you cannot re-include files or directories, when one "
+#| "of their parent directories is already excluded."
+msgid ""
+"Search patterns behave slightly different, when they are used for "
+"*excluding* files (as opposed to including files).  With pattern lists used "
+"for excluding files, you cannot re-include files or directories, when one of "
+"their parent directories is already excluded."
+msgstr ""
+"Es ist jedoch zu beachten, dass Dateien und Verzeichnisse nicht wieder "
+"eingeschlossen werden können, wenn eines ihrer Elternverzeichnisse durch "
+"eine vorhergehende Regel bereits ausgeschlossen wurde."
+
+#: ../en/docs/pattern-lists.md:173
+#, fuzzy
+#| msgid ""
+#| "You have to keep in mind that Qgoda has prepended this list with `/_*` "
+#| "(see above).  Line 1 re-includes `_experiments`.  Line 2 excludes all its "
+#| "subdirectories again.  And line 3 selectively re-includes `_experiments/"
+#| "stable`."
+msgid ""
+"You have to keep in mind that Qgoda has prepended this list with `/_*` (see "
+"[@ q.lanchor(name = 'excluding-files') @]).  Line 1 re-includes "
+"`_experiments`.  Line 2 excludes all its subdirectories again.  And line 3 "
+"selectively re-includes `_experiments/stable`."
+msgstr ""
+"Dazu muss man sich erinnern, dass Qgoda der Liste automatisch das Muster `/"
+"_` vorangestellt hat. Zeile 1 re-inkludiert jetzt `_experiments`, Zeile 2 "
+"schließt alle Unterverzeichnisse aber direkt wieder aus. Dafür schließt "
+"Zeile 3 das Verzeichnis `_experiments/stable` wieder ein."
+
+#: ../en/docs/pattern-lists.md:175
+msgid "## Slashes"
+msgstr ""
+
+#: ../en/docs/pattern-lists.md:177
+#, fuzzy
+#| msgid "### Code in Templates"
+msgid "### Leading Slashes"
+msgstr "### Code in Templates"
+
+#: ../en/docs/pattern-lists.md:179
+msgid "A leading slash anchors the pattern to the source directory."
+msgstr ""
+
+#: ../en/docs/pattern-lists.md:191
+msgid ""
+"The first patterns starts with a slash.  It therefore excludes the top-level "
+"file `package.json` but it would not exclude `a/b/c/package.json`."
+msgstr ""
+
+#: ../en/docs/pattern-lists.md:193
+msgid ""
+"The second pattern is not anchored to the source directory.  It would "
+"therefore match `TODO` as well as `a/TODO` or `a/b/TODO`."
+msgstr ""
+
+#: ../en/docs/pattern-lists.md:195
+msgid "### Trailing Slashes"
+msgstr ""
+
+#: ../en/docs/pattern-lists.md:197
+msgid "A trailing slash causes a pattern only to match directories:"
+msgstr ""
+
+#: ../en/docs/pattern-lists.md:206
+msgid ""
+"This would exclude `src/lib` *only* if it is a directory.  A regular file "
+"`src/lib` would not be affected."
+msgstr ""
+
+#: ../en/docs/pattern-lists.md:208
+msgid "### Other Slashes"
+msgstr ""
+
+#: ../en/docs/pattern-lists.md:210
+msgid ""
+"Every slash inside a pattern causes the entire file name to be taken into "
+"account when matching:"
+msgstr ""
+
+#: ../en/docs/pattern-lists.md:219
+msgid ""
+"This would exclude `posts/experiments/dangerous-minds.md`.  It does *not* "
+"exclude a file `dangerous-minds.md` in other locations.  It also does not "
+"exclude `a/b/posts/experiments/dangerous-minds.md`."
+msgstr ""
+
+#: ../en/docs/pattern-lists.md:221
+msgid ""
+"As you can see, a slash in the middle of a pattern effectively anchors the "
+"pattern to the source directory, and you can therefore almost always omit a "
+"leading slash, when there are more slashes following.  The following two "
+"patterns are absolutely equivalent:"
 msgstr ""
 
 #: ../en/docs/qgoda-in-15-minutes.md:2
@@ -4593,3 +5126,7 @@ msgstr "Weiterlesen"
 msgctxt "dateFormat"
 msgid "%b, %d %Y"
 msgstr "%d. %b %Y"
+
+#, fuzzy
+#~ msgid "Read more"
+#~ msgstr "Weiterlesen"

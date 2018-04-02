@@ -64,7 +64,7 @@ You can for example identify all English documents tagged with "Qgoda" and
        class="large-image figure-img img-fluid img-rounded d-block m-x-auto"
        alt="Combining taxonomies can create arbitrary partitions of a site." />
   <figcaption class="figure-caption text-xs-center">
-    All English documents tagged with "Qgoda" and "Plug-Ins". 
+    All English documents tagged with "Qgoda".
   </figcaption>
 </figure>
 

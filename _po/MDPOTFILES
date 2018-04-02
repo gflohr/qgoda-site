@@ -9,6 +9,7 @@
 ../_includes/en/landing-page/taxonomies.md
 ../en/data-privacy-policy.md
 ../en/docs/basics.md
+../en/docs/command-line-interface.md
 ../en/docs/configuration-variables.md
 ../en/docs/differences-to-jekyll.md
 ../en/docs/excluding-files.md
@@ -23,6 +24,7 @@
 ../en/docs/multi-language-overview.md
 ../en/docs/multi-language.md
 ../en/docs/output-location.md
+../en/docs/pattern-lists.md
 ../en/docs/qgoda-in-15-minutes.md
 ../en/docs/related-documents.md
 ../en/docs/table-of-contents.md
