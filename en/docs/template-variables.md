@@ -36,7 +36,7 @@ Set to a truth value (for example 1 if the document is a draft.  Drafts only get
 
 [% WRAPPER "components/template-variable.html"
    variable="asset.priority" type="integer" %]
-All artifacts are built sorted by their priority.  A higher value means that they are generated last.  Normally, you should assign a high priority, for example 999 to listings so that they are generated after other pages and can access all of their data.
+All artifacts are built sorted by their priority.  A higher value means that they are generated first.  Normally, you should assign a low priority, for example -999 to listings so that they are generated after other pages and can access all of their data.
 [%- END %]
 
 [% WRAPPER "components/template-variable.html"
