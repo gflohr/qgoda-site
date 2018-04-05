@@ -26,7 +26,6 @@ msgid "overridable:"
 msgstr ""
 
 #: ../_views/components/guided_tour.html:11
-#: ../_views/partials/header/navbar-talk.html:34
 msgid "Start"
 msgstr ""
 
@@ -69,34 +68,12 @@ msgstr ""
 msgid "Source code of this page"
 msgstr ""
 
-#: ../_views/partials/header/navbar-talk.html:7
 #: ../_views/partials/header/navbar.html:6
 msgid "Toggle navigation"
 msgstr ""
 
-#: ../_views/partials/header/navbar-talk.html:21
-msgid "Qgoda Start Page"
-msgstr ""
-
-#: ../_views/partials/header/navbar-talk.html:22
 #: ../_views/partials/header/navbar.html:21
 msgid "Home"
-msgstr ""
-
-#: ../_views/partials/header/navbar-talk.html:27
-msgid "Back"
-msgstr ""
-
-#: ../_views/partials/header/navbar-talk.html:40
-msgid "Forward"
-msgstr ""
-
-#: ../_views/partials/header/navbar-talk.html:48
-msgid "Data Privacy Statement"
-msgstr ""
-
-#: ../_views/partials/header/navbar-talk.html:53
-msgid "Legal Disclosure"
 msgstr ""
 
 #: ../_includes/en/landing-page/about-nodejs.md:3
@@ -3699,7 +3676,7 @@ msgid ""
 "       class=\"large-image figure-img img-fluid img-rounded d-block m-x-auto\"\n"
 "       alt=\"Combining taxonomies can create arbitrary partitions of a site.\" />\n"
 "  <figcaption class=\"figure-caption text-xs-center\">\n"
-"    All English documents tagged with \"Qgoda\" and \"Plug-Ins\". \n"
+"    All English documents tagged with \"Qgoda\".\n"
 "  </figcaption>\n"
 "</figure>"
 msgstr ""
@@ -3762,7 +3739,7 @@ msgstr ""
 msgid ""
 "[% WRAPPER \"components/template-variable.html\"\n"
 "   variable=\"asset.priority\" type=\"integer\" %]\n"
-"All artifacts are built sorted by their priority.  A higher value means that they are generated last.  Normally, you should assign a high priority, for example 999 to listings so that they are generated after other pages and can access all of their data.\n"
+"All artifacts are built sorted by their priority.  A higher value means that they are generated first.  Normally, you should assign a low priority, for example -999 to listings so that they are generated after other pages and can access all of their data.\n"
 "[%- END %]"
 msgstr ""
 
