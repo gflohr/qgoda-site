@@ -60,7 +60,7 @@ defaults:
   - files: [index.md, index.html]
     values:
       type: page
-      priority: 999
+      priority: -999 
 taxonomies:
   'doc-section': ~
   name: ~
