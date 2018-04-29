@@ -16,7 +16,7 @@ In a typical website there are two types of translatable content.  You usually h
 Texts in templates is usually translated with [Template::Plugin::Gettext](https://github.com/gflohr/Template-Plugin-Gettext) an internationalization plug-in for the [Template Toolkit](http://www.template-toolkit.org/).
 
 [% TAGS [- -] %]
-```markup
+```tt2
 [% USE gtx = Gettext('com.example.www', asset.lingua) %]
 <h1>[% gtx.gettext('Welcome to My Site') %]</h1>
 ```
@@ -78,7 +78,7 @@ Still, it depends on the nature of the site which approach is better.  For a blo
 
 The rest is a piece of cake.  Creating a listing of posts for the tag "JavaScript" looks like this for a single-language site:
 
-```markup
+```tt2
 [% FOREACH post IN q.list('tags', ['contains', 'JavaScript']) %]
 <a href="[% post.permalink %]">[% post.title | html %]</a>
 [% END %]
@@ -86,7 +86,7 @@ The rest is a piece of cake.  Creating a listing of posts for the tag "JavaScrip
 
 A multi-language site requires just one more filter:
 
-```markup
+```tt2
 [% FOREACH post IN q.list('lingua' = asset.lingua
                           'tags', ['contains', 'JavaScript']) %]
 <a href="[% post.permalink %]">[% post.title | html %]</a>
@@ -95,7 +95,7 @@ A multi-language site requires just one more filter:
 
 And since this is such a common task, you can just use the method `q.llist` (think "language list") instead that adds that filter automatically:
 
-```markup
+```tt2
 [% FOREACH post IN q.llist('tags', ['contains', 'JavaScript']) %]
 <a href="[% post.permalink %]">[% post.title | html %]</a>
 [% END %]

@@ -71,7 +71,7 @@ The front matter is stored as meta information and not directly rendered.
 
 The current output is still an incomplete HTML document.  It will almost always be *wrapped* into a complete document with the [Template Toolkit](http://www.template-toolkit.org/) using a *view template*, by default `_views/default.html`:
 
-```markup
+```tt2
 <!doctype html>
 <html>
   <head>

@@ -110,7 +110,7 @@ One question remained: The output file `_site/index.md` is an identical copy of 
 
 That requires a little change to the input file.  Change `index.md` so that it looks like this:
 
-```markup
+```yaml
 ---
 title: My Blog
 ---

@@ -37,7 +37,7 @@ You can place the the tag inside of the markdown documents you write or inside t
 [% TAGS [- -] %]
 The table of contents is generated over only a part of the document.  This will normally be the content area, the part of the document that you write in markdown.  Search for `[% asset.content %]` in the files `P:_views` directory:
 
-```markup
+```tt2
 <div class="container">
   [% asset.content %]
 </div>
@@ -45,7 +45,7 @@ The table of contents is generated over only a part of the document.  This will 
 
 Surround it with the custom tag `<qgoda-content>`:
 
-```markup
+```tt2
 <div class="container">
   <qgoda-content>
   [% asset.content %]

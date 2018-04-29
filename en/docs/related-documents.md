@@ -11,7 +11,7 @@ Displaying related documents is as easy as this:
 
 <!--QGODA-NO-XGETTEXT-->
 [%TAGS [- -]%]
-```markup
+```tt2
 [% USE q = Qgoda %]
 [% docs = q.related() %]
 <ul>
@@ -36,7 +36,7 @@ What else do you have to know?
 
 In a multi-lingual site, you use `q.lrelated()` instead of `q.related()`:
 
-```markup
+```tt2
 [% docs = q.lrelated() %]
 ```
 
@@ -46,7 +46,7 @@ That will only produce hits for documents that have the same language.
 
 By default, you get all related documents, even remotely related ones.  But you can pass a threshhold as the first parameter:
 
-```markup
+```tt2
 [% docs = q.lrelated(5) %]
 ```
 
@@ -56,7 +56,7 @@ That will only return documents that have a relation score (see below) of at lea
 
 You can limit the list with the standard template method `splice(START, SIZE)`:
 
-```markup
+```tt2
 [% docs = q.lrelated(5).splice(0, 10) %]
 ```
 
@@ -66,7 +66,7 @@ You now get the 10 most relevant hits.
 
 You can filter by arbitrary taxonomies:
 
-```markup
+```tt2
 [% docs = q.lrelated(5, type = 'post', date.year = 2018).splice(0, 10) %]
 ```
 
@@ -149,7 +149,7 @@ Now all documents that have the property `boost` set to the same value (for exam
 
 Why would you do that? Well, for debugging, maybe?  Okay, here you go:
 
-```markup
+```tt2
 <ul>
 [% FOREACH pair IN asset.related %]
   <li>[% pair.0.permalink %]: [% pair.1 %]

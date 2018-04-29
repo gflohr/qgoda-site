@@ -22,7 +22,7 @@ Listings are created by the template functions `list()` or `listPosts()`.
 [% END %]
 
 [% TAGS [- -] %]
-```markup
+```tt2
 [% USE q = Qgoda %]
 [% FOREACH post IN q.llistPosts %]
   <a href="[% post.permalink %]">

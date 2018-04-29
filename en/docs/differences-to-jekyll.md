@@ -24,7 +24,7 @@ Jekyll can structure a site with tags and categories.  Qgoda has arbitrary taxon
 Qgoda can create lists with arbitrary filters, not just for categories.  Example:
 
 <!--QGODA-NO-XGETTEXT-->
-```markup
+```tt2
 [% posts = q.list(lingua = asset.lingua
                   type = 'post'
                   'tags', ['contains', 'Development']
@@ -38,7 +38,7 @@ See [- q.lanchor(name='listings') -] for more information.
 
 These work essentially the same as listings, only that you define the filters so that they will produce a single result instead of a list.  For example, the last sentence of the previous paragraph was created like this:
 
-```markup
+```tt2
 See [% q.lanchor(name='listings') %] for more information.
 ```
 
@@ -90,7 +90,7 @@ translations:
 In the template you write:
 
 <!--QGODA-NO-XGETTEXT-->
-```markup
+```tt2
 [% l = asset.lingua %]
 
 <a href="./privacy/">[% config.translations.$l.privacy %]</a>
@@ -102,7 +102,7 @@ In the template you write:
 This is okay for a handful of strings but a maintainance nightmare for larger sites.  You should rather write all strings in the base language of your site and mark them:
 
 <!--QGODA-NO-XGETTEXT-->
-```markup
+```tt2
 [% USE gtx = Gettext('your-site-id', asset.lingua) %]
 
 <a href="./private/">[% gtx.gettext('Privacy Policy') %]</a>
