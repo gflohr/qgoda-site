@@ -8,6 +8,7 @@ require('./scss/font-awesome.scss');
 var Prism = require('prismjs');
 
 // Prism languages.
+require('prismjs/components/prism-tt2');
 require('prismjs/components/prism-yaml');
 require('prismjs/components/prism-markdown');
 require('prismjs/components/prism-perl');
