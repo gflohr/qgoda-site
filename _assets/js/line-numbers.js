@@ -1,5 +1,5 @@
 //var $ = require('jquery');
-var classMap = require('../../node_modules/prismjs/plugins/line-numbers/prism-line-numbers.css.json');
+var classMap = require('../scss/prism.scss.json');
 var classLineNumbers = classMap['line-numbers'];
 var classLineNumbersRows = classMap['line-numbers-rows'];
 Prism.hooks.add('before-highlight', function(env) {
