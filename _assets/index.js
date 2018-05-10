@@ -8,6 +8,8 @@ require('./scss/font-awesome.scss');
 var Prism = require('prismjs');
 
 // Prism languages.
+require('prismjs/components/prism-clike');
+require('prismjs/components/prism-markup-templating');
 require('prismjs/components/prism-tt2');
 require('prismjs/components/prism-yaml');
 require('prismjs/components/prism-markdown');
@@ -20,6 +22,7 @@ require('prismjs/themes/prism-coy.css');
 
 // Prism plug-ins.
 require('prismjs/plugins/line-numbers/prism-line-numbers');
+require('prismjs/plugins/line-numbers/prism-line-numbers.css');
 require('prismjs/plugins/autolinker/prism-autolinker');
 require('prismjs/plugins/command-line/prism-command-line');
 require('prismjs/plugins/custom-class/prism-custom-class');
