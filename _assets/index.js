@@ -18,7 +18,7 @@ require('prismjs/components/prism-bash');
 require('prismjs/components/prism-javascript');
 
 // Prism theme.
-require('prismjs/themes/prism-coy.css');
+require('prismjs/themes/prism.css');
 
 // Prism plug-ins.
 require('prismjs/plugins/line-numbers/prism-line-numbers');
@@ -26,7 +26,11 @@ require('prismjs/plugins/line-numbers/prism-line-numbers.css');
 require('prismjs/plugins/autolinker/prism-autolinker');
 require('prismjs/plugins/command-line/prism-command-line');
 require('prismjs/plugins/custom-class/prism-custom-class');
-Prism.plugins.customClass.map(require('prismjs/themes/prism-coy.css.json'));
+Prism.plugins.customClass.map(require('prismjs/themes/prism.css.json'));
 
+// Custom SCSS.
 require('./scss/qgoda.scss');
 require('./scss/toc.scss');
+
+// Custom JS.
+require('./js/line-numbers.js');
