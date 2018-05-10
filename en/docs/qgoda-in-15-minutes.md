@@ -339,7 +339,7 @@ You know that the new documents are there.  But how can you see them in the brow
 
 This is the most complicated part, as it involves  a little programming with the Template Toolkit.  Edit the file `index.md` until it reads like this:
 
-```html
+```tt2;line-numbers
 ---
 title: My Blog
 location: /index.html
@@ -362,7 +362,7 @@ This is my first blog created with Qgoda.
 </ul>
 ```
 
-The first line asking for explanation is `[% USE q = Qgoda %]`.  The <a href="http://www.template-toolkit.org/docs/manual/Directives.html#section_USE"><code>USE</code></a> keyword loads a plug-in for the Template Toolkit, in this case the Qgoda plug-in that ships with Qgoda.  This plug-in lets you access all Qgoda features from within your templates and documents.  By convention, you alias the plug-in with the letter `q`.
+The first line that requires an explanation is line 9: `[% USE q = Qgoda %]`.  The <a href="http://www.template-toolkit.org/docs/manual/Directives.html#section_USE"><code>USE</code></a> keyword loads a plug-in for the Template Toolkit, in this case the Qgoda plug-in that ships with Qgoda.  This plug-in lets you access all Qgoda features from within your templates and documents.  By convention, you alias the plug-in with the letter `q`.
 
 The <a href="http://www.template-toolkit.org/docs/manual/Directives.html#section_FOREACH"><code>FOREACH</code></a> keyword iterates over lists.  The list used here is produced by the plug-in method `q.list()` which --- when called without arguments --- gives you all documents that Qgoda knows about.
 
@@ -378,7 +378,7 @@ Check the result in the browser.  Your recipes should now appear on the start pa
 
 By the way, you can add more filters to further restrict the list:
 
-```html
+```tt2
 [% q.list(type = 'recipe' lingua = asset.lingua) %]
 ```
 
@@ -388,7 +388,7 @@ This would now only list documents that have a property `V:lingua` with the same
 
 Sometimes, you want to link to a particular document.  Imagine, you want to recommend a cherry tart as a dessert to the hard-boiled egg.  You can, of course do this in `hard-boiled-egg.md`:
 
-```html
+```;markdown
 ---
 title: Hard Boiled Egg
 name: hard-boiled egg
@@ -412,7 +412,7 @@ The syntax `[LABEL](href)` is used for links in Markdown.  Hard-coding links lik
 
 The disadvantage is that the link will be broken, if you decide to rename the cherry tart recipe, for example from `cherry-tart.md` to `cherry-on-the-tart.md`.  You can prevent that by using "symbolic" links.  By convention, you use the property `V:name` to identify a document independently of its concrete location.  Since we had given the `V:name` `cherry-tart` to the cherry tart recipe, you can write:
 
-```html
+```tt2
 [% USE q = Qgoda %]
 Recommendation for dessert:
 [Cherry Tart]([% q.link(name = 'cherry-tart') %])
@@ -427,7 +427,7 @@ The line "[% USE q = Qgoda %]" is only needed once per document.  But if you for
 
 A link is just a special case of a cross-reference, and just like you can refer to another document's `V:permalink` property, you can also retrieve its title, making the link completely immune against changes in the target:
 
-```html
+```tt2
 [% USE q = Qgoda %]
 Recommendation for dessert:
 [[% q.xref('title', name = 'cherry-tart' %]]([% q.link(name = 'cherry-tart') %]).
@@ -435,7 +435,7 @@ Recommendation for dessert:
 
 And since this is such a common use case, you can safe some typing with this shortcut version:
 
-```html
+```tt2
 [% USE q = Qgoda %]
 Recommendation for dessert: [% q.anchor(name = 'cherry-tart') %].
 ```
