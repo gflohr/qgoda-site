@@ -113,6 +113,21 @@ This is okay for a handful of strings but a maintainance nightmare for larger si
 
 You can extract these strings into `.po` files for translations, and install the compiled translations in the site.  This is following the standard process for [GNU gettext](https://www.gnu.org/software/gettext/), the de-facto standard for localization of open-source software.
 
+### Default Ignores
+
+In Qgoda, a file `_logs/access.log` is ignored, in Jekyll it would be processed.
+The default ignore rule in Qgoda is "ignore all top-level files and directories
+the names of which start with an underscore". Rationale: Qgoda's default makes a whole lot of sense.
+
+### Rebuild Triggers
+
+Qgoda will accumulate all rebuild triggers during a rebuild.  All changes
+made while Qgoda is rebuilding a site will result in a single rebuild attempt
+after the changes.  Jekyll will remember, whenever a modification is recorded
+after the grace period, and create a snapshot, whenever you hit `CTRL-S`.
+This is <del>almost</del> never what you want or need.  Contrary to Jekyll,
+Qgoda will also honor `CTRL-C` while it is busy ignoring your wishes.
+
 ## Template System
 
 Qgoda uses [The Template Toolkit](http://www.template-toolkit.org/) as its primary templating system, Jekyll uses [Liquid](https://shopify.github.io/liquid/).
