@@ -21,7 +21,6 @@ require('prismjs/components/prism-javascript');
 // Prism plug-ins.
 require('prismjs/plugins/line-numbers/prism-line-numbers');
 require('prismjs/plugins/autolinker/prism-autolinker');
-require('prismjs/plugins/command-line/prism-command-line');
 require('prismjs/plugins/custom-class/prism-custom-class');
 Prism.plugins.customClass.map(require('./scss/prism.scss.json'));
 
