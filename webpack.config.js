@@ -121,7 +121,6 @@ module.exports = {
         to: __dirname + '/assets'
       }
     ]),
-    new UglifyJSPlugin(),
     new ExtractTextPlugin('[name].min.css'),
     new TimestampWebpackPlugin({
       path: __dirname,

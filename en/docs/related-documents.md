@@ -11,9 +11,9 @@ Displaying related documents is as easy as this:
 
 <!--QGODA-NO-XGETTEXT-->
 [%TAGS [- -]%]
-```tt2
+```tt2;line-numbers
 [% USE q = Qgoda %]
-[% docs = q.related() %]
+[% docs= q.related() %]
 <ul>
 [% FOREACH doc IN docs %]
   <li><a href="[% doc.permalink %]">[% doc.title | html %]</li>
