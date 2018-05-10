@@ -141,7 +141,7 @@ So, let's create a minimal HTML wrapper template (called a *view* in Qgoda):
 
 [% TAGS [@ @] %]
 
-```html
+```tt2
 <!doctype html>
 <html>
   <head>
