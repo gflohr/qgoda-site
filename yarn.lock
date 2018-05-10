@@ -3534,9 +3534,9 @@ preserve@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/preserve/-/preserve-0.2.0.tgz#815ed1f6ebc65926f865b310c0713bcb3315ce4b"
 
-prismjs@gflohr/prism#gh-pages:
+prismjs@PrismJS/prism#gh-pages:
   version "1.14.0"
-  resolved "https://codeload.github.com/gflohr/prism/tar.gz/bbd01bdf2ba44228da52e0b564d7d8e6be14840f"
+  resolved "https://codeload.github.com/PrismJS/prism/tar.gz/e063992b81028d71cd4e45e792f556cffe9b52ea"
   optionalDependencies:
     clipboard "^2.0.0"
 
