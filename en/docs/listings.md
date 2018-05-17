@@ -12,7 +12,8 @@ lists are such groups.
 
 ## Template Code
 
-Listings are created by the template functions `list()` or `listPosts()`.
+Listings are created by the template functions `M:q.list()` or
+`M:q.listPosts()`.
 
 [% WRAPPER components/infobox.html
            type="info" title="These Instructions Are For the Template Toolkit!" %]
@@ -20,6 +21,7 @@ Listings are created by the template functions `list()` or `listPosts()`.
     the main template processor.  If you are using another template processor,
     please refer to the respective documentation.
 [% END %]
+
 
 [% TAGS [- -] %]
 ```tt2

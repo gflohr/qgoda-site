@@ -76,6 +76,10 @@ sub process {
                 my $varname = $1;
                 $text = qq{><a href="../template-variables/#$varname">$varname</a>}
                         . $text;
+            } elsif ($output =~ s{>M:([-._a-zA-Z0-9/]+)(\(\))?$}{}) {
+                my $varname = $1;
+                $text = qq{><a href="../qgoda-plug-in/#$varname">$varname$2</a>}
+                        . $text;
             }
         } elsif ('q-term' eq $tagname
                  && $output =~ s{<q-term>([^<]+$)}{}) {

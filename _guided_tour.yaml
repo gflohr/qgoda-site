@@ -5,15 +5,16 @@ doc:
        'installation', 'qgoda-in-15-minutes', 'mode-of-operation',
        'command-line-interface' ]
     - ['basics', 
-       'taxonomies', 'listings', 'related-documents',
+       'taxonomies', 'listings', 'filters', 'related-documents',
         'output-location', 'excluding-files', 'table-of-contents' ]
     - ['multi-language', 
        'multi-language-overview' ]
     - ['miscellaneous', 
        'differences-to-jekyll' ]
     - ['lists-and-indices', 
-       'terms-and-concepts', 'pattern-lists', 'template-variables',
-       'files-and-directories', 'configuration-variables' ]
+       'terms-and-concepts', 'template-variables',
+       'qgoda-plug-in', 'files-and-directories', 'configuration-variables',
+       'pattern-lists' ]
 talk-dpw-2018:
   sections:
     - ['introduction',
