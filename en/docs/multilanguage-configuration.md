@@ -60,21 +60,21 @@ This variable is optional and rarely used.
 
 A list of [file name patterns]([% q.llink(name='pattern-lists') %]) for template files to search for translatable strings. It defaults to just `P:_views` or whatever the configuration variable `C:path.views` points to.
 
-### `po.xgettext`
-
-The location of the `xgettext` program if it is not in `$PATH`. The `xgettext` program is normally installed as part of a software package called `gettext` or `gettext-tools`.
-
 ### `po.xgettext_tt2`
 
 The location of the `xgettext_tt2` program if it is not in `$PATH`. The `xgettext_tt2` ships with [Template-Plugin-Gettext](https://github.com/template-plugin-gettext) which is automatically installed with Qgoda.
 
+### `po.xgettext`
+
+The location of the `xgettext` program if it is not in `$PATH`. The `xgettext` program is normally installed as part of a software package called `gettext` or `gettext-tools`.
+
 ### `po.msgfmt`
 
-The location of the `msgmerge` program if it is not in `$PATH`. The `msgmerge` program is normally as part of a software package called `gettext` or `gettext-tools`.
+The location of the `msgmerge` program if it is not in `$PATH`. The `msgmerge` program is normally installed as part of a software package called `gettext` or `gettext-tools`.
 
 ### `po.msgmerge`
 
-The location of the `msgmerge` program if it is not in `$PATH`. The `msgmerge` program is normally as part of a software package called `gettext` or `gettext-tools`.
+The location of the `msgmerge` program if it is not in `$PATH`. The `msgmerge` program is normally installed as part of a software package called `gettext` or `gettext-tools`.
 
 ### `po.qgoda`
 
