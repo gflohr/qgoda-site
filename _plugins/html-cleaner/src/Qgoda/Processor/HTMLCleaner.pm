@@ -12,29 +12,6 @@ use Qgoda;
 
 use base qw(Qgoda::Processor);
 
-sub new {
-        my ($class, @other) = @_;
-
-        my $flat_config = flatten2hash(Qgoda::Config->default);
-        my %vars;
-        foreach my $key (keys %$flat_config) {
-            my @tokens = split /\./, $key;
-            my @keys = shift @tokens;
-            foreach my $token (@tokens) {
-                push @keys, "$keys[-1].$token";
-            }
-            foreach my $key (@keys) {
-                $vars{$key} = 1;
-            }
-        }
-
-        my $re_string = join '|', map { quotemeta } keys %vars;
-
-	bless {
-            __config_var_re => qr/$re_string/,
-        }, $class;
-}
-
 sub process {
     my ($self, $content, $asset, $site) = @_;
 
@@ -64,7 +41,7 @@ sub process {
         my $text = "</$tagname>";
 
         if ('code' eq $tagname) {
-            if ($output =~ s/>C:($self->{__config_var_re})$//) {
+            if ($output =~ s{>C:([-._a-zA-Z0-9/]+$)}{}) {
                 my $varname = $1;
                 $text = qq{><a href="../configuration-variables/#$varname">$varname</a>}
                         . $text;

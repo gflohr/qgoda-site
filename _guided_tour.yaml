@@ -7,14 +7,16 @@ doc:
     - ['basics', 
        'taxonomies', 'listings', 'filters', 'related-documents',
         'output-location', 'excluding-files', 'table-of-contents' ]
-    - ['multi-language', 
-       'multi-language-overview' ]
+    - ['multilanguage', 
+       'multilanguage-overview', 'multilanguage-configuration',
+       'translating-templates', 'separate-documents-for-each-language',
+       'using-translation-catalogs' ]
     - ['miscellaneous', 
        'differences-to-jekyll' ]
     - ['lists-and-indices', 
        'terms-and-concepts', 'template-variables',
        'qgoda-plug-in', 'files-and-directories', 'configuration-variables',
-       'pattern-lists' ]
+       'pattern-lists', 'faq' ]
 talk-dpw-2018:
   sections:
     - ['introduction',

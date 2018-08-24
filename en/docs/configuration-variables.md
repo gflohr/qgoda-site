@@ -58,50 +58,49 @@ Container for various <q-term>i18n</q-term> settings, see below.
 [% WRAPPER components/variable.html
    variable="po.copyright_holder" type='String' 
    default='none' -%]
-Default copyright holder of generated <code>.po</code> files.  This will
-be written into the PO header of the file.
+See <a href="[% q.llink(name='multilanguage-configuration') %]#po.copyright_holder-code-"><code>po.copyright_holder</code> in Multilanguage Configuration</a>.
 [%- END %]
 
 [% WRAPPER components/variable.html
    variable="po.from_code" type='String' 
    default='utf-8' -%]
-Encoding for documents and templates.
+See <a href="[% q.llink(name='multilanguage-configuration') %]#po.from-code-code-"><code>po.from-code</code> in Multilanguage Configuration</a>.
 [%- END %]
 
 [% WRAPPER components/variable.html
    variable="po.msgfmt" type='String' 
    default='msgfmt' -%]
-Location of the <code>msgfmt</code> program if not in <code>$PATH</code>.
+See <a href="[% q.llink(name='multilanguage-configuration') %]#po.msgfmt-code-"><code>po.msgfmt</code> in Multilanguage Configuration</a>.
 [%- END %]
 
 [% WRAPPER components/variable.html
    variable="po.msgid_bugs_address" type='String' 
    default='none' -%]
-Email address for reporting bugs in message ids in <code>.po</code> files.  This will be written into the PO header of the file.
-[%- END %]
-
-[% WRAPPER components/variable.html
-   variable="po.msgmerge" type='String' 
-   default='msgfmt' -%]
-Location of the <code>msgmerge</code> program if not in <code>$PATH</code>.
+See <a href="[% q.llink(name='multilanguage-configuration') %]#po.msgid_bugs_address-code-"><code>po.msgid_bugs_address</code> in Multilanguage Configuration</a>.
 [%- END %]
 
 [% WRAPPER components/variable.html
    variable="po.qgoda" type='String' 
    default='msgfmt' -%]
-Location of the <code>qgoda</code> program if not in <code>$PATH</code>.
+See <a href="[% q.llink(name='multilanguage-configuration') %]#po.msgfmt-code-"><code>po.msgfmt</code> in Multilanguage Configuration</a>.
+[%- END %]
+
+[% WRAPPER components/variable.html
+   variable="po.msgmerge" type='String' 
+   default='msgfmt' -%]
+See <a href="[% q.llink(name='multilanguage-configuration') %]#po.msgmerge-code-"><code>po.msgmerge</code> in Multilanguage Configuration</a>.
+[%- END %]
+
+[% WRAPPER components/variable.html
+   variable="po.qgoda" type='string or list' 
+   default='0' -%]
+See <a href="[% q.llink(name='multilanguage-configuration') %]#po.qgoda-code-"><code>po.qgoda</code> in Multilanguage Configuration</a>.
 [%- END %]
 
 [% WRAPPER components/variable.html
    variable="po.refresh" type='Boolean (0 or 1)' 
    default='0' -%]
-Set to 1 if you want to reload translations before every rebuild.  By default, they are loaded only once at program start.  If you reload them on every rebuild, freshly installed translations are immediately visible.
-[%- END %]
-
-[% WRAPPER components/variable.html
-   variable="po.tt2" type='Pattern list' 
-   default='[_views, _includes]' -%]
-List of patterns where to search for translatable template files.
+See <a href="[% q.llink(name='multilanguage-configuration') %]#po.refresh-code-"><code>po.refresh</code> in Multilanguage Configuration</a>.
 [%- END %]
 
 [% WRAPPER components/variable.html

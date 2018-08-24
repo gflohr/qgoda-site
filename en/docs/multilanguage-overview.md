@@ -1,21 +1,24 @@
 ---
-title: Multi-Language Overview
-name: multi-language-overview
-section: multi-language
+title: Overview
+name: multilanguage-overview
+section: multilanguage
 view: docs.html
-description: Overview of Qgoda's Multi-Language and Internationalization (I18N) features
+description: Overview of Qgoda's Multilanguage and Internationalization (I18N) features
 ---
-## Multi-Language Overview
+## Overview
 
 Multi-lingualism in Qgoda is an integral, built-in feature mostly built upon easy to follow conventions.
 
 In a typical website there are two types of translatable content.  You usually have common texts, typically in headers, footers, navigations, sidebars and so on.  Most of the time, these texts come from templates.  And then there is your actual content, your blog posts, articles or other editorial content.
 
-### Common Texts
+<qgoda-toc/>
 
-Texts in templates is usually translated with [Template::Plugin::Gettext](https://github.com/gflohr/Template-Plugin-Gettext) an internationalization plug-in for the [Template Toolkit](http://www.template-toolkit.org/).
+### Template Texts
 
-[% TAGS [- -] %]
+Common texts in templates is usually translated with [Template::Plugin::Gettext](https://github.com/gflohr/Template-Plugin-Gettext) an internationalization plug-in for the [Template Toolkit](http://www.template-toolkit.org/).
+
+[% USE q = Qgoda %]
+[% TAGS [@ @] %]
 ```tt2
 [% USE gtx = Gettext('com.example.www', asset.lingua) %]
 <h1>[% gtx.gettext('Welcome to My Site') %]</h1>
@@ -27,15 +30,25 @@ The second line serves two purposes.  The function `gtx.gettext()` first marks a
 
 But it also returns the translation for the string, when the document is rendered.
 
+See [@ q.lanchor(name = 'translating-templates') @] for more information!
+
 ### Editorial Content
 
 For content, you have two options which both have their pros and cons.
 
 #### Separate Documents For Each Language
 
-You can simply copy the documents from the main language into a separate file and translate it.  This is easy to understand and setup but it has maintainance issues.
+You can simply copy the documents from the main language into a separate file and translate it. See [@ q.lanchor( name = 'separate-documents-for-each-language') @] for details on how to use this.
+
+This is a simple approach and usually sufficient when the document in question rarely changes. A blog post, a news article or similar documents are usually written just once and then never touched again.
 
 #### Using Translation Catalogs
+
+Other documents are expected to change frequently. One example is documentation, like the one that you are reading. If you are translating such documents as a whole, no matter whether it is markdown, HTML, Microsoft Word or just plain text, a translator always has to find the differences in the original document and modify the translation accordingly.  This is a tedious and therefore expensive task.
+
+A much better approach is to split a document into more manageable smaller chunks. Modern translation frameworks like [GNU Gettext](https://www.gnu.org/software/gettext/) - the system that internationalization with Qgoda is built upon - aids even more in translation by marking the differences to older versions and even allowing machine translations at least as a starting point.
+
+See [@ q.lanchor(name = 'using-translation-catalogs') @] for the pros and cons and gory details of this approach.
 
 Qgoda also offers you the possibility to extract the translatable content from the master document into a `.po` file.  Instead of a complete, translated copy of the original document, you just create a minimal *trigger document*:
 

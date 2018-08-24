@@ -126,7 +126,7 @@ msgstr "Haupt-Technologien"
 #: ../_includes/en/landing-page/header.md:3
 msgctxt "title"
 msgid "The Qgoda Static Site Generator"
-msgstr "Qgoda Static Site Generator"
+msgstr "Qgoda - Der Multi-Language Static Site Generator"
 
 #: ../_includes/en/landing-page/header.md:4
 msgctxt "button"

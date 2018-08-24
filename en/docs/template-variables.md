@@ -35,6 +35,11 @@ Set to a truth value (for example 1 if the document is a draft.  Drafts only get
 [%- END %]
 
 [% WRAPPER "components/template-variable.html"
+   variable="asset.lingua" type="RFC4647 language identifier" %]
+An identifier of the language of the document. You should use a language identifier that conforms to <a href="https://www.ietf.org/rfc/rfc4647.txt">RFC4647</a>, something like "en", "en-us", or "fr-ca". It is strongly recommended that you stick to the variable name `lingua` because this convention is built into Qgoda at many places.
+[%- END %]
+
+[% WRAPPER "components/template-variable.html"
    variable="asset.priority" type="integer" %]
 All artifacts are built sorted by their priority.  A higher value means that they are generated first.  Normally, you should assign a low priority, for example -999 to listings so that they are generated after other pages and can access all of their data.
 [%- END %]
@@ -49,5 +54,5 @@ Virtual documents to not get published, to be more exact, they do not go through
 `config` gives you access to the site configuration from `P:_config.yaml`.
 The configuration variable `C:paths.views` in `P:_config.yaml` is
 accessible from a template as `config.paths.views`.  See
-[q.llink(name='configuration-variables'] for a complete list.
+[% q.lanchor(name='configuration-variables') %] for a complete list.
 [%- END %]
