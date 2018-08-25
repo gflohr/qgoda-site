@@ -38,12 +38,12 @@ body {
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     font-family: Arimo, Arial, Helvetica, sans-serif;
+    font-weight: 600;
 }
 
 h1, .h1 {
     font-size: 60px;
     font-style: normal;
-    font-weight: bold;
     letter-spacing: normal;
     line-height: 77.55099487304688px;
     text-transform: uppercase;
@@ -57,21 +57,19 @@ h1, .h1 {
 h2 {
     font-size: 31px;
     font-style: normal;
-    font-weight: bold;
     letter-spacing: normal;
     line-height: 40.172706604003906px;
     text-transform: uppercase;
 }
 
-.content {
-    h2 {
-        font-weight: 400;
-    }
-}
-
 h3 {
     font-size: 24px;
     line-height: 31.10145027406754012880px;
+}
+
+h4 {
+    font-size: 19px;
+    line-height: 28px;
 }
 
 .sidebar, .content-head {
