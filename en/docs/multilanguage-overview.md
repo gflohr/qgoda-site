@@ -15,20 +15,23 @@ In a typical website there are two types of translatable content.  You usually h
 
 ### Template Texts
 
-Common texts in templates is usually translated with [Template::Plugin::Gettext](https://github.com/gflohr/Template-Plugin-Gettext) an internationalization plug-in for the [Template Toolkit](http://www.template-toolkit.org/).
+Common texts in templates are translated with [Template::Plugin::Gettext](https://github.com/gflohr/Template-Plugin-Gettext) an internationalization plug-in for the [Template Toolkit](http://www.template-toolkit.org/).
+
+Take the following template snippet as an example:
 
 [% USE q = Qgoda %]
 [% TAGS [@ @] %]
 ```tt2
-[% USE gtx = Gettext('com.example.www', asset.lingua) %]
+<h1>Welcome to My Site</h1>
+```
+
+For an internationalized site you would write instead:
+
+```tt2
 <h1>[% gtx.gettext('Welcome to My Site') %]</h1>
 ```
 
-The first line imports the plug-in with two arguments.  The first one is the so-called *textdomain*, an arbitrary string identifying your translation database.  The second one is the language of the file.  This is usually stored in the document property `V:lingua`.
-
-The second line serves two purposes.  The function `gtx.gettext()` first marks a string as being translatable, so that the string can be extracted into a `.po` file, a standard format for translation catalogs used by most open-source and many commercial projects.
-
-But it also returns the translation for the string, when the document is rendered.
+The English text is simply turned into an argument to a function.  That function returns the translation, when the document is rendered, and it also serves as a marker for translatable strings, so that you can extract them into a `.po` file, a standard format for translations.
 
 See [@ q.lanchor(name = 'translating-templates') @] for more information!
 
