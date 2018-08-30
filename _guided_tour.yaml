@@ -10,7 +10,7 @@ doc:
     - ['multilanguage', 
        'multilanguage-overview', 'multilanguage-configuration',
        'translating-templates', 'language-copies',
-       'referencing-other-languages', 'po-translations' ]
+       'multilanguage-structure', 'referencing-other-languages', 'po-translations' ]
     - ['miscellaneous', 
        'differences-to-jekyll' ]
     - ['lists-and-indices', 
