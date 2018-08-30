@@ -1,3 +1,7 @@
+---
+location: index.html
+view: raw
+---
 <!DOCTYPE html>
 <html>
   <head>
@@ -5,8 +9,12 @@
   </head>
   <body>
 <script>
-    var lingua;
-        supported = { en: true, de: true };
+    var lingua,
+        default_lingua = '[% config.linguas.0 %]',
+        supported = {};
+    [% FOREACH lingua IN config.linguas %]
+        supported['[% lingua %]'] = true;
+    [% END %]
 
     for (i = 0;  
          navigator.languages != null && i < navigator.languages.length; 
@@ -25,8 +33,10 @@
     }
 
     if (!supported[lingua])
-        lingua = 'en';
+        lingua = default_lingua;
 
+    // This is based on the assumption that the start URI for language 'xy'
+    // is '/xy'. Change that to your needs!
     document.location.href = '/' + lingua;
     </script>
   </body
