@@ -9,8 +9,8 @@ doc:
         'output-location', 'excluding-files', 'table-of-contents' ]
     - ['multilanguage', 
        'multilanguage-overview', 'multilanguage-configuration',
-       'translating-templates', 'separate-documents-for-each-language',
-       'using-translation-catalogs' ]
+       'translating-templates', 'language-copies',
+       'referencing-other-languages', 'po-translations' ]
     - ['miscellaneous', 
        'differences-to-jekyll' ]
     - ['lists-and-indices', 
