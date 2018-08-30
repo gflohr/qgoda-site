@@ -8,6 +8,8 @@ description: All configuration variables required for a fully internalized site
 Internationalization (i18n) in Qgoda has to be explicitely activated in the configuration file `P:_config.yaml`.
 
 <qgoda-toc/>
+[% USE q = Qgoda %]
+[% TAGS [@ @] %]
 
 ## Global Configuration
 
@@ -98,6 +100,7 @@ You can set the language in the document front matter:
 ---
 title: Kalevala
 lingua: fi
+name: kalevala
 ---
 ```
 
@@ -115,3 +118,55 @@ defaults:
 ```
 
 This would set `V:asset.lingua` to `en` for all files in the top-level directory `/en` and addtionally for all files that have names ending in `.en.md`. See [% q.lanchor(name='defaults') %] and [% q.lanchor('pattern-lists') %] for more information.
+
+## Language-Independent Identifier `asset.name`
+
+All language variants of the same content should share a common property that acts as a link between them. Although you are free to use any vbariable name that you like, `V:asset.name` is used throughout this documentation.
+
+For obvious reasons, this identifier will always be configured in the document front matter.
+
+Take for example a markdown file `special-relativity.md`:
+
+```yaml
+---
+title: Special Relativity
+lingua: en
+name: special-relativity
+...
+```
+
+If the German translation of that file is `spezielle-relativitaetstheorie.md`, that translation's front matter will look like this:
+
+```yaml
+---
+title: Spezielle Relativitätstheorie
+lingua: de
+name: special-relativity
+...
+```
+
+Both documents are alternate versions of the same content. They differ in the property `V:asset.lingua` but they share a common  value for the  `V:asset.name` property.
+
+Now it is trivial to link from the English version of that document to the German version:
+
+```tt2
+<a href="[% q.link(name=asset.name lingua='fr') %]>German version</a>
+```
+
+And you can link from other documents to the document about Einstein's special relativity regardless of the language like this:
+
+```tt2
+See [% q.anchor(name='special-relativity' lingua=asset.lingua) %]!
+```
+
+See [@ q.lanchor(name='referencing-languages') @] if that does not make sense to you, or if you are looking for a more concise version.
+
+## File and Directory Structure
+
+## Content Negotiation
+
+Content negotiation happens when a web server ([nginx](http://www.nginx.com/), [apache](http://httpd.apache.org/), ...) selects the appropriate language version of a piece of content based on the visitor's preference laid forth in their browser language preferences.  See [Simple Content Negotiation for Nginx](http://www.guido-flohr.net/simple-content-negotiation-for-nginx/) for all the gory details of that. Contrary to what the name of the article suggests, it will shed sufficient light on the topic also for users of other web servers than nginx.
+
+Content negotiation can be made arbitrarily complicated. In practice there is one single valid strategy: A visitor of your start page `http://YOURDOMAIN` should be redirected to the start page in their preferred language and from that moment on they should be pinpointed to that language until they change it. That means that you have to implement content negotiation only for the start page which simplifies things a lot. This is because there is only room for one `/index.html` and the best strategy is to make that just an entry point that brings you to the content in your preferred language.
+
+Server-side solutions are described at the above mentioned blog post [Simple Content Negotiation for Nginx](http://www.guido-flohr.net/simple-content-negotiation-for-nginx/) but as a fallback and short of better ideas feel free to steal the start page for this site from https://github.com/gflohr/qgoda-site/blob/master/index.html.
