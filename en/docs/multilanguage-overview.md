@@ -57,7 +57,7 @@ See [@ q.lanchor(name = 'po-translations') @] for more in-depth information abou
 
 ## Referencing Documents in Specific Languages
 
-For listings, you usually want to display documents in one language. You also often want to link to another document in a particular language, most of the time the current one. All this is very easy to achieve with Qgoda, see [@ q.lanchor(name = 'referencing-other-languages') @].
+For listings, you usually want to display documents in one language. You also often want to link to another document in a particular language, most of the time the current one. All this is very easy to achieve with Qgoda, see [@ q.lanchor(name = 'referencing-languages') @].
 
 ## Translation Workflow
 
