@@ -100,33 +100,3 @@ With `.po` files on the other hand individual paragraphs are handled as an indiv
 
 Still, it depends on the nature of the site which approach is better.  For a blog where posts are written once and rarely changed afterwards, the simple approach will often be sufficient.  But for software documentation that gets updated on a regular basis and requires exact translations, an approach based on professional translation tools probably pays out soon.
 
-## Listings and Links
-
-The rest is a piece of cake.  Creating a listing of posts for the tag "JavaScript" looks like this for a single-language site:
-
-```tt2
-[% FOREACH post IN q.list('tags', ['contains', 'JavaScript']) %]
-<a href="[% post.permalink %]">[% post.title | html %]</a>
-[% END %]
-```
-
-A multi-language site requires just one more filter:
-
-```tt2
-[% FOREACH post IN q.list('lingua' = asset.lingua
-                          'tags', ['contains', 'JavaScript']) %]
-<a href="[% post.permalink %]">[% post.title | html %]</a>
-[% END %]
-```
-
-And since this is such a common task, you can just use the method `q.llist` (think "language list") instead that adds that filter automatically:
-
-```tt2
-[% FOREACH post IN q.llist('tags', ['contains', 'JavaScript']) %]
-<a href="[% post.permalink %]">[% post.title | html %]</a>
-[% END %]
-```
-
-So in the end, a multi-language site requires just a single letter more of template code.
-
-Likewise, for links resp. cross-references you add the additional filter for the language or just use `q.lxref()` instead of `q.xref()` and you are done.
