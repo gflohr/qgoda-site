@@ -29,4 +29,5 @@ require('./scss/qgoda.scss');
 require('./scss/toc.scss');
 
 // Custom JS.
-require('./js/line-numbers.js');
+require('./js/line-numbers.js'); // FIXME! Is this needed?
+require('./js/code-language');
