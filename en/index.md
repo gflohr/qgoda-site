@@ -1,6 +1,6 @@
 ---
 view: landing.html
-title: Qgoda - The Multilanguage Static Site Generator
+title: Qgoda - The Multilingual Static Site Generator
 location: /{lingua}/index.html
 permalink: /{lingua}/
 chain: html
