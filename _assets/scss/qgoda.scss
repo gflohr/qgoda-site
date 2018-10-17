@@ -33,12 +33,15 @@ body {
     letter-spacing: normal;
     line-height: 28px;
     text-transform: none;
+    text-align: justify;
+    text-justify: auto;
     color: #666666;
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     font-family: Arimo, Arial, Helvetica, sans-serif;
     font-weight: 600;
+    text-align: left;
 }
 
 h1, .h1 {
