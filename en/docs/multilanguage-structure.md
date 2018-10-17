@@ -3,8 +3,7 @@ title: Structure
 name: multilanguage-structure
 section: multilanguage
 view: docs.html
-description: How should you lay out files and directories? Which variables are important?
-Overview of Qgoda's Multilanguage and Internationalization (I18N) features
+description: "How should you lay out files and directories? Which variables are important?  Overview of Qgoda's Multilanguage and Internationalization (I18N) features"
 ---
 [% USE q = Qgoda %]
 [% TAGS [@ @] %]

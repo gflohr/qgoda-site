@@ -83,7 +83,7 @@ po:
   qgoda:
     - perl 
     - -I/Users/guido/perl/qgoda/lib 
-    - /Users/guido/perl/qgoda/qgoda
+    - /Users/guido/perl/qgoda/bin/qgoda
   mdextra:
     - /_includes/**
   views:
