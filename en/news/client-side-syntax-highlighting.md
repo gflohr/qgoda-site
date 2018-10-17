@@ -23,8 +23,7 @@ Code blocks should be wrapped into a `<code>` element that is in turn wrapped in
 CSS class in the format `language-PROGRAMMING-LANGUAGE`:
 
 [@ FILTER $Highlight "language-html" "line-numbers" css.prism.line_numbers @]
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;
-if (options.debug) {
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;if (options.debug) {
     console.log("Options: ", options);
 }&lt;/code&gt;&lt;/pre&gt;
 [@ END @]
@@ -38,7 +37,7 @@ of the block.
 ### Manually Creating Semantic Code Blocks
 
 Remember that (almost) all markup goes through unchanged in Markdown.  Nobody stops
-you from entering your code blocks manually.
+you from entering your code blocks manually with HTML.
 
 ### Using Fenced Code Blocks
 
@@ -55,7 +54,7 @@ if (options.debug) {
 This creates exactly the construct we want, the code inside of a `<code>` element
 inside of a `<pre>` element. But none of the tags has any attributes, more
 specifically the `class="langauge-javascript"` is not present.  But you can
-specify the langauge immediately following the opening "fence":
+specify the language immediately following the opening "fence":
 
 [@ FILTER $Highlight "language-markdown" "line-numbers" css.prism.line_numbers @]
 &#x60;&#x60;&#x60;javascript
@@ -112,8 +111,8 @@ snippet:
 &lt;/html&gt;
 [@ END @]
 
-The default stylesheet is included in line 4 and the core library in line 7.
-Make sure that they are found at the location specified.
+The default stylesheet gets included in line 4 and the core library in line 7.
+Make sure that they are found at the locations specified.
 
 ### Using a PrismJS Theme
 
@@ -155,6 +154,10 @@ number:
 &lt;/html&gt;
 [@ END @]
 
+If you want to have syntax highlighting for more 
+languages, just add the corresponding PrismJS 
+*component* after line 11.
+
 ## Using the Qgoda Syntax Highlighter Plug-In
 
 Fenced code-blocks are not always enough:
@@ -192,7 +195,7 @@ if (options.debug) {
 [% END %]
 [@ END @]
 
-All positional arguments to the filter plug-in (line 1) are added to the CSS
+All positional arguments to the filter plug-in (line 2) are added to the CSS
 class of the surrounding `<pre>` element.  The named arguments are converted
 to HTML attributes and their corresponding values.
 
@@ -210,16 +213,16 @@ Values always have to be quoted (unless you refer a variable).
 The above example will result in the following HTML code:
 
 [@ FILTER $Highlight "language-html" "line-numbers" css.prism.line_numbers @]
-&lt;pre class=&quot;language-html line-numbers&quot; data-start=&quot;5&quot;&gt;
-if (options.debug) {
+&lt;pre class=&quot;language-html line-numbers&quot; data-start=&quot;5&quot;&gt;if (options.debug) {
     console.log(&quot;Options: &quot;, options);
 }&lt;/code&gt;&lt;/pre&gt;
 [@ END @]
 
 Provided that you have correctly loaded the PrismJS `line-numbers` plug-in, this
 will highlight the code as JavaScript in the browser, add line numbers in front of every
-line and start the line numbering with line 5, like the code examples that you can
-see on this very page.
+line and start the line numbering with line 5.  For
+instance, the code examples on this very page are 
+produced with directives like this
 
 ### Page-wide Defaullts
 
@@ -248,9 +251,10 @@ individual `FILTER`, just pass the class name with a
 hyphen prepended:
 
 [@ FILTER $Highlight "language-tt2" "line-numbers" css.prism.line_numbers @]
-[% USE Highlight &quot;-language-javascript&quot; &quot;language-html&quot; %]
-[% FILTER $Highlight %]
+...
+[% FILTER $Highlight &quot;-language-javascript&quot; &quot;language-html&quot; %]
 &lt;link href=&quot;styles.css&quot; rel=&quot;stylesheet&quot;>
+...
 [% END %]
 [@ END @]
 
@@ -268,7 +272,7 @@ code block or the qgoda highlighter plug-in without a language specification,
 PrismJS will not highlight the code block. This will be fixed in a later
 version of the highlighter plug-in (see https://github.com/gflohr/qgoda-plugin-tt2-highlight/issues
 and https://github.com/gflohr/qgoda/issues/51). Until then, you either have to
-mark every code black as language "none" (or with the class "language-none) or
+mark every code block as language "none" (or with the class "language-none") or
 you have to resort to a little bit of JavaScript:
 
 [@ FILTER $Highlight "language-javascript" "line-numbers" css.prism.line_numbers @]
@@ -292,7 +296,7 @@ fault then, and you know how to fix it.
 
 The other glitch is rather esoteric and caused by a little flaw in the plug-in system
 of PrismJS. Its `css-modules` plug-in can be used to automatically use the
-[BOM methodology](https://en.bem.info/) for automatically namespacing all CSS
+[BEM methodology](https://en.bem.info/) for automatically namespacing all CSS
 class names and id attributes.
 
 The `line-numbers` plug-in on the other hand ignores BEM.  It searches for code blocks
