@@ -585,75 +585,74 @@ msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"po.copyright_holder\" type='String' \n"
 "   default='none' -%]\n"
-"Default copyright holder of generated <code>.po</code> files.  This will\n"
-"be written into the PO header of the file.\n"
+"See <a href=\"[% q.llink(name='multilanguage-configuration') %]#po.copyright_holder-code-\"><code>po.copyright_holder</code> in Multilanguage Configuration</a>.\n"
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:65
+#: ../en/docs/configuration-variables.md:64
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"po.from_code\" type='String' \n"
 "   default='utf-8' -%]\n"
-"Encoding for documents and templates.\n"
+"See <a href=\"[% q.llink(name='multilanguage-configuration') %]#po.from-code-code-\"><code>po.from-code</code> in Multilanguage Configuration</a>.\n"
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:71
+#: ../en/docs/configuration-variables.md:70
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"po.msgfmt\" type='String' \n"
 "   default='msgfmt' -%]\n"
-"Location of the <code>msgfmt</code> program if not in <code>$PATH</code>.\n"
+"See <a href=\"[% q.llink(name='multilanguage-configuration') %]#po.msgfmt-code-\"><code>po.msgfmt</code> in Multilanguage Configuration</a>.\n"
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:77
+#: ../en/docs/configuration-variables.md:76
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"po.msgid_bugs_address\" type='String' \n"
 "   default='none' -%]\n"
-"Email address for reporting bugs in message ids in <code>.po</code> files.  This will be written into the PO header of the file.\n"
+"See <a href=\"[% q.llink(name='multilanguage-configuration') %]#po.msgid_bugs_address-code-\"><code>po.msgid_bugs_address</code> in Multilanguage Configuration</a>.\n"
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:83
-msgid ""
-"[% WRAPPER components/variable.html\n"
-"   variable=\"po.msgmerge\" type='String' \n"
-"   default='msgfmt' -%]\n"
-"Location of the <code>msgmerge</code> program if not in <code>$PATH</code>.\n"
-"[%- END %]"
-msgstr ""
-
-#: ../en/docs/configuration-variables.md:89
+#: ../en/docs/configuration-variables.md:82
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"po.qgoda\" type='String' \n"
 "   default='msgfmt' -%]\n"
-"Location of the <code>qgoda</code> program if not in <code>$PATH</code>.\n"
+"See <a href=\"[% q.llink(name='multilanguage-configuration') %]#po.msgfmt-code-\"><code>po.msgfmt</code> in Multilanguage Configuration</a>.\n"
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:95
+#: ../en/docs/configuration-variables.md:88
+msgid ""
+"[% WRAPPER components/variable.html\n"
+"   variable=\"po.msgmerge\" type='String' \n"
+"   default='msgfmt' -%]\n"
+"See <a href=\"[% q.llink(name='multilanguage-configuration') %]#po.msgmerge-code-\"><code>po.msgmerge</code> in Multilanguage Configuration</a>.\n"
+"[%- END %]"
+msgstr ""
+
+#: ../en/docs/configuration-variables.md:94
+msgid ""
+"[% WRAPPER components/variable.html\n"
+"   variable=\"po.qgoda\" type='string or list' \n"
+"   default='0' -%]\n"
+"See <a href=\"[% q.llink(name='multilanguage-configuration') %]#po.qgoda-code-\"><code>po.qgoda</code> in Multilanguage Configuration</a>.\n"
+"[%- END %]"
+msgstr ""
+
+#: ../en/docs/configuration-variables.md:100
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"po.refresh\" type='Boolean (0 or 1)' \n"
 "   default='0' -%]\n"
-"Set to 1 if you want to reload translations before every rebuild.  By default, they are loaded only once at program start.  If you reload them on every rebuild, freshly installed translations are immediately visible.\n"
+"See <a href=\"[% q.llink(name='multilanguage-configuration') %]#po.refresh-code-\"><code>po.refresh</code> in Multilanguage Configuration</a>.\n"
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:101
-msgid ""
-"[% WRAPPER components/variable.html\n"
-"   variable=\"po.tt2\" type='Pattern list' \n"
-"   default='[_views, _includes]' -%]\n"
-"List of patterns where to search for translatable template files.\n"
-"[%- END %]"
-msgstr ""
-
-#: ../en/docs/configuration-variables.md:107
+#: ../en/docs/configuration-variables.md:106
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"po.textdomain\" type='String' \n"
@@ -662,7 +661,7 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:113
+#: ../en/docs/configuration-variables.md:112
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"po.xgettext\" type='String' \n"
@@ -671,7 +670,7 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:119
+#: ../en/docs/configuration-variables.md:118
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"po.xgettext_tt2\" type='String' \n"
@@ -680,7 +679,7 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:125
+#: ../en/docs/configuration-variables.md:124
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"scm\" type='String' \n"
@@ -689,7 +688,7 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:131
+#: ../en/docs/configuration-variables.md:130
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"url\" type='String' \n"
@@ -754,7 +753,7 @@ msgstr ""
 
 #: ../en/docs/differences-to-jekyll.md:41
 msgid ""
-"```markup\n"
+"```tt2\n"
 "See [% q.lanchor(name='listings') %] for more information.\n"
 "```"
 msgstr ""
@@ -832,54 +831,80 @@ msgid "You can extract these strings into `.po` files for translations, and inst
 msgstr ""
 
 #: ../en/docs/differences-to-jekyll.md:116
-msgid "## Template System"
+msgid "### Default Ignores"
 msgstr ""
 
 #: ../en/docs/differences-to-jekyll.md:118
-msgid "Qgoda uses [The Template Toolkit](http://www.template-toolkit.org/) as its primary templating system, Jekyll uses [Liquid](https://shopify.github.io/liquid/)."
-msgstr ""
-
-#: ../en/docs/differences-to-jekyll.md:120
-msgid "### Syntax"
+msgid ""
+"In Qgoda, a file `_logs/access.log` is ignored, in Jekyll it would be processed.\n"
+"The default ignore rule in Qgoda is \"ignore all top-level files and directories\n"
+"the names of which start with an underscore\". Rationale: Qgoda's default makes a whole lot of sense."
 msgstr ""
 
 #: ../en/docs/differences-to-jekyll.md:122
-msgid "Liquid uses double curly braces for *objects* (`{{ variable }}`) and curly braces and percent signs for *tags* (`{% if logged_in %} `)."
+msgid "### Rebuild Triggers"
 msgstr ""
 
 #: ../en/docs/differences-to-jekyll.md:124
+msgid ""
+"Qgoda will accumulate all rebuild triggers during a rebuild.  All changes\n"
+"made while Qgoda is rebuilding a site will result in a single rebuild attempt\n"
+"after the changes.  Jekyll will remember, whenever a modification is recorded\n"
+"after the grace period, and create a snapshot, whenever you hit `CTRL-S`.\n"
+"This is <del>almost</del> never what you want or need.  Contrary to Jekyll,\n"
+"Qgoda will also honor `CTRL-C` while it is busy ignoring your wishes."
+msgstr ""
+
+#: ../en/docs/differences-to-jekyll.md:131
+msgid "## Template System"
+msgstr ""
+
+#: ../en/docs/differences-to-jekyll.md:133
+msgid "Qgoda uses [The Template Toolkit](http://www.template-toolkit.org/) as its primary templating system, Jekyll uses [Liquid](https://shopify.github.io/liquid/)."
+msgstr ""
+
+#: ../en/docs/differences-to-jekyll.md:135
+msgid "### Syntax"
+msgstr ""
+
+#: ../en/docs/differences-to-jekyll.md:137
+msgid "Liquid uses double curly braces for *objects* (`{{ variable }}`) and curly braces and percent signs for *tags* (`{% if logged_in %} `)."
+msgstr ""
+
+#: ../en/docs/differences-to-jekyll.md:139
 msgid "The Template Toolkit uses only `[% ... %]`.  *Directives* (comparable to Liquid tags) are using upper case letters (`[% IF logged_in %]`)."
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:126
+#: ../en/docs/differences-to-jekyll.md:141
 msgid "### Data Types"
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:128
+#: ../en/docs/differences-to-jekyll.md:143
 msgid "Liquid only allows one level of nesting variables.  You cannot do something like `{{ user.address.street }}`.  Variables for the Template Toolkit can be nested to arbitrary depth.  They can also reference Perl objects."
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:130
+#: ../en/docs/differences-to-jekyll.md:145
 msgid "### Code in Templates"
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:132
+#: ../en/docs/differences-to-jekyll.md:147
 msgid "Since Template Toolkit variables can also hold Perl objects it is possible to call methods on them.  Qgoda makes heavy use of this feature and a lot of things that are impossible in Jekyll are trivial in Qgoda for exactly that reason."
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:134
+#: ../en/docs/differences-to-jekyll.md:149
+#: ../en/docs/multilanguage-overview.md:16
 msgid "## Configuration"
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:136
+#: ../en/docs/differences-to-jekyll.md:151
 msgid "The default name of the qgoda configuration file is `P:_config.yaml`, not `_config.yml` as for Jekyll.  That can make a possible migration from Jekyll to Qgoda  a little bit easier."
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:138
+#: ../en/docs/differences-to-jekyll.md:153
 msgid "### Default Values"
 msgstr ""
 
-#: ../en/docs/differences-to-jekyll.md:140
+#: ../en/docs/differences-to-jekyll.md:155
 msgid "Default values in Qgoda are configured via flat lists of pattern (as opposed to nested data structures in Jekyll). Example:"
 msgstr ""
 
@@ -907,7 +932,7 @@ msgstr ""
 
 #: ../en/docs/excluding-files.md:19 ../en/docs/excluding-files.md:75
 #: ../en/docs/excluding-files.md:108 ../en/docs/pattern-lists.md:148
-#: ../en/docs/pattern-lists.md:181
+#: ../en/docs/pattern-lists.md:181 ../en/docs/referencing-languages.md:16
 msgid "Example:"
 msgstr ""
 
@@ -985,6 +1010,106 @@ msgstr ""
 
 #: ../en/docs/excluding-files.md:130
 msgid "You can see that the directory `_views` has been re-included because it contains layout and design files."
+msgstr ""
+
+#: ../en/docs/faq.md:2
+msgctxt "title"
+msgid "Frequently Asked Questions"
+msgstr ""
+
+#: ../en/docs/faq.md:6
+msgctxt "description"
+msgid "Caveats and pitfalls that often occur and not always have an immediate explanation"
+msgstr ""
+
+#: ../en/docs/faq.md:8
+msgid "<qgoda-toc/>\n"
+"[% TAGS [@ @] %]"
+msgstr ""
+
+#: ../en/docs/faq.md:11
+msgid "## Technical Problems"
+msgstr ""
+
+#: ../en/docs/faq.md:13
+msgid "### Why does `Template::Plugin::Gettext` not work?"
+msgstr ""
+
+#: ../en/docs/faq.md:15
+msgid "See the next question and answer ..."
+msgstr ""
+
+#: ../en/docs/faq.md:17
+msgid "### Why does `Template::Plugin::Qgoda` not work?"
+msgstr ""
+
+#: ../en/docs/faq.md:19
+msgid "Sometimes, the plug-in does not seem to work and produces no output at all. But most probably you forgot to load the plug-in. Did you include the following?"
+msgstr ""
+
+#: ../en/docs/faq.md:21
+msgid ""
+"```tt2\n"
+"[% USE q = Qgoda %]\n"
+"...\n"
+"See [% q.lanchor(name=\"faq\") %p] for more information!\n"
+"```"
+msgstr ""
+
+#: ../en/docs/faq.md:27
+msgid "If you forget to `USE` the plug-in, Template Toolkit will silently ignore the directive.  The same problem can occur with translations, when you forgot to `USE Gettext`."
+msgstr ""
+
+#: ../en/docs/faq.md:29
+msgid "Watch https://github.com/gflohr/qgoda/issues/42 for a possible progress on the issue."
+msgstr ""
+
+#: ../en/docs/faq.md:31
+msgid "### Why do I see HTML source code in the output?"
+msgstr ""
+
+#: ../en/docs/faq.md:33
+msgid "Markdown allows HTML inside source code. But Markdown also has the feature that text indented with four space characters or more is"
+msgstr ""
+
+#: ../en/docs/faq.md:35
+msgid "Watch https://github.com/gflohr/qgoda/issues/43 for possible progress on the issue."
+msgstr ""
+
+#: ../en/docs/faq.md:37
+msgid "### Why do I see the original markdown in the output?"
+msgstr ""
+
+#: ../en/docs/faq.md:39
+msgid "Look into the console window where Qgoda is running. You probaly have a syntax error in your template."
+msgstr ""
+
+#: ../en/docs/faq.md:41
+msgid "## General Questions"
+msgstr ""
+
+#: ../en/docs/faq.md:43
+msgid "### How is Qgoda pronounced?"
+msgstr ""
+
+#: ../en/docs/faq.md:45
+msgid "It is pronounced \"yagoda\" with the stress on the first syllable."
+msgstr ""
+
+#: ../en/docs/faq.md:47
+msgid "### What does Qgoda mean?"
+msgstr ""
+
+#: ../en/docs/faq.md:49
+msgid "It means strawberry or sometimes just berry in almost every Slavic language."
+msgstr ""
+
+#: ../en/docs/faq.md:51
+msgid "### How is Qgoda spelled in cyrillic script?"
+msgstr ""
+
+#: ../en/docs/faq.md:53
+msgid "Ягода."
 msgstr ""
 
 #: ../en/docs/files-and-directories.md:2
@@ -1086,6 +1211,20 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
+#: ../en/docs/filters.md:2
+msgctxt "title"
+msgid "Filters"
+msgstr ""
+
+#: ../en/docs/filters.md:6
+msgctxt "description"
+msgid "Learn how to filter a collection of arguments by taxonomies respectively document variables.."
+msgstr ""
+
+#: ../en/docs/filters.md:8
+msgid "TODO!"
+msgstr ""
+
 #: ../en/docs/index.md:3
 msgctxt "title"
 msgid "Documentation"
@@ -1173,8 +1312,9 @@ msgstr ""
 msgid "Qgoda has not yet been officially released.  The installation is therefore still a little bit awkward."
 msgstr ""
 
-#: ../en/docs/installation.md:11 ../en/docs/table-of-contents.md:10
-#: ../en/docs/table-of-contents.md:21
+#: ../en/docs/installation.md:11 ../en/docs/multilanguage-overview.md:14
+#: ../en/docs/table-of-contents.md:10 ../en/docs/table-of-contents.md:21
+#: ../en/docs/translating-templates.md:10
 msgid "<qgoda-toc/>"
 msgstr ""
 
@@ -1183,14 +1323,57 @@ msgid "## Installing Qgoda"
 msgstr ""
 
 #: ../en/docs/installation.md:15
-msgid "### Installation From Github Sources"
+msgid "### Using Docker"
 msgstr ""
 
 #: ../en/docs/installation.md:17
-msgid "You first have to checkout the sources from github in a suitable directory."
+msgid "By far the easiest method of installing Qgoda is to use [Docker](https://www.docker.com/):"
 msgstr ""
 
 #: ../en/docs/installation.md:19
+msgid ""
+"1. Install Docker.  On Linux/Unix systems, Docker will be available from\n"
+"your package manager.  On Mac OS X you can install Docker with Mac Ports\n"
+"or Homebrew.  On Windows, get a pre-compiled binary from\n"
+"https://www.docker.com/get-docker."
+msgstr ""
+
+#: ../en/docs/installation.md:24
+msgid "2. Start Docker.  You may want to start the docker daemon automatically.\n"
+"Check your vendor's documentation for that!"
+msgstr ""
+
+#: ../en/docs/installation.md:27
+msgid ""
+"3. In a [shell](http://www.guido-flohr.net/en/command-line/), run\n"
+"the command `$ docker run --rm -it -v $(pwd):/data gflohr/qgoda`.  You may have to add the user that runs the command to the group \"docker\"\n"
+"if you get an error like \"permission denied\"."
+msgstr ""
+
+#: ../en/docs/installation.md:31
+msgid ""
+"4. You can create an alias, so that you do not have to type in\n"
+"the Docker command-line options all the time.  Depending on your operating system,\n"
+"you have to open `~/.bash_profile`, `~/.bashrc`, `~/.alias`, `~/.zshrc`\n"
+"or similar and add this line:"
+msgstr ""
+
+#: ../en/docs/installation.md:36
+msgid ""
+"```bash\n"
+"alias qgoda='docker run --rm -it -v $(pwd):/data gflohr/qgoda'\n"
+"```"
+msgstr ""
+
+#: ../en/docs/installation.md:40
+msgid "### Installation From Github Sources"
+msgstr ""
+
+#: ../en/docs/installation.md:42
+msgid "You first have to checkout the sources from github in a suitable directory."
+msgstr ""
+
+#: ../en/docs/installation.md:44
 msgid ""
 "```bash\n"
 "$ git clone https://github.com/gflohr/qgoda.git\n"
@@ -1198,11 +1381,11 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/installation.md:24
+#: ../en/docs/installation.md:49
 msgid "Then try:"
 msgstr ""
 
-#: ../en/docs/installation.md:26
+#: ../en/docs/installation.md:51
 msgid ""
 "```bash\n"
 "qgoda $ sudo cpanm .\n"
@@ -1212,11 +1395,11 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/installation.md:33
+#: ../en/docs/installation.md:58
 msgid "If that command succeeds, you are done.  If you get something like \"-cpanm: command not found\", you have to install the conventional way:"
 msgstr ""
 
-#: ../en/docs/installation.md:35
+#: ../en/docs/installation.md:60
 msgid ""
 "```bash\n"
 "qgdoa $ perl Makefile.PL\n"
@@ -1239,27 +1422,27 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/installation.md:55
+#: ../en/docs/installation.md:80
 msgid "Note the lines starting with \"Warning: prerequisite ...\".  They are not warnings but errors because these missing dependencies will prevent Qgoda from working.  You can install them with:"
 msgstr ""
 
-#: ../en/docs/installation.md:57
+#: ../en/docs/installation.md:82
 msgid ""
 "```bash\n"
 "qgoda $ sudo cpan install Archive::Extract File::HomeDir File::Globstar\n"
 "```"
 msgstr ""
 
-#: ../en/docs/installation.md:61
+#: ../en/docs/installation.md:86
 msgid "Of course, you have to specify the modules that are missing on *your* system.\n"
 "The \"cpan\" command will also install the dependencies of these prerequisites, possibly asking you for permission first."
 msgstr ""
 
-#: ../en/docs/installation.md:64
+#: ../en/docs/installation.md:89
 msgid "Once all prerequistes have been installed, proceed with the installation:"
 msgstr ""
 
-#: ../en/docs/installation.md:66
+#: ../en/docs/installation.md:91
 msgid ""
 "```bash\n"
 "qgoda $ perl Makefile.PL\n"
@@ -1268,15 +1451,15 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/installation.md:72
+#: ../en/docs/installation.md:97
 msgid "### Installation Outside of `$PATH`"
 msgstr ""
 
-#: ../en/docs/installation.md:74
+#: ../en/docs/installation.md:99
 msgid "It is possible that you see the following warning:"
 msgstr ""
 
-#: ../en/docs/installation.md:76
+#: ../en/docs/installation.md:101
 msgid ""
 "```core\n"
 "***\n"
@@ -1296,11 +1479,11 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/installation.md:93
+#: ../en/docs/installation.md:118
 msgid "If you see this warning, your best choice is to follow the advice and re-run the command as specified.  Another option is to fix the problem for all Perl programs.  You should add the following lines to your shell start-up script, normally `~/.bash_profile` (the tilde `~` stands for your home-directory):"
 msgstr ""
 
-#: ../en/docs/installation.md:95
+#: ../en/docs/installation.md:120
 msgid ""
 "```bash\n"
 "# Make Perl programs executable in $PATH.\n"
@@ -1317,80 +1500,129 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/installation.md:109
+#: ../en/docs/installation.md:134
 msgid "You have to terminate your current shell in order to activate the change.\n"
 "But the change is now persistent.  It will work for all future Perl versions."
 msgstr ""
 
-#: ../en/docs/installation.md:112
+#: ../en/docs/installation.md:137
 msgid "Other options are to create an alias to the location of the script:"
 msgstr ""
 
-#: ../en/docs/installation.md:114
+#: ../en/docs/installation.md:139
 msgid ""
 "```core\n"
 "alias qgoda=/opt/local/libexec/perl5.26/sitebin/qgoda\n"
 "```"
 msgstr ""
 
-#: ../en/docs/installation.md:118
+#: ../en/docs/installation.md:143
 msgid "Or you can create a symbolic link:"
 msgstr ""
 
-#: ../en/docs/installation.md:120
+#: ../en/docs/installation.md:145
 msgid ""
 "```core\n"
 "$ sudo ln -s /opt/local/libexec/perl5.26/sitebin/qgoda /usr/local/bin/qgoda\n"
 "```"
 msgstr ""
 
-#: ../en/docs/installation.md:124
+#: ../en/docs/installation.md:149
 msgid "But that will no longer work if your Perl executable is upgraded."
 msgstr ""
 
-#: ../en/docs/installation.md:126
+#: ../en/docs/installation.md:151
 msgid "## Installing Node.js"
 msgstr ""
 
-#: ../en/docs/installation.md:128
+#: ../en/docs/installation.md:153
 msgid "[Node.js](https://nodejs.org/en/) is an interpreter for JavaScript that runs outside of the browser.  It is not a strict requirement for Qgoda but most Qgoda sites will make use of it."
 msgstr ""
 
-#: ../en/docs/installation.md:130
+#: ../en/docs/installation.md:155
 msgid "The [Node.js website](https://nodejs.org/en/) usually offers a download link for the software but if you are using a package manager, you should rather install Node.js with that."
 msgstr ""
 
-#: ../en/docs/installation.md:132
+#: ../en/docs/installation.md:157
 msgid "### Yarn or NPM"
 msgstr ""
 
-#: ../en/docs/installation.md:134
+#: ../en/docs/installation.md:159
 msgid "[NPM](https://yarnpkg.com/en/) is the Node Package Manager and is used to install packages and their dependencies for Node.js.  [Yarn](https://yarnpkg.com/en/) is an alternative to NPM and does essentially the same."
 msgstr ""
 
-#: ../en/docs/installation.md:136
+#: ../en/docs/installation.md:161
 msgid "The official Qgoda themes all use Yarn but you can easily change that.  First, exchange `yarn` with `npm` in the section `scripts` of the theme's `P:package.json` and then do the same for the configuration variable `C:helpers` in Qgoda's main configuration file `P:_config.yaml`."
 msgstr ""
 
-#: ../en/docs/installation.md:138
+#: ../en/docs/installation.md:163
 msgid "#### Installing NPM"
 msgstr ""
 
-#: ../en/docs/installation.md:140
+#: ../en/docs/installation.md:165
 msgid "As `npm` ships with Node.js you normally don't have to install it.  If you have installed Node.js with your package manager, it is possible that you explicitely have to install `npm`.  An example for such a package manager is MacPorts."
 msgstr ""
 
-#: ../en/docs/installation.md:142
+#: ../en/docs/installation.md:167
 msgid "#### Installing yarn"
 msgstr ""
 
-#: ../en/docs/installation.md:144
+#: ../en/docs/installation.md:169
 msgid "See https://yarnpkg.com/en/docs/install for instructions."
 msgstr ""
 
 #: ../en/docs/introduction.md:2
 msgctxt "title"
 msgid "Introduction"
+msgstr ""
+
+#: ../en/docs/language-copies.md:2
+msgctxt "title"
+msgid "Language Copies"
+msgstr ""
+
+#: ../en/docs/language-copies.md:6
+msgctxt "description"
+msgid "Documents that are typically written once and then never touched again can simply be copied and translated as a whole."
+msgstr ""
+
+#: ../en/docs/language-copies.md:8
+msgid "This is a simple approach that fits best for blog posts or other non-volatile content."
+msgstr ""
+
+#: ../en/docs/language-copies.md:10
+msgid ""
+"[% USE q = Qgoda %]\n"
+"[% TAGS [@ @] %]\n"
+"<qgoda-toc/>"
+msgstr ""
+
+#: ../en/docs/language-copies.md:14
+msgid "## How?"
+msgstr ""
+
+#: ../en/docs/language-copies.md:16
+msgid "It's as easy as copying the markdown file, and then translate it. As such, there is really nothing special to say about it."
+msgstr ""
+
+#: ../en/docs/language-copies.md:18
+msgid "## Alternative Approach"
+msgstr ""
+
+#: ../en/docs/language-copies.md:20
+msgid "Alternatively, you can let Qgoda split the content of a document into smaller parts and extract them into a PO file, so that they can be translated separately. Check out [@ q.lanchor(name = 'po-translations') @] if you are not sure whether your content will have to be frequently modified later."
+msgstr ""
+
+#: ../en/docs/language-copies.md:22
+msgid ""
+"[@ WRAPPER components/infobox.html\n"
+"           title=\"Switching to PO-Based Translations\" @]\n"
+"<p>\n"
+"Just copying a markdown file and getting it translated is simple in the begin but can turn into a maintainance nightmare if you have to change the original later. In this case translators will have to figure out what has changed and update translations accordingly.\n"
+"</p><p>\n"
+"Unfortunately, there is no way how you can easily change plans, once you have done the translation. \n"
+"</p>\n"
+"[@ END @]"
 msgstr ""
 
 #: ../en/docs/listings.md:2
@@ -1416,10 +1648,11 @@ msgid "## Template Code"
 msgstr ""
 
 #: ../en/docs/listings.md:15
-msgid "Listings are created by the template functions `list()` or `listPosts()`."
+msgid "Listings are created by the template functions `M:q.list()` or\n"
+"`M:q.listPosts()`."
 msgstr ""
 
-#: ../en/docs/listings.md:17
+#: ../en/docs/listings.md:18
 msgid ""
 "[% WRAPPER components/infobox.html\n"
 "           type=\"info\" title=\"These Instructions Are For the Template Toolkit!\" %]\n"
@@ -1429,10 +1662,10 @@ msgid ""
 "[% END %]"
 msgstr ""
 
-#: ../en/docs/listings.md:24
+#: ../en/docs/listings.md:26
 msgid ""
 "[% TAGS [- -] %]\n"
-"```markup\n"
+"```tt2\n"
 "[% USE q = Qgoda %]\n"
 "[% FOREACH post IN q.llistPosts %]\n"
 "  <a href=\"[% post.permalink %]\">\n"
@@ -1447,7 +1680,7 @@ msgid ""
 "[- TAGS [% %] -]"
 msgstr ""
 
-#: ../en/docs/listings.md:39
+#: ../en/docs/listings.md:41
 msgid ""
 "[% WRAPPER components/infobox.html\n"
 "     title=\"Difference to Jekyll\"\n"
@@ -1593,7 +1826,7 @@ msgstr ""
 
 #: ../en/docs/mode-of-operation.md:74
 msgid ""
-"```markup\n"
+"```tt2\n"
 "<!doctype html>\n"
 "<html>\n"
 "  <head>\n"
@@ -1617,82 +1850,436 @@ msgstr ""
 msgid "In reality, the default chain is slightly more complex but the details of it are most of the time not important for you.  In general, everything follows the Do-What-I-Mean™ paradigm."
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:2
+#: ../en/docs/multilanguage-configuration.md:2
 msgctxt "title"
-msgid "Multi-Language Overview"
+msgid "Configuration"
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:6
+#: ../en/docs/multilanguage-configuration.md:6
 msgctxt "description"
-msgid "Overview of Qgoda's Multi-Language and Internationalization (I18N) features"
+msgid "All configuration variables required for a fully internalized site"
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:8
-msgid "## Multi-Language Overview"
+#: ../en/docs/multilanguage-configuration.md:8
+msgid "Internationalization (i18n) in Qgoda has to be explicitely activated in the configuration file `P:_config.yaml`."
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:10
-msgid "Multi-lingualism in Qgoda is an integral, built-in feature mostly built upon easy to follow conventions."
+#: ../en/docs/multilanguage-configuration.md:10
+msgid ""
+"<qgoda-toc/>\n"
+"[% USE q = Qgoda %]\n"
+"[% TAGS [@ @] %]"
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:12
+#: ../en/docs/multilanguage-configuration.md:14
+msgid "## Global Configuration"
+msgstr ""
+
+#: ../en/docs/multilanguage-configuration.md:16
+msgid "A typical multilanguage configuration in `P:_config.yaml` looks like this:"
+msgstr ""
+
+#: ../en/docs/multilanguage-configuration.md:18
+msgid ""
+"```yaml\n"
+"linguas: [en-us, bg, de]\n"
+"po:\n"
+"  textdomain: net.qgoda.www\n"
+"  msgid_bugs_address: Guido Flohr <guido.flohr@cantanea.com>\n"
+"  copyright_holder: cantanea EOOD <http://www.cantanea.com/>\n"
+"  reload: 1\n"
+"```"
+msgstr ""
+
+#: ../en/docs/multilanguage-configuration.md:27
+msgid "### `linguas`"
+msgstr ""
+
+#: ../en/docs/multilanguage-configuration.md:29
+msgid "This is a list of language identifiers complying to [RFC4647 section 2.1](https://tools.ietf.org/html/rfc4647#section-2.1) but without any asterisk (`*`) characters. An asterisk would not make sense here anyway."
+msgstr ""
+
+#: ../en/docs/multilanguage-configuration.md:31
+msgid "The first language is the default language of your site."
+msgstr ""
+
+#: ../en/docs/multilanguage-configuration.md:33
+msgid "The variable is mandatory!"
+msgstr ""
+
+#: ../en/docs/multilanguage-configuration.md:35
+msgid "### `po.textdomain`"
+msgstr ""
+
+#: ../en/docs/multilanguage-configuration.md:37
+msgid "An arbitrary identifier for your website. The only restriction is that it has to be a valid filename for your operating system. Popular choices are the reverse hostname of your site (like `net.qgoda.www`) or just a simple string like `messages`. It really doesn't matter much."
+msgstr ""
+
+#: ../en/docs/multilanguage-configuration.md:39
+msgid "This variable is also mandatory."
+msgstr ""
+
+#: ../en/docs/multilanguage-configuration.md:41
+msgid "### `po.msgid_bugs_address`"
+msgstr ""
+
+#: ../en/docs/multilanguage-configuration.md:43
+msgid "An address where translators should report problems with the original text to translate. The variable is optional."
+msgstr ""
+
+#: ../en/docs/multilanguage-configuration.md:45
+msgid "### `po.copyright_holder`"
+msgstr ""
+
+#: ../en/docs/multilanguage-configuration.md:47
+msgid "The copyright holder of the original content. The variable is optional."
+msgstr ""
+
+#: ../en/docs/multilanguage-configuration.md:49
+msgid "### `po.reload`"
+msgstr ""
+
+#: ../en/docs/multilanguage-configuration.md:51
+msgid "Set to 1 if you want translations to be visible immediately after they have been compiled into `.mo` files."
+msgstr ""
+
+#: ../en/docs/multilanguage-configuration.md:53
+msgid "Normally translations are loaded only, when Qgoda starts and then cached. Setting `C:po.reload` to 1 results in a little performance penalty but may be useful while you are translating the site."
+msgstr ""
+
+#: ../en/docs/multilanguage-configuration.md:55
+msgid "### `po.md_extra`"
+msgstr ""
+
+#: ../en/docs/multilanguage-configuration.md:57
+msgid "A list of [file name patterns]([% q.llink(name='pattern-lists') %]) for additional markdown files. By default, all documents with front matter are potentially considered translatable. If your site has other markdown files that should also be searched, you can list them here."
+msgstr ""
+
+#: ../en/docs/multilanguage-configuration.md:59
+msgid "This variable is optional and rarely used."
+msgstr ""
+
+#: ../en/docs/multilanguage-configuration.md:61
+msgid "### `po.views`"
+msgstr ""
+
+#: ../en/docs/multilanguage-configuration.md:63
+msgid "A list of [file name patterns]([% q.llink(name='pattern-lists') %]) for template files to search for translatable strings. It defaults to just `P:_views` or whatever the configuration variable `C:path.views` points to."
+msgstr ""
+
+#: ../en/docs/multilanguage-configuration.md:65
+msgid "### `po.xgettext_tt2`"
+msgstr ""
+
+#: ../en/docs/multilanguage-configuration.md:67
+msgid "The location of the `xgettext_tt2` program if it is not in `$PATH`. The `xgettext_tt2` ships with [Template-Plugin-Gettext](https://github.com/template-plugin-gettext) which is automatically installed with Qgoda."
+msgstr ""
+
+#: ../en/docs/multilanguage-configuration.md:69
+msgid "### `po.xgettext`"
+msgstr ""
+
+#: ../en/docs/multilanguage-configuration.md:71
+msgid "The location of the `xgettext` program if it is not in `$PATH`. The `xgettext` program is normally installed as part of a software package called `gettext` or `gettext-tools`."
+msgstr ""
+
+#: ../en/docs/multilanguage-configuration.md:73
+msgid "### `po.msgfmt`"
+msgstr ""
+
+#: ../en/docs/multilanguage-configuration.md:75
+#: ../en/docs/multilanguage-configuration.md:79
+msgid "The location of the `msgmerge` program if it is not in `$PATH`. The `msgmerge` program is normally installed as part of a software package called `gettext` or `gettext-tools`."
+msgstr ""
+
+#: ../en/docs/multilanguage-configuration.md:77
+msgid "### `po.msgmerge`"
+msgstr ""
+
+#: ../en/docs/multilanguage-configuration.md:81
+msgid "### `po.qgoda`"
+msgstr ""
+
+#: ../en/docs/multilanguage-configuration.md:83
+msgid "The location of the `qgoda` program if it is not in `$PATH`."
+msgstr ""
+
+#: ../en/docs/multilanguage-configuration.md:85
+msgid "### `po.from_code`"
+msgstr ""
+
+#: ../en/docs/multilanguage-configuration.md:87
+msgid "The character set of your content, defaults to `utf-8`. Setting this variable to anything else but `utf-8` is a recipie for trouble."
+msgstr ""
+
+#: ../en/docs/multilanguage-configuration.md:89
+msgid "## Configuring the Document Language"
+msgstr ""
+
+#: ../en/docs/multilanguage-configuration.md:91
+msgid "Qgoda has to know which language a particular document is written in. This mean in practice that you have to set the `V:asset.lingua` to an appropriate value, that is a language identifier complying to [RFC4647 section 2.1](https://tools.ietf.org/html/rfc4647#section-2.1) but without any asterisk (`*`) characters."
+msgstr ""
+
+#: ../en/docs/multilanguage-configuration.md:93
+msgid "You have several options to set `V:asset.lingua`:"
+msgstr ""
+
+#: ../en/docs/multilanguage-configuration.md:95
+msgid "### Per Document"
+msgstr ""
+
+#: ../en/docs/multilanguage-configuration.md:97
+msgid "You can set the language in the document front matter:"
+msgstr ""
+
+#: ../en/docs/multilanguage-configuration.md:99
+msgid ""
+"```yaml\n"
+"---\n"
+"title: Kalevala\n"
+"lingua: fi\n"
+"name: kalevala\n"
+"---\n"
+"```"
+msgstr ""
+
+#: ../en/docs/multilanguage-configuration.md:107
+msgid "### Per Directory/Pattern"
+msgstr ""
+
+#: ../en/docs/multilanguage-configuration.md:109
+msgid "You can save typing by specifying defaults for `V:asset.lingua` in the global configuration file `P:_config.yaml`:"
+msgstr ""
+
+#: ../en/docs/multilanguage-configuration.md:111
+msgid ""
+"```yaml\n"
+"defaults:\n"
+"  - files: \n"
+"      - /en\n"
+"      - *.en.md\n"
+"    values:\n"
+"      lingua: en\n"
+"```"
+msgstr ""
+
+#: ../en/docs/multilanguage-configuration.md:120
+msgid "This would set `V:asset.lingua` to `en` for all files in the top-level directory `/en` and addtionally for all files that have names ending in `.en.md`. See [% q.lanchor(name='defaults') %] and [% q.lanchor('pattern-lists') %] for more information."
+msgstr ""
+
+#: ../en/docs/multilanguage-configuration.md:122
+msgid "## Language-Independent Identifier `asset.name`"
+msgstr ""
+
+#: ../en/docs/multilanguage-configuration.md:124
+msgid "All language variants of the same content should share a common property that acts as a link between them. Although you are free to use any vbariable name that you like, `V:asset.name` is used throughout this documentation."
+msgstr ""
+
+#: ../en/docs/multilanguage-configuration.md:126
+msgid "For obvious reasons, this identifier will always be configured in the document front matter."
+msgstr ""
+
+#: ../en/docs/multilanguage-configuration.md:128
+msgid "Take for example a markdown file `special-relativity.md`:"
+msgstr ""
+
+#: ../en/docs/multilanguage-configuration.md:130
+msgid ""
+"```yaml\n"
+"---\n"
+"title: Special Relativity\n"
+"lingua: en\n"
+"name: special-relativity\n"
+"...\n"
+"```"
+msgstr ""
+
+#: ../en/docs/multilanguage-configuration.md:138
+msgid "If the German translation of that file is `spezielle-relativitaetstheorie.md`, that translation's front matter will look like this:"
+msgstr ""
+
+#: ../en/docs/multilanguage-configuration.md:140
+msgid ""
+"```yaml\n"
+"---\n"
+"title: Spezielle Relativitätstheorie\n"
+"lingua: de\n"
+"name: special-relativity\n"
+"...\n"
+"```"
+msgstr ""
+
+#: ../en/docs/multilanguage-configuration.md:148
+msgid "Both documents are alternate versions of the same content. They differ in the property `V:asset.lingua` but they share a common  value for the  `V:asset.name` property."
+msgstr ""
+
+#: ../en/docs/multilanguage-configuration.md:150
+msgid "Now it is trivial to link from the English version of that document to the German version:"
+msgstr ""
+
+#: ../en/docs/multilanguage-configuration.md:152
+msgid ""
+"```tt2\n"
+"<a href=\"[% q.link(name=asset.name lingua='fr') %]>German version</a>\n"
+"```"
+msgstr ""
+
+#: ../en/docs/multilanguage-configuration.md:156
+msgid "And you can link from other documents to the document about Einstein's special relativity regardless of the language like this:"
+msgstr ""
+
+#: ../en/docs/multilanguage-configuration.md:158
+msgid ""
+"```tt2\n"
+"See [% q.anchor(name='special-relativity' lingua=asset.lingua) %]!\n"
+"```"
+msgstr ""
+
+#: ../en/docs/multilanguage-configuration.md:162
+msgid "See [@ q.lanchor(name='referencing-languages') @] if that does not make sense to you, or if you are looking for a more concise version."
+msgstr ""
+
+#: ../en/docs/multilanguage-configuration.md:164
+msgid "## File and Directory Structure"
+msgstr ""
+
+#: ../en/docs/multilanguage-configuration.md:166
+msgid "## Content Negotiation"
+msgstr ""
+
+#: ../en/docs/multilanguage-configuration.md:168
+msgid "Content negotiation happens when a web server ([nginx](http://www.nginx.com/), [apache](http://httpd.apache.org/), ...) selects the appropriate language version of a piece of content based on the visitor's preference laid forth in their browser language preferences.  See [Simple Content Negotiation for Nginx](http://www.guido-flohr.net/simple-content-negotiation-for-nginx/) for all the gory details of that. Contrary to what the name of the article suggests, it will shed sufficient light on the topic also for users of other web servers than nginx."
+msgstr ""
+
+#: ../en/docs/multilanguage-configuration.md:170
+msgid "Content negotiation can be made arbitrarily complicated. In practice there is one single valid strategy: A visitor of your start page `http://YOURDOMAIN` should be redirected to the start page in their preferred language and from that moment on they should be pinpointed to that language until they change it. That means that you have to implement content negotiation only for the start page which simplifies things a lot. This is because there is only room for one `/index.html` and the best strategy is to make that just an entry point that brings you to the content in your preferred language."
+msgstr ""
+
+#: ../en/docs/multilanguage-configuration.md:172
+msgid "Server-side solutions are described at the above mentioned blog post [Simple Content Negotiation for Nginx](http://www.guido-flohr.net/simple-content-negotiation-for-nginx/) but as a fallback and short of better ideas feel free to steal the start page for this site from https://github.com/gflohr/qgoda-site/blob/master/index.html."
+msgstr ""
+
+#: ../en/docs/multilanguage-overview.md:2
+msgctxt "title"
+msgid "Overview"
+msgstr ""
+
+#: ../en/docs/multilanguage-overview.md:6
+msgctxt "description"
+msgid "Overview of Qgoda's Multilanguage and Internationalization (I18N) features"
+msgstr ""
+
+#: ../en/docs/multilanguage-overview.md:8
+msgid ""
+"[% USE q = Qgoda %]\n"
+"[% TAGS [@ @] %]\n"
+"Multi-lingualism in Qgoda is an integral, built-in feature mostly built upon easy to follow conventions."
+msgstr ""
+
+#: ../en/docs/multilanguage-overview.md:12
 msgid "In a typical website there are two types of translatable content.  You usually have common texts, typically in headers, footers, navigations, sidebars and so on.  Most of the time, these texts come from templates.  And then there is your actual content, your blog posts, articles or other editorial content."
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:14
-msgid "### Common Texts"
+#: ../en/docs/multilanguage-overview.md:18
+msgid "Before you start internationalizing your site, read which [configuration]([@ q.llink(name = 'multilanguage-configuration') @]) is necessary."
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:16
-msgid "Texts in templates is usually translated with [Template::Plugin::Gettext](https://github.com/gflohr/Template-Plugin-Gettext) an internationalization plug-in for the [Template Toolkit](http://www.template-toolkit.org/)."
+#: ../en/docs/multilanguage-overview.md:20
+msgid "## Template Texts"
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:18
+#: ../en/docs/multilanguage-overview.md:22
+msgid "Common texts in templates are translated with [Template::Plugin::Gettext](https://github.com/gflohr/Template-Plugin-Gettext) an internationalization plug-in for the [Template Toolkit](http://www.template-toolkit.org/)."
+msgstr ""
+
+#: ../en/docs/multilanguage-overview.md:24
+msgid "Take the following template snippet as an example:"
+msgstr ""
+
+#: ../en/docs/multilanguage-overview.md:26
 msgid ""
-"[% TAGS [- -] %]\n"
-"```markup\n"
-"[% USE gtx = Gettext('com.example.www', asset.lingua) %]\n"
+"```tt2\n"
+"<h1>Welcome to My Site</h1>\n"
+"```"
+msgstr ""
+
+#: ../en/docs/multilanguage-overview.md:30
+msgid "For an internationalized site you would write instead:"
+msgstr ""
+
+#: ../en/docs/multilanguage-overview.md:32
+#: ../en/docs/translating-templates.md:38
+msgid ""
+"```tt2\n"
 "<h1>[% gtx.gettext('Welcome to My Site') %]</h1>\n"
 "```"
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:24
-msgid "The first line imports the plug-in with two arguments.  The first one is the so-called *textdomain*, an arbitrary string identifying your translation database.  The second one is the language of the file.  This is usually stored in the document property `V:lingua`."
+#: ../en/docs/multilanguage-overview.md:36
+msgid "The English text is simply turned into an argument to a function.  That function returns the translation, when the document is rendered, and it also serves as a marker for translatable strings, so that you can extract them into a `.po` file, a standard format for translations."
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:26
-msgid "The second line serves two purposes.  The function `gtx.gettext()` first marks a string as being translatable, so that the string can be extracted into a `.po` file, a standard format for translation catalogs used by most open-source and many commercial projects."
+#: ../en/docs/multilanguage-overview.md:38
+msgid "See [@ q.lanchor(name = 'translating-templates') @] for more information!"
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:28
-msgid "But it also returns the translation for the string, when the document is rendered."
+#: ../en/docs/multilanguage-overview.md:40
+msgid "## Editorial Content"
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:30
-msgid "### Editorial Content"
-msgstr ""
-
-#: ../en/docs/multi-language-overview.md:32
+#: ../en/docs/multilanguage-overview.md:42
 msgid "For content, you have two options which both have their pros and cons."
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:34
-msgid "#### Separate Documents For Each Language"
+#: ../en/docs/multilanguage-overview.md:44
+msgid "### The Simple Approach"
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:36
-msgid "You can simply copy the documents from the main language into a separate file and translate it.  This is easy to understand and setup but it has maintainance issues."
+#: ../en/docs/multilanguage-overview.md:46
+msgid "You can simply copy the documents from the main language into a separate file and translate it. This is a simple approach and usually sufficient, when the document in question rarely changes. A blog post, a news article or similar documents are usually written just once and then never touched again."
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:38
-msgid "#### Using Translation Catalogs"
+#: ../en/docs/multilanguage-overview.md:48
+msgid "See [@ q.lanchor(name = 'language-copies') @] for information about this approach."
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:40
+#: ../en/docs/multilanguage-overview.md:50
+msgid "### Advanced Translation Using PO Files"
+msgstr ""
+
+#: ../en/docs/multilanguage-overview.md:52
+msgid "Other documents are expected to change frequently. One example is documentation, like the one that you are reading. If you are translating such documents as a whole, no matter whether it is markdown, HTML, Microsoft Word or just plain text, a translator always has to find the differences in the original document and modify the translation accordingly.  This is a tedious and therefore expensive task."
+msgstr ""
+
+#: ../en/docs/multilanguage-overview.md:54
+msgid "A much better approach in these cases is to split a document into more manageable smaller chunks. Modern translation frameworks like [GNU Gettext](https://www.gnu.org/software/gettext/) - the system that internationalization with Qgoda is built upon - aids even more in translation by marking the differences to older versions and even allowing machine translations at least as a starting point."
+msgstr ""
+
+#: ../en/docs/multilanguage-overview.md:56
+msgid "See [@ q.lanchor(name = 'po-translations') @] for more in-depth information about this !"
+msgstr ""
+
+#: ../en/docs/multilanguage-overview.md:58
+msgid "## Referencing Documents in Specific Languages"
+msgstr ""
+
+#: ../en/docs/multilanguage-overview.md:60
+msgid "For listings, you usually want to display documents in one language. You also often want to link to another document in a particular language, most of the time the current one. All this is very easy to achieve with Qgoda, see [@ q.lanchor(name = 'referencing-languages') @]."
+msgstr ""
+
+#: ../en/docs/multilanguage-overview.md:62
+msgid "## Translation Workflow"
+msgstr ""
+
+#: ../en/docs/multilanguage-overview.md:64
+msgid "Once your site is internationalized you have to get the content translated and to install the translation. The first, initial shot at this is usually simple, also with other systems. But maintaining the site, updating translations after content has changed, adding more languages are tasks that separate the men from the boys."
+msgstr ""
+
+#: ../en/docs/multilanguage-overview.md:66
 msgid "Qgoda also offers you the possibility to extract the translatable content from the master document into a `.po` file.  Instead of a complete, translated copy of the original document, you just create a minimal *trigger document*:"
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:42
+#: ../en/docs/multilanguage-overview.md:68
 msgid ""
 "```yaml\n"
 "---\n"
@@ -1704,27 +2291,27 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:51
+#: ../en/docs/multilanguage-overview.md:77
 msgid "The variable `V:master` references the master document, the document containing the original content."
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:53
+#: ../en/docs/multilanguage-overview.md:79
 msgid "With `V:translate` you specify which properties from the master front matter should be extracted into the catalog for translation.  You will normally set the variable `V:translate` once and for all documents as a default in `P:_config.yaml`."
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:55
+#: ../en/docs/multilanguage-overview.md:81
 msgid "The variable `V:lingua` is by convention used for identifying the language of a document.  You can pick another name if you prefer but that will end in a little bit more typing."
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:57
+#: ../en/docs/multilanguage-overview.md:83
 msgid "All other variables are copied from the master front matter into the translated document.  If it contains for example a property `V:name`, this property will be copied into the translation unless the front matter of the trigger document overrides it (for example as shown above with `V:author`)."
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:59
+#: ../en/docs/multilanguage-overview.md:85
 msgid "The content of the master document is not copied but gets split up into paragraphs, and each paragraph becomes an entry in the `.po` file:"
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:61
+#: ../en/docs/multilanguage-overview.md:87
 msgid ""
 "```bash\n"
 "#: ../en/docs/multi-language-overview.md:11\n"
@@ -1733,81 +2320,29 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:67
+#: ../en/docs/multilanguage-overview.md:93
 msgid "Provided, the entries have been translated, the translated content gets rendered."
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:69
+#: ../en/docs/multilanguage-overview.md:95
 msgid "That sounds more complicated than the first approach.  So why the hassle?"
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:71
+#: ../en/docs/multilanguage-overview.md:97
 msgid "First of all, it sounds a lot more complicated than it actually is in reality.  And the big advantage is maintainability.  When translating entire documents, every change to the original document requires a new translation, not from scratch but translators have to find out what exactly has changed in the original.  This is error-prone and cumbersome."
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:73
+#: ../en/docs/multilanguage-overview.md:99
 msgid "With `.po` files on the other hand individual paragraphs are handled as an individually translated unit which greatly simplifies the update process.  And besides, you have a lot of tools at hand, like translation caches, automatic or semi-automatic translations and so on."
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:75
+#: ../en/docs/multilanguage-overview.md:101
 msgid "Still, it depends on the nature of the site which approach is better.  For a blog where posts are written once and rarely changed afterwards, the simple approach will often be sufficient.  But for software documentation that gets updated on a regular basis and requires exact translations, an approach based on professional translation tools probably pays out soon."
 msgstr ""
 
-#: ../en/docs/multi-language-overview.md:77
-msgid "### Listings and Links"
-msgstr ""
-
-#: ../en/docs/multi-language-overview.md:79
-msgid "The rest is a piece of cake.  Creating a listing of posts for the tag \"JavaScript\" looks like this for a single-language site:"
-msgstr ""
-
-#: ../en/docs/multi-language-overview.md:81
-msgid ""
-"```markup\n"
-"[% FOREACH post IN q.list('tags', ['contains', 'JavaScript']) %]\n"
-"<a href=\"[% post.permalink %]\">[% post.title | html %]</a>\n"
-"[% END %]\n"
-"```"
-msgstr ""
-
-#: ../en/docs/multi-language-overview.md:87
-msgid "A multi-language site requires just one more filter:"
-msgstr ""
-
-#: ../en/docs/multi-language-overview.md:89
-msgid ""
-"```markup\n"
-"[% FOREACH post IN q.list('lingua' = asset.lingua\n"
-"                          'tags', ['contains', 'JavaScript']) %]\n"
-"<a href=\"[% post.permalink %]\">[% post.title | html %]</a>\n"
-"[% END %]\n"
-"```"
-msgstr ""
-
-#: ../en/docs/multi-language-overview.md:96
-msgid "And since this is such a common task, you can just use the method `q.llist` (think \"language list\") instead that adds that filter automatically:"
-msgstr ""
-
-#: ../en/docs/multi-language-overview.md:98
-msgid ""
-"```markup\n"
-"[% FOREACH post IN q.llist('tags', ['contains', 'JavaScript']) %]\n"
-"<a href=\"[% post.permalink %]\">[% post.title | html %]</a>\n"
-"[% END %]\n"
-"```"
-msgstr ""
-
-#: ../en/docs/multi-language-overview.md:104
-msgid "So in the end, a multi-language site requires just a single letter more of template code."
-msgstr ""
-
-#: ../en/docs/multi-language-overview.md:106
-msgid "Likewise, for links resp. cross-references you add the additional filter for the language or just use `q.lxref()` instead of `q.xref()` and you are done."
-msgstr ""
-
-#: ../en/docs/multi-language.md:2
+#: ../en/docs/multilanguage.md:2
 msgctxt "title"
-msgid "Multi-Language"
+msgid "Multilanguage"
 msgstr ""
 
 #: ../en/docs/output-location.md:2
@@ -2310,6 +2845,20 @@ msgstr ""
 msgid "As you can see, a slash in the middle of a pattern effectively anchors the pattern to the source directory, and you can therefore almost always omit a leading slash, when there are more slashes following.  The following two patterns are absolutely equivalent:"
 msgstr ""
 
+#: ../en/docs/po-translations.md:2
+msgctxt "title"
+msgid "PO Translations"
+msgstr ""
+
+#: ../en/docs/po-translations.md:6
+msgctxt "description"
+msgid "Documents that are typically edited and modified many times during their life-cycle should better be translated in manageable chunks using a sophisticated translation workflow with a professional toolset."
+msgstr ""
+
+#: ../en/docs/po-translations.md:8
+msgid "## TODO!"
+msgstr ""
+
 #: ../en/docs/qgoda-in-15-minutes.md:2
 msgctxt "title"
 msgid "Qgoda in 15 Minutes"
@@ -2493,7 +3042,7 @@ msgstr ""
 
 #: ../en/docs/qgoda-in-15-minutes.md:113
 msgid ""
-"```markup\n"
+"```yaml\n"
 "---\n"
 "title: My Blog\n"
 "---\n"
@@ -2533,13 +3082,13 @@ msgstr ""
 msgid "So, let's create a minimal HTML wrapper template (called a *view* in Qgoda):"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:142
+#: ../en/docs/qgoda-in-15-minutes.md:142 ../en/docs/qgoda-plug-in.md:14
 msgid "[% TAGS [@ @] %]"
 msgstr ""
 
 #: ../en/docs/qgoda-in-15-minutes.md:144
 msgid ""
-"```html\n"
+"```tt2\n"
 "<!doctype html>\n"
 "<html>\n"
 "  <head>\n"
@@ -2846,7 +3395,7 @@ msgstr ""
 
 #: ../en/docs/qgoda-in-15-minutes.md:342
 msgid ""
-"```html\n"
+"```tt2;line-numbers\n"
 "---\n"
 "title: My Blog\n"
 "location: /index.html\n"
@@ -2876,7 +3425,7 @@ msgid ""
 msgstr ""
 
 #: ../en/docs/qgoda-in-15-minutes.md:365
-msgid "The first line asking for explanation is `[% USE q = Qgoda %]`.  The <a href=\"http://www.template-toolkit.org/docs/manual/Directives.html#section_USE\"><code>USE</code></a> keyword loads a plug-in for the Template Toolkit, in this case the Qgoda plug-in that ships with Qgoda.  This plug-in lets you access all Qgoda features from within your templates and documents.  By convention, you alias the plug-in with the letter `q`."
+msgid "The first line that requires an explanation is line 9: `[% USE q = Qgoda %]`.  The <a href=\"http://www.template-toolkit.org/docs/manual/Directives.html#section_USE\"><code>USE</code></a> keyword loads a plug-in for the Template Toolkit, in this case the Qgoda plug-in that ships with Qgoda.  This plug-in lets you access all Qgoda features from within your templates and documents.  By convention, you alias the plug-in with the letter `q`."
 msgstr ""
 
 #: ../en/docs/qgoda-in-15-minutes.md:367
@@ -2906,7 +3455,7 @@ msgstr ""
 
 #: ../en/docs/qgoda-in-15-minutes.md:381
 msgid ""
-"```html\n"
+"```tt2\n"
 "[% q.list(type = 'recipe' lingua = asset.lingua) %]\n"
 "```"
 msgstr ""
@@ -2925,7 +3474,7 @@ msgstr ""
 
 #: ../en/docs/qgoda-in-15-minutes.md:391
 msgid ""
-"```html\n"
+"```;markdown\n"
 "---\n"
 "title: Hard Boiled Egg\n"
 "name: hard-boiled egg\n"
@@ -2956,7 +3505,7 @@ msgstr ""
 
 #: ../en/docs/qgoda-in-15-minutes.md:415
 msgid ""
-"```html\n"
+"```tt2\n"
 "[% USE q = Qgoda %]\n"
 "Recommendation for dessert:\n"
 "[Cherry Tart]([% q.link(name = 'cherry-tart') %])\n"
@@ -2981,7 +3530,7 @@ msgstr ""
 
 #: ../en/docs/qgoda-in-15-minutes.md:430
 msgid ""
-"```html\n"
+"```tt2\n"
 "[% USE q = Qgoda %]\n"
 "Recommendation for dessert:\n"
 "[[% q.xref('title', name = 'cherry-tart' %]]([% q.link(name = 'cherry-tart') %]).\n"
@@ -2994,7 +3543,7 @@ msgstr ""
 
 #: ../en/docs/qgoda-in-15-minutes.md:438
 msgid ""
-"```html\n"
+"```tt2\n"
 "[% USE q = Qgoda %]\n"
 "Recommendation for dessert: [% q.anchor(name = 'cherry-tart') %].\n"
 "```"
@@ -3010,6 +3559,165 @@ msgstr ""
 
 #: ../en/docs/qgoda-in-15-minutes.md:447
 msgid "Explore the rest of the documentation for further details, and check out Qgoda demo themes for advanced functionality."
+msgstr ""
+
+#: ../en/docs/qgoda-plug-in.md:2
+msgctxt "title"
+msgid "The Qgoda Plug-In"
+msgstr ""
+
+#: ../en/docs/qgoda-plug-in.md:6
+msgctxt "description"
+msgid "Functions provided by the Qgoda Plug-In"
+msgstr ""
+
+#: ../en/docs/qgoda-plug-in.md:8
+msgid "[% USE q = Qgoda %]\n"
+"[% PROCESS \"functions/css-modules.tt\" %]"
+msgstr ""
+
+#: ../en/docs/qgoda-plug-in.md:11
+msgid "A lot of Qgoda's functionality is available from the Qgoda plug-in.  You\n"
+"activate like this in a template:"
+msgstr ""
+
+#: ../en/docs/qgoda-plug-in.md:16
+msgid ""
+"```tt2\n"
+"[% USE q = Qgoda %]\n"
+"```"
+msgstr ""
+
+#: ../en/docs/qgoda-plug-in.md:20
+msgid "Using the shortcut `q` for the plug-in is a well-established convention."
+msgstr ""
+
+#: ../en/docs/qgoda-plug-in.md:22
+msgid ""
+"<a name=\"#filters\"></a>\n"
+"Many of the following functions expect <code>FILTERS</code>.\n"
+"Please see [@ q.lanchor(name => 'filters') @] for more information!"
+msgstr ""
+
+#: ../en/docs/qgoda-plug-in.md:26
+msgid "## Methods"
+msgstr ""
+
+#: ../en/docs/qgoda-plug-in.md:28
+msgid ""
+"[@ WRAPPER \"components/plug-in-functions.html\"\n"
+"   name=\"q.list\" args=\"FILTERS\" @]\n"
+"Returns a list (an array) of all documents matching <code>FILTERS</code>.\n"
+"This is equivalent to calling\n"
+"<a href=\"#q.list\"><code>q.list()</code></a> with the arguments\n"
+"<code>type = \"post\"</code>.\n"
+"[@- END @]"
+msgstr ""
+
+#: ../en/docs/qgoda-plug-in.md:36
+msgid ""
+"[@ WRAPPER \"components/plug-in-functions.html\"\n"
+"   name=\"q.listPosts\" args=\"FILTERS\" @]\n"
+"Returns a list (an array) of all posts matching <code>FILTERS</code>.\n"
+"This is equivalent to calling <a href=\"#q.list\"><code>q.list()</code></a> with\n"
+"the arguments <code>type = \"post\"</code>.\n"
+"[@- END @]"
+msgstr ""
+
+#: ../en/docs/referencing-languages.md:2
+msgctxt "title"
+msgid "Referencing Languages"
+msgstr ""
+
+#: ../en/docs/referencing-languages.md:6
+msgctxt "description"
+msgid "Referencing some document in a particular language or the current document in another language is very easily achieved with Qgoda."
+msgstr ""
+
+#: ../en/docs/referencing-languages.md:8
+msgid ""
+"[% USE q = Qgoda %]\n"
+"[% TAGS [@ @] %]\n"
+"Since the `V:asset.lingua` variable is just a taxonomy, referencing a particular document in a certain language is just a matter of adding the language to the filter set you are using."
+msgstr ""
+
+#: ../en/docs/referencing-languages.md:12
+msgid "## Listings and Links for the Current Language (\"l-methods\")"
+msgstr ""
+
+#: ../en/docs/referencing-languages.md:14
+msgid "All methods of the [Qgoda plug-in]([@ q.llink(name='qgoda-plug-in') @]) that take a set of filters as an argument have a corresponding version with the letter \"l\" prepended to the name that automatically adds a filter for the current language."
+msgstr ""
+
+#: ../en/docs/referencing-languages.md:18
+msgid "Creating a listing of posts for the tag \"JavaScript\" looks like this for a single-language site:"
+msgstr ""
+
+#: ../en/docs/referencing-languages.md:20
+msgid ""
+"```tt2\n"
+"[% FOREACH post IN q.list('tags', ['contains', 'JavaScript']) %]\n"
+"<a href=\"[% post.permalink %]\">[% post.title | html %]</a>\n"
+"[% END %]\n"
+"```"
+msgstr ""
+
+#: ../en/docs/referencing-languages.md:26
+msgid "For a multi-language site you would add one more filter:"
+msgstr ""
+
+#: ../en/docs/referencing-languages.md:28
+msgid ""
+"```tt2\n"
+"[% FOREACH post IN q.list('lingua' = asset.lingua\n"
+"                          'tags', ['contains', 'JavaScript']) %]\n"
+"<a href=\"[% post.permalink %]\">[% post.title | html %]</a>\n"
+"[% END %]\n"
+"```"
+msgstr ""
+
+#: ../en/docs/referencing-languages.md:35
+msgid "And since this is such a common task, you can just use the method `q.llist` (think \"language list\") instead that adds that filter automatically:"
+msgstr ""
+
+#: ../en/docs/referencing-languages.md:37
+msgid ""
+"```tt2\n"
+"[% FOREACH post IN q.llist('tags', ['contains', 'JavaScript']) %]\n"
+"<a href=\"[% post.permalink %]\">[% post.title | html %]</a>\n"
+"[% END %]\n"
+"```"
+msgstr ""
+
+#: ../en/docs/referencing-languages.md:43
+msgid "So in the end, a multi-language site requires just a single letter more of template code."
+msgstr ""
+
+#: ../en/docs/referencing-languages.md:45
+msgid "So, in [@ q.lanchor(name='listings') @] and [@ q.lanchor(name='qgoda-plug-in') @] you just have to replace the regular methods with their respective \"l-versions\" in order to restrict the result to the current language."
+msgstr ""
+
+#: ../en/docs/referencing-languages.md:47
+msgid "## Language Overviews"
+msgstr ""
+
+#: ../en/docs/referencing-languages.md:49
+msgid "Another common tasks is to create a list of all language variants a particular document. You can achieve this like this:"
+msgstr ""
+
+#: ../en/docs/referencing-languages.md:51
+msgid ""
+"```tt2\n"
+"<ul>\n"
+"[% FOREACH lingua IN config.linguas %]\n"
+"  <li><a href=\"[% q.link(name=asset.name lingua=lingua) %]\">[% lingua %]</a>\n"
+"[% END %]\n"
+"</ul>\n"
+"```"
+msgstr ""
+
+#: ../en/docs/referencing-languages.md:59
+msgid "This is using two filters. The first one is restricting the hits to those documents that have the same `V:name` property. The second one `lingua=lingua` further restricts to the language from the loop variable. Note that `lingua=lingua` is equivalent to `'lingua'=lingua`; the left `lingua` is the name of the asset variable of the \"other\" document, the right one is the lopp variable."
 msgstr ""
 
 #: ../en/docs/related-documents.md:2
@@ -3034,9 +3742,9 @@ msgstr ""
 #: ../en/docs/related-documents.md:12
 msgid ""
 "[%TAGS [- -]%]\n"
-"```markup\n"
+"```tt2;line-numbers\n"
 "[% USE q = Qgoda %]\n"
-"[% docs = q.related() %]\n"
+"[% docs= q.related() %]\n"
 "<ul>\n"
 "[% FOREACH doc IN docs %]\n"
 "  <li><a href=\"[% doc.permalink %]\">[% doc.title | html %]</li>\n"
@@ -3075,7 +3783,7 @@ msgstr ""
 
 #: ../en/docs/related-documents.md:39
 msgid ""
-"```markup\n"
+"```tt2\n"
 "[% docs = q.lrelated() %]\n"
 "```"
 msgstr ""
@@ -3094,7 +3802,7 @@ msgstr ""
 
 #: ../en/docs/related-documents.md:49
 msgid ""
-"```markup\n"
+"```tt2\n"
 "[% docs = q.lrelated(5) %]\n"
 "```"
 msgstr ""
@@ -3113,7 +3821,7 @@ msgstr ""
 
 #: ../en/docs/related-documents.md:59
 msgid ""
-"```markup\n"
+"```tt2\n"
 "[% docs = q.lrelated(5).splice(0, 10) %]\n"
 "```"
 msgstr ""
@@ -3132,7 +3840,7 @@ msgstr ""
 
 #: ../en/docs/related-documents.md:69
 msgid ""
-"```markup\n"
+"```tt2\n"
 "[% docs = q.lrelated(5, type = 'post', date.year = 2018).splice(0, 10) %]\n"
 "```"
 msgstr ""
@@ -3262,7 +3970,7 @@ msgstr ""
 
 #: ../en/docs/related-documents.md:152
 msgid ""
-"```markup\n"
+"```tt2\n"
 "<ul>\n"
 "[% FOREACH pair IN asset.related %]\n"
 "  <li>[% pair.0.permalink %]: [% pair.1 %]\n"
@@ -3338,7 +4046,7 @@ msgstr ""
 
 #: ../en/docs/table-of-contents.md:40
 msgid ""
-"```markup\n"
+"```tt2\n"
 "<div class=\"container\">\n"
 "  [% asset.content %]\n"
 "</div>\n"
@@ -3351,7 +4059,7 @@ msgstr ""
 
 #: ../en/docs/table-of-contents.md:48
 msgid ""
-"```markup\n"
+"```tt2\n"
 "<div class=\"container\">\n"
 "  <qgoda-content>\n"
 "  [% asset.content %]\n"
@@ -3677,12 +4385,20 @@ msgstr ""
 #: ../en/docs/template-variables.md:37
 msgid ""
 "[% WRAPPER \"components/template-variable.html\"\n"
+"   variable=\"asset.lingua\" type=\"RFC4647 language identifier\" %]\n"
+"An identifier of the language of the document. You should use a language identifier that conforms to <a href=\"https://www.ietf.org/rfc/rfc4647.txt\">RFC4647</a>, something like \"en\", \"en-us\", or \"fr-ca\". It is strongly recommended that you stick to the variable name `lingua` because this convention is built into Qgoda at many places.\n"
+"[%- END %]"
+msgstr ""
+
+#: ../en/docs/template-variables.md:42
+msgid ""
+"[% WRAPPER \"components/template-variable.html\"\n"
 "   variable=\"asset.priority\" type=\"integer\" %]\n"
 "All artifacts are built sorted by their priority.  A higher value means that they are generated first.  Normally, you should assign a low priority, for example -999 to listings so that they are generated after other pages and can access all of their data.\n"
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/template-variables.md:42
+#: ../en/docs/template-variables.md:47
 msgid ""
 "[% WRAPPER \"components/template-variable.html\"\n"
 "   variable=\"asset.virtual\" type=\"boolean (0 or 1)\" %]\n"
@@ -3690,14 +4406,14 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/template-variables.md:47
+#: ../en/docs/template-variables.md:52
 msgid ""
 "[% WRAPPER \"components/template-variable.html\"\n"
 "   variable=\"config\" type=\"hash\" %]\n"
 "`config` gives you access to the site configuration from `P:_config.yaml`.\n"
 "The configuration variable `C:paths.views` in `P:_config.yaml` is\n"
 "accessible from a template as `config.paths.views`.  See\n"
-"[q.llink(name='configuration-variables'] for a complete list.\n"
+"[% q.lanchor(name='configuration-variables') %] for a complete list.\n"
 "[%- END %]"
 msgstr ""
 
@@ -3740,9 +4456,224 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
+#: ../en/docs/translating-templates.md:2
+msgctxt "title"
+msgid "Translating Templates"
+msgstr ""
+
+#: ../en/docs/translating-templates.md:6
+msgctxt "description"
+msgid "How to get text inside templates translated"
+msgstr ""
+
+#: ../en/docs/translating-templates.md:8
+msgid "Internationalizing Template Toolkit templates is very easy with the help of the module [`Template-Plugin-Gettext`](https://github.com/gflohr/Template-Plugin-Gettext)."
+msgstr ""
+
+#: ../en/docs/translating-templates.md:12
+msgid "## Activating the Plug-In"
+msgstr ""
+
+#: ../en/docs/translating-templates.md:14
+msgid "Before you can use translation functions, you have to activate the plug-in:"
+msgstr ""
+
+#: ../en/docs/translating-templates.md:16
+msgid ""
+"[% USE q = Qgoda %]\n"
+"[% TAGS [@ @] %]\n"
+"```tt2\n"
+"[% USE gtx = Gettext('com.example.www', asset.lingua) %]\n"
+"```"
+msgstr ""
+
+#: ../en/docs/translating-templates.md:22
+msgid "This is done with the `USE` directive which takes two arguments. the The first argument is the so-called *textdomain*, an arbitrary string identifying your translation database.  The second one is the language of the file.  This is usually stored in the document property `V:lingua`."
+msgstr ""
+
+#: ../en/docs/translating-templates.md:24
+msgid "It is usually better to store the textdomain in the configuration variable `C:po.textdomain` instead of hard-coding it into every template:"
+msgstr ""
+
+#: ../en/docs/translating-templates.md:26
+msgid ""
+"```tt2\n"
+"[% USE gtx = Gettext(config.po.textdomain, asset.lingua) %]\n"
+"```"
+msgstr ""
+
+#: ../en/docs/translating-templates.md:30
+msgid "Now you can easily change the textdomain without touching every template."
+msgstr ""
+
+#: ../en/docs/translating-templates.md:32
+msgid "## Translating Strings"
+msgstr ""
+
+#: ../en/docs/translating-templates.md:34
+msgid "### Constant Strings"
+msgstr ""
+
+#: ../en/docs/translating-templates.md:36
+msgid "Strings are translated by passing them to the template function `gtx.gettext()`:"
+msgstr ""
+
+#: ../en/docs/translating-templates.md:42
+msgid "When rendering, the function returns the translation for the string or the original string, when there is no translation for it. But it also serves as a marker, that is later used to extract all translatable strings so that they can be sent to translators."
+msgstr ""
+
+#: ../en/docs/translating-templates.md:44
+msgid "If you prefer, you can also use Template Toolkit filters for translation:"
+msgstr ""
+
+#: ../en/docs/translating-templates.md:46
+msgid ""
+"```tt2\n"
+"<h1>[% 'Welcome to My Site' | gettext %]</h1>\n"
+"```"
+msgstr ""
+
+#: ../en/docs/translating-templates.md:50
+msgid "This does exactly the same."
+msgstr ""
+
+#: ../en/docs/translating-templates.md:52
+msgid "### Variable Strings"
+msgstr ""
+
+#: ../en/docs/translating-templates.md:54
+msgid "Sometimes strings contain variable parts:"
+msgstr ""
+
+#: ../en/docs/translating-templates.md:56
+msgid ""
+"```tt2\n"
+"<small>Written by [% asset.author %] ([% asset.organization %])</small>\n"
+"```"
+msgstr ""
+
+#: ../en/docs/translating-templates.md:60
+msgid "The recommended way to translate such strings uses the function `gtx.xgettext()`:"
+msgstr ""
+
+#: ../en/docs/translating-templates.md:62
+msgid ""
+"```tt2\n"
+"<small>[% gtx.xgettext('Written by {author} ({organization})',\n"
+"                       author=asset.author\n"
+"                       organization = asset.organization) %]</small>\n"
+"```"
+msgstr ""
+
+#: ../en/docs/translating-templates.md:68
+msgid "You use placeholders for the variable part, and pass the value for each placeholder as named arguments to the function. Placeholders can be arbitrary identifiers."
+msgstr ""
+
+#: ../en/docs/translating-templates.md:70
+msgid "### Plural Forms"
+msgstr ""
+
+#: ../en/docs/translating-templates.md:72
+msgid "Languages largely differ in the way they handle plural forms and strings. If a string contains a (cardinal) number you should try to help translators by using the specialized plural function `gtx.nxgettext()`:"
+msgstr ""
+
+#: ../en/docs/translating-templates.md:74
+msgid ""
+"```tt2\n"
+"<em>[% gtx.ngettext('One comment', '{num} comments', \n"
+"                    asset.num_comments,\n"
+"                    num = asset.num_comments) %]</em>\n"
+"```"
+msgstr ""
+
+#: ../en/docs/translating-templates.md:80
+msgid "The first argument is the singular form of the string, the second one is the plural form. The third argument is the number of items used (so that the function can pick the correct plural form for a particular language)."
+msgstr ""
+
+#: ../en/docs/translating-templates.md:82
+msgid "The other arguments are the values for the placeholder(s) used."
+msgstr ""
+
+#: ../en/docs/translating-templates.md:84
+msgid "Yes, this is a little bit tedious but still as simple as this problem can probably be solved. You might think, why not just use an `IF` clause?"
+msgstr ""
+
+#: ../en/docs/translating-templates.md:86
+msgid ""
+"```tt2\n"
+"[% IF assset.num_comments == 1 %]\n"
+"<em>[% gtx.gettext('One comment') %]</em>\n"
+"[% ELSE %]\n"
+"<em>[% gtx.xgettext('{num} comments', \n"
+"                    num = asset.num_comments) %]</em>\n"
+"[% ENDIF %]\n"
+"```"
+msgstr ""
+
+#: ../en/docs/translating-templates.md:95
+msgid "That will in fact work for a number of languages but for example for Russian your translator will contact you and tell you that it cannot be accurately translated."
+msgstr ""
+
+#: ../en/docs/translating-templates.md:97
+msgid "### Other Variants"
+msgstr ""
+
+#: ../en/docs/translating-templates.md:99
+msgid "There are a lot more variants of the translation functions, for example strings containing plural forms. See the [documentation for the Gettext plugin](https://github.com/gflohr/Template-Plugin-Gettext) and its [API documentation](https://github.com/gflohr/Template-Plugin-Gettext/blob/master/lib/Template/Plugin/Gettext.pod#user-content-FUNCTIONS) for details."
+msgstr ""
+
+#: ../en/docs/translating-templates.md:101
+msgid "## Complicated Strings"
+msgstr ""
+
+#: ../en/docs/translating-templates.md:103
+msgid "One golden rule in (software) internationalization is: Do not assemble strings!"
+msgstr ""
+
+#: ../en/docs/translating-templates.md:105
+msgid "Do *not* do this:"
+msgstr ""
+
+#: ../en/docs/translating-templates.md:107
+msgid ""
+"```tt2\n"
+"[% gtx.gettext('See the documentation at') %]\n"
+"<a href=\"http://www.a.com/\">A</a>\n"
+"[% gtx.gettext('and') %]\n"
+"<a href=\"http://www.b.com/\">B</a>\n"
+"[% gtx.gettext('for more information!') %]\n"
+"```"
+msgstr ""
+
+#: ../en/docs/translating-templates.md:115
+msgid "This gives your translators a hard time, and sometimes it will not be possible at all to translate such constructs into a particular language."
+msgstr ""
+
+#: ../en/docs/translating-templates.md:117
+msgid "Do this instead:"
+msgstr ""
+
+#: ../en/docs/translating-templates.md:119
+msgid ""
+"```\n"
+"[% xgettext('See the documentation at <a href=\"{link1}\">A</a>\n"
+"             or <a href=\"{link2}\">B</a> for more information!',\n"
+"            link1 = 'http://www.a.com',\n"
+"            link2 = 'http://www.b.com') %]\n"
+"```"
+msgstr ""
+
+#: ../en/docs/translating-templates.md:126
+msgid "## Troubleshooting"
+msgstr ""
+
+#: ../en/docs/translating-templates.md:128
+msgid "A very common problem is that `gtx.gettext()` seems to return an empty string. The reason is almost always that you have forgotten to activate the `Gettext` plug-in. See [above](#activating-the-plug-in) how to fix that."
+msgstr ""
+
 #: ../en/index.md:3
 msgctxt "title"
-msgid "Qgoda Static Site Generator"
+msgid "Qgoda - The Multilingual Static Site Generator"
 msgstr ""
 
 #: ../en/index.md:8
@@ -3787,6 +4718,311 @@ msgstr ""
 
 #: ../en/legal-disclosure.md:27
 msgid "## Responsible for the content:"
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:2
+msgctxt "title"
+msgid "Client-Side Syntax Highlighting"
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:14
+msgid ""
+"A very common requirement is to have syntax-highlighting applied to code blocks.  Best\n"
+"practice with Qgoda is to just mark code blocks semantically correct and let the client\n"
+"do the highlighting when rendering the generated pages."
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:23
+msgid "## How Should Code Blocks Be Marked?"
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:25
+msgid ""
+"Code blocks should be wrapped into a `<code>` element that is in turn wrapped into a \n"
+"`<pre>` element.  The programming language of the code block should be added as a\n"
+"CSS class in the format `language-PROGRAMMING-LANGUAGE`:"
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:37
+msgid ""
+"It is advisable to put the enclosing `<pre>` and `<code>` tags on the same line as\n"
+"the enclosed code. Otherwise ugly line feeds are added to the beginning and the end\n"
+"of the block."
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:41
+msgid "## Creating Semantic Code Blocks"
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:43
+msgid "### Manually Creating Semantic Code Blocks"
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:45
+msgid "Remember that (almost) all markup goes through unchanged in Markdown.  Nobody stops\n"
+"you from entering your code blocks manually with HTML."
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:48
+msgid "### Using Fenced Code Blocks"
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:50
+msgid "So-called *fenced* code blocks are supported by many markdown processors:"
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:62
+msgid ""
+"This creates exactly the construct we want, the code inside of a `<code>` element\n"
+"inside of a `<pre>` element. But none of the tags has any attributes, more\n"
+"specifically the `class=\"langauge-javascript\"` is not present.  But you can\n"
+"specify the language immediately following the opening \"fence\":"
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:77
+msgid ""
+"There is a caveat, though. Qgoda's default Markdown processor\n"
+"[Text::Markdown]() does not support fenced code blocks with a language specifier.\n"
+"It erroneously interprets it as part of the code.  You can therefore only\n"
+"use the language specifier, when you use `Text::Markdown::Hoedown` as your\n"
+"markdown  processor."
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:96
+msgid "## Syntax-Highlighting With PrismJS"
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:98
+msgid ""
+"[PrismJS](https://prismjs.com/) is a very popular syntax highlighter written in\n"
+"Javascript that supports an impressive [list of\n"
+"languages](https://prismjs.com/#languages-list)."
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:102
+msgid ""
+"[@ WRAPPER components/infobox.html\n"
+"           type='info' title='Did you know ...' @]\n"
+"<p>... that PrismJS can also highlight Template Toolkit source code? Use\n"
+"<code>tt2</code> as the language name and you're all done.\n"
+"</p>\n"
+"[@ END @]"
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:109
+msgid "### Basic Usage"
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:111
+msgid "You can see the minimum required javascript and css files in the following code\n"
+"snippet:"
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:128
+msgid "The default stylesheet gets included in line 4 and the core library in line 7.\n"
+"Make sure that they are found at the locations specified."
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:131
+msgid "### Using a PrismJS Theme"
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:133
+msgid "PrismJS ships with a number of themes. You can override the default theme by\n"
+"loading an *additional* stylesheet:"
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:143
+msgid "That will change the style to the \"coy\" theme."
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:145
+msgid "### Loading Highlighters and PrismJS Plug-Ins"
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:147
+msgid "In order to save memory and band-width, PrismJS does not load all of its highlighters\n"
+"and plug-ins automatically but you have to explicitely specify them."
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:150
+msgid "PrismJS also has a lot of useful plug-ins. The code and styles for them also have to\n"
+"be loaded explicitely."
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:153
+msgid ""
+"The complete example below would load support for highlighting JavaScript and also\n"
+"load the `line-numbers` plug-in that uses CSS to prepend every line with a line\n"
+"number:"
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:175
+msgid ""
+"If you want to have syntax highlighting for more \n"
+"languages, just add the corresponding PrismJS \n"
+"*component* after line 11."
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:179
+msgid "## Using the Qgoda Syntax Highlighter Plug-In"
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:181
+msgid "Fenced code-blocks are not always enough:"
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:183
+msgid "1. The markdown processor may not support them, or not support a language specification.\n"
+"2. You want to set additional attributes on the html elements, especially classes."
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:186
+msgid "### Installation"
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:188
+msgid ""
+"You can install the\n"
+"[Qgoda highlighter plug-in](https://github.com/gflohr/qgoda-plugin-tt2-highlight)\n"
+"like any other Qgoda plug-in. Normally:"
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:199
+msgid "You can use `yarn add gflohr/qgoda-plugin-tt2-highlight` if you prefer `yarn` over\n"
+"`npm`."
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:202
+msgid "### Usage"
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:204
+msgid ""
+"Now you have to use\n"
+"[Template Toolkit](http://www.template-toolkit.org/)\n"
+"directives in order to activate the highlighting:"
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:220
+msgid ""
+"All positional arguments to the filter plug-in (line 2) are added to the CSS\n"
+"class of the surrounding `<pre>` element.  The named arguments are converted\n"
+"to HTML attributes and their corresponding values."
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:237
+msgid "The above example will result in the following HTML code:"
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:247
+msgid ""
+"Provided that you have correctly loaded the PrismJS `line-numbers` plug-in, this\n"
+"will highlight the code as JavaScript in the browser, add line numbers in front of every\n"
+"line and start the line numbering with line 5.  For\n"
+"instance, the code examples on this very page are \n"
+"produced with directives like this"
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:253
+msgid "### Page-wide Defaullts"
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:255
+msgid ""
+"It is quite likely that all code blocks on a page are in\n"
+"the same programming language and should share their\n"
+"settings.  You can therefore pass global arguments in\n"
+"the `USE` directive, when you load the filter."
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:273
+msgid ""
+"All `FILTER` invocations will now share the same settings,\n"
+"respectively, they will receive the sum of the arguments\n"
+"that you specified for `USE` and those for `FILTER`."
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:277
+msgid ""
+"If you want to disable a certain CSS class for an\n"
+"individual `FILTER`, just pass the class name with a\n"
+"hyphen prepended:"
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:291
+msgid "This codeblock will now as an exception not be\n"
+"highlighted as JavaScript but as HTML."
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:294
+msgid "## Caveats"
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:296
+msgid "There are two little gotchas that you have to keep in mind."
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:298
+msgid "### Code Blocks Without Language Specification"
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:300
+msgid ""
+"If you use a fenced\n"
+"code block or the qgoda highlighter plug-in without a language specification,\n"
+"PrismJS will not highlight the code block. This will be fixed in a later\n"
+"version of the highlighter plug-in (see https://github.com/gflohr/qgoda-plugin-tt2-highlight/issues\n"
+"and https://github.com/gflohr/qgoda/issues/51). Until then, you either have to\n"
+"mark every code block as language \"none\" (or with the class \"language-none\") or\n"
+"you have to resort to a little bit of JavaScript:"
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:319
+msgid ""
+"You may argue that the check in line 4 will miss `pre` elements that have a class attribute\n"
+"but miss a `language-*` specification.  This cannot happen because all of the blocks\n"
+"are generated, and they will *not* have any class attribute set."
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:323
+msgid ""
+"Well, not 100 % true. If you created such a block with the highlighter plug-in,\n"
+"it could have a class attribute but no language specification. But that's your own\n"
+"fault then, and you know how to fix it."
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:327
+msgid "### Using the CSS-Modules And Line-Numbers Plug-In Simultaneously"
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:329
+msgid ""
+"The other glitch is rather esoteric and caused by a little flaw in the plug-in system\n"
+"of PrismJS. Its `css-modules` plug-in can be used to automatically use the\n"
+"[BEM methodology](https://en.bem.info/) for automatically namespacing all CSS\n"
+"class names and id attributes."
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:334
+msgid ""
+"The `line-numbers` plug-in on the other hand ignores BEM.  It searches for code blocks\n"
+"that have the exact class `line-numbers`.  The workaround is to use both classes,\n"
+"the BEM-style class for styling and the literal one for the JavaScript code."
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:338
+msgid "You can see how this is done in the\n"
+"[source code of this page](https://github.com/gflohr/qgoda-site/blame/master/[@ asset.relpath @])."
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:341
+msgid ""
+"The BEM-style class name is stored in the variable `css.prism.line_numbers`. The hash\n"
+"containing that variable is read in\n"
+"https://github.com/gflohr/qgoda-site/blob/master/_views/functions/css-modules.tt\n"
+"and that file is included at the top of\n"
+"[source code of this page](https://github.com/gflohr/qgoda-site/blame/master/[@ asset.relpath @])."
 msgstr ""
 
 #: ../en/news/index.md:6

@@ -1,7 +1,9 @@
+../_views/components/back-to-listings.html
 ../_views/components/file.html
 ../_views/components/guided_tour.html
 ../_views/components/infobox.html
 ../_views/components/listing.html
+../_views/components/plug-in-functions.html
 ../_views/components/template-variable.html
 ../_views/components/term.html
 ../_views/components/toc.html
@@ -21,6 +23,7 @@
 ../_views/partials/body.html
 ../_views/partials/body/footer.html
 ../_views/partials/body/ga.html
+../_views/partials/body/github.html
 ../_views/partials/body/sidebar-module.html
 ../_views/partials/body/sidebar-top.html
 ../_views/partials/body/sidebar.html
