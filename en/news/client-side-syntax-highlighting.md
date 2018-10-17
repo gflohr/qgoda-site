@@ -183,6 +183,7 @@ Now you have to use
 directives in order to activate the highlighting:
 
 [@ FILTER $Highlight "language-tt2" "line-numbers" css.prism.line_numbers @]
+[% USE Highlight %]
 [% FILTER $Highlight &quot;language-javascript&quot; &quot;line-numbers&quot;
                      &quot;data-start&quot;=42 %]
 if (options.debug) {
@@ -219,6 +220,42 @@ Provided that you have correctly loaded the PrismJS `line-numbers` plug-in, this
 will highlight the code as JavaScript in the browser, add line numbers in front of every
 line and start the line numbering with line 5, like the code examples that you can
 see on this very page.
+
+### Page-wide Defaullts
+
+It is quite likely that all code blocks on a page are in
+the same programming language and should share their
+settings.  You can therefore pass global arguments in
+the `USE` directive, when you load the filter.
+
+[@ FILTER $Highlight "language-tt2" "line-numbers" css.prism.line_numbers @]
+[% USE Highlight &quot;language-javascript&quot; &quot;line-numbers&quot; %]
+...
+[% FILTER $Highlight %]
+if (options.debug) {
+    console.log(&quot;Options: &quot;, options);
+}
+...
+[% END %]
+[@ END @]
+
+All `FILTER` invocations will now share the same settings,
+respectively, they will receive the sum of the arguments
+that you specified for `USE` and those for `FILTER`.
+
+If you want to disable a certain CSS class for an
+individual `FILTER`, just pass the class name with a
+hyphen prepended:
+
+[@ FILTER $Highlight "language-tt2" "line-numbers" css.prism.line_numbers @]
+[% USE Highlight &quot;-language-javascript&quot; &quot;language-html&quot; %]
+[% FILTER $Highlight %]
+&lt;link href=&quot;styles.css&quot; rel=&quot;stylesheet&quot;>
+[% END %]
+[@ END @]
+
+This codeblock will now as an exception not be
+highlighted as JavaScript but as HTML.
 
 ## Caveats
 
