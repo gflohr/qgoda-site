@@ -18,6 +18,7 @@
           <div class="[% css.start.date %]">
             <i class="fa fa-clock-o"></i>
             [% q.strftime(gtx.gettext('%B, %e %Y'), posts.0.date, asset.lingua) %]
+            - [% posts.0.author %]
           </div>
           <p>[% posts.0.excerpt %]
           <!--</a>-->
@@ -29,7 +30,9 @@
           <h4>[% posts.1.title | html %]</h4>
           <div class="[% css.start.date %]">
             <i class="fa fa-clock-o"></i>
-            [% q.strftime(gtx.gettext('%B, %e %Y'), posts.1.date, asset.lingua) %] 
+            [% q.strftime(gtx.gettext('%B, %e %Y'), posts.1.date, asset.lingua) %]
+            -
+            [% posts.1.author %]
           </div>
           <div>
             <p>[% posts.1.excerpt %]

@@ -258,10 +258,9 @@ a.teaser-link:hover {
     }
 
     .teaser-date {
-        font-size: smaller;
         font-weight: 400;
         font-style: italic;
-        margin-left: 1rem;
+        font-family: serif;
     }
 }
 
@@ -285,6 +284,6 @@ a.teaser-link:hover {
 
 .colophon {
     color: #0c5460;
-    font-size: smaller;
+    font-family: serif;
     font-style: italic;
 }
