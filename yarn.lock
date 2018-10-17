@@ -4158,8 +4158,8 @@ q@^1.1.2:
   integrity sha1-fjL3W0E4EpHQRhHxvxQQmsAGUdc=
 
 qgoda-plugin-tt2-highlight@gflohr/qgoda-plugin-tt2-highlight:
-  version "0.0.1"
-  resolved "https://codeload.github.com/gflohr/qgoda-plugin-tt2-highlight/tar.gz/5e0025a144510f969ca7ba84379b3a22f02636f6"
+  version "0.1.2"
+  resolved "https://codeload.github.com/gflohr/qgoda-plugin-tt2-highlight/tar.gz/d61413b32dfe1a06700f09be980df14eee6bb935"
 
 qs@0.4.x:
   version "0.4.2"
