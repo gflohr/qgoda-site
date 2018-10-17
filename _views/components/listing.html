@@ -14,6 +14,9 @@
     <a href="[% post.permalink %]" class="[% css.qgoda.teaser_link %]">
       <!--TRANSLATORS: See "man strftime" for the meaning!-->
       <i class="fa fa-clock-o"></i>&nbsp;[% q.strftime(gtx.gettext('%B, %e %Y'), post.date, asset.lingua) %]
+      [% IF post.type == 'post' %]
+      - [% asset.author | html %]
+      [% END %]
     </a>
   </div>
 

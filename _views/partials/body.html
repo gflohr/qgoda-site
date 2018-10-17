@@ -1,3 +1,4 @@
+[% USE gtx = Gettext(config.po.textdomain) %]
 [% PROCESS functions/setup.tt %]
 [% PROCESS "functions/css-modules.tt" %]
 <body>
@@ -8,6 +9,13 @@
       <div class="col-sm-8 [% css.qgoda.content %]">
         <div class="[% css.qgoda.content_head %]">
           <h1>[% asset.title %]</h1>
+          [% IF  asset.type == 'post' %]
+          <div class="[% css.qgoda.colophon %]">
+          <i class="fa fa-clock-o"></i>&nbsp;[% q.strftime(gtx.gettext('%B, %e %Y'), asset.date, asset.lingua) %]
+          -
+          [% asset.author %]
+          </div>
+          [% END %]
           <div class="[% css.qgoda.description %]">
             [% asset.description %]
           </div>
@@ -17,6 +25,8 @@
         </qgoda-content>
         [% IF asset.type == 'doc' %]
         [% PROCESS components/guided_tour.html %]
+        [% ELSIF asset.type == 'post' %]
+        [% INCLUDE "components/back-to-listings.html" %]
         [% END %]
       </div>
       <div class="col-sm-3 offset-sm-1 [% css.qgoda.sidebar %]">

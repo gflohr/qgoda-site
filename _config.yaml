@@ -57,6 +57,7 @@ defaults:
     values:
       type: post
       navsection: news
+      author: Guido Flohr
   - files: [index.md, index.html]
     values:
       type: page
