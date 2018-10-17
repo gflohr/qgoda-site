@@ -6,15 +6,19 @@ date: 2018-10-15
 category: Tutorial
 tags: Tutorial Howto
 ---
+<!--QGODA-NO-XGETTEXT-->
 [%- USE q = Qgoda -%]
 [%- USE Highlight -%]
 [%- PROCESS "functions/css-modules.tt" -%]
+<!--/QGODA-NO-XGETTEXT-->
 A very common requirement is to have syntax-highlighting applied to code blocks.  Best
 practice with Qgoda is to just mark code blocks semantically correct and let the client
 do the highlighting when rendering the generated pages.
 
+<!--QGODA-NO-XGETTEXT-->
 [% TAGS [@ @] %]
 <qgoda-toc />
+<!--/QGODA-NO-XGETTEXT-->
 
 ## How Should Code Blocks Be Marked?
 
@@ -22,11 +26,13 @@ Code blocks should be wrapped into a `<code>` element that is in turn wrapped in
 `<pre>` element.  The programming language of the code block should be added as a
 CSS class in the format `language-PROGRAMMING-LANGUAGE`:
 
+<!--QGODA-NO-XGETTEXT-->
 [@ FILTER $Highlight "language-html" "line-numbers" css.prism.line_numbers @]
 &lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;if (options.debug) {
     console.log("Options: ", options);
 }&lt;/code&gt;&lt;/pre&gt;
 [@ END @]
+<!--/QGODA-NO-XGETTEXT-->
 
 It is advisable to put the enclosing `<pre>` and `<code>` tags on the same line as
 the enclosed code. Otherwise ugly line feeds are added to the beginning and the end
@@ -43,6 +49,7 @@ you from entering your code blocks manually with HTML.
 
 So-called *fenced* code blocks are supported by many markdown processors:
 
+<!--QGODA-NO-XGETTEXT-->
 [@ FILTER $Highlight "language-markdown" "line-numbers" css.prism.line_numbers @]
 &#x60;&#x60;&#x60;
 if (options.debug) {
@@ -50,12 +57,14 @@ if (options.debug) {
 }
 &#x60;&#x60;&#x60;
 [@ END @]
+<!--/QGODA-NO-XGETTEXT-->
 
 This creates exactly the construct we want, the code inside of a `<code>` element
 inside of a `<pre>` element. But none of the tags has any attributes, more
-specifically the `class="langauge-javascript"` is not present.  But you can
+specifically the `class="language-javascript"` is not present.  But you can
 specify the language immediately following the opening "fence":
 
+<!--QGODA-NO-XGETTEXT-->
 [@ FILTER $Highlight "language-markdown" "line-numbers" css.prism.line_numbers @]
 &#x60;&#x60;&#x60;javascript
 if (options.debug) {
@@ -63,6 +72,7 @@ if (options.debug) {
 }
 &#x60;&#x60;&#x60;
 [@ END @]
+<!--/QGODA-NO-XGETTEXT-->
 
 There is a caveat, though. Qgoda's default Markdown processor
 [Text::Markdown]() does not support fenced code blocks with a language specifier.
@@ -70,6 +80,7 @@ It erroneously interprets it as part of the code.  You can therefore only
 use the language specifier, when you use `Text::Markdown::Hoedown` as your
 markdown  processor.
 
+<!--QGODA-NO-XGETTEXT-->
 [@ WRAPPER components/infobox.html
            type='info' title='Compatibility Note!' @]
 <p>There are plans to replace <a href="https://metacpan.org/release/Text-Markdown">
@@ -80,6 +91,7 @@ see
 <a href="https://github.com/gflohr/qgoda/issues/55">https://github.com/gflohr/qgoda/issues/55</a>.
 <code>Text::MultiMarkdown</code> supports fenced code blocks with a language specifier.
 [@ END @]
+<!--/QGODA-NO-XGETTEXT-->
 
 ## Syntax-Highlighting With PrismJS
 
@@ -99,6 +111,7 @@ languages](https://prismjs.com/#languages-list).
 You can see the minimum required javascript and css files in the following code
 snippet:
 
+<!--QGODA-NO-XGETTEXT-->
 [@ FILTER $Highlight "language-html" "line-numbers" css.prism.line_numbers @]
 &lt;!doctype html&gt;
 &lt;html&gt;
@@ -110,6 +123,7 @@ snippet:
   &lt;/body&gt;
 &lt;/html&gt;
 [@ END @]
+<!--/QGODA-NO-XGETTEXT-->
 
 The default stylesheet gets included in line 4 and the core library in line 7.
 Make sure that they are found at the locations specified.
@@ -119,10 +133,12 @@ Make sure that they are found at the locations specified.
 PrismJS ships with a number of themes. You can override the default theme by
 loading an *additional* stylesheet:
 
+<!--QGODA-NO-XGETTEXT-->
 [@ FILTER $Highlight "language-html" "line-numbers" css.prism.line_numbers "data-start"=4 @]
 &lt;link href=&quot;/assets/css/prismjs/themes/prism.css&quot; rel=&quot;stylesheet&quot; /&gt;
 &lt;link href=&quot;/assets/css/prismjs/themes/prism-coy.css&quot; rel=&quot;stylesheet&quot; /&gt;
 [@ END @]
+<!--/QGODA-NO-XGETTEXT-->
 
 That will change the style to the "coy" theme.
 
@@ -138,6 +154,7 @@ The complete example below would load support for highlighting JavaScript and al
 load the `line-numbers` plug-in that uses CSS to prepend every line with a line
 number:
 
+<!--QGODA-NO-XGETTEXT-->
 [@ FILTER $Highlight "language-html" "line-numbers" css.prism.line_numbers @]
 &lt;!doctype html&gt;
 &lt;html&gt;
@@ -153,6 +170,7 @@ number:
   &lt;/body&gt;
 &lt;/html&gt;
 [@ END @]
+<!--/QGODA-NO-XGETTEXT-->
 
 If you want to have syntax highlighting for more 
 languages, just add the corresponding PrismJS 
@@ -171,10 +189,12 @@ You can install the
 [Qgoda highlighter plug-in](https://github.com/gflohr/qgoda-plugin-tt2-highlight)
 like any other Qgoda plug-in. Normally:
 
-[@ FILTER $Highlight "language-bash" @]
+<!--QGODA-NO-XGETTEXT-->
+```bash
 $ cd /path/to/your/project
 $ npm install gflohr/qgoda-plugin-tt2-highlight
-[@ END @]
+```
+<!--/QGODA-NO-XGETTEXT-->
 
 You can use `yarn add gflohr/qgoda-plugin-tt2-highlight` if you prefer `yarn` over
 `npm`.
@@ -185,6 +205,7 @@ Now you have to use
 [Template Toolkit](http://www.template-toolkit.org/)
 directives in order to activate the highlighting:
 
+<!--QGODA-NO-XGETTEXT-->
 [@ FILTER $Highlight "language-tt2" "line-numbers" css.prism.line_numbers @]
 [% USE Highlight %]
 [% FILTER $Highlight &quot;language-javascript&quot; &quot;line-numbers&quot;
@@ -194,11 +215,13 @@ if (options.debug) {
 }
 [% END %]
 [@ END @]
+<!--/QGODA-NO-XGETTEXT-->
 
 All positional arguments to the filter plug-in (line 2) are added to the CSS
 class of the surrounding `<pre>` element.  The named arguments are converted
 to HTML attributes and their corresponding values.
 
+<!--QGODA-NO-XGETTEXT-->
 [@ WRAPPER components/infobox.html
            type='info' title='Positional and Named Arguments' @]
 <p>Positional arguments in Template Toolkit are standalone arguments, as opposed
@@ -209,14 +232,17 @@ Note that you have to quote all keys that contain non-alphanumeric characters!
 Values always have to be quoted (unless you refer a variable).
 </p>
 [@ END @]
+<!--/QGODA-NO-XGETTEXT-->
 
 The above example will result in the following HTML code:
 
+<!--QGODA-NO-XGETTEXT-->
 [@ FILTER $Highlight "language-html" "line-numbers" css.prism.line_numbers @]
 &lt;pre class=&quot;language-html line-numbers&quot; data-start=&quot;5&quot;&gt;if (options.debug) {
     console.log(&quot;Options: &quot;, options);
 }&lt;/code&gt;&lt;/pre&gt;
 [@ END @]
+<!--/QGODA-NO-XGETTEXT-->
 
 Provided that you have correctly loaded the PrismJS `line-numbers` plug-in, this
 will highlight the code as JavaScript in the browser, add line numbers in front of every
@@ -231,6 +257,7 @@ the same programming language and should share their
 settings.  You can therefore pass global arguments in
 the `USE` directive, when you load the filter.
 
+<!--QGODA-NO-XGETTEXT-->
 [@ FILTER $Highlight "language-tt2" "line-numbers" css.prism.line_numbers @]
 [% USE Highlight &quot;language-javascript&quot; &quot;line-numbers&quot; %]
 ...
@@ -241,6 +268,7 @@ if (options.debug) {
 ...
 [% END %]
 [@ END @]
+<!--/QGODA-NO-XGETTEXT-->
 
 All `FILTER` invocations will now share the same settings,
 respectively, they will receive the sum of the arguments
@@ -250,6 +278,7 @@ If you want to disable a certain CSS class for an
 individual `FILTER`, just pass the class name with a
 hyphen prepended:
 
+<!--QGODA-NO-XGETTEXT-->
 [@ FILTER $Highlight "language-tt2" "line-numbers" css.prism.line_numbers @]
 ...
 [% FILTER $Highlight &quot;-language-javascript&quot; &quot;language-html&quot; %]
@@ -257,6 +286,7 @@ hyphen prepended:
 ...
 [% END %]
 [@ END @]
+<!--/QGODA-NO-XGETTEXT-->
 
 This codeblock will now as an exception not be
 highlighted as JavaScript but as HTML.
@@ -275,6 +305,7 @@ and https://github.com/gflohr/qgoda/issues/51). Until then, you either have to
 mark every code block as language "none" (or with the class "language-none") or
 you have to resort to a little bit of JavaScript:
 
+<!--QGODA-NO-XGETTEXT-->
 [@ FILTER $Highlight "language-javascript" "line-numbers" css.prism.line_numbers @]
 var codes = document.querySelectorAll('pre>code');
 for (var i = 0; i < codes.length; ++i) {
@@ -283,6 +314,7 @@ for (var i = 0; i < codes.length; ++i) {
         parent.setAttribute('class', 'language-none');
 }
 [@ END @]
+<!--/QGODA-NO-XGETTEXT-->
 
 You may argue that the check in line 4 will miss `pre` elements that have a class attribute
 but miss a `language-*` specification.  This cannot happen because all of the blocks
