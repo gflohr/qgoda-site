@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qgoda-site 0.1\n"
 "Report-Msgid-Bugs-To: 'Guido Flohr <guido.flohr@cantanea.com>'\n"
-"PO-Revision-Date: 2018-10-17 10:30+0300\n"
+"PO-Revision-Date: 2018-10-18 12:33+0300\n"
 "Last-Translator: Guido Flohr <guido.flohr@cantanea.com>\n"
 "Language-Team: German\n"
 "Language: de\n"
@@ -18,7 +18,7 @@ msgstr ""
 
 #: ../_views/components/back-to-listings.html:6
 msgid "Back to all news"
-msgstr ""
+msgstr "Zurück zur News-Übersicht"
 
 #: ../_views/components/file.html:3
 #: ../_views/components/template-variable.html:3
@@ -35,12 +35,12 @@ msgid "Start"
 msgstr "Start"
 
 #: ../_views/components/listing.html:16 ../_views/landing-feature-full.html:20
-#: ../_views/landing-feature-full.html:32 ../_views/partials/body.html:14
+#: ../_views/landing-feature-full.html:33 ../_views/partials/body.html:14
 msgid "%B, %e %Y"
 msgstr "%e. %B %Y"
 
-#: ../_views/components/listing.html:29 ../_views/landing-feature-full.html:24
-#: ../_views/landing-feature-full.html:36
+#: ../_views/components/listing.html:29 ../_views/landing-feature-full.html:25
+#: ../_views/landing-feature-full.html:39
 msgid "Read More"
 msgstr "Weiterlesen"
 
@@ -71,17 +71,15 @@ msgstr "Copyright &copy; {copyright_year} {copyright_holder}"
 
 #: ../_views/partials/body/sidebar-top.html:9
 msgid "Star gflohr/qgoda on GitHub"
-msgstr ""
+msgstr "Stern für Qgoda auf GitHub vergeben"
 
 #: ../_views/partials/body/sidebar-top.html:9
-#, fuzzy
-#| msgid "Start"
 msgid "Star"
-msgstr "Start"
+msgstr "Stern"
 
 #: ../_views/partials/body/sidebar-top.html:9
 msgid "Star on GitHub"
-msgstr ""
+msgstr "Stern auf Github vergeben"
 
 #: ../_views/partials/body/sidebar-top.html:14
 msgid "Source code of this page"
@@ -532,10 +530,8 @@ msgid ""
 msgstr ""
 
 #: ../en/docs/command-line-interface.md:11
-#, fuzzy
-#| msgid "### Data Usage"
 msgid "## General Usage"
-msgstr "## Verwendung der Daten"
+msgstr "## Allgemeines zur Verwendung"
 
 #: ../en/docs/command-line-interface.md:13
 msgid "The general usage pattern for qgoda is:"
@@ -549,10 +545,8 @@ msgid ""
 msgstr ""
 
 #: ../en/docs/command-line-interface.md:19
-#, fuzzy
-#| msgid "Example:"
 msgid "For example:"
-msgstr "Beispiel:"
+msgstr "Zum Beispiel:"
 
 #: ../en/docs/command-line-interface.md:21
 msgid ""
@@ -612,9 +606,8 @@ msgid ""
 msgstr ""
 
 #: ../en/docs/command-line-interface.md:48
-#, fuzzy
 msgid "## Commands"
-msgstr "### Code in Templates"
+msgstr "## Kommandos"
 
 #: ../en/docs/command-line-interface.md:50
 msgid ""
@@ -657,9 +650,8 @@ msgid ""
 msgstr ""
 
 #: ../en/docs/command-line-interface.md:64
-#, fuzzy
 msgid "#### watch"
-msgstr "### Was wird gespeichert?"
+msgstr "#### watch"
 
 #: ../en/docs/command-line-interface.md:66
 msgid ""
@@ -835,7 +827,6 @@ msgstr ""
 "[%- END %]"
 
 #: ../en/docs/configuration-variables.md:40
-#, fuzzy
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"no_scm\" type='List of patterns' \n"
@@ -846,12 +837,11 @@ msgid ""
 "[%- END %]"
 msgstr ""
 "[% WRAPPER components/variable.html\n"
-"   variable=\"exclude\" type='Liste' \n"
-"   default='empty'leer -%]\n"
-"Eine Liste von Dateien und Verzeichnissen, die nicht verarbeitet werden "
-"sollen. Es können Suchmuster verwendet werden. Siehe <a href=\"[% q."
-"llink(name = 'excluding-files') %]\">[% q.lxref('title', name = 'excluding-"
-"files') %]</a>!\n"
+"   variable=\"scm\" type='Liste von Suchmustern' \n"
+"   default='leer' -%]\n"
+"Eine Liste von Dateinamens-Suchmustern, die verarbeitet werden sollen, "
+"obgleich sie sich nicht unter Versionskontrolle stehen. Diese Variable hat "
+"nur zusammen mit <code>C:scm</code> einen Effekt.\n"
 "[%- END %]"
 
 #: ../en/docs/configuration-variables.md:46
@@ -4825,9 +4815,8 @@ msgid ""
 msgstr ""
 
 #: ../en/docs/qgoda-in-15-minutes.md:387
-#, fuzzy
 msgid "### Links"
-msgstr "### Auflistungen"
+msgstr "### Links"
 
 #: ../en/docs/qgoda-in-15-minutes.md:389
 msgid ""
@@ -6343,7 +6332,11 @@ msgid ""
 "practice with Qgoda is to just mark code blocks semantically correct and let "
 "the client\n"
 "do the highlighting when rendering the generated pages."
-msgstr "Syntax-Hervorherbung für Code-Blöcke ist eine häufig vorkommende Anforderung. Für Qgoda wird empfohlen, solche Code-Blöcke lediglich semantisch korrekt zu markieren und die eigentliche Hervorhebung dem Client beim Rendern der generierten Seiten zu überlassen."
+msgstr ""
+"Syntax-Hervorherbung für Code-Blöcke ist eine häufig vorkommende "
+"Anforderung. Für Qgoda wird empfohlen, solche Code-Blöcke lediglich "
+"semantisch korrekt zu markieren und die eigentliche Hervorhebung dem Client "
+"beim Rendern der generierten Seiten zu überlassen."
 
 #: ../en/news/client-side-syntax-highlighting.md:23
 msgid "## How Should Code Blocks Be Marked?"
@@ -6356,7 +6349,11 @@ msgid ""
 "`<pre>` element.  The programming language of the code block should be added "
 "as a\n"
 "CSS class in the format `language-PROGRAMMING-LANGUAGE`:"
-msgstr "Code-Blöcke sollten in ein `<code>`-Element eingefasst werden, dass seinerseits in einem `<pre>`-Element liegt. Die jeweilige Programmiersprache sollte als CSS-Klasse im Format `language-PROGRAMMIERSPRACHE` angegeben werden:"
+msgstr ""
+"Code-Blöcke sollten in ein `<code>`-Element eingefasst werden, dass "
+"seinerseits in einem `<pre>`-Element liegt. Die jeweilige Programmiersprache "
+"sollte als CSS-Klasse im Format `language-PROGRAMMIERSPRACHE` angegeben "
+"werden:"
 
 #: ../en/news/client-side-syntax-highlighting.md:37
 msgid ""
@@ -6365,7 +6362,10 @@ msgid ""
 "the enclosed code. Otherwise ugly line feeds are added to the beginning and "
 "the end\n"
 "of the block."
-msgstr "Es ist ratsam, die `<pre>`- und `<code>`-Tags auf die gleiche Zeile wie den Quell-Code zu setzen, damit keine hässlichen Zeilenumbrüche am Anfang und Ende des Code-Blocks eingefügt werden."
+msgstr ""
+"Es ist ratsam, die `<pre>`- und `<code>`-Tags auf die gleiche Zeile wie den "
+"Quell-Code zu setzen, damit keine hässlichen Zeilenumbrüche am Anfang und "
+"Ende des Code-Blocks eingefügt werden."
 
 #: ../en/news/client-side-syntax-highlighting.md:41
 msgid "## Creating Semantic Code Blocks"
@@ -6381,49 +6381,94 @@ msgid ""
 "Nobody stops\n"
 "you from entering your code blocks manually with HTML."
 msgstr ""
+"Markdown erlaubt die fast uneingeschränkte Verwendung von HTML-Markup. "
+"Insofern spricht natürlich prinzipiell auch nichts dagegen, das HTML von "
+"Hand einzugeben."
 
 #: ../en/news/client-side-syntax-highlighting.md:48
 msgid "### Using Fenced Code Blocks"
-msgstr ""
+msgstr "### Verwendung von *fenced* Code-Blöcken"
 
 #: ../en/news/client-side-syntax-highlighting.md:50
 msgid ""
 "So-called *fenced* code blocks are supported by many markdown processors:"
 msgstr ""
+"Sogenannte *fenced* (umzäunte) Code-Blöcke sind eine Markdown-Erweiterung, "
+"die von Prozessoren unterstützt werden:"
 
 #: ../en/news/client-side-syntax-highlighting.md:62
 msgid ""
 "This creates exactly the construct we want, the code inside of a `<code>` "
 "element\n"
 "inside of a `<pre>` element. But none of the tags has any attributes, more\n"
-"specifically the `class=\"langauge-javascript\"` is not present.  But you "
+"specifically the `class=\"language-javascript\"` is not present.  But you "
 "can\n"
 "specify the language immediately following the opening \"fence\":"
 msgstr ""
+"Dies erzeugt exakt das gewünschte Konstrukt, nämlich den Quellcode innerhalb "
+"eines `<code>`-Elements, das wiederum in einem `<pre>`-Element liegt. "
+"Allerdings haben beide Elemente keine Attribute gesetzt. Insbesondere das "
+"class-Attribut `class=\"language-javascript\"` fehlt. Die Programmiersprache "
+"kann allerdings unmittelbar nach dem öffnenden \"Zaun\" angegeben werden:"
 
 #: ../en/news/client-side-syntax-highlighting.md:77
 msgid ""
 "There is a caveat, though. Qgoda's default Markdown processor\n"
-"[Text::Markdown]() does not support fenced code blocks with a language "
-"specifier.\n"
+"[Text::Markdown](https://metacpan.org/release/Text-Markdown) does not "
+"support fenced code blocks with a language specifier.\n"
 "It erroneously interprets it as part of the code.  You can therefore only\n"
 "use the language specifier, when you use `Text::Markdown::Hoedown` as your\n"
 "markdown  processor."
 msgstr ""
+"Die Sache hat allerdings einen kleinen Haken. Qgodas  Standard-Markdown-"
+"Prozessor [Text::Markdown](https://metacpan.org/release/Text-Markdown) "
+"unterstützt keine Sprachangabe für Fenced Code Blocks. Sie werden "
+"stattdessen als Teil des Quellcodes missinterpretiert. Diese Syntax lässt "
+"sich deshalb nur verwenden, wenn `Text::Markdown::Hoedown` als Markdown-"
+"Prozessor verwendet wird."
+
+#: ../en/news/client-side-syntax-highlighting.md:83
+msgid ""
+"[@ WRAPPER components/infobox.html\n"
+"           type='info' title='Compatibility Note!' @]\n"
+"<p>There are plans to replace <a href=\"https://metacpan.org/release/Text-"
+"Markdown\">\n"
+"<code>Text::Markdown</code><a> with\n"
+"<a href=\"https://metacpan.org/release/Text-MultiMarkdown\">\n"
+"<code>Text::MultiMarkdown</code><a> as Qgoda's default markdown processor,\n"
+"see\n"
+"<a href=\"https://github.com/gflohr/qgoda/issues/55\">https://github.com/"
+"gflohr/qgoda/issues/55</a>.\n"
+"<code>Text::MultiMarkdown</code> supports fenced code blocks with a language "
+"specifier.\n"
+"[@ END @]"
+msgstr ""
+"[@ WRAPPER components/infobox.html\n"
+"           type='info' title='Kompatibilitätshinweis!' @]\n"
+"<p>Es gibt Pläne, <a href=\"https://metacpan.org/release/Text-Markdown\">\n"
+"<code>Text::Markdown</code><a> mit\n"
+"<a href=\"https://metacpan.org/release/Text-MultiMarkdown\">\n"
+"<code>Text::MultiMarkdown</code><a> als Qgodas Standard-Markdown-Prozessor zu ersetzen, siehe \n"
+"<a href=\"https://github.com/gflohr/qgoda/issues/55\">https://github.com/gflohr/qgoda/issues/55</a>.\n"
+"<code>Text::MultiMarkdown</code> untertützt solce Fenced Code-Blöcke mit Sprachangabe.\n"
+"[@ END @]"
+
+#: ../en/news/client-side-syntax-highlighting.md:94
+msgid "## Syntax-Highlighting With PrismJS"
+msgstr "## Syntax-Highlighting mit PrismJS"
 
 #: ../en/news/client-side-syntax-highlighting.md:96
-msgid "## Syntax-Highlighting With PrismJS"
-msgstr ""
-
-#: ../en/news/client-side-syntax-highlighting.md:98
 msgid ""
 "[PrismJS](https://prismjs.com/) is a very popular syntax highlighter written "
 "in\n"
 "Javascript that supports an impressive [list of\n"
 "languages](https://prismjs.com/#languages-list)."
 msgstr ""
+"[PrismJS](https://prismjs.com/) ist ein sehr populärer, in JavaScript "
+"geschriebener Syntax-Highlighter, der eine [beeindruckende Menge an "
+"Programmiersprachen](https://prismjs.com/#languages-list) unterstützt."
 
-#: ../en/news/client-side-syntax-highlighting.md:102
+#: ../en/news/client-side-syntax-highlighting.md:100
 msgid ""
 "[@ WRAPPER components/infobox.html\n"
 "           type='info' title='Did you know ...' @]\n"
@@ -6432,61 +6477,68 @@ msgid ""
 "</p>\n"
 "[@ END @]"
 msgstr ""
+"[@ WRAPPER components/infobox.html\n"
+"           type='info' title='Schon gewusst?' @]\n"
+"<p>PrismJS kann auch Template-Toolkit-Code highlighten. Als Sprache muss "
+"<code>tt2</code> angegeben werden.\n"
+"</p>\n"
+"[@ END @]"
+
+#: ../en/news/client-side-syntax-highlighting.md:107
+msgid "### Basic Usage"
+msgstr "###  Grundsätzliche Anwendung"
 
 #: ../en/news/client-side-syntax-highlighting.md:109
-#, fuzzy
-#| msgid "### Data Usage"
-msgid "### Basic Usage"
-msgstr "## Verwendung der Daten"
-
-#: ../en/news/client-side-syntax-highlighting.md:111
 msgid ""
 "You can see the minimum required javascript and css files in the following "
 "code\n"
 "snippet:"
 msgstr ""
+"You can see the minimum required javascript and css files in the following "
+"code\n"
+"snippet:"
 
-#: ../en/news/client-side-syntax-highlighting.md:128
+#: ../en/news/client-side-syntax-highlighting.md:126
 msgid ""
 "The default stylesheet gets included in line 4 and the core library in line "
 "7.\n"
 "Make sure that they are found at the locations specified."
 msgstr ""
+"Das Standard-Stylesheet wird in Zeile 4 eingebunden, die Bibliothek selber "
+"in Zeile 7. Es muss natürlich sichergestellt werden, dass die Dateien an den "
+"angegebenen Stellen gefunden werden können."
+
+#: ../en/news/client-side-syntax-highlighting.md:129
+msgid "### Using a PrismJS Theme"
+msgstr "### Verwendung von PrismJS-Themes"
 
 #: ../en/news/client-side-syntax-highlighting.md:131
-msgid "### Using a PrismJS Theme"
-msgstr ""
-
-#: ../en/news/client-side-syntax-highlighting.md:133
 msgid ""
 "PrismJS ships with a number of themes. You can override the default theme "
 "by\n"
 "loading an *additional* stylesheet:"
 msgstr ""
+"PrismJS wird mit einer Reihe von Themes  ausgeliefert. Dazu muss zusätzlich "
+"zum Standard-Stylesheet ein Theme-Stylesheet geladen werden:"
+
+#: ../en/news/client-side-syntax-highlighting.md:141
+msgid "That will change the style to the \"coy\" theme."
+msgstr "So wird zum Beispiel das „Coy“-Theme gewählt."
 
 #: ../en/news/client-side-syntax-highlighting.md:143
-msgid "That will change the style to the \"coy\" theme."
-msgstr ""
+msgid "### Loading Highlighters and PrismJS Plug-Ins"
+msgstr "### Highlighter und PrismJS-Erweiterungen laden"
 
 #: ../en/news/client-side-syntax-highlighting.md:145
-msgid "### Loading Highlighters and PrismJS Plug-Ins"
-msgstr ""
-
-#: ../en/news/client-side-syntax-highlighting.md:147
 msgid ""
 "In order to save memory and band-width, PrismJS does not load all of its "
 "highlighters\n"
 "and plug-ins automatically but you have to explicitely specify them."
 msgstr ""
+"Um Speicher und Bandbreite zu sparen, lädt PrismJS nicht alle Highlighter "
+"und Plug-Ins automatisch. Vielmehr müssen sie explizit eingebunden werden."
 
-#: ../en/news/client-side-syntax-highlighting.md:150
-msgid ""
-"PrismJS also has a lot of useful plug-ins. The code and styles for them also "
-"have to\n"
-"be loaded explicitely."
-msgstr ""
-
-#: ../en/news/client-side-syntax-highlighting.md:153
+#: ../en/news/client-side-syntax-highlighting.md:148
 msgid ""
 "The complete example below would load support for highlighting JavaScript "
 "and also\n"
@@ -6494,64 +6546,78 @@ msgid ""
 "line\n"
 "number:"
 msgstr ""
+"Das untenstehende vollständige Beispiel würde den Highlighter für JavaScript "
+"und das Plug-In „line-numbers“ laden, das mittels CSS vor jede Zeile die "
+"Zeilennummer setzt."
 
-#: ../en/news/client-side-syntax-highlighting.md:175
+#: ../en/news/client-side-syntax-highlighting.md:170
 msgid ""
 "If you want to have syntax highlighting for more \n"
 "languages, just add the corresponding PrismJS \n"
 "*component* after line 11."
 msgstr ""
+"Um Highlighter für weitere Sprachen zu laden, müssen die entsprechenden "
+"PrismJS-*Component* nach Zeile 11 eingebunden werden."
 
-#: ../en/news/client-side-syntax-highlighting.md:179
+#: ../en/news/client-side-syntax-highlighting.md:174
 msgid "## Using the Qgoda Syntax Highlighter Plug-In"
-msgstr ""
+msgstr "## Verwendung des Qgoda-Syntax-Highlighter-Plug-Ins"
 
-#: ../en/news/client-side-syntax-highlighting.md:181
+#: ../en/news/client-side-syntax-highlighting.md:176
 msgid "Fenced code-blocks are not always enough:"
-msgstr ""
+msgstr "Fenced Code-Blocks reichen nicht immer aus:"
 
-#: ../en/news/client-side-syntax-highlighting.md:183
+#: ../en/news/client-side-syntax-highlighting.md:178
 msgid ""
 "1. The markdown processor may not support them, or not support a language "
 "specification.\n"
 "2. You want to set additional attributes on the html elements, especially "
 "classes."
 msgstr ""
+"1. Der Markdown-Prozessor unterstützt sie eventuell überhaupt nicht oder "
+"nicht mit Sprachangabe.\n"
+"2. Es ist zuweilen notwendig, weitere Attribute der HTML-Elemente zu setzen, "
+"insbesondere CSS-Klassen."
 
-#: ../en/news/client-side-syntax-highlighting.md:186
-#, fuzzy
+#: ../en/news/client-side-syntax-highlighting.md:181
 msgid "### Installation"
-msgstr "## Konfiguration"
+msgstr "### Installation"
 
-#: ../en/news/client-side-syntax-highlighting.md:188
+#: ../en/news/client-side-syntax-highlighting.md:183
 msgid ""
 "You can install the\n"
 "[Qgoda highlighter plug-in](https://github.com/gflohr/qgoda-plugin-tt2-"
 "highlight)\n"
 "like any other Qgoda plug-in. Normally:"
 msgstr ""
+"Das [Qgoda-Highlighter-Plug-In](https://github.com/gflohr/qgoda-plugin-tt2-"
+"highlight) lässt sich wie jede andere Qgoda-Erweiterung laden, also "
+"normalerweise auf eine der folgenden Arten:"
 
-#: ../en/news/client-side-syntax-highlighting.md:199
+#: ../en/news/client-side-syntax-highlighting.md:194
 msgid ""
 "You can use `yarn add gflohr/qgoda-plugin-tt2-highlight` if you prefer "
 "`yarn` over\n"
 "`npm`."
 msgstr ""
+"Wer lieber `yarn` als `npm` benutzt, gibt entsprechend  `yarn add gflohr/"
+"qgoda-plugin-tt2-highlight` an."
 
-#: ../en/news/client-side-syntax-highlighting.md:202
-#, fuzzy
-#| msgid "## Usage"
+#: ../en/news/client-side-syntax-highlighting.md:197
 msgid "### Usage"
-msgstr "## Benutzung"
+msgstr "### Verwendung"
 
-#: ../en/news/client-side-syntax-highlighting.md:204
+#: ../en/news/client-side-syntax-highlighting.md:199
 msgid ""
 "Now you have to use\n"
 "[Template Toolkit](http://www.template-toolkit.org/)\n"
 "directives in order to activate the highlighting:"
 msgstr ""
+"Jetzt müssen\n"
+"[Template-Toolkit](http://www.template-toolkit.org/)-Direktiven benutzt "
+"werden, um das Highlighting zu aktivieren."
 
-#: ../en/news/client-side-syntax-highlighting.md:220
+#: ../en/news/client-side-syntax-highlighting.md:215
 msgid ""
 "All positional arguments to the filter plug-in (line 2) are added to the "
 "CSS\n"
@@ -6559,12 +6625,15 @@ msgid ""
 "converted\n"
 "to HTML attributes and their corresponding values."
 msgstr ""
+"Alle regulären Argumente für den Filter-Aufruf (Zeile 2) werden als CSS-"
+"Klasse dem umgebenden `<pre>`-Elements zugefügt. Die benamten Argumente "
+"werden in HTML-Attribute mit Wert umgewandelt."
 
-#: ../en/news/client-side-syntax-highlighting.md:237
+#: ../en/news/client-side-syntax-highlighting.md:232
 msgid "The above example will result in the following HTML code:"
-msgstr ""
+msgstr "Der folgende HTML-Code resultiert aus obigem Beispiel:"
 
-#: ../en/news/client-side-syntax-highlighting.md:247
+#: ../en/news/client-side-syntax-highlighting.md:242
 msgid ""
 "Provided that you have correctly loaded the PrismJS `line-numbers` plug-in, "
 "this\n"
@@ -6574,54 +6643,67 @@ msgid ""
 "instance, the code examples on this very page are \n"
 "produced with directives like this"
 msgstr ""
+"Vorausgesetzt, das PrismJS-Plug-In `line-numbers` wurde korrekt geladen, "
+"werdenwird jetzt vor jeder JavaScript-Zeile die Zeilennummer angezeigt. "
+"Weiterhin wird der Zeilenzahler mit 5 installiert. Die Quelltext-Beispiele "
+"auf dieser Seite wurden auf diese Weise erzeugt."
 
-#: ../en/news/client-side-syntax-highlighting.md:253
+#: ../en/news/client-side-syntax-highlighting.md:248
 msgid "### Page-wide Defaullts"
-msgstr ""
+msgstr "### Vorgaben für das komplette Dokument"
 
-#: ../en/news/client-side-syntax-highlighting.md:255
+#: ../en/news/client-side-syntax-highlighting.md:250
 msgid ""
 "It is quite likely that all code blocks on a page are in\n"
 "the same programming language and should share their\n"
 "settings.  You can therefore pass global arguments in\n"
 "the `USE` directive, when you load the filter."
 msgstr ""
+"Es ist häufig der Fall, dass alle Code-Blöcke auf einer Seite in der selben "
+"Programmiersprache geschrieben sind, und dementsprechend auch gleich "
+"präsentiert werden sollen. Deshahl können der `USE`-Direktive auch globale "
+"Argumente beim Laden des Plug-Ins übergeben werden."
 
-#: ../en/news/client-side-syntax-highlighting.md:273
+#: ../en/news/client-side-syntax-highlighting.md:268
 msgid ""
 "All `FILTER` invocations will now share the same settings,\n"
 "respectively, they will receive the sum of the arguments\n"
 "that you specified for `USE` and those for `FILTER`."
 msgstr ""
+"Alle `FILTER`-Aufrufe verwenden jetzt die selben Einstellung, bzw. sie "
+"erhalten die Summe der Argumente, die für `USE` *und* für `FILTER` angegeben "
+"wurden."
 
-#: ../en/news/client-side-syntax-highlighting.md:277
+#: ../en/news/client-side-syntax-highlighting.md:272
 msgid ""
 "If you want to disable a certain CSS class for an\n"
 "individual `FILTER`, just pass the class name with a\n"
-"hyphen prepended:"
+"minus sign (-) prepended:"
 msgstr ""
+"Um eine CSS-Klasse nur für einen bestimmten `FILTER`-Aufruf zu unterdrücken, "
+"genügt es, dem Namen ein Minuszeichen voranzustellen:"
 
-#: ../en/news/client-side-syntax-highlighting.md:291
+#: ../en/news/client-side-syntax-highlighting.md:286
 msgid ""
 "This codeblock will now as an exception not be\n"
 "highlighted as JavaScript but as HTML."
 msgstr ""
+"Dieser bestimmte Code-Block wird dadurch nicht als JavaScript sondern als "
+"HTML gerendert."
 
-#: ../en/news/client-side-syntax-highlighting.md:294
-#, fuzzy
-#| msgid "## Cookies"
+#: ../en/news/client-side-syntax-highlighting.md:289
 msgid "## Caveats"
-msgstr "## Cookies"
+msgstr "## Stolpersteine"
 
-#: ../en/news/client-side-syntax-highlighting.md:296
+#: ../en/news/client-side-syntax-highlighting.md:291
 msgid "There are two little gotchas that you have to keep in mind."
-msgstr ""
+msgstr "Es gibt zwei kleine Problemchen, die man im Auge behalten sollte:"
 
-#: ../en/news/client-side-syntax-highlighting.md:298
+#: ../en/news/client-side-syntax-highlighting.md:293
 msgid "### Code Blocks Without Language Specification"
-msgstr ""
+msgstr "### Code-Blöcke ohne Sprachangabe"
 
-#: ../en/news/client-side-syntax-highlighting.md:300
+#: ../en/news/client-side-syntax-highlighting.md:295
 msgid ""
 "If you use a fenced\n"
 "code block or the qgoda highlighter plug-in without a language "
@@ -6631,12 +6713,20 @@ msgid ""
 "plugin-tt2-highlight/issues\n"
 "and https://github.com/gflohr/qgoda/issues/51). Until then, you either have "
 "to\n"
-"mark every code block as language \"none\" (or with the class \"language-none"
-"\") or\n"
+"mark every affected code block as language \"none\" (or with the class "
+"\"language-none\") or\n"
 "you have to resort to a little bit of JavaScript:"
 msgstr ""
+"Wird bei Fenced Code-Blocks oder bei Verwendung des Qgoda Highlighter-Plug-"
+"Ins keine Sprahe angegeben, wird der Code-Block von PrismJS ignoriert. Das "
+"wird in einer späteren Version des Highlighter-Plug-Ins gefixt werden (iehe "
+"https://github.com/gflohr/qgoda-plugin-tt2-highlight/issues\n"
+"und https://github.com/gflohr/qgoda/issues/51). Bis dahin müssen entweder "
+"alle betroffenen Code-Blöcke mit der Sprache \"none\" (oder der CSS-Klasse "
+"\"language-none\") gekennzeichnet werden, oder man muss ein wenig JavaScript "
+"zu Hilfe nehmen:"
 
-#: ../en/news/client-side-syntax-highlighting.md:319
+#: ../en/news/client-side-syntax-highlighting.md:314
 msgid ""
 "You may argue that the check in line 4 will miss `pre` elements that have a "
 "class attribute\n"
@@ -6644,8 +6734,12 @@ msgid ""
 "the blocks\n"
 "are generated, and they will *not* have any class attribute set."
 msgstr ""
+"Man könnte meine, dass die Prüfung in Zeile 4 keine `pre`-Elemente findet, "
+"die ywar ein `class`-Attribut aber keine `language-*`-Spezifikation. Die "
+"kann allerdings nicht passieren, weil alle diese Blöcke generiert sind, und "
+"deshalb gar keine `class`-Attribute haben."
 
-#: ../en/news/client-side-syntax-highlighting.md:323
+#: ../en/news/client-side-syntax-highlighting.md:318
 msgid ""
 "Well, not 100 % true. If you created such a block with the highlighter plug-"
 "in,\n"
@@ -6653,12 +6747,16 @@ msgid ""
 "your own\n"
 "fault then, and you know how to fix it."
 msgstr ""
+"Gut, das stimmt nicht ganz. Falls der betreffende Code-Block mit dem Qgoda-"
+"Highlighter-Plug-In erzeugt wurde, könnte genau dieser Fall eintreten. Das "
+"ist dann allerdings die eigene Schuld auch außerdem leicht zu beheben."
 
-#: ../en/news/client-side-syntax-highlighting.md:327
+#: ../en/news/client-side-syntax-highlighting.md:322
 msgid "### Using the CSS-Modules And Line-Numbers Plug-In Simultaneously"
 msgstr ""
+"### Gleichzeitige Verwendung des CSS-Modules- und Line-Numbers-Plug-Ins"
 
-#: ../en/news/client-side-syntax-highlighting.md:329
+#: ../en/news/client-side-syntax-highlighting.md:324
 msgid ""
 "The other glitch is rather esoteric and caused by a little flaw in the plug-"
 "in system\n"
@@ -6667,8 +6765,13 @@ msgid ""
 "CSS\n"
 "class names and id attributes."
 msgstr ""
+"Das andere Problem ist etwas esoterisch und durch einen kleine Schwachstelle "
+"im Plug-In-System von PrismJS bedingt. Das Plug-In `css-modules` dient zur "
+"automatischen Verwendung von Namespaces für CSS-Klassen und ID-Attribute "
+"gemäß der \n"
+"[BEM-Methodologie](https://en.bem.info/)."
 
-#: ../en/news/client-side-syntax-highlighting.md:334
+#: ../en/news/client-side-syntax-highlighting.md:329
 msgid ""
 "The `line-numbers` plug-in on the other hand ignores BEM.  It searches for "
 "code blocks\n"
@@ -6676,25 +6779,40 @@ msgid ""
 "classes,\n"
 "the BEM-style class for styling and the literal one for the JavaScript code."
 msgstr ""
+"Das Plug-In `line-numbers` hingegen ignoriert BEM. Es sucht nach Code-"
+"Blöcken,\n"
+"die exakt eine Klasse `line-numbers` gesetzt haben. Um das Problem zu "
+"umschiffen, müssen beide Klassen gleichzeitig gesetzt werden, nämlich die "
+"Klassen gemäß BEM für das Styling, die Klassen ohne Präfix für den "
+"JavaScript-Code."
 
-#: ../en/news/client-side-syntax-highlighting.md:338
+#: ../en/news/client-side-syntax-highlighting.md:333
 msgid ""
 "You can see how this is done in the\n"
 "[source code of this page](https://github.com/gflohr/qgoda-site/blame/master/"
 "[@ asset.relpath @])."
 msgstr ""
+"Wie das exakt geht, kann man im \n"
+"[Quelltest der englischen Version dieser Seite](https://github.com/gflohr/"
+"qgoda-site/blame/master/[@ asset.relpath @]) sehen."
 
-#: ../en/news/client-side-syntax-highlighting.md:341
+#: ../en/news/client-side-syntax-highlighting.md:336
 msgid ""
 "The BEM-style class name is stored in the variable `css.prism.line_numbers`. "
 "The hash\n"
 "containing that variable is read in\n"
 "https://github.com/gflohr/qgoda-site/blob/master/_views/functions/css-"
 "modules.tt\n"
-"and that file is included at the top of\n"
+"and that function is included at the top of\n"
 "[source code of this page](https://github.com/gflohr/qgoda-site/blame/master/"
 "[@ asset.relpath @])."
 msgstr ""
+"Der Klassenname gemäß BEM wird in der Variablen `css.prism.line_numbers` "
+"gespeichert. Der Hash, in dem diese Variable enthalten ist, wird in https://"
+"github.com/gflohr/qgoda-site/blob/master/_views/functions/css-modules.tt "
+"gelesen, und diese Funktion wird oben im [Quelltext der englischen Version "
+"dieser Seite](https://github.com/gflohr/qgoda-site/blame/master/)[@ asset."
+"relpath @]) relativ weit oben eingebunden."
 
 #: ../en/news/index.md:6
 msgctxt "readMore"
