@@ -1,4 +1,5 @@
 ---
+draft: 1
 title: Client-Side Syntax Highlighting
 name: client side syntax-highlighting
 view: docs.html
@@ -75,12 +76,11 @@ if (options.debug) {
 <!--/QGODA-NO-XGETTEXT-->
 
 There is a caveat, though. Qgoda's default Markdown processor
-[Text::Markdown]() does not support fenced code blocks with a language specifier.
+[Text::Markdown](https://metacpan.org/release/Text-Markdown) does not support fenced code blocks with a language specifier.
 It erroneously interprets it as part of the code.  You can therefore only
 use the language specifier, when you use `Text::Markdown::Hoedown` as your
 markdown  processor.
 
-<!--QGODA-NO-XGETTEXT-->
 [@ WRAPPER components/infobox.html
            type='info' title='Compatibility Note!' @]
 <p>There are plans to replace <a href="https://metacpan.org/release/Text-Markdown">
@@ -91,7 +91,6 @@ see
 <a href="https://github.com/gflohr/qgoda/issues/55">https://github.com/gflohr/qgoda/issues/55</a>.
 <code>Text::MultiMarkdown</code> supports fenced code blocks with a language specifier.
 [@ END @]
-<!--/QGODA-NO-XGETTEXT-->
 
 ## Syntax-Highlighting With PrismJS
 
@@ -146,9 +145,6 @@ That will change the style to the "coy" theme.
 
 In order to save memory and band-width, PrismJS does not load all of its highlighters
 and plug-ins automatically but you have to explicitely specify them.
-
-PrismJS also has a lot of useful plug-ins. The code and styles for them also have to
-be loaded explicitely.
 
 The complete example below would load support for highlighting JavaScript and also
 load the `line-numbers` plug-in that uses CSS to prepend every line with a line
@@ -276,7 +272,7 @@ that you specified for `USE` and those for `FILTER`.
 
 If you want to disable a certain CSS class for an
 individual `FILTER`, just pass the class name with a
-hyphen prepended:
+minus sign (-) prepended:
 
 <!--QGODA-NO-XGETTEXT-->
 [@ FILTER $Highlight "language-tt2" "line-numbers" css.prism.line_numbers @]
@@ -302,7 +298,7 @@ code block or the qgoda highlighter plug-in without a language specification,
 PrismJS will not highlight the code block. This will be fixed in a later
 version of the highlighter plug-in (see https://github.com/gflohr/qgoda-plugin-tt2-highlight/issues
 and https://github.com/gflohr/qgoda/issues/51). Until then, you either have to
-mark every code block as language "none" (or with the class "language-none") or
+mark every affected code block as language "none" (or with the class "language-none") or
 you have to resort to a little bit of JavaScript:
 
 <!--QGODA-NO-XGETTEXT-->
@@ -341,5 +337,5 @@ You can see how this is done in the
 The BEM-style class name is stored in the variable `css.prism.line_numbers`. The hash
 containing that variable is read in
 https://github.com/gflohr/qgoda-site/blob/master/_views/functions/css-modules.tt
-and that file is included at the top of
+and that function is included at the top of
 [source code of this page](https://github.com/gflohr/qgoda-site/blame/master/[@ asset.relpath @]).
