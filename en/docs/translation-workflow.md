@@ -59,7 +59,7 @@ It is also assumed that you have read the chapters
 translate.
 
 The minimal configuration you need are the variables `C:linguas` and
-`C:po.textdomain`. Put something like this into `F:_config.yaml`:
+`C:po.textdomain`. Put something like this into `P:_config.yaml`:
 
 ```yaml;line-numbers
 linguas:
@@ -107,7 +107,7 @@ first translation file! See
 
 ### Creating the POTFILES
 
-The subdirectory `F:_po` will later contain everything that is needed for
+The subdirectory `P:_po` will later contain everything that is needed for
 translating your site. The file `_po/POTFILES` should contain a list of files
 that have translatable strings. You can create it by hand or easier like
 this:
@@ -135,7 +135,7 @@ Resolving deltas: 100% (4/4), done.
 ```
 
 As you can see in line 5 a git repository with the necessary infrastructure
-is cloned.  All files reside in the directory `F:_po`. The file `_po/POTFILES`
+is cloned.  All files reside in the directory `P:_po`. The file `_po/POTFILES`
 will contain a list of files that can potentially contain translatable strings.
 
 There are two more "POTFILES":
@@ -172,7 +172,7 @@ don't see an error message.
 
 While setting up i18n and then whenever you add a language to your site
 you have to initialize a `.po` file for that language and add it to the
-configuration variable `C:linguas` in `F:_config.yaml`:
+configuration variable `C:linguas` in `P:_config.yaml`:
 
 ```yaml
 linguas:
@@ -304,8 +304,8 @@ $ qgoda po install
 [info] copy “de.gmo” to “/path/to/your/site/LocaleData/de/LC_MESSAGES/com.example.www.mo”
 ```
 
-The directory `F:LocaleData` contains the compiled translations. You should
-add it to the [files to be excluded]([@ q.lanchor('excluding-files') @]) by
+The directory `P:LocaleData` contains the compiled translations. You should
+add it to the [files to be excluded]([@ q.lanchor(name='excluding-files') @]) by
 Qgoda.
 
 The next time you rebuild your site with `qgoda watch` or `qgoda build`

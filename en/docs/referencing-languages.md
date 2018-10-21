@@ -9,11 +9,11 @@ description: Referencing some document in a particular language or the current d
 [% TAGS [@ @] %]
 Since the `V:asset.lingua` variable is just a taxonomy, referencing a particular document in a certain language is just a matter of adding the language to the [filter]([@ q.llink(name='filters') @]) set you are using.
 
-That means that language links are just a special case of [@ q.lanchor(name="listings-and-links") @]. Read there for the full picture. This page just outlines the general idea.
+That means that language links are just a special case of [@ q.lanchor(name="listings") @]. Read there for the full picture. This page just outlines the general idea.
 
 ## Listings and Links for the Current Language ("l-methods")
 
-All methods of the [Qgoda plug-in]([@ q.llink(name='qgoda-plug-in') @]) that take a set of filters as an argument have a corresponding version with the letter "l" prepended to the name that automatically adds a [filter]([@ q.llink(name='filter') @]) for the current language.
+All methods of the [Qgoda plug-in]([@ q.llink(name='qgoda-plug-in') @]) that take a set of filters as an argument have a corresponding version with the letter "l" prepended to the name that automatically adds a [filter]([@ q.llink(name='filters') @]) for the current language.
 
 Example:
 
