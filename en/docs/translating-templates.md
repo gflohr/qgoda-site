@@ -123,6 +123,14 @@ Do this instead:
             link2 = 'http://www.b.com') %]
 ```
 
+## Missing Translations
+
+What if a certain string has not been 
+[translated]([@ q.llink(name='translation-workflow') @]) yet? The gettext way of
+handling that situation is to use the original string, that is the string
+in the main language of your site. That's not perfect but better than nothing
+and you can always remedy it by providing a translation.
+
 ## Troubleshooting
 
 A very common problem is that `gtx.gettext()` seems to return an empty string. The reason is almost always that you have forgotten to activate the `Gettext` plug-in. See [above](#activating-the-plug-in) how to fix that.

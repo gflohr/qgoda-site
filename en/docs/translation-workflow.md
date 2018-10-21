@@ -146,6 +146,17 @@ file names here, so that their strings get automatically translated, too.
 be translated if you also want to translate your content with PO files.
 See [@ q.lanchor(name='po-translations') @] for more information..
 
+[@ WRAPPER components/infobox.html
+           type='info' title='Use a Makefile' @]
+You may have noticed that Qgoda has also created a
+<code>Makefile</code> for all the `make` aficionados
+out there (like me). You can <code>cd</code> into
+<code>_po</code> and type <code>make</code> to see
+all the targets that the Makefile supports. You are,
+however, on your own creating the various `POTFILES`,
+pull requests welcome!
+[@ END @]
+
 ### Creating the PO Template (`.pot`) File
 
 The master translation catalog is stored as a so-called PO template 

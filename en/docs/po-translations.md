@@ -112,6 +112,13 @@ document, you can create references between them. If you translate it, the
 mechanism will fail.
 [@ END @]
 
+## Missing Translations
+
+What if a certain string has not been 
+[translated]([@ q.llink(name='translation-workflow') @]) yet? The gettext way of
+handling that situation is to use the original string, that is the string
+in the main language of your site. That's not perfect but better than nothing
+and you can always remedy it by providing a translation.
 
 ## What Else?
 

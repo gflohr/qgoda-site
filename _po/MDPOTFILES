@@ -11,6 +11,7 @@
 ../en/docs/basics.md
 ../en/docs/command-line-interface.md
 ../en/docs/configuration-variables.md
+../en/docs/defaults.md
 ../en/docs/differences-to-jekyll.md
 ../en/docs/excluding-files.md
 ../en/docs/faq.md
@@ -19,7 +20,6 @@
 ../en/docs/index.md
 ../en/docs/installation.md
 ../en/docs/introduction.md
-../en/docs/language-copies.md
 ../en/docs/listings.md
 ../en/docs/lists-and-indices.md
 ../en/docs/miscellaneous.md
@@ -34,12 +34,13 @@
 ../en/docs/qgoda-plug-in.md
 ../en/docs/referencing-languages.md
 ../en/docs/related-documents.md
+../en/docs/simple-content-translation.md
 ../en/docs/table-of-contents.md
 ../en/docs/taxonomies.md
 ../en/docs/template-variables.md
 ../en/docs/terms-and-concepts.md
 ../en/docs/translating-templates.md
+../en/docs/translation-workflow.md
 ../en/index.md
 ../en/legal-disclosure.md
-../en/news/client-side-syntax-highlighting.md
 ../en/news/index.md
