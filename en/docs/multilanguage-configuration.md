@@ -48,19 +48,19 @@ The copyright holder of the original content. The variable is optional.
 
 ### `po.reload`
 
-Set to 1 if you want translations to be visible immediately after they have been compiled into `.mo` files.
+Set to 1 if you want translations to be immediately visible after they have been compiled into `.mo` files.
 
 Normally translations are loaded only, when Qgoda starts and then cached. Setting `C:po.reload` to 1 results in a little performance penalty but may be useful while you are translating the site.
 
 ### `po.md_extra`
 
-A list of [file name patterns]([% q.llink(name='pattern-lists') %]) for additional markdown files. By default, all documents with front matter are potentially considered translatable. If your site has other markdown files that should also be searched, you can list them here.
+A list of [file name patterns]([@ q.llink(name='pattern-lists') @]) for additional markdown files. By default, all documents with front matter are potentially considered translatable. If your site has other markdown files that should also be searched, you can list them here.
 
 This variable is optional and rarely used. 
 
 ### `po.views`
 
-A list of [file name patterns]([% q.llink(name='pattern-lists') %]) for template files to search for translatable strings. It defaults to just `P:_views` or whatever the configuration variable `C:path.views` points to.
+A list of [file name patterns]([@ q.llink(name='pattern-lists') @]) for template files to search for translatable strings. It defaults to just `P:_views` or whatever the configuration variable `C:path.views` points to.
 
 ### `po.xgettext_tt2`
 
@@ -88,7 +88,7 @@ The character set of your content, defaults to `utf-8`. Setting this variable to
 
 ## Configuring the Document Language
 
-Qgoda has to know which language a particular document is written in. This mean in practice that you have to set the `V:asset.lingua` to an appropriate value, that is a language identifier complying to [RFC4647 section 2.1](https://tools.ietf.org/html/rfc4647#section-2.1) but without any asterisk (`*`) characters.
+Qgoda has to know which language a particular document is written in. This means in practice that you have to set the `V:asset.lingua` to an appropriate value, that is a language identifier complying to [RFC4647 section 2.1](https://tools.ietf.org/html/rfc4647#section-2.1) but without any asterisk (`*`) characters.
 
 You have several options to set `V:asset.lingua`:
 
@@ -117,11 +117,11 @@ defaults:
       lingua: en
 ```
 
-This would set `V:asset.lingua` to `en` for all files in the top-level directory `/en` and addtionally for all files that have names ending in `.en.md`. See [% q.lanchor(name='defaults') %] and [% q.lanchor('pattern-lists') %] for more information.
+This would set `V:asset.lingua` to `en` for all files in the top-level directory `/en` and addtionally for all files that have names ending in `.en.md`. See [@ q.lanchor(name='defaults') @] and [@ q.lanchor(name='pattern-lists') @] for more information.
 
 ## Language-Independent Identifier `asset.name`
 
-All language variants of the same content should share a common property that acts as a link between them. Although you are free to use any vbariable name that you like, `V:asset.name` is used throughout this documentation.
+All language variants of the same content should share a common property that acts as a link between them. Although you are free to use any variable name you like, `V:asset.name` is used throughout this documentation.
 
 For obvious reasons, this identifier will always be configured in the document front matter.
 
@@ -159,9 +159,88 @@ And you can link from other documents to the document about Einstein's special r
 See [% q.anchor(name='special-relativity' lingua=asset.lingua) %]!
 ```
 
-See [@ q.lanchor(name='referencing-languages') @] if that does not make sense to you, or if you are looking for a more concise version.
+And since you almost always want to link to documents in the same language as the current one, there is a shortcut version for the above:
+
+```tt2
+See [% q.lanchor(name='special-relativity') %]!
+```
+
+By using `M:q.lanchor()` instead of `M:q.anchor()` you can omit the `lingua` parameter as it is implied. See [@ q.lanchor(name='referencing-languages') @] for more information about this.
 
 ## File and Directory Structure
+
+There are many different conventions for the directory structure and the file names on internationalized sites:
+
+* You can use per-language top-level directories like `/en`, `/de`, `/fr` and
+  so on. This is a simple and robust approach.
+* Especially, when you are doing [content negotiation](#content-negotiation) with the [apache](http://httpd.apache.org/), web server you may consider encoding the language into the filename.  You would then not name your documents `index.html` but for example `index.html.en` or even `index.en.html`.
+* You can also make do with encoding the language into the filename or directory of the output document. Qgoda will assist you with this approach by issuing a warning if one document overwrites another.
+
+## The Home Page
+
+In a multilingual site, every document can be available in one or more languages. Unfortunately, there is only one `/index.html` and therefore the sites home page or start page can exist in only one language.
+
+One way to solve this problem is to use your site's default language for `/index.html`.  But there are smarter options:
+
+You can use JavaScript to determine the user's preferred language and redirect them:
+
+```html;line-numbers
+---
+location: index.html
+view: raw
+---
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Qgoda Static Site Generator</title>
+  </head>
+  <body>
+<script>
+    var lingua,
+        default_lingua = '[% config.linguas.0 %]',
+        supported = {};
+    [% FOREACH lingua IN config.linguas %]
+        supported['[% lingua %]'] = true;
+    [% END %]
+
+    for (i = 0;  
+         navigator.languages != null && i < navigator.languages.length; 
+         ++i) {
+        var lang = navigator.languages[i].substr(0, 2);
+        if (supported[lang]) {
+            lingua = lang;
+        }
+    }
+
+    if (lingua == null) {
+        lingua = navigator.language || navigator.userLanguage;
+        if (lingua != null) {
+            lingua = lingua.substr(0, 2);
+        }
+    }
+
+    if (!supported[lingua])
+        lingua = default_lingua;
+
+    // This is based on the assumption that the start URI for language 'xy'
+    // is '/xy'. Change that to your needs!
+    document.location.href = '/' + lingua + '/';
+    </script>
+    <noscript>
+<p>Please select your preferred language:</p>
+<ul>
+[% FOREACH lingua IN config.linguas %]
+  <li><a href="/[% lingua %]/">[% lingua %]</a></li>
+[% END %]
+</ul>
+    </noscript>
+  </body>
+</html>
+```
+
+The above code assumes that you have top-level per-language directories like `/en/`, `/fr/`, and so on. If you choose a different directory layout, you have to change the link targets in lines 40 and 46 accordingly.
+
+The best solution is to let the server redirect the user to their preferred language. Read on about content negotiation below.
 
 ## Content Negotiation
 

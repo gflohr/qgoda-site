@@ -21,7 +21,7 @@ Before you can use translation functions, you have to activate the plug-in:
 
 This is done with the `USE` directive which takes two arguments. the The first argument is the so-called *textdomain*, an arbitrary string identifying your translation database.  The second one is the language of the file.  This is usually stored in the document property `V:lingua`.
 
-It is usually better to store the textdomain in the configuration variable `C:po.textdomain` instead of hard-coding it into every template:
+Since you must always store your textdomain in the configuration variable `C:po.textdomain`, you can use the value of that variable instead of hard-coding the textdomain:
 
 ```tt2
 [% USE gtx = Gettext(config.po.textdomain, asset.lingua) %]
@@ -61,7 +61,7 @@ The recommended way to translate such strings uses the function `gtx.xgettext()`
 
 ```tt2
 <small>[% gtx.xgettext('Written by {author} ({organization})',
-                       author=asset.author
+                       author = asset.author
                        organization = asset.organization) %]</small>
 ```
 
@@ -116,7 +116,7 @@ This gives your translators a hard time, and sometimes it will not be possible a
 
 Do this instead:
 
-```
+```tt2
 [% xgettext('See the documentation at <a href="{link1}">A</a>
              or <a href="{link2}">B</a> for more information!',
             link1 = 'http://www.a.com',

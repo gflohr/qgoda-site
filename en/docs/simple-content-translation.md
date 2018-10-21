@@ -1,6 +1,6 @@
 ---
-title: Language Copies
-name: language-copies 
+title: Simple Content Translation
+name: simple-content-translation 
 section: multilanguage
 view: docs.html
 description: Documents that are typically written once and then never touched again can simply be copied and translated as a whole.
@@ -22,8 +22,8 @@ Alternatively, you can let Qgoda split the content of a document into smaller pa
 [@ WRAPPER components/infobox.html
            title="Switching to PO-Based Translations" @]
 <p>
-Just copying a markdown file and getting it translated is simple in the begin but can turn into a maintainance nightmare if you have to change the original later. In this case translators will have to figure out what has changed and update translations accordingly.
+Just copying a markdown file and getting it translated is simple in the beginning but can turn into a maintainance nightmare if you have to change the original later. In this case translators will have to figure out what has changed and update translations accordingly.
 </p><p>
-Unfortunately, there is no way how you can easily change plans, once you have done the translation. 
+Unfortunately, there is no way how you can easily change plans, once you have done the translation. If you are uncertain, you should really check the advanced variant using [@ q.lanchor(name = 'po-translations') @].
 </p>
 [@ END @]

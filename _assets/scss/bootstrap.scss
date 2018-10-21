@@ -20,3 +20,17 @@ $warning-opaque: rgba(217, 115, 25, 0.75);
 .figure img {
     width: 100%;
 }
+
+code {
+    background-color: #f5f2f0;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+}
+
+pre {
+    code {
+        background-color: white;
+        //padding-left: inherit;
+        //padding-right: inherit;
+    }
+}

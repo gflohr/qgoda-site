@@ -6,11 +6,12 @@ doc:
        'command-line-interface' ]
     - ['basics', 
        'taxonomies', 'listings', 'filters', 'related-documents',
-        'output-location', 'excluding-files', 'table-of-contents' ]
+        'output-location', 'excluding-files', 'defaults', 'table-of-contents' ]
     - ['multilanguage', 
        'multilanguage-overview', 'multilanguage-configuration',
-       'translating-templates', 'language-copies',
-       'referencing-languages', 'translation-workflow', 'po-translations' ]
+       'translating-templates', 'simple-content-translation',
+       'referencing-languages', 'translation-workflow',
+       'po-translations' ]
     - ['miscellaneous', 
        'differences-to-jekyll' ]
     - ['lists-and-indices', 

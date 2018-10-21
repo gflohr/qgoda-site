@@ -21,8 +21,6 @@ The variable `V:asset.lingua` should contain the language code of the document i
 
 You also need a variable that is common across language copies, so that you can [reference]([@ q.llink(name = 'referencing-languages')  @]) the same document in another language.  You are free to use another variable than `V:asset.name` (what about `id`?) but `V:asset.name` is used throughout this documentation.
 
-Before you start internationalizing your site, read which [configuration]([@ q.llink(name = 'multilanguage-configuration') @]) is necessary.
-
 ## Template Texts
 
 Common texts in templates are translated with [Template::Plugin::Gettext](https://github.com/gflohr/Template-Plugin-Gettext) an internationalization plug-in for the [Template Toolkit](http://www.template-toolkit.org/).

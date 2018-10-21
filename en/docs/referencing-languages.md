@@ -11,7 +11,7 @@ Since the `V:asset.lingua` variable is just a taxonomy, referencing a particular
 
 ## Listings and Links for the Current Language ("l-methods")
 
-All methods of the [Qgoda plug-in]([@ q.llink(name='qgoda-plug-in') @]) that take a set of filters as an argument have a corresponding version with the letter "l" prepended to the name that automatically adds a filter for the current language.
+All methods of the [Qgoda plug-in]([@ q.llink(name='qgoda-plug-in') @]) that take a set of filters as an argument have a corresponding version with the letter "l" prepended to the name that automatically adds a [filter]([@ q.llink(name='filter') @]) for the current language.
 
 Example:
 
@@ -41,8 +41,6 @@ And since this is such a common task, you can just use the method `q.llist` (thi
 ```
 
 So in the end, a multi-language site requires just a single letter more of template code.
-
-So, in [@ q.lanchor(name='listings') @] and [@ q.lanchor(name='qgoda-plug-in') @] you just have to replace the regular methods with their respective "l-versions" in order to restrict the result to the current language.
 
 ## Language Overviews
 
