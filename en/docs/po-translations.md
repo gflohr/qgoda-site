@@ -104,6 +104,15 @@ There is no problem specifying variables that don't appear in every one of
 your documents. List entries that don't exist for a particular document are
 simply ignored.
 
+[@ WRAPPER components/infobox.html
+           type='warning' title='Do <em>not</em> translate <code>V:asset.name</code>!' @]
+The variable <code>V:asset.name</code> is the constant link between language
+versions. By assigning the same value to it for every language version of the
+document, you can create references between them. If you translate it, the
+mechanism will fail.
+[@ END @]
+
+
 ## What Else?
 
 Nothing! It's as simple as that. Just set the
