@@ -3,7 +3,7 @@ title: Defaults
 name: defaults
 section: basics
 view: docs.html
-description: How to set default values for multiple documents at once
+description: How to set default values for multiple documents at once.
 ---
 Variables like `V:asset.title` or `V:asset.description`
 are usually specific to just one document. But you 
@@ -14,7 +14,7 @@ reside in.
 Such default values can be set with the configuration
 variable `C:defaults` in `P:_config.yaml` using the 
 powerful syntax of
-[pattern lists]([% q.llink(name='patter-lists') %]).
+[pattern lists]([% q.llink(name='pattern-lists') %]).
 
 The default values are just used for initialization.
 You can always override them in the document 
@@ -26,10 +26,12 @@ one for each matching document.
 
 Each rule is a *hash* with the two keys `files` and
 `values`. With `files` you specify the matching
-documents, with values, the values you want to set for
+documents, with `values`, the values you want to set for
 them.
 
 Example:
+
+<!--QGODA-NO-XGETTEXT-->
 
 ```yaml;line-numbers
 defaults:
@@ -42,12 +44,16 @@ defaults:
         translate: ['title', 'description']
 ```
 
+<!--/QGODA-NO-XGETTEXT-->
+
 The value for `files` specifies the pattern, in
 `values` you set the default values for arbitrary
 variables.
 
 You can also specify multiple patterns in `files`,
 simply by specifying an array instead of a single value:
+
+<!--QGODA-NO-XGETTEXT-->
 
 ```yaml;line-numbers
 defaults:
@@ -58,6 +64,8 @@ defaults:
       values:
         type: listing
 ```
+
+<!--/QGODA-NO-XGETTEXT-->
 
 The above example would set the default value for `type`
 to "listing" for all files that match `index.*` and

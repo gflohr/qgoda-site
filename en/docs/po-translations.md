@@ -33,7 +33,7 @@ There is no way to get the translation from the translated markdown file into a
 
 ## Trigger Documents
 
-The central idea of content inernationalization inQgoda are so-called trigger documents.  They have no content 
+The central idea of content inernationalization in Qgoda are so-called trigger documents.  They have no content 
 but only <q-term>front matter</q-term>:
 
 ```yaml

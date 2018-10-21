@@ -304,7 +304,7 @@ are *not* used until the fuzzy mark is removed from them. See the documentation
 of your PO editor for more information.
 [@ END @]
 
-### Install the Translation
+### Install the Translations
 
 The last step is to install and use the translation:
 

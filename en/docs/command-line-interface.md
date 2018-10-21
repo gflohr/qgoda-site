@@ -57,36 +57,52 @@ The command help is displayed using the system pager.  Hit the letter `q` to lea
 
 ### Availabe Commands
 
+<!--QGODA-NO-XGETTEXT-->
 #### build
+<!--/QGODA-NO-XGETTEXT-->
 
 The commands `build` instructs qgoda to build the site and exit.  Helper programs are *not* executed!
 
+<!--QGODA-NO-XGETTEXT-->
 #### watch
+<!--/QGODA-NO-XGETTEXT-->
 
 Same as `build` above but instead of terminating, qgoda watches the file system for changes and triggers a re-build after a source file has changed.
 
 Helper applications are started in parallel.
 
+<!--QGODA-NO-XGETTEXT-->
 #### config
+<!--/QGODA-NO-XGETTEXT-->
 
 Dumps the current configuration as <q-term>yaml:YAML</q-term> and exits.  The configuration printed is the result of merging the default configuration with the files `P:_config.yaml` and `P:_localconfig.yaml`.
 
+<!--QGODA-NO-XGETTEXT-->
 #### init
+<!--/QGODA-NO-XGETTEXT-->
 
 Initializes a new qgoda site.
 
+<!--QGODA-NO-XGETTEXT-->
 #### dump
+<!--/QGODA-NO-XGETTEXT-->
 
 Dumps the content of the entire site.  The output is suitable for pumping it into external programs (for example full-text search engines like [elasticsearch](https://www.elastic.co/).
 
+<!--QGODA-NO-XGETTEXT-->
 #### markdown
+<!--/QGODA-NO-XGETTEXT-->
 
 Generates <q-term>html</q-term> from a <q-term>markdown</q-term> file.  This is meant for debugging problems with markdown rendering.
 
+<!--QGODA-NO-XGETTEXT-->
 #### po
+<!--/QGODA-NO-XGETTEXT-->
 
 Various commands needed for multi-language sites.  See [% q.lanchor('mulit-language-overview') %] for details.
 
+<!--QGODA-NO-XGETTEXT-->
 #### xgettext
+<!--/QGODA-NO-XGETTEXT-->
 
 Extracts translatable snippets from the site's markdown source files into `.po`. files.  This command is invoked implicitely by `qgoda po pot` (see above), and you normally don't have to use `qgoda xgettext` directly.  See [% q.lanchor('mulit-language-overview') %] for more information.

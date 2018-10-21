@@ -50,7 +50,7 @@ And since this is such a common task, you can just use the method `q.llist` (thi
 
 So in the end, a multi-language site requires just a single letter more of template code.
 
-## Language Overviews
+## Language Switches
 
 Another common tasks is to create a list of all language variants of a particular document. That can be achieved like this:
 

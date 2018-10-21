@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qgoda-site 0.1\n"
 "Report-Msgid-Bugs-To: 'Guido Flohr <guido.flohr@cantanea.com>'\n"
-"PO-Revision-Date: 2018-10-18 12:33+0300\n"
+"PO-Revision-Date: 2018-10-21 22:25+0300\n"
 "Last-Translator: Guido Flohr <guido.flohr@cantanea.com>\n"
 "Language-Team: German\n"
 "Language: de\n"
@@ -70,8 +70,6 @@ msgid "Copyright &copy; {copyright_year} {copyright_holder}"
 msgstr "Copyright &copy; {copyright_year} {copyright_holder}"
 
 #: ../_views/partials/body/sidebar-top.html:9
-#, fuzzy
-#| msgid "Star gflohr/qgoda on GitHub"
 msgid "Star qgoda on GitHub"
 msgstr "Stern für Qgoda auf GitHub vergeben"
 
@@ -641,87 +639,53 @@ msgstr ""
 msgid "### Availabe Commands"
 msgstr ""
 
-#: ../en/docs/command-line-interface.md:60
-msgid "#### build"
-msgstr ""
-
-#: ../en/docs/command-line-interface.md:62
+#: ../en/docs/command-line-interface.md:64
 msgid ""
 "The commands `build` instructs qgoda to build the site and exit.  Helper "
 "programs are *not* executed!"
 msgstr ""
 
-#: ../en/docs/command-line-interface.md:64
-msgid "#### watch"
-msgstr "#### watch"
-
-#: ../en/docs/command-line-interface.md:66
+#: ../en/docs/command-line-interface.md:70
 msgid ""
 "Same as `build` above but instead of terminating, qgoda watches the file "
 "system for changes and triggers a re-build after a source file has changed."
 msgstr ""
 
-#: ../en/docs/command-line-interface.md:68
+#: ../en/docs/command-line-interface.md:72
 msgid "Helper applications are started in parallel."
 msgstr ""
 
-#: ../en/docs/command-line-interface.md:70
-#, fuzzy
-msgid "#### config"
-msgstr "Konfigurations-Variablen"
-
-#: ../en/docs/command-line-interface.md:72
+#: ../en/docs/command-line-interface.md:78
 msgid ""
 "Dumps the current configuration as <q-term>yaml:YAML</q-term> and exits.  "
 "The configuration printed is the result of merging the default configuration "
 "with the files `P:_config.yaml` and `P:_localconfig.yaml`."
 msgstr ""
 
-#: ../en/docs/command-line-interface.md:74
-#, fuzzy
-msgid "#### init"
-msgstr "### Auflistungen"
-
-#: ../en/docs/command-line-interface.md:76
+#: ../en/docs/command-line-interface.md:84
 msgid "Initializes a new qgoda site."
 msgstr ""
 
-#: ../en/docs/command-line-interface.md:78
-msgid "#### dump"
-msgstr ""
-
-#: ../en/docs/command-line-interface.md:80
+#: ../en/docs/command-line-interface.md:90
 msgid ""
 "Dumps the content of the entire site.  The output is suitable for pumping it "
 "into external programs (for example full-text search engines like "
 "[elasticsearch](https://www.elastic.co/)."
 msgstr ""
 
-#: ../en/docs/command-line-interface.md:82
-msgid "#### markdown"
-msgstr ""
-
-#: ../en/docs/command-line-interface.md:84
+#: ../en/docs/command-line-interface.md:96
 msgid ""
 "Generates <q-term>html</q-term> from a <q-term>markdown</q-term> file.  This "
 "is meant for debugging problems with markdown rendering."
 msgstr ""
 
-#: ../en/docs/command-line-interface.md:86
-msgid "#### po"
-msgstr ""
-
-#: ../en/docs/command-line-interface.md:88
+#: ../en/docs/command-line-interface.md:102
 msgid ""
 "Various commands needed for multi-language sites.  See [% q.lanchor('mulit-"
 "language-overview') %] for details."
 msgstr ""
 
-#: ../en/docs/command-line-interface.md:90
-msgid "#### xgettext"
-msgstr ""
-
-#: ../en/docs/command-line-interface.md:92
+#: ../en/docs/command-line-interface.md:108
 msgid ""
 "Extracts translatable snippets from the site's markdown source files into `."
 "po`. files.  This command is invoked implicitely by `qgoda po pot` (see "
@@ -872,7 +836,6 @@ msgstr ""
 "[%- END %]"
 
 #: ../en/docs/configuration-variables.md:58
-#, fuzzy
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"po\" type='Hash' \n"
@@ -1081,14 +1044,6 @@ msgid ""
 "contents of the configuration variable <code>C:exclude</code>.\n"
 "[%- END %]"
 msgstr ""
-"[% WRAPPER components/variable.html\n"
-"   variable=\"scm\" type='String' \n"
-"   default='none' -%]\n"
-"Source Code Management (SCM) system in use.  The only supported variable at "
-"the moment is \"git\".  That has the effect that only files under version "
-"control are processed.  This check is done *after* filtering with the "
-"contents of the configuration variable <code>C:exclude</code>.\n"
-"[%- END %]"
 
 #: ../en/docs/configuration-variables.md:136
 msgid ""
@@ -1110,16 +1065,14 @@ msgstr ""
 "[%- END %]"
 
 #: ../en/docs/defaults.md:2
-#, fuzzy
-#| msgid "default:"
 msgctxt "title"
 msgid "Defaults"
-msgstr "Vorgabewert:"
+msgstr "Defaults"
 
 #: ../en/docs/defaults.md:6
 msgctxt "description"
-msgid "How to set default values for multiple documents at once"
-msgstr ""
+msgid "How to set default values for multiple documents at once."
+msgstr "Vorgabewerte für mehrere Dokumente auf einmal setzen."
 
 #: ../en/docs/defaults.md:8
 msgid ""
@@ -1129,14 +1082,23 @@ msgid ""
 "documents based on their file name or the directory they\n"
 "reside in."
 msgstr ""
+"Variablen wie `V:asset.title` oder `V:asset.description`\n"
+"sind gewöhnlich spezfisch für genau ein Dokument. Oftmals aber\n"
+"will man Variablen für eine ganze Gruppe von Dokumenten setzen,\n"
+"entweder für bestimmte Dateinamensmuster oder Verzeichnisse."
 
 #: ../en/docs/defaults.md:14
 msgid ""
 "Such default values can be set with the configuration\n"
 "variable `C:defaults` in `P:_config.yaml` using the \n"
 "powerful syntax of\n"
-"[pattern lists]([% q.llink(name='patter-lists') %])."
+"[pattern lists]([% q.llink(name='pattern-lists') %])."
 msgstr ""
+"Solche Vorgabewerte können mit der Konfigurationsvariablen\n"
+"`C:defaults` in `P:_config.yaml` gesetzt werden, wobei man die\n"
+"mächtige Syntax der\n"
+"[Suchmusterlisten]([% q.llink(name='patter-lists') %]) zur Verfügung\n"
+"hat."
 
 #: ../en/docs/defaults.md:19
 msgid ""
@@ -1144,6 +1106,9 @@ msgid ""
 "You can always override them in the document \n"
 "<q-term>front matter</q-term>."
 msgstr ""
+"Die Vorgabewerte werden lediglich für die Initialisierung verwendet.\n"
+"Sie können jederzeit in der \n"
+"<q-term>Titelei</q-term> des Dokuments überschrieben werden."
 
 #: ../en/docs/defaults.md:23
 msgid ""
@@ -1151,14 +1116,22 @@ msgid ""
 "array) that contains rules that are processed one by\n"
 "one for each matching document."
 msgstr ""
+"Die Konfigurationsvariable `C:defaults` ist eine Liste (ein Array) von "
+"Regeln,\n"
+"die nach und nach für jedes passende Dokument abgearbeitet werden."
 
 #: ../en/docs/defaults.md:27
 msgid ""
 "Each rule is a *hash* with the two keys `files` and\n"
 "`values`. With `files` you specify the matching\n"
-"documents, with values, the values you want to set for\n"
+"documents, with `values`, the values you want to set for\n"
 "them."
 msgstr ""
+"Jede Regel ist ein *Hash* mit den beiden Schlüsseln\n"
+"`files` (Dateien) und `values` (Werte). In `files` werden die passenden\n"
+"Dokumente angegeben und mit `values` die Werte, die für diese Schlüssel "
+"gesetzt\n"
+"werden sollen."
 
 #: ../en/docs/defaults.md:32 ../en/docs/excluding-files.md:19
 #: ../en/docs/excluding-files.md:75 ../en/docs/excluding-files.md:108
@@ -1167,47 +1140,24 @@ msgstr ""
 msgid "Example:"
 msgstr "Beispiel:"
 
-#: ../en/docs/defaults.md:34
-msgid ""
-"```yaml;line-numbers\n"
-"defaults:\n"
-"    - files: /en\n"
-"      values:\n"
-"        lingua: en\n"
-"    - files: /de\n"
-"      values:\n"
-"        lingua: de\n"
-"        translate: ['title', 'description']\n"
-"```"
-msgstr ""
-
-#: ../en/docs/defaults.md:45
+#: ../en/docs/defaults.md:49
 msgid ""
 "The value for `files` specifies the pattern, in\n"
 "`values` you set the default values for arbitrary\n"
 "variables."
 msgstr ""
+"Der Wert für `files` bestimmt das Suchmuster, der für\n"
+"`values` den Vorgabwert für beliebige Variablen."
 
-#: ../en/docs/defaults.md:49
+#: ../en/docs/defaults.md:53
 msgid ""
 "You can also specify multiple patterns in `files`,\n"
 "simply by specifying an array instead of a single value:"
 msgstr ""
+"Es können auch mehrere Suchmuster für `files` spezifiziert werden, indem\n"
+"einfach ein Array (eine Liste) statt eines Einzelwerts angegeben wird."
 
-#: ../en/docs/defaults.md:52
-msgid ""
-"```yaml;line-numbers\n"
-"defaults:\n"
-"    - files:\n"
-"        - index.*\n"
-"        - listing.*\n"
-"        - '!/index.md'\n"
-"      values:\n"
-"        type: listing\n"
-"```"
-msgstr ""
-
-#: ../en/docs/defaults.md:62
+#: ../en/docs/defaults.md:70
 msgid ""
 "The above example would set the default value for `type`\n"
 "to \"listing\" for all files that match `index.*` and\n"
@@ -1215,6 +1165,12 @@ msgid ""
 "[% q.lanchor(name='pattern-lists') %] for all the gory\n"
 "details of file name pattern matching."
 msgstr ""
+"Mit dem obigen Beispiel würde der Vorgabewert für `type`\n"
+"für alle Dateien, die auf  `index.*` oder `listing.*` passen auf \"listing"
+"\"\n"
+"gesetzt. mit Ausnahme der Datei `/index.md`. Siehe das Kapitel\n"
+"[% q.lanchor(name='pattern-lists') %] für alle Details von Suchmustern\n"
+"für Dateinamen und Verzeichnisse."
 
 #: ../en/docs/differences-to-jekyll.md:2
 msgctxt "title"
@@ -1302,11 +1258,6 @@ msgstr ""
 "aus:"
 
 #: ../en/docs/differences-to-jekyll.md:41
-#, fuzzy
-#| msgid ""
-#| "```markup\n"
-#| "See [% q.lanchor(name='listings') %] for more information.\n"
-#| "```"
 msgid ""
 "```tt2\n"
 "See [% q.lanchor(name='listings') %] for more information.\n"
@@ -1495,10 +1446,8 @@ msgstr ""
 "Open-Source-Software."
 
 #: ../en/docs/differences-to-jekyll.md:116
-#, fuzzy
-#| msgid "### Default Values"
 msgid "### Default Ignores"
-msgstr "### Default-Werte"
+msgstr "### Standardmäßig ignorierte Dateien"
 
 #: ../en/docs/differences-to-jekyll.md:118
 msgid ""
@@ -1692,7 +1641,6 @@ msgstr ""
 "vollständige Liste so aussehen:"
 
 #: ../en/docs/excluding-files.md:52
-#, fuzzy
 msgid ""
 "The first two lines exclude files and directories that have names beginning "
 "with a dot (`.`) or top-level files and directories that have names "
@@ -1703,7 +1651,6 @@ msgstr ""
 "Ebene, deren Namen mit einem Untertrich beginnen, aus."
 
 #: ../en/docs/excluding-files.md:54
-#, fuzzy
 msgid ""
 "The last line is always appended and a safe-guard against configuration "
 "errors.  Unintentionally including the output directory `P:_site` would lead "
@@ -1796,7 +1743,6 @@ msgid "## Excluding Files From Being Watched"
 msgstr "## Dateien von der Überwachung im Watch-Modus ausschließen"
 
 #: ../en/docs/excluding-files.md:104
-#, fuzzy
 msgid ""
 "There is another configuration variable `C:exclude_watch` that specifies "
 "files and directories that should not be watched.  If you omit that "
@@ -1863,11 +1809,6 @@ msgid ""
 msgstr ""
 
 #: ../en/docs/faq.md:21
-#, fuzzy
-#| msgid ""
-#| "```markup\n"
-#| "See [% q.lanchor(name='listings') %] for more information.\n"
-#| "```"
 msgid ""
 "```tt2\n"
 "[% USE q = Qgoda %]\n"
@@ -1876,7 +1817,7 @@ msgid ""
 "```"
 msgstr ""
 "```markup\n"
-"Siehe [% q.lanchor(name='listings') %] für weiterführende Informationen!\n"
+"Siehe [% q.lanchor(name='faq') %] für weiterführende Informationen!\n"
 "```"
 
 #: ../en/docs/faq.md:27
@@ -1919,10 +1860,8 @@ msgid ""
 msgstr ""
 
 #: ../en/docs/faq.md:41
-#, fuzzy
-#| msgid "### Data Usage"
 msgid "## General Questions"
-msgstr "## Verwendung der Daten"
+msgstr "## Allgemeine Fragen"
 
 #: ../en/docs/faq.md:43
 msgid "### How is Qgoda pronounced?"
@@ -1933,10 +1872,8 @@ msgid "It is pronounced \"yagoda\" with the stress on the first syllable."
 msgstr ""
 
 #: ../en/docs/faq.md:47
-#, fuzzy
-#| msgid "### What Is Stored?"
 msgid "### What does Qgoda mean?"
-msgstr "### Was wird gespeichert?"
+msgstr "### Was bedeutet eigentlich Qgoda?"
 
 #: ../en/docs/faq.md:49
 msgid ""
@@ -1994,7 +1931,6 @@ msgid ""
 msgstr ""
 
 #: ../en/docs/files-and-directories.md:32
-#, fuzzy
 msgid ""
 "[% WRAPPER components/file.html\n"
 "   name=\"_config.yaml\" type='file' -%]\n"
@@ -2077,7 +2013,7 @@ msgstr ""
 #: ../en/docs/filters.md:2
 msgctxt "title"
 msgid "Filters"
-msgstr ""
+msgstr "Filter"
 
 #: ../en/docs/filters.md:6
 msgctxt "description"
@@ -2085,355 +2021,291 @@ msgid ""
 "Learn how to filter a collection of arguments by taxonomies respectively "
 "document variables."
 msgstr ""
+"Wie sich eine Sammlung an Dokumenten durch Taxonomien beziehungsweise "
+"Dokumentenvariablen filtern lässt."
 
-#: ../en/docs/filters.md:8
+#: ../en/docs/filters.md:13
 msgid ""
-"[% USE q = Qgoda %]\n"
-"[% TAGS [@ @] %]\n"
 "Many template functions of the\n"
 "[Qgoda Plug-in]([@ q.llink(name='qgoda-plug-in') @]) have filters as their\n"
 "argument. Filters allow you to specify a group of documents or even one\n"
 "single document."
 msgstr ""
+"Viele Template-Funktionen des \n"
+"[Qgoda Plug-ins]([@ q.llink(name='qgoda-plug-in') @]) erwarten als Argument\n"
+"Filter. Mit Filtern lassen sich Gruppen von Dokumenten oder auch einzelne\n"
+"Dokumente beschreiben."
 
-#: ../en/docs/filters.md:15
+#: ../en/docs/filters.md:18
 msgid "<qgoda-toc />"
-msgstr ""
+msgstr "<qgoda-toc />"
 
-#: ../en/docs/filters.md:17
+#: ../en/docs/filters.md:20
 msgid "## Filters Are Key-Value Pairs"
-msgstr ""
+msgstr "## Filter sind Schlüssel-Wert-Paare"
 
-#: ../en/docs/filters.md:19
+#: ../en/docs/filters.md:22
 msgid "A typical filter looks like this:"
-msgstr ""
+msgstr "Ein typischer Filter sieht so aus:"
 
-#: ../en/docs/filters.md:21
+#: ../en/docs/filters.md:24
 msgid ""
 "```tt2\n"
 "Read this page in [German]([% q.link(name=asset.name lingua='de') %]). \n"
 "```"
 msgstr ""
+"```tt2\n"
+"Diese Seite auf [Englisch]([% q.link(name=asset.name lingua='en') %]) "
+"lesen. \n"
+"```"
 
-#: ../en/docs/filters.md:25
+#: ../en/docs/filters.md:28
 msgid ""
 "The above snippet calls the template function `M:q.llink()` with two named\n"
 "arguments `name` and `lingua`."
 msgstr ""
+"Der obige Template-Schnipsel ruft die Funktion `M:q.llink()` mit zwei\n"
+"benannten Argumenten `name` und `lingua` auf."
 
-#: ../en/docs/filters.md:28
+#: ../en/docs/filters.md:31
 msgid ""
 "All of these arguments specify conditions that a document must fulfill to\n"
 "pass the filter.  In the above case that would be documents whose `name`\n"
-"variable has the same value as the other document, and the `lingua`\n"
+"variable has the same value as the current document, and the `lingua`\n"
 "variable should have the hard-coded value `de`."
 msgstr ""
+"Alle diese Argumente spezifizieren Bedingungen, die erfüllt sein müssen, "
+"damit\n"
+"ein Dokument den Filter passieren kann. Im obigen Fall sind dies Dokumente,\n"
+"deren Variable `name` den gleichen Wert hat wie beim aufrufenden Dokument.\n"
+"Weiterhin muss die Variable `lingua` den hartkodierten Wert `en` haben."
 
-#: ../en/docs/filters.md:33
+#: ../en/docs/filters.md:36
 msgid "## Broken and Ambiguous Links"
-msgstr ""
+msgstr "## Defekte und mehrdeutige Links"
 
-#: ../en/docs/filters.md:35
+#: ../en/docs/filters.md:38
 msgid ""
-"If you specify a filter that produces no results, you will see a warning\n"
+"If you specify a filter that produces no results, you will normally see a "
+"warning\n"
 "in the console. Likewise, for methods that should produce exactly one hit,\n"
 "you will get a warning if more than one matching document exists."
 msgstr ""
+"Wird ein Filter verwendet, der keinerlei Ergebnisse produiert, wird\n"
+"dies normalerweise mit einer Warnung auf der Konsole quittiert. Das Gleiche\n"
+"passiert bei Methoden, die normalerweise exakt einen Treffer liefern "
+"sollen,\n"
+"wenn mehr als ein passendes Dokument gefunden wird."
 
-#: ../en/docs/filters.md:39
+#: ../en/docs/filters.md:42
 msgid ""
 "Such functions are `M:q.link()`, `M:q.anchor()`, and `M:q.xref()` and their\n"
 "multilanguage equivalents `M:q.llink()`, `M:q.lanchor()`, and `M:q.lxref()`."
 msgstr ""
+"Solche Funktionen sind `M:q.link()`, `M:q.anchor()` und `M:q.xref()` und "
+"ihre\n"
+"mehrsprachigen Äquivalente `M:q.llink()`, `M:q.lanchor()` und `M:q.lxref()`."
 
-#: ../en/docs/filters.md:42
-#, fuzzy
-#| msgid "## Configuration"
+#: ../en/docs/filters.md:45
 msgid "## Conditions"
-msgstr "## Konfiguration"
+msgstr "## Bedingungen"
 
-#: ../en/docs/filters.md:44
+#: ../en/docs/filters.md:47
 msgid ""
 "The equality check is the default condition for filters but there are more\n"
 "at your disposal with a slightly more complicated syntax:"
 msgstr ""
+"Die Prüfung auf Gleichheit ist die Default-Bedingung, aber es stehen noch "
+"weitere, mit einer geringfügig komplizierteren Syntax zur Verfügung"
 
-#: ../en/docs/filters.md:47
+#: ../en/docs/filters.md:50
 msgid ""
 "```tt2\n"
 "See the [API docs]([% q.link(name='api-docs') %]).\n"
 "See the [API docs]([% q.link(name=['eq', 'api-docs']) %]).\n"
 "```"
 msgstr ""
+"```tt2\n"
+"Siehe die [API-Dokumentation]([% q.link(name='api-docs') %]).\n"
+"Siehe die [API-Dokumentation]([% q.link(name=['eq', 'api-docs']) %]).\n"
+"```"
 
-#: ../en/docs/filters.md:52
+#: ../en/docs/filters.md:55
 msgid ""
 "The second example uses the advanced syntax. Instead of a single value,\n"
 "you specify a list of two values.  The first one is the comparison "
 "operator,\n"
 "and the second one the value."
 msgstr ""
+"Das zweite Beispiel verwendet die erweiterte Syntax. Statt eines einzelnen\n"
+"Wertes wird eine Liste von zwei Werten angegeben. Der erste ist der "
+"Vergleichs-\n"
+"Operator und der zweite der Wert."
 
-#: ../en/docs/filters.md:56
+#: ../en/docs/filters.md:59
 msgid ""
 "In fact both lines do exactly the same, because `eq` as the default\n"
 "comparison operator."
 msgstr ""
+"Tatsächlich produzieren beide Zeilen exakt das gleiche Ergebnis, weil\n"
+"`eq` der Default-Operator ist."
 
-#: ../en/docs/filters.md:59
+#: ../en/docs/filters.md:62
 msgid "So, the advanced syntax is:"
-msgstr ""
+msgstr "Die erweiterte Syntax sieht also folgendermaßen aus:"
 
-#: ../en/docs/filters.md:61
+#: ../en/docs/filters.md:64
 msgid ""
 "```tt2\n"
 "VARIABLE=[OPERATOR, VALUE]\n"
 "```"
 msgstr ""
+"```tt2\n"
+"VARIABLE=[OPERATOR, WERT]\n"
+"```"
 
-#: ../en/docs/filters.md:65
-msgid "### `eq`"
-msgstr ""
-
-#: ../en/docs/filters.md:67
+#: ../en/docs/filters.md:72
 msgid "Returns true if the values are string-wise equal."
-msgstr ""
-
-#: ../en/docs/filters.md:69
-#, fuzzy
-#| msgid "### Listings"
-msgid "### `ne`"
-msgstr "### Auflistungen"
-
-#: ../en/docs/filters.md:71
-msgid "Returns true if the values are string-wise not equal."
-msgstr ""
-
-#: ../en/docs/filters.md:73
-#, fuzzy
-#| msgid "### Usage"
-msgid "### `ge`"
-msgstr "### Verwendung"
-
-#: ../en/docs/filters.md:75
-msgid ""
-"Returns true if the value of the variable in the other document is (string-"
-"wise) greater or equal than the value specified\n"
-"in the other document. For example \"bbb\" is string-wise greater than \"aaa"
-"\"."
-msgstr ""
+msgstr "Liefert wahr, wenn die Werte als Zeichenkette gleich sind."
 
 #: ../en/docs/filters.md:78
-#, fuzzy
-#| msgid "### Listings"
-msgid "### `gt`"
-msgstr "### Auflistungen"
+msgid "Returns true if the values are string-wise not equal."
+msgstr "Liefert wahr, wenn die Werte als Zeichenkette nicht gleich sind."
 
-#: ../en/docs/filters.md:80
+#: ../en/docs/filters.md:84
 msgid ""
 "Returns true if the value of the variable in the other document is (string-"
-"wise) greater than the value specified\n"
-"in the other document. For example \"bbb\" is string-wise greater than \"aaa"
-"\"."
+"wise) greater or equal than the value specified. For example \"bbb\" is "
+"string-wise greater than \"aaa\"."
 msgstr ""
-
-#: ../en/docs/filters.md:83
-#, fuzzy
-#| msgid "### Listings"
-msgid "### `le`"
-msgstr "### Auflistungen"
-
-#: ../en/docs/filters.md:85
-msgid ""
-"Returns true if the value of the variable in the other document is (string-"
-"wise) less or equal than the value specified\n"
-"in the other document. For example \"aaa\" is string-wise less than \"bbb\"."
-msgstr ""
-
-#: ../en/docs/filters.md:88
-#, fuzzy
-#| msgid "### Listings"
-msgid "### `lt`"
-msgstr "### Auflistungen"
+"Liefert wahr, wenn der Wert der Variablen im anderen Dokument als "
+"Zeichenkette größer gleich dem angegebenen Wert ist. \"bbb\" ist zum "
+"Beispiel als Zeichenkette größer als \"aaa\"."
 
 #: ../en/docs/filters.md:90
 msgid ""
 "Returns true if the value of the variable in the other document is (string-"
-"wise) less than the value specified\n"
-"in the other document. For example \"aaa\" is string-wise less than \"bbb\"."
+"wise) greater than the value specified. For example \"bbb\" is string-wise "
+"greater than \"aaa\"."
 msgstr ""
+"Liefert wahr, wenn der Wert der Variablen im anderen Dokument als "
+"Zeichenkette größer als der angegebene Wert ist. \"bbb\" ist zum Beispiel "
+"als Zeichenkette größer als \"aaa\"."
 
-#: ../en/docs/filters.md:93
-#, fuzzy
-#| msgid "### Listings"
-msgid "### `ieq`"
-msgstr "### Auflistungen"
-
-#: ../en/docs/filters.md:95
-msgid "Like [`eq`](#eq) but ignores case for the comparison."
+#: ../en/docs/filters.md:96
+msgid ""
+"Returns true if the value of the variable in the other document is (string-"
+"wise) less or equal than the value specified. For example \"aaa\" is string-"
+"wise less than \"bbb\"."
 msgstr ""
-
-#: ../en/docs/filters.md:97
-#, fuzzy
-#| msgid "### Listings"
-msgid "### `ine`"
-msgstr "### Auflistungen"
-
-#: ../en/docs/filters.md:99
-msgid "Like [`ne`](#ne) but ignores case for the comparison."
-msgstr ""
+"Liefert wahr, wenn der Wert der Variablen im anderen Dokument als "
+"Zeichenkette kleiner gleich dem angegebenen Wert ist. \"aaa\" ist zum "
+"Beispiel als Zeichenkette kleiner als \"bbb\"."
 
 #: ../en/docs/filters.md:102
-#, fuzzy
-#| msgid "### Listings"
-msgid "### `ige`"
-msgstr "### Auflistungen"
-
-#: ../en/docs/filters.md:104
-msgid "Like [`ge`](#ge) but ignores case for the comparison."
+msgid ""
+"Returns true if the value of the variable in the other document is (string-"
+"wise) less than the value specified. For example \"aaa\" is string-wise less "
+"than \"bbb\"."
 msgstr ""
+"Liefert wahr, wenn der Wert der Variablen im anderen Dokument als "
+"Zeichenkette kleiner als der angegebene Wert ist. \"aaa\" ist zum Beispiel "
+"als Zeichenkette kleiner als \"bbb\""
 
-#: ../en/docs/filters.md:107
-#, fuzzy
-#| msgid "### Listings"
-msgid "### `igt`"
-msgstr "### Auflistungen"
-
-#: ../en/docs/filters.md:109
-msgid "Like [`gt`](#gt) but ignores case for the comparison."
+#: ../en/docs/filters.md:108
+msgid "Like [`eq`](#eq) but ignores case for the comparison."
 msgstr ""
-
-#: ../en/docs/filters.md:112
-#, fuzzy
-#| msgid "### Listings"
-msgid "### `ile`"
-msgstr "### Auflistungen"
+"Wie [`eq`](#eq), aber ignoriert Groß- und Kleinschreibung beim Vergleich."
 
 #: ../en/docs/filters.md:114
+msgid "Like [`ne`](#ne) but ignores case for the comparison."
+msgstr ""
+"Wie [`ne`](#ne), aber ignoriert Groß- und Kleinschreibung beim Vergleich."
+
+#: ../en/docs/filters.md:120
+msgid "Like [`ge`](#ge) but ignores case for the comparison."
+msgstr ""
+"Wie [`ge`](#ge), aber ignoriert Groß- und Kleinschreibung beim Vergleich."
+
+#: ../en/docs/filters.md:126
+msgid "Like [`gt`](#gt) but ignores case for the comparison."
+msgstr ""
+"Wie [`gt`](#gt), aber ignoriert Groß- und Kleinschreibung beim Vergleich."
+
+#: ../en/docs/filters.md:132
 msgid "Like [`le`](#le) but ignores case for the comparison."
 msgstr ""
+"Wie [`le`](#le), aber ignoriert Groß- und Kleinschreibung beim Vergleich"
 
-#: ../en/docs/filters.md:117
-#, fuzzy
-msgid "### `ilt`"
-msgstr "### Auflistungen"
-
-#: ../en/docs/filters.md:119
+#: ../en/docs/filters.md:138
 msgid "Like [`lt`](#lt) but ignores case for the comparison."
 msgstr ""
+"Wie [`lt`](#lt), aber ignoriert Groß- und Kleinschreibung beim Vergleich"
 
-#: ../en/docs/filters.md:121
-msgid "### `==`"
-msgstr ""
-
-#: ../en/docs/filters.md:123
+#: ../en/docs/filters.md:144
 msgid ""
 "Returns true if the value of the variable in the other document is "
 "numerically equal to the value specified.\n"
 "For example `1.0` and `1` and `+1` are all numerically equal."
 msgstr ""
 
-#: ../en/docs/filters.md:126
-msgid "### `!=`"
-msgstr ""
-
-#: ../en/docs/filters.md:128
+#: ../en/docs/filters.md:151
 msgid ""
 "Returns true if the value of the variable in the other document is "
 "numerically not equal to the value specified."
 msgstr ""
 
-#: ../en/docs/filters.md:130
-msgid "### `>=`"
-msgstr ""
-
-#: ../en/docs/filters.md:132
+#: ../en/docs/filters.md:157
 msgid ""
 "Returns true if the value of the variable in the other document is "
 "numerically greater or equal than the value specified."
 msgstr ""
 
-#: ../en/docs/filters.md:134
-#, fuzzy
-#| msgid "### Listings"
-msgid "### `>`"
-msgstr "### Auflistungen"
-
-#: ../en/docs/filters.md:136
+#: ../en/docs/filters.md:163
 msgid ""
 "Returns true if the value of the variable in the other document is "
 "numerically greater than the value specified."
 msgstr ""
 
-#: ../en/docs/filters.md:138
-msgid "### `<=`"
-msgstr ""
-
-#: ../en/docs/filters.md:140
+#: ../en/docs/filters.md:169
 msgid ""
 "Returns true if the value of the variable in the other document is "
 "numerically less or equal than the value specified."
 msgstr ""
 
-#: ../en/docs/filters.md:142
-#, fuzzy
-#| msgid "### Listings"
-msgid "### `<`"
-msgstr "### Auflistungen"
-
-#: ../en/docs/filters.md:144
+#: ../en/docs/filters.md:175
 msgid ""
 "Returns true if the value of the variable in the other document is "
 "numerically less than the value specified."
 msgstr ""
 
-#: ../en/docs/filters.md:146
-msgid "### `=~`"
-msgstr ""
-
-#: ../en/docs/filters.md:148
+#: ../en/docs/filters.md:181
 msgid ""
 "Returns true if the value of the variable in the other document matches the "
 "value specified as a Perl regular expression."
 msgstr ""
 
-#: ../en/docs/filters.md:150
-msgid "### `!~`"
-msgstr ""
-
-#: ../en/docs/filters.md:152
+#: ../en/docs/filters.md:187
 msgid ""
 "Returns true if the value of the variable in the other document does not "
 "match the value specified as a Perl regular expression."
 msgstr ""
 
-#: ../en/docs/filters.md:154
-#, fuzzy
-#| msgid "### Listings"
-msgid "### `contains`"
-msgstr "### Auflistungen"
-
-#: ../en/docs/filters.md:156
+#: ../en/docs/filters.md:193
 msgid ""
 "Returns true if the value of the variable in the other document is an array "
 "(a list) the value specified is contained in that array."
 msgstr ""
 
-#: ../en/docs/filters.md:158
-#, fuzzy
-#| msgid "### Listings"
-msgid "### `icontains`"
-msgstr "### Auflistungen"
-
-#: ../en/docs/filters.md:160
+#: ../en/docs/filters.md:199
 msgid "Like [`contains`](#contains) but case is ignored for the comparison."
 msgstr ""
 
-#: ../en/docs/filters.md:162
+#: ../en/docs/filters.md:201
 msgid "## Filtering Results are Cached"
 msgstr ""
 
-#: ../en/docs/filters.md:164
+#: ../en/docs/filters.md:203
 msgid ""
 "Applying filters to a large set of documents is potentially expensive. "
 "However,\n"
@@ -2441,15 +2313,15 @@ msgid ""
 "in memory, even when you shuffle the order of the conditions in the filter."
 msgstr ""
 
-#: ../en/docs/filters.md:168
+#: ../en/docs/filters.md:207
 msgid "## Can Filters Be ORed Together?"
 msgstr ""
 
-#: ../en/docs/filters.md:170
+#: ../en/docs/filters.md:209
 msgid "No."
 msgstr ""
 
-#: ../en/docs/filters.md:172
+#: ../en/docs/filters.md:211
 msgid ""
 "This is a deliberate design decision that favors a simple and "
 "comprehensible\n"
@@ -2460,7 +2332,7 @@ msgid ""
 "the operators you need."
 msgstr ""
 
-#: ../en/docs/filters.md:177
+#: ../en/docs/filters.md:216
 msgid "Besides, it seems to be hard to find a use case for ORed conditions."
 msgstr ""
 
@@ -2890,9 +2762,8 @@ msgid ""
 msgstr ""
 
 #: ../en/docs/listings.md:13
-#, fuzzy
 msgid "## Template Code"
-msgstr "## Template-System"
+msgstr "## Template-Code"
 
 #: ../en/docs/listings.md:15
 msgid ""
@@ -3012,9 +2883,8 @@ msgid ""
 msgstr ""
 
 #: ../en/docs/mode-of-operation.md:34
-#, fuzzy
 msgid "## What are Assets?"
-msgstr "### Was sind Cookies?"
+msgstr "### Was sind Assets?"
 
 #: ../en/docs/mode-of-operation.md:36
 msgid ""
@@ -3128,11 +2998,9 @@ msgid ""
 msgstr ""
 
 #: ../en/docs/multilanguage-configuration.md:2
-#, fuzzy
-#| msgid "## Configuration"
 msgctxt "title"
 msgid "Configuration"
-msgstr "## Konfiguration"
+msgstr "Konfiguration"
 
 #: ../en/docs/multilanguage-configuration.md:6
 msgctxt "description"
@@ -3153,10 +3021,8 @@ msgid ""
 msgstr ""
 
 #: ../en/docs/multilanguage-configuration.md:14
-#, fuzzy
-#| msgid "## Configuration"
 msgid "## Global Configuration"
-msgstr "## Konfiguration"
+msgstr "## Globale Konfiguration"
 
 #: ../en/docs/multilanguage-configuration.md:16
 msgid ""
@@ -3348,11 +3214,8 @@ msgid "You have several options to set `V:asset.lingua`:"
 msgstr ""
 
 #: ../en/docs/multilanguage-configuration.md:95
-#, fuzzy
-#| msgctxt "title"
-#| msgid "Related Documents"
 msgid "### Per Document"
-msgstr "Verwandte Dokumente"
+msgstr "### Per Dokument"
 
 #: ../en/docs/multilanguage-configuration.md:97
 msgid "You can set the language in the document front matter:"
@@ -3510,11 +3373,8 @@ msgid ""
 msgstr ""
 
 #: ../en/docs/multilanguage-configuration.md:170
-#, fuzzy
-#| msgctxt "title"
-#| msgid "Files and Directories"
 msgid "## File and Directory Structure"
-msgstr "Dateien und Verzeichnisse"
+msgstr "## Dateien und Verzeichnisstruktur"
 
 #: ../en/docs/multilanguage-configuration.md:172
 msgid ""
@@ -3643,10 +3503,8 @@ msgid ""
 msgstr ""
 
 #: ../en/docs/multilanguage-configuration.md:245
-#, fuzzy
-#| msgid "## Configuration"
 msgid "## Content Negotiation"
-msgstr "## Konfiguration"
+msgstr "## Content-Negotiation"
 
 #: ../en/docs/multilanguage-configuration.md:247
 msgid ""
@@ -3688,11 +3546,6 @@ msgid "Overview"
 msgstr ""
 
 #: ../en/docs/multilanguage-overview.md:6
-#, fuzzy
-#| msgctxt "description"
-#| msgid ""
-#| "Overview of Qgoda's Multi-Language and Internationalization (I18N) "
-#| "features"
 msgctxt "description"
 msgid ""
 "Overview of Qgoda's Multilanguage and Internationalization (I18N) features"
@@ -3701,10 +3554,6 @@ msgstr ""
 "von Qgoda"
 
 #: ../en/docs/multilanguage-overview.md:8
-#, fuzzy
-#| msgid ""
-#| "Multi-lingualism in Qgoda is an integral, built-in feature mostly built "
-#| "upon easy to follow conventions."
 msgid ""
 "[% USE q = Qgoda %]\n"
 "[% TAGS [@ @] %]\n"
@@ -3724,9 +3573,8 @@ msgid ""
 msgstr ""
 
 #: ../en/docs/multilanguage-overview.md:16
-#, fuzzy
 msgid "## Template Texts"
-msgstr "## Template-System"
+msgstr "## Template-Texte"
 
 #: ../en/docs/multilanguage-overview.md:18
 msgid ""
@@ -3860,9 +3708,6 @@ msgid ""
 msgstr ""
 
 #: ../en/docs/multilanguage.md:2
-#, fuzzy
-#| msgctxt "title"
-#| msgid "Multi-Language"
 msgctxt "title"
 msgid "Multilanguage"
 msgstr "Mehrsprachigkeit"
@@ -3993,9 +3838,8 @@ msgid ""
 msgstr ""
 
 #: ../en/docs/output-location.md:81
-#, fuzzy
 msgid "## Multiple Suffixes"
-msgstr "### Mehrsprachige Sites"
+msgstr "### Mehrere Endungen"
 
 #: ../en/docs/output-location.md:83
 msgid ""
@@ -4066,9 +3910,8 @@ msgid ""
 msgstr ""
 
 #: ../en/docs/output-location.md:122
-#, fuzzy
 msgid "## Customization"
-msgstr "## Konfiguration"
+msgstr "## Anpassungen"
 
 #: ../en/docs/output-location.md:124
 msgid ""
@@ -4196,7 +4039,7 @@ msgstr ""
 #: ../en/docs/pattern-lists.md:2
 msgctxt "title"
 msgid "Pattern Lists"
-msgstr ""
+msgstr "Suchmusterlisten"
 
 #: ../en/docs/pattern-lists.md:6
 msgctxt "description"
@@ -4209,7 +4052,7 @@ msgstr ""
 msgid ""
 "Lists of search patterns in Qgoda follow the convention of [gitignore]"
 "(https://git-scm.com/docs/gitignore), only that you put your configuration "
-"in [YAML](http://yaml.org/) file `_config.yaml` and not in a file `P:."
+"in a [YAML](http://yaml.org/) file `P:_config.yaml` and not in a file `P:."
 "gitignore`."
 msgstr ""
 
@@ -4383,47 +4226,28 @@ msgid "### Exclusion and Inclusion Mode"
 msgstr ""
 
 #: ../en/docs/pattern-lists.md:146
-#, fuzzy
-#| msgid ""
-#| "Beware though that you cannot re-include files or directories, when one "
-#| "of their parent directories is already excluded."
 msgid ""
 "Search patterns behave slightly different, when they are used for "
 "*excluding* files (as opposed to including files).  With pattern lists used "
 "for excluding files, you cannot re-include files or directories, when one of "
 "their parent directories is already excluded."
 msgstr ""
-"Es ist jedoch zu beachten, dass Dateien und Verzeichnisse nicht wieder "
-"eingeschlossen werden können, wenn eines ihrer Elternverzeichnisse durch "
-"eine vorhergehende Regel bereits ausgeschlossen wurde."
 
 #: ../en/docs/pattern-lists.md:173
-#, fuzzy
-#| msgid ""
-#| "You have to keep in mind that Qgoda has prepended this list with `/_*` "
-#| "(see above).  Line 1 re-includes `_experiments`.  Line 2 excludes all its "
-#| "subdirectories again.  And line 3 selectively re-includes `_experiments/"
-#| "stable`."
 msgid ""
 "You have to keep in mind that Qgoda has prepended this list with `/_*` (see "
 "[@ q.lanchor(name = 'excluding-files') @]).  Line 1 re-includes "
 "`_experiments`.  Line 2 excludes all its subdirectories again.  And line 3 "
 "selectively re-includes `_experiments/stable`."
 msgstr ""
-"Dazu muss man sich erinnern, dass Qgoda der Liste automatisch das Muster `/"
-"_` vorangestellt hat. Zeile 1 re-inkludiert jetzt `_experiments`, Zeile 2 "
-"schließt alle Unterverzeichnisse aber direkt wieder aus. Dafür schließt "
-"Zeile 3 das Verzeichnis `_experiments/stable` wieder ein."
 
 #: ../en/docs/pattern-lists.md:175
 msgid "## Slashes"
 msgstr ""
 
 #: ../en/docs/pattern-lists.md:177
-#, fuzzy
-#| msgid "### Code in Templates"
 msgid "### Leading Slashes"
-msgstr "### Code in Templates"
+msgstr "### Führende Schrägstriche (Slashes)"
 
 #: ../en/docs/pattern-lists.md:179
 msgid "A leading slash anchors the pattern to the source directory."
@@ -4534,15 +4358,12 @@ msgid ""
 msgstr ""
 
 #: ../en/docs/po-translations.md:34
-#, fuzzy
-#| msgctxt "title"
-#| msgid "Related Documents"
 msgid "## Trigger Documents"
-msgstr "Verwandte Dokumente"
+msgstr "## Auslöser-Dokumente"
 
 #: ../en/docs/po-translations.md:36
 msgid ""
-"The central idea of content inernationalization inQgoda are so-called "
+"The central idea of content inernationalization in Qgoda are so-called "
 "trigger documents.  They have no content \n"
 "but only <q-term>front matter</q-term>:"
 msgstr ""
@@ -4666,13 +4487,26 @@ msgid ""
 "[@ END @]"
 msgstr ""
 
-#: ../en/docs/po-translations.md:116
-#, fuzzy
-#| msgid "### What Is Stored?"
-msgid "## What Else?"
-msgstr "### Was wird gespeichert?"
+#: ../en/docs/po-translations.md:115 ../en/docs/translating-templates.md:126
+msgid "## Missing Translations"
+msgstr "## Fehlende Übersetzungen"
 
-#: ../en/docs/po-translations.md:118
+#: ../en/docs/po-translations.md:117 ../en/docs/translating-templates.md:128
+msgid ""
+"What if a certain string has not been \n"
+"[translated]([@ q.llink(name='translation-workflow') @]) yet? The gettext "
+"way of\n"
+"handling that situation is to use the original string, that is the string\n"
+"in the main language of your site. That's not perfect but better than "
+"nothing\n"
+"and you can always remedy it by providing a translation."
+msgstr ""
+
+#: ../en/docs/po-translations.md:123
+msgid "## What Else?"
+msgstr "## Was sonst noch?"
+
+#: ../en/docs/po-translations.md:125
 msgid ""
 "Nothing! It's as simple as that. Just set the\n"
 "[defaults]([@ q.llink(name='defaults') @]) for `V:asset.translate` and\n"
@@ -4681,7 +4515,7 @@ msgid ""
 "of every document is as simple as:"
 msgstr ""
 
-#: ../en/docs/po-translations.md:123
+#: ../en/docs/po-translations.md:130
 msgid ""
 "```yaml\n"
 "---\n"
@@ -4690,7 +4524,7 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/po-translations.md:129
+#: ../en/docs/po-translations.md:136
 msgid ""
 "This site itself is translated into German using exactly this technique."
 msgstr ""
@@ -4881,7 +4715,6 @@ msgid ""
 msgstr ""
 
 #: ../en/docs/qgoda-in-15-minutes.md:88
-#, fuzzy
 msgid ""
 "[% WRAPPER components/infobox.html\n"
 "           type='info' title='Excluding More Files' %]\n"
@@ -4890,19 +4723,10 @@ msgid ""
 "name='excluding-files') %]\"</a> for more information.\n"
 "[% END %]"
 msgstr ""
-"[% WRAPPER components/variable.html\n"
-"   variable=\"exclude\" type='Liste' \n"
-"   default='empty'leer -%]\n"
-"Eine Liste von Dateien und Verzeichnissen, die nicht verarbeitet werden "
-"sollen. Es können Suchmuster verwendet werden. Siehe <a href=\"[% q."
-"llink(name = 'excluding-files') %]\">[% q.lxref('title', name = 'excluding-"
-"files') %]</a>!\n"
-"[%- END %]"
 
 #: ../en/docs/qgoda-in-15-minutes.md:93
-#, fuzzy
 msgid "### Watch Mode"
-msgstr "### Was wird gespeichert?"
+msgstr "### Der Watch-Modus"
 
 #: ../en/docs/qgoda-in-15-minutes.md:95
 msgid ""
@@ -5302,9 +5126,8 @@ msgstr ""
 
 #: ../en/docs/qgoda-in-15-minutes.md:303 ../en/docs/qgoda-in-15-minutes.md:321
 #: ../en/docs/qgoda-in-15-minutes.md:402
-#, fuzzy
 msgid "## Preparation"
-msgstr "### IP-Kürzung"
+msgstr "## Vorbereitung"
 
 #: ../en/docs/qgoda-in-15-minutes.md:305
 msgid ""
@@ -5633,11 +5456,6 @@ msgid "You can then use all methods of the plug-in like this:"
 msgstr ""
 
 #: ../en/docs/qgoda-plug-in.md:24
-#, fuzzy
-#| msgid ""
-#| "```markup\n"
-#| "See [% q.lanchor(name='listings') %] for more information.\n"
-#| "```"
 msgid ""
 "```tt2\n"
 "[% USE q = Qgoda %]\n"
@@ -5645,9 +5463,6 @@ msgid ""
 "Last generated: [% q.strftime('%c') %].\n"
 "```"
 msgstr ""
-"```markup\n"
-"Siehe [% q.lanchor(name='listings') %] für weiterführende Informationen!\n"
-"```"
 
 #: ../en/docs/qgoda-plug-in.md:32
 msgid "## Methods"
@@ -5776,10 +5591,8 @@ msgid ""
 msgstr ""
 
 #: ../en/docs/referencing-languages.md:53
-#, fuzzy
-#| msgid "## Multi-Language Overview"
-msgid "## Language Overviews"
-msgstr "## Übersicht Mehrsprachigkeit"
+msgid "## Language Switches"
+msgstr "## Sprachumschalter"
 
 #: ../en/docs/referencing-languages.md:55
 msgid ""
@@ -5810,28 +5623,11 @@ msgid ""
 msgstr ""
 
 #: ../en/docs/related-documents.md:8
-#, fuzzy
 msgid "## How To Display Related Documents"
-msgstr "Verwandte Dokumente"
+msgstr "## Anzeige verwandter Dokumente"
 
 #: ../en/docs/related-documents.md:10
 msgid "Displaying related documents is as easy as this:"
-msgstr ""
-
-# QGODA-NO-XGETTEXT
-#: ../en/docs/related-documents.md:12
-msgid ""
-"[%TAGS [- -]%]\n"
-"```tt2;line-numbers\n"
-"[% USE q = Qgoda %]\n"
-"[% docs= q.related() %]\n"
-"<ul>\n"
-"[% FOREACH doc IN docs %]\n"
-"  <li><a href=\"[% doc.permalink %]\">[% doc.title | html %]</li>\n"
-"[% END %]\n"
-"</ul>\n"
-"```\n"
-"<!--QGODA-NO-XGETTEXT-->"
 msgstr ""
 
 #: ../en/docs/related-documents.md:25
@@ -5860,7 +5656,6 @@ msgid ""
 msgstr ""
 
 #: ../en/docs/related-documents.md:35
-#, fuzzy
 msgid "### Multi-lingual sites."
 msgstr "### Mehrsprachige Sites"
 
@@ -6277,9 +6072,8 @@ msgid ""
 msgstr ""
 
 #: ../en/docs/table-of-contents.md:58
-#, fuzzy
 msgid "### Table of Contents Template"
-msgstr "Inhaltsverzeichnis"
+msgstr "### Template für das Inhaltsverzeichnis"
 
 #: ../en/docs/table-of-contents.md:60
 msgid ""
@@ -6342,9 +6136,8 @@ msgid ""
 msgstr ""
 
 #: ../en/docs/table-of-contents.md:93
-#, fuzzy
 msgid "## Gory Details and Configuration"
-msgstr "## Konfiguration"
+msgstr "## Details und Konfiguration"
 
 #: ../en/docs/table-of-contents.md:95
 msgid ""
@@ -6382,9 +6175,8 @@ msgid ""
 msgstr ""
 
 #: ../en/docs/table-of-contents.md:105
-#, fuzzy
 msgid "### Configuration"
-msgstr "Konfigurations-Variablen"
+msgstr "### Konfiguration"
 
 #: ../en/docs/table-of-contents.md:107
 msgid ""
@@ -6621,7 +6413,6 @@ msgid ""
 msgstr ""
 
 #: ../en/docs/template-variables.md:26
-#, fuzzy
 msgid ""
 "[% WRAPPER \"components/template-variable.html\"\n"
 "   variable=\"asset\" type=\"hash\" %]\n"
@@ -6629,11 +6420,6 @@ msgid ""
 "the asset currently being processed.\n"
 "[%- END %]"
 msgstr ""
-"[% WRAPPER components/variable.html\n"
-"   variable=\"title\" type='String' \n"
-"   default='\"A New Qgoda Powered Site\"' -%]\n"
-"Der Name der Web-Site. Qgoda selbst verwendet diese Variable nicht.\n"
-"[%- END %]"
 
 #: ../en/docs/template-variables.md:32
 msgid ""
@@ -6796,10 +6582,8 @@ msgid "## Translating Strings"
 msgstr ""
 
 #: ../en/docs/translating-templates.md:34
-#, fuzzy
-#| msgid "### Listings"
 msgid "### Constant Strings"
-msgstr "### Auflistungen"
+msgstr "### Konstante Zeichenketten"
 
 #: ../en/docs/translating-templates.md:36
 msgid ""
@@ -6829,13 +6613,11 @@ msgstr ""
 
 #: ../en/docs/translating-templates.md:50
 msgid "This does exactly the same."
-msgstr ""
+msgstr "Dies bewirkt exakt das Gleiche."
 
 #: ../en/docs/translating-templates.md:52
-#, fuzzy
-#| msgid "### Listings"
 msgid "### Variable Strings"
-msgstr "### Auflistungen"
+msgstr "### Variable Zeichenketten"
 
 #: ../en/docs/translating-templates.md:54
 msgid "Sometimes strings contain variable parts:"
@@ -6984,11 +6766,11 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/translating-templates.md:126
+#: ../en/docs/translating-templates.md:134
 msgid "## Troubleshooting"
 msgstr ""
 
-#: ../en/docs/translating-templates.md:128
+#: ../en/docs/translating-templates.md:136
 msgid ""
 "A very common problem is that `gtx.gettext()` seems to return an empty "
 "string. The reason is almost always that you have forgotten to activate the "
@@ -7080,9 +6862,8 @@ msgid ""
 msgstr ""
 
 #: ../en/docs/translation-workflow.md:50
-#, fuzzy
 msgid "### Git"
-msgstr "### Auflistungen"
+msgstr "### Git"
 
 #: ../en/docs/translation-workflow.md:52
 msgid ""
@@ -7090,9 +6871,8 @@ msgid ""
 msgstr ""
 
 #: ../en/docs/translation-workflow.md:54
-#, fuzzy
 msgid "### Minimal Configuration"
-msgstr "Konfigurations-Variablen"
+msgstr "### Minimal-Konfigurations"
 
 #: ../en/docs/translation-workflow.md:56
 msgid ""
@@ -7249,10 +7029,24 @@ msgid ""
 msgstr ""
 
 #: ../en/docs/translation-workflow.md:149
+msgid ""
+"[@ WRAPPER components/infobox.html\n"
+"           type='info' title='Use a Makefile' @]\n"
+"You may have noticed that Qgoda has also created a\n"
+"<code>Makefile</code> for all the `make` aficionados\n"
+"out there (like me). You can <code>cd</code> into\n"
+"<code>_po</code> and type <code>make</code> to see\n"
+"all the targets that the Makefile supports. You are,\n"
+"however, on your own creating the various `POTFILES`,\n"
+"pull requests welcome!\n"
+"[@ END @]"
+msgstr ""
+
+#: ../en/docs/translation-workflow.md:160
 msgid "### Creating the PO Template (`.pot`) File"
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:151
+#: ../en/docs/translation-workflow.md:162
 msgid ""
 "The master translation catalog is stored as a so-called PO template \n"
 "file under `_po/TEXTDOMAIN.pt`, where `TEXTDOMAIN` is the textdomain you "
@@ -7260,7 +7054,7 @@ msgid ""
 "configured in the configuration variable `C:po.textdomain`."
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:155
+#: ../en/docs/translation-workflow.md:166
 msgid ""
 "A `.pot` file has the same format as normal `.po` files only that it "
 "contains\n"
@@ -7268,11 +7062,11 @@ msgid ""
 "because it gets overwritten, whenever you extract new strings."
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:159
+#: ../en/docs/translation-workflow.md:170
 msgid "You create the file like this:"
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:161
+#: ../en/docs/translation-workflow.md:172
 msgid ""
 "```bash\n"
 "$ qgoda po pot\n"
@@ -7282,24 +7076,24 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:168
+#: ../en/docs/translation-workflow.md:179
 msgid ""
 "You will see *a lot* of output which you can safely ignore as long as you\n"
 "don't see an error message."
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:171
+#: ../en/docs/translation-workflow.md:182
 msgid "### Adding a Language"
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:173
+#: ../en/docs/translation-workflow.md:184
 msgid ""
 "While setting up i18n and then whenever you add a language to your site\n"
 "you have to initialize a `.po` file for that language and add it to the\n"
 "configuration variable `C:linguas` in `P:_config.yaml`:"
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:177
+#: ../en/docs/translation-workflow.md:188
 msgid ""
 "```yaml\n"
 "linguas:\n"
@@ -7309,11 +7103,11 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:184
+#: ../en/docs/translation-workflow.md:195
 msgid "You also have to initialize a `.po` file for it:"
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:186
+#: ../en/docs/translation-workflow.md:197
 msgid ""
 "```bash;line-numbers\n"
 "$ cd /path/to/your/site\n"
@@ -7326,7 +7120,7 @@ msgid ""
 "you in case of unexpected technical problems."
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:194
+#: ../en/docs/translation-workflow.md:205
 msgid ""
 "Is the following your email address?\n"
 "  guido@yourcomputer.local\n"
@@ -7340,45 +7134,45 @@ msgid ""
 "  http://www.iro.umontreal.ca/contrib/po/HTML/index.html"
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:205
+#: ../en/docs/translation-workflow.md:216
 msgid ""
 "Created de.po.\n"
 "```"
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:208
+#: ../en/docs/translation-workflow.md:219
 msgid ""
 "You will be prompted for your email address so that the copyright\n"
 "information in the `.po` file can be initialized."
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:211
+#: ../en/docs/translation-workflow.md:222
 msgid "The command `msginit` has two mandatory arguments (see line 3 above):"
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:213
+#: ../en/docs/translation-workflow.md:224
 msgid ""
 "* `--input` is the name of your `.pot` file\n"
 "* `--locale` is the language identifier"
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:216
+#: ../en/docs/translation-workflow.md:227
 msgid ""
 "The command has created a `.po`  file for your language (see line 19) that\n"
 "can now be translated."
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:219
+#: ../en/docs/translation-workflow.md:230
 msgid "### Updating Translations"
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:221
+#: ../en/docs/translation-workflow.md:232
 msgid ""
 "When strings are added or modified, the translations have to be updated.\n"
 "That requires the following steps:"
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:224
+#: ../en/docs/translation-workflow.md:235
 msgid ""
 "* a new `POTFILES` that contains the updated list of source files\n"
 "* a new `.pot` file that contains the new set of translatable strings\n"
@@ -7387,11 +7181,11 @@ msgid ""
 "  command `msgmerge`"
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:229
+#: ../en/docs/translation-workflow.md:240
 msgid "This is done with `qgoda po update-po`:"
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:231
+#: ../en/docs/translation-workflow.md:242
 msgid ""
 "```bash\n"
 "$ qgoda po update-po\n"
@@ -7404,23 +7198,23 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:241
+#: ../en/docs/translation-workflow.md:252
 msgid ""
 "When you have more content to translate this may take considerable time \n"
 "because `msgmerge` is trying to do the merge in a smart manner so that you\n"
 "don't lose existing translations."
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:245
+#: ../en/docs/translation-workflow.md:256
 msgid ""
 "After this step, your translation files are up-to-date and can be translated."
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:247
+#: ../en/docs/translation-workflow.md:258
 msgid "### Translating the `.po` Files"
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:249
+#: ../en/docs/translation-workflow.md:260
 msgid ""
 "The `.po` format is accepted by many professional translators. If you want\n"
 "to translate the file yourself, do not use your normal text editor (unless\n"
@@ -7428,13 +7222,13 @@ msgid ""
 "Editor\" and you will find a number of free programs."
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:254
+#: ../en/docs/translation-workflow.md:265
 msgid ""
 "For now, just open the `.po` file in your editor. You will see lots of \n"
 "entries like this:"
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:257
+#: ../en/docs/translation-workflow.md:268
 msgid ""
 "```bash\n"
 "#: ../_views/partials/body.html:4\n"
@@ -7443,17 +7237,17 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:263
+#: ../en/docs/translation-workflow.md:274
 msgid ""
 "The string after `msgstr` is the translation. Try to translate at least one\n"
 "string that is easy to recognize, when you rebuild your site."
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:266
+#: ../en/docs/translation-workflow.md:277
 msgid "### Compile the `.po` Files"
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:268
+#: ../en/docs/translation-workflow.md:279
 msgid ""
 "The `.po` files are not immediately used for looking up translations but "
 "are\n"
@@ -7462,11 +7256,11 @@ msgid ""
 "for syntax errors and semantic errors."
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:272
+#: ../en/docs/translation-workflow.md:283
 msgid "You can perform this step with `qgoda po mo`:"
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:274
+#: ../en/docs/translation-workflow.md:285
 msgid ""
 "```bash;line-numbers\n"
 "$ qgoda po update-mo\n"
@@ -7478,20 +7272,20 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:282
+#: ../en/docs/translation-workflow.md:293
 msgid ""
 "You can fix the warning (line 4) by editing the first entry of the `.po`\n"
 "file and fill in the missing information."
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:285
+#: ../en/docs/translation-workflow.md:296
 msgid ""
 "In the last line you will see statistics about your translations, in "
 "particular\n"
 "the number of translated and untranslated strings and fuzzy translations."
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:288
+#: ../en/docs/translation-workflow.md:299
 msgid ""
 "[@ WRAPPER components/infobox.html\n"
 "           type='info' title='Fuzzy Translations' @]\n"
@@ -7504,17 +7298,15 @@ msgid ""
 "[@ END @]"
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:296
-#, fuzzy
-#| msgid "### Installation"
-msgid "### Install the Translation"
-msgstr "### Installation"
+#: ../en/docs/translation-workflow.md:307
+msgid "### Install the Translations"
+msgstr "### Installation der Übersetzungen"
 
-#: ../en/docs/translation-workflow.md:298
+#: ../en/docs/translation-workflow.md:309
 msgid "The last step is to install and use the translation:"
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:300
+#: ../en/docs/translation-workflow.md:311
 msgid ""
 "```bash\n"
 "$ qgoda po install\n"
@@ -7525,7 +7317,7 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:307
+#: ../en/docs/translation-workflow.md:318
 msgid ""
 "The directory `P:LocaleData` contains the compiled translations. You should\n"
 "add it to the [files to be excluded]([@ q.lanchor(name='excluding-files') "
@@ -7533,14 +7325,14 @@ msgid ""
 "Qgoda."
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:311
+#: ../en/docs/translation-workflow.md:322
 msgid ""
 "The next time you rebuild your site with `qgoda watch` or `qgoda build`\n"
 "the translated strings should be visible in their respective document\n"
 "versions."
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:315
+#: ../en/docs/translation-workflow.md:326
 msgid ""
 "[@ WRAPPER components/infobox.html\n"
 "           type='warning' title='Translations are cached!' @]\n"
@@ -7551,13 +7343,11 @@ msgid ""
 "[@ END @]"
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:322
-#, fuzzy
-#| msgid "## Configuration"
+#: ../en/docs/translation-workflow.md:333
 msgid "## Conclusion"
-msgstr "## Konfiguration"
+msgstr "## Fazit"
 
-#: ../en/docs/translation-workflow.md:324
+#: ../en/docs/translation-workflow.md:335
 msgid ""
 "The above explanation is relatively detailed. Under normal circumstances "
 "you\n"
@@ -7566,12 +7356,9 @@ msgid ""
 msgstr ""
 
 #: ../en/index.md:3
-#, fuzzy
-#| msgctxt "title"
-#| msgid "Qgoda Static Site Generator"
 msgctxt "title"
 msgid "Qgoda - The Multilingual Static Site Generator"
-msgstr "Qgoda Static Site Generator"
+msgstr "Qgoda - Static Site Generator mit Mehrsprachigkeit"
 
 #: ../en/index.md:8
 msgctxt "description"
@@ -7633,553 +7420,5 @@ msgctxt "dateFormat"
 msgid "%b, %d %Y"
 msgstr "%d. %b %Y"
 
-#, fuzzy
-#~| msgid "### Multi-Language Sites"
-#~ msgctxt "title"
-#~ msgid "Language Copies"
-#~ msgstr "### Mehrsprachige Sites"
-
-#, fuzzy
-#~| msgid "See [- q.lanchor(name='listings') -] for more information."
-#~ msgid ""
-#~ "See [@ q.lanchor(name = 'translating-templates') @] for more information!"
-#~ msgstr ""
-#~ "Siehe [- q.lanchor(name='listings') -] for weiterführende Informationen!"
-
-#, fuzzy
-#~| msgid "See [- q.lanchor(name='listings') -] for more information."
-#~ msgid ""
-#~ "See [@ q.lanchor(name = 'language-copies') @] for information about this "
-#~ "approach."
-#~ msgstr ""
-#~ "Siehe [- q.lanchor(name='listings') -] for weiterführende Informationen!"
-
-#, fuzzy
-#~| msgid "See [- q.lanchor(name='listings') -] for more information."
-#~ msgid ""
-#~ "See [@ q.lanchor(name = 'po-translations') @] for more in-depth "
-#~ "information about this !"
-#~ msgstr ""
-#~ "Siehe [- q.lanchor(name='listings') -] for weiterführende Informationen!"
-
-#, fuzzy
-#~ msgid ""
-#~ "```bash\n"
-#~ "#: ../en/docs/multi-language-overview.md:11\n"
-#~ "msgid \"Multi-lingualism in Qgoda is an integral, built-in feature mostly "
-#~ "built upon easy to follow conventions.\"\n"
-#~ "msgstr \"\"\n"
-#~ "```"
-#~ msgstr ""
-#~ "Mehrsprachigkeit ist ein integrales Feature von Qgoda, das größtenteils "
-#~ "auf leicht zu befolgenden Konventionen aufbaut."
-
-#~ msgctxt "title"
-#~ msgid "Client-Side Syntax Highlighting"
-#~ msgstr "Client-seitiges Syntax-Highlighting"
-
-#~ msgid ""
-#~ "A very common requirement is to have syntax-highlighting applied to code "
-#~ "blocks.  Best\n"
-#~ "practice with Qgoda is to just mark code blocks semantically correct and "
-#~ "let the client\n"
-#~ "do the highlighting when rendering the generated pages."
-#~ msgstr ""
-#~ "Syntax-Hervorherbung für Code-Blöcke ist eine häufig vorkommende "
-#~ "Anforderung. Für Qgoda wird empfohlen, solche Code-Blöcke lediglich "
-#~ "semantisch korrekt zu markieren und die eigentliche Hervorhebung dem "
-#~ "Client beim Rendern der generierten Seiten zu überlassen."
-
-#~ msgid "## How Should Code Blocks Be Marked?"
-#~ msgstr "## Wie sollten Code-Blöcke markiert werden?"
-
-#~ msgid ""
-#~ "Code blocks should be wrapped into a `<code>` element that is in turn "
-#~ "wrapped into a \n"
-#~ "`<pre>` element.  The programming language of the code block should be "
-#~ "added as a\n"
-#~ "CSS class in the format `language-PROGRAMMING-LANGUAGE`:"
-#~ msgstr ""
-#~ "Code-Blöcke sollten in ein `<code>`-Element eingefasst werden, dass "
-#~ "seinerseits in einem `<pre>`-Element liegt. Die jeweilige "
-#~ "Programmiersprache sollte als CSS-Klasse im Format `language-"
-#~ "PROGRAMMIERSPRACHE` angegeben werden:"
-
-#~ msgid ""
-#~ "It is advisable to put the enclosing `<pre>` and `<code>` tags on the "
-#~ "same line as\n"
-#~ "the enclosed code. Otherwise ugly line feeds are added to the beginning "
-#~ "and the end\n"
-#~ "of the block."
-#~ msgstr ""
-#~ "Es ist ratsam, die `<pre>`- und `<code>`-Tags auf die gleiche Zeile wie "
-#~ "den Quell-Code zu setzen, damit keine hässlichen Zeilenumbrüche am Anfang "
-#~ "und Ende des Code-Blocks eingefügt werden."
-
-#~ msgid "## Creating Semantic Code Blocks"
-#~ msgstr "## Erzeugung semantisch korrekter Code-Blöcke"
-
-#~ msgid "### Manually Creating Semantic Code Blocks"
-#~ msgstr "### Manualle Erzeugung semantischer Code-Blöcke"
-
-#~ msgid ""
-#~ "Remember that (almost) all markup goes through unchanged in Markdown.  "
-#~ "Nobody stops\n"
-#~ "you from entering your code blocks manually with HTML."
-#~ msgstr ""
-#~ "Markdown erlaubt die fast uneingeschränkte Verwendung von HTML-Markup. "
-#~ "Insofern spricht natürlich prinzipiell auch nichts dagegen, das HTML von "
-#~ "Hand einzugeben."
-
-#~ msgid "### Using Fenced Code Blocks"
-#~ msgstr "### Verwendung von *fenced* Code-Blöcken"
-
-#~ msgid ""
-#~ "So-called *fenced* code blocks are supported by many markdown processors:"
-#~ msgstr ""
-#~ "Sogenannte *fenced* (umzäunte) Code-Blöcke sind eine Markdown-"
-#~ "Erweiterung, die von Prozessoren unterstützt werden:"
-
-#~ msgid ""
-#~ "This creates exactly the construct we want, the code inside of a `<code>` "
-#~ "element\n"
-#~ "inside of a `<pre>` element. But none of the tags has any attributes, "
-#~ "more\n"
-#~ "specifically the `class=\"language-javascript\"` is not present.  But you "
-#~ "can\n"
-#~ "specify the language immediately following the opening \"fence\":"
-#~ msgstr ""
-#~ "Dies erzeugt exakt das gewünschte Konstrukt, nämlich den Quellcode "
-#~ "innerhalb eines `<code>`-Elements, das wiederum in einem `<pre>`-Element "
-#~ "liegt. Allerdings haben beide Elemente keine Attribute gesetzt. "
-#~ "Insbesondere das class-Attribut `class=\"language-javascript\"` fehlt. "
-#~ "Die Programmiersprache kann allerdings unmittelbar nach dem öffnenden "
-#~ "\"Zaun\" angegeben werden:"
-
-#~ msgid ""
-#~ "There is a caveat, though. Qgoda's default Markdown processor\n"
-#~ "[Text::Markdown](https://metacpan.org/release/Text-Markdown) does not "
-#~ "support fenced code blocks with a language specifier.\n"
-#~ "It erroneously interprets it as part of the code.  You can therefore "
-#~ "only\n"
-#~ "use the language specifier, when you use `Text::Markdown::Hoedown` as "
-#~ "your\n"
-#~ "markdown  processor."
-#~ msgstr ""
-#~ "Die Sache hat allerdings einen kleinen Haken. Qgodas  Standard-Markdown-"
-#~ "Prozessor [Text::Markdown](https://metacpan.org/release/Text-Markdown) "
-#~ "unterstützt keine Sprachangabe für Fenced Code Blocks. Sie werden "
-#~ "stattdessen als Teil des Quellcodes missinterpretiert. Diese Syntax lässt "
-#~ "sich deshalb nur verwenden, wenn `Text::Markdown::Hoedown` als Markdown-"
-#~ "Prozessor verwendet wird."
-
-#~ msgid ""
-#~ "[@ WRAPPER components/infobox.html\n"
-#~ "           type='info' title='Compatibility Note!' @]\n"
-#~ "<p>There are plans to replace <a href=\"https://metacpan.org/release/Text-"
-#~ "Markdown\">\n"
-#~ "<code>Text::Markdown</code><a> with\n"
-#~ "<a href=\"https://metacpan.org/release/Text-MultiMarkdown\">\n"
-#~ "<code>Text::MultiMarkdown</code><a> as Qgoda's default markdown "
-#~ "processor,\n"
-#~ "see\n"
-#~ "<a href=\"https://github.com/gflohr/qgoda/issues/55\">https://github.com/"
-#~ "gflohr/qgoda/issues/55</a>.\n"
-#~ "<code>Text::MultiMarkdown</code> supports fenced code blocks with a "
-#~ "language specifier.\n"
-#~ "[@ END @]"
-#~ msgstr ""
-#~ "[@ WRAPPER components/infobox.html\n"
-#~ "           type='info' title='Kompatibilitätshinweis!' @]\n"
-#~ "<p>Es gibt Pläne, <a href=\"https://metacpan.org/release/Text-Markdown"
-#~ "\">\n"
-#~ "<code>Text::Markdown</code><a> mit\n"
-#~ "<a href=\"https://metacpan.org/release/Text-MultiMarkdown\">\n"
-#~ "<code>Text::MultiMarkdown</code><a> als Qgodas Standard-Markdown-"
-#~ "Prozessor zu ersetzen, siehe \n"
-#~ "<a href=\"https://github.com/gflohr/qgoda/issues/55\">https://github.com/"
-#~ "gflohr/qgoda/issues/55</a>.\n"
-#~ "<code>Text::MultiMarkdown</code> untertützt solce Fenced Code-Blöcke mit "
-#~ "Sprachangabe.\n"
-#~ "[@ END @]"
-
-#~ msgid "## Syntax-Highlighting With PrismJS"
-#~ msgstr "## Syntax-Highlighting mit PrismJS"
-
-#~ msgid ""
-#~ "[PrismJS](https://prismjs.com/) is a very popular syntax highlighter "
-#~ "written in\n"
-#~ "Javascript that supports an impressive [list of\n"
-#~ "languages](https://prismjs.com/#languages-list)."
-#~ msgstr ""
-#~ "[PrismJS](https://prismjs.com/) ist ein sehr populärer, in JavaScript "
-#~ "geschriebener Syntax-Highlighter, der eine [beeindruckende Menge an "
-#~ "Programmiersprachen](https://prismjs.com/#languages-list) unterstützt."
-
-#~ msgid ""
-#~ "[@ WRAPPER components/infobox.html\n"
-#~ "           type='info' title='Did you know ...' @]\n"
-#~ "<p>... that PrismJS can also highlight Template Toolkit source code? Use\n"
-#~ "<code>tt2</code> as the language name and you're all done.\n"
-#~ "</p>\n"
-#~ "[@ END @]"
-#~ msgstr ""
-#~ "[@ WRAPPER components/infobox.html\n"
-#~ "           type='info' title='Schon gewusst?' @]\n"
-#~ "<p>PrismJS kann auch Template-Toolkit-Code highlighten. Als Sprache muss "
-#~ "<code>tt2</code> angegeben werden.\n"
-#~ "</p>\n"
-#~ "[@ END @]"
-
-#~ msgid "### Basic Usage"
-#~ msgstr "###  Grundsätzliche Anwendung"
-
-#~ msgid ""
-#~ "You can see the minimum required javascript and css files in the "
-#~ "following code\n"
-#~ "snippet:"
-#~ msgstr ""
-#~ "You can see the minimum required javascript and css files in the "
-#~ "following code\n"
-#~ "snippet:"
-
-#~ msgid ""
-#~ "The default stylesheet gets included in line 4 and the core library in "
-#~ "line 7.\n"
-#~ "Make sure that they are found at the locations specified."
-#~ msgstr ""
-#~ "Das Standard-Stylesheet wird in Zeile 4 eingebunden, die Bibliothek "
-#~ "selber in Zeile 7. Es muss natürlich sichergestellt werden, dass die "
-#~ "Dateien an den angegebenen Stellen gefunden werden können."
-
-#~ msgid "### Using a PrismJS Theme"
-#~ msgstr "### Verwendung von PrismJS-Themes"
-
-#~ msgid ""
-#~ "PrismJS ships with a number of themes. You can override the default theme "
-#~ "by\n"
-#~ "loading an *additional* stylesheet:"
-#~ msgstr ""
-#~ "PrismJS wird mit einer Reihe von Themes  ausgeliefert. Dazu muss "
-#~ "zusätzlich zum Standard-Stylesheet ein Theme-Stylesheet geladen werden:"
-
-#~ msgid "That will change the style to the \"coy\" theme."
-#~ msgstr "So wird zum Beispiel das „Coy“-Theme gewählt."
-
-#~ msgid "### Loading Highlighters and PrismJS Plug-Ins"
-#~ msgstr "### Highlighter und PrismJS-Erweiterungen laden"
-
-#~ msgid ""
-#~ "In order to save memory and band-width, PrismJS does not load all of its "
-#~ "highlighters\n"
-#~ "and plug-ins automatically but you have to explicitely specify them."
-#~ msgstr ""
-#~ "Um Speicher und Bandbreite zu sparen, lädt PrismJS nicht alle Highlighter "
-#~ "und Plug-Ins automatisch. Vielmehr müssen sie explizit eingebunden werden."
-
-#~ msgid ""
-#~ "The complete example below would load support for highlighting JavaScript "
-#~ "and also\n"
-#~ "load the `line-numbers` plug-in that uses CSS to prepend every line with "
-#~ "a line\n"
-#~ "number:"
-#~ msgstr ""
-#~ "Das untenstehende vollständige Beispiel würde den Highlighter für "
-#~ "JavaScript und das Plug-In „line-numbers“ laden, das mittels CSS vor jede "
-#~ "Zeile die Zeilennummer setzt."
-
-#~ msgid ""
-#~ "If you want to have syntax highlighting for more \n"
-#~ "languages, just add the corresponding PrismJS \n"
-#~ "*component* after line 11."
-#~ msgstr ""
-#~ "Um Highlighter für weitere Sprachen zu laden, müssen die entsprechenden "
-#~ "PrismJS-*Component* nach Zeile 11 eingebunden werden."
-
-#~ msgid "## Using the Qgoda Syntax Highlighter Plug-In"
-#~ msgstr "## Verwendung des Qgoda-Syntax-Highlighter-Plug-Ins"
-
-#~ msgid "Fenced code-blocks are not always enough:"
-#~ msgstr "Fenced Code-Blocks reichen nicht immer aus:"
-
-#~ msgid ""
-#~ "1. The markdown processor may not support them, or not support a language "
-#~ "specification.\n"
-#~ "2. You want to set additional attributes on the html elements, especially "
-#~ "classes."
-#~ msgstr ""
-#~ "1. Der Markdown-Prozessor unterstützt sie eventuell überhaupt nicht oder "
-#~ "nicht mit Sprachangabe.\n"
-#~ "2. Es ist zuweilen notwendig, weitere Attribute der HTML-Elemente zu "
-#~ "setzen, insbesondere CSS-Klassen."
-
-#~ msgid ""
-#~ "You can install the\n"
-#~ "[Qgoda highlighter plug-in](https://github.com/gflohr/qgoda-plugin-tt2-"
-#~ "highlight)\n"
-#~ "like any other Qgoda plug-in. Normally:"
-#~ msgstr ""
-#~ "Das [Qgoda-Highlighter-Plug-In](https://github.com/gflohr/qgoda-plugin-"
-#~ "tt2-highlight) lässt sich wie jede andere Qgoda-Erweiterung laden, also "
-#~ "normalerweise auf eine der folgenden Arten:"
-
-#~ msgid ""
-#~ "You can use `yarn add gflohr/qgoda-plugin-tt2-highlight` if you prefer "
-#~ "`yarn` over\n"
-#~ "`npm`."
-#~ msgstr ""
-#~ "Wer lieber `yarn` als `npm` benutzt, gibt entsprechend  `yarn add gflohr/"
-#~ "qgoda-plugin-tt2-highlight` an."
-
-#~ msgid ""
-#~ "Now you have to use\n"
-#~ "[Template Toolkit](http://www.template-toolkit.org/)\n"
-#~ "directives in order to activate the highlighting:"
-#~ msgstr ""
-#~ "Jetzt müssen\n"
-#~ "[Template-Toolkit](http://www.template-toolkit.org/)-Direktiven benutzt "
-#~ "werden, um das Highlighting zu aktivieren."
-
-#~ msgid ""
-#~ "All positional arguments to the filter plug-in (line 2) are added to the "
-#~ "CSS\n"
-#~ "class of the surrounding `<pre>` element.  The named arguments are "
-#~ "converted\n"
-#~ "to HTML attributes and their corresponding values."
-#~ msgstr ""
-#~ "Alle regulären Argumente für den Filter-Aufruf (Zeile 2) werden als CSS-"
-#~ "Klasse dem umgebenden `<pre>`-Elements zugefügt. Die benamten Argumente "
-#~ "werden in HTML-Attribute mit Wert umgewandelt."
-
-#~ msgid "The above example will result in the following HTML code:"
-#~ msgstr "Der folgende HTML-Code resultiert aus obigem Beispiel:"
-
-#~ msgid ""
-#~ "Provided that you have correctly loaded the PrismJS `line-numbers` plug-"
-#~ "in, this\n"
-#~ "will highlight the code as JavaScript in the browser, add line numbers in "
-#~ "front of every\n"
-#~ "line and start the line numbering with line 5.  For\n"
-#~ "instance, the code examples on this very page are \n"
-#~ "produced with directives like this"
-#~ msgstr ""
-#~ "Vorausgesetzt, das PrismJS-Plug-In `line-numbers` wurde korrekt geladen, "
-#~ "werdenwird jetzt vor jeder JavaScript-Zeile die Zeilennummer angezeigt. "
-#~ "Weiterhin wird der Zeilenzahler mit 5 installiert. Die Quelltext-"
-#~ "Beispiele auf dieser Seite wurden auf diese Weise erzeugt."
-
-#~ msgid "### Page-wide Defaullts"
-#~ msgstr "### Vorgaben für das komplette Dokument"
-
-#~ msgid ""
-#~ "It is quite likely that all code blocks on a page are in\n"
-#~ "the same programming language and should share their\n"
-#~ "settings.  You can therefore pass global arguments in\n"
-#~ "the `USE` directive, when you load the filter."
-#~ msgstr ""
-#~ "Es ist häufig der Fall, dass alle Code-Blöcke auf einer Seite in der "
-#~ "selben Programmiersprache geschrieben sind, und dementsprechend auch "
-#~ "gleich präsentiert werden sollen. Deshahl können der `USE`-Direktive auch "
-#~ "globale Argumente beim Laden des Plug-Ins übergeben werden."
-
-#~ msgid ""
-#~ "All `FILTER` invocations will now share the same settings,\n"
-#~ "respectively, they will receive the sum of the arguments\n"
-#~ "that you specified for `USE` and those for `FILTER`."
-#~ msgstr ""
-#~ "Alle `FILTER`-Aufrufe verwenden jetzt die selben Einstellung, bzw. sie "
-#~ "erhalten die Summe der Argumente, die für `USE` *und* für `FILTER` "
-#~ "angegeben wurden."
-
-#~ msgid ""
-#~ "If you want to disable a certain CSS class for an\n"
-#~ "individual `FILTER`, just pass the class name with a\n"
-#~ "minus sign (-) prepended:"
-#~ msgstr ""
-#~ "Um eine CSS-Klasse nur für einen bestimmten `FILTER`-Aufruf zu "
-#~ "unterdrücken, genügt es, dem Namen ein Minuszeichen voranzustellen:"
-
-#~ msgid ""
-#~ "This codeblock will now as an exception not be\n"
-#~ "highlighted as JavaScript but as HTML."
-#~ msgstr ""
-#~ "Dieser bestimmte Code-Block wird dadurch nicht als JavaScript sondern als "
-#~ "HTML gerendert."
-
-#~ msgid "## Caveats"
-#~ msgstr "## Stolpersteine"
-
-#~ msgid "There are two little gotchas that you have to keep in mind."
-#~ msgstr "Es gibt zwei kleine Problemchen, die man im Auge behalten sollte:"
-
-#~ msgid "### Code Blocks Without Language Specification"
-#~ msgstr "### Code-Blöcke ohne Sprachangabe"
-
-#~ msgid ""
-#~ "If you use a fenced\n"
-#~ "code block or the qgoda highlighter plug-in without a language "
-#~ "specification,\n"
-#~ "PrismJS will not highlight the code block. This will be fixed in a later\n"
-#~ "version of the highlighter plug-in (see https://github.com/gflohr/qgoda-"
-#~ "plugin-tt2-highlight/issues\n"
-#~ "and https://github.com/gflohr/qgoda/issues/51). Until then, you either "
-#~ "have to\n"
-#~ "mark every affected code block as language \"none\" (or with the class "
-#~ "\"language-none\") or\n"
-#~ "you have to resort to a little bit of JavaScript:"
-#~ msgstr ""
-#~ "Wird bei Fenced Code-Blocks oder bei Verwendung des Qgoda Highlighter-"
-#~ "Plug-Ins keine Sprahe angegeben, wird der Code-Block von PrismJS "
-#~ "ignoriert. Das wird in einer späteren Version des Highlighter-Plug-Ins "
-#~ "gefixt werden (iehe https://github.com/gflohr/qgoda-plugin-tt2-highlight/"
-#~ "issues\n"
-#~ "und https://github.com/gflohr/qgoda/issues/51). Bis dahin müssen entweder "
-#~ "alle betroffenen Code-Blöcke mit der Sprache \"none\" (oder der CSS-"
-#~ "Klasse \"language-none\") gekennzeichnet werden, oder man muss ein wenig "
-#~ "JavaScript zu Hilfe nehmen:"
-
-#~ msgid ""
-#~ "You may argue that the check in line 4 will miss `pre` elements that have "
-#~ "a class attribute\n"
-#~ "but miss a `language-*` specification.  This cannot happen because all of "
-#~ "the blocks\n"
-#~ "are generated, and they will *not* have any class attribute set."
-#~ msgstr ""
-#~ "Man könnte meine, dass die Prüfung in Zeile 4 keine `pre`-Elemente "
-#~ "findet, die ywar ein `class`-Attribut aber keine `language-*`-"
-#~ "Spezifikation. Die kann allerdings nicht passieren, weil alle diese "
-#~ "Blöcke generiert sind, und deshalb gar keine `class`-Attribute haben."
-
-#~ msgid ""
-#~ "Well, not 100 % true. If you created such a block with the highlighter "
-#~ "plug-in,\n"
-#~ "it could have a class attribute but no language specification. But that's "
-#~ "your own\n"
-#~ "fault then, and you know how to fix it."
-#~ msgstr ""
-#~ "Gut, das stimmt nicht ganz. Falls der betreffende Code-Block mit dem "
-#~ "Qgoda-Highlighter-Plug-In erzeugt wurde, könnte genau dieser Fall "
-#~ "eintreten. Das ist dann allerdings die eigene Schuld auch außerdem leicht "
-#~ "zu beheben."
-
-#~ msgid "### Using the CSS-Modules And Line-Numbers Plug-In Simultaneously"
-#~ msgstr ""
-#~ "### Gleichzeitige Verwendung des CSS-Modules- und Line-Numbers-Plug-Ins"
-
-#~ msgid ""
-#~ "The other glitch is rather esoteric and caused by a little flaw in the "
-#~ "plug-in system\n"
-#~ "of PrismJS. Its `css-modules` plug-in can be used to automatically use "
-#~ "the\n"
-#~ "[BEM methodology](https://en.bem.info/) for automatically namespacing all "
-#~ "CSS\n"
-#~ "class names and id attributes."
-#~ msgstr ""
-#~ "Das andere Problem ist etwas esoterisch und durch einen kleine "
-#~ "Schwachstelle im Plug-In-System von PrismJS bedingt. Das Plug-In `css-"
-#~ "modules` dient zur automatischen Verwendung von Namespaces für CSS-"
-#~ "Klassen und ID-Attribute gemäß der \n"
-#~ "[BEM-Methodologie](https://en.bem.info/)."
-
-#~ msgid ""
-#~ "The `line-numbers` plug-in on the other hand ignores BEM.  It searches "
-#~ "for code blocks\n"
-#~ "that have the exact class `line-numbers`.  The workaround is to use both "
-#~ "classes,\n"
-#~ "the BEM-style class for styling and the literal one for the JavaScript "
-#~ "code."
-#~ msgstr ""
-#~ "Das Plug-In `line-numbers` hingegen ignoriert BEM. Es sucht nach Code-"
-#~ "Blöcken,\n"
-#~ "die exakt eine Klasse `line-numbers` gesetzt haben. Um das Problem zu "
-#~ "umschiffen, müssen beide Klassen gleichzeitig gesetzt werden, nämlich die "
-#~ "Klassen gemäß BEM für das Styling, die Klassen ohne Präfix für den "
-#~ "JavaScript-Code."
-
-#~ msgid ""
-#~ "You can see how this is done in the\n"
-#~ "[source code of this page](https://github.com/gflohr/qgoda-site/blame/"
-#~ "master/[@ asset.relpath @])."
-#~ msgstr ""
-#~ "Wie das exakt geht, kann man im \n"
-#~ "[Quelltest der englischen Version dieser Seite](https://github.com/gflohr/"
-#~ "qgoda-site/blame/master/[@ asset.relpath @]) sehen."
-
-#~ msgid ""
-#~ "The BEM-style class name is stored in the variable `css.prism."
-#~ "line_numbers`. The hash\n"
-#~ "containing that variable is read in\n"
-#~ "https://github.com/gflohr/qgoda-site/blob/master/_views/functions/css-"
-#~ "modules.tt\n"
-#~ "and that function is included at the top of\n"
-#~ "[source code of this page](https://github.com/gflohr/qgoda-site/blame/"
-#~ "master/[@ asset.relpath @])."
-#~ msgstr ""
-#~ "Der Klassenname gemäß BEM wird in der Variablen `css.prism.line_numbers` "
-#~ "gespeichert. Der Hash, in dem diese Variable enthalten ist, wird in "
-#~ "https://github.com/gflohr/qgoda-site/blob/master/_views/functions/css-"
-#~ "modules.tt gelesen, und diese Funktion wird oben im [Quelltext der "
-#~ "englischen Version dieser Seite](https://github.com/gflohr/qgoda-site/"
-#~ "blame/master/)[@ asset.relpath @]) relativ weit oben eingebunden."
-
-#~ msgid ""
-#~ "[% WRAPPER components/variable.html\n"
-#~ "   variable=\"po.refresh\" type='Boolean (0 or 1)' \n"
-#~ "   default='0' -%]\n"
-#~ "Set to 1 if you want to reload translations before every rebuild.  By "
-#~ "default, they are loaded only once at program start.  If you reload them "
-#~ "on every rebuild, freshly installed translations are immediately "
-#~ "visible.\n"
-#~ "[%- END %]"
-#~ msgstr ""
-#~ "[% WRAPPER components/variable.html\n"
-#~ "   variable=\"po.refresh\" type='Boolean (0 or 1)' \n"
-#~ "   default='0' -%]\n"
-#~ "Kann auf 1 gesetzt werden, wenn die Übersetzungen vor jedem Rebuild neu "
-#~ "geladen werden sollen. Standardmäßig werden sie nur beim Programm-Start "
-#~ "geladen. Werden installierte Übersetzungen stattdessen bei jedem Rebuild "
-#~ "neu geladen, sind sie sofort sichtbar.\n"
-#~ "[%- END %]"
-
-#, fuzzy
-#~ msgid ""
-#~ "[% WRAPPER components/variable.html\n"
-#~ "   variable=\"po.tt2\" type='Pattern list' \n"
-#~ "   default='[_views, _includes]' -%]\n"
-#~ "List of patterns where to search for translatable template files.\n"
-#~ "[%- END %]"
-#~ msgstr ""
-#~ "[% WRAPPER components/variable.html\n"
-#~ "   variable=\"po.tt2\" type='Pattern list' \n"
-#~ "   default='[_views, _includes]' -%]\n"
-#~ "Liste von Suchmustern, wo nach übersetzbaren Template-Dateien gesucht "
-#~ "werden soll.\n"
-#~ "[%- END %]"
-
-#~ msgctxt "title"
-#~ msgid "Multi-Language Overview"
-#~ msgstr "Übersicht Mehrsprachigkeit"
-
-#, fuzzy
-#~ msgid "### Common Texts"
-#~ msgstr "### Code in Templates"
-
-#, fuzzy
-#~ msgid "### Listings and Links"
-#~ msgstr "Listen und Links"
-
-#, fuzzy
-#~| msgctxt "title"
-#~| msgid "Data Privacy"
-#~ msgid "Data Privacy Statement"
-#~ msgstr "Datenschutz"
-
-#, fuzzy
-#~| msgctxt "title"
-#~| msgid "Legal Disclosure"
-#~ msgid "Legal Disclosure"
-#~ msgstr "Impressum"
-
-#, fuzzy
-#~ msgid "Read more"
-#~ msgstr "Weiterlesen"
+#~ msgid "## Language Overviews"
+#~ msgstr "## Sprachumschaltung"

@@ -511,71 +511,39 @@ msgstr ""
 msgid "### Availabe Commands"
 msgstr ""
 
-#: ../en/docs/command-line-interface.md:60
-msgid "#### build"
-msgstr ""
-
-#: ../en/docs/command-line-interface.md:62
+#: ../en/docs/command-line-interface.md:64
 msgid "The commands `build` instructs qgoda to build the site and exit.  Helper programs are *not* executed!"
 msgstr ""
 
-#: ../en/docs/command-line-interface.md:64
-msgid "#### watch"
-msgstr ""
-
-#: ../en/docs/command-line-interface.md:66
+#: ../en/docs/command-line-interface.md:70
 msgid "Same as `build` above but instead of terminating, qgoda watches the file system for changes and triggers a re-build after a source file has changed."
 msgstr ""
 
-#: ../en/docs/command-line-interface.md:68
+#: ../en/docs/command-line-interface.md:72
 msgid "Helper applications are started in parallel."
 msgstr ""
 
-#: ../en/docs/command-line-interface.md:70
-msgid "#### config"
-msgstr ""
-
-#: ../en/docs/command-line-interface.md:72
+#: ../en/docs/command-line-interface.md:78
 msgid "Dumps the current configuration as <q-term>yaml:YAML</q-term> and exits.  The configuration printed is the result of merging the default configuration with the files `P:_config.yaml` and `P:_localconfig.yaml`."
 msgstr ""
 
-#: ../en/docs/command-line-interface.md:74
-msgid "#### init"
-msgstr ""
-
-#: ../en/docs/command-line-interface.md:76
+#: ../en/docs/command-line-interface.md:84
 msgid "Initializes a new qgoda site."
 msgstr ""
 
-#: ../en/docs/command-line-interface.md:78
-msgid "#### dump"
-msgstr ""
-
-#: ../en/docs/command-line-interface.md:80
+#: ../en/docs/command-line-interface.md:90
 msgid "Dumps the content of the entire site.  The output is suitable for pumping it into external programs (for example full-text search engines like [elasticsearch](https://www.elastic.co/)."
 msgstr ""
 
-#: ../en/docs/command-line-interface.md:82
-msgid "#### markdown"
-msgstr ""
-
-#: ../en/docs/command-line-interface.md:84
+#: ../en/docs/command-line-interface.md:96
 msgid "Generates <q-term>html</q-term> from a <q-term>markdown</q-term> file.  This is meant for debugging problems with markdown rendering."
 msgstr ""
 
-#: ../en/docs/command-line-interface.md:86
-msgid "#### po"
-msgstr ""
-
-#: ../en/docs/command-line-interface.md:88
+#: ../en/docs/command-line-interface.md:102
 msgid "Various commands needed for multi-language sites.  See [% q.lanchor('mulit-language-overview') %] for details."
 msgstr ""
 
-#: ../en/docs/command-line-interface.md:90
-msgid "#### xgettext"
-msgstr ""
-
-#: ../en/docs/command-line-interface.md:92
+#: ../en/docs/command-line-interface.md:108
 msgid "Extracts translatable snippets from the site's markdown source files into `.po`. files.  This command is invoked implicitely by `qgoda po pot` (see above), and you normally don't have to use `qgoda xgettext` directly.  See [% q.lanchor('mulit-language-overview') %] for more information."
 msgstr ""
 
@@ -791,7 +759,7 @@ msgstr ""
 
 #: ../en/docs/defaults.md:6
 msgctxt "description"
-msgid "How to set default values for multiple documents at once"
+msgid "How to set default values for multiple documents at once."
 msgstr ""
 
 #: ../en/docs/defaults.md:8
@@ -808,7 +776,7 @@ msgid ""
 "Such default values can be set with the configuration\n"
 "variable `C:defaults` in `P:_config.yaml` using the \n"
 "powerful syntax of\n"
-"[pattern lists]([% q.llink(name='patter-lists') %])."
+"[pattern lists]([% q.llink(name='pattern-lists') %])."
 msgstr ""
 
 #: ../en/docs/defaults.md:19
@@ -829,7 +797,7 @@ msgstr ""
 msgid ""
 "Each rule is a *hash* with the two keys `files` and\n"
 "`values`. With `files` you specify the matching\n"
-"documents, with values, the values you want to set for\n"
+"documents, with `values`, the values you want to set for\n"
 "them."
 msgstr ""
 
@@ -840,46 +808,19 @@ msgstr ""
 msgid "Example:"
 msgstr ""
 
-#: ../en/docs/defaults.md:34
-msgid ""
-"```yaml;line-numbers\n"
-"defaults:\n"
-"    - files: /en\n"
-"      values:\n"
-"        lingua: en\n"
-"    - files: /de\n"
-"      values:\n"
-"        lingua: de\n"
-"        translate: ['title', 'description']\n"
-"```"
-msgstr ""
-
-#: ../en/docs/defaults.md:45
+#: ../en/docs/defaults.md:49
 msgid ""
 "The value for `files` specifies the pattern, in\n"
 "`values` you set the default values for arbitrary\n"
 "variables."
 msgstr ""
 
-#: ../en/docs/defaults.md:49
+#: ../en/docs/defaults.md:53
 msgid "You can also specify multiple patterns in `files`,\n"
 "simply by specifying an array instead of a single value:"
 msgstr ""
 
-#: ../en/docs/defaults.md:52
-msgid ""
-"```yaml;line-numbers\n"
-"defaults:\n"
-"    - files:\n"
-"        - index.*\n"
-"        - listing.*\n"
-"        - '!/index.md'\n"
-"      values:\n"
-"        type: listing\n"
-"```"
-msgstr ""
-
-#: ../en/docs/defaults.md:62
+#: ../en/docs/defaults.md:70
 msgid ""
 "The above example would set the default value for `type`\n"
 "to \"listing\" for all files that match `index.*` and\n"
@@ -1404,74 +1345,72 @@ msgctxt "description"
 msgid "Learn how to filter a collection of arguments by taxonomies respectively document variables."
 msgstr ""
 
-#: ../en/docs/filters.md:8
+#: ../en/docs/filters.md:13
 msgid ""
-"[% USE q = Qgoda %]\n"
-"[% TAGS [@ @] %]\n"
 "Many template functions of the\n"
 "[Qgoda Plug-in]([@ q.llink(name='qgoda-plug-in') @]) have filters as their\n"
 "argument. Filters allow you to specify a group of documents or even one\n"
 "single document."
 msgstr ""
 
-#: ../en/docs/filters.md:15
+#: ../en/docs/filters.md:18
 msgid "<qgoda-toc />"
 msgstr ""
 
-#: ../en/docs/filters.md:17
+#: ../en/docs/filters.md:20
 msgid "## Filters Are Key-Value Pairs"
 msgstr ""
 
-#: ../en/docs/filters.md:19
+#: ../en/docs/filters.md:22
 msgid "A typical filter looks like this:"
 msgstr ""
 
-#: ../en/docs/filters.md:21
+#: ../en/docs/filters.md:24
 msgid ""
 "```tt2\n"
 "Read this page in [German]([% q.link(name=asset.name lingua='de') %]). \n"
 "```"
 msgstr ""
 
-#: ../en/docs/filters.md:25
+#: ../en/docs/filters.md:28
 msgid "The above snippet calls the template function `M:q.llink()` with two named\n"
 "arguments `name` and `lingua`."
 msgstr ""
 
-#: ../en/docs/filters.md:28
+#: ../en/docs/filters.md:31
 msgid ""
 "All of these arguments specify conditions that a document must fulfill to\n"
 "pass the filter.  In the above case that would be documents whose `name`\n"
-"variable has the same value as the other document, and the `lingua`\n"
+"variable has the same value as the current document, and the `lingua`\n"
 "variable should have the hard-coded value `de`."
 msgstr ""
 
-#: ../en/docs/filters.md:33
+#: ../en/docs/filters.md:36
 msgid "## Broken and Ambiguous Links"
 msgstr ""
 
-#: ../en/docs/filters.md:35
+#: ../en/docs/filters.md:38
 msgid ""
-"If you specify a filter that produces no results, you will see a warning\n"
+"If you specify a filter that produces no results, you will normally see a warning\n"
 "in the console. Likewise, for methods that should produce exactly one hit,\n"
 "you will get a warning if more than one matching document exists."
 msgstr ""
 
-#: ../en/docs/filters.md:39
+#: ../en/docs/filters.md:42
 msgid "Such functions are `M:q.link()`, `M:q.anchor()`, and `M:q.xref()` and their\n"
 "multilanguage equivalents `M:q.llink()`, `M:q.lanchor()`, and `M:q.lxref()`."
 msgstr ""
 
-#: ../en/docs/filters.md:42
+#: ../en/docs/filters.md:45
 msgid "## Conditions"
 msgstr ""
 
-#: ../en/docs/filters.md:44
+#: ../en/docs/filters.md:47
 msgid "The equality check is the default condition for filters but there are more\n"
 "at your disposal with a slightly more complicated syntax:"
 msgstr ""
 
-#: ../en/docs/filters.md:47
+#: ../en/docs/filters.md:50
 msgid ""
 "```tt2\n"
 "See the [API docs]([% q.link(name='api-docs') %]).\n"
@@ -1479,230 +1418,138 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/filters.md:52
+#: ../en/docs/filters.md:55
 msgid ""
 "The second example uses the advanced syntax. Instead of a single value,\n"
 "you specify a list of two values.  The first one is the comparison operator,\n"
 "and the second one the value."
 msgstr ""
 
-#: ../en/docs/filters.md:56
+#: ../en/docs/filters.md:59
 msgid "In fact both lines do exactly the same, because `eq` as the default\n"
 "comparison operator."
 msgstr ""
 
-#: ../en/docs/filters.md:59
+#: ../en/docs/filters.md:62
 msgid "So, the advanced syntax is:"
 msgstr ""
 
-#: ../en/docs/filters.md:61
+#: ../en/docs/filters.md:64
 msgid ""
 "```tt2\n"
 "VARIABLE=[OPERATOR, VALUE]\n"
 "```"
 msgstr ""
 
-#: ../en/docs/filters.md:65
-msgid "### `eq`"
-msgstr ""
-
-#: ../en/docs/filters.md:67
+#: ../en/docs/filters.md:72
 msgid "Returns true if the values are string-wise equal."
 msgstr ""
 
-#: ../en/docs/filters.md:69
-msgid "### `ne`"
-msgstr ""
-
-#: ../en/docs/filters.md:71
+#: ../en/docs/filters.md:78
 msgid "Returns true if the values are string-wise not equal."
 msgstr ""
 
-#: ../en/docs/filters.md:73
-msgid "### `ge`"
-msgstr ""
-
-#: ../en/docs/filters.md:75
-msgid "Returns true if the value of the variable in the other document is (string-wise) greater or equal than the value specified\n"
-"in the other document. For example \"bbb\" is string-wise greater than \"aaa\"."
-msgstr ""
-
-#: ../en/docs/filters.md:78
-msgid "### `gt`"
-msgstr ""
-
-#: ../en/docs/filters.md:80
-msgid "Returns true if the value of the variable in the other document is (string-wise) greater than the value specified\n"
-"in the other document. For example \"bbb\" is string-wise greater than \"aaa\"."
-msgstr ""
-
-#: ../en/docs/filters.md:83
-msgid "### `le`"
-msgstr ""
-
-#: ../en/docs/filters.md:85
-msgid "Returns true if the value of the variable in the other document is (string-wise) less or equal than the value specified\n"
-"in the other document. For example \"aaa\" is string-wise less than \"bbb\"."
-msgstr ""
-
-#: ../en/docs/filters.md:88
-msgid "### `lt`"
+#: ../en/docs/filters.md:84
+msgid "Returns true if the value of the variable in the other document is (string-wise) greater or equal than the value specified. For example \"bbb\" is string-wise greater than \"aaa\"."
 msgstr ""
 
 #: ../en/docs/filters.md:90
-msgid "Returns true if the value of the variable in the other document is (string-wise) less than the value specified\n"
-"in the other document. For example \"aaa\" is string-wise less than \"bbb\"."
+msgid "Returns true if the value of the variable in the other document is (string-wise) greater than the value specified. For example \"bbb\" is string-wise greater than \"aaa\"."
 msgstr ""
 
-#: ../en/docs/filters.md:93
-msgid "### `ieq`"
-msgstr ""
-
-#: ../en/docs/filters.md:95
-msgid "Like [`eq`](#eq) but ignores case for the comparison."
-msgstr ""
-
-#: ../en/docs/filters.md:97
-msgid "### `ine`"
-msgstr ""
-
-#: ../en/docs/filters.md:99
-msgid "Like [`ne`](#ne) but ignores case for the comparison."
+#: ../en/docs/filters.md:96
+msgid "Returns true if the value of the variable in the other document is (string-wise) less or equal than the value specified. For example \"aaa\" is string-wise less than \"bbb\"."
 msgstr ""
 
 #: ../en/docs/filters.md:102
-msgid "### `ige`"
+msgid "Returns true if the value of the variable in the other document is (string-wise) less than the value specified. For example \"aaa\" is string-wise less than \"bbb\"."
 msgstr ""
 
-#: ../en/docs/filters.md:104
-msgid "Like [`ge`](#ge) but ignores case for the comparison."
-msgstr ""
-
-#: ../en/docs/filters.md:107
-msgid "### `igt`"
-msgstr ""
-
-#: ../en/docs/filters.md:109
-msgid "Like [`gt`](#gt) but ignores case for the comparison."
-msgstr ""
-
-#: ../en/docs/filters.md:112
-msgid "### `ile`"
+#: ../en/docs/filters.md:108
+msgid "Like [`eq`](#eq) but ignores case for the comparison."
 msgstr ""
 
 #: ../en/docs/filters.md:114
+msgid "Like [`ne`](#ne) but ignores case for the comparison."
+msgstr ""
+
+#: ../en/docs/filters.md:120
+msgid "Like [`ge`](#ge) but ignores case for the comparison."
+msgstr ""
+
+#: ../en/docs/filters.md:126
+msgid "Like [`gt`](#gt) but ignores case for the comparison."
+msgstr ""
+
+#: ../en/docs/filters.md:132
 msgid "Like [`le`](#le) but ignores case for the comparison."
 msgstr ""
 
-#: ../en/docs/filters.md:117
-msgid "### `ilt`"
-msgstr ""
-
-#: ../en/docs/filters.md:119
+#: ../en/docs/filters.md:138
 msgid "Like [`lt`](#lt) but ignores case for the comparison."
 msgstr ""
 
-#: ../en/docs/filters.md:121
-msgid "### `==`"
-msgstr ""
-
-#: ../en/docs/filters.md:123
+#: ../en/docs/filters.md:144
 msgid "Returns true if the value of the variable in the other document is numerically equal to the value specified.\n"
 "For example `1.0` and `1` and `+1` are all numerically equal."
 msgstr ""
 
-#: ../en/docs/filters.md:126
-msgid "### `!=`"
-msgstr ""
-
-#: ../en/docs/filters.md:128
+#: ../en/docs/filters.md:151
 msgid "Returns true if the value of the variable in the other document is numerically not equal to the value specified."
 msgstr ""
 
-#: ../en/docs/filters.md:130
-msgid "### `>=`"
-msgstr ""
-
-#: ../en/docs/filters.md:132
+#: ../en/docs/filters.md:157
 msgid "Returns true if the value of the variable in the other document is numerically greater or equal than the value specified."
 msgstr ""
 
-#: ../en/docs/filters.md:134
-msgid "### `>`"
-msgstr ""
-
-#: ../en/docs/filters.md:136
+#: ../en/docs/filters.md:163
 msgid "Returns true if the value of the variable in the other document is numerically greater than the value specified."
 msgstr ""
 
-#: ../en/docs/filters.md:138
-msgid "### `<=`"
-msgstr ""
-
-#: ../en/docs/filters.md:140
+#: ../en/docs/filters.md:169
 msgid "Returns true if the value of the variable in the other document is numerically less or equal than the value specified."
 msgstr ""
 
-#: ../en/docs/filters.md:142
-msgid "### `<`"
-msgstr ""
-
-#: ../en/docs/filters.md:144
+#: ../en/docs/filters.md:175
 msgid "Returns true if the value of the variable in the other document is numerically less than the value specified."
 msgstr ""
 
-#: ../en/docs/filters.md:146
-msgid "### `=~`"
-msgstr ""
-
-#: ../en/docs/filters.md:148
+#: ../en/docs/filters.md:181
 msgid "Returns true if the value of the variable in the other document matches the value specified as a Perl regular expression."
 msgstr ""
 
-#: ../en/docs/filters.md:150
-msgid "### `!~`"
-msgstr ""
-
-#: ../en/docs/filters.md:152
+#: ../en/docs/filters.md:187
 msgid "Returns true if the value of the variable in the other document does not match the value specified as a Perl regular expression."
 msgstr ""
 
-#: ../en/docs/filters.md:154
-msgid "### `contains`"
-msgstr ""
-
-#: ../en/docs/filters.md:156
+#: ../en/docs/filters.md:193
 msgid "Returns true if the value of the variable in the other document is an array (a list) the value specified is contained in that array."
 msgstr ""
 
-#: ../en/docs/filters.md:158
-msgid "### `icontains`"
-msgstr ""
-
-#: ../en/docs/filters.md:160
+#: ../en/docs/filters.md:199
 msgid "Like [`contains`](#contains) but case is ignored for the comparison."
 msgstr ""
 
-#: ../en/docs/filters.md:162
+#: ../en/docs/filters.md:201
 msgid "## Filtering Results are Cached"
 msgstr ""
 
-#: ../en/docs/filters.md:164
+#: ../en/docs/filters.md:203
 msgid ""
 "Applying filters to a large set of documents is potentially expensive. However,\n"
 "you pay the price only once. All results of filtering operations are cached\n"
 "in memory, even when you shuffle the order of the conditions in the filter."
 msgstr ""
 
-#: ../en/docs/filters.md:168
+#: ../en/docs/filters.md:207
 msgid "## Can Filters Be ORed Together?"
 msgstr ""
 
-#: ../en/docs/filters.md:170
+#: ../en/docs/filters.md:209
 msgid "No."
 msgstr ""
 
-#: ../en/docs/filters.md:172
+#: ../en/docs/filters.md:211
 msgid ""
 "This is a deliberate design decision that favors a simple and comprehensible\n"
 "syntax over flexibility. If you need a logical or, you can achieve that by template code\n"
@@ -1710,7 +1557,7 @@ msgid ""
 "the operators you need."
 msgstr ""
 
-#: ../en/docs/filters.md:177
+#: ../en/docs/filters.md:216
 msgid "Besides, it seems to be hard to find a use case for ORed conditions."
 msgstr ""
 
@@ -3145,7 +2992,7 @@ msgid "File name patterns and lists of file name patterns are used throughout Qg
 msgstr ""
 
 #: ../en/docs/pattern-lists.md:13
-msgid "Lists of search patterns in Qgoda follow the convention of [gitignore](https://git-scm.com/docs/gitignore), only that you put your configuration in [YAML](http://yaml.org/) file `_config.yaml` and not in a file `P:.gitignore`."
+msgid "Lists of search patterns in Qgoda follow the convention of [gitignore](https://git-scm.com/docs/gitignore), only that you put your configuration in a [YAML](http://yaml.org/) file `P:_config.yaml` and not in a file `P:.gitignore`."
 msgstr ""
 
 #: ../en/docs/pattern-lists.md:17
@@ -3389,7 +3236,7 @@ msgid "## Trigger Documents"
 msgstr ""
 
 #: ../en/docs/po-translations.md:36
-msgid "The central idea of content inernationalization inQgoda are so-called trigger documents.  They have no content \n"
+msgid "The central idea of content inernationalization in Qgoda are so-called trigger documents.  They have no content \n"
 "but only <q-term>front matter</q-term>:"
 msgstr ""
 
@@ -3506,11 +3353,24 @@ msgid ""
 "[@ END @]"
 msgstr ""
 
-#: ../en/docs/po-translations.md:116
+#: ../en/docs/po-translations.md:115 ../en/docs/translating-templates.md:126
+msgid "## Missing Translations"
+msgstr ""
+
+#: ../en/docs/po-translations.md:117 ../en/docs/translating-templates.md:128
+msgid ""
+"What if a certain string has not been \n"
+"[translated]([@ q.llink(name='translation-workflow') @]) yet? The gettext way of\n"
+"handling that situation is to use the original string, that is the string\n"
+"in the main language of your site. That's not perfect but better than nothing\n"
+"and you can always remedy it by providing a translation."
+msgstr ""
+
+#: ../en/docs/po-translations.md:123
 msgid "## What Else?"
 msgstr ""
 
-#: ../en/docs/po-translations.md:118
+#: ../en/docs/po-translations.md:125
 msgid ""
 "Nothing! It's as simple as that. Just set the\n"
 "[defaults]([@ q.llink(name='defaults') @]) for `V:asset.translate` and\n"
@@ -3518,7 +3378,7 @@ msgid ""
 "of every document is as simple as:"
 msgstr ""
 
-#: ../en/docs/po-translations.md:123
+#: ../en/docs/po-translations.md:130
 msgid ""
 "```yaml\n"
 "---\n"
@@ -3527,7 +3387,7 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/po-translations.md:129
+#: ../en/docs/po-translations.md:136
 msgid "This site itself is translated into German using exactly this technique."
 msgstr ""
 
@@ -4384,7 +4244,7 @@ msgid "So in the end, a multi-language site requires just a single letter more o
 msgstr ""
 
 #: ../en/docs/referencing-languages.md:53
-msgid "## Language Overviews"
+msgid "## Language Switches"
 msgstr ""
 
 #: ../en/docs/referencing-languages.md:55
@@ -4411,22 +4271,6 @@ msgstr ""
 
 #: ../en/docs/related-documents.md:10
 msgid "Displaying related documents is as easy as this:"
-msgstr ""
-
-# QGODA-NO-XGETTEXT
-#: ../en/docs/related-documents.md:12
-msgid ""
-"[%TAGS [- -]%]\n"
-"```tt2;line-numbers\n"
-"[% USE q = Qgoda %]\n"
-"[% docs= q.related() %]\n"
-"<ul>\n"
-"[% FOREACH doc IN docs %]\n"
-"  <li><a href=\"[% doc.permalink %]\">[% doc.title | html %]</li>\n"
-"[% END %]\n"
-"</ul>\n"
-"```\n"
-"<!--QGODA-NO-XGETTEXT-->"
 msgstr ""
 
 #: ../en/docs/related-documents.md:25
@@ -5387,11 +5231,11 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/translating-templates.md:126
+#: ../en/docs/translating-templates.md:134
 msgid "## Troubleshooting"
 msgstr ""
 
-#: ../en/docs/translating-templates.md:128
+#: ../en/docs/translating-templates.md:136
 msgid "A very common problem is that `gtx.gettext()` seems to return an empty string. The reason is almost always that you have forgotten to activate the `Gettext` plug-in. See [above](#activating-the-plug-in) how to fix that."
 msgstr ""
 
@@ -5620,28 +5464,42 @@ msgid ""
 msgstr ""
 
 #: ../en/docs/translation-workflow.md:149
+msgid ""
+"[@ WRAPPER components/infobox.html\n"
+"           type='info' title='Use a Makefile' @]\n"
+"You may have noticed that Qgoda has also created a\n"
+"<code>Makefile</code> for all the `make` aficionados\n"
+"out there (like me). You can <code>cd</code> into\n"
+"<code>_po</code> and type <code>make</code> to see\n"
+"all the targets that the Makefile supports. You are,\n"
+"however, on your own creating the various `POTFILES`,\n"
+"pull requests welcome!\n"
+"[@ END @]"
+msgstr ""
+
+#: ../en/docs/translation-workflow.md:160
 msgid "### Creating the PO Template (`.pot`) File"
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:151
+#: ../en/docs/translation-workflow.md:162
 msgid ""
 "The master translation catalog is stored as a so-called PO template \n"
 "file under `_po/TEXTDOMAIN.pt`, where `TEXTDOMAIN` is the textdomain you have\n"
 "configured in the configuration variable `C:po.textdomain`."
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:155
+#: ../en/docs/translation-workflow.md:166
 msgid ""
 "A `.pot` file has the same format as normal `.po` files only that it contains\n"
 "only the original strings and no translations. You should never edit it,\n"
 "because it gets overwritten, whenever you extract new strings."
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:159
+#: ../en/docs/translation-workflow.md:170
 msgid "You create the file like this:"
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:161
+#: ../en/docs/translation-workflow.md:172
 msgid ""
 "```bash\n"
 "$ qgoda po pot\n"
@@ -5651,23 +5509,23 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:168
+#: ../en/docs/translation-workflow.md:179
 msgid "You will see *a lot* of output which you can safely ignore as long as you\n"
 "don't see an error message."
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:171
+#: ../en/docs/translation-workflow.md:182
 msgid "### Adding a Language"
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:173
+#: ../en/docs/translation-workflow.md:184
 msgid ""
 "While setting up i18n and then whenever you add a language to your site\n"
 "you have to initialize a `.po` file for that language and add it to the\n"
 "configuration variable `C:linguas` in `P:_config.yaml`:"
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:177
+#: ../en/docs/translation-workflow.md:188
 msgid ""
 "```yaml\n"
 "linguas:\n"
@@ -5677,11 +5535,11 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:184
+#: ../en/docs/translation-workflow.md:195
 msgid "You also have to initialize a `.po` file for it:"
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:186
+#: ../en/docs/translation-workflow.md:197
 msgid ""
 "```bash;line-numbers\n"
 "$ cd /path/to/your/site\n"
@@ -5692,7 +5550,7 @@ msgid ""
 "you in case of unexpected technical problems."
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:194
+#: ../en/docs/translation-workflow.md:205
 msgid ""
 "Is the following your email address?\n"
 "  guido@yourcomputer.local\n"
@@ -5706,40 +5564,40 @@ msgid ""
 "  http://www.iro.umontreal.ca/contrib/po/HTML/index.html"
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:205
+#: ../en/docs/translation-workflow.md:216
 msgid "Created de.po.\n"
 "```"
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:208
+#: ../en/docs/translation-workflow.md:219
 msgid "You will be prompted for your email address so that the copyright\n"
 "information in the `.po` file can be initialized."
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:211
+#: ../en/docs/translation-workflow.md:222
 msgid "The command `msginit` has two mandatory arguments (see line 3 above):"
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:213
+#: ../en/docs/translation-workflow.md:224
 msgid "* `--input` is the name of your `.pot` file\n"
 "* `--locale` is the language identifier"
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:216
+#: ../en/docs/translation-workflow.md:227
 msgid "The command has created a `.po`  file for your language (see line 19) that\n"
 "can now be translated."
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:219
+#: ../en/docs/translation-workflow.md:230
 msgid "### Updating Translations"
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:221
+#: ../en/docs/translation-workflow.md:232
 msgid "When strings are added or modified, the translations have to be updated.\n"
 "That requires the following steps:"
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:224
+#: ../en/docs/translation-workflow.md:235
 msgid ""
 "* a new `POTFILES` that contains the updated list of source files\n"
 "* a new `.pot` file that contains the new set of translatable strings\n"
@@ -5747,11 +5605,11 @@ msgid ""
 "  command `msgmerge`"
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:229
+#: ../en/docs/translation-workflow.md:240
 msgid "This is done with `qgoda po update-po`:"
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:231
+#: ../en/docs/translation-workflow.md:242
 msgid ""
 "```bash\n"
 "$ qgoda po update-po\n"
@@ -5764,22 +5622,22 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:241
+#: ../en/docs/translation-workflow.md:252
 msgid ""
 "When you have more content to translate this may take considerable time \n"
 "because `msgmerge` is trying to do the merge in a smart manner so that you\n"
 "don't lose existing translations."
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:245
+#: ../en/docs/translation-workflow.md:256
 msgid "After this step, your translation files are up-to-date and can be translated."
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:247
+#: ../en/docs/translation-workflow.md:258
 msgid "### Translating the `.po` Files"
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:249
+#: ../en/docs/translation-workflow.md:260
 msgid ""
 "The `.po` format is accepted by many professional translators. If you want\n"
 "to translate the file yourself, do not use your normal text editor (unless\n"
@@ -5787,12 +5645,12 @@ msgid ""
 "Editor\" and you will find a number of free programs."
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:254
+#: ../en/docs/translation-workflow.md:265
 msgid "For now, just open the `.po` file in your editor. You will see lots of \n"
 "entries like this:"
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:257
+#: ../en/docs/translation-workflow.md:268
 msgid ""
 "```bash\n"
 "#: ../_views/partials/body.html:4\n"
@@ -5801,27 +5659,27 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:263
+#: ../en/docs/translation-workflow.md:274
 msgid "The string after `msgstr` is the translation. Try to translate at least one\n"
 "string that is easy to recognize, when you rebuild your site."
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:266
+#: ../en/docs/translation-workflow.md:277
 msgid "### Compile the `.po` Files"
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:268
+#: ../en/docs/translation-workflow.md:279
 msgid ""
 "The `.po` files are not immediately used for looking up translations but are\n"
 "compiled into binary `.mo` files. The compilation also checks the `.po` file\n"
 "for syntax errors and semantic errors."
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:272
+#: ../en/docs/translation-workflow.md:283
 msgid "You can perform this step with `qgoda po mo`:"
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:274
+#: ../en/docs/translation-workflow.md:285
 msgid ""
 "```bash;line-numbers\n"
 "$ qgoda po update-mo\n"
@@ -5832,17 +5690,17 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:282
+#: ../en/docs/translation-workflow.md:293
 msgid "You can fix the warning (line 4) by editing the first entry of the `.po`\n"
 "file and fill in the missing information."
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:285
+#: ../en/docs/translation-workflow.md:296
 msgid "In the last line you will see statistics about your translations, in particular\n"
 "the number of translated and untranslated strings and fuzzy translations."
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:288
+#: ../en/docs/translation-workflow.md:299
 msgid ""
 "[@ WRAPPER components/infobox.html\n"
 "           type='info' title='Fuzzy Translations' @]\n"
@@ -5853,15 +5711,15 @@ msgid ""
 "[@ END @]"
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:296
-msgid "### Install the Translation"
+#: ../en/docs/translation-workflow.md:307
+msgid "### Install the Translations"
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:298
+#: ../en/docs/translation-workflow.md:309
 msgid "The last step is to install and use the translation:"
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:300
+#: ../en/docs/translation-workflow.md:311
 msgid ""
 "```bash\n"
 "$ qgoda po install\n"
@@ -5871,21 +5729,21 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:307
+#: ../en/docs/translation-workflow.md:318
 msgid ""
 "The directory `P:LocaleData` contains the compiled translations. You should\n"
 "add it to the [files to be excluded]([@ q.lanchor(name='excluding-files') @]) by\n"
 "Qgoda."
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:311
+#: ../en/docs/translation-workflow.md:322
 msgid ""
 "The next time you rebuild your site with `qgoda watch` or `qgoda build`\n"
 "the translated strings should be visible in their respective document\n"
 "versions."
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:315
+#: ../en/docs/translation-workflow.md:326
 msgid ""
 "[@ WRAPPER components/infobox.html\n"
 "           type='warning' title='Translations are cached!' @]\n"
@@ -5895,11 +5753,11 @@ msgid ""
 "[@ END @]"
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:322
+#: ../en/docs/translation-workflow.md:333
 msgid "## Conclusion"
 msgstr ""
 
-#: ../en/docs/translation-workflow.md:324
+#: ../en/docs/translation-workflow.md:335
 msgid ""
 "The above explanation is relatively detailed. Under normal circumstances you\n"
 "can just type `qgoda po all` before everything that has to do with\n"

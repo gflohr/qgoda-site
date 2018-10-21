@@ -10,7 +10,7 @@ description: File name patterns and lists of file name patterns are used through
 [% TAGS [@ @] %]
 <!--/QGODA-NO-XGETTEXT-->
 
-Lists of search patterns in Qgoda follow the convention of [gitignore](https://git-scm.com/docs/gitignore), only that you put your configuration in [YAML](http://yaml.org/) file `_config.yaml` and not in a file `P:.gitignore`.
+Lists of search patterns in Qgoda follow the convention of [gitignore](https://git-scm.com/docs/gitignore), only that you put your configuration in a [YAML](http://yaml.org/) file `P:_config.yaml` and not in a file `P:.gitignore`.
 
 <!--QGODA-NO-XGETTEXT--><qgoda-toc /><!--/QGODA-NO-XGETTEXT-->
 
