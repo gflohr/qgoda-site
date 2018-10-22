@@ -5,9 +5,12 @@ section: multilanguage
 view: docs.html
 description: Overview of Qgoda's Multilanguage and Internationalization (I18N) features
 ---
+Multi-lingualism in Qgoda is an integral, built-in feature mostly built upon easy to follow conventions.
+
+<!--qgoda-no-xgettext-->
 [% USE q = Qgoda %]
 [% TAGS [@ @] %]
-Multi-lingualism in Qgoda is an integral, built-in feature mostly built upon easy to follow conventions.
+<!--/qgoda-no-xgettext-->
 
 In a typical website there are two types of translatable content.  You usually have common texts, typically in headers, footers, navigations, sidebars and so on.  Most of the time, these texts come from templates.  And then there is your actual content, your blog posts, articles or other editorial content.
 
