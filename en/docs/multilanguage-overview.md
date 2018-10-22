@@ -20,21 +20,17 @@ Common texts in templates are translated with [Template::Plugin::Gettext](https:
 Take the following template snippet as an example:
 
 <qgoda-no-xgettext>
-
 ```html
 <h1>Welcome to My Site</h1>
 ```
-
 </qgoda-no-xgettext>
 
 For an internationalized site you would write instead:
 
 <qgoda-no-xgettext>
-
 ```tt2
 <h1>[% gtx.gettext('Welcome to My Site') %]</h1>
 ```
-
 </qgoda-no-xgettext>
 
 The English text is simply turned into an argument to a function.  That function returns the translation, when the document is rendered, and it also serves as a marker for translatable strings, so that you can extract them into a `.po` file, a standard format for translations.
