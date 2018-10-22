@@ -6,6 +6,6 @@ view: docs.html
 readMore: Read More 
 dateFormat: "%b, %d %Y"
 ---
-<qgoda-no-xgettext>
+<!--qgoda-no-xgettext-->
 [% INCLUDE components/listing.html %]
-</qgoda-no-xgettext>
+<!--/qgoda-no-xgettext-->

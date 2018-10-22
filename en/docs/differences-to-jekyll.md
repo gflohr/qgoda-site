@@ -9,7 +9,7 @@ description: This page explains where Qgoda differs from Jekyll and why.
 [% TAGS [- -] %]
 Qgoda was heavily inspired by [Jekyll](https://jekyllrb.com/) and initially very similar to Jekyll but over time it has veered away significantly.
 
-<qgoda-no-xgettext><qgoda-toc /></qgoda-no-xgettext>
+<!--qgoda-no-xgettext--><qgoda-toc /><!--/qgoda-no-xgettext-->
 
 ## General Differences
 
@@ -23,14 +23,14 @@ Jekyll can structure a site with tags and categories.  Qgoda has arbitrary taxon
 
 Qgoda can create lists with arbitrary filters, not just for categories.  Example:
 
-<qgoda-no-xgettext>
+<!--qgoda-no-xgettext-->
 ```tt2
 [% posts = q.list(lingua = asset.lingua
                   type = 'post'
                   'tags', ['contains', 'Development']
                  ) %]
 ```
-</qgoda-no-xgettext>
+<!--/qgoda-no-xgettext-->
 
 See [- q.lanchor(name='listings') -] for more information.
 
@@ -72,7 +72,7 @@ All you have to do is to store the language (resp. language code) of a particula
 
 Under normal circumstances, not only regular content differs between languages.  You also want to translate certain strings in your template.  The quick and dirty way is to store translations in your configuration file `P:_config.yaml`:
 
-<qgoda-no-xgettext>
+<!--qgoda-no-xgettext-->
 ```yaml
 translations:
   en:
@@ -85,11 +85,11 @@ translations:
     privacy: Конфиденция
     go_to_top: На горе
 ```
-</qgoda-no-xgettext>
+<!--/qgoda-no-xgettext-->
 
 In the template you write:
 
-<qgoda-no-xgettext>
+<!--qgoda-no-xgettext-->
 ```tt2
 [% l = asset.lingua %]
 
@@ -97,11 +97,11 @@ In the template you write:
 |
 <a href="#top">[% config.translations.$l.go_to_top %]</a>
 ```
-</qgoda-no-xgettext>
+<!--/qgoda-no-xgettext-->
 
 This is okay for a handful of strings but a maintainance nightmare for larger sites.  You should rather write all strings in the base language of your site and mark them:
 
-<qgoda-no-xgettext>
+<!--qgoda-no-xgettext-->
 ```tt2
 [% USE gtx = Gettext('your-site-id', asset.lingua) %]
 
@@ -109,7 +109,7 @@ This is okay for a handful of strings but a maintainance nightmare for larger si
 |
 <a href="#top">[% Go to top %]</a>
 ```
-</qgoda-no-xgettext>
+<!--/qgoda-no-xgettext-->
 
 You can extract these strings into `.po` files for translations, and install the compiled translations in the site.  This is following the standard process for [GNU gettext](https://www.gnu.org/software/gettext/), the de-facto standard for localization of open-source software.
 
@@ -154,7 +154,7 @@ The default name of the qgoda configuration file is `P:_config.yaml`, not `_conf
 
 Default values in Qgoda are configured via flat lists of pattern (as opposed to nested data structures in Jekyll). Example:
 
-<qgoda-no-xgettext>
+<!--qgoda-no-xgettext-->
 ```yaml
 defaults:
   - files: /posts
@@ -170,4 +170,4 @@ defaults:
     values:
       view: raw
 ```
-</qgoda-no-xgettext>
+<!--/qgoda-no-xgettext-->

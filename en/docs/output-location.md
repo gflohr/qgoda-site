@@ -15,7 +15,7 @@ By default, an asset's location is simply preserved.  That means if you have an
 asset `{srcdir}/assets/images/logo.jpeg` it will be copied to
 `{sitedir}/assets/images/logo.jpeg`. 
 
-<qgoda-no-xgettext><qgoda-toc /></qgoda-no-xgettext>
+<!--qgoda-no-xgettext--><qgoda-toc /><!--/qgoda-no-xgettext-->
 
 ## Path Translation
 

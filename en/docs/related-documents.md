@@ -9,7 +9,7 @@ description: Qgoda tries to find relations between posts automatically based on 
 
 Displaying related documents is as easy as this:
 
-<qgoda-no-xgettext>
+<!--qgoda-no-xgettext-->
 [% TAGS [- -]%]
 ```tt2;line-numbers
 [% USE q = Qgoda %]
@@ -20,7 +20,7 @@ Displaying related documents is as easy as this:
 [% END %]
 </ul>
 ```
-</qgoda-no-xgettext>
+<!--/qgoda-no-xgettext-->
 
 There is one gotcha, however: The list of related documents is always empty, when you invoke the method `q.related()` from markdown content.  Why? The content is about to be processed.  There is no way to find out what other document has similar content.
 
