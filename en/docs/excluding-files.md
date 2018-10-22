@@ -7,10 +7,10 @@ description: How to exclude (or include) additional paths in Qgoda.
 ---
 By default, Qgoda does not process hidden files and directories (name starts with a dot `.`).  Top-level files and directories that have names beginning with an underscore `_` are also excluded.
 
-<!--QGODA-NO-XGETTEXT-->
+<qgoda-no-xgettext>
 [% USE q = Qgoda %]
 <qgoda-toc />
-<!--/QGODA-NO-XGETTEXT-->
+</qgoda-no-xgettext>
 
 ## Excluding Additional Files
 
@@ -18,7 +18,7 @@ You can change this default behavior by configuring additional file name pattern
 
 Example:
 
-<!--QGODA-NO-XGETTEXT-->
+<qgoda-no-xgettext>
 ```yaml
 exclude:
 - /node_modules
@@ -26,7 +26,7 @@ exclude:
 - /webpack.config.js
 - assets/images/**/*.xcf
 ```
-<!--/QGODA-NO-XGETTEXT-->
+</qgoda-no-xgettext>
 
 This will also exclude the top-level directory `node_modules`, and the top-level files `package.json` and `webpack.config.js`.  Likewise, all XCF files (the image format of [The Gimp](http://www.gimp.org/) in the directory `assets/images` and all of its descendant directories are excluded.
 
@@ -36,7 +36,7 @@ Please see [% q.lanchor(name = 'pattern-lists') %] for the gory details of searc
 
 Internally, Qgoda does not use the configured exclusion list directly but a slightly extended one.  For the above example it looks like this:
 
-<!--QGODA-NO-XGETTEXT-->
+<qgoda-no-xgettext>
 ```yaml
 exclude:
 - .*
@@ -47,7 +47,7 @@ exclude:
 - assets/images/**/*.xcf
 - /_site
 ```
-<!--/QGODA-NO-XGETTEXT-->
+</qgoda-no-xgettext>
 
 The first two lines exclude files and directories that have names beginning with a dot (`.`) or top-level files and directories that have names beginning with an underscore.
 
@@ -57,7 +57,7 @@ The last line is always appended and a safe-guard against configuration errors. 
 
 There is no configuration variable `include`.  You can exclude otherwise excluded files by prepending a pattern with an exclamation mark `!`.  The pattern is then negated:
 
-<!--QGODA-NO-XGETTEXT-->
+<qgoda-no-xgettext>
 ```yaml
 exclude:
 - /node_modules
@@ -66,7 +66,7 @@ exclude:
 - assets/images/**/*.xcf
 - "!/_posts"
 ```
-<!--/QGODA-NO-XGETTEXT-->
+</qgoda-no-xgettext>
 
 This would now enable processing of all the files in the top-level directory `_posts`.
 
@@ -74,13 +74,13 @@ Beware though that you cannot re-include files or directories, when one of their
 
 Example:
 
-<!--QGODA-NO-XGETTEXT-->
+<qgoda-no-xgettext>
 ```yaml
 exclude:
 - /archive
 - "!/archive/2017"
 ```
-<!--/QGODA-NO-XGETTEXT-->
+</qgoda-no-xgettext>
 
 The second pattern is invalid and ignored because `/archive` is a parent directory of `/archive/2017`.
 
@@ -88,14 +88,14 @@ This behavior has performance reasons.  When Qgoda collects files, it does not d
 
 That leads to a little problem if you want to re-include a subdirectory of an automatically excluded directory, for example `_experiments/stable`.  The top-level directory `_experiments` is automatically excluded by Qgoda.  In order to re-include it, you would have to do the following:
 
-<!--QGODA-NO-XGETTEXT-->
+<qgoda-no-xgettext>
 ```yaml
 exclude:
 - "!/_experiments"
 - /_experiments/*
 - "!/_experiments/stable"
 ```
-<!--/QGODA-NO-XGETTEXT-->
+</qgoda-no-xgettext>
 
 You have to keep in mind that Qgoda has prepended this list with `/_*` (see above).  Line 1 re-includes `_experiments`.  Line 2 excludes all its subdirectories again.  And line 3 selectively re-includes `_experiments/stable`.
 
@@ -107,16 +107,16 @@ Note that Qgoda by default re-includes the directory `P:_views`.
 
 Example:
 
-<!--QGODA-NO-XGETTEXT-->
+<qgoda-no-xgettext>
 ```yaml
 exclude_watch:
 - assets/movies
 ```
-<!--/QGODA-NO-XGETTEXT-->
+</qgoda-no-xgettext>
 
 The list that is really used by Qgoda looks like this:
 
-<!--QGODA-NO-XGETTEXT-->
+<qgoda-no-xgettext>
 ```yaml
 exclude_watch:
 - .*
@@ -125,6 +125,6 @@ exclude_watch:
 - assets/movies
 - /_site
 ```
-<!--/QGODA-NO-XGETTEXT-->
+</qgoda-no-xgettext>
 
 You can see that the directory `_views` has been re-included because it contains layout and design files.

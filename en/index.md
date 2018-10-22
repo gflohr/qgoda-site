@@ -7,9 +7,9 @@ chain: html
 wrapper: html
 description: Qgoda is a static site generator with a strong focus on multi-linguism and flexibility, written in Perl but extensible with JavaScript, Python, Ruby, Java, and more.
 ---
-<!--QGODA-NO-XGETTEXT-->
+<qgoda-no-xgettext>
 [% USE q = Qgoda %]
 [% q.include('_includes/' _ asset.lingua _ '/landing-page/header.md', asset) %]
 [% q.include('_includes/' _ asset.lingua _ '/landing-page/main-features.md', asset) %]
 [% q.include('_includes/' _ asset.lingua _ '/landing-page/about.md', asset) %]
-<!--/QGODA-NO-XGETTEXT-->
+</qgoda-no-xgettext>

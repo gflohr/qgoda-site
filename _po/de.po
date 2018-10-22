@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qgoda-site 0.1\n"
 "Report-Msgid-Bugs-To: 'Guido Flohr <guido.flohr@cantanea.com>'\n"
-"PO-Revision-Date: 2018-10-21 22:48+0300\n"
+"PO-Revision-Date: 2018-10-22 21:20+0300\n"
 "Last-Translator: Guido Flohr <guido.flohr@cantanea.com>\n"
 "Language-Team: German\n"
 "Language: de\n"
@@ -3543,13 +3543,15 @@ msgstr ""
 #: ../en/docs/multilanguage-overview.md:2
 msgctxt "title"
 msgid "Overview"
-msgstr ""
+msgstr "Übersicht"
 
 #: ../en/docs/multilanguage-overview.md:6
 msgctxt "description"
 msgid ""
 "Overview of Qgoda's Multilanguage and Internationalization (I18N) features"
-msgstr "Übersicht über die Mehrsprachigkeits- und Internationalisierungs-Features in Qgoda"
+msgstr ""
+"Übersicht über die Mehrsprachigkeits- und Internationalisierungs-Features in "
+"Qgoda"
 
 #: ../en/docs/multilanguage-overview.md:8
 msgid ""
@@ -3569,6 +3571,12 @@ msgid ""
 "then there is your actual content, your blog posts, articles or other "
 "editorial content."
 msgstr ""
+"In einer typischen Website gibt es zwei Arten übersetzbarer Inhalt. Zum "
+"einen\n"
+"sind dies allgemeine Texte, die typischerweise in Headern, Footern, "
+"Navigationen, Sidebars und so wieter vorkommen. In aller Regel stammen dies "
+"Texte aus Templates. Zum anderen gibt es natürlich noch den eigentlichen "
+"Content, also Blog-Posts, Artikel und weitere redaktionell gepflegte Inhalte."
 
 #: ../en/docs/multilanguage-overview.md:16
 msgid "## Template Texts"
@@ -3580,51 +3588,40 @@ msgid ""
 "(https://github.com/gflohr/Template-Plugin-Gettext) an internationalization "
 "plug-in for the [Template Toolkit](http://www.template-toolkit.org/)."
 msgstr ""
+"Allgemeine Texte in Templates werden mit [Template::Plugin::Gettext](https://"
+"github.com/gflohr/Template-Plugin-Gettext), einem Übersetzungs-Plug-In für "
+"[Template Toolkit](http://www.template-toolkit.org/) übersetzt."
 
 #: ../en/docs/multilanguage-overview.md:20
 msgid "Take the following template snippet as an example:"
-msgstr ""
-
-#: ../en/docs/multilanguage-overview.md:22
-msgid ""
-"```tt2\n"
-"<h1>Welcome to My Site</h1>\n"
-"```"
-msgstr ""
-
-#: ../en/docs/multilanguage-overview.md:26
-msgid "For an internationalized site you would write instead:"
-msgstr ""
+msgstr "Der folgende Templateschnipsel zeigt die Vorgehensweise:"
 
 #: ../en/docs/multilanguage-overview.md:28
-#: ../en/docs/translating-templates.md:38
-msgid ""
-"```tt2\n"
-"<h1>[% gtx.gettext('Welcome to My Site') %]</h1>\n"
-"```"
+msgid "For an internationalized site you would write instead:"
 msgstr ""
+"Für eine internationalisierte Site würde man stattdessen folgendes schreiben:"
 
-#: ../en/docs/multilanguage-overview.md:32
+#: ../en/docs/multilanguage-overview.md:36
 msgid ""
 "The English text is simply turned into an argument to a function.  That "
 "function returns the translation, when the document is rendered, and it also "
 "serves as a marker for translatable strings, so that you can extract them "
 "into a `.po` file, a standard format for translations."
-msgstr ""
+msgstr "Der englische Texte wird also einfach zu einem Funktionsargument. Die Funktion liefert die Übersetzung, wenn das Dokument gerendert wird, aber dient auch als Markierung für übersetzbare Zeichenkette, so dass sie in `.po`-Dateien - einem Standardformat für Übersetzungen extrahiert werden können."
 
-#: ../en/docs/multilanguage-overview.md:34
+#: ../en/docs/multilanguage-overview.md:38
 msgid "## Editorial Content"
 msgstr ""
 
-#: ../en/docs/multilanguage-overview.md:36
+#: ../en/docs/multilanguage-overview.md:40
 msgid "For content, you have two options which both have their pros and cons."
 msgstr ""
 
-#: ../en/docs/multilanguage-overview.md:38
+#: ../en/docs/multilanguage-overview.md:42
 msgid "### The Simple Approach"
 msgstr ""
 
-#: ../en/docs/multilanguage-overview.md:40
+#: ../en/docs/multilanguage-overview.md:44
 msgid ""
 "You can simply copy the documents from the main language into a separate "
 "file and translate it. This is a simple approach and usually sufficient, "
@@ -3632,11 +3629,11 @@ msgid ""
 "similar documents are usually written just once and then never touched again."
 msgstr ""
 
-#: ../en/docs/multilanguage-overview.md:42
+#: ../en/docs/multilanguage-overview.md:46
 msgid "### Advanced Translation Using PO Files"
 msgstr ""
 
-#: ../en/docs/multilanguage-overview.md:44
+#: ../en/docs/multilanguage-overview.md:48
 msgid ""
 "Other documents are expected to change frequently. One example is "
 "documentation, like the one that you are reading. If you are translating "
@@ -3646,7 +3643,7 @@ msgid ""
 "tedious and therefore expensive task."
 msgstr ""
 
-#: ../en/docs/multilanguage-overview.md:46
+#: ../en/docs/multilanguage-overview.md:50
 msgid ""
 "A much better approach in these cases is to split a document into more "
 "manageable smaller chunks. Modern translation frameworks like [GNU Gettext]"
@@ -3656,29 +3653,29 @@ msgid ""
 "machine translations at least as a starting point."
 msgstr ""
 
-#: ../en/docs/multilanguage-overview.md:48
+#: ../en/docs/multilanguage-overview.md:52
 msgid "## Referencing Documents in Specific Languages"
 msgstr ""
 
-#: ../en/docs/multilanguage-overview.md:50
+#: ../en/docs/multilanguage-overview.md:54
 msgid ""
 "For listings, you usually want to display documents in one language. You "
 "also often want to link to another document in a particular language, most "
 "of the time the current one."
 msgstr ""
 
-#: ../en/docs/multilanguage-overview.md:52
+#: ../en/docs/multilanguage-overview.md:56
 msgid ""
 "Qgoda allows you to identify a document by arbitrary properties including "
 "the language of the document. The details will be explained later in the "
 "chapter [@ q.lanchor(name = 'referencing-languages') @]."
 msgstr ""
 
-#: ../en/docs/multilanguage-overview.md:54
+#: ../en/docs/multilanguage-overview.md:58
 msgid "## Translation Workflow"
 msgstr ""
 
-#: ../en/docs/multilanguage-overview.md:56
+#: ../en/docs/multilanguage-overview.md:60
 msgid ""
 "Once your site is internationalized you have to get the content translated "
 "and to install the translation. The first, initial shot at this is usually "
@@ -3687,18 +3684,18 @@ msgid ""
 "separate the men from the boys."
 msgstr ""
 
-#: ../en/docs/multilanguage-overview.md:58
+#: ../en/docs/multilanguage-overview.md:62
 msgid ""
 "The translation workflow for Qgoda is a standard GNU gettext workflow, in "
 "other words, the same workflow that is used to internationalize the vast "
 "majority of open source software."
 msgstr ""
 
-#: ../en/docs/multilanguage-overview.md:60
+#: ../en/docs/multilanguage-overview.md:64
 msgid "## Getting Started"
 msgstr ""
 
-#: ../en/docs/multilanguage-overview.md:62
+#: ../en/docs/multilanguage-overview.md:66
 msgid ""
 "The next chapters will guide you through the necessary steps to make your "
 "Qgoda site multilanguage. Start with the chapter [@ q."
@@ -6587,6 +6584,13 @@ msgstr "### Konstante Zeichenketten"
 msgid ""
 "Strings are translated by passing them to the template function `gtx."
 "gettext()`:"
+msgstr ""
+
+#: ../en/docs/translating-templates.md:38
+msgid ""
+"```tt2\n"
+"<h1>[% gtx.gettext('Welcome to My Site') %]</h1>\n"
+"```"
 msgstr ""
 
 #: ../en/docs/translating-templates.md:42

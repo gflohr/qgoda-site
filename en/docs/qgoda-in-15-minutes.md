@@ -27,7 +27,6 @@ qgoda-quickstart $ qgoda build
 [info][plugin-loader] initializing plug-ins.
 [info] start building site
 [info] finished building site with 0 artefacts
-g
 qgoda-quickstart $
 ```
 

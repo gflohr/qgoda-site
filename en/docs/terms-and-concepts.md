@@ -6,11 +6,11 @@ order: 900
 view: docs.html
 description: Explanation of frequently used terms and concepts
 ---
-<!--QGODA-NO-XGETTEXT-->
+<qgoda-no-xgettext>
 [% USE q = Qgoda %]
 [% PROCESS "functions/css-modules.tt" %]
 <ul>
-<!--/QGODA-NO-XGETTEXT-->
+</qgoda-no-xgettext>
 
 [% WRAPPER components/term.html term="epoch" -%]
 A certain date and time is often expressed as seconds elapsed since the
@@ -32,6 +32,6 @@ Sass 3.  It is a strict superset of CSS, so that every valid CSS file is
 also a valid SCSS file.
 [%- END %]
 
-<!--QGODA-NO-XGETTEXT-->
+<qgoda-no-xgettext>
 </ul>
-<!--/QGODA-NO-XGETTEXT-->
+</qgoda-no-xgettext>

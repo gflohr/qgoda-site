@@ -5,10 +5,10 @@ section: lists-and-indices
 view: docs.html
 description: Complete List of Files and Directories
 ---
-<!--QGODA-NO-XGETTEXT-->
+<qgoda-no-xgettext>
 [% USE q = Qgoda %]
 [% PROCESS "functions/css-modules.tt" %]
-<!--/QGODA-NO-XGETTEXT-->
+</qgoda-no-xgettext>
 
 A typical Qgoda site contains a couple of standard files and directories.
 They are described in the following list.
@@ -19,9 +19,9 @@ The list is sorted alphanumerically but case-insensitive, and a leading
 underscore of the name is ignored.
 [% END %]
 
-<!--QGODA-NO-XGETTEXT-->
+<qgoda-no-xgettext>
 <ul>
-<!--/QGODA-NO-XGETTEXT-->
+</qgoda-no-xgettext>
 
 [% WRAPPER components/file.html
    name="_assets" type='directory' -%]
@@ -74,6 +74,6 @@ automatically re-load pages in the browser, for example with
 specify  <code>P:_timestamp</code> as the file to watch for changes.
 [%- END %]
 
-<!--QGODA-NO-XGETTEXT-->
+<qgoda-no-xgettext>
 </ul>
-<!--/QGODA-NO-XGETTEXT-->
+</qgoda-no-xgettext>

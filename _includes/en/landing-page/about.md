@@ -4,8 +4,8 @@ title: Main Technologies
 chain: html
 wrapper: html
 ---
-<!--QGODA-NO-XGETTEXT-->
+<qgoda-no-xgettext>
 [% USE q = Qgoda %]
 [% q.include('_includes/' _ asset.lingua _ '/landing-page/about-perl.md', asset) %]
 [% q.include('_includes/' _ asset.lingua _ '/landing-page/about-nodejs.md', asset) %]
-<!--/QGODA-NO-XGETTEXT-->
+</qgoda-no-xgettext>

@@ -6,15 +6,15 @@ description: Imprint
 ---
 ## Company Information
 
-<!--QGODA-NO-XGETTEXT-->
+<qgoda-no-xgettext>
 [% config.legal.name %]<br>
 [% config.legal.street %]<br>
 [% config.legal.city %]<br>
-<!--/QGODA-NO-XGETTEXT-->
+</qgoda-no-xgettext>
 Bulgaria<br>
-<!--QGODA-NO-XGETTEXT-->
+<qgoda-no-xgettext>
 [% config.legal.id %]<br>
-<!--/QGODA-NO-XGETTEXT-->
+</qgoda-no-xgettext>
 VAT-ID [% config.legal.vat_id %]<br>
 
 Manager: [% config.legal.manager %]
@@ -26,6 +26,6 @@ Manager: [% config.legal.manager %]
 
 ## Responsible for the content:
 
-<!--QGODA-NO-XGETTEXT-->
+<qgoda-no-xgettext>
 [% config.legal.responsible %]
-<!--/QGODA-NO-XGETTEXT-->
+</qgoda-no-xgettext>

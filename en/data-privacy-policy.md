@@ -62,7 +62,7 @@ Typical examples for information stored in cookies are language preferences or f
 Please see your browser's documentation for information about how to
 disable cookies in general, for specific sites, or from specific sources.
 
-<!--QGODA-NO-XGETTEXT-->[% IF config.google.analytics_id %]<!--/QGODA-NO-XGETTEXT-->
+<qgoda-no-xgettext>[% IF config.google.analytics_id %]</qgoda-no-xgettext>
 
 ## Google Analytics
 
@@ -109,4 +109,4 @@ Google provides additional information about the conditions of use
 and data protection under http://www.google.com/analytics/terms/gb.html
 and http://www.google.com/intl/en-GB/policies/privacy/.
 
-<!--QGODA-NO-XGETTEXT-->[% END %]<!--/QGODA-NO-XGETTEXT-->
+<qgoda-no-xgettext>[% END %]</qgoda-no-xgettext>

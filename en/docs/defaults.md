@@ -31,7 +31,7 @@ them.
 
 Example:
 
-<!--QGODA-NO-XGETTEXT-->
+<qgoda-no-xgettext>
 
 ```yaml;line-numbers
 defaults:
@@ -44,7 +44,7 @@ defaults:
         translate: ['title', 'description']
 ```
 
-<!--/QGODA-NO-XGETTEXT-->
+</qgoda-no-xgettext>
 
 The value for `files` specifies the pattern, in
 `values` you set the default values for arbitrary
@@ -53,7 +53,7 @@ variables.
 You can also specify multiple patterns in `files`,
 simply by specifying an array instead of a single value:
 
-<!--QGODA-NO-XGETTEXT-->
+<qgoda-no-xgettext>
 
 ```yaml;line-numbers
 defaults:
@@ -65,7 +65,7 @@ defaults:
         type: listing
 ```
 
-<!--/QGODA-NO-XGETTEXT-->
+</qgoda-no-xgettext>
 
 The above example would set the default value for `type`
 to "listing" for all files that match `index.*` and

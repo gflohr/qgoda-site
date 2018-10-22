@@ -5,10 +5,10 @@ section: basics
 view: docs.html
 description: Learn how to filter a collection of arguments by taxonomies respectively document variables.
 ---
-<!--QGODA-NO-XGETTEXT-->
+<qgoda-no-xgettext>
 [% USE q = Qgoda %]
 [% TAGS [@ @] %]
-<!--/QGODA-NO-XGETTEXT-->
+</qgoda-no-xgettext>
 
 Many template functions of the
 [Qgoda Plug-in]([@ q.llink(name='qgoda-plug-in') @]) have filters as their
@@ -65,136 +65,136 @@ So, the advanced syntax is:
 VARIABLE=[OPERATOR, VALUE]
 ```
 
-<!--QGODA-NO-XGETTEXT-->
+<qgoda-no-xgettext>
 ### `eq`
-<!--/QGODA-NO-XGETTEXT-->
+</qgoda-no-xgettext>
 
 Returns true if the values are string-wise equal.
 
-<!--QGODA-NO-XGETTEXT-->
+<qgoda-no-xgettext>
 ### `ne`
-<!--/QGODA-NO-XGETTEXT-->
+</qgoda-no-xgettext>
 
 Returns true if the values are string-wise not equal.
 
-<!--QGODA-NO-XGETTEXT-->
+<qgoda-no-xgettext>
 ### `ge`
-<!--/QGODA-NO-XGETTEXT-->
+</qgoda-no-xgettext>
 
 Returns true if the value of the variable in the other document is (string-wise) greater or equal than the value specified. For example "bbb" is string-wise greater than "aaa".
 
-<!--QGODA-NO-XGETTEXT-->
+<qgoda-no-xgettext>
 ### `gt`
-<!--/QGODA-NO-XGETTEXT-->
+</qgoda-no-xgettext>
 
 Returns true if the value of the variable in the other document is (string-wise) greater than the value specified. For example "bbb" is string-wise greater than "aaa".
 
-<!--QGODA-NO-XGETTEXT-->
+<qgoda-no-xgettext>
 ### `le`
-<!--/QGODA-NO-XGETTEXT-->
+</qgoda-no-xgettext>
 
 Returns true if the value of the variable in the other document is (string-wise) less or equal than the value specified. For example "aaa" is string-wise less than "bbb".
 
-<!--QGODA-NO-XGETTEXT-->
+<qgoda-no-xgettext>
 ### `lt`
-<!--/QGODA-NO-XGETTEXT-->
+</qgoda-no-xgettext>
 
 Returns true if the value of the variable in the other document is (string-wise) less than the value specified. For example "aaa" is string-wise less than "bbb".
 
- <!--QGODA-NO-XGETTEXT-->
+ <qgoda-no-xgettext>
 ### `ieq`
-<!--/QGODA-NO-XGETTEXT-->
+</qgoda-no-xgettext>
 
 Like [`eq`](#eq) but ignores case for the comparison.
 
-<!--QGODA-NO-XGETTEXT-->
+<qgoda-no-xgettext>
 ### `ine`
-<!--/QGODA-NO-XGETTEXT-->
+</qgoda-no-xgettext>
 
 Like [`ne`](#ne) but ignores case for the comparison.
 
-<!--QGODA-NO-XGETTEXT-->
+<qgoda-no-xgettext>
 ### `ige`
-<!--/QGODA-NO-XGETTEXT-->
+</qgoda-no-xgettext>
 
 Like [`ge`](#ge) but ignores case for the comparison.
 
-<!--QGODA-NO-XGETTEXT-->
+<qgoda-no-xgettext>
 ### `igt`
-<!--/QGODA-NO-XGETTEXT-->
+</qgoda-no-xgettext>
 
 Like [`gt`](#gt) but ignores case for the comparison.
 
-<!--QGODA-NO-XGETTEXT-->
+<qgoda-no-xgettext>
 ### `ile`
-<!--/QGODA-NO-XGETTEXT-->
+</qgoda-no-xgettext>
 
 Like [`le`](#le) but ignores case for the comparison.
 
-<!--QGODA-NO-XGETTEXT-->
+<qgoda-no-xgettext>
 ### `ilt`
-<!--/QGODA-NO-XGETTEXT-->
+</qgoda-no-xgettext>
 
 Like [`lt`](#lt) but ignores case for the comparison.
 
-<!--QGODA-NO-XGETTEXT-->
+<qgoda-no-xgettext>
 ### `==`
-<!--/QGODA-NO-XGETTEXT-->
+</qgoda-no-xgettext>
 
 Returns true if the value of the variable in the other document is numerically equal to the value specified.
 For example `1.0` and `1` and `+1` are all numerically equal.
 
-<!--QGODA-NO-XGETTEXT-->
+<qgoda-no-xgettext>
 ### `!=`
-<!--/QGODA-NO-XGETTEXT-->
+</qgoda-no-xgettext>
 
 Returns true if the value of the variable in the other document is numerically not equal to the value specified.
 
-<!--QGODA-NO-XGETTEXT-->
+<qgoda-no-xgettext>
 ### `>=`
-<!--/QGODA-NO-XGETTEXT-->
+</qgoda-no-xgettext>
 
 Returns true if the value of the variable in the other document is numerically greater or equal than the value specified.
 
-<!--QGODA-NO-XGETTEXT-->
+<qgoda-no-xgettext>
 ### `>`
-<!--/QGODA-NO-XGETTEXT-->
+</qgoda-no-xgettext>
 
 Returns true if the value of the variable in the other document is numerically greater than the value specified.
 
-<!--QGODA-NO-XGETTEXT-->
+<qgoda-no-xgettext>
 ### `<=`
-<!--/QGODA-NO-XGETTEXT-->
+</qgoda-no-xgettext>
 
 Returns true if the value of the variable in the other document is numerically less or equal than the value specified.
 
-<!--QGODA-NO-XGETTEXT-->
+<qgoda-no-xgettext>
 ### `<`
-<!--/QGODA-NO-XGETTEXT-->
+</qgoda-no-xgettext>
 
 Returns true if the value of the variable in the other document is numerically less than the value specified.
 
-<!--QGODA-NO-XGETTEXT-->
+<qgoda-no-xgettext>
 ### `=~`
-<!--/QGODA-NO-XGETTEXT-->
+</qgoda-no-xgettext>
 
 Returns true if the value of the variable in the other document matches the value specified as a Perl regular expression.
 
-<!--QGODA-NO-XGETTEXT-->
+<qgoda-no-xgettext>
 ### `!~`
-<!--/QGODA-NO-XGETTEXT-->
+</qgoda-no-xgettext>
 
 Returns true if the value of the variable in the other document does not match the value specified as a Perl regular expression.
 
-<!--QGODA-NO-XGETTEXT-->
+<qgoda-no-xgettext>
 ### `contains`
-<!--/QGODA-NO-XGETTEXT-->
+</qgoda-no-xgettext>
 
 Returns true if the value of the variable in the other document is an array (a list) the value specified is contained in that array.
 
-<!--QGODA-NO-XGETTEXT-->
+<qgoda-no-xgettext>
 ### `icontains`
-<!--/QGODA-NO-XGETTEXT-->
+</qgoda-no-xgettext>
 
 Like [`contains`](#contains) but case is ignored for the comparison.
 
