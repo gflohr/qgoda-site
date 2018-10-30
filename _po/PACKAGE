@@ -18,4 +18,4 @@ COPYRIGHT_HOLDER = cantanea EOOD <http://www.cantanea.com/>
 #XGETTEXT_TT2 = xgettext-tt2
 #MSGMERGE = msgmerge
 #MSGFMT = msgfmt
-QGODA = perl -I/Users/guido/perl/qgoda/lib /Users/guido/perl/qgoda/qgoda
+QGODA = perl -I/Users/guido/perl/qgoda/lib /Users/guido/perl/qgoda/bin/qgoda

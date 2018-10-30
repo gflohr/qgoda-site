@@ -19,6 +19,16 @@ This has the advantage that such timestamps are completely independent
 of time zones and daylight savings time rules.
 [%- END %]
 
+[% WRAPPER components/term.html term="front matter" -%]
+A block of document properties in <a href="http://yaml.org/">YAML</a> format at
+the beginning of the page. This block has to be enclosed in two lines
+consisting of just three hyphens <code>---</code>, the first of which has to be
+the first line of the file.  See the
+<a href="[% q.llink(name='qgoda-in-15-minutes') %]#front-matter)">introduction</a>
+for more information.
+for more information.
+[%- END %]
+
 [% WRAPPER components/term.html term="sass" -%]
 <a href="http://sass-lang.com/" target="_blank">SASS</a> is a popular
 CSS pre-processor and its original syntax.  The syntax is nowadays

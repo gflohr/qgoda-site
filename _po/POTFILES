@@ -11,6 +11,14 @@
 ../_views/components/variable.html
 ../_views/default.html
 ../_views/docs.html
+../_views/functions/css-modules.tt
+../_views/functions/landing-page/css-modules.tt
+../_views/functions/landing-page/setup.tt
+../_views/functions/scripts.tt
+../_views/functions/setup.tt
+../_views/functions/styles.tt
+../_views/functions/talks/css-modules.tt
+../_views/functions/talks/setup.tt
 ../_views/landing-about-chunk.html
 ../_views/landing-about.html
 ../_views/landing-feature-full.html
@@ -31,6 +39,7 @@
 ../_views/partials/head.html
 ../_views/partials/head/meta.html
 ../_views/partials/header/navbar.html
+../_views/raw
 ../_views/wrappers/html5.html
 markdown.pot
 perl.pot

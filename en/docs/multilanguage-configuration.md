@@ -5,17 +5,23 @@ section: multilanguage
 view: docs.html
 description: All configuration variables required for a fully internalized site
 ---
-Internationalization (i18n) in Qgoda has to be explicitely activated in the configuration file `P:_config.yaml`.
+Internationalization (i18n) in Qgoda has to be explicitely activated in the
+configuration file `P:_config.yaml`. Although there are many options
+available to customize your multilingual setup, you can get started with
+setting just two configuration variables `C:linguas` and `C:po.textdomain`.
 
+<!--qgoda-no-xgettext-->
 <qgoda-toc/>
 [% USE q = Qgoda %]
 [% TAGS [@ @] %]
+<!--/qgoda-no-xgettext-->
 
 ## Global Configuration
 
 A typical multilanguage configuration in `P:_config.yaml` looks like this:
 
-```yaml
+<!--qgoda-no-xgettext-->
+```yaml;line-numbers
 linguas: [en-us, bg, de]
 po:
   textdomain: net.qgoda.www
@@ -23,8 +29,11 @@ po:
   copyright_holder: cantanea EOOD <http://www.cantanea.com/>
   reload: 1
 ```
+<!--/qgoda-no-xgettext-->
 
+<!--qgoda-no-xgettext-->
 ### `linguas`
+<!--/qgoda-no-xgettext-->
 
 This is a list of language identifiers complying to [RFC4647 section 2.1](https://tools.ietf.org/html/rfc4647#section-2.1) but without any asterisk (`*`) characters. An asterisk would not make sense here anyway.
 
@@ -32,57 +41,81 @@ The first language is the default language of your site.
 
 The variable is mandatory!
 
+<!--qgoda-no-xgettext-->
 ### `po.textdomain`
+<!--/qgoda-no-xgettext-->
 
 An arbitrary identifier for your website. The only restriction is that it has to be a valid filename for your operating system. Popular choices are the reverse hostname of your site (like `net.qgoda.www`) or just a simple string like `messages`. It really doesn't matter much.
 
 This variable is also mandatory.
 
+<!--qgoda-no-xgettext-->
 ### `po.msgid_bugs_address`
+<!--/qgoda-no-xgettext-->
 
 An address where translators should report problems with the original text to translate. The variable is optional.
 
+<!--qgoda-no-xgettext-->
 ### `po.copyright_holder`
+<!--/qgoda-no-xgettext-->
 
 The copyright holder of the original content. The variable is optional.
 
+<!--qgoda-no-xgettext-->
 ### `po.reload`
+<!--/qgoda-no-xgettext-->
 
-Set to 1 if you want translations to be immediately visible after they have been compiled into `.mo` files.
+Set to 1 if you want translations to be visible without a restart of Qgoda after they have been compiled into `.mo` files and installed.
 
 Normally translations are loaded only, when Qgoda starts and then cached. Setting `C:po.reload` to 1 results in a little performance penalty but may be useful while you are translating the site.
 
+<!--qgoda-no-xgettext-->
 ### `po.md_extra`
+<!--/qgoda-no-xgettext-->
 
 A list of [file name patterns]([@ q.llink(name='pattern-lists') @]) for additional markdown files. By default, all documents with front matter are potentially considered translatable. If your site has other markdown files that should also be searched, you can list them here.
 
 This variable is optional and rarely used. 
 
+<!--qgoda-no-xgettext-->
 ### `po.views`
+<!--/qgoda-no-xgettext-->
 
-A list of [file name patterns]([@ q.llink(name='pattern-lists') @]) for template files to search for translatable strings. It defaults to just `P:_views` or whatever the configuration variable `C:path.views` points to.
+A list of [file name patterns]([@ q.llink(name='pattern-lists') @]) for template files to search for translatable strings. It defaults to just `P:_views` or whatever the configuration variable `C:paths.views` points to.
 
+<!--qgoda-no-xgettext-->
 ### `po.xgettext_tt2`
+<!--/qgoda-no-xgettext-->
 
-The location of the `xgettext_tt2` program if it is not in `$PATH`. The `xgettext_tt2` ships with [Template-Plugin-Gettext](https://github.com/template-plugin-gettext) which is automatically installed with Qgoda.
+The location of the `xgettext_tt2` program if it is not in `$PATH`. The `xgettext_tt2` program ships with [Template-Plugin-Gettext](https://github.com/template-plugin-gettext) which is automatically installed as a Qgoda dependency.
 
+<!--qgoda-no-xgettext-->
 ### `po.xgettext`
+<!--/qgoda-no-xgettext-->
 
 The location of the `xgettext` program if it is not in `$PATH`. The `xgettext` program is normally installed as part of a software package called `gettext` or `gettext-tools`.
 
+<!--qgoda-no-xgettext-->
 ### `po.msgfmt`
+<!--/qgoda-no-xgettext-->
 
 The location of the `msgmerge` program if it is not in `$PATH`. The `msgmerge` program is normally installed as part of a software package called `gettext` or `gettext-tools`.
 
+<!--qgoda-no-xgettext-->
 ### `po.msgmerge`
+<!--/qgoda-no-xgettext-->
 
 The location of the `msgmerge` program if it is not in `$PATH`. The `msgmerge` program is normally installed as part of a software package called `gettext` or `gettext-tools`.
 
+<!--qgoda-no-xgettext-->
 ### `po.qgoda`
+<!--/qgoda-no-xgettext-->
 
 The location of the `qgoda` program if it is not in `$PATH`.
 
+<!--qgoda-no-xgettext-->
 ### `po.from_code`
+<!--/qgoda-no-xgettext-->
 
 The character set of your content, defaults to `utf-8`. Setting this variable to anything else but `utf-8` is a recipie for trouble.
 
@@ -96,19 +129,22 @@ You have several options to set `V:asset.lingua`:
 
 You can set the language in the document front matter:
 
-```yaml
+<!--qgoda-no-xgettext-->
+```yaml;line-numbers
 ---
 title: Kalevala
 lingua: fi
 name: kalevala
 ---
 ```
+<!--/qgoda-no-xgettext-->
 
 ### Per Directory/Pattern
 
-You can save typing by specifying defaults for `V:asset.lingua` in the global configuration file `P:_config.yaml`:
+You can save typing by specifying [defaults]([@ q.llink(name='defaults') @]) for `V:asset.lingua` in the global configuration file `P:_config.yaml`:
 
-```yaml
+<!--qgoda-no-xgettext-->
+```yaml;line-numbers
 defaults:
   - files: 
       - /en
@@ -116,6 +152,7 @@ defaults:
     values:
       lingua: en
 ```
+<!--/qgoda-no-xgettext-->
 
 This would set `V:asset.lingua` to `en` for all files in the top-level directory `/en` and addtionally for all files that have names ending in `.en.md`. See [@ q.lanchor(name='defaults') @] and [@ q.lanchor(name='pattern-lists') @] for more information.
 
@@ -127,43 +164,53 @@ For obvious reasons, this identifier will always be configured in the document f
 
 Take for example a markdown file `special-relativity.md`:
 
-```yaml
+<!--qgoda-no-xgettext-->
+```yaml;line-numbers
 ---
 title: Special Relativity
 lingua: en
 name: special-relativity
 ...
 ```
+<!--/qgoda-no-xgettext-->
 
 If the German translation of that file is `spezielle-relativitaetstheorie.md`, that translation's front matter will look like this:
 
-```yaml
+<!--qgoda-no-xgettext-->
+```yaml;line-numbers
 ---
 title: Spezielle Relativitätstheorie
 lingua: de
 name: special-relativity
 ...
 ```
+<!--/qgoda-no-xgettext-->
 
 Both documents are alternate versions of the same content. They differ in the property `V:asset.lingua` but they share a common  value for the  `V:asset.name` property.
 
 Now it is trivial to link from the English version of that document to the German version:
 
+<!--qgoda-no-xgettext-->
 ```tt2
 <a href="[% q.link(name=asset.name lingua='fr') %]>German version</a>
 ```
+<!--/qgoda-no-xgettext-->
 
 And you can link from other documents to the document about Einstein's special relativity regardless of the language like this:
 
+<!--qgoda-no-xgettext-->
 ```tt2
 See [% q.anchor(name='special-relativity' lingua=asset.lingua) %]!
 ```
+<!--/qgoda-no-xgettext-->
 
 And since you almost always want to link to documents in the same language as the current one, there is a shortcut version for the above:
 
+<!--qgoda-no-xgettext-->
 ```tt2
 See [% q.lanchor(name='special-relativity') %]!
 ```
+<!--/qgoda-no-xgettext-->
 
 By using `M:q.lanchor()` instead of `M:q.anchor()` you can omit the `lingua` parameter as it is implied. See [@ q.lanchor(name='referencing-languages') @] for more information about this.
 
@@ -184,7 +231,8 @@ One way to solve this problem is to use your site's default language for `/index
 
 You can use JavaScript to determine the user's preferred language and redirect them:
 
-```html;line-numbers
+<!--qgoda-no-xgettext-->
+```tt2;line-numbers
 ---
 location: index.html
 view: raw
@@ -237,6 +285,7 @@ view: raw
   </body>
 </html>
 ```
+<!--/qgoda-no-xgettext-->
 
 The above code assumes that you have top-level per-language directories like `/en/`, `/fr/`, and so on. If you choose a different directory layout, you have to change the link targets in lines 40 and 46 accordingly.
 

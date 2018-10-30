@@ -10,11 +10,12 @@ exclude:
   - /postcss.config.js
   - /COPYING
   - /README.md
-exclude_watch:
+exclude-watch:
   - /assets
   - "!/_timestamp.json"
+  - "!/_includes"
 scm: git
-no_scm:
+no-scm:
   - /assets
 helpers:
   yarn: yarn start
@@ -70,23 +71,25 @@ processors:
     markdown:
       modules:
       - TT2
+      - Strip
       - Hoedown
     html:
       modules:
       - TT2
+      - Strip
       - HTMLCleaner
       - HTMLFilter
 po:
   textdomain: net.qgoda.www
-  msgid_bugs_address: Guido Flohr <guido.flohr@cantanea.com>
-  copyright_holder: cantanea EOOD <http://www.cantanea.com/>
+  msgid-bugs-address: Guido Flohr <guido.flohr@cantanea.com>
+  copyright-holder: cantanea EOOD <http://www.cantanea.com/>
   qgoda:
     - perl 
     - -I/Users/guido/perl/qgoda/lib 
     - /Users/guido/perl/qgoda/bin/qgoda
   mdextra:
     - /_includes/**
-  views:
+  tt2:
     - /_views/**
     - "!/_views/raw"
     - "!/_views/functions/**"
