@@ -5,7 +5,7 @@ location: /{lingua}/index.html
 permalink: /{lingua}/
 chain: html
 wrapper: html
-description: Qgoda is a static site generator with a strong focus on multi-linguism and flexibility, written in Perl and JavaScript and extensible with Python, Ruby, Java, and more.
+description: Qgoda (Ягода) is a static site generator with a strong focus on multi-linguism and flexibility, written in Perl and JavaScript and extensible with Python, Ruby, Java, and more.
 ---
 <qgoda-no-xgettext>
 [% USE q = Qgoda %]

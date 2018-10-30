@@ -5625,7 +5625,7 @@ msgstr ""
 
 #: ../en/index.md:8
 msgctxt "description"
-msgid "Qgoda is a static site generator with a strong focus on multi-linguism and flexibility, written in Perl and JavaScript and extensible with Python, Ruby, Java, and more."
+msgid "Qgoda (Ягода) is a static site generator with a strong focus on multi-linguism and flexibility, written in Perl and JavaScript and extensible with Python, Ruby, Java, and more."
 msgstr ""
 
 #: ../en/index.md:10
