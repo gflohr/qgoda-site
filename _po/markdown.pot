@@ -578,7 +578,7 @@ msgstr ""
 #: ../en/docs/configuration-variables.md:40
 msgid ""
 "[% WRAPPER components/variable.html\n"
-"   variable=\"link_score\" type='Integer'\n"
+"   variable=\"link-score\" type='Integer'\n"
 "   default=5 -%]\n"
 "The relation score that two documents that have a link between each other get.  Note that this is counted from each document's side.  So, if document A links to B and B links to A, the overall relation score between A and B is 10.\n"
 "[%- END %]"
@@ -4138,7 +4138,7 @@ msgid ""
 "```yaml\n"
 "$ qgoda config\n"
 "...\n"
-"link_score: 5\n"
+"link-score: 5\n"
 "...\n"
 "taxonomies:\n"
 "  categories: 3\n"
@@ -4186,7 +4186,7 @@ msgid ""
 msgstr ""
 
 #: ../en/docs/related-documents.md:119
-msgid "As you can see, document A links to document B.  The configured `C:link_score` is 5, and hence the relation score between them is 5.  Note: If B would link back to A, that would add another 5 points.  But subsequent mutual links would be ignored."
+msgid "As you can see, document A links to document B.  The configured `C:link-score` is 5, and hence the relation score between them is 5.  Note: If B would link back to A, that would add another 5 points.  But subsequent mutual links would be ignored."
 msgstr ""
 
 #: ../en/docs/related-documents.md:121
@@ -5644,11 +5644,11 @@ msgid ""
 msgstr ""
 
 #: ../en/news/client-side-syntax-highlighting.md:42
-msgid "## Creating Semantic Code Blocks"
+msgid "## Creating Semantically Correct Code Blocks"
 msgstr ""
 
 #: ../en/news/client-side-syntax-highlighting.md:44
-msgid "### Manually Creating Semantic Code Blocks"
+msgid "### Manually Creating Semantically Correct Code Blocks"
 msgstr ""
 
 #: ../en/news/client-side-syntax-highlighting.md:46
@@ -5858,18 +5858,36 @@ msgid "This codeblock will now as an exception not be\n"
 msgstr ""
 
 #: ../en/news/client-side-syntax-highlighting.md:290
-msgid "## Caveats"
+msgid "## Alternative: Use a JavaScript Hack"
 msgstr ""
 
 #: ../en/news/client-side-syntax-highlighting.md:292
+msgid ""
+"[Using the Qgoda syntax highlighter plug-in](#using-the-qgoda-syntax-highlighter-plug-in)\n"
+"is very flexible but involves a lot of typing compared to [fenced code\n"
+"blocks](#using-fenced-code-blocks). On this side we use a little JavaScript\n"
+"hack that allows us to enable the `line-numbers` plug-in with fenced\n"
+"code blocks like this:"
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:308
+msgid "See the [JavaScript source code](https://github.com/gflohr/qgoda-c/blob/master/_assets/js/line-numbers.js)\n"
+"for details."
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:311
+msgid "## Caveats"
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:313
 msgid "There are two little gotchas that you have to keep in mind."
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:294
+#: ../en/news/client-side-syntax-highlighting.md:315
 msgid "### Code Blocks Without Language Specification"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:296
+#: ../en/news/client-side-syntax-highlighting.md:317
 msgid ""
 "If you use a fenced\n"
 "code block or the qgoda highlighter plug-in without a language specification,\n"
@@ -5880,25 +5898,25 @@ msgid ""
 "you have to resort to a little bit of JavaScript:"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:315
+#: ../en/news/client-side-syntax-highlighting.md:336
 msgid ""
 "You may argue that the check in line 4 will miss `pre` elements that have a class attribute\n"
 "but miss a `language-*` specification.  This cannot happen because all of the blocks\n"
 "are generated, and they will *not* have any class attribute set."
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:319
+#: ../en/news/client-side-syntax-highlighting.md:340
 msgid ""
 "Well, not 100 % true. If you created such a block with the highlighter plug-in,\n"
 "it could have a class attribute but no language specification. But that's your own\n"
 "fault then, and you know how to fix it."
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:323
+#: ../en/news/client-side-syntax-highlighting.md:344
 msgid "### Using the CSS-Modules And Line-Numbers Plug-In Simultaneously"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:325
+#: ../en/news/client-side-syntax-highlighting.md:346
 msgid ""
 "The other glitch is rather esoteric and caused by a little flaw in the plug-in system\n"
 "of PrismJS. Its `css-modules` plug-in can be used to automatically use the\n"
@@ -5906,19 +5924,19 @@ msgid ""
 "class names and id attributes."
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:330
+#: ../en/news/client-side-syntax-highlighting.md:351
 msgid ""
 "The `line-numbers` plug-in on the other hand ignores BEM.  It searches for code blocks\n"
 "that have the exact class `line-numbers`.  The workaround is to use both classes,\n"
 "the BEM-style class for styling and the literal one for the JavaScript code."
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:334
+#: ../en/news/client-side-syntax-highlighting.md:355
 msgid "You can see how this is done in the\n"
 "[source code of this page](https://github.com/gflohr/qgoda-site/blame/master/[@ asset.relpath @])."
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:337
+#: ../en/news/client-side-syntax-highlighting.md:358
 msgid ""
 "The BEM-style class name is stored in the variable `css.prism.line_numbers`. The hash\n"
 "containing that variable is read in\n"

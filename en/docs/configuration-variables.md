@@ -38,7 +38,7 @@ A list of language codes for your site like "en", "fr", and so on.  It is recomm
 [%- END %]
 
 [% WRAPPER components/variable.html
-   variable="link_score" type='Integer'
+   variable="link-score" type='Integer'
    default=5 -%]
 The relation score that two documents that have a link between each other get.  Note that this is counted from each document's side.  So, if document A links to B and B links to A, the overall relation score between A and B is 10.
 [%- END %]

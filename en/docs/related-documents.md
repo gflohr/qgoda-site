@@ -79,7 +79,7 @@ The way Qgoda computes the degree of relatedness between documents --- their "re
 ```yaml
 $ qgoda config
 ...
-link_score: 5
+link-score: 5
 ...
 taxonomies:
   categories: 3
@@ -116,7 +116,7 @@ See [B](/b/) for more details.
 This site is generated with [Qgoda](http://www.qgoda.net).
 ```
 
-As you can see, document A links to document B.  The configured `C:link_score` is 5, and hence the relation score between them is 5.  Note: If B would link back to A, that would add another 5 points.  But subsequent mutual links would be ignored.
+As you can see, document A links to document B.  The configured `C:link-score` is 5, and hence the relation score between them is 5.  Note: If B would link back to A, that would add another 5 points.  But subsequent mutual links would be ignored.
 
 Both documents link to http://www.qgoda.net/.  Since the configuration variable `taxonomies.links` has the value 1, the score is now 6.
 

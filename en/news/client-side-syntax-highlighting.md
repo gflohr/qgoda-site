@@ -287,6 +287,27 @@ minus sign (-) prepended:
 This codeblock will now as an exception not be
 highlighted as JavaScript but as HTML.
 
+## Alternative: Use a JavaScript Hack
+
+[Using the Qgoda syntax highlighter plug-in](#using-the-qgoda-syntax-highlighter-plug-in)
+is very flexible but involves a lot of typing compared to [fenced code
+blocks](#using-fenced-code-blocks). On this side we use a little JavaScript
+hack that allows us to enable the `line-numbers` plug-in with fenced
+code blocks like this:
+
+<!--qgoda-no-xgettext-->
+[@ FILTER $Highlight "language-markdown" "line-numbers" css.prism.line_numbers @]
+&#x60;&#x60;&#x60;javascript;line-numbers
+if (options.debug) {
+    console.log(&quot;Options: &quot;, options);
+}
+&#x60;&#x60;&#x60;
+[@ END @]
+<!--/qgoda-no-xgettext-->
+
+See the [JavaScript source code](https://github.com/gflohr/qgoda-c/blob/master/_assets/js/line-numbers.js)
+for details.
+
 ## Caveats
 
 There are two little gotchas that you have to keep in mind.

@@ -7,7 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qgoda-site 0.1\n"
 "Report-Msgid-Bugs-To: 'Guido Flohr <guido.flohr@cantanea.com>'\n"
-"PO-Revision-Date: 2018-11-04 15:01+0200\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2018-11-04 15:43+0200\n"
 "Last-Translator: Guido Flohr <guido.flohr@cantanea.com>\n"
 "Language-Team: German\n"
 "Language: de\n"
@@ -15,7 +16,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"POT-Creation-Date: \n"
 "X-Generator: Poedit 2.0.7\n"
 
 #: ../_views/components/back-to-listings.html:6
@@ -142,12 +142,9 @@ msgid "Webpack"
 msgstr ""
 
 #: ../_includes/en/landing-page/about-webpack.md:5
-#, fuzzy
-#| msgctxt "image_alt"
-#| msgid "The Perl Logo"
 msgctxt "image_alt"
 msgid "The webpack logo"
-msgstr "Das Logo von Perl"
+msgstr "Das Logo von Webpack"
 
 #: ../_includes/en/landing-page/about-webpack.md:8
 msgid ""
@@ -162,12 +159,9 @@ msgid "Yeoman"
 msgstr ""
 
 #: ../_includes/en/landing-page/about-yeoman.md:5
-#, fuzzy
-#| msgctxt "image_alt"
-#| msgid "The Perl Logo"
 msgctxt "image_alt"
 msgid "The Yeoman logo"
-msgstr "Das Logo von Perl"
+msgstr "Das Logo von Yeoman"
 
 #: ../_includes/en/landing-page/about-yeoman.md:8
 msgid ""
@@ -779,17 +773,6 @@ msgstr ""
 "verarbeitet:"
 
 #: ../en/docs/configuration-variables.md:15
-#, fuzzy
-#| msgid ""
-#| "<ul>\n"
-#| "[% WRAPPER components/variable.html\n"
-#| "   variable=\"case-sensitive\" type='0 or 1' \n"
-#| "   default='0' -%]\n"
-#| "Set to 0 if you want to ignore case of filenames, 1 otherwise.  It is "
-#| "probably wise to keep the default value of 0 even on a case-sensitive "
-#| "file system.  Otherwise, you may run into problems, when you copy the "
-#| "site on another machine or some storage medium such as a USB stick.\n"
-#| "[%- END %]"
 msgid ""
 "<ul>\n"
 "[% WRAPPER components/variable.html\n"
@@ -813,15 +796,6 @@ msgstr ""
 "[%- END %]"
 
 #: ../en/docs/configuration-variables.md:22
-#, fuzzy
-#| msgid ""
-#| "[% WRAPPER components/variable.html\n"
-#| "   variable=\"exclude\" type='Array' \n"
-#| "   default='empty' -%]\n"
-#| "A list of files and directories that should not be processed.  Patterns "
-#| "are allowed.  See <a href=\"[% q.llink(name = 'excluding-files') %]\">[% "
-#| "q.lxref('title', name = 'excluding-files') %]</a>!\n"
-#| "[%- END %]"
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"exclude\" type='Array'\n"
@@ -841,16 +815,6 @@ msgstr ""
 "[%- END %]"
 
 #: ../en/docs/configuration-variables.md:28
-#, fuzzy
-#| msgid ""
-#| "[% WRAPPER components/variable.html\n"
-#| "   variable=\"exclude_watch\" type='Array' \n"
-#| "   default='same as \"exclude\" above' -%]\n"
-#| "A list of files and directories that should not trigger a rebuild, when "
-#| "they change.  Patterns are allowed.  See <a href=\"[% q.llink(name = "
-#| "'excluding-files') %]\">[% q.lxref('title', name = 'excluding-files') %]</"
-#| "a>!\n"
-#| "[%- END %]"
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"exclude-watch\" type='Array'\n"
@@ -861,7 +825,7 @@ msgid ""
 "[%- END %]"
 msgstr ""
 "[% WRAPPER components/variable.html\n"
-"   variable=\"exclude_watch\" type='Liste' \n"
+"   variable=\"exclude-watch\" type='Liste' \n"
 "   default='wie oben für \"exclude\"' -%]\n"
 "Eine Liste von Dateien und Verzeichnissen, die bei einer Änderung keine "
 "Neugenerierung der Site auslösen sollen. Es können Suchmuster verwendet "
@@ -884,7 +848,7 @@ msgstr ""
 #, fuzzy
 #| msgid ""
 #| "[% WRAPPER components/variable.html\n"
-#| "   variable=\"link_score\" type='Integer' \n"
+#| "   variable=\"link_score\" type='Integer'\n"
 #| "   default=5 -%]\n"
 #| "The relation score that two documents that have a link between each other "
 #| "get.  Note that this is counted from each document's side.  So, if "
@@ -893,7 +857,7 @@ msgstr ""
 #| "[%- END %]"
 msgid ""
 "[% WRAPPER components/variable.html\n"
-"   variable=\"link_score\" type='Integer'\n"
+"   variable=\"link-score\" type='Integer'\n"
 "   default=5 -%]\n"
 "The relation score that two documents that have a link between each other "
 "get.  Note that this is counted from each document's side.  So, if document "
@@ -902,7 +866,7 @@ msgid ""
 "[%- END %]"
 msgstr ""
 "[% WRAPPER components/variable.html\n"
-"   variable=\"link_score\" type='Ganzzahl' \n"
+"   variable=\"link-score\" type='Ganzzahl' \n"
 "   default=5 -%]\n"
 "Die Ähnlicheitswichtung zweier untereinander verlinkter Dokumente. Diese "
 "Wichtung wird von jedem Dokument aus gezählt. Wenn also Dokument A auf "
@@ -911,15 +875,6 @@ msgstr ""
 "[%- END %]"
 
 #: ../en/docs/configuration-variables.md:46
-#, fuzzy
-#| msgid ""
-#| "[% WRAPPER components/variable.html\n"
-#| "   variable=\"no_scm\" type='List of patterns' \n"
-#| "   default='none' -%]\n"
-#| "A list of file name patterns that should be processed although not being "
-#| "under version control.  This only makes sense in conjunction with <code>C:"
-#| "scm</code>.\n"
-#| "[%- END %]"
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"no-scm\" type='List of patterns'\n"
@@ -930,7 +885,7 @@ msgid ""
 "[%- END %]"
 msgstr ""
 "[% WRAPPER components/variable.html\n"
-"   variable=\"scm\" type='Liste von Suchmustern' \n"
+"   variable=\"no-scm\" type='Liste von Suchmustern' \n"
 "   default='leer' -%]\n"
 "Eine Liste von Dateinamens-Suchmustern, die verarbeitet werden sollen, "
 "obgleich sie sich nicht unter Versionskontrolle stehen. Diese Variable hat "
@@ -938,13 +893,6 @@ msgstr ""
 "[%- END %]"
 
 #: ../en/docs/configuration-variables.md:52
-#, fuzzy
-#| msgid ""
-#| "[% WRAPPER components/variable.html\n"
-#| "   variable=\"title\" type='String' \n"
-#| "   default='\"A New Qgoda Powered Site\"' -%]\n"
-#| "The name of the site.  Qgoda itself does not use this variable.\n"
-#| "[%- END %]"
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"title\" type='String'\n"
@@ -1911,17 +1859,12 @@ msgid "## Excluding Files From Being Watched"
 msgstr "## Dateien von der Überwachung im Watch-Modus ausschließen"
 
 #: ../en/docs/excluding-files.md:104
-#, fuzzy
-#| msgid ""
-#| "There is another configuration variable `C:exclude_watch` that specifies "
-#| "files and directories that should not be watched.  If you omit that "
-#| "variable, the contents of `C:exclude` is taken instead."
 msgid ""
 "There is another configuration variable `C:exclude-watch` that specifies "
 "files and directories that should not be watched.  If you omit that "
 "variable, the contents of `C:exclude` is taken instead."
 msgstr ""
-"Eine weitere Konfigurationsvariable `C:exclude_watch` gibt Dateien und "
+"Eine weitere Konfigurationsvariable `C:exclude-watch` gibt Dateien und "
 "Verzeichnisse an, die im Watch-Modus keine Neu-Generierung der Site auslösen "
 "sollen, an. Wird diese Variable weggelassen, wird stattdessen der Inhalt von "
 "`C:exclude` genommen."
@@ -3553,12 +3496,6 @@ msgstr ""
 "Qgoda"
 
 #: ../en/docs/multilanguage-overview.md:8
-#, fuzzy
-#| msgid ""
-#| "[% USE q = Qgoda %]\n"
-#| "[% TAGS [@ @] %]\n"
-#| "Multi-lingualism in Qgoda is an integral, built-in feature mostly built "
-#| "upon easy to follow conventions."
 msgid ""
 "Multi-lingualism in Qgoda is an integral, built-in feature mostly built upon "
 "easy to follow conventions."
@@ -5794,7 +5731,7 @@ msgid ""
 "```yaml\n"
 "$ qgoda config\n"
 "...\n"
-"link_score: 5\n"
+"link-score: 5\n"
 "...\n"
 "taxonomies:\n"
 "  categories: 3\n"
@@ -5844,9 +5781,9 @@ msgstr ""
 
 #: ../en/docs/related-documents.md:119
 msgid ""
-"As you can see, document A links to document B.  The configured `C:"
-"link_score` is 5, and hence the relation score between them is 5.  Note: If "
-"B would link back to A, that would add another 5 points.  But subsequent "
+"As you can see, document A links to document B.  The configured `C:link-"
+"score` is 5, and hence the relation score between them is 5.  Note: If B "
+"would link back to A, that would add another 5 points.  But subsequent "
 "mutual links would be ignored."
 msgstr ""
 
@@ -7551,11 +7488,15 @@ msgstr ""
 "am Anfang und Ende des Code-Blockes gibt."
 
 #: ../en/news/client-side-syntax-highlighting.md:42
-msgid "## Creating Semantic Code Blocks"
+#, fuzzy
+#| msgid "## Creating Semantic Code Blocks"
+msgid "## Creating Semantically Correct Code Blocks"
 msgstr "## Erzeugung Semantisch korrekter Code-Blöcke"
 
 #: ../en/news/client-side-syntax-highlighting.md:44
-msgid "### Manually Creating Semantic Code Blocks"
+#, fuzzy
+#| msgid "### Manually Creating Semantic Code Blocks"
+msgid "### Manually Creating Semantically Correct Code Blocks"
 msgstr "### Manuelle Erzeugung semantisch korrekter Code-Blöcke"
 
 #: ../en/news/client-side-syntax-highlighting.md:46
@@ -7626,7 +7567,7 @@ msgid ""
 "[@ END @]"
 msgstr ""
 "[@ WRAPPER components/infobox.html\n"
-"           type=‘info’ title=‘Kompatibilitätshinweis!’ @]\n"
+"           type='info' title='Kompatibilitätshinweis!' @]\n"
 "<p>Es ist geplant, <a href=“https://metacpan.org/release/Text-Markdown”>\n"
 "<code>Text::Markdown</code><a>  als Qgodas standardmäßigen Markdown-"
 "Prozessor durch \n"
@@ -7663,8 +7604,8 @@ msgid ""
 "[@ END @]"
 msgstr ""
 "[@ WRAPPER components/infobox.html\n"
-"           type=‘info’ title=‘Schon gewusst, dass …’ @]\n"
-"<p>PrismJS auch Template Toolkit unterstützt? Dazu muss einfach\n"
+"           type='info' title='Schon gewusst, dass …' @]\n"
+"<p>… PrismJS auch Template Toolkit unterstützt? Dazu muss einfach\n"
 "<code>tt2</code> als Sprachname angegeben werden</p>\n"
 "[@ END @]"
 
@@ -7701,14 +7642,16 @@ msgid ""
 "by\n"
 "loading an *additional* stylesheet:"
 msgstr ""
+"Mit PrismJS wird eine Reihe von Themen ausgeliefert. Das Default-Thema lässt "
+"sich überschreiben, indem eine *weitere* Stylesheet-Datei eingebunden wird:"
 
 #: ../en/news/client-side-syntax-highlighting.md:142
 msgid "That will change the style to the \"coy\" theme."
-msgstr ""
+msgstr "So lässt sich der Stil auf das “Coy”-Theme umstellen."
 
 #: ../en/news/client-side-syntax-highlighting.md:144
 msgid "### Loading Highlighters and PrismJS Plug-Ins"
-msgstr ""
+msgstr "### Laden von Highlightern und Plug-Ins für PrismJS"
 
 #: ../en/news/client-side-syntax-highlighting.md:146
 msgid ""
@@ -7716,6 +7659,8 @@ msgid ""
 "highlighters\n"
 "and plug-ins automatically but you have to explicitely specify them."
 msgstr ""
+"Um Speicher und Bandbreite zu sparen, lädt PrismJS nicht alle Highlights und "
+"Plug-Ins automatisch. Sie müssen vielmehr explizit angegeben werden."
 
 #: ../en/news/client-side-syntax-highlighting.md:149
 msgid ""
@@ -7725,6 +7670,9 @@ msgid ""
 "line\n"
 "number:"
 msgstr ""
+"Das untenstehende, vollstdändige Beispiel würde Highlighting für die Sprache "
+"JavaScript und das Plug-In `line-numbers` aktivieren. Mit Hilfe dieses Plug-"
+"ins wird mit CSS allen Zeilen die Zeilennummer vorangestellt:"
 
 #: ../en/news/client-side-syntax-highlighting.md:171
 msgid ""
@@ -7732,14 +7680,16 @@ msgid ""
 "languages, just add the corresponding PrismJS \n"
 "*component* after line 11."
 msgstr ""
+"Um Unterstützung für weitere Sprachen zu aktivieren, müssen nach Zeile 11 "
+"lediglich die entsprechenden weiteren PrismJS-Komponenten hinzugefügt werden."
 
 #: ../en/news/client-side-syntax-highlighting.md:175
 msgid "## Using the Qgoda Syntax Highlighter Plug-In"
-msgstr ""
+msgstr "## Verwendung des Syntax-Highlighter-Plug-Ins von Qgoda"
 
 #: ../en/news/client-side-syntax-highlighting.md:177
 msgid "Fenced code-blocks are not always enough:"
-msgstr ""
+msgstr "Fenced Code-Blöcke sind nicht immer ausreichend"
 
 #: ../en/news/client-side-syntax-highlighting.md:179
 msgid ""
@@ -7748,12 +7698,14 @@ msgid ""
 "2. You want to set additional attributes on the html elements, especially "
 "classes."
 msgstr ""
+"1. Der Markdown-Prozessor könnte sie nicht unterstützen, oder keine "
+"Sprachangaben erlabuen.\n"
+"2. Oft müssen weitere Attribute von HTML-Elementen, insbesondere CSS-Klassen "
+"gesetzt werden."
 
 #: ../en/news/client-side-syntax-highlighting.md:182
-#, fuzzy
-#| msgid "### Install the Translations"
 msgid "### Installation"
-msgstr "### Installation der Übersetzungen"
+msgstr "### Installation"
 
 #: ../en/news/client-side-syntax-highlighting.md:184
 msgid ""
@@ -7762,6 +7714,10 @@ msgid ""
 "highlight)\n"
 "like any other Qgoda plug-in. Normally:"
 msgstr ""
+"Das\n"
+"[Qgoda-Highlighter-Plug-in](https://github.com/gflohr/qgoda-plugin-tt2-"
+"highlight)\n"
+"wird wie jedes andere Plug-in installiert, normalerweise also so:"
 
 #: ../en/news/client-side-syntax-highlighting.md:195
 msgid ""
@@ -7769,12 +7725,12 @@ msgid ""
 "`yarn` over\n"
 "`npm`."
 msgstr ""
+"Mit `yarn` statt `ppm` lautet das Kommando `yarn add gflohr/qgoda-plugin-tt2-"
+"highlight`."
 
 #: ../en/news/client-side-syntax-highlighting.md:198
-#, fuzzy
-#| msgid "## Usage"
 msgid "### Usage"
-msgstr "## Benutzung"
+msgstr "## Verwendung"
 
 #: ../en/news/client-side-syntax-highlighting.md:200
 msgid ""
@@ -7782,6 +7738,9 @@ msgid ""
 "[Template Toolkit](http://www.template-toolkit.org/)\n"
 "directives in order to activate the highlighting:"
 msgstr ""
+"Jetzt wird die Syntax-Hervorhebung mit Direktiven für\n"
+"[Template Toolkit](http://www.template-toolkit.org/)\n"
+"aktiviert:"
 
 #: ../en/news/client-side-syntax-highlighting.md:216
 msgid ""
@@ -7791,10 +7750,13 @@ msgid ""
 "converted\n"
 "to HTML attributes and their corresponding values."
 msgstr ""
+"Alle positionellen Argument für das Fitler-Plug-In (Zeile 2) werden der CSS-"
+"Klasse des umgebenden `<pre>`-Elements zugefügt. Die benannten Argument "
+"dagegen werden in HTML-Attribute und ihre entsprechenden Werte umgewandelt."
 
 #: ../en/news/client-side-syntax-highlighting.md:233
 msgid "The above example will result in the following HTML code:"
-msgstr ""
+msgstr "Das obige Beispiel erzeugt den folgenden HTML-Code:"
 
 #: ../en/news/client-side-syntax-highlighting.md:243
 msgid ""
@@ -7806,10 +7768,15 @@ msgid ""
 "instance, the code examples on this very page are \n"
 "produced with directives like this"
 msgstr ""
+"Vorausgesetzt, dass das Plug-In `line-numbers` von PrismJS korrekt "
+"eingebunden wurde, wird dieser Code im Browser als JavaScript hervorgehoben, "
+"und jeder Zeile eine Zeilennummer vorangestellt, wobei die Nummerierung bei "
+"5 beginnt. Die Code-Beispiele auf dieser Seite wurden beispielsweise mit "
+"Direktiven wie dieser erzeugt:"
 
 #: ../en/news/client-side-syntax-highlighting.md:249
 msgid "### Page-wide Defaullts"
-msgstr ""
+msgstr "### Vorgaben für die ganze Seite"
 
 #: ../en/news/client-side-syntax-highlighting.md:251
 msgid ""
@@ -7840,20 +7807,41 @@ msgid ""
 msgstr ""
 
 #: ../en/news/client-side-syntax-highlighting.md:290
+msgid "## Alternative: Use a JavaScript Hack"
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:292
+msgid ""
+"[Using the Qgoda syntax highlighter plug-in](#using-the-qgoda-syntax-"
+"highlighter-plug-in)\n"
+"is very flexible but involves a lot of typing compared to [fenced code\n"
+"blocks](#using-fenced-code-blocks). On this side we use a little JavaScript\n"
+"hack that allows us to enable the `line-numbers` plug-in with fenced\n"
+"code blocks like this:"
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:308
+msgid ""
+"See the [JavaScript source code](https://github.com/gflohr/qgoda-c/blob/"
+"master/_assets/js/line-numbers.js)\n"
+"for details."
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:311
 #, fuzzy
 #| msgid "## Cookies"
 msgid "## Caveats"
 msgstr "## Cookies"
 
-#: ../en/news/client-side-syntax-highlighting.md:292
+#: ../en/news/client-side-syntax-highlighting.md:313
 msgid "There are two little gotchas that you have to keep in mind."
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:294
+#: ../en/news/client-side-syntax-highlighting.md:315
 msgid "### Code Blocks Without Language Specification"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:296
+#: ../en/news/client-side-syntax-highlighting.md:317
 msgid ""
 "If you use a fenced\n"
 "code block or the qgoda highlighter plug-in without a language "
@@ -7868,7 +7856,7 @@ msgid ""
 "you have to resort to a little bit of JavaScript:"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:315
+#: ../en/news/client-side-syntax-highlighting.md:336
 msgid ""
 "You may argue that the check in line 4 will miss `pre` elements that have a "
 "class attribute\n"
@@ -7877,7 +7865,7 @@ msgid ""
 "are generated, and they will *not* have any class attribute set."
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:319
+#: ../en/news/client-side-syntax-highlighting.md:340
 msgid ""
 "Well, not 100 % true. If you created such a block with the highlighter plug-"
 "in,\n"
@@ -7886,11 +7874,11 @@ msgid ""
 "fault then, and you know how to fix it."
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:323
+#: ../en/news/client-side-syntax-highlighting.md:344
 msgid "### Using the CSS-Modules And Line-Numbers Plug-In Simultaneously"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:325
+#: ../en/news/client-side-syntax-highlighting.md:346
 msgid ""
 "The other glitch is rather esoteric and caused by a little flaw in the plug-"
 "in system\n"
@@ -7900,7 +7888,7 @@ msgid ""
 "class names and id attributes."
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:330
+#: ../en/news/client-side-syntax-highlighting.md:351
 msgid ""
 "The `line-numbers` plug-in on the other hand ignores BEM.  It searches for "
 "code blocks\n"
@@ -7909,14 +7897,14 @@ msgid ""
 "the BEM-style class for styling and the literal one for the JavaScript code."
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:334
+#: ../en/news/client-side-syntax-highlighting.md:355
 msgid ""
 "You can see how this is done in the\n"
 "[source code of this page](https://github.com/gflohr/qgoda-site/blame/master/"
 "[@ asset.relpath @])."
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:337
+#: ../en/news/client-side-syntax-highlighting.md:358
 msgid ""
 "The BEM-style class name is stored in the variable `css.prism.line_numbers`. "
 "The hash\n"
