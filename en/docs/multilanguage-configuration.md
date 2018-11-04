@@ -84,10 +84,10 @@ This variable is optional and rarely used.
 A list of [file name patterns]([@ q.llink(name='pattern-lists') @]) for template files to search for translatable strings. It defaults to just `P:_views` or whatever the configuration variable `C:paths.views` points to.
 
 <!--qgoda-no-xgettext-->
-### `po.xgettext_tt2`
+### `po.xgettext-tt2`
 <!--/qgoda-no-xgettext-->
 
-The location of the `xgettext_tt2` program if it is not in `$PATH`. The `xgettext_tt2` program ships with [Template-Plugin-Gettext](https://github.com/template-plugin-gettext) which is automatically installed as a Qgoda dependency.
+The location of the `xgettext-tt2` program if it is not in `$PATH`. The `xgettext-tt2` program ships with [Template-Plugin-Gettext](https://github.com/template-plugin-gettext) which is automatically installed as a Qgoda dependency.
 
 <!--qgoda-no-xgettext-->
 ### `po.xgettext`

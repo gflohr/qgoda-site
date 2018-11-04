@@ -45,7 +45,7 @@ does not exist.
    overridable="paths.includes" -%]
 Directory for included content snippets.  You use that for example
 like <code>[&#37; q.include("_includes/footer.md") &#37;]</code>.  Using the
-name `_includes` is not enforced by Qgoda.  But you should use a name that starts with an underscore (so that the files are not misinterpreted as regular content) and add the negated name to the configuration variable `C:exclude_watch`.
+name `_includes` is not enforced by Qgoda.  But you should use a name that starts with an underscore (so that the files are not misinterpreted as regular content) and add the negated name to the configuration variable `C:exclude-watch`.
 [%- END %]
 
 [% WRAPPER components/file.html

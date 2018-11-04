@@ -3,7 +3,7 @@ draft: 1
 title: Client-Side Syntax Highlighting
 name: client side syntax-highlighting
 view: docs.html
-date: 2018-10-15
+date: 2018-11-05
 category: Tutorial
 tags: Tutorial Howto
 ---
@@ -39,9 +39,9 @@ It is advisable to put the enclosing `<pre>` and `<code>` tags on the same line 
 the enclosed code. Otherwise ugly line feeds are added to the beginning and the end
 of the block.
 
-## Creating Semantic Code Blocks
+## Creating Semantically Correct Code Blocks
 
-### Manually Creating Semantic Code Blocks
+### Manually Creating Semantically Correct Code Blocks
 
 Remember that (almost) all markup goes through unchanged in Markdown.  Nobody stops
 you from entering your code blocks manually with HTML.

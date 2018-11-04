@@ -43,7 +43,7 @@ qgoda-quickstart $ qgoda config
 case-sensitive: 0
 defaults: []
 exclude: []
-exclude_watch: []
+exclude-watch: []
 helpers: {}
 index: index
 latency: 0.5

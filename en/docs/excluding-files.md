@@ -101,7 +101,7 @@ You have to keep in mind that Qgoda has prepended this list with `/_*` (see abov
 
 ## Excluding Files From Being Watched
 
-There is another configuration variable `C:exclude_watch` that specifies files and directories that should not be watched.  If you omit that variable, the contents of `C:exclude` is taken instead.
+There is another configuration variable `C:exclude-watch` that specifies files and directories that should not be watched.  If you omit that variable, the contents of `C:exclude` is taken instead.
 
 Note that Qgoda by default re-includes the directory `P:_views`.
 
@@ -109,7 +109,7 @@ Example:
 
 <!--qgoda-no-xgettext-->
 ```yaml
-exclude_watch:
+exclude-watch:
 - assets/movies
 ```
 <!--/qgoda-no-xgettext-->
@@ -118,7 +118,7 @@ The list that is really used by Qgoda looks like this:
 
 <!--qgoda-no-xgettext-->
 ```yaml
-exclude_watch:
+exclude-watch:
 - .*
 - /_*
 - "!/_views"
