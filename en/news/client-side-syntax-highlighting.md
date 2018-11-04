@@ -44,11 +44,20 @@ of the block.
 ### Manually Creating Semantically Correct Code Blocks
 
 Remember that (almost) all markup goes through unchanged in Markdown.  Nobody stops
-you from entering your code blocks manually with HTML.
+you from entering your code blocks manually with HTML, as we have just seen:
+
+<!--qgoda-no-xgettext-->
+[@ FILTER $Highlight "language-html" "line-numbers" css.prism.line_numbers @]
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;if (options.debug) {
+    console.log("Options: ", options);
+}&lt;/code&gt;&lt;/pre&gt;
+[@ END @]
+<!--/qgoda-no-xgettext-->
 
 ### Using Fenced Code Blocks
 
-So-called *fenced* code blocks are supported by many markdown processors:
+So-called *fenced* code blocks are supported by many markdown processors.
+Fenced code blocks are surrounded by triple backticks ```:
 
 <!--qgoda-no-xgettext-->
 [@ FILTER $Highlight "language-markdown" "line-numbers" css.prism.line_numbers @]
@@ -217,7 +226,6 @@ All positional arguments to the filter plug-in (line 2) are added to the CSS
 class of the surrounding `<pre>` element.  The named arguments are converted
 to HTML attributes and their corresponding values.
 
-<!--qgoda-no-xgettext-->
 [@ WRAPPER components/infobox.html
            type='info' title='Positional and Named Arguments' @]
 <p>Positional arguments in Template Toolkit are standalone arguments, as opposed
@@ -225,10 +233,9 @@ to named arguments which have the form <code>key=value</code>.
 </p>
 <p>
 Note that you have to quote all keys that contain non-alphanumeric characters!
-Values always have to be quoted (unless you refer a variable).
+Values always have to be quoted (unless they refer to a variable).
 </p>
 [@ END @]
-<!--/qgoda-no-xgettext-->
 
 The above example will result in the following HTML code:
 
@@ -284,7 +291,7 @@ minus sign (-) prepended:
 [@ END @]
 <!--/qgoda-no-xgettext-->
 
-This codeblock will now as an exception not be
+This code block will now as an exception not be
 highlighted as JavaScript but as HTML.
 
 ## Alternative: Use a JavaScript Hack
@@ -317,7 +324,8 @@ There are two little gotchas that you have to keep in mind.
 If you use a fenced
 code block or the qgoda highlighter plug-in without a language specification,
 PrismJS will not highlight the code block. This will be fixed in a later
-version of the highlighter plug-in (see https://github.com/gflohr/qgoda-plugin-tt2-highlight/issues
+version of the highlighter plug-in (see
+https://github.com/gflohr/qgoda-plugin-tt2-highlight/issues/1
 and https://github.com/gflohr/qgoda/issues/51). Until then, you either have to
 mark every affected code block as language "none" (or with the class "language-none") or
 you have to resort to a little bit of JavaScript:

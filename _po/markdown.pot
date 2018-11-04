@@ -5653,18 +5653,19 @@ msgstr ""
 
 #: ../en/news/client-side-syntax-highlighting.md:46
 msgid "Remember that (almost) all markup goes through unchanged in Markdown.  Nobody stops\n"
-"you from entering your code blocks manually with HTML."
+"you from entering your code blocks manually with HTML, as we have just seen:"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:49
+#: ../en/news/client-side-syntax-highlighting.md:57
 msgid "### Using Fenced Code Blocks"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:51
-msgid "So-called *fenced* code blocks are supported by many markdown processors:"
+#: ../en/news/client-side-syntax-highlighting.md:59
+msgid "So-called *fenced* code blocks are supported by many markdown processors.\n"
+"Fenced code blocks are surrounded by triple backticks ```:"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:63
+#: ../en/news/client-side-syntax-highlighting.md:72
 msgid ""
 "This creates exactly the construct we want, the code inside of a `<code>` element\n"
 "inside of a `<pre>` element. But none of the tags has any attributes, more\n"
@@ -5672,7 +5673,7 @@ msgid ""
 "specify the language immediately following the opening \"fence\":"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:78
+#: ../en/news/client-side-syntax-highlighting.md:87
 msgid ""
 "There is a caveat, though. Qgoda's default Markdown processor\n"
 "[Text::Markdown](https://metacpan.org/release/Text-Markdown) does not support fenced code blocks with a language specifier.\n"
@@ -5681,7 +5682,7 @@ msgid ""
 "markdown  processor."
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:84
+#: ../en/news/client-side-syntax-highlighting.md:93
 msgid ""
 "[@ WRAPPER components/infobox.html\n"
 "           type='info' title='Compatibility Note!' @]\n"
@@ -5695,18 +5696,18 @@ msgid ""
 "[@ END @]"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:95
+#: ../en/news/client-side-syntax-highlighting.md:104
 msgid "## Syntax-Highlighting With PrismJS"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:97
+#: ../en/news/client-side-syntax-highlighting.md:106
 msgid ""
 "[PrismJS](https://prismjs.com/) is a very popular syntax highlighter written in\n"
 "Javascript that supports an impressive [list of\n"
 "languages](https://prismjs.com/#languages-list)."
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:101
+#: ../en/news/client-side-syntax-highlighting.md:110
 msgid ""
 "[@ WRAPPER components/infobox.html\n"
 "           type='info' title='Did you know ...' @]\n"
@@ -5716,108 +5717,122 @@ msgid ""
 "[@ END @]"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:108
+#: ../en/news/client-side-syntax-highlighting.md:117
 msgid "### Basic Usage"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:110
+#: ../en/news/client-side-syntax-highlighting.md:119
 msgid "You can see the minimum required javascript and css files in the following code\n"
 "snippet:"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:127
+#: ../en/news/client-side-syntax-highlighting.md:136
 msgid "The default stylesheet gets included in line 4 and the core library in line 7.\n"
 "Make sure that they are found at the locations specified."
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:130
+#: ../en/news/client-side-syntax-highlighting.md:139
 msgid "### Using a PrismJS Theme"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:132
+#: ../en/news/client-side-syntax-highlighting.md:141
 msgid "PrismJS ships with a number of themes. You can override the default theme by\n"
 "loading an *additional* stylesheet:"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:142
+#: ../en/news/client-side-syntax-highlighting.md:151
 msgid "That will change the style to the \"coy\" theme."
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:144
+#: ../en/news/client-side-syntax-highlighting.md:153
 msgid "### Loading Highlighters and PrismJS Plug-Ins"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:146
+#: ../en/news/client-side-syntax-highlighting.md:155
 msgid "In order to save memory and band-width, PrismJS does not load all of its highlighters\n"
 "and plug-ins automatically but you have to explicitely specify them."
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:149
+#: ../en/news/client-side-syntax-highlighting.md:158
 msgid ""
 "The complete example below would load support for highlighting JavaScript and also\n"
 "load the `line-numbers` plug-in that uses CSS to prepend every line with a line\n"
 "number:"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:171
+#: ../en/news/client-side-syntax-highlighting.md:180
 msgid ""
 "If you want to have syntax highlighting for more \n"
 "languages, just add the corresponding PrismJS \n"
 "*component* after line 11."
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:175
+#: ../en/news/client-side-syntax-highlighting.md:184
 msgid "## Using the Qgoda Syntax Highlighter Plug-In"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:177
+#: ../en/news/client-side-syntax-highlighting.md:186
 msgid "Fenced code-blocks are not always enough:"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:179
+#: ../en/news/client-side-syntax-highlighting.md:188
 msgid "1. The markdown processor may not support them, or not support a language specification.\n"
 "2. You want to set additional attributes on the html elements, especially classes."
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:182
+#: ../en/news/client-side-syntax-highlighting.md:191
 msgid "### Installation"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:184
+#: ../en/news/client-side-syntax-highlighting.md:193
 msgid ""
 "You can install the\n"
 "[Qgoda highlighter plug-in](https://github.com/gflohr/qgoda-plugin-tt2-highlight)\n"
 "like any other Qgoda plug-in. Normally:"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:195
+#: ../en/news/client-side-syntax-highlighting.md:204
 msgid "You can use `yarn add gflohr/qgoda-plugin-tt2-highlight` if you prefer `yarn` over\n"
 "`npm`."
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:198
+#: ../en/news/client-side-syntax-highlighting.md:207
 msgid "### Usage"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:200
+#: ../en/news/client-side-syntax-highlighting.md:209
 msgid ""
 "Now you have to use\n"
 "[Template Toolkit](http://www.template-toolkit.org/)\n"
 "directives in order to activate the highlighting:"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:216
+#: ../en/news/client-side-syntax-highlighting.md:225
 msgid ""
 "All positional arguments to the filter plug-in (line 2) are added to the CSS\n"
 "class of the surrounding `<pre>` element.  The named arguments are converted\n"
 "to HTML attributes and their corresponding values."
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:233
+#: ../en/news/client-side-syntax-highlighting.md:229
+msgid ""
+"[@ WRAPPER components/infobox.html\n"
+"           type='info' title='Positional and Named Arguments' @]\n"
+"<p>Positional arguments in Template Toolkit are standalone arguments, as opposed\n"
+"to named arguments which have the form <code>key=value</code>.\n"
+"</p>\n"
+"<p>\n"
+"Note that you have to quote all keys that contain non-alphanumeric characters!\n"
+"Values always have to be quoted (unless they refer to a variable).\n"
+"</p>\n"
+"[@ END @]"
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:240
 msgid "The above example will result in the following HTML code:"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:243
+#: ../en/news/client-side-syntax-highlighting.md:250
 msgid ""
 "Provided that you have correctly loaded the PrismJS `line-numbers` plug-in, this\n"
 "will highlight the code as JavaScript in the browser, add line numbers in front of every\n"
@@ -5826,11 +5841,11 @@ msgid ""
 "produced with directives like this"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:249
+#: ../en/news/client-side-syntax-highlighting.md:256
 msgid "### Page-wide Defaullts"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:251
+#: ../en/news/client-side-syntax-highlighting.md:258
 msgid ""
 "It is quite likely that all code blocks on a page are in\n"
 "the same programming language and should share their\n"
@@ -5838,30 +5853,30 @@ msgid ""
 "the `USE` directive, when you load the filter."
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:269
+#: ../en/news/client-side-syntax-highlighting.md:276
 msgid ""
 "All `FILTER` invocations will now share the same settings,\n"
 "respectively, they will receive the sum of the arguments\n"
 "that you specified for `USE` and those for `FILTER`."
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:273
+#: ../en/news/client-side-syntax-highlighting.md:280
 msgid ""
 "If you want to disable a certain CSS class for an\n"
 "individual `FILTER`, just pass the class name with a\n"
 "minus sign (-) prepended:"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:287
-msgid "This codeblock will now as an exception not be\n"
+#: ../en/news/client-side-syntax-highlighting.md:294
+msgid "This code block will now as an exception not be\n"
 "highlighted as JavaScript but as HTML."
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:290
+#: ../en/news/client-side-syntax-highlighting.md:297
 msgid "## Alternative: Use a JavaScript Hack"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:292
+#: ../en/news/client-side-syntax-highlighting.md:299
 msgid ""
 "[Using the Qgoda syntax highlighter plug-in](#using-the-qgoda-syntax-highlighter-plug-in)\n"
 "is very flexible but involves a lot of typing compared to [fenced code\n"
@@ -5870,53 +5885,54 @@ msgid ""
 "code blocks like this:"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:308
+#: ../en/news/client-side-syntax-highlighting.md:315
 msgid "See the [JavaScript source code](https://github.com/gflohr/qgoda-c/blob/master/_assets/js/line-numbers.js)\n"
 "for details."
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:311
+#: ../en/news/client-side-syntax-highlighting.md:318
 msgid "## Caveats"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:313
+#: ../en/news/client-side-syntax-highlighting.md:320
 msgid "There are two little gotchas that you have to keep in mind."
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:315
+#: ../en/news/client-side-syntax-highlighting.md:322
 msgid "### Code Blocks Without Language Specification"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:317
+#: ../en/news/client-side-syntax-highlighting.md:324
 msgid ""
 "If you use a fenced\n"
 "code block or the qgoda highlighter plug-in without a language specification,\n"
 "PrismJS will not highlight the code block. This will be fixed in a later\n"
-"version of the highlighter plug-in (see https://github.com/gflohr/qgoda-plugin-tt2-highlight/issues\n"
+"version of the highlighter plug-in (see\n"
+"https://github.com/gflohr/qgoda-plugin-tt2-highlight/issues/1\n"
 "and https://github.com/gflohr/qgoda/issues/51). Until then, you either have to\n"
 "mark every affected code block as language \"none\" (or with the class \"language-none\") or\n"
 "you have to resort to a little bit of JavaScript:"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:336
+#: ../en/news/client-side-syntax-highlighting.md:344
 msgid ""
 "You may argue that the check in line 4 will miss `pre` elements that have a class attribute\n"
 "but miss a `language-*` specification.  This cannot happen because all of the blocks\n"
 "are generated, and they will *not* have any class attribute set."
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:340
+#: ../en/news/client-side-syntax-highlighting.md:348
 msgid ""
 "Well, not 100 % true. If you created such a block with the highlighter plug-in,\n"
 "it could have a class attribute but no language specification. But that's your own\n"
 "fault then, and you know how to fix it."
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:344
+#: ../en/news/client-side-syntax-highlighting.md:352
 msgid "### Using the CSS-Modules And Line-Numbers Plug-In Simultaneously"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:346
+#: ../en/news/client-side-syntax-highlighting.md:354
 msgid ""
 "The other glitch is rather esoteric and caused by a little flaw in the plug-in system\n"
 "of PrismJS. Its `css-modules` plug-in can be used to automatically use the\n"
@@ -5924,19 +5940,19 @@ msgid ""
 "class names and id attributes."
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:351
+#: ../en/news/client-side-syntax-highlighting.md:359
 msgid ""
 "The `line-numbers` plug-in on the other hand ignores BEM.  It searches for code blocks\n"
 "that have the exact class `line-numbers`.  The workaround is to use both classes,\n"
 "the BEM-style class for styling and the literal one for the JavaScript code."
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:355
+#: ../en/news/client-side-syntax-highlighting.md:363
 msgid "You can see how this is done in the\n"
 "[source code of this page](https://github.com/gflohr/qgoda-site/blame/master/[@ asset.relpath @])."
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:358
+#: ../en/news/client-side-syntax-highlighting.md:366
 msgid ""
 "The BEM-style class name is stored in the variable `css.prism.line_numbers`. The hash\n"
 "containing that variable is read in\n"
