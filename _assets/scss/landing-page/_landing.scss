@@ -3,6 +3,15 @@
     height: 100%;
 }
 
+#about .client .duktape_logo {
+    font-size: 24pt;
+    font-weight: 400;
+    text-shadow: 3px 3px 3px #000000;
+    a {
+        color: #fff;
+    }
+}
+
 .logo img {
     width: 100%;
     @media (min-width: 768px) {

@@ -13,7 +13,7 @@ doc:
        'referencing-languages', 'translation-workflow',
        'po-translations' ]
     - ['miscellaneous', 
-       'differences-to-jekyll' ]
+       'configuration', 'differences-to-jekyll' ]
     - ['lists-and-indices', 
        'terms-and-concepts', 'template-variables',
        'qgoda-plug-in', 'files-and-directories', 'configuration-variables',

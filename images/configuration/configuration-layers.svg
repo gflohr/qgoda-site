@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   width="620"
+   height="440"
+   viewPort="0 0 620 440">
+  <style>
+text {
+  font-family: Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace; 
+  font-size: 17.28px; 
+  line-height: 26px;
+  white-space: pre;
+}
+  </style>
+  
+  <rect x="40" y="120" width="300" height="320"
+        style="fill:#d97319;fill-opacity:0.5;stroke:grey"/>
+  <text x="50" y="140" >noodle:</text>
+  <text x="50" y="166" >  api-key: Configure!</text>
+  <text x="50" y="192">  secret: Configure</text>
+  <text x="50" y="218">author: The boss</text>
+  <text x="50" y="244">helpers:</text>
+  <text x="50" y="270">  build:</text>
+  <text x="50" y="296">  - gulp</text>
+  <text x="50" y="322">  - --progress</text>
+  <text x="50" y="348">  - --colors</text>
+  <text x="50" y="374">  - --watch</text>
+  <text x="50" y="400">uri: http://www.example.com/</text>
+  <text x="50" y="426">title: Prod Site</text>
+  <text x="345" y="430" 
+        style="font-family: 'Open Sans', Arial, Helvetica, sans-serif;"
+        >Built-in defaults</text>
+  
+  <rect x="80" y="80" width="300" height="320"
+        style="fill:#d97319;fill-opacity:0.7;stroke:grey"/>
+  <text x="90" y="100" >noodle:</text>
+  <text x="90" y="126" >  api-key: Configure!</text>
+  <text x="90" y="152">  secret: Configure</text>
+  <text x="90" y="178">author: The boss</text>
+  <text x="90" y="204">helpers:</text>
+  <text x="90" y="230">  build:</text>
+  <text x="90" y="256">  - gulp</text>
+  <text x="90" y="282">  - --progress</text>
+  <text x="90" y="308">  - --colors</text>
+  <text x="90" y="334">  - --watch</text>
+  <text x="90" y="360">uri: http://www.example.com/</text>
+  <text x="90" y="386">title: Prod Site</text>
+  <text x="385" y="390">"_config.yaml"</text>
+  
+  <rect x="120" y="40" width="300" height="320"
+        style="fill:#d97319;fill-opacity:0.9;stroke:grey"/>
+  <text x="130" y="60" >noodle:</text>
+  <text x="130" y="86" >  api-key: eC0GFio3Tz==</text>
+  <text x="130" y="112">  secret: Ken sent me</text>
+  <text x="130" y="138">author: Yours Truly</text>
+  <text x="130" y="164">helpers:</text>
+  <text x="130" y="190">  build:</text>
+  <text x="130" y="216">  - webpack</text>
+  <text x="130" y="242">  - --progress</text>
+  <text x="130" y="268">  - --colors</text>
+  <text x="130" y="294">  - --watch</text>
+  <text x="130" y="320">uri: http://localhost:3000/</text>
+  <text x="130" y="346">title: Dev Site</text>
+  <text x="425" y="350">"_localconfig.yaml"</text>
+</svg>

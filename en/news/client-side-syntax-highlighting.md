@@ -1,5 +1,4 @@
 ---
-draft: 1
 title: Client-Side Syntax Highlighting
 name: client side syntax-highlighting
 view: docs.html

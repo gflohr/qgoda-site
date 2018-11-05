@@ -9,5 +9,5 @@ wrapper: html
 [% q.include('_includes/' _ asset.lingua _ '/landing-page/about-perl.md', asset) %]
 [% q.include('_includes/' _ asset.lingua _ '/landing-page/about-nodejs.md', asset) %]
 [% q.include('_includes/' _ asset.lingua _ '/landing-page/about-yeoman.md', asset) %]
-[% q.include('_includes/' _ asset.lingua _ '/landing-page/about-webpack.md', asset) %]
+[% q.include('_includes/' _ asset.lingua _ '/landing-page/about-duktape.md', asset) %]
 <!--/qgoda-no-xgettext-->

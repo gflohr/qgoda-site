@@ -3343,8 +3343,8 @@ msgid ""
 msgstr ""
 "Auf diese Art würde `V:asset.lingua` für alle Dateien im Verzeichnis `/en` "
 "auf der obersten Verzeichisebene, sowie für alle Namen, die auf `.en.md` "
-"enden, auf `en` gesetzt. Siehe [@ q.lanchor(name=‘defaults’) @] and [@ q."
-"lanchor(name=‘pattern-lists’) @] für weitere Informationen."
+"enden, auf `en` gesetzt. Siehe [@ q.lanchor(name='defaults') @] and [@ q."
+"lanchor(name='pattern-lists') @] für weitere Informationen."
 
 #: ../en/docs/multilanguage-configuration.md:153
 msgid "## Language-Independent Identifier `asset.name`"
