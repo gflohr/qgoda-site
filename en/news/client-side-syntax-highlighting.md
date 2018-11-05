@@ -116,7 +116,7 @@ languages](https://prismjs.com/#languages-list).
 
 ### Basic Usage
 
-You can see the minimum required javascript and css files in the following code
+You can see the minimum required JavaScript and css files in the following code
 snippet:
 
 <!--qgoda-no-xgettext-->

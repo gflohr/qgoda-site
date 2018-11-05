@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: qgoda-site 0.1\n"
 "Report-Msgid-Bugs-To: 'Guido Flohr <guido.flohr@cantanea.com>'\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2018-11-04 20:59+0200\n"
+"PO-Revision-Date: 2018-11-05 07:31+0200\n"
 "Last-Translator: Guido Flohr <guido.flohr@cantanea.com>\n"
 "Language-Team: German\n"
 "Language: de\n"
@@ -81,7 +81,7 @@ msgstr "Stern"
 
 #: ../_views/partials/body/sidebar-top.html:9
 msgid "Star on GitHub"
-msgstr "Stern auf Github vergeben"
+msgstr "Sterne auf Github"
 
 #: ../_views/partials/body/sidebar-top.html:14
 msgid "Source code of this page"
@@ -3122,6 +3122,8 @@ msgstr "Konfiguration"
 msgctxt "description"
 msgid "All configuration variables required for a fully internalized site"
 msgstr ""
+"Alle Konfigurationsvariablen, die für eine vollständig internationalisierte "
+"Site benötigt werden."
 
 #: ../en/docs/multilanguage-configuration.md:8
 msgid ""
@@ -3255,6 +3257,10 @@ msgid ""
 "com/template-plugin-gettext) which is automatically installed as a Qgoda "
 "dependency."
 msgstr ""
+"Der vollständige Pfad zum Program `xgettext-tt2`, falls es nicht in `$PATH` "
+"enthalten ist. Das Programm `xgettext-tt2` wird mit [Template-Plugin-Gettext]"
+"(https://github.com/template-plugin-gettext), das als direkte Abhängigkeit "
+"mit Qgoda mitinstalliert wird."
 
 #: ../en/docs/multilanguage-configuration.md:96
 msgid ""
@@ -3262,6 +3268,9 @@ msgid ""
 "`xgettext` program is normally installed as part of a software package "
 "called `gettext` or `gettext-tools`."
 msgstr ""
+"Der vollständige Pfad zum Program `xgettext`, falls es nicht in `$PATH` "
+"enthalten ist. Das Programm `xgettext` ist normalerweise in einem "
+"Softwarepaket namens `gettext` oder `gettext-tools` enthalten."
 
 #: ../en/docs/multilanguage-configuration.md:102
 #: ../en/docs/multilanguage-configuration.md:108
@@ -3270,22 +3279,21 @@ msgid ""
 "`msgmerge` program is normally installed as part of a software package "
 "called `gettext` or `gettext-tools`."
 msgstr ""
+"Der vollständige Pfad zum Program `msgmerge`, falls es nicht in `$PATH` "
+"enthalten ist. Das Programm `msgmerge` ist normalerweise in einem "
+"Softwarepaket namens `gettext` oder `gettext-tools` enthalten."
 
 #: ../en/docs/multilanguage-configuration.md:114
 msgid "The location of the `qgoda` program if it is not in `$PATH`."
 msgstr ""
+"Der vollständige Pfad zum Program `qgoda`, falls es nicht in `$PATH` "
+"enthalten ist."
 
-#: ../en/docs/multilanguage-configuration.md:120
-msgid ""
-"The character set of your content, defaults to `utf-8`. Setting this "
-"variable to anything else but `utf-8` is a recipie for trouble."
-msgstr ""
-
-#: ../en/docs/multilanguage-configuration.md:122
+#: ../en/docs/multilanguage-configuration.md:116
 msgid "## Configuring the Document Language"
-msgstr ""
+msgstr "## Konfiguration der Dokumentensprache"
 
-#: ../en/docs/multilanguage-configuration.md:124
+#: ../en/docs/multilanguage-configuration.md:118
 msgid ""
 "Qgoda has to know which language a particular document is written in. This "
 "means in practice that you have to set the `V:asset.lingua` to an "
@@ -3293,107 +3301,121 @@ msgid ""
 "section 2.1](https://tools.ietf.org/html/rfc4647#section-2.1) but without "
 "any asterisk (`*`) characters."
 msgstr ""
+"Qgoda muss wissen, in welcher Sprache ein bestimmtes Dokument verfasst ist. "
+"In der Praxis bedeutet dies, dass die Variable `V:asset.lingua` einen "
+"entsprechenden Wert, nämlich einen Sprachbezeichner gemäß [RFC4647 Abschnitt "
+"2.1](https://tools.ietf.org/html/rfc4647#section-2.1) haben muss, allerdings "
+"ohne Wildcards (`*`)."
 
-#: ../en/docs/multilanguage-configuration.md:126
+#: ../en/docs/multilanguage-configuration.md:120
 msgid "You have several options to set `V:asset.lingua`:"
-msgstr ""
+msgstr "Es gibt mehrere Möglichkeiten, `V:asset.lingua` zu setzen."
 
-#: ../en/docs/multilanguage-configuration.md:128
+#: ../en/docs/multilanguage-configuration.md:122
 msgid "### Per Document"
 msgstr "### Per Dokument"
 
-#: ../en/docs/multilanguage-configuration.md:130
+#: ../en/docs/multilanguage-configuration.md:124
 msgid "You can set the language in the document front matter:"
 msgstr ""
+"Die Sprache kann in der <q-term>Titelei</q-term> des Dokuments gesetzt "
+"werden:"
 
-#: ../en/docs/multilanguage-configuration.md:142
+#: ../en/docs/multilanguage-configuration.md:136
 msgid "### Per Directory/Pattern"
-msgstr ""
+msgstr "### Per Verzeichnis/Suchmuster"
 
-#: ../en/docs/multilanguage-configuration.md:144
+#: ../en/docs/multilanguage-configuration.md:138
 msgid ""
 "You can save typing by specifying [defaults]([@ q.llink(name='defaults') @]) "
 "for `V:asset.lingua` in the global configuration file `P:_config.yaml`:"
 msgstr ""
+"Man kann sich Tipparbeit sparen, indem die Variabel `V:asset.lingua` als "
+"[Vorgabewert]([@ q.llink(name='defaults') @]) in der globalen "
+"Konfigurationsdatei `P:_config.yaml` gesetzt wird:"
 
-#: ../en/docs/multilanguage-configuration.md:157
+#: ../en/docs/multilanguage-configuration.md:151
 msgid ""
 "This would set `V:asset.lingua` to `en` for all files in the top-level "
 "directory `/en` and addtionally for all files that have names ending in `.en."
 "md`. See [@ q.lanchor(name='defaults') @] and [@ q.lanchor(name='pattern-"
 "lists') @] for more information."
 msgstr ""
+"Auf diese Art würde `V:asset.lingua` für alle Dateien im Verzeichnis `/en` "
+"auf der obersten Verzeichisebene, sowie für alle Namen, die auf `.en.md` "
+"enden, auf `en` gesetzt. Siehe [@ q.lanchor(name=‘defaults’) @] and [@ q."
+"lanchor(name=‘pattern-lists’) @] für weitere Informationen."
 
-#: ../en/docs/multilanguage-configuration.md:159
+#: ../en/docs/multilanguage-configuration.md:153
 msgid "## Language-Independent Identifier `asset.name`"
 msgstr ""
 
-#: ../en/docs/multilanguage-configuration.md:161
+#: ../en/docs/multilanguage-configuration.md:155
 msgid ""
 "All language variants of the same content should share a common property "
 "that acts as a link between them. Although you are free to use any variable "
 "name you like, `V:asset.name` is used throughout this documentation."
 msgstr ""
 
-#: ../en/docs/multilanguage-configuration.md:163
+#: ../en/docs/multilanguage-configuration.md:157
 msgid ""
 "For obvious reasons, this identifier will always be configured in the "
 "document front matter."
 msgstr ""
 
-#: ../en/docs/multilanguage-configuration.md:165
+#: ../en/docs/multilanguage-configuration.md:159
 msgid "Take for example a markdown file `special-relativity.md`:"
 msgstr ""
 
-#: ../en/docs/multilanguage-configuration.md:177
+#: ../en/docs/multilanguage-configuration.md:171
 msgid ""
 "If the German translation of that file is `spezielle-relativitaetstheorie."
 "md`, that translation's front matter will look like this:"
 msgstr ""
 
-#: ../en/docs/multilanguage-configuration.md:189
+#: ../en/docs/multilanguage-configuration.md:183
 msgid ""
 "Both documents are alternate versions of the same content. They differ in "
 "the property `V:asset.lingua` but they share a common  value for the  `V:"
 "asset.name` property."
 msgstr ""
 
-#: ../en/docs/multilanguage-configuration.md:191
+#: ../en/docs/multilanguage-configuration.md:185
 msgid ""
 "Now it is trivial to link from the English version of that document to the "
 "German version:"
 msgstr ""
 
-#: ../en/docs/multilanguage-configuration.md:199
+#: ../en/docs/multilanguage-configuration.md:193
 msgid ""
 "And you can link from other documents to the document about Einstein's "
 "special relativity regardless of the language like this:"
 msgstr ""
 
-#: ../en/docs/multilanguage-configuration.md:207
+#: ../en/docs/multilanguage-configuration.md:201
 msgid ""
 "And since you almost always want to link to documents in the same language "
 "as the current one, there is a shortcut version for the above:"
 msgstr ""
 
-#: ../en/docs/multilanguage-configuration.md:215
+#: ../en/docs/multilanguage-configuration.md:209
 msgid ""
 "By using `M:q.lanchor()` instead of `M:q.anchor()` you can omit the `lingua` "
 "parameter as it is implied. See [@ q.lanchor(name='referencing-languages') "
 "@] for more information about this."
 msgstr ""
 
-#: ../en/docs/multilanguage-configuration.md:217
+#: ../en/docs/multilanguage-configuration.md:211
 msgid "## File and Directory Structure"
 msgstr "## Dateien und Verzeichnisstruktur"
 
-#: ../en/docs/multilanguage-configuration.md:219
+#: ../en/docs/multilanguage-configuration.md:213
 msgid ""
 "There are many different conventions for the directory structure and the "
 "file names on internationalized sites:"
 msgstr ""
 
-#: ../en/docs/multilanguage-configuration.md:221
+#: ../en/docs/multilanguage-configuration.md:215
 msgid ""
 "* You can use per-language top-level directories like `/en`, `/de`, `/fr` "
 "and\n"
@@ -3408,47 +3430,47 @@ msgid ""
 "by issuing a warning if one document overwrites another."
 msgstr ""
 
-#: ../en/docs/multilanguage-configuration.md:226
+#: ../en/docs/multilanguage-configuration.md:220
 msgid "## The Home Page"
 msgstr ""
 
-#: ../en/docs/multilanguage-configuration.md:228
+#: ../en/docs/multilanguage-configuration.md:222
 msgid ""
 "In a multilingual site, every document can be available in one or more "
 "languages. Unfortunately, there is only one `/index.html` and therefore the "
 "sites home page or start page can exist in only one language."
 msgstr ""
 
-#: ../en/docs/multilanguage-configuration.md:230
+#: ../en/docs/multilanguage-configuration.md:224
 msgid ""
 "One way to solve this problem is to use your site's default language for `/"
 "index.html`.  But there are smarter options:"
 msgstr ""
 
-#: ../en/docs/multilanguage-configuration.md:232
+#: ../en/docs/multilanguage-configuration.md:226
 msgid ""
 "You can use JavaScript to determine the user's preferred language and "
 "redirect them:"
 msgstr ""
 
-#: ../en/docs/multilanguage-configuration.md:290
+#: ../en/docs/multilanguage-configuration.md:284
 msgid ""
 "The above code assumes that you have top-level per-language directories like "
 "`/en/`, `/fr/`, and so on. If you choose a different directory layout, you "
 "have to change the link targets in lines 40 and 46 accordingly."
 msgstr ""
 
-#: ../en/docs/multilanguage-configuration.md:292
+#: ../en/docs/multilanguage-configuration.md:286
 msgid ""
 "The best solution is to let the server redirect the user to their preferred "
 "language. Read on about content negotiation below."
 msgstr ""
 
-#: ../en/docs/multilanguage-configuration.md:294
+#: ../en/docs/multilanguage-configuration.md:288
 msgid "## Content Negotiation"
 msgstr "## Content-Negotiation"
 
-#: ../en/docs/multilanguage-configuration.md:296
+#: ../en/docs/multilanguage-configuration.md:290
 msgid ""
 "Content negotiation happens when a web server ([nginx](http://www.nginx."
 "com/), [apache](http://httpd.apache.org/), ...) selects the appropriate "
@@ -3460,7 +3482,7 @@ msgid ""
 "users of other web servers than nginx."
 msgstr ""
 
-#: ../en/docs/multilanguage-configuration.md:298
+#: ../en/docs/multilanguage-configuration.md:292
 msgid ""
 "Content negotiation can be made arbitrarily complicated. In practice there "
 "is one single valid strategy: A visitor of your start page `http://"
@@ -3473,7 +3495,7 @@ msgid ""
 "preferred language."
 msgstr ""
 
-#: ../en/docs/multilanguage-configuration.md:300
+#: ../en/docs/multilanguage-configuration.md:294
 msgid ""
 "Server-side solutions are described at the above mentioned blog post [Simple "
 "Content Negotiation for Nginx](http://www.guido-flohr.net/simple-content-"
@@ -7614,7 +7636,7 @@ msgstr "### Allgemeine Verwendung"
 
 #: ../en/news/client-side-syntax-highlighting.md:119
 msgid ""
-"You can see the minimum required javascript and css files in the following "
+"You can see the minimum required JavaScript and css files in the following "
 "code\n"
 "snippet:"
 msgstr ""

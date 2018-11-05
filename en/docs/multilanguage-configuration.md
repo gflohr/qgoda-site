@@ -70,7 +70,7 @@ Set to 1 if you want translations to be visible without a restart of Qgoda after
 Normally translations are loaded only, when Qgoda starts and then cached. Setting `C:po.reload` to 1 results in a little performance penalty but may be useful while you are translating the site.
 
 <!--qgoda-no-xgettext-->
-### `po.md_extra`
+### `po.mdextra`
 <!--/qgoda-no-xgettext-->
 
 A list of [file name patterns]([@ q.llink(name='pattern-lists') @]) for additional markdown files. By default, all documents with front matter are potentially considered translatable. If your site has other markdown files that should also be searched, you can list them here.
@@ -112,12 +112,6 @@ The location of the `msgmerge` program if it is not in `$PATH`. The `msgmerge` p
 <!--/qgoda-no-xgettext-->
 
 The location of the `qgoda` program if it is not in `$PATH`.
-
-<!--qgoda-no-xgettext-->
-### `po.from_code`
-<!--/qgoda-no-xgettext-->
-
-The character set of your content, defaults to `utf-8`. Setting this variable to anything else but `utf-8` is a recipie for trouble.
 
 ## Configuring the Document Language
 

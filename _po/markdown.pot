@@ -2206,91 +2206,87 @@ msgstr ""
 msgid "The location of the `qgoda` program if it is not in `$PATH`."
 msgstr ""
 
-#: ../en/docs/multilanguage-configuration.md:120
-msgid "The character set of your content, defaults to `utf-8`. Setting this variable to anything else but `utf-8` is a recipie for trouble."
-msgstr ""
-
-#: ../en/docs/multilanguage-configuration.md:122
+#: ../en/docs/multilanguage-configuration.md:116
 msgid "## Configuring the Document Language"
 msgstr ""
 
-#: ../en/docs/multilanguage-configuration.md:124
+#: ../en/docs/multilanguage-configuration.md:118
 msgid "Qgoda has to know which language a particular document is written in. This means in practice that you have to set the `V:asset.lingua` to an appropriate value, that is a language identifier complying to [RFC4647 section 2.1](https://tools.ietf.org/html/rfc4647#section-2.1) but without any asterisk (`*`) characters."
 msgstr ""
 
-#: ../en/docs/multilanguage-configuration.md:126
+#: ../en/docs/multilanguage-configuration.md:120
 msgid "You have several options to set `V:asset.lingua`:"
 msgstr ""
 
-#: ../en/docs/multilanguage-configuration.md:128
+#: ../en/docs/multilanguage-configuration.md:122
 msgid "### Per Document"
 msgstr ""
 
-#: ../en/docs/multilanguage-configuration.md:130
+#: ../en/docs/multilanguage-configuration.md:124
 msgid "You can set the language in the document front matter:"
 msgstr ""
 
-#: ../en/docs/multilanguage-configuration.md:142
+#: ../en/docs/multilanguage-configuration.md:136
 msgid "### Per Directory/Pattern"
 msgstr ""
 
-#: ../en/docs/multilanguage-configuration.md:144
+#: ../en/docs/multilanguage-configuration.md:138
 msgid "You can save typing by specifying [defaults]([@ q.llink(name='defaults') @]) for `V:asset.lingua` in the global configuration file `P:_config.yaml`:"
 msgstr ""
 
-#: ../en/docs/multilanguage-configuration.md:157
+#: ../en/docs/multilanguage-configuration.md:151
 msgid "This would set `V:asset.lingua` to `en` for all files in the top-level directory `/en` and addtionally for all files that have names ending in `.en.md`. See [@ q.lanchor(name='defaults') @] and [@ q.lanchor(name='pattern-lists') @] for more information."
 msgstr ""
 
-#: ../en/docs/multilanguage-configuration.md:159
+#: ../en/docs/multilanguage-configuration.md:153
 msgid "## Language-Independent Identifier `asset.name`"
 msgstr ""
 
-#: ../en/docs/multilanguage-configuration.md:161
+#: ../en/docs/multilanguage-configuration.md:155
 msgid "All language variants of the same content should share a common property that acts as a link between them. Although you are free to use any variable name you like, `V:asset.name` is used throughout this documentation."
 msgstr ""
 
-#: ../en/docs/multilanguage-configuration.md:163
+#: ../en/docs/multilanguage-configuration.md:157
 msgid "For obvious reasons, this identifier will always be configured in the document front matter."
 msgstr ""
 
-#: ../en/docs/multilanguage-configuration.md:165
+#: ../en/docs/multilanguage-configuration.md:159
 msgid "Take for example a markdown file `special-relativity.md`:"
 msgstr ""
 
-#: ../en/docs/multilanguage-configuration.md:177
+#: ../en/docs/multilanguage-configuration.md:171
 msgid "If the German translation of that file is `spezielle-relativitaetstheorie.md`, that translation's front matter will look like this:"
 msgstr ""
 
-#: ../en/docs/multilanguage-configuration.md:189
+#: ../en/docs/multilanguage-configuration.md:183
 msgid "Both documents are alternate versions of the same content. They differ in the property `V:asset.lingua` but they share a common  value for the  `V:asset.name` property."
 msgstr ""
 
-#: ../en/docs/multilanguage-configuration.md:191
+#: ../en/docs/multilanguage-configuration.md:185
 msgid "Now it is trivial to link from the English version of that document to the German version:"
 msgstr ""
 
-#: ../en/docs/multilanguage-configuration.md:199
+#: ../en/docs/multilanguage-configuration.md:193
 msgid "And you can link from other documents to the document about Einstein's special relativity regardless of the language like this:"
 msgstr ""
 
-#: ../en/docs/multilanguage-configuration.md:207
+#: ../en/docs/multilanguage-configuration.md:201
 msgid "And since you almost always want to link to documents in the same language as the current one, there is a shortcut version for the above:"
 msgstr ""
 
-#: ../en/docs/multilanguage-configuration.md:215
+#: ../en/docs/multilanguage-configuration.md:209
 msgid "By using `M:q.lanchor()` instead of `M:q.anchor()` you can omit the `lingua` parameter as it is implied. See [@ q.lanchor(name='referencing-languages') @] for more information about this."
 msgstr ""
 
-#: ../en/docs/multilanguage-configuration.md:217
+#: ../en/docs/multilanguage-configuration.md:211
 msgid "## File and Directory Structure"
 msgstr ""
 
-#: ../en/docs/multilanguage-configuration.md:219
+#: ../en/docs/multilanguage-configuration.md:213
 msgid "There are many different conventions for the directory structure and the file names on internationalized sites:"
 msgstr ""
 
-#: ../en/docs/multilanguage-configuration.md:221
+#: ../en/docs/multilanguage-configuration.md:215
 msgid ""
 "* You can use per-language top-level directories like `/en`, `/de`, `/fr` and\n"
 "  so on. This is a simple and robust approach.\n"
@@ -2298,43 +2294,43 @@ msgid ""
 "* You can also make do with encoding the language into the filename or directory of the output document. Qgoda will assist you with this approach by issuing a warning if one document overwrites another."
 msgstr ""
 
-#: ../en/docs/multilanguage-configuration.md:226
+#: ../en/docs/multilanguage-configuration.md:220
 msgid "## The Home Page"
 msgstr ""
 
-#: ../en/docs/multilanguage-configuration.md:228
+#: ../en/docs/multilanguage-configuration.md:222
 msgid "In a multilingual site, every document can be available in one or more languages. Unfortunately, there is only one `/index.html` and therefore the sites home page or start page can exist in only one language."
 msgstr ""
 
-#: ../en/docs/multilanguage-configuration.md:230
+#: ../en/docs/multilanguage-configuration.md:224
 msgid "One way to solve this problem is to use your site's default language for `/index.html`.  But there are smarter options:"
 msgstr ""
 
-#: ../en/docs/multilanguage-configuration.md:232
+#: ../en/docs/multilanguage-configuration.md:226
 msgid "You can use JavaScript to determine the user's preferred language and redirect them:"
 msgstr ""
 
-#: ../en/docs/multilanguage-configuration.md:290
+#: ../en/docs/multilanguage-configuration.md:284
 msgid "The above code assumes that you have top-level per-language directories like `/en/`, `/fr/`, and so on. If you choose a different directory layout, you have to change the link targets in lines 40 and 46 accordingly."
 msgstr ""
 
-#: ../en/docs/multilanguage-configuration.md:292
+#: ../en/docs/multilanguage-configuration.md:286
 msgid "The best solution is to let the server redirect the user to their preferred language. Read on about content negotiation below."
 msgstr ""
 
-#: ../en/docs/multilanguage-configuration.md:294
+#: ../en/docs/multilanguage-configuration.md:288
 msgid "## Content Negotiation"
 msgstr ""
 
-#: ../en/docs/multilanguage-configuration.md:296
+#: ../en/docs/multilanguage-configuration.md:290
 msgid "Content negotiation happens when a web server ([nginx](http://www.nginx.com/), [apache](http://httpd.apache.org/), ...) selects the appropriate language version of a piece of content based on the visitor's preference laid forth in their browser language preferences.  See [Simple Content Negotiation for Nginx](http://www.guido-flohr.net/simple-content-negotiation-for-nginx/) for all the gory details of that. Contrary to what the name of the article suggests, it will shed sufficient light on the topic also for users of other web servers than nginx."
 msgstr ""
 
-#: ../en/docs/multilanguage-configuration.md:298
+#: ../en/docs/multilanguage-configuration.md:292
 msgid "Content negotiation can be made arbitrarily complicated. In practice there is one single valid strategy: A visitor of your start page `http://YOURDOMAIN` should be redirected to the start page in their preferred language and from that moment on they should be pinpointed to that language until they change it. That means that you have to implement content negotiation only for the start page which simplifies things a lot. This is because there is only room for one `/index.html` and the best strategy is to make that just an entry point that brings you to the content in your preferred language."
 msgstr ""
 
-#: ../en/docs/multilanguage-configuration.md:300
+#: ../en/docs/multilanguage-configuration.md:294
 msgid "Server-side solutions are described at the above mentioned blog post [Simple Content Negotiation for Nginx](http://www.guido-flohr.net/simple-content-negotiation-for-nginx/) but as a fallback and short of better ideas feel free to steal the start page for this site from https://github.com/gflohr/qgoda-site/blob/master/index.html."
 msgstr ""
 
@@ -5722,7 +5718,7 @@ msgid "### Basic Usage"
 msgstr ""
 
 #: ../en/news/client-side-syntax-highlighting.md:119
-msgid "You can see the minimum required javascript and css files in the following code\n"
+msgid "You can see the minimum required JavaScript and css files in the following code\n"
 "snippet:"
 msgstr ""
 
