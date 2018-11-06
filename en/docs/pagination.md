@@ -1,29 +1,17 @@
 ---
-title: Listings and Links
-name: listings
+title: Pagination
+name: pagination
 section: basics
 view: docs.html
-description: Qgoda generates listings based on taxonomies.
+description: How to distribute listings over multiple pages.
 ---
-Link lists are crucial for the navigation on most web sites.  Qgoda 
-generates listings based on taxonomies.  Taxonomies partition your
-site into groups of documents which share common properties.  Link
-lists are such groups.
+Functions for paginating listings are often very complicated and limited
+in other systems. In Qgoda it is a no-brainer.
 
 <qgoda-toc/>
 
-[% WRAPPER components/infobox.html
-           type="info" title="These Instructions Are For the Template Toolkit!" %]
-    The instructions given here assume that you use the template toolkit as
-    the main template processor.  If you are using another template processor,
-    please refer to the respective documentation.
-[% END %]
+## General Idea
 
-## Listings
-
-### Generic Listings With `q.list(FILTERS)`
-
-The most basic form of creating a listing is the template function `M:q.list()`:
 
 <!--qgoda-no-xgettext-->
 [% USE q = Qgoda %]

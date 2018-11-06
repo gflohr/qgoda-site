@@ -64,4 +64,42 @@ The Qgoda plug-in extends the list of [standard vmethods in
 Template Toolkit](http://www.template-toolkit.org/docs/manual/VMethods.html)
 by a number of useful methods:
 
-TODO!
+### Virtual Array Methods
+
+The following methods are available on arrays:
+
+[@ WRAPPER "components/plug-in-functions.html"
+   name="sortBy()" args="string" @]
+Sorts the array alpha-numerically by the property specified. The call
+<code>q.listPosts.sortBy('date.year')</code> would sort all posts by their
+year.  It is wrong to specify <code>asset.date.year</code> because the objects
+returned by `M:q.listPosts()` *are* all assets. You have to specify the
+key, the object *property*.
+[@- END @]
+
+[@ WRAPPER "components/plug-in-functions.html"
+   name="sortBy" args="string" @]
+Same as <code>M:sortBy()</code> but sorts numerically. For example "2" is
+numerically less than "10", but alpha-numerically greater than "10" because
+the digit "2" is alphanumerically greater than "1" just as the letter
+"b" is alphanumerically greater than "a".
+[@- END @]
+
+[@ WRAPPER "components/plug-in-functions.html"
+   name="vmap" args="string" @]
+When applied to an array of objects (hashes), it returns the *values* of
+the property specified by the string argument.  For example
+<code>q.listPosts.vmap('permalink')</code> gives you an array of the 
+`V:permalink` attribute of all posts.
+[@- END @]
+
+### Virtual Hash Methods
+
+The following methods are available on hashes (also known as objects in JSON or
+JavaScript or formally as associative arrays):
+
+[@ WRAPPER "components/plug-in-functions.html"
+   name="vmap" args="string" @]
+Like <code>M:vmap()</code> above but the collection is a hash. The values
+are visited in alphanumerical order or their corresponding keys.
+[@- END @]
