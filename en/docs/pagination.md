@@ -6,7 +6,7 @@ view: docs.html
 description: How to distribute listings over multiple pages.
 ---
 Functions for paginating listings are often very complicated and limited
-in other systems. In Qgoda it is a no-brainer.
+in other systems. Pagination in Qgoda is a no-brainer.
 
 <qgoda-toc/>
 
