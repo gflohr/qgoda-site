@@ -287,3 +287,15 @@ a.teaser-link:hover {
     font-family: serif;
     font-style: italic;
 }
+
+table {
+    border: 1px solid lightgrey;
+    th, td {
+        border: 1px solid lightgrey;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+    tr:nth-child(2n) {
+        background-color: #f5f2f0;
+    }
+}
