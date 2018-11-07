@@ -290,10 +290,11 @@ a.teaser-link:hover {
 
 table {
     border: 1px solid lightgrey;
+    margin-bottom: 1rem;
     th, td {
         border: 1px solid lightgrey;
-        padding-left: 0.5em;
-        padding-right: 0.5em;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
     }
     tr:nth-child(2n) {
         background-color: #f5f2f0;
