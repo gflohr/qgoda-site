@@ -17,6 +17,7 @@ require('prismjs/components/prism-markdown');
 require('prismjs/components/prism-perl');
 require('prismjs/components/prism-bash');
 require('prismjs/components/prism-javascript');
+require('prismjs/components/prism-json');
 
 // Prism plug-ins.
 require('prismjs/plugins/line-numbers/prism-line-numbers');
