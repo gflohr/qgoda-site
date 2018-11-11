@@ -95,6 +95,19 @@ msgstr "Navigation ein/aus"
 msgid "Home"
 msgstr "Start"
 
+#: ../_includes/en/landing-page/about-duktape.md:3
+msgctxt "title"
+msgid "Duktape"
+msgstr ""
+
+#: ../_includes/en/landing-page/about-duktape.md:6
+msgid ""
+"Qgoda ships with the embeddable JavaScript engine Duktape.  That gives us "
+"the\n"
+"possibility to choose between JavaScript and Perl implementations and pick\n"
+"whatever does the job best."
+msgstr ""
+
 #: ../_includes/en/landing-page/about-nodejs.md:3
 msgctxt "title"
 msgid "Node.JS"
@@ -1165,6 +1178,359 @@ msgstr ""
 "abschließenden Slash (damit <code>V:asset.permalink</code> angehangen werden "
 "kann). Qgoda selbst verwendet diese Variable nicht.\n"
 "[%- END %]"
+
+#: ../en/docs/configuration.md:2 ../en/docs/multilanguage-configuration.md:2
+msgctxt "title"
+msgid "Configuration"
+msgstr "Konfiguration"
+
+#: ../en/docs/configuration.md:6
+msgctxt "description"
+msgid "How to modify the behavior of Qgoda."
+msgstr ""
+
+#: ../en/docs/configuration.md:8
+msgid ""
+"The Qgoda configuration is straightforward and has sane defaults. In fact,\n"
+"Qgoda runs without any configuration and you only have to configure Qgoda,\n"
+"when you want to change a certain behavior."
+msgstr ""
+
+#: ../en/docs/configuration.md:12
+#, fuzzy
+#| msgid "## Configuration"
+msgid "## Configuration Files"
+msgstr "## Konfiguration"
+
+#: ../en/docs/configuration.md:14
+msgid ""
+"Qgoda has two optional configuration files, `P:_config.yaml` and\n"
+"`P:_localconfig.yaml`. You can also use the file extension `.yml` if you\n"
+"prefer."
+msgstr ""
+
+#: ../en/docs/configuration.md:18
+msgid ""
+"<figure>\n"
+"  <img src=\"/images/configuration/configuration-layers.svg\"\n"
+"       alt=\"Qgoda Configuration Layers\">\n"
+"  <figcaption class=\"figure-caption text-xs-center\">\n"
+"    The different configuration layers of Qgoda\n"
+"  </figcaption>\n"
+"</figure>"
+msgstr ""
+
+#: ../en/docs/configuration.md:26
+msgid ""
+"The configuration found in `P:_config.yaml` overrides the built-in "
+"defaults,\n"
+"and the configuration found in `P:_localconfig.yaml` overrides both\n"
+"`P:_config.yaml` and the the built-in defaults."
+msgstr ""
+
+#: ../en/docs/configuration.md:30
+msgid ""
+"More precisely, each layer of configuration is merged with the previous one\n"
+"and overrides only those parts that differ."
+msgstr ""
+
+#: ../en/docs/configuration.md:33
+msgid ""
+"You can always check the actual configuration used with the command\n"
+"`qgoda config` which dumps the resulting configuration to the console."
+msgstr ""
+
+#: ../en/docs/configuration.md:36
+msgid "## Why `_localconfig.yaml`?"
+msgstr ""
+
+#: ../en/docs/configuration.md:38
+msgid ""
+"Qgoda, like most static site generators, works very well with\n"
+"[git](https://git-scm.com/) and you may want to publish the site sources\n"
+"to a public git repository."
+msgstr ""
+
+#: ../en/docs/configuration.md:42
+msgid ""
+"But what if you have to put API keys, secrets, private information, local\n"
+"hostnames or local debugging settings into the configuration? In all these\n"
+"cases you can use `_localconfig.yaml`. You will normally not commit that\n"
+"file to the public repository but use it for local use only."
+msgstr ""
+
+#: ../en/docs/configuration.md:47
+#, fuzzy
+#| msgctxt "title"
+#| msgid "Configuration Variables"
+msgid "## Accessing Configuration Variables From Templates"
+msgstr "Konfigurations-Variablen"
+
+#: ../en/docs/configuration.md:49
+msgid ""
+"The entire configuration of the site is accessible in the template variable\n"
+"`V:config`:"
+msgstr ""
+
+#: ../en/docs/configuration.md:67
+msgid ""
+"This is how you would access the configuration variable `C:title` from a\n"
+"template."
+msgstr ""
+
+#: ../en/docs/configuration.md:70
+msgid "## JSON Schema"
+msgstr ""
+
+#: ../en/docs/configuration.md:72
+msgid ""
+"In order to protect you against incorrect configurations, your settings are\n"
+"validated against a [JSON schema](https://json-schema.org/). You can even\n"
+"see that schema with the command `qgoda schema`.  Try `qgoda schema --help`\n"
+"for information about different output formats of the schema."
+msgstr ""
+
+#: ../en/docs/configuration.md:77
+msgid ""
+"While writing a schema is not that trivial, reading it is relatively easy."
+msgstr ""
+
+#: ../en/docs/configuration.md:79
+#, fuzzy
+#| msgid "### Installation"
+msgid "### Implementation"
+msgstr "### Installation"
+
+#: ../en/docs/configuration.md:81
+msgid ""
+"Reading the configuration and validating it against the schema is done in\n"
+"JavaScript with [Ajv](https://ajv.js.org/), an advanced and fast validator.\n"
+"The Qgoda configuration schema complies to draft 07 of the JSON schema\n"
+"specification."
+msgstr ""
+
+#: ../en/docs/configuration.md:86
+#, fuzzy
+#| msgid "### Default Values"
+msgid "### Defaults"
+msgstr "### Default-Werte"
+
+#: ../en/docs/configuration.md:88
+msgid "The defaults for all configuration options are part of the schema."
+msgstr ""
+
+#: ../en/docs/configuration.md:90
+#, fuzzy
+#| msgid "## Template Code"
+msgid "### Type Coercion"
+msgstr "## Template-Code"
+
+#: ../en/docs/configuration.md:92
+msgid ""
+"JSON schema is strict about data types. If an array is expected for a "
+"certain\n"
+"configuration variable it would normally be a mistake to give a string.  "
+"But\n"
+"Qgoda uses type coercion and will automatically convert a single value into\n"
+"an array for you."
+msgstr ""
+
+#: ../en/docs/configuration.md:97
+msgid ""
+"Likewise, a boolean option actually requires either `true` or `false`. With\n"
+"type coercion you can use `0`, an empty string or `null` as an alias for\n"
+"`false`, and pretty much everything else is interpreted as `true`. See the\n"
+"complete table at https://github.com/epoberezkin/ajv/blob/master/COERCION."
+"md\n"
+"for the complete story."
+msgstr ""
+
+#: ../en/docs/configuration.md:103
+msgid "## Program Paths"
+msgstr ""
+
+#: ../en/docs/configuration.md:105
+msgid ""
+"It is very often necessary to configure a path to a program in `P:_config."
+"yaml`\n"
+"for example in `C:helpers` or `C:po.xgettext` or others. This is a special\n"
+"case where [type coercion](#type-coercion) helps you to simplify the\n"
+"configuration."
+msgstr ""
+
+#: ../en/docs/configuration.md:110
+msgid "### Without Arguments"
+msgstr ""
+
+#: ../en/docs/configuration.md:112
+msgid ""
+"If the program does not take any arguments, you can pass it as a single\n"
+"string, for example:"
+msgstr ""
+
+#: ../en/docs/configuration.md:122
+msgid "### With Arguments"
+msgstr ""
+
+#: ../en/docs/configuration.md:124
+msgid "If the program should be invoked with arguments, use an array instead:"
+msgstr ""
+
+#: ../en/docs/configuration.md:137
+msgid "Or use this equivalent syntax for arrays:"
+msgstr ""
+
+#: ../en/docs/configuration.md:146
+#, fuzzy
+#| msgctxt "title"
+#| msgid "Configuration Variables"
+msgid "## Adding Your Own Configuration Variables"
+msgstr "Konfigurations-Variablen"
+
+#: ../en/docs/configuration.md:148
+msgid ""
+"You can add your own configuration variables to your heart's delight but\n"
+"not in \"slots\" already in use by Qgoda. For example, you cannot add a\n"
+"variable to `C:paths`. This is a meant as a protection against typos."
+msgstr ""
+
+#: ../en/docs/configuration.md:152
+msgid ""
+"But you are free to define your own variables and use them in any way\n"
+"you want."
+msgstr ""
+
+#: ../en/docs/configuration.md:155
+msgid ""
+"You have to keep in mind, though, that Qgoda may use more configuration\n"
+"variables in the future. You will normally notice that immediately because\n"
+"the configuration will no longer validate. But if you want to be 100 %\n"
+"on the safe side, put all configuration variables for local usage into\n"
+"the slot `local` which is guaranteed not to be used by Qgoda itself:"
+msgstr ""
+
+#: ../en/docs/dates.md:2
+msgctxt "title"
+msgid "Dates"
+msgstr ""
+
+#: ../en/docs/dates.md:6
+msgctxt "description"
+msgid ""
+"Asset dates in Qgoda are magic. They are at the same time numbers (seconds "
+"since the epoch) and objects with methods that give you the year, the month, "
+"the day, or the date formatted according to certain specifications, for "
+"example RFC822 or W3C.\n"
+msgstr ""
+
+#: ../en/docs/dates.md:12
+msgid ""
+"Every Qgoda document or asset has a `date` property, either implicitely or\n"
+"explicitely."
+msgstr ""
+
+#: ../en/docs/dates.md:15 ../en/docs/installation.md:11
+#: ../en/docs/listings.md:13 ../en/docs/multilanguage-overview.md:17
+#: ../en/docs/pagination.md:11 ../en/docs/qgoda-plug-in.md:30
+#: ../en/docs/table-of-contents.md:10 ../en/docs/table-of-contents.md:21
+#: ../en/docs/translating-templates.md:10 ../en/docs/translation-workflow.md:34
+msgid "<qgoda-toc/>"
+msgstr ""
+
+#: ../en/docs/dates.md:17
+#, fuzzy
+#| msgid "## Configuring the Document Language"
+msgid "## Specifying the Document Date"
+msgstr "## Konfiguration der Dokumentensprache"
+
+#: ../en/docs/dates.md:19
+msgid ""
+"The variable `V:asset.date` contains the date of the document as seconds\n"
+"since the <q-term>epoch</q-term>. If you want to use it in a document, you\n"
+"should always explicitely specify in the document <q-term>front matter</q-"
+"term>:"
+msgstr ""
+
+#: ../en/docs/dates.md:23
+msgid ""
+"```yaml\n"
+"---\n"
+"title: Qgoda Rocks!\n"
+"date: 2018-11-07\n"
+"---\n"
+"It's a sad and beautiful world.\n"
+"```"
+msgstr ""
+
+#: ../en/docs/dates.md:31
+msgid ""
+"The way you specify the date is pretty much free-form, and you can also\n"
+"include the hour, minutes and seconds. See\n"
+"https://metacpan.org/pod/Date::Parse#EXAMPLE-DATES for various supported\n"
+"formats."
+msgstr ""
+
+#: ../en/docs/dates.md:36
+msgid ""
+"If you do not specify an explicit value for the date and time of a document\n"
+"it defaults to the last modification time of the originating file."
+msgstr ""
+
+#: ../en/docs/dates.md:39
+#, fuzzy
+#| msgid "## Getting Started"
+msgid "## Using the Date"
+msgstr "## Loslegen mit den ersten Schritten"
+
+#: ../en/docs/dates.md:41
+msgid "You can use the date and time like any other template variable:"
+msgstr ""
+
+#: ../en/docs/dates.md:51
+msgid ""
+"This would generate output like \"Document created: 1541622661\". The "
+"number\n"
+"1541622661 are the seconds since the <q-term>epoch</q-term>. That is great\n"
+"for computers but not so great for humans. But you can do better by calling\n"
+"methods of the magic date object:"
+msgstr ""
+
+#: ../en/docs/dates.md:62
+msgid "This would now give something like \"Document created: 2018-11-07\"."
+msgstr ""
+
+#: ../en/docs/dates.md:64
+msgid "The following methods are available:"
+msgstr ""
+
+#: ../en/docs/dates.md:66
+msgid ""
+"| Name                | "
+"Meaning                                               |\n"
+"| ------------------- | "
+"----------------------------------------------------- |\n"
+"| epoch               | The seconds since the <q-term>epoch</q-term>.  You "
+"can just as well omit it because it is the default.\n"
+"| year                | The year part.\n"
+"| month               | The zero-padded month, \"01\", \"02\", ... \"12\".\n"
+"| imonth              | The month as a number, \"1\", \"2\", ... \"12\".\n"
+"| mday                | The zero-padded day of the month, \"01\", "
+"\"02\", ... \"31\".\n"
+"| imday               | The day of the month as a number , \"1\", \"2\", ... "
+"\"31\".\n"
+"| day                 | The same as `mday`.\n"
+"| iday                | The same as `imday`.\n"
+"| hour                | The zero-padded hour of the day, \"01\", \"02\", ... "
+"\"24\".\n"
+"| ihour               | The hour of the day, \"1\", \"2\", ... \"24\"."
+msgstr ""
+
+#: ../en/docs/dates.md:79
+msgid ""
+"As you can see, a leading `i` (think: integer) stands for numbers as "
+"regular\n"
+"integers. Without it, they are zero-padded."
+msgstr ""
 
 #: ../en/docs/defaults.md:2
 msgctxt "title"
@@ -2542,13 +2908,6 @@ msgid ""
 "still a little bit awkward."
 msgstr ""
 
-#: ../en/docs/installation.md:11 ../en/docs/listings.md:13
-#: ../en/docs/multilanguage-overview.md:17 ../en/docs/qgoda-plug-in.md:30
-#: ../en/docs/table-of-contents.md:10 ../en/docs/table-of-contents.md:21
-#: ../en/docs/translating-templates.md:10 ../en/docs/translation-workflow.md:34
-msgid "<qgoda-toc/>"
-msgstr ""
-
 #: ../en/docs/installation.md:13
 msgid "## Installing Qgoda"
 msgstr ""
@@ -3260,11 +3619,6 @@ msgid ""
 "are most of the time not important for you.  In general, everything follows "
 "the Do-What-I-Mean™ paradigm."
 msgstr ""
-
-#: ../en/docs/multilanguage-configuration.md:2
-msgctxt "title"
-msgid "Configuration"
-msgstr "Konfiguration"
 
 #: ../en/docs/multilanguage-configuration.md:6
 #, fuzzy
@@ -4185,6 +4539,383 @@ msgstr ""
 
 #: ../en/docs/output-location.md:216
 msgid "Quoted strings have JavaScript semantics!"
+msgstr ""
+
+#: ../en/docs/pagination.md:2
+msgctxt "title"
+msgid "Pagination"
+msgstr ""
+
+#: ../en/docs/pagination.md:6
+msgctxt "description"
+msgid "How to distribute listings over multiple pages."
+msgstr ""
+
+#: ../en/docs/pagination.md:8
+msgid ""
+"Functions for paginating listings are often very complicated and limited\n"
+"in other systems. Pagination in Qgoda is a no-brainer."
+msgstr ""
+
+#: ../en/docs/pagination.md:13
+#, fuzzy
+#| msgid "## General Usage"
+msgid "## General Idea"
+msgstr "## Allgemeines zur Verwendung"
+
+#: ../en/docs/pagination.md:15
+msgid "Pagination consist of two tasks:"
+msgstr ""
+
+#: ../en/docs/pagination.md:17
+msgid ""
+"1. Cut the set of documents for the current page of the listing out of the\n"
+"   collection of all documents\n"
+"2. Compute the data for the previous and next page, the total number of "
+"pages\n"
+"   and so on."
+msgstr ""
+
+#: ../en/docs/pagination.md:22
+msgid "Number 2 is 3rd grade math, number 1 can give serious headaches."
+msgstr ""
+
+#: ../en/docs/pagination.md:24
+msgid ""
+"In Qgoda, the automatic creation of another page is very simple. The\n"
+"template function `M:q.clone()` does exactly that: It creates an exact\n"
+"copy of the current page and just modifies values that you specify in\n"
+"the call to it:"
+msgstr ""
+
+#: ../en/docs/pagination.md:92
+msgid "This will produce a complete listing with pagination."
+msgstr ""
+
+#: ../en/docs/pagination.md:94
+msgid ""
+"Line 2 creates a sorted collection of all posts of your site, most recent\n"
+"first. See [@ q.lanchor(name = 'listings') @] if you want to create a "
+"listing\n"
+"of pages from a certain date rage, from a certain category, pages "
+"containing\n"
+"a tag or a combination thereof."
+msgstr ""
+
+#: ../en/docs/pagination.md:99
+msgid ""
+"In line 4 the variable `start` gets initialized from the document variable\n"
+"`asset.start`. It is the (zero-based) index of the first document shown\n"
+"on this page of the listing. Initially it is `null` which is fine because\n"
+"it evaluates to 0. Still in line 4, the document variable `asset.start`\n"
+"is reset to 0. Ths is not important here but when you create listings of\n"
+"tags, where you will have clones of cloned documents."
+msgstr ""
+
+#: ../en/docs/pagination.md:106
+msgid ""
+"Line 5 contains the call to `M:q.paginate()` which is documented below. You\n"
+"pass it at list the named argument `total` that contains the total number\n"
+"of pages and `start` which contains the (zero-based) index of the first\n"
+"document in the collection on *this* page. The function returns an object\n"
+"which contains all information that you need for creating a pagination over\n"
+"the listing pages."
+msgstr ""
+
+#: ../en/docs/pagination.md:113
+msgid ""
+"Lines 7-11 just contain a minimal listing of a paged subset of the current\n"
+"page. See in line 8, how that subset is created. The method\n"
+"[`splice()`](http://www.template-toolkit.org/docs/manual/VMethods."
+"html#method_splice)\n"
+"cuts out those documents from the collection that should be displayed on\n"
+"this page. The first argument is the (zero-based) index of the first "
+"document,\n"
+"the second one is the number of documents you want."
+msgstr ""
+
+#: ../en/docs/pagination.md:120
+msgid ""
+"For both arguments you simply use the values `p.start` and `p.per_page` "
+"that\n"
+"you have received from the call to `M:q.paginate()` above."
+msgstr ""
+
+#: ../en/docs/pagination.md:123
+msgid ""
+"Below that, the pagination navigation begins. In line 15 we create a link\n"
+"to the previous listing simply by using the path from `p.previous_link`."
+msgstr ""
+
+#: ../en/docs/pagination.md:126
+msgid ""
+"Lines 17-23 loop over all listing pages, link to them, und use the\n"
+"precomputed array `p.links` as the link targets."
+msgstr ""
+
+#: ../en/docs/pagination.md:129
+msgid "Line 25 is like line 15, but creates the link to the next listing page."
+msgstr ""
+
+#: ../en/docs/pagination.md:131
+msgid ""
+"The actual magic happens in lines 27-29. Iff there are more documents to\n"
+"display, a copy of the current listing page is created with\n"
+"`M:q.clone()`. The clone is an exact copy of the current page. Only two\n"
+"properties are overwritten."
+msgstr ""
+
+#: ../en/docs/pagination.md:136
+msgid ""
+"One is the `V:asset.location` of the clone which is precomputed as "
+"something\n"
+"like `index-3.html` for the third listing so that the copy will not "
+"overwrite\n"
+"the current page."
+msgstr ""
+
+#: ../en/docs/pagination.md:140
+msgid ""
+"The other one is our variable `start` which will contain the starting\n"
+"document of this page plus the number of documents displayed on this page."
+msgstr ""
+
+#: ../en/docs/pagination.md:143
+msgid ""
+"In other words: The listing creates a copy of itself with the next starting\n"
+"document, until all documents have been displayed."
+msgstr ""
+
+#: ../en/docs/pagination.md:146
+msgid ""
+"That's it! In reality, you may notice that this example has a couple of "
+"flaws.\n"
+"For example, the links to the previous and next page should only be\n"
+"displayed, when there actually *is* a previous or next page. You will also\n"
+"want to style the navigation and may add aria-attributes but that's just\n"
+"template code."
+msgstr ""
+
+#: ../en/docs/pagination.md:152
+msgid ""
+"You can take a\n"
+"[full-fledged example](https://github.com/gflohr/qgoda-multilang/blob/master/"
+"_views/components/listing.html)\n"
+"from the [Qgoda Multilanguage Theme](https://github.com/gflohr/qgoda-"
+"multilang)\n"
+"as a starting point for your own listing and pagination module."
+msgstr ""
+
+#: ../en/docs/pagination.md:157
+msgid "## The `q.clone()` Method"
+msgstr ""
+
+#: ../en/docs/pagination.md:159
+msgid ""
+"This method creates an identical copy of the current document. Its usage is\n"
+"not limited to pagination. You use it whenever you have to dynamically "
+"create\n"
+"documents. Another typical use case are tag listings, where you clone the\n"
+"listing for the current tag, so that you can create a listing for the next\n"
+"tag, until there are no more tags."
+msgstr ""
+
+#: ../en/docs/pagination.md:165
+#, fuzzy
+#| msgid "A typical filter looks like this:"
+msgid "A typical usage looks like this:"
+msgstr "Ein typischer Filter sieht so aus:"
+
+#: ../en/docs/pagination.md:176
+msgid ""
+"Whatever named arguments you pass, will become (changed) variables of the\n"
+"cloned document."
+msgstr ""
+
+#: ../en/docs/pagination.md:179
+msgid ""
+"Simply creating clones of the current document would lead to an endless "
+"loop,\n"
+"where each clone would overwrite its parent with an identical copy. You\n"
+"therefore have to adhere to two rules:"
+msgstr ""
+
+#: ../en/docs/pagination.md:183
+msgid ""
+"1. Always put the call to `q.clone()` into an `[% IF %]` directive that "
+"will\n"
+"at one point yield a false value.\n"
+"2. You *must* override the `V:asset.location` property of the clone so that\n"
+"it will not overwrite the current document."
+msgstr ""
+
+#: ../en/docs/pagination.md:188
+msgid ""
+"The rules are simple but you will notice sooner or later that they are easy\n"
+"to forget. If you have the impression that you have created an endless "
+"loop,\n"
+"re-run qgoda with the option `--verbose` to better understand what is going\n"
+"on."
+msgstr ""
+
+#: ../en/docs/pagination.md:193
+msgid "## The `q.paginate()` Method"
+msgstr ""
+
+#: ../en/docs/pagination.md:195
+msgid ""
+"The `M:q.paginate()` template function only performs some simple\n"
+"computations that helps you create the navigation for the listing pages\n"
+"in HTML. It could also be implemented with Template Toolkit functions,\n"
+"only that this would be slower and more complicted."
+msgstr ""
+
+#: ../en/docs/pagination.md:200
+#: ../en/news/client-side-syntax-highlighting.md:206
+msgid "### Usage"
+msgstr "## Verwendung"
+
+#: ../en/docs/pagination.md:212
+msgid ""
+"The actual call is done in line 5. But you typically invoke it with two\n"
+"named arguments `total` (total number of items) and `start` (index of the\n"
+"first item)."
+msgstr ""
+
+#: ../en/docs/pagination.md:216
+msgid ""
+"Therefore you normally create a collection of documents like in line 3. See\n"
+"[@ q.lanchor(name='listings') @] for details about that. The size of that\n"
+"collection is then used for the argument `total`."
+msgstr ""
+
+#: ../en/docs/pagination.md:220
+msgid ""
+"The other argument that you normally need is `start`. It defaults to 0.\n"
+"For subsequent listings that were created with\n"
+"[`q.clone()`](#the-q.clone-method) you increase\n"
+"this parameter by the number of documents (resp. items) shown in the\n"
+"current listing."
+msgstr ""
+
+#: ../en/docs/pagination.md:226
+msgid "### Input Parameters."
+msgstr ""
+
+#: ../en/docs/pagination.md:228
+msgid "The following named arguments are supported:"
+msgstr ""
+
+#: ../en/docs/pagination.md:230
+msgid "#### `total`"
+msgstr ""
+
+#: ../en/docs/pagination.md:232
+msgid ""
+"The total number of items, resp. the size of the collection. This argument\n"
+"is mandatory and must be greater than zero."
+msgstr ""
+
+#: ../en/docs/pagination.md:235
+msgid "#### `start`"
+msgstr ""
+
+#: ../en/docs/pagination.md:237
+msgid ""
+"The first item that is displayed in the current listing. The count starts\n"
+"at zero not at one!"
+msgstr ""
+
+#: ../en/docs/pagination.md:240
+msgid "If omitted, this parameter defaults to zero."
+msgstr ""
+
+#: ../en/docs/pagination.md:242
+msgid "#### `per_page`"
+msgstr ""
+
+#: ../en/docs/pagination.md:244
+msgid "The number of items that are displayed on one page. Defaults to 10."
+msgstr ""
+
+#: ../en/docs/pagination.md:246
+#, fuzzy
+#| msgid "### Usage"
+msgid "#### `stem`"
+msgstr "## Verwendung"
+
+#: ../en/docs/pagination.md:248
+msgid ""
+"The filename stem used for creating subsequent listings. Defaults to the\n"
+"basename without extender of the original document. If the original "
+"document\n"
+"has the file name `index.html`, the stem defaults to `index`, and the\n"
+"subsequent listing pages will be saved as `index-2.html`, `index-3.html`,\n"
+"and so on."
+msgstr ""
+
+#: ../en/docs/pagination.md:254
+msgid "#### `extender`"
+msgstr ""
+
+#: ../en/docs/pagination.md:256
+msgid ""
+"The extender used for creating subsequent listings. Defaults to the "
+"extender\n"
+"of the current document.  The extender has to include a possible leading\n"
+"dot! You must use `.html`,  not `html`."
+msgstr ""
+
+#: ../en/docs/pagination.md:260
+msgid "### Output"
+msgstr ""
+
+#: ../en/docs/pagination.md:262
+msgid "The returned value is an object, a hash with the following properties:"
+msgstr ""
+
+#: ../en/docs/pagination.md:264
+msgid ""
+"| Property/Key  | "
+"Value                                                       |\n"
+"| ------------- | "
+"----------------------------------------------------------- |\n"
+"| start         | Where the next listing should start. This is the last "
+"starting point plus the number of items per page.\n"
+"| page          | The page number of the current page. The count starts at "
+"1. |\n"
+"| page0         | The zero-based page number of the current page. That is "
+"`page` minus 1.\n"
+"| per_page      | The number of items per page.  That just echoes the "
+"corresponding input parameter.\n"
+"| total_pages   | The total number of pages needed to display all items.\n"
+"| previous_link | A link to the previous page or `null/undef` if this is the "
+"first page.\n"
+"| next_link     | A link to the next page or `null/undef` if this is the "
+"last page.\n"
+"| links         | An array of links to all listing pages. This will be "
+"something like `['index.html', 'index-2.html', 'index-3.html', 'index-4."
+"html']\n"
+"| tabindices    | This will be [0, 0, -1, 0] is this is listing page number "
+"3 of 4 pages in total. You can use the corresponding value for the "
+"`tabindex` attribute of the corresponding `a` anchor linking to that page.\n"
+"| tabindexes    | The same as `tabindices` if you prefer that spelling.\n"
+"| next_start    | If you call `M:q.clone()`, use this as the `start` "
+"property of the cloned listing.\n"
+"| next_location | If you use `M:q.clone()`, use this as the `location` "
+"property of the cloned listing."
+msgstr ""
+
+#: ../en/docs/pagination.md:279
+msgid ""
+"If you are using Qgoda from git or at least version 0.9.5, you can do this\n"
+"to get a reminder of all data available inside the page:"
+msgstr ""
+
+#: ../en/docs/pagination.md:289
+msgid ""
+"This will dump the return value of `M:q.paginate()` into the page so that\n"
+"you can see the actual values."
 msgstr ""
 
 #: ../en/docs/pattern-lists.md:2
@@ -7963,10 +8694,6 @@ msgstr ""
 "Mit `yarn` statt `npm` lautet das Kommando `yarn add gflohr/qgoda-plugin-tt2-"
 "highlight`."
 
-#: ../en/news/client-side-syntax-highlighting.md:206
-msgid "### Usage"
-msgstr "## Verwendung"
-
 #: ../en/news/client-side-syntax-highlighting.md:208
 msgid ""
 "Now you have to use\n"
@@ -8236,9 +8963,6 @@ msgstr "Weiterlesen"
 msgctxt "dateFormat"
 msgid "%b, %d %Y"
 msgstr "%d. %b %Y"
-
-#~ msgid "## Template Code"
-#~ msgstr "## Template-Code"
 
 #, fuzzy
 #~| msgid "### Listings"

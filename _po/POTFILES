@@ -19,6 +19,7 @@
 ../_views/functions/styles.tt
 ../_views/functions/talks/css-modules.tt
 ../_views/functions/talks/setup.tt
+../_views/landing-about-chunk-duktape.html
 ../_views/landing-about-chunk.html
 ../_views/landing-about.html
 ../_views/landing-feature-full.html

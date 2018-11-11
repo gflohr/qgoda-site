@@ -1,3 +1,4 @@
+../_includes/en/landing-page/about-duktape.md
 ../_includes/en/landing-page/about-nodejs.md
 ../_includes/en/landing-page/about-perl.md
 ../_includes/en/landing-page/about-webpack.md
@@ -13,6 +14,8 @@
 ../en/docs/basics.md
 ../en/docs/command-line-interface.md
 ../en/docs/configuration-variables.md
+../en/docs/configuration.md
+../en/docs/dates.md
 ../en/docs/defaults.md
 ../en/docs/differences-to-jekyll.md
 ../en/docs/excluding-files.md
@@ -30,6 +33,7 @@
 ../en/docs/multilanguage-overview.md
 ../en/docs/multilanguage.md
 ../en/docs/output-location.md
+../en/docs/pagination.md
 ../en/docs/pattern-lists.md
 ../en/docs/po-translations.md
 ../en/docs/qgoda-in-15-minutes.md
