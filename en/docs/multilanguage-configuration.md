@@ -3,7 +3,7 @@ title: Configuration
 name: multilanguage-configuration
 section: multilanguage
 view: docs.html
-description: All configuration variables required for a fully internalized site
+description: All configuration variables required for a fully internalized site.
 ---
 Internationalization (i18n) in Qgoda has to be explicitely activated in the
 configuration file `P:_config.yaml`. Although there are many options

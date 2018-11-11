@@ -250,7 +250,7 @@ Provided that you have correctly loaded the PrismJS `line-numbers` plug-in, this
 will highlight the code as JavaScript in the browser, add line numbers in front of every
 line and start the line numbering with line 5.  For
 instance, the code examples on this very page are 
-produced with directives like this
+produced with directives like this:
 
 ### Page-wide Defaullts
 

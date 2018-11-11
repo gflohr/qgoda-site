@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: qgoda-site 0.1\n"
 "Report-Msgid-Bugs-To: 'Guido Flohr <guido.flohr@cantanea.com>'\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2018-11-05 07:31+0200\n"
+"PO-Revision-Date: 2018-11-11 21:59+0200\n"
 "Last-Translator: Guido Flohr <guido.flohr@cantanea.com>\n"
 "Language-Team: German\n"
 "Language: de\n"
@@ -139,7 +139,7 @@ msgstr ""
 #: ../_includes/en/landing-page/about-webpack.md:3
 msgctxt "title"
 msgid "Webpack"
-msgstr ""
+msgstr "Webpack"
 
 #: ../_includes/en/landing-page/about-webpack.md:5
 msgctxt "image_alt"
@@ -152,11 +152,14 @@ msgid ""
 "of your site. Whether you start your site with the Yeoman generator or\n"
 "from a Qgoda theme, webpack is preconfigured for you."
 msgstr ""
+"Das Bündeln von Assets verbessert die Performance und Wartbarkeit jeder "
+"Site. Ganz gleich, ob die Site mit dem Yeoman-Generator oder mit einem Qgoda-"
+"Thema erzeugt wurde, ist Webpack immer vorkonfiguriert."
 
 #: ../_includes/en/landing-page/about-yeoman.md:3
 msgctxt "title"
 msgid "Yeoman"
-msgstr ""
+msgstr "Yeoman"
 
 #: ../_includes/en/landing-page/about-yeoman.md:5
 msgctxt "image_alt"
@@ -170,6 +173,10 @@ msgid ""
 "[Qgoda generator](https://www.npmjs.com/package/generator-qgoda)\n"
 "generator with exactly the components and features you want."
 msgstr ""
+"Yeoman ist das populärste Werkzeug, um ein Gerüst für Web-Applikationen zu "
+"erstellen. Qgoda-Site können von Grund auf dem auf Yeoman basierenden [Qgoda "
+"generator](https://www.npmjs.com/package/generator-qgoda) erzeugt werden, "
+"und zwar mit exakt den Komponenten und Features, die benötigt werden."
 
 #: ../_includes/en/landing-page/about.md:3
 msgctxt "title"
@@ -201,21 +208,6 @@ msgstr ""
 msgctxt "title"
 msgid "Main Features"
 msgstr "Wichtigste Features"
-
-#: ../_includes/en/landing-page/main-features.md:7
-msgid ""
-"<qgoda-no-xgettext>\n"
-"[% USE q = Qgoda %]\n"
-"[% q.include('_includes/' _ asset.lingua _ '/landing-page/news.md', asset) "
-"%]\n"
-"[% q.include('_includes/' _ asset.lingua _ '/landing-page/taxonomies.md', "
-"asset) %]\n"
-"[% q.include('_includes/' _ asset.lingua _ '/landing-page/multi-language."
-"md', asset) %]\n"
-"[% q.include('_includes/' _ asset.lingua _ '/landing-page/pronunciation.md', "
-"asset) %]\n"
-"</qgoda-no-xgettext>"
-msgstr ""
 
 #: ../_includes/en/landing-page/multi-language.md:3
 msgctxt "title"
@@ -454,11 +446,6 @@ msgstr ""
 "Die Dokumentation des Browsers beschreibt, wie sich Cookies allgemein, für "
 "bestimmte Web-Sites oder von bestimmten Quellen abschalten lassen."
 
-#: ../en/data-privacy-policy.md:65
-msgid ""
-"<qgoda-no-xgettext>[% IF config.google.analytics_id %]</qgoda-no-xgettext>"
-msgstr ""
-
 #: ../en/data-privacy-policy.md:67
 msgid "## Google Analytics"
 msgstr "## Google Analytics"
@@ -564,10 +551,6 @@ msgstr ""
 "und http://www.google.com/intl/de/policies/privacy/ weitere Informationen "
 "über die Nutzungsbedingungen und Datenschutz zur Verfügung."
 
-#: ../en/data-privacy-policy.md:112
-msgid "<qgoda-no-xgettext>[% END %]</qgoda-no-xgettext>"
-msgstr ""
-
 #: ../en/docs/basics.md:2
 msgctxt "title"
 msgid "Basics"
@@ -576,12 +559,12 @@ msgstr "Grundlagen"
 #: ../en/docs/command-line-interface.md:2
 msgctxt "title"
 msgid "Command Line Interface"
-msgstr ""
+msgstr "Kommandozeilenschnittstelle"
 
 #: ../en/docs/command-line-interface.md:6
 msgctxt "description"
 msgid "Qgoda options, commands and command options"
-msgstr ""
+msgstr "Qgoda-Optionen, -Kommandos und Kommando-Optionen"
 
 #: ../en/docs/command-line-interface.md:8
 msgid ""
@@ -589,6 +572,9 @@ msgid ""
 "program.\n"
 "<qgoda-toc/>"
 msgstr ""
+"Qgoda ist ein [Kommandozeilenprogramm](http://www.guido-flohr.net/"
+"kommandozeile/).\n"
+"<qgoda-toc/>"
 
 #: ../en/docs/command-line-interface.md:11
 msgid "## General Usage"
@@ -1271,7 +1257,7 @@ msgid ""
 "simply by specifying an array instead of a single value:"
 msgstr ""
 "Es können auch mehrere Suchmuster für `files` spezifiziert werden, indem\n"
-"einfach ein Array (eine Liste) statt eines Einzelwerts angegeben wird."
+"einfach ein Array (eine Liste) statt eines Einzelwerts angegeben wird:"
 
 #: ../en/docs/defaults.md:70
 msgid ""
@@ -1799,8 +1785,8 @@ msgid ""
 "This would now enable processing of all the files in the top-level directory "
 "`_posts`."
 msgstr ""
-"Mit dieser Einstellung wüerden alle Dateien, die im auf der höchsten Ebene "
-"liegenden Verzeichnis `_posts` liegen, wieder eingeschlossen. "
+"Mit dieser Einstellung würden alle Dateien, die im auf der höchsten Ebene "
+"liegenden Verzeichnis `_posts` liegen, wieder eingeschlossen."
 
 #: ../en/docs/excluding-files.md:73
 msgid ""
@@ -2020,7 +2006,7 @@ msgid ""
 "They are described in the following list."
 msgstr ""
 "Eine typische Qgoda-Site beinhaltet verschiedene Standard-Dateien und -"
-"Verzeichnisse. Diese sind in der folgenden Liste beschrieben:"
+"Verzeichnisse. Diese sind in der folgenden Liste beschrieben."
 
 #: ../en/docs/files-and-directories.md:16
 msgid ""
@@ -2232,7 +2218,7 @@ msgid ""
 "at your disposal with a slightly more complicated syntax:"
 msgstr ""
 "Die Prüfung auf Gleichheit ist die Default-Bedingung, aber es stehen noch "
-"weitere, mit einer geringfügig komplizierteren Syntax zur Verfügung"
+"weitere, mit einer geringfügig komplizierteren Syntax zur Verfügung."
 
 #: ../en/docs/filters.md:50
 msgid ""
@@ -2351,12 +2337,12 @@ msgstr ""
 #: ../en/docs/filters.md:132
 msgid "Like [`le`](#le) but ignores case for the comparison."
 msgstr ""
-"Wie [`le`](#le), aber ignoriert Groß- und Kleinschreibung beim Vergleich"
+"Wie [`le`](#le), aber ignoriert Groß- und Kleinschreibung beim Vergleich."
 
 #: ../en/docs/filters.md:138
 msgid "Like [`lt`](#lt) but ignores case for the comparison."
 msgstr ""
-"Wie [`lt`](#lt), aber ignoriert Groß- und Kleinschreibung beim Vergleich"
+"Wie [`lt`](#lt), aber ignoriert Groß- und Kleinschreibung beim Vergleich."
 
 #: ../en/docs/filters.md:144
 msgid ""
@@ -2556,10 +2542,10 @@ msgid ""
 "still a little bit awkward."
 msgstr ""
 
-#: ../en/docs/installation.md:11 ../en/docs/multilanguage-overview.md:17
-#: ../en/docs/qgoda-plug-in.md:30 ../en/docs/table-of-contents.md:10
-#: ../en/docs/table-of-contents.md:21 ../en/docs/translating-templates.md:10
-#: ../en/docs/translation-workflow.md:34
+#: ../en/docs/installation.md:11 ../en/docs/listings.md:13
+#: ../en/docs/multilanguage-overview.md:17 ../en/docs/qgoda-plug-in.md:30
+#: ../en/docs/table-of-contents.md:10 ../en/docs/table-of-contents.md:21
+#: ../en/docs/translating-templates.md:10 ../en/docs/translation-workflow.md:34
 msgid "<qgoda-toc/>"
 msgstr ""
 
@@ -2877,17 +2863,7 @@ msgid ""
 "lists are such groups."
 msgstr ""
 
-#: ../en/docs/listings.md:13
-msgid "## Template Code"
-msgstr "## Template-Code"
-
 #: ../en/docs/listings.md:15
-msgid ""
-"Listings are created by the template functions `M:q.list()` or\n"
-"`M:q.listPosts()`."
-msgstr ""
-
-#: ../en/docs/listings.md:18
 msgid ""
 "[% WRAPPER components/infobox.html\n"
 "           type=\"info\" title=\"These Instructions Are For the Template "
@@ -2899,33 +2875,205 @@ msgid ""
 "[% END %]"
 msgstr ""
 
-#: ../en/docs/listings.md:26
-msgid ""
-"[% TAGS [- -] %]\n"
-"```tt2\n"
-"[% USE q = Qgoda %]\n"
-"[% FOREACH post IN q.llistPosts %]\n"
-"  <a href=\"[% post.permalink %]\">\n"
-"    <div class=\"blog-post\">\n"
-"      <h3>[% post.title %]</h3>\n"
-"      <h4>[% post.date %] - [% post.author %]</h4>\n"
-"      <p>[% post.excerption %]</p>\n"
-"    </div>\n"
-"  </a>\n"
-"[% END %]\n"
-"```\n"
-"[- TAGS [% %] -]"
+#: ../en/docs/listings.md:22
+#, fuzzy
+#| msgid "### Listings"
+msgid "## Listings"
+msgstr "### Auflistungen"
+
+#: ../en/docs/listings.md:24
+msgid "### Generic Listings With `q.list(FILTERS)`"
 msgstr ""
 
-#: ../en/docs/listings.md:41
+#: ../en/docs/listings.md:26
 msgid ""
-"[% WRAPPER components/infobox.html\n"
-"     title=\"Difference to Jekyll\"\n"
-"     type=\"warning\" %]\n"
-"Lists in Jekyll are pre-computed and pre-sorted by date and available as \n"
-"template variables.  Qgoda uses template functions instead, and these\n"
-"functions return unsorted lists.\n"
-"[% END %]"
+"The most basic form of creating a listing is the template function `M:q."
+"list()`:"
+msgstr ""
+
+#: ../en/docs/listings.md:125
+msgid ""
+"The variable `posts` will contain all posts of the same language\n"
+"(`M:q.llistPosts`), numerically sorted by their date, then reversed and\n"
+"finally *spliced*.  The method call `splice(70, 10)`, returns 10 assets\n"
+"starting at asset number 70 from the collection."
+msgstr ""
+
+#: ../en/docs/listings.md:130
+#, fuzzy
+#| msgid "### Links"
+msgid "## Links"
+msgstr "### Links"
+
+#: ../en/docs/listings.md:132
+msgid ""
+"Links are very similar to listings. In fact they are just\n"
+"[filter]([@ q.llink(name='filters') @]) combinations that (should) trigger\n"
+"exactly one result."
+msgstr ""
+
+#: ../en/docs/listings.md:136
+msgid ""
+"Another important difference is that the linking methods return the\n"
+"`V:permalink` of the found asset, and not the entire asset."
+msgstr ""
+
+#: ../en/docs/listings.md:139
+msgid "### Generic Link Function `q.link(FILTERS)`"
+msgstr ""
+
+#: ../en/docs/listings.md:141
+msgid "The method `M:q.link()` is to links what `M:q.list()` is to filters:"
+msgstr ""
+
+#: ../en/docs/listings.md:151
+msgid ""
+"Just kidding. This would produce something like \"Go to homepage /!\". What "
+"we\n"
+"really want is this:"
+msgstr ""
+
+#: ../en/docs/listings.md:160
+msgid "And since we are using Markdown, we can also write it like this:"
+msgstr ""
+
+#: ../en/docs/listings.md:168
+msgid "`M:q.link()` will warn you in two cases:"
+msgstr ""
+
+#: ../en/docs/listings.md:170
+msgid ""
+"1. The set of filters produces no results. This is a broken link.\n"
+"2. The set of filters produces more than one result.  This is an\n"
+"   ambiguous link. In that case an arbitrary hit is returned."
+msgstr ""
+
+#: ../en/docs/listings.md:174
+msgid "### Specialized Linking Functions"
+msgstr ""
+
+#: ../en/docs/listings.md:176
+msgid ""
+"Many filters are very common and have their own filter functions to save\n"
+"you typing:"
+msgstr ""
+
+#: ../en/docs/listings.md:179
+msgid ""
+"* `q.linkPost(FILTERS)`: returns an assets of type 'post' that matches\n"
+"  the filters. Equivalent to `q.link(type='post' FILTERS)`. See `M:q."
+"linkPost()`.\n"
+"* `q.llink(FILTERS)`: returns an assets of the same language that matches\n"
+"  the filters. Equivalent to `q.lingua(lingua=asset.lingua FILTERS)`.\n"
+"  See `M:q.llink()`.\n"
+"* `q.llinkPost(FILTERS): A combination of the two methods above,\n"
+"  equivalent to `q.link(type='post' lingua=asset.lingua FILTERS)`. See\n"
+"  `M:q.llinkPost()`."
+msgstr ""
+
+#: ../en/docs/listings.md:188
+msgid "### Checking If a Document Exists"
+msgstr ""
+
+#: ../en/docs/listings.md:190
+msgid ""
+"As seen above, the linking functions print ugly warnings if a link is\n"
+"broken or ambiguous. But you can check whether a certain link exists with\n"
+"`M:q.existsLink()`, `M:q.lexistsLink`, `M:q.existsPost`, and\n"
+"`M:q.lexistsPost()`:"
+msgstr ""
+
+#: ../en/docs/listings.md:206
+msgid "Lines 3-6 are all exactly equivalent."
+msgstr ""
+
+#: ../en/docs/listings.md:208
+msgid ""
+"You will almost always use the results of these methods as a condition in\n"
+"an `[% IF %]`."
+msgstr ""
+
+#: ../en/docs/listings.md:211
+#, fuzzy
+#| msgid "## Conditions"
+msgid "### Anchor Functions"
+msgstr "## Bedingungen"
+
+#: ../en/docs/listings.md:213
+msgid ""
+"It is very common that you want to link to another document and use the\n"
+"the title of that document as the label of the link.  This is very simple:"
+msgstr ""
+
+#: ../en/docs/listings.md:227
+msgid "Lines 3-6 are all exactly equivalent. They will produce something like:"
+msgstr ""
+
+#: ../en/docs/listings.md:239
+#, fuzzy
+#| msgid "### Links and Cross-References"
+msgid "## Cross-References"
+msgstr "### Links und Querverweise"
+
+#: ../en/docs/listings.md:241
+msgid ""
+"The [linking](#links) functions above always return the `V:permalink`\n"
+"attribute of the matching document. But you can access arbitrary properties\n"
+"of the matching document with the function `M:q.xref()`."
+msgstr ""
+
+#: ../en/docs/listings.md:256
+msgid ""
+"Like for [listings](#listings) and [links](#links), there are also methods\n"
+"for searching only in posts (`M:q.xrefPost()`), only in documents that have\n"
+"the same language (`M:q.lxref()`) and only in posts that have the same\n"
+"language (`M:q.lxrefPost()`)."
+msgstr ""
+
+#: ../en/docs/listings.md:261
+msgid "## Tips and Tricks"
+msgstr ""
+
+#: ../en/docs/listings.md:263
+msgid "### Use the L-Methods!"
+msgstr ""
+
+#: ../en/docs/listings.md:265
+msgid ""
+"You will have noticed that a leading l (think lingua or language) in the\n"
+"method name automatically adds a filter that restricts the search to the\n"
+"language of the current document."
+msgstr ""
+
+#: ../en/docs/listings.md:269
+msgid ""
+"Unless you are 100 % sure that your site will never have more than one\n"
+"language (and you never know that), always use the \"l-versions\" of the\n"
+"methods. Adding another language to your site, will then essentially\n"
+"become a no-brainer."
+msgstr ""
+
+#: ../en/docs/listings.md:274
+msgid "### Do Not Hardcode Links!"
+msgstr ""
+
+#: ../en/docs/listings.md:276
+msgid "You are probably used to hardcoding links to other documents:"
+msgstr ""
+
+#: ../en/docs/listings.md:284
+msgid "Admittedly, it's a little bit more complicated to write this instead:"
+msgstr ""
+
+#: ../en/docs/listings.md:292
+msgid "But you can often use this simpler version:"
+msgstr ""
+
+#: ../en/docs/listings.md:300
+msgid ""
+"That's really not that hard. And you will never have to touch your links, "
+"when\n"
+"you decide to move the target of the link."
 msgstr ""
 
 #: ../en/docs/lists-and-indices.md:2
@@ -3119,8 +3267,11 @@ msgid "Configuration"
 msgstr "Konfiguration"
 
 #: ../en/docs/multilanguage-configuration.md:6
+#, fuzzy
+#| msgctxt "description"
+#| msgid "All configuration variables required for a fully internalized site"
 msgctxt "description"
-msgid "All configuration variables required for a fully internalized site"
+msgid "All configuration variables required for a fully internalized site."
 msgstr ""
 "Alle Konfigurationsvariablen, die für eine vollständig internationalisierte "
 "Site benötigt werden."
@@ -3309,7 +3460,7 @@ msgstr ""
 
 #: ../en/docs/multilanguage-configuration.md:120
 msgid "You have several options to set `V:asset.lingua`:"
-msgstr "Es gibt mehrere Möglichkeiten, `V:asset.lingua` zu setzen."
+msgstr "Es gibt mehrere Möglichkeiten, `V:asset.lingua` zu setzen:"
 
 #: ../en/docs/multilanguage-configuration.md:122
 msgid "### Per Document"
@@ -3584,7 +3735,7 @@ msgstr "## Redaktionell gepflegte Inhalte"
 msgid "For content, you have two options which both have their pros and cons."
 msgstr ""
 "Für reguläre Inhalte gibt es prinzipiell zwei Methoden, die beide ihre Vor- "
-"und Nachteile haben:"
+"und Nachteile haben."
 
 #: ../en/docs/multilanguage-overview.md:45
 msgid "### The Simple Approach"
@@ -3681,7 +3832,7 @@ msgstr ""
 "werden, und die Übersetzungen installiert. Die initiale erste Runde ist "
 "normalerweise einfach, mit fast jedem System. Bei der langfristigen Wartung "
 "der Site mit der Nachführung von Übersetzungen, nachdem die Inhalte der "
-"Originalsprache geändert wurden, trennt sich schnell die Spreu vom Weizen"
+"Originalsprache geändert wurden, trennt sich schnell die Spreu vom Weizen."
 
 #: ../en/docs/multilanguage-overview.md:65
 msgid ""
@@ -5524,7 +5675,67 @@ msgid ""
 msgstr ""
 
 #: ../en/docs/qgoda-plug-in.md:67
-msgid "TODO!"
+msgid "### Virtual Array Methods"
+msgstr ""
+
+#: ../en/docs/qgoda-plug-in.md:69
+msgid "The following methods are available on arrays:"
+msgstr ""
+
+#: ../en/docs/qgoda-plug-in.md:71
+msgid ""
+"[@ WRAPPER \"components/plug-in-functions.html\"\n"
+"   name=\"sortBy()\" args=\"string\" @]\n"
+"Sorts the array alpha-numerically by the property specified. The call\n"
+"<code>q.listPosts.sortBy('date.year')</code> would sort all posts by their\n"
+"year.  It is wrong to specify <code>asset.date.year</code> because the "
+"objects\n"
+"returned by `M:q.listPosts()` *are* all assets. You have to specify the\n"
+"key, the object *property*.\n"
+"[@- END @]"
+msgstr ""
+
+#: ../en/docs/qgoda-plug-in.md:80
+msgid ""
+"[@ WRAPPER \"components/plug-in-functions.html\"\n"
+"   name=\"sortBy\" args=\"string\" @]\n"
+"Same as <code>M:sortBy()</code> but sorts numerically. For example \"2\" is\n"
+"numerically less than \"10\", but alpha-numerically greater than \"10\" "
+"because\n"
+"the digit \"2\" is alphanumerically greater than \"1\" just as the letter\n"
+"\"b\" is alphanumerically greater than \"a\".\n"
+"[@- END @]"
+msgstr ""
+
+#: ../en/docs/qgoda-plug-in.md:88
+msgid ""
+"[@ WRAPPER \"components/plug-in-functions.html\"\n"
+"   name=\"vmap\" args=\"string\" @]\n"
+"When applied to an array of objects (hashes), it returns the *values* of\n"
+"the property specified by the string argument.  For example\n"
+"<code>q.listPosts.vmap('permalink')</code> gives you an array of the \n"
+"`V:permalink` attribute of all posts.\n"
+"[@- END @]"
+msgstr ""
+
+#: ../en/docs/qgoda-plug-in.md:96
+msgid "### Virtual Hash Methods"
+msgstr ""
+
+#: ../en/docs/qgoda-plug-in.md:98
+msgid ""
+"The following methods are available on hashes (also known as objects in JSON "
+"or\n"
+"JavaScript or formally as associative arrays):"
+msgstr ""
+
+#: ../en/docs/qgoda-plug-in.md:101
+msgid ""
+"[@ WRAPPER \"components/plug-in-functions.html\"\n"
+"   name=\"vmap\" args=\"string\" @]\n"
+"Like <code>M:vmap()</code> above but the collection is a hash. The values\n"
+"are visited in alphanumerical order or their corresponding keys.\n"
+"[@- END @]"
 msgstr ""
 
 #: ../en/docs/referencing-languages.md:2
@@ -5655,7 +5866,9 @@ msgid ""
 msgstr ""
 
 #: ../en/docs/related-documents.md:35
-msgid "### Multi-lingual sites."
+#, fuzzy
+#| msgid "### Multi-lingual sites."
+msgid "### Multi-lingual sites"
 msgstr "### Mehrsprachige Sites"
 
 #: ../en/docs/related-documents.md:37
@@ -7462,12 +7675,12 @@ msgid ""
 "</qgoda-no-xgettext>"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:3
+#: ../en/news/client-side-syntax-highlighting.md:2
 msgctxt "title"
 msgid "Client-Side Syntax Highlighting"
 msgstr "Client-seitiges Syntax-Highlighting"
 
-#: ../en/news/client-side-syntax-highlighting.md:15
+#: ../en/news/client-side-syntax-highlighting.md:14
 msgid ""
 "A very common requirement is to have syntax-highlighting applied to code "
 "blocks.  Best\n"
@@ -7480,11 +7693,11 @@ msgstr ""
 "semantisch korrekt zu markieren, und das Highlighting dem Client, also dem "
 "Browser beim Rendern der generierten Seiten zu überlassen.."
 
-#: ../en/news/client-side-syntax-highlighting.md:24
+#: ../en/news/client-side-syntax-highlighting.md:23
 msgid "## How Should Code Blocks Be Marked?"
 msgstr "## Wie werden Code-Blöcke markiert?"
 
-#: ../en/news/client-side-syntax-highlighting.md:26
+#: ../en/news/client-side-syntax-highlighting.md:25
 msgid ""
 "Code blocks should be wrapped into a `<code>` element that is in turn "
 "wrapped into a \n"
@@ -7497,7 +7710,7 @@ msgstr ""
 "Programmiersprache des Code-Blockes sollte als CSS-Klasse im Format "
 "`language-PROGRAMMIERSPRACHE` angegeben werden:"
 
-#: ../en/news/client-side-syntax-highlighting.md:38
+#: ../en/news/client-side-syntax-highlighting.md:37
 msgid ""
 "It is advisable to put the enclosing `<pre>` and `<code>` tags on the same "
 "line as\n"
@@ -7509,15 +7722,15 @@ msgstr ""
 "wie der folgende Code gesetzt werden, damit es keine hässlichen Leerzeilen "
 "am Anfang und Ende des Code-Blockes gibt."
 
-#: ../en/news/client-side-syntax-highlighting.md:42
+#: ../en/news/client-side-syntax-highlighting.md:41
 msgid "## Creating Semantically Correct Code Blocks"
 msgstr "## Erzeugung Semantisch korrekter Code-Blöcke"
 
-#: ../en/news/client-side-syntax-highlighting.md:44
+#: ../en/news/client-side-syntax-highlighting.md:43
 msgid "### Manually Creating Semantically Correct Code Blocks"
 msgstr "### Manuelle Erzeugung semantisch korrekter Code-Blöcke"
 
-#: ../en/news/client-side-syntax-highlighting.md:46
+#: ../en/news/client-side-syntax-highlighting.md:45
 msgid ""
 "Remember that (almost) all markup goes through unchanged in Markdown.  "
 "Nobody stops\n"
@@ -7527,20 +7740,20 @@ msgstr ""
 "kann man natürlich die Code-Blöcke einfach von Hand als HTML eingeben, so "
 "wie gerade gezeigt:"
 
-#: ../en/news/client-side-syntax-highlighting.md:57
+#: ../en/news/client-side-syntax-highlighting.md:56
 msgid "### Using Fenced Code Blocks"
 msgstr "### “Fenced” Code-Blocks"
 
-#: ../en/news/client-side-syntax-highlighting.md:59
+#: ../en/news/client-side-syntax-highlighting.md:58
 msgid ""
 "So-called *fenced* code blocks are supported by many markdown processors.\n"
 "Fenced code blocks are surrounded by triple backticks ```:"
 msgstr ""
 "So-genannte *fenced*, also “umzäunte” Code-Blöcke werden von den meisten "
 "Markdown-Prozessoren unterstützt. Solche Code-Blöcke werden von dreifachen "
-"Backticks ``` umschlossen."
+"Backticks ``` umschlossen:"
 
-#: ../en/news/client-side-syntax-highlighting.md:72
+#: ../en/news/client-side-syntax-highlighting.md:71
 msgid ""
 "This creates exactly the construct we want, the code inside of a `<code>` "
 "element\n"
@@ -7555,7 +7768,7 @@ msgstr ""
 "\"language-javascript\"`. Man kann aber die Sprache einfach nach den "
 "öffnenden Backticks angeben:"
 
-#: ../en/news/client-side-syntax-highlighting.md:87
+#: ../en/news/client-side-syntax-highlighting.md:86
 msgid ""
 "There is a caveat, though. Qgoda's default Markdown processor\n"
 "[Text::Markdown](https://metacpan.org/release/Text-Markdown) does not "
@@ -7571,7 +7784,7 @@ msgstr ""
 "Codes. Diese Syntax lässt sich deshalb nur verwenden, wenn `Text::Markdown::"
 "Hoedown` als Markdown-Prozessor verwendet wird."
 
-#: ../en/news/client-side-syntax-highlighting.md:93
+#: ../en/news/client-side-syntax-highlighting.md:92
 msgid ""
 "[@ WRAPPER components/infobox.html\n"
 "           type='info' title='Compatibility Note!' @]\n"
@@ -7600,11 +7813,11 @@ msgstr ""
 "Sprachangabe.\n"
 "[@ END @]"
 
-#: ../en/news/client-side-syntax-highlighting.md:104
+#: ../en/news/client-side-syntax-highlighting.md:103
 msgid "## Syntax-Highlighting With PrismJS"
 msgstr "## Syntax-Highlighting mit PrismJS"
 
-#: ../en/news/client-side-syntax-highlighting.md:106
+#: ../en/news/client-side-syntax-highlighting.md:105
 msgid ""
 "[PrismJS](https://prismjs.com/) is a very popular syntax highlighter written "
 "in\n"
@@ -7615,7 +7828,7 @@ msgstr ""
 "vollständig in JavaScript geschrieben ist und eine beeindruckende\n"
 "[Anzahl an Sprachen](https://prismjs.com/#languages-list) unterstützt."
 
-#: ../en/news/client-side-syntax-highlighting.md:110
+#: ../en/news/client-side-syntax-highlighting.md:109
 msgid ""
 "[@ WRAPPER components/infobox.html\n"
 "           type='info' title='Did you know ...' @]\n"
@@ -7630,11 +7843,11 @@ msgstr ""
 "<code>tt2</code> als Sprachname angegeben werden</p>\n"
 "[@ END @]"
 
-#: ../en/news/client-side-syntax-highlighting.md:117
+#: ../en/news/client-side-syntax-highlighting.md:116
 msgid "### Basic Usage"
 msgstr "### Allgemeine Verwendung"
 
-#: ../en/news/client-side-syntax-highlighting.md:119
+#: ../en/news/client-side-syntax-highlighting.md:118
 msgid ""
 "You can see the minimum required JavaScript and css files in the following "
 "code\n"
@@ -7643,7 +7856,7 @@ msgstr ""
 "Die minimal benötigen JavaScript- und CSS-Dateien lassen sich dem folgenden "
 "Code-Schnipsel entnehmen:"
 
-#: ../en/news/client-side-syntax-highlighting.md:136
+#: ../en/news/client-side-syntax-highlighting.md:135
 msgid ""
 "The default stylesheet gets included in line 4 and the core library in line "
 "7.\n"
@@ -7653,11 +7866,11 @@ msgstr ""
 "in Zeile 7. Es muss natürlich sichergestellt sein, dass sie an den "
 "entsprechenden Stellen auch gefunden werden."
 
-#: ../en/news/client-side-syntax-highlighting.md:139
+#: ../en/news/client-side-syntax-highlighting.md:138
 msgid "### Using a PrismJS Theme"
 msgstr "### Verwendung eines Themes für PrismJS"
 
-#: ../en/news/client-side-syntax-highlighting.md:141
+#: ../en/news/client-side-syntax-highlighting.md:140
 msgid ""
 "PrismJS ships with a number of themes. You can override the default theme "
 "by\n"
@@ -7666,15 +7879,15 @@ msgstr ""
 "Mit PrismJS wird eine Reihe von Themes ausgeliefert. Das Default-Theme lässt "
 "sich überschreiben, indem eine *weitere* Stylesheet-Datei eingebunden wird:"
 
-#: ../en/news/client-side-syntax-highlighting.md:151
+#: ../en/news/client-side-syntax-highlighting.md:150
 msgid "That will change the style to the \"coy\" theme."
 msgstr "So lässt sich der Stil auf das “Coy”-Theme umstellen."
 
-#: ../en/news/client-side-syntax-highlighting.md:153
+#: ../en/news/client-side-syntax-highlighting.md:152
 msgid "### Loading Highlighters and PrismJS Plug-Ins"
 msgstr "### Laden von Highlightern und Plug-Ins für PrismJS"
 
-#: ../en/news/client-side-syntax-highlighting.md:155
+#: ../en/news/client-side-syntax-highlighting.md:154
 msgid ""
 "In order to save memory and band-width, PrismJS does not load all of its "
 "highlighters\n"
@@ -7684,7 +7897,7 @@ msgstr ""
 "Komponenten und Plug-Ins automatisch. Sie müssen vielmehr explizit angegeben "
 "werden."
 
-#: ../en/news/client-side-syntax-highlighting.md:158
+#: ../en/news/client-side-syntax-highlighting.md:157
 msgid ""
 "The complete example below would load support for highlighting JavaScript "
 "and also\n"
@@ -7696,7 +7909,7 @@ msgstr ""
 "JavaScript und das Plug-In `line-numbers` aktivieren. Mit Hilfe dieses Plug-"
 "ins wird mit CSS allen Zeilen die Zeilennummer vorangestellt:"
 
-#: ../en/news/client-side-syntax-highlighting.md:180
+#: ../en/news/client-side-syntax-highlighting.md:179
 msgid ""
 "If you want to have syntax highlighting for more \n"
 "languages, just add the corresponding PrismJS \n"
@@ -7705,15 +7918,15 @@ msgstr ""
 "Um Unterstützung für weitere Sprachen zu aktivieren, müssen nach Zeile 11 "
 "lediglich die entsprechenden weiteren PrismJS-Komponenten hinzugefügt werden."
 
-#: ../en/news/client-side-syntax-highlighting.md:184
+#: ../en/news/client-side-syntax-highlighting.md:183
 msgid "## Using the Qgoda Syntax Highlighter Plug-In"
 msgstr "## Verwendung des Syntax-Highlighter-Plug-Ins von Qgoda"
 
-#: ../en/news/client-side-syntax-highlighting.md:186
+#: ../en/news/client-side-syntax-highlighting.md:185
 msgid "Fenced code-blocks are not always enough:"
 msgstr "Fenced Code-Blöcke sind nicht immer ausreichend:"
 
-#: ../en/news/client-side-syntax-highlighting.md:188
+#: ../en/news/client-side-syntax-highlighting.md:187
 msgid ""
 "1. The markdown processor may not support them, or not support a language "
 "specification.\n"
@@ -7725,11 +7938,11 @@ msgstr ""
 "2. Oft müssen weitere Attribute von HTML-Elementen, insbesondere CSS-Klassen "
 "gesetzt werden."
 
-#: ../en/news/client-side-syntax-highlighting.md:191
+#: ../en/news/client-side-syntax-highlighting.md:190
 msgid "### Installation"
 msgstr "### Installation"
 
-#: ../en/news/client-side-syntax-highlighting.md:193
+#: ../en/news/client-side-syntax-highlighting.md:192
 msgid ""
 "You can install the\n"
 "[Qgoda highlighter plug-in](https://github.com/gflohr/qgoda-plugin-tt2-"
@@ -7741,7 +7954,7 @@ msgstr ""
 "highlight)\n"
 "wird wie jedes andere Plug-in installiert, normalerweise also so:"
 
-#: ../en/news/client-side-syntax-highlighting.md:204
+#: ../en/news/client-side-syntax-highlighting.md:203
 msgid ""
 "You can use `yarn add gflohr/qgoda-plugin-tt2-highlight` if you prefer "
 "`yarn` over\n"
@@ -7750,11 +7963,11 @@ msgstr ""
 "Mit `yarn` statt `npm` lautet das Kommando `yarn add gflohr/qgoda-plugin-tt2-"
 "highlight`."
 
-#: ../en/news/client-side-syntax-highlighting.md:207
+#: ../en/news/client-side-syntax-highlighting.md:206
 msgid "### Usage"
 msgstr "## Verwendung"
 
-#: ../en/news/client-side-syntax-highlighting.md:209
+#: ../en/news/client-side-syntax-highlighting.md:208
 msgid ""
 "Now you have to use\n"
 "[Template Toolkit](http://www.template-toolkit.org/)\n"
@@ -7764,7 +7977,7 @@ msgstr ""
 "[Template Toolkit](http://www.template-toolkit.org/)\n"
 "aktiviert:"
 
-#: ../en/news/client-side-syntax-highlighting.md:225
+#: ../en/news/client-side-syntax-highlighting.md:224
 msgid ""
 "All positional arguments to the filter plug-in (line 2) are added to the "
 "CSS\n"
@@ -7776,7 +7989,7 @@ msgstr ""
 "Klasse des umgebenden `<pre>`-Elements zugefügt. Die benannten Argument "
 "dagegen werden in HTML-Attribute und ihre entsprechenden Werte umgewandelt."
 
-#: ../en/news/client-side-syntax-highlighting.md:229
+#: ../en/news/client-side-syntax-highlighting.md:228
 msgid ""
 "[@ WRAPPER components/infobox.html\n"
 "           type='info' title='Positional and Named Arguments' @]\n"
@@ -7791,17 +8004,21 @@ msgid ""
 "</p>\n"
 "[@ END @]"
 msgstr ""
-" \n"
-"Note that you have to quote all keys that contain non-alphanumeric "
-"characters!\n"
-"Values always have to be quoted (unless they refer to a variable)."
-"ührungszeichen gesetzt werden (es sei denn, sie refererieren eine Variable)."
 
-#: ../en/news/client-side-syntax-highlighting.md:240
+#: ../en/news/client-side-syntax-highlighting.md:239
 msgid "The above example will result in the following HTML code:"
 msgstr "Das obige Beispiel erzeugt den folgenden HTML-Code:"
 
-#: ../en/news/client-side-syntax-highlighting.md:250
+#: ../en/news/client-side-syntax-highlighting.md:249
+#, fuzzy
+#| msgid ""
+#| "Provided that you have correctly loaded the PrismJS `line-numbers` plug-"
+#| "in, this\n"
+#| "will highlight the code as JavaScript in the browser, add line numbers in "
+#| "front of every\n"
+#| "line and start the line numbering with line 5.  For\n"
+#| "instance, the code examples on this very page are \n"
+#| "produced with directives like this"
 msgid ""
 "Provided that you have correctly loaded the PrismJS `line-numbers` plug-in, "
 "this\n"
@@ -7809,7 +8026,7 @@ msgid ""
 "front of every\n"
 "line and start the line numbering with line 5.  For\n"
 "instance, the code examples on this very page are \n"
-"produced with directives like this"
+"produced with directives like this:"
 msgstr ""
 "Vorausgesetzt, dass das Plug-In `line-numbers` von PrismJS korrekt "
 "eingebunden wurde, wird dieser Code im Browser als JavaScript hervorgehoben, "
@@ -7817,11 +8034,11 @@ msgstr ""
 "5 beginnt. Die Code-Beispiele auf dieser Seite wurden beispielsweise mit "
 "Direktiven wie dieser erzeugt:"
 
-#: ../en/news/client-side-syntax-highlighting.md:256
+#: ../en/news/client-side-syntax-highlighting.md:255
 msgid "### Page-wide Defaullts"
 msgstr "### Vorgaben für die ganze Seite"
 
-#: ../en/news/client-side-syntax-highlighting.md:258
+#: ../en/news/client-side-syntax-highlighting.md:257
 msgid ""
 "It is quite likely that all code blocks on a page are in\n"
 "the same programming language and should share their\n"
@@ -7834,7 +8051,7 @@ msgstr ""
 "die ganze Seite geltende Einstellungen direkt in der `USE`-Direktive "
 "vergeben, mit der der Filter geladen wird."
 
-#: ../en/news/client-side-syntax-highlighting.md:276
+#: ../en/news/client-side-syntax-highlighting.md:275
 msgid ""
 "All `FILTER` invocations will now share the same settings,\n"
 "respectively, they will receive the sum of the arguments\n"
@@ -7844,7 +8061,7 @@ msgstr ""
 "erhalten sie Die Summe aller Argumente, die für `USE` *und* für `FILETR` "
 "übergeben wurden."
 
-#: ../en/news/client-side-syntax-highlighting.md:280
+#: ../en/news/client-side-syntax-highlighting.md:279
 msgid ""
 "If you want to disable a certain CSS class for an\n"
 "individual `FILTER`, just pass the class name with a\n"
@@ -7853,7 +8070,7 @@ msgstr ""
 "Um eine bestimmte CSS-Klasse für einen einzelnen \"FILTER\" zu deaktivieren, "
 "übergibt man diesen Klassennamen mit vorangestelltem Minuszeichen (-):"
 
-#: ../en/news/client-side-syntax-highlighting.md:294
+#: ../en/news/client-side-syntax-highlighting.md:293
 msgid ""
 "This code block will now as an exception not be\n"
 "highlighted as JavaScript but as HTML."
@@ -7861,11 +8078,11 @@ msgstr ""
 "Dieser Codeblock wird nun ausnahmsweise nicht als JavaScript, sondern als "
 "HTML hervorgehobe."
 
-#: ../en/news/client-side-syntax-highlighting.md:297
+#: ../en/news/client-side-syntax-highlighting.md:296
 msgid "## Alternative: Use a JavaScript Hack"
 msgstr "## Alternative: Ein JavaScript-Hack"
 
-#: ../en/news/client-side-syntax-highlighting.md:299
+#: ../en/news/client-side-syntax-highlighting.md:298
 msgid ""
 "[Using the Qgoda syntax highlighter plug-in](#using-the-qgoda-syntax-"
 "highlighter-plug-in)\n"
@@ -7881,7 +8098,7 @@ msgstr ""
 "kleinen JavaScript-Hack, der es erlaubt, das Plug-In `line-numbers\" direkt "
 "mit fenced Code-Blocks zu aktivieren:"
 
-#: ../en/news/client-side-syntax-highlighting.md:315
+#: ../en/news/client-side-syntax-highlighting.md:314
 msgid ""
 "See the [JavaScript source code](https://github.com/gflohr/qgoda-c/blob/"
 "master/_assets/js/line-numbers.js)\n"
@@ -7890,19 +8107,19 @@ msgstr ""
 "Siehe den entsprechenden [JavaScript-Quelltext](https://github.com/gflohr/"
 "qgoda-c/blob/master/_assets/js/line-numbers.js) für Einzelheiten!"
 
-#: ../en/news/client-side-syntax-highlighting.md:318
+#: ../en/news/client-side-syntax-highlighting.md:317
 msgid "## Caveats"
 msgstr "## Stolpersteine"
 
-#: ../en/news/client-side-syntax-highlighting.md:320
+#: ../en/news/client-side-syntax-highlighting.md:319
 msgid "There are two little gotchas that you have to keep in mind."
-msgstr "Es gibt zwei kleine Problemchen, die man beachten muss:"
+msgstr "Es gibt zwei kleine Problemchen, die man beachten muss."
 
-#: ../en/news/client-side-syntax-highlighting.md:322
+#: ../en/news/client-side-syntax-highlighting.md:321
 msgid "### Code Blocks Without Language Specification"
 msgstr "Code-Blöcke ohne Sprachangabe"
 
-#: ../en/news/client-side-syntax-highlighting.md:324
+#: ../en/news/client-side-syntax-highlighting.md:323
 msgid ""
 "If you use a fenced\n"
 "code block or the qgoda highlighter plug-in without a language "
@@ -7924,7 +8141,7 @@ msgstr ""
 "jeden betreffenden Code-Block mit der Sprache “None” oder mit der CSS-Klasse "
 "“language-none” markieren, oder wieder etwas JavaScript bemühen:"
 
-#: ../en/news/client-side-syntax-highlighting.md:344
+#: ../en/news/client-side-syntax-highlighting.md:343
 msgid ""
 "You may argue that the check in line 4 will miss `pre` elements that have a "
 "class attribute\n"
@@ -7937,7 +8154,7 @@ msgstr ""
 "allerdings nicht passieren, weil alle Blöcke generiert sind, und sie eben "
 "*kein* Class-Attribut haben."
 
-#: ../en/news/client-side-syntax-highlighting.md:348
+#: ../en/news/client-side-syntax-highlighting.md:347
 msgid ""
 "Well, not 100 % true. If you created such a block with the highlighter plug-"
 "in,\n"
@@ -7950,11 +8167,11 @@ msgstr ""
 "haben. Aber das ist deine eigene Schuld, und es ist offensichtlich, wie man "
 "das Problem behebt."
 
-#: ../en/news/client-side-syntax-highlighting.md:352
+#: ../en/news/client-side-syntax-highlighting.md:351
 msgid "### Using the CSS-Modules And Line-Numbers Plug-In Simultaneously"
 msgstr "### Gleichzeitige Verwendung von `css-modules` und `line-numbers`"
 
-#: ../en/news/client-side-syntax-highlighting.md:354
+#: ../en/news/client-side-syntax-highlighting.md:353
 msgid ""
 "The other glitch is rather esoteric and caused by a little flaw in the plug-"
 "in system\n"
@@ -7968,7 +8185,7 @@ msgstr ""
 "dazu, automatisch Namensräume für CSS-Klassen und ID-Attribute nach [BEM-"
 "Methodologie](https://en.bem.info/) zu verwenden."
 
-#: ../en/news/client-side-syntax-highlighting.md:359
+#: ../en/news/client-side-syntax-highlighting.md:358
 msgid ""
 "The `line-numbers` plug-in on the other hand ignores BEM.  It searches for "
 "code blocks\n"
@@ -7982,7 +8199,7 @@ msgstr ""
 "Präfix zum Stylen als auch die Variante ohne Präfix für den JavaScript-Code "
 "des Plug-Ins."
 
-#: ../en/news/client-side-syntax-highlighting.md:363
+#: ../en/news/client-side-syntax-highlighting.md:362
 msgid ""
 "You can see how this is done in the\n"
 "[source code of this page](https://github.com/gflohr/qgoda-site/blame/master/"
@@ -7992,7 +8209,7 @@ msgstr ""
 "(https://github.com/gflohr/qgoda-site/blame/master/en/news/client-side-"
 "syntax-highlighting.md) entnehmen."
 
-#: ../en/news/client-side-syntax-highlighting.md:366
+#: ../en/news/client-side-syntax-highlighting.md:365
 msgid ""
 "The BEM-style class name is stored in the variable `css.prism.line_numbers`. "
 "The hash\n"
@@ -8019,6 +8236,9 @@ msgstr "Weiterlesen"
 msgctxt "dateFormat"
 msgid "%b, %d %Y"
 msgstr "%d. %b %Y"
+
+#~ msgid "## Template Code"
+#~ msgstr "## Template-Code"
 
 #, fuzzy
 #~| msgid "### Listings"

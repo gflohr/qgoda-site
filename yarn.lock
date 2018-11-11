@@ -4182,9 +4182,9 @@ q@^1.1.2:
   resolved "https://registry.yarnpkg.com/q/-/q-1.5.1.tgz#7e32f75b41381291d04611f1bf14109ac00651d7"
   integrity sha1-fjL3W0E4EpHQRhHxvxQQmsAGUdc=
 
-qgoda-plugin-tt2-highlight@gflohr/qgoda-plugin-tt2-highlight:
+qgoda-tt2-plugin-highlight@gflohr/qgoda-tt2-plugin-highlight:
   version "0.1.2"
-  resolved "https://codeload.github.com/gflohr/qgoda-plugin-tt2-highlight/tar.gz/d61413b32dfe1a06700f09be980df14eee6bb935"
+  resolved "https://codeload.github.com/gflohr/qgoda-tt2-plugin-highlight/tar.gz/4f8d61c2395beec572d15e7a89cc5cc49123396d"
 
 qs@0.4.x:
   version "0.4.2"

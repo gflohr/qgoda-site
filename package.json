@@ -39,7 +39,7 @@
     "postcss-modules": "^1.1.0",
     "postcss-scss": "^1.0.2",
     "prismjs": "PrismJS/prism",
-    "qgoda-plugin-tt2-highlight": "gflohr/qgoda-plugin-tt2-highlight",
+    "qgoda-tt2-plugin-highlight": "gflohr/qgoda-tt2-plugin-highlight",
     "sass-loader": "^6.0.6",
     "tether": "^1.3.4",
     "timestamp-webpack-plugin": "^0.2.3",

@@ -254,7 +254,8 @@ and so on.
 #### `extender`
 
 The extender used for creating subsequent listings. Defaults to the extender
-of the current document.
+of the current document.  The extender has to include a possible leading
+dot! You must use `.html`,  not `html`.
 
 ### Output
 

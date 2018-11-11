@@ -32,7 +32,7 @@ What else do you have to know?
 * If A is related to B, then B is related to A (makes sense, doesn't it?)
 * Related documents are sorted by relevance.
 
-### Multi-lingual sites.
+### Multi-lingual sites
 
 In a multi-lingual site, you use `q.lrelated()` instead of `q.related()`:
 
