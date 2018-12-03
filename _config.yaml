@@ -32,6 +32,7 @@ defaults:
         - button
         - dateFormat
         - readMore
+        - tags
   - files: 
       - /en
       - /_includes/en

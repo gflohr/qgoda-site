@@ -6,7 +6,7 @@ order: 10
 view: docs.html
 description: How to install Qgoda and its dependencies on your local system
 ---
-Qgoda has not yet been officially released.  The installation is therefore still a little bit awkward.
+You can install and run Qgoda in a couple of ways.
 
 <qgoda-toc/>
 
@@ -25,7 +25,8 @@ https://www.docker.com/get-docker.
 Check your vendor's documentation for that!
 
 3. In a [shell](http://www.guido-flohr.net/en/command-line/), run
-the command `$ docker run --rm -it -v $(pwd):/data gflohr/qgoda`.  You may have to add the user that runs the command to the group "docker"
+the command `$ docker run --name qgoda -p 3000:3000 --rm -it -v $(pwd):/data gflohr/qgoda watch`.
+You may have to add the user that runs the command to the group "docker"
 if you get an error like "permission denied".
 
 4. You can create an alias, so that you do not have to type in
@@ -34,7 +35,25 @@ you have to open `~/.bash_profile`, `~/.bashrc`, `~/.alias`, `~/.zshrc`
 or similar and add this line:
 
 ```bash
-alias qgoda='docker run --rm -it -v $(pwd):/data gflohr/qgoda'
+alias qgoda='docker run --name qgoda -p 3000:3000 --rm -it -v $(pwd):/data gflohr/qgoda'
+```
+
+With this alias, you can now run all qgoda commands like the native version
+described in this documentation.
+
+### Installation from CPAN
+
+You can also install from [CPAN](https://www.cpan.org/).  Note that the
+name of the Perl module is "Qgoda", not "qgoda". Install it like this:
+
+```bash
+$ sudo cpanm install Qgoda
+```
+
+If you don't have `cpanm` installed, you can try this instead:
+
+```bash
+$ perl -MCPAN -e "install Qgoda"
 ```
 
 ### Installation From Github Sources
@@ -58,7 +77,7 @@ Configuring /path/to/sources/qgoda ... OK
 If that command succeeds, you are done.  If you get something like "-cpanm: command not found", you have to install the conventional way:
 
 ```bash
-qgdoa $ perl Makefile.PL
+$ perl Makefile.PL
 Warning: prerequisite Archive::Extract 0 not found.
 Warning: prerequisite File::HomeDir 0 not found.
 Warning: prerequisite File::Globstar 0.4 not found.

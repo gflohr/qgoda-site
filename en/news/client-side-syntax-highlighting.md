@@ -4,7 +4,11 @@ name: client side syntax-highlighting
 view: docs.html
 date: 2018-11-05
 category: Tutorial
-tags: Tutorial Howto
+tags:
+    - Syntax Highlighting
+    - JavaScript
+    - Tutorial
+    - Howto
 ---
 <!--qgoda-no-xgettext-->
 [%- USE q = Qgoda -%]
