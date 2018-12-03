@@ -2905,9 +2905,7 @@ msgid "How to install Qgoda and its dependencies on your local system"
 msgstr ""
 
 #: ../en/docs/installation.md:9
-msgid ""
-"Qgoda has not yet been officially released.  The installation is therefore "
-"still a little bit awkward."
+msgid "You can install and run Qgoda in a couple of ways."
 msgstr ""
 
 #: ../en/docs/installation.md:13
@@ -2941,12 +2939,13 @@ msgstr ""
 #: ../en/docs/installation.md:27
 msgid ""
 "3. In a [shell](http://www.guido-flohr.net/en/command-line/), run\n"
-"the command `$ docker run --rm -it -v $(pwd):/data gflohr/qgoda`.  You may "
-"have to add the user that runs the command to the group \"docker\"\n"
+"the command `$ docker run --name qgoda -p 3000:3000 --rm -it -v $(pwd):/data "
+"gflohr/qgoda watch`.\n"
+"You may have to add the user that runs the command to the group \"docker\"\n"
 "if you get an error like \"permission denied\"."
 msgstr ""
 
-#: ../en/docs/installation.md:31
+#: ../en/docs/installation.md:32
 msgid ""
 "4. You can create an alias, so that you do not have to type in\n"
 "the Docker command-line options all the time.  Depending on your operating "
@@ -2955,23 +2954,60 @@ msgid ""
 "or similar and add this line:"
 msgstr ""
 
-#: ../en/docs/installation.md:36
+#: ../en/docs/installation.md:37
 msgid ""
 "```bash\n"
-"alias qgoda='docker run --rm -it -v $(pwd):/data gflohr/qgoda'\n"
+"alias qgoda='docker run --name qgoda -p 3000:3000 --rm -it -v $(pwd):/data "
+"gflohr/qgoda'\n"
 "```"
 msgstr ""
 
-#: ../en/docs/installation.md:40
+#: ../en/docs/installation.md:41
+msgid ""
+"With this alias, you can now run all qgoda commands like the native version\n"
+"described in this documentation."
+msgstr ""
+
+#: ../en/docs/installation.md:44
+#, fuzzy
+#| msgid "### Installation"
+msgid "### Installation from CPAN"
+msgstr "### Installation"
+
+#: ../en/docs/installation.md:46
+msgid ""
+"You can also install from [CPAN](https://www.cpan.org/).  Note that the\n"
+"name of the Perl module is \"Qgoda\", not \"qgoda\". Install it like this:"
+msgstr ""
+
+#: ../en/docs/installation.md:49
+msgid ""
+"```bash\n"
+"$ sudo cpanm install Qgoda\n"
+"```"
+msgstr ""
+
+#: ../en/docs/installation.md:53
+msgid "If you don't have `cpanm` installed, you can try this instead:"
+msgstr ""
+
+#: ../en/docs/installation.md:55
+msgid ""
+"```bash\n"
+"$ perl -MCPAN -e \"install Qgoda\"\n"
+"```"
+msgstr ""
+
+#: ../en/docs/installation.md:59
 msgid "### Installation From Github Sources"
 msgstr ""
 
-#: ../en/docs/installation.md:42
+#: ../en/docs/installation.md:61
 msgid ""
 "You first have to checkout the sources from github in a suitable directory."
 msgstr ""
 
-#: ../en/docs/installation.md:44
+#: ../en/docs/installation.md:63
 msgid ""
 "```bash\n"
 "$ git clone https://github.com/gflohr/qgoda.git\n"
@@ -2979,11 +3015,11 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/installation.md:49
+#: ../en/docs/installation.md:68
 msgid "Then try:"
 msgstr ""
 
-#: ../en/docs/installation.md:51
+#: ../en/docs/installation.md:70
 msgid ""
 "```bash\n"
 "qgoda $ sudo cpanm .\n"
@@ -2993,16 +3029,16 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/installation.md:58
+#: ../en/docs/installation.md:77
 msgid ""
 "If that command succeeds, you are done.  If you get something like \"-cpanm: "
 "command not found\", you have to install the conventional way:"
 msgstr ""
 
-#: ../en/docs/installation.md:60
+#: ../en/docs/installation.md:79
 msgid ""
 "```bash\n"
-"qgdoa $ perl Makefile.PL\n"
+"$ perl Makefile.PL\n"
 "Warning: prerequisite Archive::Extract 0 not found.\n"
 "Warning: prerequisite File::HomeDir 0 not found.\n"
 "Warning: prerequisite File::Globstar 0.4 not found.\n"
@@ -3022,21 +3058,21 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/installation.md:80
+#: ../en/docs/installation.md:99
 msgid ""
 "Note the lines starting with \"Warning: prerequisite ...\".  They are not "
 "warnings but errors because these missing dependencies will prevent Qgoda "
 "from working.  You can install them with:"
 msgstr ""
 
-#: ../en/docs/installation.md:82
+#: ../en/docs/installation.md:101
 msgid ""
 "```bash\n"
 "qgoda $ sudo cpan install Archive::Extract File::HomeDir File::Globstar\n"
 "```"
 msgstr ""
 
-#: ../en/docs/installation.md:86
+#: ../en/docs/installation.md:105
 msgid ""
 "Of course, you have to specify the modules that are missing on *your* "
 "system.\n"
@@ -3044,12 +3080,12 @@ msgid ""
 "prerequisites, possibly asking you for permission first."
 msgstr ""
 
-#: ../en/docs/installation.md:89
+#: ../en/docs/installation.md:108
 msgid ""
 "Once all prerequistes have been installed, proceed with the installation:"
 msgstr ""
 
-#: ../en/docs/installation.md:91
+#: ../en/docs/installation.md:110
 msgid ""
 "```bash\n"
 "qgoda $ perl Makefile.PL\n"
@@ -3058,15 +3094,15 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/installation.md:97
+#: ../en/docs/installation.md:116
 msgid "### Installation Outside of `$PATH`"
 msgstr ""
 
-#: ../en/docs/installation.md:99
+#: ../en/docs/installation.md:118
 msgid "It is possible that you see the following warning:"
 msgstr ""
 
-#: ../en/docs/installation.md:101
+#: ../en/docs/installation.md:120
 msgid ""
 "```core\n"
 "***\n"
@@ -3087,7 +3123,7 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/installation.md:118
+#: ../en/docs/installation.md:137
 msgid ""
 "If you see this warning, your best choice is to follow the advice and re-run "
 "the command as specified.  Another option is to fix the problem for all Perl "
@@ -3095,7 +3131,7 @@ msgid ""
 "normally `~/.bash_profile` (the tilde `~` stands for your home-directory):"
 msgstr ""
 
-#: ../en/docs/installation.md:120
+#: ../en/docs/installation.md:139
 msgid ""
 "```bash\n"
 "# Make Perl programs executable in $PATH.\n"
@@ -3112,68 +3148,68 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/installation.md:134
+#: ../en/docs/installation.md:153
 msgid ""
 "You have to terminate your current shell in order to activate the change.\n"
 "But the change is now persistent.  It will work for all future Perl versions."
 msgstr ""
 
-#: ../en/docs/installation.md:137
+#: ../en/docs/installation.md:156
 msgid "Other options are to create an alias to the location of the script:"
 msgstr ""
 
-#: ../en/docs/installation.md:139
+#: ../en/docs/installation.md:158
 msgid ""
 "```core\n"
 "alias qgoda=/opt/local/libexec/perl5.26/sitebin/qgoda\n"
 "```"
 msgstr ""
 
-#: ../en/docs/installation.md:143
+#: ../en/docs/installation.md:162
 msgid "Or you can create a symbolic link:"
 msgstr ""
 
-#: ../en/docs/installation.md:145
+#: ../en/docs/installation.md:164
 msgid ""
 "```core\n"
 "$ sudo ln -s /opt/local/libexec/perl5.26/sitebin/qgoda /usr/local/bin/qgoda\n"
 "```"
 msgstr ""
 
-#: ../en/docs/installation.md:149
+#: ../en/docs/installation.md:168
 msgid "But that will no longer work if your Perl executable is upgraded."
 msgstr ""
 
-#: ../en/docs/installation.md:151
+#: ../en/docs/installation.md:170
 msgid "## Installing Node.js"
 msgstr ""
 
-#: ../en/docs/installation.md:153
+#: ../en/docs/installation.md:172
 msgid ""
 "[Node.js](https://nodejs.org/en/) is an interpreter for JavaScript that runs "
 "outside of the browser.  It is not a strict requirement for Qgoda but most "
 "Qgoda sites will make use of it."
 msgstr ""
 
-#: ../en/docs/installation.md:155
+#: ../en/docs/installation.md:174
 msgid ""
 "The [Node.js website](https://nodejs.org/en/) usually offers a download link "
 "for the software but if you are using a package manager, you should rather "
 "install Node.js with that."
 msgstr ""
 
-#: ../en/docs/installation.md:157
+#: ../en/docs/installation.md:176
 msgid "### Yarn or NPM"
 msgstr ""
 
-#: ../en/docs/installation.md:159
+#: ../en/docs/installation.md:178
 msgid ""
 "[NPM](https://yarnpkg.com/en/) is the Node Package Manager and is used to "
 "install packages and their dependencies for Node.js.  [Yarn](https://yarnpkg."
 "com/en/) is an alternative to NPM and does essentially the same."
 msgstr ""
 
-#: ../en/docs/installation.md:161
+#: ../en/docs/installation.md:180
 msgid ""
 "The official Qgoda themes all use Yarn but you can easily change that.  "
 "First, exchange `yarn` with `npm` in the section `scripts` of the theme's `P:"
@@ -3181,11 +3217,11 @@ msgid ""
 "helpers` in Qgoda's main configuration file `P:_config.yaml`."
 msgstr ""
 
-#: ../en/docs/installation.md:163
+#: ../en/docs/installation.md:182
 msgid "#### Installing NPM"
 msgstr ""
 
-#: ../en/docs/installation.md:165
+#: ../en/docs/installation.md:184
 msgid ""
 "As `npm` ships with Node.js you normally don't have to install it.  If you "
 "have installed Node.js with your package manager, it is possible that you "
@@ -3193,11 +3229,11 @@ msgid ""
 "MacPorts."
 msgstr ""
 
-#: ../en/docs/installation.md:167
+#: ../en/docs/installation.md:186
 msgid "#### Installing yarn"
 msgstr ""
 
-#: ../en/docs/installation.md:169
+#: ../en/docs/installation.md:188
 msgid "See https://yarnpkg.com/en/docs/install for instructions."
 msgstr ""
 
@@ -3623,11 +3659,9 @@ msgid ""
 msgstr ""
 
 #: ../en/docs/multilanguage-configuration.md:6
-#, fuzzy
-#| msgctxt "description"
-#| msgid "All configuration variables required for a fully internalized site"
 msgctxt "description"
-msgid "All configuration variables required for a fully internalized site."
+msgid ""
+"All configuration variables required for a fully internationalized site."
 msgstr ""
 "Alle Konfigurationsvariablen, die für eine vollständig internationalisierte "
 "Site benötigt werden."
@@ -8411,6 +8445,29 @@ msgstr ""
 #: ../en/news/client-side-syntax-highlighting.md:2
 msgctxt "title"
 msgid "Client-Side Syntax Highlighting"
+msgstr "Client-seitiges Syntax-Highlighting"
+
+#: ../en/news/client-side-syntax-highlighting.md:7
+msgctxt "tags.1"
+msgid "JavaScript"
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:7
+msgctxt "tags.2"
+msgid "Tutorial"
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:7
+msgctxt "tags.3"
+msgid "Howto"
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:7
+#, fuzzy
+#| msgctxt "title"
+#| msgid "Client-Side Syntax Highlighting"
+msgctxt "tags.0"
+msgid "Syntax Highlighting"
 msgstr "Client-seitiges Syntax-Highlighting"
 
 #: ../en/news/client-side-syntax-highlighting.md:18
