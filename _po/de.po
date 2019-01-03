@@ -3696,9 +3696,9 @@ msgid ""
 "(https://tools.ietf.org/html/rfc4647#section-2.1) but without any asterisk "
 "(`*`) characters. An asterisk would not make sense here anyway."
 msgstr ""
-"Eine [RFC4647 section 2.1](https://tools.ietf.org/html/rfc4647#section-2.1) "
-"konforme Liste von Sprachbezeichnern, jedoch ohne den Stern (`*`), der in "
-"diesem Kontext keinen Sinn ergibt."
+"Eine zu [RFC4647 section 2.1](https://tools.ietf.org/html/"
+"rfc4647#section-2.1) konforme Liste von Sprachbezeichnern, jedoch ohne den "
+"Stern (`*`), der in diesem Kontext keinen Sinn ergibt."
 
 #: ../en/docs/multilanguage-configuration.md:40
 msgid "The first language is the default language of your site."
@@ -8448,18 +8448,8 @@ msgid "Client-Side Syntax Highlighting"
 msgstr "Client-seitiges Syntax-Highlighting"
 
 #: ../en/news/client-side-syntax-highlighting.md:7
-msgctxt "tags.1"
-msgid "JavaScript"
-msgstr ""
-
-#: ../en/news/client-side-syntax-highlighting.md:7
 msgctxt "tags.2"
 msgid "Tutorial"
-msgstr ""
-
-#: ../en/news/client-side-syntax-highlighting.md:7
-msgctxt "tags.3"
-msgid "Howto"
 msgstr ""
 
 #: ../en/news/client-side-syntax-highlighting.md:7
@@ -8469,6 +8459,16 @@ msgstr ""
 msgctxt "tags.0"
 msgid "Syntax Highlighting"
 msgstr "Client-seitiges Syntax-Highlighting"
+
+#: ../en/news/client-side-syntax-highlighting.md:7
+msgctxt "tags.1"
+msgid "JavaScript"
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:7
+msgctxt "tags.3"
+msgid "Howto"
+msgstr ""
 
 #: ../en/news/client-side-syntax-highlighting.md:18
 msgid ""

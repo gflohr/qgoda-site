@@ -6465,23 +6465,23 @@ msgid "Client-Side Syntax Highlighting"
 msgstr ""
 
 #: ../en/news/client-side-syntax-highlighting.md:7
-msgctxt "tags.1"
-msgid "JavaScript"
-msgstr ""
-
-#: ../en/news/client-side-syntax-highlighting.md:7
 msgctxt "tags.2"
 msgid "Tutorial"
 msgstr ""
 
 #: ../en/news/client-side-syntax-highlighting.md:7
-msgctxt "tags.3"
-msgid "Howto"
+msgctxt "tags.0"
+msgid "Syntax Highlighting"
 msgstr ""
 
 #: ../en/news/client-side-syntax-highlighting.md:7
-msgctxt "tags.0"
-msgid "Syntax Highlighting"
+msgctxt "tags.1"
+msgid "JavaScript"
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:7
+msgctxt "tags.3"
+msgid "Howto"
 msgstr ""
 
 #: ../en/news/client-side-syntax-highlighting.md:18
