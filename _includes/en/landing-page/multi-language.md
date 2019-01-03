@@ -3,7 +3,7 @@ view: landing-feature-left.html
 title: Multi-Language Blogging
 classes: item_2
 button: Learn More
-button_link: /en/docs/multi-language-overview/
+button_link: /en/docs/multilanguage-overview/
 image: /images/earth-ko-640w.png
 image_alt: The earth from space
 ---
