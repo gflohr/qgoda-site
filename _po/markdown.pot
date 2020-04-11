@@ -452,7 +452,7 @@ msgstr ""
 
 #: ../en/docs/command-line-interface.md:44
 msgid ""
-"<dt><strong>-V, --verbose</strong></dt>\n"
+"<dt><strong>-V, --version</strong></dt>\n"
 "  <dd>Causes qgoda to display version information and exit immediately.  All other options and commands are ignored.</dd>\n"
 "</dl>"
 msgstr ""
@@ -3876,7 +3876,7 @@ msgid ""
 "defaults:\n"
 "  - files:\n"
 "      - /*/**\n"
-"  - values:\n"
+"    values:\n"
 "      translate:\n"
 "        - title\n"
 "        - description\n"
@@ -6465,22 +6465,22 @@ msgid "Client-Side Syntax Highlighting"
 msgstr ""
 
 #: ../en/news/client-side-syntax-highlighting.md:7
-msgctxt "tags.2"
-msgid "Tutorial"
-msgstr ""
-
-#: ../en/news/client-side-syntax-highlighting.md:7
-msgctxt "tags.0"
+msgctxt "tags"
 msgid "Syntax Highlighting"
 msgstr ""
 
 #: ../en/news/client-side-syntax-highlighting.md:7
-msgctxt "tags.1"
+msgctxt "tags"
+msgid "Tutorial"
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:7
+msgctxt "tags"
 msgid "JavaScript"
 msgstr ""
 
 #: ../en/news/client-side-syntax-highlighting.md:7
-msgctxt "tags.3"
+msgctxt "tags"
 msgid "Howto"
 msgstr ""
 

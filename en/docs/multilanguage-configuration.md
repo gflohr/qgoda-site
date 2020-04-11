@@ -25,8 +25,8 @@ A typical multilanguage configuration in `P:_config.yaml` looks like this:
 linguas: [en-us, bg, de]
 po:
   textdomain: net.qgoda.www
-  msgid_bugs_address: Guido Flohr <guido.flohr@cantanea.com>
-  copyright_holder: cantanea EOOD <http://www.cantanea.com/>
+  msgid-bugs-address: Guido Flohr <guido.flohr@cantanea.com>
+  copyright-holder: cantanea EOOD <http://www.cantanea.com/>
   reload: 1
 ```
 <!--/qgoda-no-xgettext-->
@@ -50,13 +50,13 @@ An arbitrary identifier for your website. The only restriction is that it has to
 This variable is also mandatory.
 
 <!--qgoda-no-xgettext-->
-### `po.msgid_bugs_address`
+### `po.msgid-bugs-address`
 <!--/qgoda-no-xgettext-->
 
 An address where translators should report problems with the original text to translate. The variable is optional.
 
 <!--qgoda-no-xgettext-->
-### `po.copyright_holder`
+### `po.copyright-holder`
 <!--/qgoda-no-xgettext-->
 
 The copyright holder of the original content. The variable is optional.

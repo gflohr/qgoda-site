@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: qgoda-site 0.1\n"
 "Report-Msgid-Bugs-To: 'Guido Flohr <guido.flohr@cantanea.com>'\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2018-11-11 22:59+0200\n"
+"PO-Revision-Date: 2019-05-28 11:02+0300\n"
 "Last-Translator: Guido Flohr <guido.flohr@cantanea.com>\n"
 "Language-Team: German\n"
 "Language: de\n"
@@ -98,7 +98,7 @@ msgstr "Start"
 #: ../_includes/en/landing-page/about-duktape.md:3
 msgctxt "title"
 msgid "Duktape"
-msgstr ""
+msgstr "Duktape"
 
 #: ../_includes/en/landing-page/about-duktape.md:6
 msgid ""
@@ -107,6 +107,9 @@ msgid ""
 "possibility to choose between JavaScript and Perl implementations and pick\n"
 "whatever does the job best."
 msgstr ""
+"Qgoda wird mit der einsetzbaren JavaScript-Engine Duktape ausgeliefert. Dies "
+"gibt uns die Möglichkeit, jederzeit zwischen JavaScript- und Perl-"
+"Implementierungen zu wählen."
 
 #: ../_includes/en/landing-page/about-nodejs.md:3
 msgctxt "title"
@@ -625,11 +628,11 @@ msgstr ""
 
 #: ../en/docs/command-line-interface.md:27
 msgid "## Global Options"
-msgstr ""
+msgstr "## Globale Optionen"
 
 #: ../en/docs/command-line-interface.md:29
 msgid "Qgoda currently supports the following global options."
-msgstr ""
+msgstr "Qgoda unterstützt zur Zeit die folgenden globalen Optionen"
 
 #: ../en/docs/command-line-interface.md:31
 msgid ""
@@ -638,6 +641,10 @@ msgid ""
 "  <dd>Activates quiet mode.  In quiet mode, only errors and fatal errors are "
 "displayed.</dd>"
 msgstr ""
+"<dl>\n"
+"  <dt><strong>-q, —quiet</strong></dt>\n"
+"  <dd>Aktiviert den Quiet-Modus. In diesem Modus werden nur Fehler und "
+"fatale Fehler angezeigt.</dd>"
 
 #: ../en/docs/command-line-interface.md:35
 msgid ""
@@ -645,12 +652,19 @@ msgid ""
 "  <dd>Enables verbose logging.  A lot more details are displayed.  You will "
 "normally select verbose mode only, when tracking down errors.</dd>"
 msgstr ""
+"<dt><strong>-v, —verbose</strong></dt>\n"
+"  <dd>Aktiviert ausführliche Protokollierung mit zahlreichen Details. Dieser "
+"Modus wird normalerweise nur aktiviert, um Fehler einzugrenzen und zu "
+"beheben.</dd>"
 
 #: ../en/docs/command-line-interface.md:38
 msgid ""
 "<dt><strong>--log-stderr</strong></dt>\n"
 "  <dd>Causes qgoda to log to standard error instead of standard output.</dd>"
 msgstr ""
+"<dt><strong>—log-stderr</strong></dt>\n"
+"  <dd>Bewirkt, dass Qgoda auf die Standard-Fehlerausgabe statt der Standard-"
+"Ausgabe protokolliert.</dd>"
 
 #: ../en/docs/command-line-interface.md:41
 msgid ""
@@ -658,14 +672,25 @@ msgid ""
 "  <dd>Causes qgoda to display usage information and exit immediately.  All "
 "other options and commands are ignored.</dd>"
 msgstr ""
+"<dt><strong>-h, —help</strong></dt>\n"
+"  <dd>Qgoda gibt eine Zusammenfassung der Benutzung aus und terminiert "
+"sofort. Alle anderen Optionen und Befehle werden ignoriert.</dd>"
 
 #: ../en/docs/command-line-interface.md:44
+#, fuzzy
+#| msgid ""
+#| "<dt><strong>-h, --help</strong></dt>\n"
+#| "  <dd>Causes qgoda to display usage information and exit immediately.  "
+#| "All other options and commands are ignored.</dd>"
 msgid ""
-"<dt><strong>-V, --verbose</strong></dt>\n"
+"<dt><strong>-V, --version</strong></dt>\n"
 "  <dd>Causes qgoda to display version information and exit immediately.  All "
 "other options and commands are ignored.</dd>\n"
 "</dl>"
 msgstr ""
+"<dt><strong>-h, —help</strong></dt>\n"
+"  <dd>Qgoda gibt eine Zusammenfassung der Benutzung aus und terminiert "
+"sofort. Alle anderen Optionen und Befehle werden ignoriert.</dd>"
 
 #: ../en/docs/command-line-interface.md:48
 msgid "## Commands"
@@ -677,10 +702,13 @@ msgid ""
 "currently `build`, `watch`, `config`, `init`, `dump`, `markdown`, "
 "`xgettext`, and `po`."
 msgstr ""
+"Das nächste Token auf der Kommandozeile muss eins der unterstützten "
+"Kommandos sein, zur Zeit „build“, „watch“, „config“, „init“, „dump“, "
+"„markdown“, „xgettext“ oder „po“."
 
 #: ../en/docs/command-line-interface.md:52
 msgid "### Command Options and Arguments"
-msgstr ""
+msgstr "### Kommandozeilen-Optionen und -Argumente"
 
 #: ../en/docs/command-line-interface.md:54
 msgid ""
@@ -689,6 +717,11 @@ msgid ""
 "`COMMAND` with one of the supported commands.  The option `-h` or `--help` "
 "is supported by all qgoda commands."
 msgstr ""
+"Der Rest der Kommandozeile besteht aus Optionen für das jeweilige Kommando. "
+"Mit `qgoda KOMMANDO --help` werden hilfreiche Hinweise für ein bestimmtes "
+"Kommando angezeigt (wobei `KOMMANDO` natürlich mit einem der unterstützten "
+"Kommandos ersetzt werden muss). Die Option `-h` bzw. `--help` wird von allen "
+"Qgoda-Kommandos unterstützt."
 
 #: ../en/docs/command-line-interface.md:56
 msgid ""
@@ -696,26 +729,35 @@ msgid ""
 "leave the pager.  `SPACE` scrolls one page down, cursor-down or `j` scrolls "
 "one line down, cursor-up or `k` scrolls one line up, `h` shows more help."
 msgstr ""
+"Die Benutzungshinweise werden mithilfe des System-Pacers angezeigt. Mit der "
+"Taste `q` wird dieser verlassen. `LEERZEICHEN` blättert eine Seite, Pfeil-"
+"nach-unten oder `j` eine Zeile vor. Mit `k` wird eine Zeile "
+"zurückgeblättert, und `h` zeigt weitere Hilfe."
 
 #: ../en/docs/command-line-interface.md:58
 msgid "### Availabe Commands"
-msgstr ""
+msgstr "### Unterstützte Kommandos"
 
 #: ../en/docs/command-line-interface.md:64
 msgid ""
 "The commands `build` instructs qgoda to build the site and exit.  Helper "
 "programs are *not* executed!"
 msgstr ""
+"Das Kommando `build` weist Qgoda an, die Site (neu) zu generieren und sich "
+"dann zu beenden. Hilfsprogramme werden *nicht* ausgeführt!"
 
 #: ../en/docs/command-line-interface.md:70
 msgid ""
 "Same as `build` above but instead of terminating, qgoda watches the file "
 "system for changes and triggers a re-build after a source file has changed."
 msgstr ""
+"Tut das gleiche wie `build`, aber statt sich zu beenden, wartet Qgoda auf "
+"Änderungen an Dateien, und initiiert eine Neu-Generierung, sobald sich eine "
+"Quelldatei ändert."
 
 #: ../en/docs/command-line-interface.md:72
 msgid "Helper applications are started in parallel."
-msgstr ""
+msgstr "Hilfsprogramme werden parallel gestartet."
 
 #: ../en/docs/command-line-interface.md:78
 msgid ""
@@ -5377,7 +5419,7 @@ msgid ""
 "defaults:\n"
 "  - files:\n"
 "      - /*/**\n"
-"  - values:\n"
+"    values:\n"
 "      translate:\n"
 "        - title\n"
 "        - description\n"
@@ -8448,25 +8490,25 @@ msgid "Client-Side Syntax Highlighting"
 msgstr "Client-seitiges Syntax-Highlighting"
 
 #: ../en/news/client-side-syntax-highlighting.md:7
-msgctxt "tags.2"
-msgid "Tutorial"
-msgstr ""
-
-#: ../en/news/client-side-syntax-highlighting.md:7
 #, fuzzy
 #| msgctxt "title"
 #| msgid "Client-Side Syntax Highlighting"
-msgctxt "tags.0"
+msgctxt "tags"
 msgid "Syntax Highlighting"
 msgstr "Client-seitiges Syntax-Highlighting"
 
 #: ../en/news/client-side-syntax-highlighting.md:7
-msgctxt "tags.1"
+msgctxt "tags"
+msgid "Tutorial"
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:7
+msgctxt "tags"
 msgid "JavaScript"
 msgstr ""
 
 #: ../en/news/client-side-syntax-highlighting.md:7
-msgctxt "tags.3"
+msgctxt "tags"
 msgid "Howto"
 msgstr ""
 

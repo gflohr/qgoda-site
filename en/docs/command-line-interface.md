@@ -41,7 +41,7 @@ Qgoda currently supports the following global options.
   <dt><strong>-h, --help</strong></dt>
   <dd>Causes qgoda to display usage information and exit immediately.  All other options and commands are ignored.</dd>
 
-  <dt><strong>-V, --verbose</strong></dt>
+  <dt><strong>-V, --version</strong></dt>
   <dd>Causes qgoda to display version information and exit immediately.  All other options and commands are ignored.</dd>
 </dl>
 

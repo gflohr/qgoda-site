@@ -94,7 +94,7 @@ variables for every document. This is normally done by specifying
 defaults:
   - files:
       - /*/**
-  - values:
+    values:
       translate:
         - title
         - description

@@ -62,13 +62,13 @@ Container for various <q-term>i18n</q-term> settings, see below.
 [%- END %]
 
 [% WRAPPER components/variable.html
-   variable="po.copyright_holder" type='String'
+   variable="po.copyright-holder" type='String'
    default='none' -%]
-See <a href="[% q.llink(name='multilanguage-configuration') %]#po.copyright_holder-code-"><code>po.copyright_holder</code> in Multilanguage Configuration</a>.
+See <a href="[% q.llink(name='multilanguage-configuration') %]#po.copyright-holder-code-"><code>po.copyright-holder</code> in Multilanguage Configuration</a>.
 [%- END %]
 
 [% WRAPPER components/variable.html
-   variable="po.from_code" type='String'
+   variable="po.from-code" type='String'
    default='utf-8' -%]
 See <a href="[% q.llink(name='multilanguage-configuration') %]#po.from-code-code-"><code>po.from-code</code> in Multilanguage Configuration</a>.
 [%- END %]
@@ -80,9 +80,9 @@ See <a href="[% q.llink(name='multilanguage-configuration') %]#po.msgfmt-code-">
 [%- END %]
 
 [% WRAPPER components/variable.html
-   variable="po.msgid_bugs_address" type='String'
+   variable="po.msgid-bugs-address" type='String'
    default='none' -%]
-See <a href="[% q.llink(name='multilanguage-configuration') %]#po.msgid_bugs_address-code-"><code>po.msgid_bugs_address</code> in Multilanguage Configuration</a>.
+See <a href="[% q.llink(name='multilanguage-configuration') %]#po.msgid-bugs-address-code-"><code>po.msgid-bugs-address</code> in Multilanguage Configuration</a>.
 [%- END %]
 
 [% WRAPPER components/variable.html
