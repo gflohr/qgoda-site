@@ -10,7 +10,7 @@ After quite a long time, a new qgoda version has been released.  The reason
 for the long delay were two particularly nasty issues and, like always,
 lack of time.
 
-Version 0.9.5 is available for download either as a regular Perl install, a
+Version 0.9.7 is available for download either as a regular Perl install, a
 docker image or from [github](https://github.com/gflohr/qgoda/releases).
 
 The biggest problem at the moment - and it is still unresolved - is that
