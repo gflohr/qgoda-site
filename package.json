@@ -30,7 +30,7 @@
     "file-loader": "^1.1.5",
     "font-awesome": "^4.7.0",
     "jquery": "^3.5.0",
-    "node-sass": "^4.7.2",
+    "node-sass": "^4.13.1",
     "popper.js": "^1.12.9",
     "postcss-cssnext": "^3.0.2",
     "postcss-font-magician": "^2.1.0",
