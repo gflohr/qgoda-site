@@ -56,9 +56,16 @@ If you don't have `cpanm` installed, you can try this instead:
 $ perl -MCPAN -e "install Qgoda"
 ```
 
+[% WRAPPER components/infobox.html
+           type='warning' title='Broken Dependency' %]
+At the time of this writing, the latest version of the Qgoda dependency
+"JavaScript::Duktape_XS" is broken. You have to install an older version
+explicitly with this command: <code>cpanm GONZUS/JavaScript-Duktape-XS-0.000074.tar.gz</code>
+[% END %]
+
 ### Installation From Github Sources
 
-You first have to checkout the sources from github in a suitable directory.
+You first have to check out the sources from github in a suitable directory.
 
 ```bash
 $ git clone https://github.com/gflohr/qgoda.git
@@ -112,6 +119,13 @@ qgoda $ perl Makefile.PL
 qgoda $ make
 qgoda $ sudo make install
 ```
+
+[% WRAPPER components/infobox.html
+           type='warning' title='Broken Dependency' %]
+At the time of this writing, the latest version of the Qgoda dependency
+"JavaScript::Duktape_XS" is broken. You have to install an older version
+explicitly with this command: <code>cpan GONZUS/JavaScript-Duktape-XS-0.000074.tar.gz</code>
+[% END %]
 
 ### Installation Outside of `$PATH`
 
