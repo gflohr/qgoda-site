@@ -21,7 +21,7 @@
   "license": "GPL-3.0",
   "dependencies": {
     "ajv": "^6.5.4",
-    "bootstrap": "~> 4.1.2",
+    "bootstrap": "~> 4.3.1",
     "browser-sync": "^2.14.0",
     "clean-webpack-plugin": "^0.1.17",
     "copy-webpack-plugin": "^4.2.3",
@@ -30,7 +30,7 @@
     "file-loader": "^1.1.5",
     "font-awesome": "^4.7.0",
     "jquery": "^3.5.0",
-    "node-sass": "^4.7.2",
+    "node-sass": "^4.13.1",
     "popper.js": "^1.12.9",
     "postcss-cssnext": "^3.0.2",
     "postcss-font-magician": "^2.1.0",
