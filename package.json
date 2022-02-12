@@ -20,7 +20,7 @@
   "author": "Guido Flohr <guido.flohr@cantanea.com> (http://www.guido.flohr.net/)",
   "license": "GPL-3.0",
   "dependencies": {
-    "ajv": "^6.5.4",
+    "ajv": "^6.12.3",
     "bootstrap": "~> 4.3.1",
     "browser-sync": "^2.14.0",
     "clean-webpack-plugin": "^0.1.17",
