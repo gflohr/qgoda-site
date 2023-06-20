@@ -1,8 +1,9 @@
 const webpack = require('webpack');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const TerserPlugin = require('terser-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const fse = require('fs-extra');
 
 module.exports = {
@@ -32,36 +33,15 @@ module.exports = {
 				test: /\.css$/i,
 				use: [
 					MiniCssExtractPlugin.loader,
-					'css-loader',
 					{
-						loader: 'postcss-loader',
+						loader: 'css-loader',
 						options: {
-							postcssOptions: {
-								plugins: [
-									[
-										'postcss-preset-env',
-										{
-										},
-									],
-								],
-							},
+							importLoaders: 2,
 						},
 					},
-				],
-			},
-			{
-				test: /\.s[ac]ss$/i,
-				use: [
 					{
-						loader: MiniCssExtractPlugin.loader,
-						options: {
-							publicPath: ''
-						}
+						loader: 'postcss-loader',
 					},
-					// Translates CSS into CommonJS
-					'css-loader',
-					// Compiles Sass to CSS
-					'sass-loader',
 				],
 			},
 			{
@@ -86,17 +66,24 @@ module.exports = {
 			'window.jQuery': 'jquery',
 			Popper: ['popper.js', 'default'],
 		}),
+		new CopyWebpackPlugin({
+			patterns: [
+				/* Anybody gets this running with require()?  */
+				{
+					from: 'node_modules/wowjs/dist/wow.min.js',
+					to: __dirname + '/assets'
+				},
+				{
+					from: '_assets/start-wow.js',
+					to: __dirname + '/assets'
+				}
+			]
+		}),
 		new function() {
 			this.apply = (compiler) => {
 				compiler.hooks.done.tap("Copy when done", () => {
 					const srcdir = __dirname + '/assets';
 					const destdir = __dirname + '/_site/assets';
-					fse.copy('./node_modules/wowjs/dist/wow.min.js', srcdir + '/wow.min.js', { overwrite: true })
-						.then(() => console.log('updated wow.min.js'))
-						.catch(err => console.error(err));
-					fse.copy('./_assets/start-wow.js', srcdir + '/start-wow.js', { overwrite: true })
-						.then(() => console.log('start-wow.js'))
-						.catch(err => console.error(err));
 					fse.copy(srcdir, destdir, { overwrite: true })
 						.then(() => console.log('updated assets'))
 						.catch(err => console.error(err));

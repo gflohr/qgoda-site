@@ -1,9 +1,8 @@
 // Bootstrap.
 require('bootstrap');
 
-require('./scss/talks/bootstrap.scss');
-require('./scss/font-awesome.scss');
+require('./css/talks/bootstrap.css');
 
-require('./scss/talks.scss');
+require('./css/talks.css');
 
 require('./js/keyboard-nav.js');

@@ -1,9 +1,8 @@
 // Bootstrap.
 require('bootstrap');
+require('./css/bootstrap.css');
 
-require('./scss/bootstrap.scss');
-require('./scss/font-awesome.scss');
-require('./scss/prism.scss');
+require('./css/prism.css');
 
 // Prism.
 var Prism = require('prismjs');
@@ -23,9 +22,13 @@ require('prismjs/components/prism-json');
 require('prismjs/plugins/line-numbers/prism-line-numbers');
 require('prismjs/plugins/autolinker/prism-autolinker');
 
+// Prism CSS.
+require('prismjs/themes/prism.css');
+require('prismjs/plugins/line-numbers/prism-line-numbers.css');
+
 // Custom SCSS.
-require('./scss/qgoda.scss');
-require('./scss/toc.scss');
+require('./css/qgoda.css');
+require('./css/toc.css');
 
 // Custom JS.
 require('./js/code-language');

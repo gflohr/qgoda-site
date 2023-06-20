@@ -1,0 +1,33 @@
+:root {
+	--primary: #2b689c;
+	--warning: #d97319;
+	--warning-opaque: rgba(217, 115, 25, 0.75);
+}
+
+.bg-warning-opaque {
+	background-color: var(--warning-opaque);
+}
+
+.nav-link {
+	position: relative;
+	font-weight: 500;
+	color: #cdddeb;
+}
+
+.alert p {
+	margin-bottom: 0;
+}
+
+.figure img {
+	width: 100%;
+}
+
+code {
+	background-color: #f5f2f0;
+	padding-left: 0.1rem;
+	padding-right: 0.1rem;
+}
+
+pre code {
+	background-color: white;
+}

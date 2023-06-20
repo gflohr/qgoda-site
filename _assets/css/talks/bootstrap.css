@@ -1,0 +1,13 @@
+.nav-link {
+	position: relative;
+	font-weight: 500;
+	color: #cdddeb;
+}
+
+.figure img {
+	width: 100%;
+}
+
+.container {
+	margin-top: 3rem;
+}
