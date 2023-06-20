@@ -7,7 +7,6 @@ description: Complete List Of Configuration Variables
 ---
 <!--qgoda-no-xgettext-->
 [% USE q = Qgoda %]
-[% PROCESS "functions/css-modules.tt" %]
 <!--/qgoda-no-xgettext-->
 
 The following configuration variables from the file `P:_config.yml` are understood by Qgoda:

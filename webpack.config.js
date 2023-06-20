@@ -90,11 +90,11 @@ module.exports = {
 				compiler.hooks.done.tap("Copy when done", () => {
 					const srcdir = __dirname + '/assets';
 					const destdir = __dirname + '/_site/assets';
-					fse.copy('./node_modules/wowjs/dist/wow.min.js', __dirname + '_assets', { overwrite: true })
+					fse.copy('./node_modules/wowjs/dist/wow.min.js', srcdir + '/wow.min.js', { overwrite: true })
 						.then(() => console.log('updated wow.min.js'))
 						.catch(err => console.error(err));
-					fse.copy('./_assets/start-wow.js', __dirname + '_assets', { overwrite: true })
-						.then(() => console.log('updated wow.min.js'))
+					fse.copy('./_assets/start-wow.js', srcdir + '/start-wow.js', { overwrite: true })
+						.then(() => console.log('start-wow.js'))
 						.catch(err => console.error(err));
 					fse.copy(srcdir, destdir, { overwrite: true })
 						.then(() => console.log('updated assets'))

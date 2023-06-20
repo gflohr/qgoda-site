@@ -1,6 +1,5 @@
 [% USE q = Qgoda %]
 [% USE gtx = Gettext('net.qgoda.www', asset.lingua) %]
-[% PROCESS "functions/css-modules.tt" %]
 [% posts = q.llistPosts().nsortBy('date.epoch').reverse %]
 [% FOREACH post IN posts %]
 <div class="[% css.qgoda.teaser %]">

@@ -1,10 +1,11 @@
+track-dependencies: false
 title: Qgoda
 linguas: [en, de]
 exclude: 
   - /node_modules
   - /package.json
   - /webpack.config.js
-  - /yarn.lock
+  - /pacakge-lock.json
   - /TODO
   - /LocaleData
   - /postcss.config.js

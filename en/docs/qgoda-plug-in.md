@@ -6,7 +6,6 @@ view: docs.html
 description: Functions provided by the Qgoda Plug-In
 ---
 [% USE q = Qgoda %]
-[% PROCESS "functions/css-modules.tt" %]
 
 A lot of Qgoda's functionality is available from the Qgoda plug-in.  You
 activate like this in a template:

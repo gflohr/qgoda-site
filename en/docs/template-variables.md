@@ -6,7 +6,6 @@ view: docs.html
 description: Standard and Pre-Defined Template Variables
 ---
 [% USE q = Qgoda %]
-[% PROCESS "functions/css-modules.tt" %]
 Not all of the following variables are necessarily available everywhere.
 Many of them like `V:asset.name` are mere conventions.
 

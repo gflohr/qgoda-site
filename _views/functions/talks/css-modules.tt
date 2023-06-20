@@ -1,2 +1,0 @@
-[% USE q = Qgoda %]
-[% css.talks = q.loadJSON('_assets/scss/talks.scss.json').kebapSnake %]

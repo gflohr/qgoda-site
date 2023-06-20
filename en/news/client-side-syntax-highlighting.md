@@ -13,7 +13,6 @@ tags:
 <!--qgoda-no-xgettext-->
 [%- USE q = Qgoda -%]
 [%- USE Highlight -%]
-[%- PROCESS "functions/css-modules.tt" -%]
 <!--/qgoda-no-xgettext-->
 A very common requirement is to have syntax-highlighting applied to code blocks.  Best
 practice with Qgoda is to just mark code blocks semantically correct and let the client

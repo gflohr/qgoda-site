@@ -1,4 +1,3 @@
-[% PROCESS "functions/landing-page/css-modules.tt" %]
 [% classes = asset.classes %]
 [% USE gtx = Gettext('net.qgoda.www', asset.lingua) %]
 [% posts = q.llistPosts().nsortBy('date.epoch').reverse() %]
