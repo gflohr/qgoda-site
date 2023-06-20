@@ -1,16 +1,16 @@
 [% USE gtx = Gettext('net.qgoda.www', asset.lingua) %]
 <!-- HEADER -->
-<header id="[% css.start.home %]">
+<header id="home">
   <!-- Color over Image -->
   <div class="[% css.start.color_overlay %]">
 
   <!-- navbar log -->
-  <div class="navbar [% css.start.logo_nav %]">
+  <div class="navbar logo_nav">
     <div class="container">
       <div class="row">
         <div class="col-6">
           <div class="navbar-header">
-            <div class="[% css.start.logo %]">
+            <div class="logo">
               <img src="/images/qgoda-logo-white.svg" 
                    alt="Qgoda static site generator logo">
             </div>
@@ -27,9 +27,9 @@
               <i class="fa fa-language"></i>
               [% FOREACH lingua IN config.linguas %]
                 [% IF lingua == asset.lingua %]
-                <span class="[% css.start.lingua_current %] [% css.start.lingua_link %]">[% lingua %]</span>
+                <span class="lingua_current lingua_link">[% lingua %]</span>
                 [% ELSE %]
-                <a href="/[% lingua %]/" class="nav-link [% css.start.lingua_link %]">[% lingua %]</a>
+                <a href="/[% lingua %]/" class="nav-link lingua_link">[% lingua %]</a>
                 [% END %]
               [% END %]
             </h2>
@@ -42,14 +42,14 @@
   <!-- Heading And Texts -->
   <div class="container">
     <div class="row">
-      <div class="col-md-10 offset-md-1 [% css.start.intro_section %]">
-        <h1 class="[% css.start.intro %]">[% asset.title %]</h1>
-        <div class="[% css.start.sub_heading %]">
+      <div class="col-md-10 offset-md-1 intro_section">
+        <h1 class="intro">[% asset.title %]</h1>
+        <div class="sub_heading">
           [% asset.content %]
         </div>
     
         <!-- button -->[% button_link = asset.button_link %]
-        <a class="btn btn-common [% css.start.btn_common %] wow bounceIn"
+        <a class="btn btn-common btn_common wow bounceIn"
            href="#[% css.start.$button_link %]">[% asset.button %]</a>
       </div>
     </div>
