@@ -22,13 +22,10 @@ require('prismjs/components/prism-json');
 // Prism plug-ins.
 require('prismjs/plugins/line-numbers/prism-line-numbers');
 require('prismjs/plugins/autolinker/prism-autolinker');
-require('prismjs/plugins/custom-class/prism-custom-class');
-Prism.plugins.customClass.map(require('./scss/prism.scss.json'));
 
 // Custom SCSS.
 require('./scss/qgoda.scss');
 require('./scss/toc.scss');
 
 // Custom JS.
-require('./js/line-numbers.js'); // FIXME! Is this needed?
 require('./js/code-language');

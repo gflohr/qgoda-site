@@ -1,130 +1,106 @@
-const webpack = require('webpack'),
-     ExtractTextPlugin = require('extract-text-webpack-plugin'),
-     CleanWebpackPlugin = require('clean-webpack-plugin'),
-     CopyWebpackPlugin = require('copy-webpack-plugin'),
-     TimestampWebpackPlugin = require('timestamp-webpack-plugin'),
-     UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+const webpack = require('webpack');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const fse = require('fs-extra');
 
 module.exports = {
-  entry: {
-      bundle: './_assets',
-      start: './_assets/start.js',
-      talks: './_assets/talks.js'
-  },
-  output: {
-    path: __dirname + '/assets',
-    filename: '[name].min.js'
-  },
-  module: {
-    loaders: [
-      {
-        test: /\.css$/,
-        use: ExtractTextPlugin.extract({
-          use: [
-            {
-              loader: 'css-loader',
-              options: {
-                importLoaders: 1,
-                sourceMap: true,
-                minimize: true
-              }
-            },
-            {
-              loader: 'postcss-loader',
-              options: {
-                sourceMap: true
-              }
-            }
-          ]
-        })
-      },
-      {
-        test: /\.scss$/,
-        exclude: /(animate|bootstrap|font-awesome|toc)\.scss$/,
-        use: ExtractTextPlugin.extract({
-          use: [
-            {
-              loader: 'css-loader',
-              options: {
-                importLoaders: 2,
-                sourceMap: true,
-                //minimize: true
-              }
-            },
-            {
-              loader: 'postcss-loader',
-              options: {
-                sourceMap: true
-              }
-            },
-            {
-              loader: 'sass-loader',
-              options: {
-                  sourceMap: true
-              }
-            }
-          ]
-        }),
-      },
-      {
-        test: /(animate|bootstrap|font-awesome|toc).scss$/,
-        use: ExtractTextPlugin.extract({
-          use: [
-            {
-              loader: 'css-loader',
-              options: {
-                importLoaders: 1,
-                sourceMap: true,
-                minimize: true
-              }
-            },
-            {
-              loader: 'sass-loader',
-              options: {
-                sourceMap: true
-              }
-            }
-          ]
-        }),
-      },
-      {
-        test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        loader: "url-loader?limit=10000&mimetype=application/font-woff"
-      },
-      { 
-        test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        loader: "file-loader"
-      },
-      {
-        test: /\.(png|gif|svg|jpe?g)$/,
-        loader: 'file-loader'
-      }
-    ]
-  },
-  devtool: 'source-map',
-  plugins: [
-    new CleanWebpackPlugin(['assets']),
-    new webpack.ProvidePlugin({
-      $: 'jquery',
-      jQuery: 'jquery',
-      'window.jQuery': 'jquery',
-      Popper: ['popper.js', 'default'],
-    }),
-    new CopyWebpackPlugin([
-      /* Anybody gets this running with require()?  */
-      {
-        from: 'node_modules/wowjs/dist/wow.min.js',
-        to: __dirname + '/assets'
-      },
-      {
-        from: '_assets/start-wow.js',
-        to: __dirname + '/assets'
-      }
-    ]),
-    new ExtractTextPlugin('[name].min.css'),
-    new TimestampWebpackPlugin({
-      path: __dirname,
-      filename: '_timestamp.json'
-    })
-  ]
+	entry: {
+		bundle: './_assets/index.js',
+		start: './_assets/start.js',
+		talks: './_assets/talks.js',
+	},
+	output: {
+		path: __dirname + '/assets',
+		filename: '[name].min.js'
+	},
+	optimization: {
+		minimize: true,
+		minimizer: [
+			new TerserPlugin({
+				parallel: true,
+				terserOptions: {},
+			}),
+			new CssMinimizerPlugin()
+		],
+	},
+	module: {
+		rules: [
+			{
+				test: /\.css$/i,
+				use: [
+					MiniCssExtractPlugin.loader,
+					'css-loader',
+					{
+						loader: 'postcss-loader',
+						options: {
+							postcssOptions: {
+								plugins: [
+									[
+										'postcss-preset-env',
+										{
+										},
+									],
+								],
+							},
+						},
+					},
+				],
+			},
+			{
+				test: /\.s[ac]ss$/i,
+				use: [
+					{
+						loader: MiniCssExtractPlugin.loader,
+						options: {
+							publicPath: ''
+						}
+					},
+					// Translates CSS into CommonJS
+					'css-loader',
+					// Compiles Sass to CSS
+					'sass-loader',
+				],
+			},
+			{
+				test: /\.(ttf|eot|svg|woff2?)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+				type: 'asset/resource'
+			},
+			{
+				test: /\.(png|gif|svg|jpe?g)$/,
+				type: 'asset/resource'
+			}
+		]
+	},
+	devtool: 'source-map',
+	plugins: [
+		new CleanWebpackPlugin(),
+		new MiniCssExtractPlugin({
+			filename: '[name].min.css'
+		}),
+		new webpack.ProvidePlugin({
+			$: 'jquery',
+			jQuery: 'jquery',
+			'window.jQuery': 'jquery',
+			Popper: ['popper.js', 'default'],
+		}),
+		new function() {
+			this.apply = (compiler) => {
+				compiler.hooks.done.tap("Copy when done", () => {
+					const srcdir = __dirname + '/assets';
+					const destdir = __dirname + '/_site/assets';
+					fse.copy('./node_modules/wowjs/dist/wow.min.js', __dirname + '_assets', { overwrite: true })
+						.then(() => console.log('updated wow.min.js'))
+						.catch(err => console.error(err));
+					fse.copy('./_assets/start-wow.js', __dirname + '_assets', { overwrite: true })
+						.then(() => console.log('updated wow.min.js'))
+						.catch(err => console.error(err));
+					fse.copy(srcdir, destdir, { overwrite: true })
+						.then(() => console.log('updated assets'))
+						.catch(err => console.error(err));
+				});
+			};
+		},
+	]
 };
