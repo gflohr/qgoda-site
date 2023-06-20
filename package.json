@@ -47,5 +47,8 @@
   "browserslist": [
     "> 1%",
     "last 2 versions"
-  ]
+  ],
+  "devDependencies": {
+    "postcss-font-magician": "^3.0.0"
+  }
 }

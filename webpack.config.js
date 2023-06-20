@@ -6,6 +6,7 @@ const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const fse = require('fs-extra');
 
 module.exports = {
+	mode: 'development',
 	entry: {
 		bundle: './_assets/index.js',
 		start: './_assets/start.js',

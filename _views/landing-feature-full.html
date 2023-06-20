@@ -1,7 +1,6 @@
-[% classes = asset.classes %]
 [% USE gtx = Gettext('net.qgoda.www', asset.lingua) %]
 [% posts = q.llistPosts().nsortBy('date.epoch').reverse() %]
-<div class="[% css.start.$classes %]">
+<div class="[% asset.classes %]">
   <div class="container">
     <div class="row wow fadeIn feature_content"
          data-wow-duration="2.40s">
