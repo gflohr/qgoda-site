@@ -1,7 +1,7 @@
 ---
 view: landing-feature-right.html
 title: Unlimited Taxonomies
-classes: item_1
+classes: item-1
 button: Learn More
 button_link: /en/docs/taxonomies/
 image: /images/drawers-start-640w.jpeg

@@ -1,7 +1,7 @@
 ---
 view: landing-feature-full.html
 title: News
-classes: item_0
+classes: item-0
 button: Read All
 button_link: /en/news/
 ---
