@@ -28,9 +28,12 @@ require('prismjs/plugins/autolinker/prism-autolinker');
 require('prismjs/themes/prism.css');
 require('prismjs/plugins/line-numbers/prism-line-numbers.css');
 
-// Custom SCSS.
+// Custom CSS.
 require('./css/qgoda.css');
 require('./css/toc.css');
+
+require('./css/cookie-consent.css');
+require('./js/cookie-consent.js');
 
 // Custom JS.
 require('./js/code-language');

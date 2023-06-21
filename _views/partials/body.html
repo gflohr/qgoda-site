@@ -36,12 +36,13 @@
 
   <!-- Footer Section -->
   <footer id="footer" class="bg-warning-opaque">
-  [% INCLUDE partials/body/footer.html %]
+  [% INCLUDE partials/body/footer.html need_row=1 %]
   </footer>
   <!-- Footer Section End -->
 
   [% INCLUDE partials/body/ga.html %]
   [% INCLUDE partials/body/github.html %]
+	[% INCLUDE "components/cookie-consent-banner.html" %]
   [% PROCESS functions/scripts.tt %]
 </body>
 
