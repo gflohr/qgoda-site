@@ -2,7 +2,7 @@
 [% posts = q.llistPosts().nsortBy('date.epoch').reverse() %]
 <div class="[% asset.classes %]">
   <div class="container">
-    <div class="row wow fadeIn feature_content"
+    <div class="row wow fadeIn feature-content"
          data-wow-duration="2.40s">
       <div class="col-12">
         <div class="">
@@ -21,7 +21,7 @@
           <p>[% posts.0.excerpt %]
           <!--</a>-->
           <a href="[% posts.0.permalink %]" class="more">[% gtx.gettext('Read More') %] →</a></p>
-        </div> 
+        </div>
       </div>
       <div class="col-sm-6 col-md-6">
         <div class="">
@@ -35,7 +35,7 @@
           <div>
             <p>[% posts.1.excerpt %]
             <a href="[% posts.1.permalink %]" class="more">[% gtx.gettext('Read More') %] →</a></p>
-          </div> 
+          </div>
         </div>
       </div>
       <div class="col">

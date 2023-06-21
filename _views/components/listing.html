@@ -4,13 +4,13 @@
 [% FOREACH post IN posts %]
 <div class="teaser">
   <h2>
-    <a href="[% post.permalink %]" class="teaser_link">
+    <a href="[% post.permalink %]" class="teaser-link">
   [% post.title %]
     </a>
   </h2>
 
-  <div class="teaser_date">
-    <a href="[% post.permalink %]" class="teaser_link">
+  <div class="teaser-date">
+    <a href="[% post.permalink %]" class="teaser-link">
       <!--TRANSLATORS: See "man strftime" for the meaning!-->
       <i class="fa fa-clock-o"></i>&nbsp;[% q.strftime(gtx.gettext('%B, %e %Y'), post.date, asset.lingua) %]
       [% IF post.type == 'post' %]
@@ -20,7 +20,7 @@
   </div>
 
   <p>
-    <a href="[% post.permalink %]" class="teaser_link">
+    <a href="[% post.permalink %]" class="teaser-link">
       [% post.excerpt %]
     </a>
   </p>
