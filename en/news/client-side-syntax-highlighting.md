@@ -315,7 +315,7 @@ if (options.debug) {
 <!--/qgoda-no-xgettext-->
 
 See the [JavaScript source code](https://github.com/gflohr/qgoda-c/blob/master/_assets/js/line-numbers.js)
-for details.
+for details!
 
 ## Caveats
 

@@ -23,6 +23,11 @@ a:hover {
 	background-color: #d87319 !important;
 }
 
+.btn-warning {
+	background-color: #d87319 !important;
+	color: white;
+}
+
 .alert-warning {
 	color: #713c0d;
 	background-color: #f7e3d1 !important;

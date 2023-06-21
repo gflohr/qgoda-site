@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: qgoda-site 0.1\n"
 "Report-Msgid-Bugs-To: 'Guido Flohr <guido.flohr@cantanea.com>'\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2019-05-28 11:02+0300\n"
+"PO-Revision-Date: 2023-06-21 20:36+0300\n"
 "Last-Translator: Guido Flohr <guido.flohr@cantanea.com>\n"
 "Language-Team: German\n"
 "Language: de\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.0.7\n"
+"X-Generator: Poedit 3.3.1\n"
 
 #: ../_views/components/back-to-listings.html:6
 msgid "Back to all news"
@@ -73,7 +73,7 @@ msgstr "Copyright &copy; {copyright_year} {copyright_holder}"
 
 #: ../_views/partials/body/footer.html:28
 msgid "Cookie Settings"
-msgstr ""
+msgstr "Cookie-Einstellungen"
 
 #: ../_views/partials/body/sidebar-top.html:9
 msgid "Star qgoda on GitHub"
@@ -604,25 +604,20 @@ msgstr "## Allgemeines zur Verwendung"
 msgid "The general usage pattern for qgoda is:"
 msgstr "Die allgemeine Verwendung von Qgoda sieht so aus:"
 
-#: ../en/docs/command-line-interface.md:15
-msgid ""
-"```bash\n"
-"$ qgoda [GLOBAL_OPTIONS] [COMMAND, [OPTIONS]]\n"
-"```"
-msgstr ""
-
-#: ../en/docs/command-line-interface.md:19
+#: ../en/docs/command-line-interface.md:21
 msgid "For example:"
 msgstr "Zum Beispiel:"
 
-#: ../en/docs/command-line-interface.md:21
+#: ../en/docs/command-line-interface.md:23
 msgid ""
+"<qgoda-no-gettext>\n"
 "```bash\n"
 "$ qgoda --verbose build --drafts --future\n"
-"```"
+"```\n"
+"<!--/qgoda-no-xgettext-->"
 msgstr ""
 
-#: ../en/docs/command-line-interface.md:25
+#: ../en/docs/command-line-interface.md:29
 msgid ""
 "That sets the global option `--verbose` to true and selects the qgoda "
 "command `build` with the options `--drafts` and `--future`."
@@ -630,15 +625,15 @@ msgstr ""
 "So wird die globale Option `—verbose` auf wahr gesetzt, und das Qgoda-"
 "Kommando `build` mit den Optionen `—darfst` und `—future` ausgewählt."
 
-#: ../en/docs/command-line-interface.md:27
+#: ../en/docs/command-line-interface.md:31
 msgid "## Global Options"
 msgstr "## Globale Optionen"
 
-#: ../en/docs/command-line-interface.md:29
+#: ../en/docs/command-line-interface.md:33
 msgid "Qgoda currently supports the following global options."
-msgstr "Qgoda unterstützt zur Zeit die folgenden globalen Optionen"
+msgstr "Qgoda unterstützt zur Zeit die folgenden globalen Optionen."
 
-#: ../en/docs/command-line-interface.md:31
+#: ../en/docs/command-line-interface.md:35
 msgid ""
 "<dl>\n"
 "  <dt><strong>-q, --quiet</strong></dt>\n"
@@ -650,7 +645,7 @@ msgstr ""
 "  <dd>Aktiviert den Quiet-Modus. In diesem Modus werden nur Fehler und "
 "fatale Fehler angezeigt.</dd>"
 
-#: ../en/docs/command-line-interface.md:35
+#: ../en/docs/command-line-interface.md:39
 msgid ""
 "<dt><strong>-v, --verbose</strong></dt>\n"
 "  <dd>Enables verbose logging.  A lot more details are displayed.  You will "
@@ -661,7 +656,7 @@ msgstr ""
 "Modus wird normalerweise nur aktiviert, um Fehler einzugrenzen und zu "
 "beheben.</dd>"
 
-#: ../en/docs/command-line-interface.md:38
+#: ../en/docs/command-line-interface.md:42
 msgid ""
 "<dt><strong>--log-stderr</strong></dt>\n"
 "  <dd>Causes qgoda to log to standard error instead of standard output.</dd>"
@@ -670,7 +665,7 @@ msgstr ""
 "  <dd>Bewirkt, dass Qgoda auf die Standard-Fehlerausgabe statt der Standard-"
 "Ausgabe protokolliert.</dd>"
 
-#: ../en/docs/command-line-interface.md:41
+#: ../en/docs/command-line-interface.md:45
 msgid ""
 "<dt><strong>-h, --help</strong></dt>\n"
 "  <dd>Causes qgoda to display usage information and exit immediately.  All "
@@ -680,27 +675,23 @@ msgstr ""
 "  <dd>Qgoda gibt eine Zusammenfassung der Benutzung aus und terminiert "
 "sofort. Alle anderen Optionen und Befehle werden ignoriert.</dd>"
 
-#: ../en/docs/command-line-interface.md:44
-#, fuzzy
-#| msgid ""
-#| "<dt><strong>-h, --help</strong></dt>\n"
-#| "  <dd>Causes qgoda to display usage information and exit immediately.  "
-#| "All other options and commands are ignored.</dd>"
+#: ../en/docs/command-line-interface.md:48
 msgid ""
 "<dt><strong>-V, --version</strong></dt>\n"
 "  <dd>Causes qgoda to display version information and exit immediately.  All "
 "other options and commands are ignored.</dd>\n"
 "</dl>"
 msgstr ""
-"<dt><strong>-h, —help</strong></dt>\n"
-"  <dd>Qgoda gibt eine Zusammenfassung der Benutzung aus und terminiert "
-"sofort. Alle anderen Optionen und Befehle werden ignoriert.</dd>"
+"<dt><strong>-V, --verbose</strong></dt>\n"
+"  <dd>Bewirkt, dass Qgoda Versionsinformationen und ausgibt und sofort "
+"terminiert. Alle anderen Optionen und Kommandos werden ignoriert.</dd>\n"
+"</dl>"
 
-#: ../en/docs/command-line-interface.md:48
+#: ../en/docs/command-line-interface.md:52
 msgid "## Commands"
 msgstr "## Kommandos"
 
-#: ../en/docs/command-line-interface.md:50
+#: ../en/docs/command-line-interface.md:54
 msgid ""
 "The next token on the command-line must be one of the supported commands, "
 "currently `build`, `watch`, `config`, `init`, `dump`, `markdown`, "
@@ -710,11 +701,11 @@ msgstr ""
 "Kommandos sein, zur Zeit „build“, „watch“, „config“, „init“, „dump“, "
 "„markdown“, „xgettext“ oder „po“."
 
-#: ../en/docs/command-line-interface.md:52
+#: ../en/docs/command-line-interface.md:56
 msgid "### Command Options and Arguments"
 msgstr "### Kommandozeilen-Optionen und -Argumente"
 
-#: ../en/docs/command-line-interface.md:54
+#: ../en/docs/command-line-interface.md:58
 msgid ""
 "The rest of the command-line are options specific to the selected command.  "
 "Try `qgoda COMMAND --help` for help for the specific command (replace "
@@ -727,7 +718,7 @@ msgstr ""
 "Kommandos ersetzt werden muss). Die Option `-h` bzw. `--help` wird von allen "
 "Qgoda-Kommandos unterstützt."
 
-#: ../en/docs/command-line-interface.md:56
+#: ../en/docs/command-line-interface.md:60
 msgid ""
 "The command help is displayed using the system pager.  Hit the letter `q` to "
 "leave the pager.  `SPACE` scrolls one page down, cursor-down or `j` scrolls "
@@ -738,11 +729,11 @@ msgstr ""
 "nach-unten oder `j` eine Zeile vor. Mit `k` wird eine Zeile "
 "zurückgeblättert, und `h` zeigt weitere Hilfe."
 
-#: ../en/docs/command-line-interface.md:58
+#: ../en/docs/command-line-interface.md:62
 msgid "### Availabe Commands"
 msgstr "### Unterstützte Kommandos"
 
-#: ../en/docs/command-line-interface.md:64
+#: ../en/docs/command-line-interface.md:68
 msgid ""
 "The commands `build` instructs qgoda to build the site and exit.  Helper "
 "programs are *not* executed!"
@@ -750,7 +741,7 @@ msgstr ""
 "Das Kommando `build` weist Qgoda an, die Site (neu) zu generieren und sich "
 "dann zu beenden. Hilfsprogramme werden *nicht* ausgeführt!"
 
-#: ../en/docs/command-line-interface.md:70
+#: ../en/docs/command-line-interface.md:74
 msgid ""
 "Same as `build` above but instead of terminating, qgoda watches the file "
 "system for changes and triggers a re-build after a source file has changed."
@@ -759,47 +750,66 @@ msgstr ""
 "Änderungen an Dateien, und initiiert eine Neu-Generierung, sobald sich eine "
 "Quelldatei ändert."
 
-#: ../en/docs/command-line-interface.md:72
+#: ../en/docs/command-line-interface.md:76
 msgid "Helper applications are started in parallel."
 msgstr "Hilfsprogramme werden parallel gestartet."
 
-#: ../en/docs/command-line-interface.md:78
+#: ../en/docs/command-line-interface.md:82
 msgid ""
 "Dumps the current configuration as <q-term>yaml:YAML</q-term> and exits.  "
 "The configuration printed is the result of merging the default configuration "
 "with the files `P:_config.yaml` and `P:_localconfig.yaml`."
 msgstr ""
+"Gibt die aktuelle Konfiguration als <q-term>yaml:YAML</q-term> aus und "
+"terminiert. Die Konfiguration wird aus der Zusammenführung der Default-"
+"Konfiguration mit den Dateien `P:_config.yaml` und `P:_localconfig.yaml` "
+"gewonnen."
 
-#: ../en/docs/command-line-interface.md:84
+#: ../en/docs/command-line-interface.md:88
 msgid "Initializes a new qgoda site."
-msgstr ""
+msgstr "Initialisiert eine neue Qgoda-Site."
 
-#: ../en/docs/command-line-interface.md:90
+#: ../en/docs/command-line-interface.md:94
 msgid ""
 "Dumps the content of the entire site.  The output is suitable for pumping it "
 "into external programs (for example full-text search engines like "
 "[elasticsearch](https://www.elastic.co/)."
 msgstr ""
+"Dumpt den kompletten Content der Seite. Die Ausgabe ist geeignet, um den "
+"Inhalt an externe Programm (zum Beispiel Volltext-Suchmaschinen wie "
+"[elasticsearch](https://www.elastic.co/) zu übergeben."
 
-#: ../en/docs/command-line-interface.md:96
+#: ../en/docs/command-line-interface.md:100
 msgid ""
 "Generates <q-term>html</q-term> from a <q-term>markdown</q-term> file.  This "
 "is meant for debugging problems with markdown rendering."
 msgstr ""
+"Generiert <q-term>html</q-term> aus einer <q-term>Markdown</q-term>-Datei. "
+"Damit können Probleme mit der Markdown-Verarbeitung untersucht werden."
 
-#: ../en/docs/command-line-interface.md:102
+#: ../en/docs/command-line-interface.md:106
 msgid ""
 "Various commands needed for multi-language sites.  See [% q.lanchor('mulit-"
 "language-overview') %] for details."
 msgstr ""
+"Diverse Kommandos für mehrsprachige Web-Sites. Siehe [% q.lanchor('mulit-"
+"language-overview') %] für Details."
 
-#: ../en/docs/command-line-interface.md:108
+#: ../en/docs/command-line-interface.md:112
 msgid ""
 "Extracts translatable snippets from the site's markdown source files into `."
 "po`. files.  This command is invoked implicitely by `qgoda po pot` (see "
 "above), and you normally don't have to use `qgoda xgettext` directly.  See "
 "[% q.lanchor('mulit-language-overview') %] for more information."
 msgstr ""
+"Extrahiert übersetzbare Schnipsels aus den Markdown-Quelldateien der Site in "
+"`.po`-Dateien. Dieses Kommand wird intern von `qgoda po pot` (siehe oben) "
+"aufgerufen, weshalb `qgoda xget\n"
+"\n"
+"Extracts translatable snippets from the site's markdown source files into `."
+"po`. files.  This command is invoked implicitely by `qgoda po pot` (see "
+"above), and you normally don't have to use `qgoda xgettext` directly.  See "
+"[% q.lanchor('mulit-language-overview') %] for more information."
 
 #: ../en/docs/configuration-variables.md:2
 msgctxt "title"
@@ -890,18 +900,15 @@ msgid ""
 "rfc3066\">HTTP language identifiers</a>.\n"
 "[%- END %]"
 msgstr ""
+"[% WRAPPER components/variable.html\n"
+"   variable=\"linguas\" type='Array'\n"
+"   default='undefined' -%]\n"
+"Eine Liste von Sprachcodes wie ”en”, ”de” und so weiter. Es wird empfohlen, "
+"<a href=\"https://tools.ietf.org/html/rfc3066\">HTTP-Sprach-Bezeichner</a> "
+"zu verwerden.\n"
+"[%- END %]"
 
 #: ../en/docs/configuration-variables.md:39
-#, fuzzy
-#| msgid ""
-#| "[% WRAPPER components/variable.html\n"
-#| "   variable=\"link_score\" type='Integer'\n"
-#| "   default=5 -%]\n"
-#| "The relation score that two documents that have a link between each other "
-#| "get.  Note that this is counted from each document's side.  So, if "
-#| "document A links to B and B links to A, the overall relation score "
-#| "between A and B is 10.\n"
-#| "[%- END %]"
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"link-score\" type='Integer'\n"
@@ -954,13 +961,6 @@ msgstr ""
 "[%- END %]"
 
 #: ../en/docs/configuration-variables.md:57
-#, fuzzy
-#| msgid ""
-#| "[% WRAPPER components/variable.html\n"
-#| "   variable=\"po\" type='Hash' \n"
-#| "   default='see below' -%]\n"
-#| "Container for various <q-term>i18n</q-term> settings, see below.\n"
-#| "[%- END %]"
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"po\" type='Hash'\n"
@@ -969,13 +969,12 @@ msgid ""
 "[%- END %]"
 msgstr ""
 "[% WRAPPER components/variable.html\n"
-"   variable=\"title\" type='String' \n"
-"   default='\"A New Qgoda Powered Site\"' -%]\n"
-"Der Name der Web-Site. Qgoda selbst verwendet diese Variable nicht.\n"
+"   variable=”po” type=’H’ash \n"
+"   default=’siehe ’unten -%]\n"
+"Container für etliche <q-term>i18n</q-term>-Einstellugen, siehe unten.\n"
 "[%- END %]"
 
 #: ../en/docs/configuration-variables.md:63
-#, fuzzy
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"po.copyright-holder\" type='String'\n"
@@ -986,9 +985,11 @@ msgid ""
 "[%- END %]"
 msgstr ""
 "[% WRAPPER components/variable.html\n"
-"   variable=\"title\" type='String' \n"
-"   default='\"A New Qgoda Powered Site\"' -%]\n"
-"Der Name der Web-Site. Qgoda selbst verwendet diese Variable nicht.\n"
+"   variable=\"po.copyright-holder\" type='String'\n"
+"   default='none' -%]\n"
+"Sie <a href=\"[% q.llink(name='multilanguage-configuration') %]#po.copyright-"
+"holder-code-\"><code>po.copyright-holder</code> in Mehrsprachigkeits-"
+"Konfiguration</a>.\n"
 "[%- END %]"
 
 #: ../en/docs/configuration-variables.md:69
@@ -1235,7 +1236,7 @@ msgstr "Konfiguration"
 #: ../en/docs/configuration.md:6
 msgctxt "description"
 msgid "How to modify the behavior of Qgoda."
-msgstr ""
+msgstr "Wie das Verhalten von Qgoda verändert werden kann."
 
 #: ../en/docs/configuration.md:8
 msgid ""
@@ -1243,12 +1244,14 @@ msgid ""
 "Qgoda runs without any configuration and you only have to configure Qgoda,\n"
 "when you want to change a certain behavior."
 msgstr ""
+"Die Qgoda-Konfiguration ist unkompliziert und hatte sinnvolle Defaults. "
+"Eigentlich läuft Qgoda uach ohne jede Konfiguration. Die Software muss nur "
+"dann\n"
+"konfiguriert werden, wenn das Default-Verhalten angepasst werden soll."
 
 #: ../en/docs/configuration.md:12
-#, fuzzy
-#| msgid "## Configuration"
 msgid "## Configuration Files"
-msgstr "## Konfiguration"
+msgstr "## Konfigurationsdateien"
 
 #: ../en/docs/configuration.md:14
 msgid ""
@@ -1682,8 +1685,8 @@ msgid ""
 "details of file name pattern matching."
 msgstr ""
 "Mit dem obigen Beispiel würde der Vorgabewert für `type`\n"
-"für alle Dateien, die auf  `index.*` oder `listing.*` passen auf \"listing"
-"\"\n"
+"für alle Dateien, die auf  `index.*` oder `listing.*` passen auf "
+"\"listing\"\n"
 "gesetzt. mit Ausnahme der Datei `/index.md`. Siehe das Kapitel\n"
 "[% q.lanchor(name='pattern-lists') %] für alle Details von Suchmustern\n"
 "für Dateinamen und Verzeichnisse."
@@ -1754,7 +1757,9 @@ msgstr ""
 "Kategorien. Beispiel:"
 
 #: ../en/docs/differences-to-jekyll.md:35
-msgid "See [- q.lanchor(name='listings') -] for more information."
+#, fuzzy
+#| msgid "See [- q.lanchor(name='listings') -] for more information."
+msgid "See [- q.lanchor(name='listings') -] for more information!"
 msgstr ""
 "Siehe [- q.lanchor(name='listings') -] for weiterführende Informationen!"
 
@@ -1774,9 +1779,14 @@ msgstr ""
 "aus:"
 
 #: ../en/docs/differences-to-jekyll.md:41
+#, fuzzy
+#| msgid ""
+#| "```tt2\n"
+#| "See [% q.lanchor(name='listings') %] for more information.\n"
+#| "```"
 msgid ""
 "```tt2\n"
-"See [% q.lanchor(name='listings') %] for more information.\n"
+"See [% q.lanchor(name='listings') %] for more information!\n"
 "```"
 msgstr ""
 "```markup\n"
@@ -2632,7 +2642,7 @@ msgid ""
 "at your disposal with a slightly more complicated syntax:"
 msgstr ""
 "Die Prüfung auf Gleichheit ist die Default-Bedingung, aber es stehen noch "
-"weitere, mit einer geringfügig komplizierteren Syntax zur Verfügung."
+"weitere, mit einer geringfügig komplizierteren Syntax zur Verfügung:"
 
 #: ../en/docs/filters.md:50
 msgid ""
@@ -2726,7 +2736,7 @@ msgid ""
 msgstr ""
 "Liefert wahr, wenn der Wert der Variablen im anderen Dokument als "
 "Zeichenkette kleiner als der angegebene Wert ist. \"aaa\" ist zum Beispiel "
-"als Zeichenkette kleiner als \"bbb\""
+"als Zeichenkette kleiner als \"bbb”."
 
 #: ../en/docs/filters.md:108
 msgid "Like [`eq`](#eq) but ignores case for the comparison."
@@ -2933,8 +2943,8 @@ msgid ""
 "[% WRAPPER components/infobox.html\n"
 "           type='info' title='Run Your Local Version!' %]\n"
 "This documenation is also generated using Qgoda.  You can check out the\n"
-"<a href=\"https://github.com/gflohr/qgoda-site\">github sources</a>, <a href="
-"\"[% q.llink(name = 'installation') %]\">install Qgoda</a> and\n"
+"<a href=\"https://github.com/gflohr/qgoda-site\">github sources</a>, <a "
+"href=\"[% q.llink(name = 'installation') %]\">install Qgoda</a> and\n"
 "<a href=\"https://yarnpkg.com/lang/en/\">yarn</a>, type <code>qgoda watch</"
 "code> and you build your your own local version of the documentation.\n"
 "[% END %]"
@@ -5161,8 +5171,8 @@ msgstr ""
 #: ../en/docs/pattern-lists.md:106
 msgid ""
 "Character ranges cannot be empty, and therefore `[]` does not stand for no "
-"character.  It is simply not special.  Use `[]abc]` if you want to match \"a"
-"\", \"b\", \"c\", and a closing square bracket."
+"character.  It is simply not special.  Use `[]abc]` if you want to match "
+"\"a\", \"b\", \"c\", and a closing square bracket."
 msgstr ""
 
 #: ../en/docs/pattern-lists.md:108
@@ -6594,9 +6604,9 @@ msgstr ""
 
 #: ../en/docs/referencing-languages.md:12
 msgid ""
-"That means that language links are just a special case of [@ q.lanchor(name="
-"\"listings\") @]. Read there for the full picture. This page just outlines "
-"the general idea."
+"That means that language links are just a special case of [@ q."
+"lanchor(name=\"listings\") @]. Read there for the full picture. This page "
+"just outlines the general idea."
 msgstr ""
 
 #: ../en/docs/referencing-languages.md:14
@@ -7363,8 +7373,8 @@ msgstr ""
 msgid ""
 "<figure class=\"figure w-100\">\n"
 "  <img src=\"/images/taxonomies/taxonomy-lingua.svg\"\n"
-"       class=\"large-image figure-img img-fluid img-rounded d-block m-x-auto"
-"\"\n"
+"       class=\"large-image figure-img img-fluid img-rounded d-block m-x-"
+"auto\"\n"
 "       alt=\"All assets/documents with lingua 'en' establish a group of "
 "documents.\" />\n"
 "  <figcaption class=\"figure-caption text-xs-center\">\n"
@@ -7382,8 +7392,8 @@ msgstr ""
 msgid ""
 "<figure class=\"figure w-100\">\n"
 "  <img src=\"/images/taxonomies/taxonomy-tags.svg\"\n"
-"       class=\"large-image figure-img img-fluid img-rounded d-block m-x-auto"
-"\"\n"
+"       class=\"large-image figure-img img-fluid img-rounded d-block m-x-"
+"auto\"\n"
 "       alt=\"You can also group all documents tagged with &quot;Qgoda&quot; "
 "and &quot;Plug-Ins&quot;.\" />\n"
 "  <figcaption class=\"figure-caption text-xs-center\">\n"
@@ -7405,8 +7415,8 @@ msgstr ""
 msgid ""
 "<figure class=\"figure w-100\">\n"
 "  <img src=\"/images/taxonomies/taxonomies-combined.svg\"\n"
-"       class=\"large-image figure-img img-fluid img-rounded d-block m-x-auto"
-"\"\n"
+"       class=\"large-image figure-img img-fluid img-rounded d-block m-x-"
+"auto\"\n"
 "       alt=\"Combining taxonomies can create arbitrary partitions of a site."
 "\" />\n"
 "  <figcaption class=\"figure-caption text-xs-center\">\n"
@@ -7476,8 +7486,8 @@ msgid ""
 "[% WRAPPER \"components/template-variable.html\"\n"
 "   variable=\"asset.lingua\" type=\"RFC4647 language identifier\" %]\n"
 "An identifier of the language of the document. You should use a language "
-"identifier that conforms to <a href=\"https://www.ietf.org/rfc/rfc4647.txt"
-"\">RFC4647</a>, something like \"en\", \"en-us\", or \"fr-ca\". It is "
+"identifier that conforms to <a href=\"https://www.ietf.org/rfc/rfc4647."
+"txt\">RFC4647</a>, something like \"en\", \"en-us\", or \"fr-ca\". It is "
 "strongly recommended that you stick to the variable name `lingua` because "
 "this convention is built into Qgoda at many places.\n"
 "[%- END %]"
@@ -7563,8 +7573,8 @@ msgstr ""
 #: ../en/docs/terms-and-concepts.md:37
 msgid ""
 "[% WRAPPER components/term.html term=\"scss\" -%]\n"
-"<a href=\"http://sass-lang.com/documentation/file.SCSS_FOR_SASS_USERS.html"
-"\"\n"
+"<a href=\"http://sass-lang.com/documentation/file.SCSS_FOR_SASS_USERS."
+"html\"\n"
 "target=\"_blank\">SCSS</a> is a <q-term>SASS</q-term> syntax introduced in\n"
 "Sass 3.  It is a strict superset of CSS, so that every valid CSS file is\n"
 "also a valid SCSS file.\n"
@@ -8541,17 +8551,17 @@ msgstr "Client-seitiges Syntax-Highlighting"
 
 #: ../en/news/client-side-syntax-highlighting.md:7
 msgctxt "tags"
+msgid "Tutorial"
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:7
+msgctxt "tags"
 msgid "JavaScript"
 msgstr ""
 
 #: ../en/news/client-side-syntax-highlighting.md:7
 msgctxt "tags"
 msgid "Howto"
-msgstr ""
-
-#: ../en/news/client-side-syntax-highlighting.md:7
-msgctxt "tags"
-msgid "Tutorial"
 msgstr ""
 
 #: ../en/news/client-side-syntax-highlighting.md:7
@@ -8646,8 +8656,8 @@ msgid ""
 msgstr ""
 "Dies erzeugt exakt das Konstrukt, das wir benötigen, nämlich ein `<code>`-"
 "Element innerhalb eines `<pre>`-Elementes. Allerdings hat keines der Tags "
-"irgendwelche Attribute. Genauer gesagt fehlt das Class-Attribut `class="
-"\"language-javascript\"`. Man kann aber die Sprache einfach nach den "
+"irgendwelche Attribute. Genauer gesagt fehlt das Class-Attribut "
+"`class=\"language-javascript\"`. Man kann aber die Sprache einfach nach den "
 "öffnenden Backticks angeben:"
 
 #: ../en/news/client-side-syntax-highlighting.md:89
@@ -8977,10 +8987,15 @@ msgstr ""
 "mit fenced Code-Blocks zu aktivieren:"
 
 #: ../en/news/client-side-syntax-highlighting.md:317
+#, fuzzy
+#| msgid ""
+#| "See the [JavaScript source code](https://github.com/gflohr/qgoda-c/blob/"
+#| "master/_assets/js/line-numbers.js)\n"
+#| "for details."
 msgid ""
 "See the [JavaScript source code](https://github.com/gflohr/qgoda-c/blob/"
 "master/_assets/js/line-numbers.js)\n"
-"for details."
+"for details!"
 msgstr ""
 "Siehe den entsprechenden [JavaScript-Quelltext](https://github.com/gflohr/"
 "qgoda-c/blob/master/_assets/js/line-numbers.js) für Einzelheiten!"

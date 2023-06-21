@@ -12,15 +12,19 @@ Qgoda is a [command-line](http://www.guido-flohr.net/command-line/) program.
 
 The general usage pattern for qgoda is:
 
+<!--qgoda-no-xgettext-->
 ```bash
 $ qgoda [GLOBAL_OPTIONS] [COMMAND, [OPTIONS]]
 ```
+<!--/qgoda-no-xgettext-->
 
 For example:
 
+<qgoda-no-gettext>
 ```bash
 $ qgoda --verbose build --drafts --future
 ```
+<!--/qgoda-no-xgettext-->
 
 That sets the global option `--verbose` to true and selects the qgoda command `build` with the options `--drafts` and `--future`.
 
