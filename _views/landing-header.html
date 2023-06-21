@@ -19,12 +19,12 @@
         <div class="col-6">
           <div class="float-right">
             <h2>
-              <a href="/[% asset.lingua %]/news/" class="nav-link"><i class="fa fa-newspaper-o"></i>&nbsp;[% gtx.gettext('News') %]</a>
+              <a href="/[% asset.lingua %]/news/" class="nav-link"><i class="bi-newspaper"></i>&nbsp;[% gtx.gettext('News') %]</a>
               <a class="nav-link d-none d-md-inline-block"
                  href="https://github.com/gflohr/qgoda/releases"
-                 target="_blank" class="nav-link"><i class="fa fa-download"></i>&nbsp;[% gtx.gettext('Download') %]</a>
-              <a href="/[% asset.lingua %]/docs/" class="nav-link"><i class="fa fa-cubes"></i>&nbsp;[% gtx.gettext('Docs') %]</a>
-              <i class="fa fa-language"></i>
+                 target="_blank" class="nav-link"><i class="bi-download"></i>&nbsp;[% gtx.gettext('Download') %]</a>
+              <a href="/[% asset.lingua %]/docs/" class="nav-link"><i class="bi-book"></i>&nbsp;[% gtx.gettext('Docs') %]</a>
+              <i class="bi-translate"></i>
               [% FOREACH lingua IN config.linguas %]
                 [% IF lingua == asset.lingua %]
                 <span class="lingua-current lingua-link">[% lingua %]</span>

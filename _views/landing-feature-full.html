@@ -14,7 +14,7 @@
           <!--<a href="[% posts.0.permalink %]">-->
           <h4>[% posts.0.title | html %]</h4>
           <div class="date">
-            <i class="fa fa-clock-o"></i>
+            <i class="bi-clock"></i>
             [% q.strftime(gtx.gettext('%B, %e %Y'), posts.0.date, asset.lingua) %]
             - [% posts.0.author %]
           </div>
@@ -27,7 +27,7 @@
         <div class="">
           <h4>[% posts.1.title | html %]</h4>
           <div class="date">
-            <i class="fa fa-clock-o"></i>
+            <i class="bi-clock"></i>
             [% q.strftime(gtx.gettext('%B, %e %Y'), posts.1.date, asset.lingua) %]
             -
             [% posts.1.author %]

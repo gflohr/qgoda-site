@@ -12,7 +12,7 @@
   <div class="teaser-date">
     <a href="[% post.permalink %]" class="teaser-link">
       <!--TRANSLATORS: See "man strftime" for the meaning!-->
-      <i class="fa fa-clock-o"></i>&nbsp;[% q.strftime(gtx.gettext('%B, %e %Y'), post.date, asset.lingua) %]
+      <i class="bi-clock"></i>&nbsp;[% q.strftime(gtx.gettext('%B, %e %Y'), post.date, asset.lingua) %]
       [% IF post.type == 'post' %]
       - [% asset.author | html %]
       [% END %]
