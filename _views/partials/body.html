@@ -1,22 +1,21 @@
 [% USE gtx = Gettext(config.po.textdomain) %]
 [% PROCESS functions/setup.tt %]
-[% PROCESS "functions/css-modules.tt" %]
 <body>
   [% INCLUDE partials/header/navbar.html %]
 
   <div class="container">
     <div class="row">
-      <div class="col-sm-8 [% css.qgoda.content %]">
-        <div class="[% css.qgoda.content_head %]">
+      <div class="col-sm-8 content">
+        <div class="content-head">
           <h1>[% asset.title %]</h1>
           [% IF  asset.type == 'post' %]
-          <div class="[% css.qgoda.colophon %]">
-          <i class="fa fa-clock-o"></i>&nbsp;[% q.strftime(gtx.gettext('%B, %e %Y'), asset.date, asset.lingua) %]
+          <div class="colophon">
+          <i class="bi-clock"></i>&nbsp;[% q.strftime(gtx.gettext('%B, %e %Y'), asset.date, asset.lingua) %]
           -
           [% asset.author %]
           </div>
           [% END %]
-          <div class="[% css.qgoda.description %]">
+          <div class="description">
             [% asset.description %]
           </div>
         </div>
@@ -29,20 +28,21 @@
         [% INCLUDE "components/back-to-listings.html" %]
         [% END %]
       </div>
-      <div class="col-sm-3 offset-sm-1 [% css.qgoda.sidebar %]">
-        [% INCLUDE partials/body/sidebar.html %] 
+      <div class="col-sm-3 offset-sm-1 sidebar">
+        [% INCLUDE partials/body/sidebar.html %]
       </div>
     </div>
   </div>
 
   <!-- Footer Section -->
   <footer id="footer" class="bg-warning-opaque">
-  [% INCLUDE partials/body/footer.html %]
+  [% INCLUDE partials/body/footer.html need_row=1 %]
   </footer>
   <!-- Footer Section End -->
 
   [% INCLUDE partials/body/ga.html %]
   [% INCLUDE partials/body/github.html %]
+	[% INCLUDE "components/cookie-consent-banner.html" %]
   [% PROCESS functions/scripts.tt %]
 </body>
 

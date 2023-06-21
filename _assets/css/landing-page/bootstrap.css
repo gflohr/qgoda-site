@@ -1,0 +1,68 @@
+.btn:focus, .btn:active, .btn:hover, .btn,
+.open .dropdown-toggle.btn {
+	outline: inherit;
+	border-color: inherit;
+}
+
+.btn {
+	font-size: 16px;
+	font-family: 'Raleway', sans-serif;
+	padding: 15px 30px;
+	border: none;
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+
+.btn-common {
+	color: #ffffff;
+	font-weight: 400;
+	background: #e74c3c;
+}
+
+.btn-common:hover {
+	background: #FF7B6B;
+	color: #fff;
+}
+
+.navbar .container .row:first-child {
+	padding: 30px 0;
+}
+
+.nav-link {
+	color: white;
+	display: inline-block;
+	padding: 0;
+}
+
+.nav-link:hover, .nav-link:focus {
+	color: #e74c3c;
+}
+
+.small-title {
+	font-size: 30px;
+	color: #666;
+	font-weight: 800;
+	padding-bottom: 22px;
+	line-height: 40px;
+}
+
+.row {
+	padding: 60px 0px;
+}
+
+footer .container {
+	display: flex;
+	flex-wrap: wrap;
+	color: #dddddd;
+}
+
+footer .container .footer-links a {
+		color: #dddddd;
+		text-decoration: underline;
+}
+
+footer .container .footer-links a:hover {
+		color: #e74d3c;
+}

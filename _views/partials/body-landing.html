@@ -1,15 +1,15 @@
 [% PROCESS 'functions/landing-page/setup.tt' %]
-[% PROCESS 'functions/landing-page/css-modules.tt' %]
 <body>
   [% asset.content %]
 
   <!-- Footer Section -->
-  <footer id="[% css.start.footer %]">
+  <footer id="footer">
     [% INCLUDE partials/body/footer.html %]
   </footer>
   <!-- Footer Section End -->
 
   [% INCLUDE partials/body/ga.html %]
+	[% INCLUDE "components/cookie-consent-banner.html" %]
   [% PROCESS functions/scripts.tt %]
 </body>
 

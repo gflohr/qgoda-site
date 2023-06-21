@@ -9,4 +9,4 @@
 /_timestamp.json
 /_livesync
 /google[0-9a-f][0-9a-f]*.html
-/yarn-error.log
+.*.swp

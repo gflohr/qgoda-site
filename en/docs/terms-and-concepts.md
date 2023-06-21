@@ -8,7 +8,6 @@ description: Explanation of frequently used terms and concepts
 ---
 <!--qgoda-no-xgettext-->
 [% USE q = Qgoda %]
-[% PROCESS "functions/css-modules.tt" %]
 <ul>
 <!--/qgoda-no-xgettext-->
 

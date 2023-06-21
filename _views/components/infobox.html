@@ -1,13 +1,13 @@
 [% SWITCH type %]
   [% CASE 'warning' %]
-    [% class = 'warning'; icon = 'exclamation' %]
+    [% class = 'warning'; icon = 'exclamation-triangle' %]
   [% CASE %]
-    [% class = 'info'; icon = 'lightbulb-o' %]
+    [% class = 'info'; icon = 'info-circle' %]
 [% END %]
 <div class="alert alert-[% class %]" role="alert">
   <div>
     <strong>
-      <i class="fa fa-[% icon %]"></i>
+      <i class="bi-[% icon %]"></i>
       <span class="title">[% title %]</span>
     </strong>
   </div>

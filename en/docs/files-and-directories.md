@@ -7,7 +7,6 @@ description: Complete List of Files and Directories
 ---
 <!--qgoda-no-xgettext-->
 [% USE q = Qgoda %]
-[% PROCESS "functions/css-modules.tt" %]
 <!--/qgoda-no-xgettext-->
 
 A typical Qgoda site contains a couple of standard files and directories.

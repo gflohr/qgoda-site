@@ -1,12 +1,11 @@
-[% PROCESS "functions/landing-page/css-modules.tt" %]
 <div class="col-sm-6 col-md-6 wow fadeIn">
-  <div class="[% css.start.client %]">
-    <div class="[% css.start.client_img %]">
+  <div class="client">
+    <div class="client-img">
       <a href="[% asset.image_link %]">
-        <img src="[% asset.image %]" 
+        <img src="[% asset.image %]"
              alt="[% asset.image_alt %]"></a>
      </div>
-     <div class="[% css.start.info_client %]">
+     <div class="info-client">
      [% asset.content %]
      </div>
   </div>

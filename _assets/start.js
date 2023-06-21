@@ -1,10 +1,7 @@
-require('./scss/landing-page/bootstrap.scss');
-require('./scss/font-awesome.scss');
-require('./scss/start.scss');
-require('./scss/animate.scss');
-
-var wow = new WOW({
-    mobile: true,
-    offset: 100
-});
-wow.init();
+require('bootstrap/dist/css/bootstrap.css');
+require('bootstrap-icons/font/bootstrap-icons.css');
+require('bootstrap');
+require('./css/start.css');
+require('./css/animate.css');
+require('./css/cookie-consent.css');
+require('./js/cookie-consent.js');

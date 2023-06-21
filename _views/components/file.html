@@ -1,6 +1,6 @@
 [% USE gtx = Gettext('net.qgoda.www', asset.lingua) %]
-<li class="[% css.qgoda.pre %]"><a href="#" name="[% name %]"></a><span class="[% css.qgoda.variable %]">[% name %]</span>
+<li class="pre"><a href="#" name="[% name %]"></a><span class="variable">[% name %]</span>
   <em>[% gtx.gettext('type:') %]</em> [% type %]
-  <em>[% gtx.gettext('overridable:') %]</em> [% IF overridable %]<code>C:[% overridable %]</code>[% END %]<br /><br /><span class="[% css.qgoda.no_pre %]">[%- content -%]</span>
+  <em>[% gtx.gettext('overridable:') %]</em> [% IF overridable %]<code>C:[% overridable %]</code>[% END %]<br /><br /><span class="no-pre">[%- content -%]</span>
 
 </li>

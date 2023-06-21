@@ -1,15 +1,15 @@
 [% USE gtx = Gettext('net.qgoda.www', asset.lingua) %]
 <nav class="navbar navbar-expand-md navbar-dark bg-warning">
-  <button class="navbar-toggler" type="button" 
-          data-toggle="collapse" data-target="#navbarCollapse" 
-          aria-controls="navbarCollapse" aria-expanded="false" 
+  <button class="navbar-toggler" type="button"
+          data-toggle="collapse" data-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false"
           aria-label="[% gtx.gettext('Toggle navigation') %]">
       &#9776;
   </button>
   <div class="qgoda-brand">
     <a class="navbar-brand" href="/[% asset.lingua %]/"
        title="Qgoda Start Page">
-      <img src="/images/qgoda-logo-white.svg" 
+      <img src="/images/qgoda-logo-white.svg"
            alt="Qgoda logo" height="32" />
     </a>
   </div>
@@ -18,31 +18,31 @@
       <li class="d-md-none nav-item">
         <a class="nav-link" href="/[% asset.lingua %]/"
            title="Qgoda Start Page">
-          <i class="fa fa-home"></i>&nbsp;[% gtx.gettext('Home') %]</a>
+          <i class="bi-house"></i>&nbsp;[% gtx.gettext('Home') %]</a>
         </a>
       </li>
       <li class="nav-item[% IF asset.navsection == 'news' %] active[% END %]">
         <a class="nav-link" href="/[% asset.lingua %]/news/"
            title="Qgoda News">
-          <i class="fa fa-newspaper-o"></i>&nbsp;[% gtx.gettext('News') %]</i>
+          <i class="bi-newspaper"></i>&nbsp;[% gtx.gettext('News') %]</i>
         </a>
       </li>
       <li class="nav-item[% IF asset.navsection == 'docs' %] active[% END %]">
         <a class="nav-link" href="/[% asset.lingua %]/docs/"
            title="Qgoda Documentation">
-          <i class="fa fa-cubes"></i>&nbsp;[% gtx.gettext('Docs') %]</a>
+          <i class="bi-book"></i>&nbsp;[% gtx.gettext('Docs') %]</a>
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="https://github.com/gflohr/qgoda/releases"
            title="Qgoda Downloads">
-          <i class="fa fa-download"></i>&nbsp;Download</a>
+          <i class="bi-download"></i>&nbsp;Download</a>
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="https://github.com/gflohr/qgoda"
            title="Qgoda On Github">
-          <i class="fa fa-github"></i>&nbsp;Github</a>
+          <i class="bi-github"></i>&nbsp;Github</a>
         </a>
       </li>
     </ul>

@@ -1,19 +1,19 @@
 [% USE gtx = Gettext('net.qgoda.www', asset.lingua) %]
-<div class="[% css.qgoda.guided_tour %] container">
+<div class="guided-tour container">
   <div class="row">
-    <div class="col-5 text-left [% css.qgoda.guided_tour_link %]">
+    <div class="col-5 text-left guided-tour-link">
       [% IF asset.nav.prev %]
-      <a href="[% asset.nav.prev.permalink %]"><i class="fa fa-arrow-circle-o-left"></i>&nbsp;[% asset.nav.prev.title | html %]</a>
+      <a href="[% asset.nav.prev.permalink %]"><i class="bi-arrow-left-circle"></i>&nbsp;[% asset.nav.prev.title | html %]</a>
       [% END %]
     </div>
-    <div class="col-2 text-center [% css.qgoda.guided_tour_link %]">
+    <div class="col-2 text-center guided-tour-link">
       [% IF asset.nav.start %]
         <a href="[% asset.nav.start.permalink %]">[% gtx.gettext('Start') %]</a>
       [% END %]
       </div>
-    <div class="col-5 text-right [% css.qgoda.guided_tour_link %]">
+    <div class="col-5 text-right guided-tour-link">
         [% IF asset.nav.next %]
-        <a href="[% asset.nav.next.permalink %]">[% asset.nav.next.title | html %]&nbsp;<i class="fa fa-arrow-circle-o-right"></i></a>
+        <a href="[% asset.nav.next.permalink %]">[% asset.nav.next.title | html %]&nbsp;<i class="bi-arrow-right-circle"></i></a>
         [% END %]
       </div>
   </div>

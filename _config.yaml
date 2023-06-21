@@ -1,10 +1,11 @@
+track-dependencies: false
 title: Qgoda
 linguas: [en, de]
-exclude: 
+exclude:
   - /node_modules
   - /package.json
   - /webpack.config.js
-  - /yarn.lock
+  - /pacakge-lock.json
   - /TODO
   - /LocaleData
   - /postcss.config.js
@@ -18,14 +19,14 @@ scm: git
 no-scm:
   - /assets
 helpers:
-  yarn: yarn start
-  browser-sync: yarn server
+  npm: npm start
+  browser-sync: npm run server
 defaults:
   - files:
       - /*/**
       - '!/en/'
     values:
-      translate: 
+      translate:
         - title
         - description
         - image_alt
@@ -33,12 +34,12 @@ defaults:
         - dateFormat
         - readMore
         - tags
-  - files: 
+  - files:
       - /en
       - /_includes/en
     values:
       lingua: en
-  - files: 
+  - files:
       - /de
       - /_includes/de
     values:
@@ -50,7 +51,7 @@ defaults:
       view: docs.html
   - files: /*/talks/**
     values:
-      type: talk 
+      type: talk
       view: talks.html
   - files: /*/talks/dpw-2018/**
     values:
@@ -63,7 +64,7 @@ defaults:
   - files: [index.md, index.html]
     values:
       type: page
-      priority: -999 
+      priority: -999
 taxonomies:
   'doc-section': ~
   name: ~
@@ -84,10 +85,6 @@ po:
   textdomain: net.qgoda.www
   msgid-bugs-address: Guido Flohr <guido.flohr@cantanea.com>
   copyright-holder: cantanea EOOD <http://www.cantanea.com/>
-  qgoda:
-    - perl 
-    - -I/Users/guido/perl/qgoda/lib 
-    - /Users/guido/perl/qgoda/bin/qgoda
   mdextra:
     - /_includes/**
   tt2:
@@ -101,16 +98,16 @@ analyzers:
 # This should be overridden in _localconfig.yaml or in a private branch.
 legal:
   name: configure legal.name in _localconfig.yaml or _config.yaml
-  street: configure legal.name in _localconfig.yaml or _config.yaml
-  city: configure legal.name in _localconfig.yaml or _config.yaml
-  id: configure legal.name in _localconfig.yaml or _config.yaml
-  vat-id: configure legal.name in _localconfig.yaml or _config.yaml
+  street: configure legal.street in _localconfig.yaml or _config.yaml
+  city: configure legal.city in _localconfig.yaml or _config.yaml
+  id: configure legal.id in _localconfig.yaml or _config.yaml
+  vat-id: configure legal.vat-id in _localconfig.yaml or _config.yaml
   email: configure legal.email in _localconfig.yaml or _config.yaml
   phone: configure legal.phone in _localconfig.yaml or _config.yaml
   manager: configure legal.manager in _localconfig.yaml or _config.yaml
   responsible: configure legal.responsible in _localconfig.yaml or _config.yaml
-  copyright_year: configure legal.name in _localconfig.yaml or _config.yaml
-  copyright_uri: configure legal.name in _localconfig.yaml or _config.yaml
+  copyright_year: configure legal.copyright_year in _localconfig.yaml or _config.yaml
+  copyright_uri: configure legal.copyright_uri in _localconfig.yaml or _config.yaml
   # url: http://www.yourname.org/
 google:
   #analytics_id: 'UA-XXXXXXX-X'

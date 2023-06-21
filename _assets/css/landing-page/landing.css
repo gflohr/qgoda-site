@@ -1,0 +1,43 @@
+#about .client .client-img {
+	padding-top: 20px;
+	height: 100%;
+}
+
+#about .client .duktape_logo {
+	font-size: 24pt;
+	font-weight: 400;
+	text-shadow: 3px 3px 3px #000000;
+}
+
+#about .client .duktape_logo a {
+	color: #fff;
+}
+
+.logo img {
+	width: 100%;
+}
+
+@media (min-width: 768px) {
+	.logo img {
+		width: 50%;
+	}
+}
+
+.info-cllient a {
+	color: #fff;
+	text-decoration: underline;
+}
+
+.info-client a:hover {
+	color: #2b689c;
+}
+
+#getting-started img {
+	width: 100%;
+}
+
+#getting-started .btn {
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}

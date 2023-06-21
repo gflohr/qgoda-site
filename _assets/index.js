@@ -1,9 +1,10 @@
 // Bootstrap.
+require('bootstrap/dist/css/bootstrap.css');
+require('bootstrap-icons/font/bootstrap-icons.css');
 require('bootstrap');
+require('./css/bootstrap.css');
 
-require('./scss/bootstrap.scss');
-require('./scss/font-awesome.scss');
-require('./scss/prism.scss');
+require('./css/prism.css');
 
 // Prism.
 var Prism = require('prismjs');
@@ -22,13 +23,17 @@ require('prismjs/components/prism-json');
 // Prism plug-ins.
 require('prismjs/plugins/line-numbers/prism-line-numbers');
 require('prismjs/plugins/autolinker/prism-autolinker');
-require('prismjs/plugins/custom-class/prism-custom-class');
-Prism.plugins.customClass.map(require('./scss/prism.scss.json'));
 
-// Custom SCSS.
-require('./scss/qgoda.scss');
-require('./scss/toc.scss');
+// Prism CSS.
+require('prismjs/themes/prism.css');
+require('prismjs/plugins/line-numbers/prism-line-numbers.css');
+
+// Custom CSS.
+require('./css/qgoda.css');
+require('./css/toc.css');
+
+require('./css/cookie-consent.css');
+require('./js/cookie-consent.js');
 
 // Custom JS.
-require('./js/line-numbers.js'); // FIXME! Is this needed?
 require('./js/code-language');

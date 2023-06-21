@@ -32,14 +32,14 @@ Qgoda can create lists with arbitrary filters, not just for categories.  Example
 ```
 <!--/qgoda-no-xgettext-->
 
-See [- q.lanchor(name='listings') -] for more information.
+See [- q.lanchor(name='listings') -] for more information!
 
 ### Links and Cross-References
 
 These work essentially the same as listings, only that you define the filters so that they will produce a single result instead of a list.  For example, the last sentence of the previous paragraph was created like this:
 
 ```tt2
-See [% q.lanchor(name='listings') %] for more information.
+See [% q.lanchor(name='listings') %] for more information!
 ```
 
 The function `q.lanchor()` creates a link to the document with the name "listings", no matter where that document is currently located.  In Jekyll, links always have hard-coded targets.  Using the functions has the advantage that you don't have to update refering documents, when the target document changes.

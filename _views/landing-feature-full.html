@@ -1,10 +1,8 @@
-[% PROCESS "functions/landing-page/css-modules.tt" %]
-[% classes = asset.classes %]
 [% USE gtx = Gettext('net.qgoda.www', asset.lingua) %]
 [% posts = q.llistPosts().nsortBy('date.epoch').reverse() %]
-<div class="[% css.start.$classes %]">
+<div class="[% asset.classes %]">
   <div class="container">
-    <div class="row wow fadeIn [% css.start.feature_content %]" 
+    <div class="row wow fadeIn feature-content"
          data-wow-duration="2.40s">
       <div class="col-12">
         <div class="">
@@ -15,29 +13,29 @@
         <div class="">
           <!--<a href="[% posts.0.permalink %]">-->
           <h4>[% posts.0.title | html %]</h4>
-          <div class="[% css.start.date %]">
-            <i class="fa fa-clock-o"></i>
+          <div class="date">
+            <i class="bi-clock"></i>
             [% q.strftime(gtx.gettext('%B, %e %Y'), posts.0.date, asset.lingua) %]
             - [% posts.0.author %]
           </div>
           <p>[% posts.0.excerpt %]
           <!--</a>-->
-          <a href="[% posts.0.permalink %]" class="[% css.start.more %]">[% gtx.gettext('Read More') %] →</a></p>
-        </div> 
+          <a href="[% posts.0.permalink %]" class="more">[% gtx.gettext('Read More') %] →</a></p>
+        </div>
       </div>
       <div class="col-sm-6 col-md-6">
         <div class="">
           <h4>[% posts.1.title | html %]</h4>
-          <div class="[% css.start.date %]">
-            <i class="fa fa-clock-o"></i>
+          <div class="date">
+            <i class="bi-clock"></i>
             [% q.strftime(gtx.gettext('%B, %e %Y'), posts.1.date, asset.lingua) %]
             -
             [% posts.1.author %]
           </div>
           <div>
             <p>[% posts.1.excerpt %]
-            <a href="[% posts.1.permalink %]" class="[% css.start.more %]">[% gtx.gettext('Read More') %] →</a></p>
-          </div> 
+            <a href="[% posts.1.permalink %]" class="more">[% gtx.gettext('Read More') %] →</a></p>
+          </div>
         </div>
       </div>
       <div class="col">

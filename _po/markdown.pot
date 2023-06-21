@@ -398,122 +398,117 @@ msgstr ""
 msgid "The general usage pattern for qgoda is:"
 msgstr ""
 
-#: ../en/docs/command-line-interface.md:15
-msgid ""
-"```bash\n"
-"$ qgoda [GLOBAL_OPTIONS] [COMMAND, [OPTIONS]]\n"
-"```"
-msgstr ""
-
-#: ../en/docs/command-line-interface.md:19
+#: ../en/docs/command-line-interface.md:21
 msgid "For example:"
 msgstr ""
 
-#: ../en/docs/command-line-interface.md:21
+#: ../en/docs/command-line-interface.md:23
 msgid ""
+"<qgoda-no-gettext>\n"
 "```bash\n"
 "$ qgoda --verbose build --drafts --future\n"
-"```"
-msgstr ""
-
-#: ../en/docs/command-line-interface.md:25
-msgid "That sets the global option `--verbose` to true and selects the qgoda command `build` with the options `--drafts` and `--future`."
-msgstr ""
-
-#: ../en/docs/command-line-interface.md:27
-msgid "## Global Options"
+"```\n"
+"<!--/qgoda-no-xgettext-->"
 msgstr ""
 
 #: ../en/docs/command-line-interface.md:29
-msgid "Qgoda currently supports the following global options."
+msgid "That sets the global option `--verbose` to true and selects the qgoda command `build` with the options `--drafts` and `--future`."
 msgstr ""
 
 #: ../en/docs/command-line-interface.md:31
+msgid "## Global Options"
+msgstr ""
+
+#: ../en/docs/command-line-interface.md:33
+msgid "Qgoda currently supports the following global options."
+msgstr ""
+
+#: ../en/docs/command-line-interface.md:35
 msgid ""
 "<dl>\n"
 "  <dt><strong>-q, --quiet</strong></dt>\n"
 "  <dd>Activates quiet mode.  In quiet mode, only errors and fatal errors are displayed.</dd>"
 msgstr ""
 
-#: ../en/docs/command-line-interface.md:35
+#: ../en/docs/command-line-interface.md:39
 msgid "<dt><strong>-v, --verbose</strong></dt>\n"
 "  <dd>Enables verbose logging.  A lot more details are displayed.  You will normally select verbose mode only, when tracking down errors.</dd>"
 msgstr ""
 
-#: ../en/docs/command-line-interface.md:38
+#: ../en/docs/command-line-interface.md:42
 msgid "<dt><strong>--log-stderr</strong></dt>\n"
 "  <dd>Causes qgoda to log to standard error instead of standard output.</dd>"
 msgstr ""
 
-#: ../en/docs/command-line-interface.md:41
+#: ../en/docs/command-line-interface.md:45
 msgid "<dt><strong>-h, --help</strong></dt>\n"
 "  <dd>Causes qgoda to display usage information and exit immediately.  All other options and commands are ignored.</dd>"
 msgstr ""
 
-#: ../en/docs/command-line-interface.md:44
+#: ../en/docs/command-line-interface.md:48
 msgid ""
 "<dt><strong>-V, --version</strong></dt>\n"
 "  <dd>Causes qgoda to display version information and exit immediately.  All other options and commands are ignored.</dd>\n"
 "</dl>"
 msgstr ""
 
-#: ../en/docs/command-line-interface.md:48
+#: ../en/docs/command-line-interface.md:52
 msgid "## Commands"
 msgstr ""
 
-#: ../en/docs/command-line-interface.md:50
+#: ../en/docs/command-line-interface.md:54
 msgid "The next token on the command-line must be one of the supported commands, currently `build`, `watch`, `config`, `init`, `dump`, `markdown`, `xgettext`, and `po`."
 msgstr ""
 
-#: ../en/docs/command-line-interface.md:52
+#: ../en/docs/command-line-interface.md:56
 msgid "### Command Options and Arguments"
 msgstr ""
 
-#: ../en/docs/command-line-interface.md:54
+#: ../en/docs/command-line-interface.md:58
 msgid "The rest of the command-line are options specific to the selected command.  Try `qgoda COMMAND --help` for help for the specific command (replace `COMMAND` with one of the supported commands.  The option `-h` or `--help` is supported by all qgoda commands."
 msgstr ""
 
-#: ../en/docs/command-line-interface.md:56
+#: ../en/docs/command-line-interface.md:60
 msgid "The command help is displayed using the system pager.  Hit the letter `q` to leave the pager.  `SPACE` scrolls one page down, cursor-down or `j` scrolls one line down, cursor-up or `k` scrolls one line up, `h` shows more help."
 msgstr ""
 
-#: ../en/docs/command-line-interface.md:58
+#: ../en/docs/command-line-interface.md:62
 msgid "### Availabe Commands"
 msgstr ""
 
-#: ../en/docs/command-line-interface.md:64
+#: ../en/docs/command-line-interface.md:68
 msgid "The commands `build` instructs qgoda to build the site and exit.  Helper programs are *not* executed!"
 msgstr ""
 
-#: ../en/docs/command-line-interface.md:70
+#: ../en/docs/command-line-interface.md:74
 msgid "Same as `build` above but instead of terminating, qgoda watches the file system for changes and triggers a re-build after a source file has changed."
 msgstr ""
 
-#: ../en/docs/command-line-interface.md:72
+#: ../en/docs/command-line-interface.md:76
 msgid "Helper applications are started in parallel."
 msgstr ""
 
-#: ../en/docs/command-line-interface.md:78
+#: ../en/docs/command-line-interface.md:82
 msgid "Dumps the current configuration as <q-term>yaml:YAML</q-term> and exits.  The configuration printed is the result of merging the default configuration with the files `P:_config.yaml` and `P:_localconfig.yaml`."
 msgstr ""
 
-#: ../en/docs/command-line-interface.md:84
+#: ../en/docs/command-line-interface.md:88
 msgid "Initializes a new qgoda site."
 msgstr ""
 
-#: ../en/docs/command-line-interface.md:90
+#: ../en/docs/command-line-interface.md:94
 msgid "Dumps the content of the entire site.  The output is suitable for pumping it into external programs (for example full-text search engines like [elasticsearch](https://www.elastic.co/)."
 msgstr ""
 
-#: ../en/docs/command-line-interface.md:96
+#: ../en/docs/command-line-interface.md:100
 msgid "Generates <q-term>html</q-term> from a <q-term>markdown</q-term> file.  This is meant for debugging problems with markdown rendering."
 msgstr ""
 
-#: ../en/docs/command-line-interface.md:102
+#: ../en/docs/command-line-interface.md:106
 msgid "Various commands needed for multi-language sites.  See [% q.lanchor('mulit-language-overview') %] for details."
 msgstr ""
 
-#: ../en/docs/command-line-interface.md:108
+#: ../en/docs/command-line-interface.md:112
 msgid "Extracts translatable snippets from the site's markdown source files into `.po`. files.  This command is invoked implicitely by `qgoda po pot` (see above), and you normally don't have to use `qgoda xgettext` directly.  See [% q.lanchor('mulit-language-overview') %] for more information."
 msgstr ""
 
@@ -527,11 +522,11 @@ msgctxt "description"
 msgid "Complete List Of Configuration Variables"
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:13
+#: ../en/docs/configuration-variables.md:12
 msgid "The following configuration variables from the file `P:_config.yml` are understood by Qgoda:"
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:15
+#: ../en/docs/configuration-variables.md:14
 msgid ""
 "<ul>\n"
 "[% WRAPPER components/variable.html\n"
@@ -541,7 +536,7 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:22
+#: ../en/docs/configuration-variables.md:21
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"exclude\" type='Array'\n"
@@ -550,7 +545,7 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:28
+#: ../en/docs/configuration-variables.md:27
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"exclude-watch\" type='Array'\n"
@@ -559,7 +554,7 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:34
+#: ../en/docs/configuration-variables.md:33
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"linguas\" type='Array'\n"
@@ -568,7 +563,7 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:40
+#: ../en/docs/configuration-variables.md:39
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"link-score\" type='Integer'\n"
@@ -577,7 +572,7 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:46
+#: ../en/docs/configuration-variables.md:45
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"no-scm\" type='List of patterns'\n"
@@ -586,7 +581,7 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:52
+#: ../en/docs/configuration-variables.md:51
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"title\" type='String'\n"
@@ -595,7 +590,7 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:58
+#: ../en/docs/configuration-variables.md:57
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"po\" type='Hash'\n"
@@ -604,25 +599,25 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:64
+#: ../en/docs/configuration-variables.md:63
 msgid ""
 "[% WRAPPER components/variable.html\n"
-"   variable=\"po.copyright_holder\" type='String'\n"
+"   variable=\"po.copyright-holder\" type='String'\n"
 "   default='none' -%]\n"
-"See <a href=\"[% q.llink(name='multilanguage-configuration') %]#po.copyright_holder-code-\"><code>po.copyright_holder</code> in Multilanguage Configuration</a>.\n"
+"See <a href=\"[% q.llink(name='multilanguage-configuration') %]#po.copyright-holder-code-\"><code>po.copyright-holder</code> in Multilanguage Configuration</a>.\n"
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:70
+#: ../en/docs/configuration-variables.md:69
 msgid ""
 "[% WRAPPER components/variable.html\n"
-"   variable=\"po.from_code\" type='String'\n"
+"   variable=\"po.from-code\" type='String'\n"
 "   default='utf-8' -%]\n"
 "See <a href=\"[% q.llink(name='multilanguage-configuration') %]#po.from-code-code-\"><code>po.from-code</code> in Multilanguage Configuration</a>.\n"
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:76
+#: ../en/docs/configuration-variables.md:75
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"po.msgfmt\" type='String'\n"
@@ -631,16 +626,16 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:82
+#: ../en/docs/configuration-variables.md:81
 msgid ""
 "[% WRAPPER components/variable.html\n"
-"   variable=\"po.msgid_bugs_address\" type='String'\n"
+"   variable=\"po.msgid-bugs-address\" type='String'\n"
 "   default='none' -%]\n"
-"See <a href=\"[% q.llink(name='multilanguage-configuration') %]#po.msgid_bugs_address-code-\"><code>po.msgid_bugs_address</code> in Multilanguage Configuration</a>.\n"
+"See <a href=\"[% q.llink(name='multilanguage-configuration') %]#po.msgid-bugs-address-code-\"><code>po.msgid-bugs-address</code> in Multilanguage Configuration</a>.\n"
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:88
+#: ../en/docs/configuration-variables.md:87
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"po.qgoda\" type='String'\n"
@@ -649,7 +644,7 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:94
+#: ../en/docs/configuration-variables.md:93
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"po.msgmerge\" type='String'\n"
@@ -658,7 +653,7 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:100
+#: ../en/docs/configuration-variables.md:99
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"po.qgoda\" type='string or list'\n"
@@ -667,7 +662,7 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:106
+#: ../en/docs/configuration-variables.md:105
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"po.refresh\" type='Boolean (0 or 1)'\n"
@@ -676,7 +671,7 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:112
+#: ../en/docs/configuration-variables.md:111
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"po.textdomain\" type='String'\n"
@@ -685,7 +680,7 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:118
+#: ../en/docs/configuration-variables.md:117
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"po.xgettext\" type='String'\n"
@@ -694,7 +689,7 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:124
+#: ../en/docs/configuration-variables.md:123
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"po.xgettext-tt2\" type='String'\n"
@@ -703,7 +698,7 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:130
+#: ../en/docs/configuration-variables.md:129
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"scm\" type='String'\n"
@@ -712,7 +707,7 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:136
+#: ../en/docs/configuration-variables.md:135
 msgid ""
 "[% WRAPPER components/variable.html\n"
 "   variable=\"url\" type='String'\n"
@@ -943,7 +938,7 @@ msgstr ""
 
 #: ../en/docs/dates.md:15 ../en/docs/installation.md:11
 #: ../en/docs/listings.md:13 ../en/docs/multilanguage-overview.md:17
-#: ../en/docs/pagination.md:11 ../en/docs/qgoda-plug-in.md:30
+#: ../en/docs/pagination.md:11 ../en/docs/qgoda-plug-in.md:29
 #: ../en/docs/table-of-contents.md:10 ../en/docs/table-of-contents.md:21
 #: ../en/docs/translating-templates.md:10 ../en/docs/translation-workflow.md:34
 msgid "<qgoda-toc/>"
@@ -1148,7 +1143,7 @@ msgid "Qgoda can create lists with arbitrary filters, not just for categories.  
 msgstr ""
 
 #: ../en/docs/differences-to-jekyll.md:35
-msgid "See [- q.lanchor(name='listings') -] for more information."
+msgid "See [- q.lanchor(name='listings') -] for more information!"
 msgstr ""
 
 #: ../en/docs/differences-to-jekyll.md:37
@@ -1162,7 +1157,7 @@ msgstr ""
 #: ../en/docs/differences-to-jekyll.md:41
 msgid ""
 "```tt2\n"
-"See [% q.lanchor(name='listings') %] for more information.\n"
+"See [% q.lanchor(name='listings') %] for more information!\n"
 "```"
 msgstr ""
 
@@ -1523,12 +1518,12 @@ msgctxt "description"
 msgid "Complete List of Files and Directories"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:13
+#: ../en/docs/files-and-directories.md:12
 msgid "A typical Qgoda site contains a couple of standard files and directories.\n"
 "They are described in the following list."
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:16
+#: ../en/docs/files-and-directories.md:15
 msgid ""
 "[% WRAPPER components/infobox.html\n"
 "           type='info' title='Sorting of This List' %]\n"
@@ -1537,7 +1532,7 @@ msgid ""
 "[% END %]"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:26
+#: ../en/docs/files-and-directories.md:25
 msgid ""
 "[% WRAPPER components/file.html\n"
 "   name=\"_assets\" type='directory' -%]\n"
@@ -1546,7 +1541,7 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:32
+#: ../en/docs/files-and-directories.md:31
 msgid ""
 "[% WRAPPER components/file.html\n"
 "   name=\"_config.yaml\" type='file' -%]\n"
@@ -1554,7 +1549,7 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:37
+#: ../en/docs/files-and-directories.md:36
 msgid ""
 "[% WRAPPER components/file.html\n"
 "   name=\"_config.yml\" type='file' -%]\n"
@@ -1563,7 +1558,7 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:43
+#: ../en/docs/files-and-directories.md:42
 msgid ""
 "[% WRAPPER components/file.html\n"
 "   name=\"_includes\" type='directory'\n"
@@ -1574,7 +1569,7 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:51
+#: ../en/docs/files-and-directories.md:50
 msgid ""
 "[% WRAPPER components/file.html\n"
 "   name=\"_plugins\" type='directory'\n"
@@ -1584,7 +1579,7 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:58
+#: ../en/docs/files-and-directories.md:57
 msgid ""
 "[% WRAPPER components/file.html\n"
 "   name=\"_site\" type='directory'\n"
@@ -1595,14 +1590,14 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:66
+#: ../en/docs/files-and-directories.md:65
 msgid ""
 "[% WRAPPER components/file.html\n"
 "   name=\"_timestamp\" type='file'\n"
 "   overridable=\"paths.timestamp\" -%]"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:70
+#: ../en/docs/files-and-directories.md:69
 msgid ""
 "This file contains the time, when <code>P:_site</code> was last\n"
 "re-created as seconds since the <q-term>epoch</q-term>.  If you \n"
@@ -2006,14 +2001,24 @@ msgid ""
 msgstr ""
 
 #: ../en/docs/installation.md:59
+msgid ""
+"[% WRAPPER components/infobox.html\n"
+"           type='warning' title='Broken Dependency' %]\n"
+"At the time of this writing, the latest version of the Qgoda dependency\n"
+"\"JavaScript::Duktape_XS\" is broken. You have to install an older version\n"
+"explicitly with this command: <code>cpanm GONZUS/JavaScript-Duktape-XS-0.000074.tar.gz</code>\n"
+"[% END %]"
+msgstr ""
+
+#: ../en/docs/installation.md:66
 msgid "### Installation From Github Sources"
 msgstr ""
 
-#: ../en/docs/installation.md:61
-msgid "You first have to checkout the sources from github in a suitable directory."
+#: ../en/docs/installation.md:68
+msgid "You first have to check out the sources from github in a suitable directory."
 msgstr ""
 
-#: ../en/docs/installation.md:63
+#: ../en/docs/installation.md:70
 msgid ""
 "```bash\n"
 "$ git clone https://github.com/gflohr/qgoda.git\n"
@@ -2021,11 +2026,11 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/installation.md:68
+#: ../en/docs/installation.md:75
 msgid "Then try:"
 msgstr ""
 
-#: ../en/docs/installation.md:70
+#: ../en/docs/installation.md:77
 msgid ""
 "```bash\n"
 "qgoda $ sudo cpanm .\n"
@@ -2035,11 +2040,11 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/installation.md:77
+#: ../en/docs/installation.md:84
 msgid "If that command succeeds, you are done.  If you get something like \"-cpanm: command not found\", you have to install the conventional way:"
 msgstr ""
 
-#: ../en/docs/installation.md:79
+#: ../en/docs/installation.md:86
 msgid ""
 "```bash\n"
 "$ perl Makefile.PL\n"
@@ -2062,27 +2067,27 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/installation.md:99
+#: ../en/docs/installation.md:106
 msgid "Note the lines starting with \"Warning: prerequisite ...\".  They are not warnings but errors because these missing dependencies will prevent Qgoda from working.  You can install them with:"
 msgstr ""
 
-#: ../en/docs/installation.md:101
+#: ../en/docs/installation.md:108
 msgid ""
 "```bash\n"
 "qgoda $ sudo cpan install Archive::Extract File::HomeDir File::Globstar\n"
 "```"
 msgstr ""
 
-#: ../en/docs/installation.md:105
+#: ../en/docs/installation.md:112
 msgid "Of course, you have to specify the modules that are missing on *your* system.\n"
 "The \"cpan\" command will also install the dependencies of these prerequisites, possibly asking you for permission first."
 msgstr ""
 
-#: ../en/docs/installation.md:108
+#: ../en/docs/installation.md:115
 msgid "Once all prerequistes have been installed, proceed with the installation:"
 msgstr ""
 
-#: ../en/docs/installation.md:110
+#: ../en/docs/installation.md:117
 msgid ""
 "```bash\n"
 "qgoda $ perl Makefile.PL\n"
@@ -2091,15 +2096,25 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/installation.md:116
+#: ../en/docs/installation.md:123
+msgid ""
+"[% WRAPPER components/infobox.html\n"
+"           type='warning' title='Broken Dependency' %]\n"
+"At the time of this writing, the latest version of the Qgoda dependency\n"
+"\"JavaScript::Duktape_XS\" is broken. You have to install an older version\n"
+"explicitly with this command: <code>cpan GONZUS/JavaScript-Duktape-XS-0.000074.tar.gz</code>\n"
+"[% END %]"
+msgstr ""
+
+#: ../en/docs/installation.md:130
 msgid "### Installation Outside of `$PATH`"
 msgstr ""
 
-#: ../en/docs/installation.md:118
+#: ../en/docs/installation.md:132
 msgid "It is possible that you see the following warning:"
 msgstr ""
 
-#: ../en/docs/installation.md:120
+#: ../en/docs/installation.md:134
 msgid ""
 "```core\n"
 "***\n"
@@ -2119,11 +2134,11 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/installation.md:137
+#: ../en/docs/installation.md:151
 msgid "If you see this warning, your best choice is to follow the advice and re-run the command as specified.  Another option is to fix the problem for all Perl programs.  You should add the following lines to your shell start-up script, normally `~/.bash_profile` (the tilde `~` stands for your home-directory):"
 msgstr ""
 
-#: ../en/docs/installation.md:139
+#: ../en/docs/installation.md:153
 msgid ""
 "```bash\n"
 "# Make Perl programs executable in $PATH.\n"
@@ -2140,74 +2155,74 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/installation.md:153
+#: ../en/docs/installation.md:167
 msgid "You have to terminate your current shell in order to activate the change.\n"
 "But the change is now persistent.  It will work for all future Perl versions."
 msgstr ""
 
-#: ../en/docs/installation.md:156
+#: ../en/docs/installation.md:170
 msgid "Other options are to create an alias to the location of the script:"
 msgstr ""
 
-#: ../en/docs/installation.md:158
+#: ../en/docs/installation.md:172
 msgid ""
 "```core\n"
 "alias qgoda=/opt/local/libexec/perl5.26/sitebin/qgoda\n"
 "```"
 msgstr ""
 
-#: ../en/docs/installation.md:162
+#: ../en/docs/installation.md:176
 msgid "Or you can create a symbolic link:"
 msgstr ""
 
-#: ../en/docs/installation.md:164
+#: ../en/docs/installation.md:178
 msgid ""
 "```core\n"
 "$ sudo ln -s /opt/local/libexec/perl5.26/sitebin/qgoda /usr/local/bin/qgoda\n"
 "```"
 msgstr ""
 
-#: ../en/docs/installation.md:168
+#: ../en/docs/installation.md:182
 msgid "But that will no longer work if your Perl executable is upgraded."
 msgstr ""
 
-#: ../en/docs/installation.md:170
+#: ../en/docs/installation.md:184
 msgid "## Installing Node.js"
 msgstr ""
 
-#: ../en/docs/installation.md:172
+#: ../en/docs/installation.md:186
 msgid "[Node.js](https://nodejs.org/en/) is an interpreter for JavaScript that runs outside of the browser.  It is not a strict requirement for Qgoda but most Qgoda sites will make use of it."
 msgstr ""
 
-#: ../en/docs/installation.md:174
+#: ../en/docs/installation.md:188
 msgid "The [Node.js website](https://nodejs.org/en/) usually offers a download link for the software but if you are using a package manager, you should rather install Node.js with that."
 msgstr ""
 
-#: ../en/docs/installation.md:176
+#: ../en/docs/installation.md:190
 msgid "### Yarn or NPM"
 msgstr ""
 
-#: ../en/docs/installation.md:178
+#: ../en/docs/installation.md:192
 msgid "[NPM](https://yarnpkg.com/en/) is the Node Package Manager and is used to install packages and their dependencies for Node.js.  [Yarn](https://yarnpkg.com/en/) is an alternative to NPM and does essentially the same."
 msgstr ""
 
-#: ../en/docs/installation.md:180
+#: ../en/docs/installation.md:194
 msgid "The official Qgoda themes all use Yarn but you can easily change that.  First, exchange `yarn` with `npm` in the section `scripts` of the theme's `P:package.json` and then do the same for the configuration variable `C:helpers` in Qgoda's main configuration file `P:_config.yaml`."
 msgstr ""
 
-#: ../en/docs/installation.md:182
+#: ../en/docs/installation.md:196
 msgid "#### Installing NPM"
 msgstr ""
 
-#: ../en/docs/installation.md:184
+#: ../en/docs/installation.md:198
 msgid "As `npm` ships with Node.js you normally don't have to install it.  If you have installed Node.js with your package manager, it is possible that you explicitely have to install `npm`.  An example for such a package manager is MacPorts."
 msgstr ""
 
-#: ../en/docs/installation.md:186
+#: ../en/docs/installation.md:200
 msgid "#### Installing yarn"
 msgstr ""
 
-#: ../en/docs/installation.md:188
+#: ../en/docs/installation.md:202
 msgid "See https://yarnpkg.com/en/docs/install for instructions."
 msgstr ""
 
@@ -3404,7 +3419,7 @@ msgid ""
 msgstr ""
 
 #: ../en/docs/pagination.md:200
-#: ../en/news/client-side-syntax-highlighting.md:210
+#: ../en/news/client-side-syntax-highlighting.md:209
 msgid "### Usage"
 msgstr ""
 
@@ -4161,7 +4176,7 @@ msgstr ""
 msgid "So, let's create a minimal HTML wrapper template (called a *view* in Qgoda):"
 msgstr ""
 
-#: ../en/docs/qgoda-in-15-minutes.md:141 ../en/docs/qgoda-plug-in.md:14
+#: ../en/docs/qgoda-in-15-minutes.md:141 ../en/docs/qgoda-plug-in.md:13
 msgid "[% TAGS [@ @] %]"
 msgstr ""
 
@@ -4650,32 +4665,31 @@ msgctxt "description"
 msgid "Functions provided by the Qgoda Plug-In"
 msgstr ""
 
-#: ../en/docs/qgoda-plug-in.md:8
-msgid "[% USE q = Qgoda %]\n"
-"[% PROCESS \"functions/css-modules.tt\" %]"
+#: ../en/docs/qgoda-plug-in.md:8 ../en/docs/table-of-contents.md:8
+msgid "[% USE q = Qgoda %]"
 msgstr ""
 
-#: ../en/docs/qgoda-plug-in.md:11
+#: ../en/docs/qgoda-plug-in.md:10
 msgid "A lot of Qgoda's functionality is available from the Qgoda plug-in.  You\n"
 "activate like this in a template:"
 msgstr ""
 
-#: ../en/docs/qgoda-plug-in.md:16
+#: ../en/docs/qgoda-plug-in.md:15
 msgid ""
 "```tt2\n"
 "[% USE q = Qgoda %]\n"
 "```"
 msgstr ""
 
-#: ../en/docs/qgoda-plug-in.md:20
+#: ../en/docs/qgoda-plug-in.md:19
 msgid "Using the shortcut `q` for the plug-in is a well-established convention."
 msgstr ""
 
-#: ../en/docs/qgoda-plug-in.md:22
+#: ../en/docs/qgoda-plug-in.md:21
 msgid "You can then use all methods of the plug-in like this:"
 msgstr ""
 
-#: ../en/docs/qgoda-plug-in.md:24
+#: ../en/docs/qgoda-plug-in.md:23
 msgid ""
 "```tt2\n"
 "[% USE q = Qgoda %]\n"
@@ -4684,18 +4698,18 @@ msgid ""
 "```"
 msgstr ""
 
-#: ../en/docs/qgoda-plug-in.md:32
+#: ../en/docs/qgoda-plug-in.md:31
 msgid "## Methods"
 msgstr ""
 
-#: ../en/docs/qgoda-plug-in.md:34
+#: ../en/docs/qgoda-plug-in.md:33
 msgid ""
 "<a name=\"#filters\"></a>\n"
 "Many of the following functions expect <code>FILTERS</code>.\n"
 "Please see [@ q.lanchor(name => 'filters') @] for more information!"
 msgstr ""
 
-#: ../en/docs/qgoda-plug-in.md:38
+#: ../en/docs/qgoda-plug-in.md:37
 msgid ""
 "[@ WRAPPER \"components/plug-in-functions.html\"\n"
 "   name=\"q.list\" args=\"FILTERS\" @]\n"
@@ -4706,7 +4720,7 @@ msgid ""
 "[@- END @]"
 msgstr ""
 
-#: ../en/docs/qgoda-plug-in.md:46
+#: ../en/docs/qgoda-plug-in.md:45
 msgid ""
 "[@ WRAPPER \"components/plug-in-functions.html\"\n"
 "   name=\"q.listPosts\" args=\"FILTERS\" @]\n"
@@ -4716,40 +4730,40 @@ msgid ""
 "[@- END @]"
 msgstr ""
 
-#: ../en/docs/qgoda-plug-in.md:53
+#: ../en/docs/qgoda-plug-in.md:52
 msgid "## Virtual Methods"
 msgstr ""
 
-#: ../en/docs/qgoda-plug-in.md:55
+#: ../en/docs/qgoda-plug-in.md:54
 msgid ""
 "[Virtual methods](http://www.template-toolkit.org/docs/manual/VMethods.html)\n"
 "are methods that are directly applied to a variable by adding a dot\n"
 "and the method invocation, for example:"
 msgstr ""
 
-#: ../en/docs/qgoda-plug-in.md:59
+#: ../en/docs/qgoda-plug-in.md:58
 msgid ""
 "```tt2\n"
 "The slugs of '[% asset.title | html %]' is '[% asset.title.slugify() %]'.\n"
 "```"
 msgstr ""
 
-#: ../en/docs/qgoda-plug-in.md:63
+#: ../en/docs/qgoda-plug-in.md:62
 msgid ""
 "The Qgoda plug-in extends the list of [standard vmethods in\n"
 "Template Toolkit](http://www.template-toolkit.org/docs/manual/VMethods.html)\n"
 "by a number of useful methods:"
 msgstr ""
 
-#: ../en/docs/qgoda-plug-in.md:67
+#: ../en/docs/qgoda-plug-in.md:66
 msgid "### Virtual Array Methods"
 msgstr ""
 
-#: ../en/docs/qgoda-plug-in.md:69
+#: ../en/docs/qgoda-plug-in.md:68
 msgid "The following methods are available on arrays:"
 msgstr ""
 
-#: ../en/docs/qgoda-plug-in.md:71
+#: ../en/docs/qgoda-plug-in.md:70
 msgid ""
 "[@ WRAPPER \"components/plug-in-functions.html\"\n"
 "   name=\"sortBy()\" args=\"string\" @]\n"
@@ -4761,7 +4775,7 @@ msgid ""
 "[@- END @]"
 msgstr ""
 
-#: ../en/docs/qgoda-plug-in.md:80
+#: ../en/docs/qgoda-plug-in.md:79
 msgid ""
 "[@ WRAPPER \"components/plug-in-functions.html\"\n"
 "   name=\"sortBy\" args=\"string\" @]\n"
@@ -4772,7 +4786,7 @@ msgid ""
 "[@- END @]"
 msgstr ""
 
-#: ../en/docs/qgoda-plug-in.md:88
+#: ../en/docs/qgoda-plug-in.md:87
 msgid ""
 "[@ WRAPPER \"components/plug-in-functions.html\"\n"
 "   name=\"vmap\" args=\"string\" @]\n"
@@ -4783,16 +4797,16 @@ msgid ""
 "[@- END @]"
 msgstr ""
 
-#: ../en/docs/qgoda-plug-in.md:96
+#: ../en/docs/qgoda-plug-in.md:95
 msgid "### Virtual Hash Methods"
 msgstr ""
 
-#: ../en/docs/qgoda-plug-in.md:98
+#: ../en/docs/qgoda-plug-in.md:97
 msgid "The following methods are available on hashes (also known as objects in JSON or\n"
 "JavaScript or formally as associative arrays):"
 msgstr ""
 
-#: ../en/docs/qgoda-plug-in.md:101
+#: ../en/docs/qgoda-plug-in.md:100
 msgid ""
 "[@ WRAPPER \"components/plug-in-functions.html\"\n"
 "   name=\"vmap\" args=\"string\" @]\n"
@@ -5164,10 +5178,6 @@ msgctxt "description"
 msgid "Creating a table of contents with Qgoda is very easy.  And every aspect of it can be styled to your needs."
 msgstr ""
 
-#: ../en/docs/table-of-contents.md:8
-msgid "[% USE q = Qgoda %]"
-msgstr ""
-
 #: ../en/docs/table-of-contents.md:12
 msgid "## Usage"
 msgstr ""
@@ -5512,12 +5522,11 @@ msgstr ""
 #: ../en/docs/template-variables.md:8
 msgid ""
 "[% USE q = Qgoda %]\n"
-"[% PROCESS \"functions/css-modules.tt\" %]\n"
 "Not all of the following variables are necessarily available everywhere.\n"
 "Many of them like `V:asset.name` are mere conventions."
 msgstr ""
 
-#: ../en/docs/template-variables.md:13
+#: ../en/docs/template-variables.md:12
 msgid ""
 "Qgoda passes all template variables inside the <q-term>hash:hashes</q-term> (resp. \n"
 "<q-term>object:objects</q-term> if\n"
@@ -5525,7 +5534,7 @@ msgid ""
 "variables, especially top-level variables are free for your use."
 msgstr ""
 
-#: ../en/docs/template-variables.md:18
+#: ../en/docs/template-variables.md:17
 msgid ""
 "[% WRAPPER components/infobox.html\n"
 "   type=\"warning\" title='Overwriting Internal Variables' %]\n"
@@ -5536,7 +5545,7 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/template-variables.md:26
+#: ../en/docs/template-variables.md:25
 msgid ""
 "[% WRAPPER \"components/template-variable.html\"\n"
 "   variable=\"asset\" type=\"hash\" %]\n"
@@ -5545,7 +5554,7 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/template-variables.md:32
+#: ../en/docs/template-variables.md:31
 msgid ""
 "[% WRAPPER \"components/template-variable.html\"\n"
 "   variable=\"asset.draft\" type=\"boolean (0 or 1)\" %]\n"
@@ -5553,7 +5562,7 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/template-variables.md:37
+#: ../en/docs/template-variables.md:36
 msgid ""
 "[% WRAPPER \"components/template-variable.html\"\n"
 "   variable=\"asset.lingua\" type=\"RFC4647 language identifier\" %]\n"
@@ -5561,7 +5570,7 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/template-variables.md:42
+#: ../en/docs/template-variables.md:41
 msgid ""
 "[% WRAPPER \"components/template-variable.html\"\n"
 "   variable=\"asset.priority\" type=\"integer\" %]\n"
@@ -5569,7 +5578,7 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/template-variables.md:47
+#: ../en/docs/template-variables.md:46
 msgid ""
 "[% WRAPPER \"components/template-variable.html\"\n"
 "   variable=\"asset.virtual\" type=\"boolean (0 or 1)\" %]\n"
@@ -5577,7 +5586,7 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/template-variables.md:52
+#: ../en/docs/template-variables.md:51
 msgid ""
 "[% WRAPPER \"components/template-variable.html\"\n"
 "   variable=\"config\" type=\"hash\" %]\n"
@@ -5598,7 +5607,7 @@ msgctxt "description"
 msgid "Explanation of frequently used terms and concepts"
 msgstr ""
 
-#: ../en/docs/terms-and-concepts.md:15
+#: ../en/docs/terms-and-concepts.md:14
 msgid ""
 "[% WRAPPER components/term.html term=\"epoch\" -%]\n"
 "A certain date and time is often expressed as seconds elapsed since the\n"
@@ -5608,7 +5617,7 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/terms-and-concepts.md:22
+#: ../en/docs/terms-and-concepts.md:21
 msgid ""
 "[% WRAPPER components/term.html term=\"front matter\" -%]\n"
 "A block of document properties in <a href=\"http://yaml.org/\">YAML</a> format at\n"
@@ -5621,7 +5630,7 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/terms-and-concepts.md:32
+#: ../en/docs/terms-and-concepts.md:31
 msgid ""
 "[% WRAPPER components/term.html term=\"sass\" -%]\n"
 "<a href=\"http://sass-lang.com/\" target=\"_blank\">SASS</a> is a popular\n"
@@ -5630,7 +5639,7 @@ msgid ""
 "[%- END %]"
 msgstr ""
 
-#: ../en/docs/terms-and-concepts.md:38
+#: ../en/docs/terms-and-concepts.md:37
 msgid ""
 "[% WRAPPER components/term.html term=\"scss\" -%]\n"
 "<a href=\"http://sass-lang.com/documentation/file.SCSS_FOR_SASS_USERS.html\"\n"
@@ -6449,24 +6458,22 @@ msgid "- email: [% config.legal.email %]\n"
 msgstr ""
 
 #: ../en/legal-disclosure.md:27
-msgid "## Responsible for the content:"
+msgid "<qgoda-no-xgettext>\n"
+"## Responsible for the content:"
 msgstr ""
 
-#: ../en/legal-disclosure.md:29
-msgid ""
-"<qgoda-no-xgettext>\n"
-"[% config.legal.responsible %]\n"
+#: ../en/legal-disclosure.md:30
+msgid "[% config.legal.responsible %]\n"
 "</qgoda-no-xgettext>"
+msgstr ""
+
+#: ../en/legal-disclosure.md:33
+msgid "<h2>Disclaimer</h2>Accountability for content<br/>The contents of our pages have been created with the utmost care. However, we cannot guarantee the contents' accuracy, completeness or topicality. According to statutory provisions, we are furthermore responsible for our own content on these web pages. In this context, please note that we are accordingly not obliged to monitor merely the transmitted or saved information of third parties, or investigate circumstances pointing to illegal activity. Our obligations to remove or block the use of information under generally applicable laws remain unaffected by this as per &sect;&sect; 8 to 10 of the Telemedia Act (TMG).<br/><br/>Accountability for links<br/>Responsibility for the content of external links (to web pages of third parties) lies solely with the operators of the linked pages. No violations were evident to us at the time of linking. Should any legal infringement become known to us, we will remove the respective link immediately.<br/><br/>Copyright<br/> Our web pages and their contents are subject to German copyright law. Unless expressly permitted by law (&sect; 44a et seq. of the copyright law), every form of utilizing, reproducing or processing works subject to copyright protection on our web pages requires the prior consent of the respective owner of the rights. Individual reproductions of a work are allowed only for private use, so must not serve either directly or indirectly for earnings. Unauthorized utilization of copyrighted works is punishable (&sect; 106 of the copyright law).<br/><br/><i>Source: </i><a href=\"http://www.muster-vorlagen.net\" target=\"_blank\">Create legal disclosures online - http://www.muster-vorlagen.net</a><br/><br/>"
 msgstr ""
 
 #: ../en/news/client-side-syntax-highlighting.md:2
 msgctxt "title"
 msgid "Client-Side Syntax Highlighting"
-msgstr ""
-
-#: ../en/news/client-side-syntax-highlighting.md:7
-msgctxt "tags"
-msgid "Syntax Highlighting"
 msgstr ""
 
 #: ../en/news/client-side-syntax-highlighting.md:7
@@ -6484,54 +6491,59 @@ msgctxt "tags"
 msgid "Howto"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:18
+#: ../en/news/client-side-syntax-highlighting.md:7
+msgctxt "tags"
+msgid "Syntax Highlighting"
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:17
 msgid ""
 "A very common requirement is to have syntax-highlighting applied to code blocks.  Best\n"
 "practice with Qgoda is to just mark code blocks semantically correct and let the client\n"
 "do the highlighting when rendering the generated pages."
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:27
+#: ../en/news/client-side-syntax-highlighting.md:26
 msgid "## How Should Code Blocks Be Marked?"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:29
+#: ../en/news/client-side-syntax-highlighting.md:28
 msgid ""
 "Code blocks should be wrapped into a `<code>` element that is in turn wrapped into a \n"
 "`<pre>` element.  The programming language of the code block should be added as a\n"
 "CSS class in the format `language-PROGRAMMING-LANGUAGE`:"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:41
+#: ../en/news/client-side-syntax-highlighting.md:40
 msgid ""
 "It is advisable to put the enclosing `<pre>` and `<code>` tags on the same line as\n"
 "the enclosed code. Otherwise ugly line feeds are added to the beginning and the end\n"
 "of the block."
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:45
+#: ../en/news/client-side-syntax-highlighting.md:44
 msgid "## Creating Semantically Correct Code Blocks"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:47
+#: ../en/news/client-side-syntax-highlighting.md:46
 msgid "### Manually Creating Semantically Correct Code Blocks"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:49
+#: ../en/news/client-side-syntax-highlighting.md:48
 msgid "Remember that (almost) all markup goes through unchanged in Markdown.  Nobody stops\n"
 "you from entering your code blocks manually with HTML, as we have just seen:"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:60
+#: ../en/news/client-side-syntax-highlighting.md:59
 msgid "### Using Fenced Code Blocks"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:62
+#: ../en/news/client-side-syntax-highlighting.md:61
 msgid "So-called *fenced* code blocks are supported by many markdown processors.\n"
 "Fenced code blocks are surrounded by triple backticks ```:"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:75
+#: ../en/news/client-side-syntax-highlighting.md:74
 msgid ""
 "This creates exactly the construct we want, the code inside of a `<code>` element\n"
 "inside of a `<pre>` element. But none of the tags has any attributes, more\n"
@@ -6539,7 +6551,7 @@ msgid ""
 "specify the language immediately following the opening \"fence\":"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:90
+#: ../en/news/client-side-syntax-highlighting.md:89
 msgid ""
 "There is a caveat, though. Qgoda's default Markdown processor\n"
 "[Text::Markdown](https://metacpan.org/release/Text-Markdown) does not support fenced code blocks with a language specifier.\n"
@@ -6548,7 +6560,7 @@ msgid ""
 "markdown  processor."
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:96
+#: ../en/news/client-side-syntax-highlighting.md:95
 msgid ""
 "[@ WRAPPER components/infobox.html\n"
 "           type='info' title='Compatibility Note!' @]\n"
@@ -6562,18 +6574,18 @@ msgid ""
 "[@ END @]"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:107
+#: ../en/news/client-side-syntax-highlighting.md:106
 msgid "## Syntax-Highlighting With PrismJS"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:109
+#: ../en/news/client-side-syntax-highlighting.md:108
 msgid ""
 "[PrismJS](https://prismjs.com/) is a very popular syntax highlighter written in\n"
 "Javascript that supports an impressive [list of\n"
 "languages](https://prismjs.com/#languages-list)."
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:113
+#: ../en/news/client-side-syntax-highlighting.md:112
 msgid ""
 "[@ WRAPPER components/infobox.html\n"
 "           type='info' title='Did you know ...' @]\n"
@@ -6583,100 +6595,100 @@ msgid ""
 "[@ END @]"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:120
+#: ../en/news/client-side-syntax-highlighting.md:119
 msgid "### Basic Usage"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:122
+#: ../en/news/client-side-syntax-highlighting.md:121
 msgid "You can see the minimum required JavaScript and css files in the following code\n"
 "snippet:"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:139
+#: ../en/news/client-side-syntax-highlighting.md:138
 msgid "The default stylesheet gets included in line 4 and the core library in line 7.\n"
 "Make sure that they are found at the locations specified."
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:142
+#: ../en/news/client-side-syntax-highlighting.md:141
 msgid "### Using a PrismJS Theme"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:144
+#: ../en/news/client-side-syntax-highlighting.md:143
 msgid "PrismJS ships with a number of themes. You can override the default theme by\n"
 "loading an *additional* stylesheet:"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:154
+#: ../en/news/client-side-syntax-highlighting.md:153
 msgid "That will change the style to the \"coy\" theme."
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:156
+#: ../en/news/client-side-syntax-highlighting.md:155
 msgid "### Loading Highlighters and PrismJS Plug-Ins"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:158
+#: ../en/news/client-side-syntax-highlighting.md:157
 msgid "In order to save memory and band-width, PrismJS does not load all of its highlighters\n"
 "and plug-ins automatically but you have to explicitely specify them."
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:161
+#: ../en/news/client-side-syntax-highlighting.md:160
 msgid ""
 "The complete example below would load support for highlighting JavaScript and also\n"
 "load the `line-numbers` plug-in that uses CSS to prepend every line with a line\n"
 "number:"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:183
+#: ../en/news/client-side-syntax-highlighting.md:182
 msgid ""
 "If you want to have syntax highlighting for more \n"
 "languages, just add the corresponding PrismJS \n"
 "*component* after line 11."
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:187
+#: ../en/news/client-side-syntax-highlighting.md:186
 msgid "## Using the Qgoda Syntax Highlighter Plug-In"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:189
+#: ../en/news/client-side-syntax-highlighting.md:188
 msgid "Fenced code-blocks are not always enough:"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:191
+#: ../en/news/client-side-syntax-highlighting.md:190
 msgid "1. The markdown processor may not support them, or not support a language specification.\n"
 "2. You want to set additional attributes on the html elements, especially classes."
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:194
+#: ../en/news/client-side-syntax-highlighting.md:193
 msgid "### Installation"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:196
+#: ../en/news/client-side-syntax-highlighting.md:195
 msgid ""
 "You can install the\n"
 "[Qgoda highlighter plug-in](https://github.com/gflohr/qgoda-plugin-tt2-highlight)\n"
 "like any other Qgoda plug-in. Normally:"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:207
+#: ../en/news/client-side-syntax-highlighting.md:206
 msgid "You can use `yarn add gflohr/qgoda-plugin-tt2-highlight` if you prefer `yarn` over\n"
 "`npm`."
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:212
+#: ../en/news/client-side-syntax-highlighting.md:211
 msgid ""
 "Now you have to use\n"
 "[Template Toolkit](http://www.template-toolkit.org/)\n"
 "directives in order to activate the highlighting:"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:228
+#: ../en/news/client-side-syntax-highlighting.md:227
 msgid ""
 "All positional arguments to the filter plug-in (line 2) are added to the CSS\n"
 "class of the surrounding `<pre>` element.  The named arguments are converted\n"
 "to HTML attributes and their corresponding values."
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:232
+#: ../en/news/client-side-syntax-highlighting.md:231
 msgid ""
 "[@ WRAPPER components/infobox.html\n"
 "           type='info' title='Positional and Named Arguments' @]\n"
@@ -6690,11 +6702,11 @@ msgid ""
 "[@ END @]"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:243
+#: ../en/news/client-side-syntax-highlighting.md:242
 msgid "The above example will result in the following HTML code:"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:253
+#: ../en/news/client-side-syntax-highlighting.md:252
 msgid ""
 "Provided that you have correctly loaded the PrismJS `line-numbers` plug-in, this\n"
 "will highlight the code as JavaScript in the browser, add line numbers in front of every\n"
@@ -6703,11 +6715,11 @@ msgid ""
 "produced with directives like this:"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:259
+#: ../en/news/client-side-syntax-highlighting.md:258
 msgid "### Page-wide Defaullts"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:261
+#: ../en/news/client-side-syntax-highlighting.md:260
 msgid ""
 "It is quite likely that all code blocks on a page are in\n"
 "the same programming language and should share their\n"
@@ -6715,30 +6727,30 @@ msgid ""
 "the `USE` directive, when you load the filter."
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:279
+#: ../en/news/client-side-syntax-highlighting.md:278
 msgid ""
 "All `FILTER` invocations will now share the same settings,\n"
 "respectively, they will receive the sum of the arguments\n"
 "that you specified for `USE` and those for `FILTER`."
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:283
+#: ../en/news/client-side-syntax-highlighting.md:282
 msgid ""
 "If you want to disable a certain CSS class for an\n"
 "individual `FILTER`, just pass the class name with a\n"
 "minus sign (-) prepended:"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:297
+#: ../en/news/client-side-syntax-highlighting.md:296
 msgid "This code block will now as an exception not be\n"
 "highlighted as JavaScript but as HTML."
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:300
+#: ../en/news/client-side-syntax-highlighting.md:299
 msgid "## Alternative: Use a JavaScript Hack"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:302
+#: ../en/news/client-side-syntax-highlighting.md:301
 msgid ""
 "[Using the Qgoda syntax highlighter plug-in](#using-the-qgoda-syntax-highlighter-plug-in)\n"
 "is very flexible but involves a lot of typing compared to [fenced code\n"
@@ -6747,24 +6759,24 @@ msgid ""
 "code blocks like this:"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:318
+#: ../en/news/client-side-syntax-highlighting.md:317
 msgid "See the [JavaScript source code](https://github.com/gflohr/qgoda-c/blob/master/_assets/js/line-numbers.js)\n"
-"for details."
+"for details!"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:321
+#: ../en/news/client-side-syntax-highlighting.md:320
 msgid "## Caveats"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:323
+#: ../en/news/client-side-syntax-highlighting.md:322
 msgid "There are two little gotchas that you have to keep in mind."
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:325
+#: ../en/news/client-side-syntax-highlighting.md:324
 msgid "### Code Blocks Without Language Specification"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:327
+#: ../en/news/client-side-syntax-highlighting.md:326
 msgid ""
 "If you use a fenced\n"
 "code block or the qgoda highlighter plug-in without a language specification,\n"
@@ -6776,25 +6788,25 @@ msgid ""
 "you have to resort to a little bit of JavaScript:"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:347
+#: ../en/news/client-side-syntax-highlighting.md:346
 msgid ""
 "You may argue that the check in line 4 will miss `pre` elements that have a class attribute\n"
 "but miss a `language-*` specification.  This cannot happen because all of the blocks\n"
 "are generated, and they will *not* have any class attribute set."
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:351
+#: ../en/news/client-side-syntax-highlighting.md:350
 msgid ""
 "Well, not 100 % true. If you created such a block with the highlighter plug-in,\n"
 "it could have a class attribute but no language specification. But that's your own\n"
 "fault then, and you know how to fix it."
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:355
+#: ../en/news/client-side-syntax-highlighting.md:354
 msgid "### Using the CSS-Modules And Line-Numbers Plug-In Simultaneously"
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:357
+#: ../en/news/client-side-syntax-highlighting.md:356
 msgid ""
 "The other glitch is rather esoteric and caused by a little flaw in the plug-in system\n"
 "of PrismJS. Its `css-modules` plug-in can be used to automatically use the\n"
@@ -6802,19 +6814,19 @@ msgid ""
 "class names and id attributes."
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:362
+#: ../en/news/client-side-syntax-highlighting.md:361
 msgid ""
 "The `line-numbers` plug-in on the other hand ignores BEM.  It searches for code blocks\n"
 "that have the exact class `line-numbers`.  The workaround is to use both classes,\n"
 "the BEM-style class for styling and the literal one for the JavaScript code."
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:366
+#: ../en/news/client-side-syntax-highlighting.md:365
 msgid "You can see how this is done in the\n"
 "[source code of this page](https://github.com/gflohr/qgoda-site/blame/master/[@ asset.relpath @])."
 msgstr ""
 
-#: ../en/news/client-side-syntax-highlighting.md:369
+#: ../en/news/client-side-syntax-highlighting.md:368
 msgid ""
 "The BEM-style class name is stored in the variable `css.prism.line_numbers`. The hash\n"
 "containing that variable is read in\n"
