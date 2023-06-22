@@ -1,3 +1,4 @@
+<span id="ga-config" data-measurement-id="[% config.ga.measurement_id %]"></span>
 [% seen = {} %]
 [% FOREACH script IN global.scripts %]
   [%- NEXT IF seen.$script; seen.$script = 1 %]
@@ -7,4 +8,3 @@
   <script src="[% q.bustCache(script) | url %]" type="text/javascript"></script>
   [%- END %]
 [% END %]
-<span id="ga" data-measurement-id="[% config.ga.measurement_id %]"></span>

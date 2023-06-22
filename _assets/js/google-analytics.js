@@ -4,7 +4,7 @@ function gtag() {
 	dataLayer.push(arguments);
 }
 gtag('js', new Date());
-gtag('config', document.getElementById('ga').dataset.measurementId);
+gtag('config', document.getElementById('ga-config').dataset.measurementId);
 
 function loadAnalyticsScript() {
 	const scriptElementExists = document.querySelector("[data-scriptid='ga']");
@@ -15,9 +15,10 @@ function loadAnalyticsScript() {
 	const scriptElement = document.createElement('script');
 	scriptElement.type = 'text/javascript';
 	scriptElement.setAttribute('async', 'true');
+	id = document.getElementById('ga-config').dataset.measurementId;
 	scriptElement.setAttribute(
 		'src',
-		'https://www.googletagmanager.com/gtag/js?id=G-6GFSYMCWVD',
+		'https://www.googletagmanager.com/gtag/js?id=' + id,
 	);
 	scriptElement.setAttribute('data-scriptid', 'ga');
 
