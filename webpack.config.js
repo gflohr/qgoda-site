@@ -18,7 +18,7 @@ module.exports = {
 		filename: '[name].min.js'
 	},
 	optimization: {
-		minimize: false,
+		minimize: true,
 		minimizer: [
 			new TerserPlugin({
 				parallel: true,
