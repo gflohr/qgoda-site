@@ -38,13 +38,13 @@ but only <q-term>front matter</q-term>:
 
 ```yaml
 ---
-main: /en/about-strawberries.md
+master: /en/about-strawberries.md
 lingua: de
 title: Über Erdbeeren
 ---
 ```
 
-The interesting variable here is `V:asset.main`. It just
+The interesting variable here is `V:asset.master`. It just
 points to the same document in the main language.
 
 The `V:asset.lingua` variable is also crucial to specify because Qgoda has to
@@ -66,7 +66,7 @@ file.  This is done with the special variable
 
 ```yaml
 ---
-main: /en/about-strawberries.md
+master: /en/about-strawberries.md
 translate:
     - title
     - description
@@ -129,7 +129,7 @@ of every document is as simple as:
 
 ```yaml
 ---
-main: /en/qgoda-rocks.md
+master: /en/qgoda-rocks.md
 ---
 ```
 

@@ -150,7 +150,7 @@ want to style the navigation and may add aria-attributes but that's just
 template code.
 
 You can take a
-[full-fledged example](https://github.com/gflohr/qgoda-multilang/blob/main/_views/components/listing.html)
+[full-fledged example](https://github.com/gflohr/qgoda-multilang/blob/master/_views/components/listing.html)
 from the [Qgoda Multilanguage Theme](https://github.com/gflohr/qgoda-multilang)
 as a starting point for your own listing and pagination module.
 
