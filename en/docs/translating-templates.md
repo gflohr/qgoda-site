@@ -96,7 +96,7 @@ That will in fact work for a number of languages but for example for Russian you
 
 ### Other Variants
 
-There are a lot more variants of the translation functions, for example strings containing plural forms. See the [documentation for the Gettext plugin](https://github.com/gflohr/Template-Plugin-Gettext) and its [API documentation](https://github.com/gflohr/Template-Plugin-Gettext/blob/master/lib/Template/Plugin/Gettext.pod#user-content-FUNCTIONS) for details.
+There are a lot more variants of the translation functions, for example strings containing plural forms. See the [documentation for the Gettext plugin](https://github.com/gflohr/Template-Plugin-Gettext) and its [API documentation](https://github.com/gflohr/Template-Plugin-Gettext/blob/main/lib/Template/Plugin/Gettext.pod#user-content-FUNCTIONS) for details.
 
 ## Complicated Strings
 

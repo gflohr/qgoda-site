@@ -75,7 +75,7 @@ translate:
 
 This has the effect that the values of the front matter 
 variables `title` and `description` are extracted from
-the master document into the `.po` file, and their 
+the main document into the `.po` file, and their 
 translations will be used, when generating the 
 translated document.
 

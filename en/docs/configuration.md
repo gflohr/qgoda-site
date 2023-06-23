@@ -97,7 +97,7 @@ an array for you.
 Likewise, a boolean option actually requires either `true` or `false`. With
 type coercion you can use `0`, an empty string or `null` as an alias for
 `false`, and pretty much everything else is interpreted as `true`. See the
-complete table at https://github.com/epoberezkin/ajv/blob/master/COERCION.md
+complete table at https://github.com/ajv-validator/ajv/blob/master/COERCION.md
 for the complete story.
 
 ## Program Paths

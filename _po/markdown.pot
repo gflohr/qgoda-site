@@ -402,9 +402,9 @@ msgstr ""
 msgid "For example:"
 msgstr ""
 
+# qgoda-no-gettext
 #: ../en/docs/command-line-interface.md:23
 msgid ""
-"<qgoda-no-gettext>\n"
 "```bash\n"
 "$ qgoda --verbose build --drafts --future\n"
 "```\n"
@@ -526,195 +526,85 @@ msgstr ""
 msgid "The following configuration variables from the file `P:_config.yml` are understood by Qgoda:"
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:14
-msgid ""
-"<ul>\n"
-"[% WRAPPER components/variable.html\n"
-"   variable=\"case-sensitive\" type='0 or 1'\n"
-"   default='0' -%]\n"
-"Set to 0 if you want to ignore case of filenames, 1 otherwise.  It is probably wise to keep the default value of 0 even on a case-sensitive file system.  Otherwise, you may run into problems, when you copy the site on another machine or some storage medium such as a USB stick.\n"
-"[%- END %]"
+#: ../en/docs/configuration-variables.md:20
+msgid "Set to 0 if you want to ignore case of filenames, 1 otherwise.  It is probably wise to keep the default value of 0 even on a case-sensitive file system.  Otherwise, you may run into problems, when you copy the site on another machine or some storage medium such as a USB stick."
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:21
-msgid ""
-"[% WRAPPER components/variable.html\n"
-"   variable=\"exclude\" type='Array'\n"
-"   default='empty' -%]\n"
-"A list of files and directories that should not be processed.  Patterns are allowed.  See <a href=\"[% q.llink(name = 'excluding-files') %]\">[% q.lxref('title', name = 'excluding-files') %]</a>!\n"
-"[%- END %]"
+#: ../en/docs/configuration-variables.md:28
+msgid "A list of files and directories that should not be processed.  Patterns are allowed.  See <a href=\"[% q.llink(name = 'excluding-files') %]\">[% q.lxref('title', name = 'excluding-files') %]</a>!"
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:27
-msgid ""
-"[% WRAPPER components/variable.html\n"
-"   variable=\"exclude-watch\" type='Array'\n"
-"   default='same as \"exclude\" above' -%]\n"
-"A list of files and directories that should not trigger a rebuild, when they change.  Patterns are allowed.  See <a href=\"[% q.llink(name = 'excluding-files') %]\">[% q.lxref('title', name = 'excluding-files') %]</a>!\n"
-"[%- END %]"
+#: ../en/docs/configuration-variables.md:36
+msgid "A list of files and directories that should not trigger a rebuild, when they change.  Patterns are allowed.  See <a href=\"[% q.llink(name = 'excluding-files') %]\">[% q.lxref('title', name = 'excluding-files') %]</a>!"
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:33
-msgid ""
-"[% WRAPPER components/variable.html\n"
-"   variable=\"linguas\" type='Array'\n"
-"   default='undefined' -%]\n"
-"A list of language codes for your site like \"en\", \"fr\", and so on.  It is recommended that you use <a href=\"https://tools.ietf.org/html/rfc3066\">HTTP language identifiers</a>.\n"
-"[%- END %]"
+#: ../en/docs/configuration-variables.md:44
+msgid "A list of language codes for your site like \"en\", \"fr\", and so on.  It is recommended that you use <a href=\"https://tools.ietf.org/html/rfc3066\">HTTP language identifiers</a>."
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:39
-msgid ""
-"[% WRAPPER components/variable.html\n"
-"   variable=\"link-score\" type='Integer'\n"
-"   default=5 -%]\n"
-"The relation score that two documents that have a link between each other get.  Note that this is counted from each document's side.  So, if document A links to B and B links to A, the overall relation score between A and B is 10.\n"
-"[%- END %]"
+#: ../en/docs/configuration-variables.md:52
+msgid "The relation score that two documents that have a link between each other get.  Note that this is counted from each document's side.  So, if document A links to B and B links to A, the overall relation score between A and B is 10."
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:45
-msgid ""
-"[% WRAPPER components/variable.html\n"
-"   variable=\"no-scm\" type='List of patterns'\n"
-"   default='none' -%]\n"
-"A list of file name patterns that should be processed although not being under version control.  This only makes sense in conjunction with <code>C:scm</code>.\n"
-"[%- END %]"
+#: ../en/docs/configuration-variables.md:60
+msgid "A list of file name patterns that should be processed although not being under version control.  This only makes sense in conjunction with <code>C:scm</code>."
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:51
-msgid ""
-"[% WRAPPER components/variable.html\n"
-"   variable=\"title\" type='String'\n"
-"   default='\"A New Qgoda Powered Site\"' -%]\n"
-"The name of the site.  Qgoda itself does not use this variable.\n"
-"[%- END %]"
+#: ../en/docs/configuration-variables.md:68
+msgid "The name of the site.  Qgoda itself does not use this variable."
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:57
-msgid ""
-"[% WRAPPER components/variable.html\n"
-"   variable=\"po\" type='Hash'\n"
-"   default='see below' -%]\n"
-"Container for various <q-term>i18n</q-term> settings, see below.\n"
-"[%- END %]"
+#: ../en/docs/configuration-variables.md:76
+msgid "Container for various <q-term>i18n</q-term> settings, see below."
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:63
-msgid ""
-"[% WRAPPER components/variable.html\n"
-"   variable=\"po.copyright-holder\" type='String'\n"
-"   default='none' -%]\n"
-"See <a href=\"[% q.llink(name='multilanguage-configuration') %]#po.copyright-holder-code-\"><code>po.copyright-holder</code> in Multilanguage Configuration</a>.\n"
-"[%- END %]"
+#: ../en/docs/configuration-variables.md:84
+msgid "See <a href=\"[% q.llink(name='multilanguage-configuration') %]#po.copyright-holder-code-\"><code>po.copyright-holder</code> in Multilanguage Configuration</a>."
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:69
-msgid ""
-"[% WRAPPER components/variable.html\n"
-"   variable=\"po.from-code\" type='String'\n"
-"   default='utf-8' -%]\n"
-"See <a href=\"[% q.llink(name='multilanguage-configuration') %]#po.from-code-code-\"><code>po.from-code</code> in Multilanguage Configuration</a>.\n"
-"[%- END %]"
+#: ../en/docs/configuration-variables.md:92
+msgid "See <a href=\"[% q.llink(name='multilanguage-configuration') %]#po.from-code-code-\"><code>po.from-code</code> in Multilanguage Configuration</a>."
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:75
-msgid ""
-"[% WRAPPER components/variable.html\n"
-"   variable=\"po.msgfmt\" type='String'\n"
-"   default='msgfmt' -%]\n"
-"See <a href=\"[% q.llink(name='multilanguage-configuration') %]#po.msgfmt-code-\"><code>po.msgfmt</code> in Multilanguage Configuration</a>.\n"
-"[%- END %]"
+#: ../en/docs/configuration-variables.md:100
+#: ../en/docs/configuration-variables.md:116
+msgid "See <a href=\"[% q.llink(name='multilanguage-configuration') %]#po.msgfmt-code-\"><code>po.msgfmt</code> in Multilanguage Configuration</a>."
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:81
-msgid ""
-"[% WRAPPER components/variable.html\n"
-"   variable=\"po.msgid-bugs-address\" type='String'\n"
-"   default='none' -%]\n"
-"See <a href=\"[% q.llink(name='multilanguage-configuration') %]#po.msgid-bugs-address-code-\"><code>po.msgid-bugs-address</code> in Multilanguage Configuration</a>.\n"
-"[%- END %]"
+#: ../en/docs/configuration-variables.md:108
+msgid "See <a href=\"[% q.llink(name='multilanguage-configuration') %]#po.msgid-bugs-address-code-\"><code>po.msgid-bugs-address</code> in Multilanguage Configuration</a>."
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:87
-msgid ""
-"[% WRAPPER components/variable.html\n"
-"   variable=\"po.qgoda\" type='String'\n"
-"   default='msgfmt' -%]\n"
-"See <a href=\"[% q.llink(name='multilanguage-configuration') %]#po.msgfmt-code-\"><code>po.msgfmt</code> in Multilanguage Configuration</a>.\n"
-"[%- END %]"
+#: ../en/docs/configuration-variables.md:124
+msgid "See <a href=\"[% q.llink(name='multilanguage-configuration') %]#po.msgmerge-code-\"><code>po.msgmerge</code> in Multilanguage Configuration</a>."
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:93
-msgid ""
-"[% WRAPPER components/variable.html\n"
-"   variable=\"po.msgmerge\" type='String'\n"
-"   default='msgfmt' -%]\n"
-"See <a href=\"[% q.llink(name='multilanguage-configuration') %]#po.msgmerge-code-\"><code>po.msgmerge</code> in Multilanguage Configuration</a>.\n"
-"[%- END %]"
+#: ../en/docs/configuration-variables.md:132
+msgid "See <a href=\"[% q.llink(name='multilanguage-configuration') %]#po.qgoda-code-\"><code>po.qgoda</code> in Multilanguage Configuration</a>."
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:99
-msgid ""
-"[% WRAPPER components/variable.html\n"
-"   variable=\"po.qgoda\" type='string or list'\n"
-"   default='0' -%]\n"
-"See <a href=\"[% q.llink(name='multilanguage-configuration') %]#po.qgoda-code-\"><code>po.qgoda</code> in Multilanguage Configuration</a>.\n"
-"[%- END %]"
+#: ../en/docs/configuration-variables.md:140
+msgid "See <a href=\"[% q.llink(name='multilanguage-configuration') %]#po.refresh-code-\"><code>po.refresh</code> in Multilanguage Configuration</a>."
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:105
-msgid ""
-"[% WRAPPER components/variable.html\n"
-"   variable=\"po.refresh\" type='Boolean (0 or 1)'\n"
-"   default='0' -%]\n"
-"See <a href=\"[% q.llink(name='multilanguage-configuration') %]#po.refresh-code-\"><code>po.refresh</code> in Multilanguage Configuration</a>.\n"
-"[%- END %]"
+#: ../en/docs/configuration-variables.md:148
+msgid "The textdomain of your site.  The master translation catalog for your site will be <code>TEXTDOMAIN.pot</code> and the invocation of the template toolkit Gettext plug-in has to use the same value.  The easiest way to achieve that is by invoking the Gettext plug-in with <code>[[%'%'%] USE gtx = Gettext(config.po.textdomain, asset.lingua) [%'%'%]]</code>."
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:111
-msgid ""
-"[% WRAPPER components/variable.html\n"
-"   variable=\"po.textdomain\" type='String'\n"
-"   default='none' -%]\n"
-"The textdomain of your site.  The master translation catalog for your site will be <code>TEXTDOMAIN.pot</code> and the invocation of the template toolkit Gettext plug-in has to use the same value.  The easiest way to achieve that is by invoking the Gettext plug-in with <code>[[%'%'%] USE gtx = Gettext(config.po.textdomain, asset.lingua) [%'%'%]]</code>.\n"
-"[%- END %]"
+#: ../en/docs/configuration-variables.md:156
+msgid "Location of the <code>xgettext</code> program if not in <code>$PATH</code>."
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:117
-msgid ""
-"[% WRAPPER components/variable.html\n"
-"   variable=\"po.xgettext\" type='String'\n"
-"   default='xgettext' -%]\n"
-"Location of the <code>xgettext</code> program if not in <code>$PATH</code>.\n"
-"[%- END %]"
+#: ../en/docs/configuration-variables.md:164
+msgid "Location of the <code>xgettext-tt2</code> program if not in <code>$PATH</code>."
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:123
-msgid ""
-"[% WRAPPER components/variable.html\n"
-"   variable=\"po.xgettext-tt2\" type='String'\n"
-"   default='xgettext-tt2' -%]\n"
-"Location of the <code>xgettext-tt2</code> program if not in <code>$PATH</code>.\n"
-"[%- END %]"
+#: ../en/docs/configuration-variables.md:172
+msgid "Source Code Management (SCM) system in use.  The only supported variable at the moment is \"git\".  That has the effect that only files under version control are processed.  This check is done *after* filtering with the contents of the configuration variable <code>C:exclude</code>."
 msgstr ""
 
-#: ../en/docs/configuration-variables.md:129
-msgid ""
-"[% WRAPPER components/variable.html\n"
-"   variable=\"scm\" type='String'\n"
-"   default='none' -%]\n"
-"Source Code Management (SCM) system in use.  The only supported variable at the moment is \"git\".  That has the effect that only files under version control are processed.  This check is done *after* filtering with the contents of the configuration variable <code>C:exclude</code>.\n"
-"[%- END %]"
-msgstr ""
-
-#: ../en/docs/configuration-variables.md:135
-msgid ""
-"[% WRAPPER components/variable.html\n"
-"   variable=\"url\" type='String'\n"
-"   default='none' -%]\n"
-"The url (<code>http://...</code>) of the site, normally without a trailing slash (so that you can safely append <code>V:asset.permalink</code> to it).  Qgoda itself does not use this variable.\n"
-"[%- END %]\n"
-"</ul>"
+#: ../en/docs/configuration-variables.md:180
+msgid "The url (<code>http://...</code>) of the site, normally without a trailing slash (so that you can safely append <code>V:asset.permalink</code> to it).  Qgoda itself does not use this variable."
 msgstr ""
 
 #: ../en/docs/configuration.md:2 ../en/docs/multilanguage-configuration.md:2
@@ -6478,17 +6368,17 @@ msgstr ""
 
 #: ../en/news/client-side-syntax-highlighting.md:7
 msgctxt "tags"
+msgid "Howto"
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:7
+msgctxt "tags"
 msgid "Tutorial"
 msgstr ""
 
 #: ../en/news/client-side-syntax-highlighting.md:7
 msgctxt "tags"
 msgid "JavaScript"
-msgstr ""
-
-#: ../en/news/client-side-syntax-highlighting.md:7
-msgctxt "tags"
-msgid "Howto"
 msgstr ""
 
 #: ../en/news/client-side-syntax-highlighting.md:7

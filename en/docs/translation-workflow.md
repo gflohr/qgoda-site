@@ -159,7 +159,7 @@ pull requests welcome!
 
 ### Creating the PO Template (`.pot`) File
 
-The master translation catalog is stored as a so-called PO template 
+The main translation catalog is stored as a so-called PO template 
 file under `_po/TEXTDOMAIN.pt`, where `TEXTDOMAIN` is the textdomain you have
 configured in the configuration variable `C:po.textdomain`.
 
