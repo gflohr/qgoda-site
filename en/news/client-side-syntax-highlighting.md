@@ -314,7 +314,7 @@ if (options.debug) {
 [@ END @]
 <!--/qgoda-no-xgettext-->
 
-See the [JavaScript source code](https://github.com/gflohr/qgoda-c/blob/master/_assets/js/line-numbers.js)
+See the [JavaScript source code](https://github.com/gflohr/qgoda-c/blob/main/_assets/js/line-numbers.js)
 for details!
 
 ## Caveats
@@ -363,10 +363,10 @@ that have the exact class `line-numbers`.  The workaround is to use both classes
 the BEM-style class for styling and the literal one for the JavaScript code.
 
 You can see how this is done in the
-[source code of this page](https://github.com/gflohr/qgoda-site/blame/master/[@ asset.relpath @]).
+[source code of this page](https://github.com/gflohr/qgoda-site/blame/main/[@ asset.relpath @]).
 
 The BEM-style class name is stored in the variable `css.prism.line_numbers`. The hash
 containing that variable is read in
-https://github.com/gflohr/qgoda-site/blob/master/_views/functions/css-modules.tt
+https://github.com/gflohr/qgoda-site/blob/main/_views/functions/css-modules.tt
 and that function is included at the top of
-[source code of this page](https://github.com/gflohr/qgoda-site/blame/master/[@ asset.relpath @]).
+[source code of this page](https://github.com/gflohr/qgoda-site/blame/main/[@ asset.relpath @]).
