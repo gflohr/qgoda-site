@@ -1,3 +1,3 @@
 ---
-master: /en/docs/defaults.md
+main: /en/docs/defaults.md
 ---

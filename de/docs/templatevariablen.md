@@ -1,3 +1,3 @@
 ---
-master: /en/docs/template-variables.md
+main: /en/docs/template-variables.md
 ---

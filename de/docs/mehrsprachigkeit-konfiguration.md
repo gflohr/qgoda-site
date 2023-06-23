@@ -1,3 +1,3 @@
 ---
-master: /en/docs/multilanguage-configuration.md
+main: /en/docs/multilanguage-configuration.md
 ---

@@ -1,3 +1,3 @@
 ---
-master: /en/docs/miscellaneous.md
+main: /en/docs/miscellaneous.md
 ---

@@ -1,3 +1,3 @@
 ---
-master: /en/news/client-side-syntax-highlighting.md
+main: /en/news/client-side-syntax-highlighting.md
 ---

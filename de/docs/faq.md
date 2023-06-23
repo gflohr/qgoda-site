@@ -1,3 +1,3 @@
 ---
-master: /en/docs/faq.md
+main: /en/docs/faq.md
 ---

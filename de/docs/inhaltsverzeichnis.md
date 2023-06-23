@@ -1,3 +1,3 @@
 ---
-master: /en/docs/table-of-contents.md
+main: /en/docs/table-of-contents.md
 ---

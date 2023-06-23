@@ -1,3 +1,3 @@
 ---
-master: /en/docs/po-translations.md
+main: /en/docs/po-translations.md
 ---
