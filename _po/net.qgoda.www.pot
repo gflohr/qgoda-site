@@ -96,180 +96,6 @@ msgstr ""
 msgid "Home"
 msgstr ""
 
-#: ../_includes/en/landing-page/about-duktape.md:3
-msgctxt "title"
-msgid "Duktape"
-msgstr ""
-
-#: ../_includes/en/landing-page/about-duktape.md:6
-msgid ""
-"Qgoda ships with the embeddable JavaScript engine Duktape.  That gives us the\n"
-"possibility to choose between JavaScript and Perl implementations and pick\n"
-"whatever does the job best."
-msgstr ""
-
-#: ../_includes/en/landing-page/about-nodejs.md:3
-msgctxt "title"
-msgid "Node.JS"
-msgstr ""
-
-#: ../_includes/en/landing-page/about-nodejs.md:5
-msgctxt "image_alt"
-msgid "The Node.JS Logo"
-msgstr ""
-
-#: ../_includes/en/landing-page/about-nodejs.md:8
-msgid ""
-"Node.JS is the most popular platform for building web applications today.\n"
-"Instead of re-inventing the wheel, qgoda uses libsass, uglifyjs, and so on as\n"
-"helpers."
-msgstr ""
-
-#: ../_includes/en/landing-page/about-perl.md:3
-msgctxt "title"
-msgid "Perl"
-msgstr ""
-
-#: ../_includes/en/landing-page/about-perl.md:5
-msgctxt "image_alt"
-msgid "The Perl Logo"
-msgstr ""
-
-#: ../_includes/en/landing-page/about-perl.md:8
-msgid "Rock stable, universally available, and fast. But don't be afraid. You don't need Perl for using qgoda. Even when you want to extend qgoda, you can do so with the programming language of your choice."
-msgstr ""
-
-#: ../_includes/en/landing-page/about-webpack.md:3
-msgctxt "title"
-msgid "Webpack"
-msgstr ""
-
-#: ../_includes/en/landing-page/about-webpack.md:5
-msgctxt "image_alt"
-msgid "The webpack logo"
-msgstr ""
-
-#: ../_includes/en/landing-page/about-webpack.md:8
-msgid ""
-"Asset bundling greatly improves the performance and maintainability\n"
-"of your site. Whether you start your site with the Yeoman generator or\n"
-"from a Qgoda theme, webpack is preconfigured for you."
-msgstr ""
-
-#: ../_includes/en/landing-page/about-yeoman.md:3
-msgctxt "title"
-msgid "Yeoman"
-msgstr ""
-
-#: ../_includes/en/landing-page/about-yeoman.md:5
-msgctxt "image_alt"
-msgid "The Yeoman logo"
-msgstr ""
-
-#: ../_includes/en/landing-page/about-yeoman.md:8
-msgid ""
-"Yeoman is the most popular scaffolding tool for web apps. You\n"
-"can build your Qgoda site from scratch with Yeoman based\n"
-"[Qgoda generator](https://www.npmjs.com/package/generator-qgoda)\n"
-"generator with exactly the components and features you want."
-msgstr ""
-
-#: ../_includes/en/landing-page/about.md:3
-msgctxt "title"
-msgid "Main Technologies"
-msgstr ""
-
-#: ../_includes/en/landing-page/header.md:3
-msgctxt "title"
-msgid "The Qgoda Static Site Generator"
-msgstr ""
-
-#: ../_includes/en/landing-page/header.md:4
-msgctxt "button"
-msgid "Explore"
-msgstr ""
-
-#: ../_includes/en/landing-page/header.md:7
-msgid ""
-"No database, no fuzz, no buzz. Qgoda works everywhere. Write your texts using \n"
-"Markdown and we've got you going. HTML knowledge is a plus but not a \n"
-"requirement."
-msgstr ""
-
-#: ../_includes/en/landing-page/main-features.md:2
-msgctxt "title"
-msgid "Main Features"
-msgstr ""
-
-#: ../_includes/en/landing-page/multi-language.md:3
-msgctxt "title"
-msgid "Multi-Language Blogging"
-msgstr ""
-
-#: ../_includes/en/landing-page/multi-language.md:5
-#: ../_includes/en/landing-page/taxonomies.md:5
-msgctxt "button"
-msgid "Learn More"
-msgstr ""
-
-#: ../_includes/en/landing-page/multi-language.md:8
-msgctxt "image_alt"
-msgid "The earth from space"
-msgstr ""
-
-#: ../_includes/en/landing-page/multi-language.md:10
-msgid "Qgoda's multi-language feature set is second to no other Content Management System, leave alone static site generators. No hacks required. The multi-language features are an integral part of Qgoda."
-msgstr ""
-
-#: ../_includes/en/landing-page/news.md:3 ../en/news/index.md:3
-msgctxt "title"
-msgid "News"
-msgstr ""
-
-#: ../_includes/en/landing-page/news.md:5
-msgctxt "button"
-msgid "Read All"
-msgstr ""
-
-#: ../_includes/en/landing-page/pronunciation.md:3
-msgctxt "title"
-msgid "How the Heck Is That Pronounced?"
-msgstr ""
-
-#: ../_includes/en/landing-page/pronunciation.md:5
-msgctxt "button"
-msgid "Really?"
-msgstr ""
-
-#: ../_includes/en/landing-page/pronunciation.md:8
-msgctxt "image_alt"
-msgid "A strawberry"
-msgstr ""
-
-#: ../_includes/en/landing-page/pronunciation.md:10
-msgid ""
-"It is pronounced \"yagoda\" and it means strawberry in Bulgarian and other Slavic \n"
-"languages. The cyrillic letter \"ya\" is commonly transcribed as \"q\" because it \n"
-"resembles the original cyrillic letter \"я\"."
-msgstr ""
-
-#: ../_includes/en/landing-page/taxonomies.md:3
-msgctxt "title"
-msgid "Unlimited Taxonomies"
-msgstr ""
-
-#: ../_includes/en/landing-page/taxonomies.md:8
-msgctxt "image_alt"
-msgid "Old sideboard with many drawers"
-msgstr ""
-
-#: ../_includes/en/landing-page/taxonomies.md:10
-msgid ""
-"With Qgoda you don't have to restrict yourself to tags and categories for \n"
-"structuring your content. You can use as many taxonomies as you want and you \n"
-"can freely combine them for listings and filters."
-msgstr ""
-
 #: ../en/data-privacy-policy.md:2
 msgctxt "title"
 msgid "Data Privacy"
@@ -669,7 +495,7 @@ msgid "See <a href=\"[% q.llink(name='multilanguage-configuration') %]#po.refres
 msgstr ""
 
 #: ../en/docs/configuration-variables.md:148
-msgid "The textdomain of your site.  The master translation catalog for your site will be <code>TEXTDOMAIN.pot</code> and the invocation of the template toolkit Gettext plug-in has to use the same value.  The easiest way to achieve that is by invoking the Gettext plug-in with <code>[[%'%'%] USE gtx = Gettext(config.po.textdomain, asset.lingua) [%'%'%]]</code>."
+msgid "The textdomain of your site.  The main translation catalog for your site will be <code>TEXTDOMAIN.pot</code> and the invocation of the template toolkit Gettext plug-in has to use the same value.  The easiest way to achieve that is by invoking the Gettext plug-in with <code>[[%'%'%] USE gtx = Gettext(config.po.textdomain, asset.lingua) [%'%'%]]</code>."
 msgstr ""
 
 #: ../en/docs/configuration-variables.md:156
@@ -830,7 +656,7 @@ msgid ""
 "Likewise, a boolean option actually requires either `true` or `false`. With\n"
 "type coercion you can use `0`, an empty string or `null` as an alias for\n"
 "`false`, and pretty much everything else is interpreted as `true`. See the\n"
-"complete table at https://github.com/epoberezkin/ajv/blob/master/COERCION.md\n"
+"complete table at https://github.com/ajv-validator/ajv/blob/master/COERCION.md\n"
 "for the complete story."
 msgstr ""
 
@@ -2782,7 +2608,7 @@ msgid "Content negotiation can be made arbitrarily complicated. In practice ther
 msgstr ""
 
 #: ../en/docs/multilanguage-configuration.md:294
-msgid "Server-side solutions are described at the above mentioned blog post [Simple Content Negotiation for Nginx](http://www.guido-flohr.net/simple-content-negotiation-for-nginx/) but as a fallback and short of better ideas feel free to steal the start page for this site from https://github.com/gflohr/qgoda-site/blob/master/index.html."
+msgid "Server-side solutions are described at the above mentioned blog post [Simple Content Negotiation for Nginx](http://www.guido-flohr.net/simple-content-negotiation-for-nginx/) but as a fallback and short of better ideas feel free to steal the start page for this site from https://github.com/gflohr/qgoda-site/blob/main/index.html."
 msgstr ""
 
 #: ../en/docs/multilanguage-overview.md:2
@@ -3327,7 +3153,7 @@ msgstr ""
 #: ../en/docs/pagination.md:152
 msgid ""
 "You can take a\n"
-"[full-fledged example](https://github.com/gflohr/qgoda-multilang/blob/master/_views/components/listing.html)\n"
+"[full-fledged example](https://github.com/gflohr/qgoda-multilang/blob/main/_views/components/listing.html)\n"
 "from the [Qgoda Multilanguage Theme](https://github.com/gflohr/qgoda-multilang)\n"
 "as a starting point for your own listing and pagination module."
 msgstr ""
@@ -3778,7 +3604,7 @@ msgstr ""
 msgid ""
 "```yaml\n"
 "---\n"
-"master: /en/about-strawberries.md\n"
+"main: /en/about-strawberries.md\n"
 "lingua: de\n"
 "title: Über Erdbeeren\n"
 "---\n"
@@ -3786,7 +3612,7 @@ msgid ""
 msgstr ""
 
 #: ../en/docs/po-translations.md:47
-msgid "The interesting variable here is `V:asset.master`. It just\n"
+msgid "The interesting variable here is `V:asset.main`. It just\n"
 "points to the same document in the main language."
 msgstr ""
 
@@ -3822,7 +3648,7 @@ msgstr ""
 msgid ""
 "```yaml\n"
 "---\n"
-"master: /en/about-strawberries.md\n"
+"main: /en/about-strawberries.md\n"
 "translate:\n"
 "    - title\n"
 "    - description\n"
@@ -3834,7 +3660,7 @@ msgstr ""
 msgid ""
 "This has the effect that the values of the front matter \n"
 "variables `title` and `description` are extracted from\n"
-"the master document into the `.po` file, and their \n"
+"the main document into the `.po` file, and their \n"
 "translations will be used, when generating the \n"
 "translated document."
 msgstr ""
@@ -3916,7 +3742,7 @@ msgstr ""
 msgid ""
 "```yaml\n"
 "---\n"
-"master: /en/qgoda-rocks.md\n"
+"main: /en/qgoda-rocks.md\n"
 "---\n"
 "```"
 msgstr ""
@@ -5790,7 +5616,7 @@ msgid "### Other Variants"
 msgstr ""
 
 #: ../en/docs/translating-templates.md:99
-msgid "There are a lot more variants of the translation functions, for example strings containing plural forms. See the [documentation for the Gettext plugin](https://github.com/gflohr/Template-Plugin-Gettext) and its [API documentation](https://github.com/gflohr/Template-Plugin-Gettext/blob/master/lib/Template/Plugin/Gettext.pod#user-content-FUNCTIONS) for details."
+msgid "There are a lot more variants of the translation functions, for example strings containing plural forms. See the [documentation for the Gettext plugin](https://github.com/gflohr/Template-Plugin-Gettext) and its [API documentation](https://github.com/gflohr/Template-Plugin-Gettext/blob/main/lib/Template/Plugin/Gettext.pod#user-content-FUNCTIONS) for details."
 msgstr ""
 
 #: ../en/docs/translating-templates.md:101
@@ -6086,7 +5912,7 @@ msgstr ""
 
 #: ../en/docs/translation-workflow.md:162
 msgid ""
-"The master translation catalog is stored as a so-called PO template \n"
+"The main translation catalog is stored as a so-called PO template \n"
 "file under `_po/TEXTDOMAIN.pt`, where `TEXTDOMAIN` is the textdomain you have\n"
 "configured in the configuration variable `C:po.textdomain`."
 msgstr ""
@@ -6449,12 +6275,12 @@ msgstr ""
 
 #: ../en/news/client-side-syntax-highlighting.md:7
 msgctxt "tags"
-msgid "Howto"
+msgid "Tutorial"
 msgstr ""
 
 #: ../en/news/client-side-syntax-highlighting.md:7
 msgctxt "tags"
-msgid "Tutorial"
+msgid "Syntax Highlighting"
 msgstr ""
 
 #: ../en/news/client-side-syntax-highlighting.md:7
@@ -6464,7 +6290,7 @@ msgstr ""
 
 #: ../en/news/client-side-syntax-highlighting.md:7
 msgctxt "tags"
-msgid "Syntax Highlighting"
+msgid "Howto"
 msgstr ""
 
 #: ../en/news/client-side-syntax-highlighting.md:17
@@ -6731,7 +6557,7 @@ msgid ""
 msgstr ""
 
 #: ../en/news/client-side-syntax-highlighting.md:317
-msgid "See the [JavaScript source code](https://github.com/gflohr/qgoda-c/blob/master/_assets/js/line-numbers.js)\n"
+msgid "See the [JavaScript source code](https://github.com/gflohr/qgoda-c/blob/main/_assets/js/line-numbers.js)\n"
 "for details!"
 msgstr ""
 
@@ -6794,16 +6620,21 @@ msgstr ""
 
 #: ../en/news/client-side-syntax-highlighting.md:365
 msgid "You can see how this is done in the\n"
-"[source code of this page](https://github.com/gflohr/qgoda-site/blame/master/[@ asset.relpath @])."
+"[source code of this page](https://github.com/gflohr/qgoda-site/blame/main/[@ asset.relpath @])."
 msgstr ""
 
 #: ../en/news/client-side-syntax-highlighting.md:368
 msgid ""
 "The BEM-style class name is stored in the variable `css.prism.line_numbers`. The hash\n"
 "containing that variable is read in\n"
-"https://github.com/gflohr/qgoda-site/blob/master/_views/functions/css-modules.tt\n"
+"https://github.com/gflohr/qgoda-site/blob/main/_views/functions/css-modules.tt\n"
 "and that function is included at the top of\n"
-"[source code of this page](https://github.com/gflohr/qgoda-site/blame/master/[@ asset.relpath @])."
+"[source code of this page](https://github.com/gflohr/qgoda-site/blame/main/[@ asset.relpath @])."
+msgstr ""
+
+#: ../en/news/index.md:3
+msgctxt "title"
+msgid "News"
 msgstr ""
 
 #: ../en/news/index.md:6
