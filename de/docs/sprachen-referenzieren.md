@@ -1,3 +1,3 @@
 ---
-main: /en/docs/referencing-languages.md
+master: /en/docs/referencing-languages.md
 ---

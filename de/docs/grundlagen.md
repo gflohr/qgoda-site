@@ -1,3 +1,3 @@
 ---
-main: /en/docs/basics.md
+master: /en/docs/basics.md
 ---

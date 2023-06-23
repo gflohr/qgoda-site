@@ -1,3 +1,3 @@
 ---
-main: /en/docs/introduction.md
+master: /en/docs/introduction.md
 ---

@@ -1,3 +1,3 @@
 ---
-main: /en/docs/terms-and-concepts.md
+master: /en/docs/terms-and-concepts.md
 ---

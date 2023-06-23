@@ -1,3 +1,3 @@
 ---
-main: /en/docs/output-location.md
+master: /en/docs/output-location.md
 ---

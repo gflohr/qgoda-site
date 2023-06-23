@@ -1,3 +1,3 @@
 ---
-main: /en/docs/qgoda-plug-in.md
+master: /en/docs/qgoda-plug-in.md
 ---

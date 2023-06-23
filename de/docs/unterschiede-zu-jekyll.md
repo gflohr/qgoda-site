@@ -1,3 +1,3 @@
 ---
-main: /en/docs/differences-to-jekyll.md
+master: /en/docs/differences-to-jekyll.md
 ---

@@ -1,3 +1,3 @@
 ---
-main: /en/news/index.md
+master: /en/news/index.md
 ---

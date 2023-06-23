@@ -1,3 +1,3 @@
 ---
-main: /en/docs/excluding-files.md
+master: /en/docs/excluding-files.md
 ---

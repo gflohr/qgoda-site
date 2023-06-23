@@ -1,3 +1,3 @@
 ---
-main: /en/docs/listings.md
+master: /en/docs/listings.md
 ---

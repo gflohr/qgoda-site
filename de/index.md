@@ -1,3 +1,3 @@
 ---
-main: /en/index.md
+master: /en/index.md
 ---

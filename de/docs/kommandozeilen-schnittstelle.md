@@ -1,3 +1,3 @@
 ---
-main: /en/docs/command-line-interface.md
+master: /en/docs/command-line-interface.md
 ---

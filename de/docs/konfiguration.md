@@ -1,3 +1,3 @@
 ---
-main: /en/docs/configuration.md
+master: /en/docs/configuration.md
 ---

@@ -1,3 +1,3 @@
 ---
-main: /en/data-privacy-policy.md
+master: /en/data-privacy-policy.md
 ---

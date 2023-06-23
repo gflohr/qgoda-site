@@ -1,3 +1,3 @@
 ---
-main: /en/docs/pagination.md
+master: /en/docs/pagination.md
 ---

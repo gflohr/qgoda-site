@@ -1,3 +1,3 @@
 ---
-main: /en/docs/multilanguage-overview.md
+master: /en/docs/multilanguage-overview.md
 ---

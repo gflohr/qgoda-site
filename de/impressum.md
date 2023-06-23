@@ -1,3 +1,3 @@
 ---
-main: /en/legal-disclosure.md
+master: /en/legal-disclosure.md
 ---

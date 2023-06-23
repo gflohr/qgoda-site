@@ -1,3 +1,3 @@
 ---
-main: /en/docs/qgoda-in-15-minutes.md
+master: /en/docs/qgoda-in-15-minutes.md
 ---

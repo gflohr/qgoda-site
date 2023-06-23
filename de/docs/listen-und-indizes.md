@@ -1,3 +1,3 @@
 ---
-main: /en/docs/lists-and-indices.md
+master: /en/docs/lists-and-indices.md
 ---

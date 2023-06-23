@@ -1,3 +1,3 @@
 ---
-main: /en/docs/translating-templates.md
+master: /en/docs/translating-templates.md
 ---

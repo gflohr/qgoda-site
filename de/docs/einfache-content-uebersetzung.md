@@ -1,3 +1,3 @@
 ---
-main: /en/docs/simple-content-translation.md
+master: /en/docs/simple-content-translation.md
 ---
