@@ -1,3 +1,3 @@
 ---
-master: /en/docs/files-and-directories.md
+main: /en/docs/files-and-directories.md
 ---

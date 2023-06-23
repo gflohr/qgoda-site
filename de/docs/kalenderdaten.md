@@ -1,3 +1,3 @@
 ---
-master: /en/docs/dates.md
+main: /en/docs/dates.md
 ---

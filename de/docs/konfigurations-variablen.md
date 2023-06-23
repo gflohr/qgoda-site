@@ -1,3 +1,3 @@
 ---
-master: /en/docs/configuration-variables.md
+main: /en/docs/configuration-variables.md
 ---

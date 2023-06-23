@@ -1,3 +1,3 @@
 ---
-master: /en/docs/installation.md
+main: /en/docs/installation.md
 ---

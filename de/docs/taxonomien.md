@@ -1,3 +1,3 @@
 ---
-master: /en/docs/taxonomies.md
+main: /en/docs/taxonomies.md
 ---

@@ -1,3 +1,3 @@
 ---
-master: /en/docs/translation-workflow.md
+main: /en/docs/translation-workflow.md
 ---

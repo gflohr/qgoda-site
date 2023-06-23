@@ -1,3 +1,3 @@
 ---
-master: /en/docs/pattern-lists.md
+main: /en/docs/pattern-lists.md
 ---

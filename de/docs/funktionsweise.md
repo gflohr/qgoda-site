@@ -1,3 +1,3 @@
 ---
-master: /en/docs/mode-of-operation.md
+main: /en/docs/mode-of-operation.md
 ---
