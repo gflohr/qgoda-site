@@ -65,6 +65,9 @@ defaults:
     values:
       type: page
       priority: -999
+  - files: /sitemap.xml
+    values:
+      priority: -1000
 taxonomies:
   'doc-section': ~
   name: ~
