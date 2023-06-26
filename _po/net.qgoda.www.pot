@@ -309,15 +309,6 @@ msgstr ""
 msgid "For example:"
 msgstr ""
 
-# qgoda-no-gettext
-#: ../en/docs/command-line-interface.md:23
-msgid ""
-"```bash\n"
-"$ qgoda --verbose build --drafts --future\n"
-"```\n"
-"<!--/qgoda-no-xgettext-->"
-msgstr ""
-
 #: ../en/docs/command-line-interface.md:29
 msgid "That sets the global option `--verbose` to true and selects the qgoda command `build` with the options `--drafts` and `--future`."
 msgstr ""
@@ -1329,79 +1320,46 @@ msgid ""
 "[% END %]"
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:25
-msgid ""
-"[% WRAPPER components/file.html\n"
-"   name=\"_assets\" type='directory' -%]\n"
-"This directory usually keeps the source files for assets, for example\n"
-"JavaScript files or (S)CSS files.  Qgoda does not use this name internally.  It is just a convention.\n"
-"[%- END %]"
+#: ../en/docs/files-and-directories.md:27
+msgid "This directory usually keeps the source files for assets, for example\n"
+"JavaScript files or (S)CSS files.  Qgoda does not use this name internally.  It is just a convention."
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:31
-msgid ""
-"[% WRAPPER components/file.html\n"
-"   name=\"_config.yaml\" type='file' -%]\n"
-"Qgoda's main configuration file.\n"
-"[%- END %]"
-msgstr ""
-
-#: ../en/docs/files-and-directories.md:36
-msgid ""
-"[% WRAPPER components/file.html\n"
-"   name=\"_config.yml\" type='file' -%]\n"
-"Qgoda's secondary configuration file.  It is only used if <code>P:config.yaml</code>\n"
-"does not exist.\n"
-"[%- END %]"
+#: ../en/docs/files-and-directories.md:35
+msgid "Qgoda's main configuration file."
 msgstr ""
 
 #: ../en/docs/files-and-directories.md:42
+msgid "Qgoda's secondary configuration file.  It is only used if <code>P:config.yaml</code>\n"
+"does not exist."
+msgstr ""
+
+#: ../en/docs/files-and-directories.md:51
 msgid ""
-"[% WRAPPER components/file.html\n"
-"   name=\"_includes\" type='directory'\n"
-"   overridable=\"paths.includes\" -%]\n"
 "Directory for included content snippets.  You use that for example\n"
 "like <code>[&#37; q.include(\"_includes/footer.md\") &#37;]</code>.  Using the\n"
-"name `_includes` is not enforced by Qgoda.  But you should use a name that starts with an underscore (so that the files are not misinterpreted as regular content) and add the negated name to the configuration variable `C:exclude-watch`.\n"
-"[%- END %]"
+"name `_includes` is not enforced by Qgoda.  But you should use a name that starts with an underscore (so that the files are not misinterpreted as regular content) and add the negated name to the configuration variable `C:exclude-watch`."
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:50
-msgid ""
-"[% WRAPPER components/file.html\n"
-"   name=\"_plugins\" type='directory'\n"
-"   overridable=\"paths.plugins\" -%]\n"
-"Directory for site-specific plug-ins.  Plug-Ins in this directory are\n"
-"automatically activated.\n"
-"[%- END %]"
+#: ../en/docs/files-and-directories.md:61
+msgid "Directory for site-specific plug-ins.  Plug-Ins in this directory are\n"
+"automatically activated."
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:57
+#: ../en/docs/files-and-directories.md:70
 msgid ""
-"[% WRAPPER components/file.html\n"
-"   name=\"_site\" type='directory'\n"
-"   overridable=\"paths.site\" -%]\n"
 "The output directory.  This will normally be the document root of your\n"
 "web server.  Files and directories in <code>P:_site</code> are \n"
-"overwritten without warning.\n"
-"[%- END %]"
+"overwritten without warning."
 msgstr ""
 
-#: ../en/docs/files-and-directories.md:65
-msgid ""
-"[% WRAPPER components/file.html\n"
-"   name=\"_timestamp\" type='file'\n"
-"   overridable=\"paths.timestamp\" -%]"
-msgstr ""
-
-#: ../en/docs/files-and-directories.md:69
+#: ../en/docs/files-and-directories.md:80
 msgid ""
 "This file contains the time, when <code>P:_site</code> was last\n"
 "re-created as seconds since the <q-term>epoch</q-term>.  If you \n"
 "automatically re-load pages in the browser, for example with\n"
 "<a href=\"https://www.browsersync.io/\")>browser-sync</a>, you should \n"
-"specify  <code>P:_timestamp</code> as the file to watch for changes.\n"
-"[%- END %]"
+"specify  <code>P:_timestamp</code> as the file to watch for changes."
 msgstr ""
 
 #: ../en/docs/filters.md:2
@@ -3153,7 +3111,7 @@ msgstr ""
 #: ../en/docs/pagination.md:152
 msgid ""
 "You can take a\n"
-"[full-fledged example](https://github.com/gflohr/qgoda-multilang/blob/main/_views/components/listing.html)\n"
+"[full-fledged example](https://github.com/gflohr/qgoda-multilang/blob/master/_views/components/listing.html)\n"
 "from the [Qgoda Multilanguage Theme](https://github.com/gflohr/qgoda-multilang)\n"
 "as a starting point for your own listing and pagination module."
 msgstr ""
@@ -3604,7 +3562,7 @@ msgstr ""
 msgid ""
 "```yaml\n"
 "---\n"
-"main: /en/about-strawberries.md\n"
+"master: /en/about-strawberries.md\n"
 "lingua: de\n"
 "title: Über Erdbeeren\n"
 "---\n"
@@ -3612,7 +3570,7 @@ msgid ""
 msgstr ""
 
 #: ../en/docs/po-translations.md:47
-msgid "The interesting variable here is `V:asset.main`. It just\n"
+msgid "The interesting variable here is `V:asset.master`. It just\n"
 "points to the same document in the main language."
 msgstr ""
 
@@ -3648,7 +3606,7 @@ msgstr ""
 msgid ""
 "```yaml\n"
 "---\n"
-"main: /en/about-strawberries.md\n"
+"master: /en/about-strawberries.md\n"
 "translate:\n"
 "    - title\n"
 "    - description\n"
@@ -3742,7 +3700,7 @@ msgstr ""
 msgid ""
 "```yaml\n"
 "---\n"
-"main: /en/qgoda-rocks.md\n"
+"master: /en/qgoda-rocks.md\n"
 "---\n"
 "```"
 msgstr ""
@@ -6280,12 +6238,12 @@ msgstr ""
 
 #: ../en/news/client-side-syntax-highlighting.md:7
 msgctxt "tags"
-msgid "Syntax Highlighting"
+msgid "JavaScript"
 msgstr ""
 
 #: ../en/news/client-side-syntax-highlighting.md:7
 msgctxt "tags"
-msgid "JavaScript"
+msgid "Syntax Highlighting"
 msgstr ""
 
 #: ../en/news/client-side-syntax-highlighting.md:7
@@ -6557,7 +6515,7 @@ msgid ""
 msgstr ""
 
 #: ../en/news/client-side-syntax-highlighting.md:317
-msgid "See the [JavaScript source code](https://github.com/gflohr/qgoda-c/blob/main/_assets/js/line-numbers.js)\n"
+msgid "See the [JavaScript source code](https://github.com/gflohr/qgoda-c/blob/master/_assets/js/line-numbers.js)\n"
 "for details!"
 msgstr ""
 
@@ -6620,16 +6578,16 @@ msgstr ""
 
 #: ../en/news/client-side-syntax-highlighting.md:365
 msgid "You can see how this is done in the\n"
-"[source code of this page](https://github.com/gflohr/qgoda-site/blame/main/[@ asset.relpath @])."
+"[source code of this page](https://github.com/gflohr/qgoda-site/blame/master/[@ asset.relpath @])."
 msgstr ""
 
 #: ../en/news/client-side-syntax-highlighting.md:368
 msgid ""
 "The BEM-style class name is stored in the variable `css.prism.line_numbers`. The hash\n"
 "containing that variable is read in\n"
-"https://github.com/gflohr/qgoda-site/blob/main/_views/functions/css-modules.tt\n"
+"https://github.com/gflohr/qgoda-site/blob/master/_views/functions/css-modules.tt\n"
 "and that function is included at the top of\n"
-"[source code of this page](https://github.com/gflohr/qgoda-site/blame/main/[@ asset.relpath @])."
+"[source code of this page](https://github.com/gflohr/qgoda-site/blame/master/[@ asset.relpath @])."
 msgstr ""
 
 #: ../en/news/index.md:3

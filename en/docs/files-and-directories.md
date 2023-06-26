@@ -20,59 +20,70 @@ underscore of the name is ignored.
 
 <!--qgoda-no-xgettext-->
 <ul>
-<!--/qgoda-no-xgettext-->
 
 [% WRAPPER components/file.html
    name="_assets" type='directory' -%]
+<!--/qgoda-no-xgettext-->
 This directory usually keeps the source files for assets, for example
 JavaScript files or (S)CSS files.  Qgoda does not use this name internally.  It is just a convention.
+<!--qgoda-no-xgettext-->
 [%- END %]
 
 [% WRAPPER components/file.html
    name="_config.yaml" type='file' -%]
+<!--/qgoda-no-xgettext-->
 Qgoda's main configuration file.
+<!--qgoda-no-xgettext-->
 [%- END %]
 
 [% WRAPPER components/file.html
    name="_config.yml" type='file' -%]
+<!--/qgoda-no-xgettext-->
 Qgoda's secondary configuration file.  It is only used if <code>P:config.yaml</code>
 does not exist.
+<!--qgoda-no-xgettext-->
 [%- END %]
 
 [% WRAPPER components/file.html
    name="_includes" type='directory'
    overridable="paths.includes" -%]
+<!--/qgoda-no-xgettext-->
 Directory for included content snippets.  You use that for example
 like <code>[&#37; q.include("_includes/footer.md") &#37;]</code>.  Using the
 name `_includes` is not enforced by Qgoda.  But you should use a name that starts with an underscore (so that the files are not misinterpreted as regular content) and add the negated name to the configuration variable `C:exclude-watch`.
+<!--qgoda-no-xgettext-->
 [%- END %]
 
 [% WRAPPER components/file.html
    name="_plugins" type='directory'
    overridable="paths.plugins" -%]
+<!--/qgoda-no-xgettext-->
 Directory for site-specific plug-ins.  Plug-Ins in this directory are
 automatically activated.
+<!--qgoda-no-xgettext-->
 [%- END %]
 
 [% WRAPPER components/file.html
    name="_site" type='directory'
    overridable="paths.site" -%]
+<!--/qgoda-no-xgettext-->
 The output directory.  This will normally be the document root of your
 web server.  Files and directories in <code>P:_site</code> are 
 overwritten without warning.
+<!--qgoda-no-xgettext-->
 [%- END %]
 
 [% WRAPPER components/file.html
    name="_timestamp" type='file'
    overridable="paths.timestamp" -%]
-
+<!--/qgoda-no-xgettext-->
 This file contains the time, when <code>P:_site</code> was last
 re-created as seconds since the <q-term>epoch</q-term>.  If you 
 automatically re-load pages in the browser, for example with
 <a href="https://www.browsersync.io/")>browser-sync</a>, you should 
 specify  <code>P:_timestamp</code> as the file to watch for changes.
+<!--qgoda-no-xgettext-->
 [%- END %]
 
-<!--qgoda-no-xgettext-->
 </ul>
 <!--/qgoda-no-xgettext-->

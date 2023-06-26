@@ -20,7 +20,7 @@ $ qgoda [GLOBAL_OPTIONS] [COMMAND, [OPTIONS]]
 
 For example:
 
-<!--qgoda-no-gettext-->
+<!--qgoda-no-xgettext-->
 ```bash
 $ qgoda --verbose build --drafts --future
 ```
