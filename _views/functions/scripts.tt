@@ -8,3 +8,11 @@
   <script src="[% q.bustCache(script) | url %]" type="text/javascript"></script>
   [%- END %]
 [% END %]
+[% FOREACH script IN asset.scripts %]
+  [%- NEXT IF seen.$script; seen.$script = 1 %]
+  [%- IF (script.match('^[ \t\n]*<script')) %]
+  [%- script -%]
+  [%- ELSE %]
+  <script src="[% q.bustCache(script) | url %]" type="text/javascript"></script>
+  [%- END %]
+[% END %]
