@@ -6,5 +6,5 @@ image_alt: The Node.JS Logo
 image_link: https://www.nodejs.org/en/
 ---
 Node.JS is the most popular platform for building web applications today.
-Instead of re-inventing the wheel, qgoda uses libsass, uglifyjs, and so on as
-helpers.
+Instead of re-inventing the wheel, Qgoda uses webpack, browser-sync,
+postcss, and so on as helpers.

@@ -40,13 +40,11 @@ it defaults to the last modification time of the originating file.
 
 You can use the date and time like any other template variable:
 
-<!--qgoda-no-xgettext-->
 [% USE q = Qgoda %]
 [% TAGS [@ @] %]
 ```tt2
 Document created: [% asset.date %].
 ```
-<!--/qgoda-no-xgettext-->
 
 This would generate output like "Document created: 1541622661". The number
 1541622661 are the seconds since the <q-term>epoch</q-term>. That is great

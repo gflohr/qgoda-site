@@ -40,8 +40,8 @@ msgstr ""
 #: ../_includes/en/landing-page/about-nodejs.md:8
 msgid ""
 "Node.JS is the most popular platform for building web applications today.\n"
-"Instead of re-inventing the wheel, qgoda uses libsass, uglifyjs, and so on as\n"
-"helpers."
+"Instead of re-inventing the wheel, Qgoda uses webpack, browser-sync,\n"
+"postcss, and so on as helpers."
 msgstr ""
 
 #: ../_includes/en/landing-page/about-perl.md:3
@@ -55,7 +55,7 @@ msgid "The Perl Logo"
 msgstr ""
 
 #: ../_includes/en/landing-page/about-perl.md:8
-msgid "Rock stable, universally available, and fast. But don't be afraid. You don't need Perl for using qgoda. Even when you want to extend qgoda, you can do so with the programming language of your choice."
+msgid "Rock stable, universally available, and fast. But don't be afraid. You don't need Perl for using Qgoda. Even when you want to extend Qgoda, you can do so with the programming language of your choice."
 msgstr ""
 
 #: ../_includes/en/landing-page/about-webpack.md:3
@@ -782,15 +782,14 @@ msgid "## Adding Your Own Configuration Variables"
 msgstr ""
 
 #: ../en/docs/configuration.md:148
-msgid ""
-"You can add your own configuration variables in the \"slots\" `C:global`,\n"
-"`C:site`, `C:local`, and in every other slot that starts with an underscore\n"
-"\"_\".  This rule is currently not enforced but it will be in the future."
+msgid "Eigene Konfigurationsvariablen müssen mit einem Unterstrich \"&#95;\" beginnen.\n"
+"Weitere Einschränkungen existieren nicht."
 msgstr ""
 
-#: ../en/docs/configuration.md:152
+#: ../en/docs/configuration.md:151
 msgid ""
-"A \"slot\" is a top-level configuration key. All \"slots\" used by Qgoda have a\n"
+"All other possible configuration variables are reserved by Qgoda, and those\n"
+"support have a \n"
 "fixed syntax and you must adhere to it. This is a meant as a protection against\n"
 "typos.  As a consquence, you cannot add a configuration variable `paths.home`\n"
 "because the \"slot\" or namespace `C:paths` is already taken by Qgoda."
@@ -866,7 +865,16 @@ msgstr ""
 msgid "You can use the date and time like any other template variable:"
 msgstr ""
 
-#: ../en/docs/dates.md:51
+#: ../en/docs/dates.md:43
+msgid ""
+"[% USE q = Qgoda %]\n"
+"[% TAGS [@ @] %]\n"
+"```tt2\n"
+"Document created: [% asset.date %].\n"
+"```"
+msgstr ""
+
+#: ../en/docs/dates.md:49
 msgid ""
 "This would generate output like \"Document created: 1541622661\". The number\n"
 "1541622661 are the seconds since the <q-term>epoch</q-term>. That is great\n"
@@ -874,15 +882,15 @@ msgid ""
 "methods of the magic date object:"
 msgstr ""
 
-#: ../en/docs/dates.md:62
+#: ../en/docs/dates.md:60
 msgid "This would now give something like \"Document created: 2018-11-07\"."
 msgstr ""
 
-#: ../en/docs/dates.md:64
+#: ../en/docs/dates.md:62
 msgid "The following methods are available:"
 msgstr ""
 
-#: ../en/docs/dates.md:66
+#: ../en/docs/dates.md:64
 msgid ""
 "| Name                | Meaning                                               |\n"
 "| ------------------- | ----------------------------------------------------- |\n"
@@ -898,7 +906,7 @@ msgid ""
 "| ihour               | The hour of the day, \"1\", \"2\", ... \"24\"."
 msgstr ""
 
-#: ../en/docs/dates.md:79
+#: ../en/docs/dates.md:77
 msgid "As you can see, a leading `i` (think: integer) stands for numbers as regular\n"
 "integers. Without it, they are zero-padded."
 msgstr ""
@@ -6324,17 +6332,17 @@ msgstr ""
 
 #: ../en/news/client-side-syntax-highlighting.md:7
 msgctxt "tags"
-msgid "Howto"
-msgstr ""
-
-#: ../en/news/client-side-syntax-highlighting.md:7
-msgctxt "tags"
 msgid "JavaScript"
 msgstr ""
 
 #: ../en/news/client-side-syntax-highlighting.md:7
 msgctxt "tags"
 msgid "Tutorial"
+msgstr ""
+
+#: ../en/news/client-side-syntax-highlighting.md:7
+msgctxt "tags"
+msgid "Howto"
 msgstr ""
 
 #: ../en/news/client-side-syntax-highlighting.md:7

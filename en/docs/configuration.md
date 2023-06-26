@@ -145,11 +145,11 @@ helpers:
 
 ## Adding Your Own Configuration Variables
 
-You can add your own configuration variables in the "slots" `C:global`,
-`C:site`, `C:local`, and in every other slot that starts with an underscore
-"_".  This rule is currently not enforced but it will be in the future.
+Eigene Konfigurationsvariablen müssen mit einem Unterstrich "&#95;" beginnen.
+Weitere Einschränkungen existieren nicht.
 
-A "slot" is a top-level configuration key. All "slots" used by Qgoda have a
+All other possible configuration variables are reserved by Qgoda, and those
+support have a 
 fixed syntax and you must adhere to it. This is a meant as a protection against
 typos.  As a consquence, you cannot add a configuration variable `paths.home`
 because the "slot" or namespace `C:paths` is already taken by Qgoda.
@@ -158,7 +158,7 @@ This, however, would be safe:
 
 <!--qgoda-no-xgettext-->
 ```yaml
-local:
+_local:
   paths:
     images: _assets/images
   author: Yours truly <yours.truly@example.com>

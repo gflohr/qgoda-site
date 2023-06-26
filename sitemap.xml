@@ -5,7 +5,8 @@ location: /sitemap.xml
 <?xml version="1.0" encoding="UTF-8"?>
 [%- USE q = Qgoda %]
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  [%- FOR doc IN q.list(type=['=~', '^(doc|post|talk|page)$']) %]
+  [%- FOR doc IN q.list(type=['=~', '^(doc|post|talk|page)$']) -%]
+    [%- IF !doc.nositemap %]
   <url>
     <loc>[% config.url %][% doc.permalink %]</loc>
     [%- FOR lingua IN config.linguas %]
@@ -19,5 +20,6 @@ location: /sitemap.xml
     <lastmod>[% doc.date.w3cLocal %]</lastmod>
     <changefreq>[% IF doc.type == 'post' %]monthly[% ELSE %]daily[% END %]</changefreq>
   </url>
+    [%- END -%]
   [%- END %]
 </urlset>

@@ -1,5 +1,6 @@
 track-dependencies: false
 title: Qgoda
+url: https://www.qgoda.net
 linguas: [en, de]
 exclude:
   - /node_modules

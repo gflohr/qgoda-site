@@ -13,7 +13,16 @@ use Qgoda;
 use base qw(Qgoda::Processor);
 
 sub process {
-    my ($self, $content, $asset, $site) = @_;
+    my ($self, $content, $asset, $view) = @_;
+
+	my $qgoda = Qgoda->new;
+	my $site = $qgoda->getSite;
+	my $lingua = $asset->{lingua};
+	my $terms_and_concepts = $site->searchAssets(
+			lingua => $asset->{lingua},
+			name => 'terms-and-concepts',
+	);
+	$terms_and_concepts = $terms_and_concepts->[0]->{permalink};
 
     my $output = '';
     
@@ -64,7 +73,7 @@ sub process {
                 my ($anchor, $label) = split /:/, $content, 2;
                 $label = $anchor if empty $label;
                 $anchor = lc $anchor;
-                $text = qq{<a href="../terms-and-concepts/#$anchor">$label</a>};
+                $text = qq{<a href="${terms_and_concepts}/#$anchor">$label</a>};
         }
 
         $output .= $text;
