@@ -1,6 +1,6 @@
 ---
-title: Qgoda Version 0.10.0 ist jetzt verfuegbar via Homebrew
-name: qgoda-version-0.10.0-available-via-homebrew
+title: Qgoda Version 0.10.1 ist jetzt verfuegbar via Homebrew
+name: qgoda-version-0.10.1-available-via-homebrew
 view: docs.html
 date: 2023-07-14
 category: Releases

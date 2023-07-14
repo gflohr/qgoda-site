@@ -1,12 +1,12 @@
 ---
-title: Qgoda Version 0.10.0 Available Via Homebrew
-name: qgoda-version-0.10.0-available-via-homebrew
+title: Qgoda Version 0.10.1 Available Via Homebrew
+name: qgoda-version-0.10.1-available-via-homebrew
 view: docs.html
 date: 2023-07-14
 category: Releases
 tags: Release Beta-Release News
 ---
-Qgoda version 0.10.0 can now be downloaded from GitHub at
+Qgoda version 0.10.1 can now be downloaded from GitHub at
 https://github.com/gflohr/qgoda/releases.
 
 It contains all recent improvements on Qgoda and also some changes that break
