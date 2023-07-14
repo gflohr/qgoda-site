@@ -97,23 +97,14 @@ As `npm` ships with Node.js you normally don't have to install it.  If you have 
 
 See https://yarnpkg.com/en/docs/install for instructions.
 
-#### Per
-
 ## Using Docker
-
-[% WRAPPER components/infobox.html
-           type='warning' title='Currently not maintained!' %]
-The Qgoda docker image is currently not maintained.  The image on dockerhub
-contains an old version of Qgoda.  If you need an up-to-date version, please
-file an [issue](https://github.com/gflohr/qgoda)
-[% END %]
 
 An easy method of installing Qgoda is to use [Docker](https://www.docker.com/):
 
 1. Install Docker.  On Linux/Unix systems, Docker will be available from
 your package manager.  On Mac OS X you can install Docker with Mac Ports
-or Homebrew.  On Windows, get a pre-compiled binary from
-https://www.docker.com/get-docker.
+or Homebrew, or - like on Windows - get a pre-compiled binary from
+https://www.docker.com/products/docker-desktop/.
 
 1. Start Docker.  You may want to start the docker daemon automatically.
 Check your vendor's documentation for that!
