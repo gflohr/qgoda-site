@@ -17,7 +17,7 @@ Qgoda's philosophy significantly differs from Jekyll's.  Creating simple web sit
 
 ### Taxonomies
 
-Jekyll can structure a site with tags and categories.  Qgoda has arbitrary taxonomies and *you* decide what their semantics and usage.
+Jekyll can structure a site with tags and categories.  Qgoda has arbitrary taxonomies and *you* decide about their semantics and usage.
 
 ### Listings
 
@@ -58,11 +58,12 @@ And to be honest, the current web servers written in Perl, Python, or Ruby all l
 
 Jekyll has a built-in <q-term>sass:Sass</q-term> compiler built on the Ruby Sass implementation.
 
-But modern web development is a lot more than pre-processing CSS.  First of all chances are that you also want to use JavaScript, do you? And maybe you don't want to use Sass but [Less](http://lesscss.org/) or you even opt for [PostCSS](http://postcss.org/) only.
+But modern web development is a lot more than pre-processing CSS.  First of all, chances are that you also want to use JavaScript, do you? And maybe you don't want to use Sass but [Less](http://lesscss.org/) or you even opt for [PostCSS](http://postcss.org/) only.
 
-All these assets should be syntax-checked, minified, optimized and bundled and, again, the Node.js eco system has the best tools for the job, first [Grunt](https://gruntjs.com/), then [Gulp](https://gulpjs.com/), today [Webpack](https://webpack.js.org/), and who knows what tool will be leader of the pack in three weeks?
+All these assets should be syntax-checked, minified, optimized and bundled and, again, the Node.js eco system has the best tools for the job, first [Grunt](https://gruntjs.com/), then [Gulp](https://gulpjs.com/), today [Webpack](https://webpack.js.org/), [Parcel](https://parceljs.org/), [Vite](https://vitejs.dev/),
+[Rollup](https://rollupjs.org/), and there are probably more.
 
-Qgoda allows you to configure an arbitrary number of helper processes while watching your site for changes.  You typically have one of the build tools like webpack running in watch mode as one helper, and a development web server as a second.  And you have the choice.  You decide whether you want gulp or webpack, yarn or npm, or just plain Makefiles.
+Qgoda allows you to configure an arbitrary number of [helper]([% q.llink(name='helpers')]) processes while watching your site for changes.  You typically have one of the build tools like webpack running in watch mode as one helper, and a development web server as a second.  And you have the choice.  You decide whether you want gulp or webpack, yarn or npm, or just plain Makefiles.
 
 ### Multi-Language Sites
 

@@ -74,6 +74,16 @@ overwritten without warning.
 [%- END %]
 
 [% WRAPPER components/file.html
+   name="_stop" type='file' -%]
+<!--/qgoda-no-xgettext-->
+If a file named `_stop` is found in the top-level source directory, it gets
+deleted and Qgoda terminates immediately. The content of the file will be
+reported as the reason for the termination in the logs.  You can use this
+feature for programmatically terminating Qgoda without signalling it.
+<!--qgoda-no-xgettext-->
+[%- END %]
+
+[% WRAPPER components/file.html
    name="_timestamp" type='file'
    overridable="paths.timestamp" -%]
 <!--/qgoda-no-xgettext-->

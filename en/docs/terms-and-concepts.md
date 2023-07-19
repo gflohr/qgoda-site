@@ -10,6 +10,12 @@ description: Explanation of frequently used terms and concepts
 [% USE q = Qgoda %]
 <ul>
 
+[% WRAPPER components/term.html term="array" -%]
+<!--/qgoda-no-xgettext-->
+The terms array and list are interchangeable in this documentation
+<!--qgoda-no-xgettext-->
+[%- END %]
+
 [% WRAPPER components/term.html term="epoch" -%]
 <!--/qgoda-no-xgettext-->
 A certain date and time is often expressed as seconds elapsed since the
@@ -27,6 +33,14 @@ consisting of just three hyphens <code>---</code>, the first of which has to be
 the first line of the file.  See the
 <a href="[% q.llink(name='qgoda-in-15-minutes') %]#front-matter">introduction</a>
 for more information.
+<!--qgoda-no-xgettext-->
+[%- END %]
+
+[% WRAPPER components/term.html term="hash" -%]
+<!--/qgoda-no-xgettext-->
+A hash is a list of key-value pairs.  In JavaScript they are called objects,
+in other programming languages they are sometimes called associative arrays.
+This documentation, in general, prefers the term hash.
 <!--qgoda-no-xgettext-->
 [%- END %]
 

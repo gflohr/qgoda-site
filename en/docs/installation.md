@@ -18,32 +18,32 @@ Install [Homebrew](https://brew.sh/) and tap the
 [`gflohr-homebrew`](https://github.com/gflohr/homebrew-homebrew) formula
 repository before you install the formular `qgoda`:
 
-<qgoda-noxgettext>
-```sh
+<!--qgoda-no-xgettext-->
+```bash
 $ brew tap gflohr/homebrew
 $ brew install qgoda
 ```
-</qgoda-noxgettext>
+<!--/qgoda-no-xgettext-->
 
 ### Update
 
 You can update with:
 
-<qgoda-noxgettext>
-```sh
+<!--qgoda-no-xgettext-->
+```bash
 $ brew update
 $ brew upgrade qgoda
 ```
-</qgoda-noxgettext>
+<!--/qgoda-no-xgettext-->
 
 ### Uninstall Qgoda
 
-<qgoda-noxgettext>
-```sh
+<!--qgoda-no-xgettext-->
+```bash
 $ brew uninstall qgoda
 $ brew untap gflohr/homebrew
 ```
-</qgoda-noxgettext>
+<!--/qgoda-no-xgettext-->
 
 ## All Other Platforms
 
@@ -56,24 +56,24 @@ The Qgoda version on CPAN is currently outdated and should not be used!
 
 If you are happy with version 0.9.8, then you can:
 
-<qgoda-noxgettext>
-```sh
+<!--qgoda-no-xgettext-->
+```bash
 $ cpanm Qgoda
 ```
-</qgoda-noxgettext>
+<!--/qgoda-no-xgettext-->
 
 ### Installing From Git
 
 Clone the [Qgoda git repository](https://github.com/gflohr/qgoda) and follow
 the usual way of installing Perl modules:
 
-<qgoda-noxgettext>
-```sh
+<!--qgoda-no-xgettext-->
+```bash
 $ git clone https://github.com/gflohr/qgoda.git
 $ cd qgoda
 $ cpanm .
 ```
-</qgoda-noxgettext>
+<!--/qgoda-no-xgettext-->
 
 ### Pre-Requisites
 
@@ -119,9 +119,11 @@ the Docker command-line options all the time.  Depending on your operating syste
 you have to open `~/.bash_profile`, `~/.bashrc`, `~/.alias`, `~/.zshrc`
 or similar and add this line:
 
+<!--qgoda-no-xgettext-->
 ```bash
 alias qgoda='docker run --name qgoda -p 3000:3000 --rm -it -v $(pwd):/data gflohr/qgoda'
 ```
+<!--/qgoda-no-xgettext-->
 
 With this alias, you can now run all qgoda commands like the native version
 described in this documentation.

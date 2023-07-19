@@ -46,6 +46,15 @@ A list of language codes for your site like "en", "fr", and so on.  It is recomm
 
 <!--qgoda-no-xgettext-->
 [% WRAPPER components/variable.html
+   variable="helpers" type='String or Array'
+   default='undefined' -%]
+<!--/qgoda-no-xgettext-->
+Definition of auxiliary tools to run in the background, see
+[% q.lanchor(name='helpers') %].
+<!--qgoda-no-xgettext-->[%- END %]<!--/qgoda-no-xgettext-->
+
+<!--qgoda-no-xgettext-->
+[% WRAPPER components/variable.html
    variable="link-score" type='Integer'
    default=5 -%]
 <!--/qgoda-no-xgettext-->
