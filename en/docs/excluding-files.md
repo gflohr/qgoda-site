@@ -14,7 +14,7 @@ By default, Qgoda does not process hidden files and directories (name starts wit
 
 ## Excluding Additional Files
 
-You can change this default behavior by configuring additional file name patterns in the variable `C:exclude` in the configuration file `P:_config.yml`.
+You can change this default behavior by configuring additional file name patterns in the variable `C:exclude` in the configuration file `P:_qgoda.yml`.
 
 Example:
 

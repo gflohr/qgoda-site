@@ -30,16 +30,16 @@ JavaScript files or (S)CSS files.  Qgoda does not use this name internally.  It 
 [%- END %]
 
 [% WRAPPER components/file.html
-   name="_config.yaml" type='file' -%]
+   name="_qgoda.yaml" type='file' -%]
 <!--/qgoda-no-xgettext-->
 Qgoda's main configuration file.
 <!--qgoda-no-xgettext-->
 [%- END %]
 
 [% WRAPPER components/file.html
-   name="_config.yml" type='file' -%]
+   name="_qgoda.yml" type='file' -%]
 <!--/qgoda-no-xgettext-->
-Qgoda's secondary configuration file.  It is only used if <code>P:config.yaml</code>
+Qgoda's secondary configuration file.  It is only used if <code>P:_qgoda.yaml</code>
 does not exist.
 <!--qgoda-no-xgettext-->
 [%- END %]

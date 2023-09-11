@@ -69,9 +69,9 @@ Qgoda allows you to configure an arbitrary number of [helper]([% q.llink(name='h
 
 Jekyll does not have built-in support for multilingual web sites.  Qgoda also has no explicit support for multi-lingual web sites.  It just works out of the box.
 
-All you have to do is to store the language (resp. language code) of a particular document or asset in a standard variable.  If you follow convention and use `V:lingua`, you can safe some typing, but you can store the language in any variable you want, and filter by that variable.  That's all.
+All you have to do is to store the language (resp. language code) of a particular document or asset in a standard variable.  If you follow the convention and use `V:lingua`, you can save some typing, but you can store the language in any variable you want, and filter by that variable.  That's all.
 
-Under normal circumstances, not only regular content differs between languages.  You also want to translate certain strings in your template.  The quick and dirty way is to store translations in your configuration file `P:_config.yaml`:
+Under normal circumstances, not only regular content differs between languages.  You also want to translate certain strings in your template.  The quick and dirty way is to store translations in your configuration file `P:_qgoda.yaml`:
 
 <!--qgoda-no-xgettext-->
 ```yaml
@@ -149,7 +149,7 @@ Since Template Toolkit variables can also hold Perl objects it is possible to ca
 
 ## Configuration
 
-The default name of the qgoda configuration file is `P:_config.yaml`, not `_config.yml` as for Jekyll.  That can make a possible migration from Jekyll to Qgoda  a little bit easier.
+The default name of the qgoda configuration file is `P:_qgoda.yaml`, not `_config.yml` as for Jekyll.  That can make a possible migration from Jekyll to Qgoda  a little bit easier.
 
 ### Default Values
 

@@ -50,7 +50,7 @@ points to the same document in the main language.
 The `V:asset.lingua` variable is also crucial to specify because Qgoda has to
 know for which language it has to pull translations. But you normally specify
 `V:asset.lingua` in the [defaults]([@ q.llink(name='defaults')@])
-of your `P:_config.yaml`.
+of your `P:_qgoda.yaml`.
 
 All other variables that you add to the front matter are
 just added to the document and available as regular
@@ -124,7 +124,7 @@ and you can always remedy it by providing a translation.
 
 Nothing! It's as simple as that. Just set the
 [defaults]([@ q.llink(name='defaults') @]) for `V:asset.translate` and
-`V:asset.lingua` in `P:_config.yaml`. And then creating a translated version
+`V:asset.lingua` in `P:_qgoda.yaml`. And then creating a translated version
 of every document is as simple as:
 
 ```yaml

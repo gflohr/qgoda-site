@@ -99,17 +99,17 @@ po:
 analyzers:
   - GuidedTour
 
-# This should be overridden in _localconfig.yaml or in a private branch.
-_legal:
-  name: configure _legal.name in _localconfig.yaml or _config.yaml
-  street: configure _legal.street in _localconfig.yaml or _config.yaml
-  city: configure _legal.city in _localconfig.yaml or _config.yaml
-  id: configure _legal.id in _localconfig.yaml or _config.yaml
-  vat-id: configure _legal.vat-id in _localconfig.yaml or _config.yaml
-  email: configure _legal.email in _localconfig.yaml or _config.yaml
-  phone: configure _legal.phone in _localconfig.yaml or _config.yaml
-  manager: configure _legal.manager in _localconfig.yaml or _config.yaml
-  responsible: configure _legal.responsible in _localconfig.yaml or _config.yaml
-  copyright_year: configure _legal.copyright_year in _localconfig.yaml or _config.yaml
-  copyright_uri: configure _legal.copyright_uri in _localconfig.yaml or _config.yaml
-  # url: http://www.yourname.org/
+# This should be overridden in _localqgoda.yaml or in a private branch.
+private:
+  legal:
+    name: configure private.legal.name in _localqgoda.yaml or _qgoda.yaml
+    street: configure private.legal.street in _localqgoda.yaml or _qgoda.yaml
+    city: configure private.legal.city in _localqgoda.yaml or _qgoda.yaml
+    id: configure private.legal.id in _localqgoda.yaml or _qgoda.yaml
+    vat-id: configure private.legal.vat-id in _localqgoda.yaml or _qgoda.yaml
+    email: configure private.legal.email in _localqgoda.yaml or _qgoda.yaml
+    phone: configure private.legal.phone in _localqgoda.yaml or _qgoda.yaml
+    manager: configure private.legal.manager in _localqgoda.yaml or _qgoda.yaml
+    responsible: configure private.legal.responsible in _localqgoda.yaml or _qgoda.yaml
+    copyright_year: configure private.legal.copyright_year in _localqgoda.yaml or _qgoda.yaml
+    copyright_uri: configure private.legal.copyright_uri in _localqgoda.yaml or _qgoda.yaml

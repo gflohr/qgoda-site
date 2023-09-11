@@ -11,9 +11,9 @@ when you want to change a certain behavior.
 
 ## Configuration Files
 
-Qgoda has two optional configuration files, `P:_config.yaml` and
-`P:_localconfig.yaml`. You can also use the file extension `.yml` if you
-prefer.
+Qgoda has two optional configuration files, `P:_qgoda.yaml` and
+`P:_localqgoda.yaml`. If you prefer, you can also use the file extension
+`.yml` or `.json`, if you write the configuration in JSON format.
 
 <figure>
   <img src="/images/configuration/configuration-layers.svg"
@@ -23,9 +23,9 @@ prefer.
   </figcaption>
 </figure>
 
-The configuration found in `P:_config.yaml` overrides the built-in defaults,
-and the configuration found in `P:_localconfig.yaml` overrides both
-`P:_config.yaml` and the the built-in defaults.
+The configuration found in `P:_qgoda.yaml` overrides the built-in defaults,
+and the configuration found in `P:_localqgoda.yaml` overrides both
+`P:_qgoda.yaml` and the the built-in defaults.
 
 More precisely, each layer of configuration is merged with the previous one
 and overrides only those parts that differ.
@@ -102,7 +102,7 @@ for the complete story.
 
 ## Program Paths
 
-It is very often necessary to configure a path to a program in `P:_config.yaml`
+It is very often necessary to configure a path to a program in `P:_qgoda.yaml`
 for example in `C:helpers` or `C:po.xgettext` or others. This is a special
 case where [type coercion](#type-coercion) helps you to simplify the
 configuration.
@@ -145,8 +145,7 @@ helpers:
 
 ## Adding Your Own Configuration Variables
 
-Eigene Konfigurationsvariablen müssen mit einem Unterstrich "&#95;" beginnen.
-Weitere Einschränkungen existieren nicht.
+Your own configuration variables have to start either with `C:site` or `C:private`.
 
 All other possible configuration variables are reserved by Qgoda, and those
 support have a 
@@ -158,7 +157,7 @@ This, however, would be safe:
 
 <!--qgoda-no-xgettext-->
 ```yaml
-_local:
+site:
   paths:
     images: _assets/images
   author: Yours truly <yours.truly@example.com>

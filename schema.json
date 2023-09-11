@@ -1,0 +1,6 @@
+---
+location: /schema.json
+view: raw
+---
+[% USE q = Qgoda %]
+[% q.toJSON(q.qgodaSchema, 'canonical', 'indent', 'space_before') %]

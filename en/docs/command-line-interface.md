@@ -79,7 +79,7 @@ Helper applications are started in parallel.
 #### config
 <!--/qgoda-no-xgettext-->
 
-Dumps the current configuration as <q-term>yaml:YAML</q-term> and exits.  The configuration printed is the result of merging the default configuration with the files `P:_config.yaml` and `P:_localconfig.yaml`.
+Dumps the current configuration as <q-term>yaml:YAML</q-term> and exits.  The configuration printed is the result of merging the default configuration with the files `P:_qgoda.yaml` and `P:_localqgoda.yaml`.
 
 <!--qgoda-no-xgettext-->
 #### init

@@ -51,7 +51,7 @@ used by all common web servers.
 
 Asset processing is triggered by the suffixes of the source file.  The triggers
 are defined in the variable `C:processors.triggers` in the site configuration
-file `P:_config.yaml`.  Look at this excerpt of the Qgoda default configuration:
+file `P:_qgoda.yaml`.  Look at this excerpt of the Qgoda default configuration:
 
 ```yaml
 processors:
@@ -123,7 +123,7 @@ the permalink `/posts/en/about-qgoda/`.
 
 You can fully customize both output location and permalinks by setting the
 variables `C:location` or `C:permalink` respectively in the front matter of an
-asset, as a default for a certain directory or site wide in `C:_config.yaml`.
+asset, as a default for a certain directory or site wide in `C:_qgoda.yaml`.
 
 You can interpolate all kinds of asset variables into the configured string
 by placing them inside {curly} braces.  For example the default configuration
@@ -149,7 +149,7 @@ customization:
   <dd>The suffix (resp. suffixes) with a leading dot, subject to translation.
       If there are no suffixes the variable does not exist.</dd>
   <dt>config</dt>
-  <dd>The site configuration as read from "_config.yaml"</dd>
+  <dd>The site configuration as read from "_qgoda.yaml"</dd>
   <dt>date</dt>
   <dd>The date of the asset.  Do not use directly but one of the
       subkeys below.</dd>

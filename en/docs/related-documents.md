@@ -126,7 +126,7 @@ But the two documents share the common tags "USB" and "Storage" counting 2 point
 
 You can fine-tune the algorithm by changing the relevant configuration variables or by adding more taxonomies.  Set the score to 0 if you want to ignore a built-in taxonomy.
 
-For example, if you want to enforce a relationship between two documents, configure this in `P:_config.yaml`:
+For example, if you want to enforce a relationship between two documents, configure this in `P:_qgoda.yaml`:
 
 ```yaml
 taxonomies:

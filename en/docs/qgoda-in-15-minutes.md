@@ -23,7 +23,7 @@ Okay, do as you were told and try `qgoda --help`.  That will print out an overvi
 
 ```bash
 qgoda-quickstart $ qgoda build
-[warning][config] config file '_config.yaml' not found, proceeding with defaults.
+[warning][config] config file '_qgoda.yaml' not found, proceeding with defaults.
 [info][plugin-loader] initializing plug-ins.
 [info] start building site
 [info] finished building site with 0 artefacts
@@ -51,9 +51,9 @@ location: /{directory}/{basename}/{index}{suffix}
 ...
 ```
 
-Qgoda configuration is written in [YAML](http://www.yaml.org/), which is a more readable superset of [JSON](https://www.json.org/).  But since it is a strict superset, you can also write JSON, when you are more comfortable with JSON syntax.  You can also name the configuration file `P:_config.json` if you like.
+Qgoda configuration is written in [YAML](http://www.yaml.org/), which is a more readable superset of [JSON](https://www.json.org/).  But since it is a strict superset, you can also write JSON, when you are more comfortable with JSON syntax.  You can also name the configuration file `P:_qgoda.json` if you like.
 
-Anyway, the configuration you have seen does probably not make a lot of sense to you at the moment, and so continue without a `P:_config.yaml` for now.  Let's make something happen instead.
+Anyway, the configuration you have seen does probably not make a lot of sense to you at the moment, and so continue without a `P:_qgoda.yaml` for now.  Let's make something happen instead.
 
 ## Basics
 
@@ -69,7 +69,7 @@ See what happens now:
 
 ```bash
 qgoda-quickstart $ qgoda build
-[warning][config] config file '_config.yaml' not found, proceeding with defaults.
+[warning][config] config file '_qgoda.yaml' not found, proceeding with defaults.
 [info][plugin-loader] initializing plug-ins.
 [info] start building site
 [info] finished building site with one artefact
@@ -95,7 +95,7 @@ It's a little bit awkward to always type `qgoda build` after we have changed som
 
 ```bash
 qgoda-quickstart $ qgoda watch
-[warning][config] config file '_config.yaml' not found, proceeding with defaults.
+[warning][config] config file '_qgoda.yaml' not found, proceeding with defaults.
 [info][plugin-loader] initializing plug-ins.
 [info] start building site
 [info] finished building site with one artefact
@@ -232,7 +232,7 @@ That may take a minute untill the server and all of its dependencies have been i
 
 But something else has happened.  Qgoda is throwing error messages in the console because a directory `P:node_modules` was created.  That is where `yarn` or `npm` save local dependencies of your web project. 
 
-You have to tell qgoda to ignore that directory.  Create a file `P:_config.yaml` like this:
+You have to tell qgoda to ignore that directory.  Create a file `_qgoda.yaml` like this:
 
 ```yaml
 helpers:

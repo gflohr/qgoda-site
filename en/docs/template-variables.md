@@ -50,8 +50,8 @@ Virtual documents to not get published, to be more exact, they do not go through
 
 [% WRAPPER "components/template-variable.html"
    variable="config" type="hash" %]
-`config` gives you access to the site configuration from `P:_config.yaml`.
-The configuration variable `C:paths.views` in `P:_config.yaml` is
+`config` gives you access to the site configuration from `P:_qgoda.yaml`.
+The configuration variable `C:paths.views` in `P:_qgoda.yaml` is
 accessible from a template as `config.paths.views`.  See
 [% q.lanchor(name='configuration-variables') %] for a complete list.
 [%- END %]

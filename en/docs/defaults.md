@@ -12,7 +12,7 @@ documents based on their file name or the directory they
 reside in.
 
 Such default values can be set with the configuration
-variable `C:defaults` in `P:_config.yaml` using the 
+variable `C:defaults` in `P:_qgoda.yaml` using the 
 powerful syntax of
 [pattern lists]([% q.llink(name='pattern-lists') %]).
 

@@ -59,7 +59,7 @@ It is also assumed that you have read the chapters
 translate.
 
 The minimal configuration you need are the variables `C:linguas` and
-`C:po.textdomain`. Put something like this into `P:_config.yaml`:
+`C:po.textdomain`. Put something like this into `P:_qgoda.yaml`:
 
 ```yaml;line-numbers
 linguas:
@@ -114,7 +114,7 @@ this:
 
 ```shell;line-numbers
 $ qgoda po potfiles
-[info][config] reading configuration from '_config.yaml'
+[info][config] reading configuration from '_qgoda.yaml'
 [info] creating “_po”
 [info] creating “_po/Makefile”
 [info] cloning git repository “https://github.com/gflohr/Template-Plugin-Gettext-Seed”
@@ -171,7 +171,7 @@ You create the file like this:
 
 ```bash
 $ qgoda po pot
-[info][config] reading configuration from '_config.yaml'
+[info][config] reading configuration from '_qgoda.yaml'
 [info] execute: xgettext 
 ...
 ```
@@ -183,7 +183,7 @@ don't see an error message.
 
 While setting up i18n and then whenever you add a language to your site
 you have to initialize a `.po` file for that language and add it to the
-configuration variable `C:linguas` in `P:_config.yaml`:
+configuration variable `C:linguas` in `P:_qgoda.yaml`:
 
 ```yaml
 linguas:
@@ -241,7 +241,7 @@ This is done with `qgoda po update-po`:
 
 ```bash
 $ qgoda po update-po
-[info][config] reading configuration from '_config.yaml'
+[info][config] reading configuration from '_qgoda.yaml'
 [info] merging de.po
 [info] rename “de.po” to “de.old.po”
 [info] execute: msgmerge de.old.po com.example.www.pot --previous -o de.po
@@ -284,7 +284,7 @@ You can perform this step with `qgoda po mo`:
 
 ```bash;line-numbers
 $ qgoda po update-mo
-[info][config] reading configuration from '_config.yaml'
+[info][config] reading configuration from '_qgoda.yaml'
 [info] execute: msgfmt --check --statistics --verbose -o de.gmo de.po
 de.po:7: warning: header field 'Project-Id-Version' still has the initial default value
 de.po: 1 translated message.
@@ -310,7 +310,7 @@ The last step is to install and use the translation:
 
 ```bash
 $ qgoda po install
-[info][config] reading configuration from '_config.yaml'
+[info][config] reading configuration from '_qgoda.yaml'
 [info] create directory “/path/to/your/site/LocaleData/de/LC_MESSAGES”
 [info] copy “de.gmo” to “/path/to/your/site/LocaleData/de/LC_MESSAGES/com.example.www.mo”
 ```

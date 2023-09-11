@@ -1,4 +1,4 @@
-<span id="ga-config" data-measurement-id="[% config._ga.measurement_id %]"></span>
+<span id="ga-config" data-measurement-id="[% config.private.ga.measurement_id %]"></span>
 [% seen = {} %]
 [% FOREACH script IN global.scripts %]
   [%- NEXT IF seen.$script; seen.$script = 1 %]

@@ -6,7 +6,7 @@ view: docs.html
 description: All configuration variables required for a fully internationalized site.
 ---
 Internationalization (i18n) in Qgoda has to be explicitely activated in the
-configuration file `P:_config.yaml`. Although there are many options
+configuration file `P:_qgoda.yaml`. Although there are many options
 available to customize your multilingual setup, you can get started with
 setting just two configuration variables `C:linguas` and `C:po.textdomain`.
 
@@ -18,7 +18,7 @@ setting just two configuration variables `C:linguas` and `C:po.textdomain`.
 
 ## Global Configuration
 
-A typical multilanguage configuration in `P:_config.yaml` looks like this:
+A typical multilanguage configuration in `P:_qgoda.yaml` looks like this:
 
 <!--qgoda-no-xgettext-->
 ```yaml;line-numbers
@@ -135,7 +135,7 @@ name: kalevala
 
 ### Per Directory/Pattern
 
-You can save typing by specifying [defaults]([@ q.llink(name='defaults') @]) for `V:asset.lingua` in the global configuration file `P:_config.yaml`:
+You can save typing by specifying [defaults]([@ q.llink(name='defaults') @]) for `V:asset.lingua` in the global configuration file `P:_qgoda.yaml`:
 
 <!--qgoda-no-xgettext-->
 ```yaml;line-numbers

@@ -9,7 +9,7 @@ description: Complete List Of Configuration Variables
 [% USE q = Qgoda %]
 <!--/qgoda-no-xgettext-->
 
-The following configuration variables from the file `P:_config.yml` are understood by Qgoda:
+The following configuration variables from the file `P:_qgoda.yaml` are understood by Qgoda:
 
 <!--qgoda-no-xgettext-->
 <ul>
