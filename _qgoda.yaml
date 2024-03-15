@@ -78,7 +78,7 @@ processors:
       modules:
       - TT2
       - Strip
-      - Hoedown
+      - Markdown
     html:
       modules:
       - TT2

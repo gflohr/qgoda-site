@@ -38,5 +38,5 @@ require('./js/cookie-consent.js');
 // Custom JS.
 require('./js/code-language');
 
-// Google Analytics.
-require('./js/google-analytics');
+// Matomo.
+require('./js/matomo');
