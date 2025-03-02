@@ -11,3 +11,5 @@
 /google[0-9a-f][0-9a-f]*.html
 .*.swp
 /_livesync
+/.vscode
+/_localqgoda.yaml
