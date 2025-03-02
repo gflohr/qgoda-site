@@ -9,7 +9,7 @@ description: This page explains where Qgoda differs from Jekyll and why.
 [% TAGS [- -] %]
 Qgoda was heavily inspired by [Jekyll](https://jekyllrb.com/) and initially very similar to Jekyll but over time it has veered away significantly.
 
-<!--qgoda-no-xgettext--><qgoda-toc /><!--/qgoda-no-xgettext-->
+<qgoda-toc />
 
 ## General Differences
 
