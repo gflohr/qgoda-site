@@ -24,16 +24,19 @@ jobs:
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v4
+        if: github.ref == 'refs/heads/main'
         with:
           role-to-assume: arn:aws:iam::403172062108:role/GitHubActionsQgodaSite-Role-KrY8I17nCB4b
           aws-region: us-east-1
 
       - name: Deploy to S3 Bucket
         uses: osiegmar/s3-publisher-action@v1
+        if: github.ref == 'refs/heads/main'
         with:
           bucket: www.qgoda.net
           dir: ./_site
 
       - name: Invalidate CloudFront Cache
         run: aws cloudfront create-invalidation --distribution-id E2OTW00HQIINAZ --paths '/*'
+        if: github.ref == 'refs/heads/main'
         shell: sh
