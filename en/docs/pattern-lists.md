@@ -12,7 +12,7 @@ description: File name patterns and lists of file name patterns are used through
 
 Lists of search patterns in Qgoda follow the convention of [gitignore](https://git-scm.com/docs/gitignore), only that you put your configuration in a [YAML](http://yaml.org/) file `P:_qgoda.yaml` and not in a file `P:.gitignore`.
 
-<!--qgoda-no-xgettext--><qgoda-toc /><!--/qgoda-no-xgettext-->
+<qgoda-toc />
 
 As an example we use the configuration variable `C:exclude` which is used for [excluding files from being processed]([@ q.llink(name = 'excluding-files') @]).
 

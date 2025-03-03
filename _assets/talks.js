@@ -10,4 +10,4 @@ require('./css/cookie-consent.css');
 require('./js/cookie-consent.js');
 
 // Google Analytics.
-require('./js/google-analytics');
+require('./js/matomo.js');

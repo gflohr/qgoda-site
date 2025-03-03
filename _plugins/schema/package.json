@@ -1,0 +1,14 @@
+{
+  "name": "schema",
+  "version": "0.0.1",
+  "description": "Write out Qgoda schema",
+  "main": "index.pl",
+  "keywords": [
+    "Qgoda"
+  ],
+  "author": "Guido Flohr <guido.flohr@cantanea.com> (http://www.guido.flohr.net/)",
+  "license": "GPL-3.0",
+  "qgoda": {
+      "language": "Perl"
+  }
+}

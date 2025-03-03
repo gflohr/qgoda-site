@@ -1,5 +1,5 @@
 ---
-location: /schema.json
+location: /schemas/qgoda-v0.10.1.json
 view: raw
 ---
 [% USE q = Qgoda %]
