@@ -1,0 +1,27 @@
+name: Deploy Docs with Qgoda
+
+on:
+  push:
+    branches:
+      - '**'
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Build with Qgoda
+        uses: gflohr/qgoda-action@v1
+        with:
+          qgoda-version: latest-node
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: arn:aws:iam::403172062108:role/GitHubActionsQgodaSite-Role-KrY8I17nCB4b
+          aws-region: us-east-1
