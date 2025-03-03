@@ -25,3 +25,8 @@ jobs:
         with:
           role-to-assume: arn:aws:iam::403172062108:role/GitHubActionsQgodaSite-Role-KrY8I17nCB4b
           aws-region: us-east-1
+
+      - uses: osiegmar/s3-publisher-action@v1
+        with:
+          bucket: qgoda-test
+          dir: ./_site
